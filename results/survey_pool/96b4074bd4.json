@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:12:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/96b4074bd4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Death-associated protein kinase 1 (DAP (6FHB/9INW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Death-associated protein kinase 1 (DAP (6FHB/9INW)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.272178999999998,
+        "ca_rmsd": 1.4520124115229505,
+        "radius": 33.18178367968641,
+        "box_size": 128,
+        "d2_known_pose": 11.972845077514648,
+        "d2_crlb": 11.619695663452148,
+        "information": 3.500681161880493,
+        "saturation": 0.8751702904701233,
+        "n_floor": 714.146728515625,
+        "n_marginal": 13670.974609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015983644339555462,
+        "note": "P53355 160 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains A/A",
+        "d2_marginal": 0.1913696974515915,
+        "information_marginal": 0.18286919593811035,
+        "n_matched": 275,
+        "identity": 1.0,
+        "shared_fraction": 0.9131503482179435,
+        "provenance": {
+          "accession": "P53355",
+          "canonical_mass_kda": 160.046,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 11.972845077514648
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Death-associated protein kinase 1 (DAP (6FHB/9INW) | 29 | dihedral_cluster | 1.45 | 12 | 0.016 | 0.88 | 714 | 1.37e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Death-associated protein kinase 1 (DAP (6FHB/9INW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

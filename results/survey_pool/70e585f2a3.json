@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:01:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/70e585f2a3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "D-3-phosphoglycerate dehydrogenase (PG (1PSD/1YBA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "D-3-phosphoglycerate dehydrogenase (PG (1PSD/1YBA)",
+        "motion": "mixed",
+        "mass_kda": 39.432213000000004,
+        "ca_rmsd": 1.5475736073345403,
+        "radius": 47.54226201386352,
+        "box_size": 128,
+        "d2_known_pose": 15.313993453979492,
+        "d2_crlb": 14.709723472595215,
+        "information": 3.6965534687042236,
+        "saturation": 0.9241383671760559,
+        "n_floor": 676.3056640625,
+        "n_marginal": 62397.5390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.002642566477928664,
+        "note": "P0A9T0 44 kDa, dyndom, rotation 12.5 deg, chains A/D",
+        "d2_marginal": 0.0404682457447052,
+        "information_marginal": 0.04006568342447281,
+        "n_matched": 396,
+        "identity": 1.0,
+        "shared_fraction": 0.9791054521710741,
+        "provenance": {
+          "accession": "P0A9T0",
+          "canonical_mass_kda": 44.176,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.5
+        },
+        "d2_floor": 15.313993453979492
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| D-3-phosphoglycerate dehydrogenase (PG (1PSD/1YBA) | 39 | mixed | 1.55 | 15.3 | 0.003 | 0.92 | 676 | 6.24e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "D-3-phosphoglycerate dehydrogenase (PG (1PSD/1YBA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

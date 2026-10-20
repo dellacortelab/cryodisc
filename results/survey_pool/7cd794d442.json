@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:15:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7cd794d442.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Nitrogenase molybdenum-iron protein al (1L5H/1M1N)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Nitrogenase molybdenum-iron protein al (1L5H/1M1N)",
+        "motion": "hinge",
+        "mass_kda": 42.393060999999996,
+        "ca_rmsd": 2.5626132343201626,
+        "radius": 47.34188675831205,
+        "box_size": 128,
+        "d2_known_pose": 31.731456756591797,
+        "d2_crlb": 28.984569549560547,
+        "information": 3.970215320587158,
+        "saturation": 0.9925538301467896,
+        "n_floor": 629.6887817382812,
+        "n_marginal": 4519.263671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01999457876218817,
+        "note": "P07328 55 kDa, dyndom, rotation 46.8 deg, chains A/E",
+        "d2_marginal": 0.6344571113586426,
+        "information_marginal": 0.5531874895095825,
+        "n_matched": 405,
+        "identity": 1.0,
+        "shared_fraction": 0.8464379947229551,
+        "provenance": {
+          "accession": "P07328",
+          "canonical_mass_kda": 55.289,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 46.8
+        },
+        "d2_floor": 31.731456756591797
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Nitrogenase molybdenum-iron protein al (1L5H/1M1N) | 42 | hinge | 2.56 | 31.7 | 0.020 | 0.99* | 630 | 4.52e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Nitrogenase molybdenum-iron protein al (1L5H/1M1N)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

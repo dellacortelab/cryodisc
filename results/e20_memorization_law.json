@@ -1,0 +1,414 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/memorization_law.py",
+  "commit": "1aae14d6",
+  "written_at": "2026-09-19T17:28:01+00:00",
+  "arguments": {
+    "manifest": "results/e20_ladder.json",
+    "results": "results",
+    "out": "results/e20_memorization_law.json",
+    "box_size": 256,
+    "pixel_size": 1.0770000219345093,
+    "band_limit": 0.125,
+    "prefix": "e20",
+    "split_at": null,
+    "fit_min": 0.0
+  },
+  "result": {
+    "rungs": [
+      {
+        "n_particles": 2000,
+        "n_half_a": 1000,
+        "self": {
+          "mean": 85.84545642852783,
+          "sem": 0.6011016870851735,
+          "n": 1000,
+          "amplitude": 1.0094496011734009,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": 0.059832607693970204,
+          "sem": 0.027345593228488823,
+          "n": 8000,
+          "amplitude": 0.28742700815200806,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 85.78562382083385,
+        "difference_sem": 0.6017233747210257
+      },
+      {
+        "n_particles": 4000,
+        "n_half_a": 2000,
+        "self": {
+          "mean": 40.60043938064575,
+          "sem": 0.24874685479355668,
+          "n": 2000,
+          "amplitude": 1.0423436164855957,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.0873485564738512,
+          "sem": 0.032909528916442964,
+          "n": 8000,
+          "amplitude": 0.4628567695617676,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 40.6877879371196,
+        "difference_sem": 0.2509143974808719
+      },
+      {
+        "n_particles": 8000,
+        "n_half_a": 4000,
+        "self": {
+          "mean": 20.062501591950657,
+          "sem": 0.11725059089870517,
+          "n": 4000,
+          "amplitude": 1.0892599821090698,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": 0.06904484658688306,
+          "sem": 0.0360262010235462,
+          "n": 8000,
+          "amplitude": 0.6679578423500061,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 19.993456745363773,
+        "difference_sem": 0.12266045909862104
+      },
+      {
+        "n_particles": 16000,
+        "n_half_a": 8000,
+        "self": {
+          "mean": 9.552870077025146,
+          "sem": 0.056929595579340526,
+          "n": 8000,
+          "amplitude": 1.1276521682739258,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.00859610977768898,
+          "sem": 0.03506908962044241,
+          "n": 8000,
+          "amplitude": 0.8691059947013855,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 9.561466186802834,
+        "difference_sem": 0.06686418996468804
+      },
+      {
+        "n_particles": 32000,
+        "n_half_a": 16000,
+        "self": {
+          "mean": 4.703801046125591,
+          "sem": 0.02883861231106977,
+          "n": 16000,
+          "amplitude": 1.167771339416504,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": 0.009610554970800876,
+          "sem": 0.03074719965335494,
+          "n": 8000,
+          "amplitude": 1.0253201723098755,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 4.69419049115479,
+        "difference_sem": 0.04215514021506102
+      },
+      {
+        "n_particles": 64000,
+        "n_half_a": 32000,
+        "self": {
+          "mean": 2.3055250373743474,
+          "sem": 0.020303140253774356,
+          "n": 16000,
+          "amplitude": 1.1971712112426758,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.023863650351762772,
+          "sem": 0.025237327778681113,
+          "n": 8000,
+          "amplitude": 1.1269142627716064,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 2.32938868772611,
+        "difference_sem": 0.032390434044220866
+      },
+      {
+        "n_particles": 128000,
+        "n_half_a": 64000,
+        "self": {
+          "mean": 1.1422910258695482,
+          "sem": 0.014601581984611568,
+          "n": 16000,
+          "amplitude": 1.2156422138214111,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.006956949800252915,
+          "sem": 0.019385671522497937,
+          "n": 8000,
+          "amplitude": 1.1821075677871704,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 1.149247975669801,
+        "difference_sem": 0.024269537631185324
+      },
+      {
+        "n_particles": 181000,
+        "n_half_a": 90500,
+        "self": {
+          "mean": 0.7885847717747092,
+          "sem": 0.012085744233703592,
+          "n": 16000,
+          "amplitude": 1.2173556089401245,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.0074442971348762516,
+          "sem": 0.016510637650660135,
+          "n": 8000,
+          "amplitude": 1.1973248720169067,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 0.7960290689095855,
+        "difference_sem": 0.020461338404754847
+      },
+      {
+        "n_particles": 256000,
+        "n_half_a": 128000,
+        "self": {
+          "mean": 0.5738760021030903,
+          "sem": 0.010254533815933276,
+          "n": 16000,
+          "amplitude": 1.22449791431427,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": 0.007820185154676437,
+          "sem": 0.013909924496327927,
+          "n": 8000,
+          "amplitude": 1.2080137729644775,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 0.5660558169484139,
+        "difference_sem": 0.017281245998933725
+      },
+      {
+        "n_particles": 362000,
+        "n_half_a": 181000,
+        "self": {
+          "mean": 0.40770132959634064,
+          "sem": 0.008633386830068455,
+          "n": 16000,
+          "amplitude": 1.2281701564788818,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": 0.008446686327457428,
+          "sem": 0.01191623924971006,
+          "n": 8000,
+          "amplitude": 1.2160030603408813,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 0.3992546432688832,
+        "difference_sem": 0.014715030615460168
+      },
+      {
+        "n_particles": 512000,
+        "n_half_a": 256000,
+        "self": {
+          "mean": 0.2827079046219587,
+          "sem": 0.007309999530199745,
+          "n": 16000,
+          "amplitude": 1.2280734777450562,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.009829985663294792,
+          "sem": 0.010210686934517958,
+          "n": 8000,
+          "amplitude": 1.2212873697280884,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 0.2925378902852535,
+        "difference_sem": 0.012557635956112768
+      },
+      {
+        "n_particles": 724000,
+        "n_half_a": 362000,
+        "self": {
+          "mean": 0.1948819540143013,
+          "sem": 0.006101804215584582,
+          "n": 16000,
+          "amplitude": 1.2292721271514893,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": -0.005955323144793511,
+          "sem": 0.008660411819254591,
+          "n": 8000,
+          "amplitude": 1.2245408296585083,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 0.20083727715909483,
+        "difference_sem": 0.010594090218815884
+      },
+      {
+        "n_particles": 1024000,
+        "n_half_a": 512000,
+        "self": {
+          "mean": 0.1376194996498525,
+          "sem": 0.005183769644548063,
+          "n": 16000,
+          "amplitude": 1.2331334352493286,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "null": {
+          "mean": 0.00045547175407409667,
+          "sem": 0.007206388765519751,
+          "n": 8000,
+          "amplitude": 1.2264484167099,
+          "box_size": 256,
+          "pixel_size": 1.0770000219345093,
+          "band_limit": 0.125
+        },
+        "difference": 0.13716402789577842,
+        "difference_sem": 0.008877133927543688
+      }
+    ],
+    "fit_min_particles": 0.0,
+    "fit_rungs_used": 13,
+    "fit_rungs_total": 13,
+    "fit_span_decades": 2.709269960975831,
+    "fit_curvature": {
+      "curvature": 0.006146799575676493,
+      "curvature_sem": 0.0013399911791543288,
+      "sigma": 4.587194058662201
+    },
+    "fit_blocks": null,
+    "fit_free_slope": {
+      "slope": -1.036965394541273,
+      "slope_sem": 0.0023392199514572585,
+      "log_amplitude": 12.31376537113405,
+      "amplitude": 222741.09592513923,
+      "amplitude_sem": 4807.1350744394995,
+      "chi_square": 27.75446495104912,
+      "dof": 11,
+      "chi_square_per_dof": 2.5231331773681016
+    },
+    "fit_slope_fixed_at_minus_one": {
+      "slope": -1.0,
+      "slope_sem": 0.0,
+      "log_amplitude": 11.975840592735537,
+      "amplitude": 158869.85003020137,
+      "amplitude_sem": 462.6544876331219,
+      "chi_square": 277.4717317869518,
+      "dof": 12,
+      "chi_square_per_dof": 23.12264431557932
+    },
+    "m_eff_geometric": 1608.495438637974,
+    "amplitude_over_m_eff": 98.76922633036972,
+    "band_voxels": 143760.0,
+    "amplitude_over_two_band_voxels": 0.5525523442897933,
+    "implied_band_cycles_per_pixel": 0.10209286629607733,
+    "implied_band_cycles_per_pixel_sem": 9.967152505608451e-05,
+    "implied_band_angstrom": 10.549219166901677,
+    "implied_band_angstrom_sem": 0.010299022847166031,
+    "scored_band_angstrom": 8.616000175476074,
+    "pixel_size": 1.0770000219345093,
+    "fit_with_scorer_amplitude_removed": {
+      "fitted_amplitude": [
+        1.0094496011734009,
+        1.0423436164855957,
+        1.0892599821090698,
+        1.1276521682739258,
+        1.167771339416504,
+        1.1971712112426758,
+        1.2156422138214111,
+        1.2173556089401245,
+        1.22449791431427,
+        1.2281701564788818,
+        1.2280734777450562,
+        1.2292721271514893,
+        1.2331334352493286
+      ],
+      "free": {
+        "slope": -1.081947775849274,
+        "slope_sem": 0.0023392199514572585,
+        "log_amplitude": 12.638444535482286,
+        "amplitude": 308181.611368473,
+        "amplitude_sem": 6651.088013882157,
+        "chi_square": 76.64152787131422,
+        "dof": 11,
+        "chi_square_per_dof": 6.96741162466493
+      },
+      "fixed": {
+        "slope": -1.0,
+        "slope_sem": 0.0,
+        "log_amplitude": 11.889306474391182,
+        "amplitude": 145700.215957849,
+        "amplitude_sem": 424.30240067073345,
+        "chi_square": 1303.8892164645345,
+        "dof": 12,
+        "chi_square_per_dof": 108.65743470537787
+      }
+    },
+    "rung_signs": {
+      "positive": 13,
+      "negative": 0
+    }
+  }
+}

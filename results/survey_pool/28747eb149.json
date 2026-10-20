@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:25:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/28747eb149.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "3-isopropylmalate dehydrogenase (EC 1. (2G4O/1W0D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "3-isopropylmalate dehydrogenase (EC 1. (2G4O/1W0D)",
+        "motion": "shear",
+        "mass_kda": 32.800157999999996,
+        "ca_rmsd": 1.0963284979068597,
+        "radius": 43.09542324022327,
+        "box_size": 128,
+        "d2_known_pose": 10.282981872558594,
+        "d2_crlb": 9.02534294128418,
+        "information": 3.35370135307312,
+        "saturation": 0.83842533826828,
+        "n_floor": 745.445068359375,
+        "n_marginal": 20391.4609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01229197837966525,
+        "note": "P9WKK9 35 kDa, dyndom, rotation 7.1 deg, chains C/D",
+        "d2_marginal": 0.12639819085597992,
+        "information_marginal": 0.12260033935308456,
+        "n_matched": 336,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P9WKK9",
+          "canonical_mass_kda": 35.306,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.1
+        },
+        "d2_floor": 10.282981872558594
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 3-isopropylmalate dehydrogenase (EC 1. (2G4O/1W0D) | 33 | shear | 1.10 | 10.3 | 0.012 | 0.84 | 745 | 2.04e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "3-isopropylmalate dehydrogenase (EC 1. (2G4O/1W0D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

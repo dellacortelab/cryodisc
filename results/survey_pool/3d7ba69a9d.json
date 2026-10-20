@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:12:12+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3d7ba69a9d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "N5-carboxyaminoimidazole ribonucleotid (1B6R/1B6S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "N5-carboxyaminoimidazole ribonucleotid (1B6R/1B6S)",
+        "motion": "no_contact",
+        "mass_kda": 36.010701,
+        "ca_rmsd": 0.804027477578147,
+        "radius": 37.487649011732884,
+        "box_size": 128,
+        "d2_known_pose": 6.011462688446045,
+        "d2_crlb": 5.5654730796813965,
+        "information": 2.72373628616333,
+        "saturation": 0.6809340715408325,
+        "n_floor": 917.8568725585938,
+        "n_marginal": 22229.04296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019239618038889815,
+        "note": "P09029 39 kDa, dyndom, rotation 10.0 deg, chains A/B",
+        "d2_marginal": 0.1156582459807396,
+        "information_marginal": 0.11246547847986221,
+        "n_matched": 349,
+        "identity": 0.997134670487106,
+        "shared_fraction": 0.9820402298850575,
+        "provenance": {
+          "accession": "P09029",
+          "canonical_mass_kda": 39.461,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.0
+        },
+        "d2_floor": 6.011462688446045
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| N5-carboxyaminoimidazole ribonucleotid (1B6R/1B6S) | 36 | no_contact | 0.80 | 6.01 | 0.019 | 0.68 | 918 | 2.22e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "N5-carboxyaminoimidazole ribonucleotid (1B6R/1B6S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

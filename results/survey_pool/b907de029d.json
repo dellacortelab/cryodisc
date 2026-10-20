@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:53:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b907de029d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase 16 (EC (2BUJ/2BUJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase 16 (EC (2BUJ/2BUJ)",
+        "motion": "mixed",
+        "mass_kda": 28.956739999999993,
+        "ca_rmsd": 1.2908652595874452,
+        "radius": 47.59327279841193,
+        "box_size": 128,
+        "d2_known_pose": 6.489762306213379,
+        "d2_crlb": 6.071631908416748,
+        "information": 2.820540189743042,
+        "saturation": 0.7051350474357605,
+        "n_floor": 886.3550415039062,
+        "n_marginal": 38035.71875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010295211631975798,
+        "note": "O75716 35 kDa, dyndom, rotation 6.3 deg, chains A/B",
+        "d2_marginal": 0.06681347638368607,
+        "information_marginal": 0.06572769582271576,
+        "n_matched": 282,
+        "identity": 1.0,
+        "shared_fraction": 0.9606126914660832,
+        "provenance": {
+          "accession": "O75716",
+          "canonical_mass_kda": 34.656,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.3
+        },
+        "d2_floor": 6.489762306213379
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase 16 (EC (2BUJ/2BUJ) | 29 | mixed | 1.29 | 6.49 | 0.010 | 0.71 | 886 | 3.8e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase 16 (EC (2BUJ/2BUJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:37:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d20f09a5e9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aspartate-semialdehyde dehydrogenase ( (2GZ1/2GYY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aspartate-semialdehyde dehydrogenase ( (2GZ1/2GYY)",
+        "motion": "hinge",
+        "mass_kda": 34.305350999999995,
+        "ca_rmsd": 0.9649458951613591,
+        "radius": 37.6732068353973,
+        "box_size": 128,
+        "d2_known_pose": 6.8741583824157715,
+        "d2_crlb": 5.964728355407715,
+        "information": 2.8923285007476807,
+        "saturation": 0.7230821251869202,
+        "n_floor": 864.35546875,
+        "n_marginal": 31874.876953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0116348161142829,
+        "note": "A0A0H2UPS5 39 kDa, dyndom, rotation 8.1 deg, chains B/B",
+        "d2_marginal": 0.07997956871986389,
+        "information_marginal": 0.07843168079853058,
+        "n_matched": 339,
+        "identity": 1.0,
+        "shared_fraction": 0.9522760646108663,
+        "provenance": {
+          "accession": "A0A0H2UPS5",
+          "canonical_mass_kda": 38.978,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.1
+        },
+        "d2_floor": 6.8741583824157715
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aspartate-semialdehyde dehydrogenase ( (2GZ1/2GYY) | 34 | hinge | 0.96 | 6.87 | 0.012 | 0.72 | 864 | 3.19e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aspartate-semialdehyde dehydrogenase ( (2GZ1/2GYY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:50:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1774f301d3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Class III lanthionine synthetase LanKC (8SAM/8SAP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Class III lanthionine synthetase LanKC (8SAM/8SAP)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 88.38532099999998,
+        "ca_rmsd": 1.3292190215780515,
+        "radius": 51.66616733895427,
+        "box_size": 128,
+        "d2_known_pose": 29.10840606689453,
+        "d2_crlb": 27.325180053710938,
+        "information": 3.957226037979126,
+        "saturation": 0.9893065094947815,
+        "n_floor": 631.7556762695312,
+        "n_marginal": 28252.533203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003107684219930978,
+        "note": "A0A6H0TJ16 100 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains B/B",
+        "d2_marginal": 0.09045973420143127,
+        "information_marginal": 0.0884876474738121,
+        "n_matched": 832,
+        "identity": 1.0,
+        "shared_fraction": 0.970103986135182,
+        "provenance": {
+          "accession": "A0A6H0TJ16",
+          "canonical_mass_kda": 99.626,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 29.10840606689453
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Class III lanthionine synthetase LanKC (8SAM/8SAP) | 88 | dihedral_cluster | 1.33 | 29.1 | 0.003 | 0.99 | 632 | 2.83e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Class III lanthionine synthetase LanKC (8SAM/8SAP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

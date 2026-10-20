@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:47:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6075a8771a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adenylosuccinate synthetase (AMPSase) (1ADE/1CIB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adenylosuccinate synthetase (AMPSase) (1ADE/1CIB)",
+        "motion": "crypticpocket",
+        "mass_kda": 43.851183999999996,
+        "ca_rmsd": 1.993225155303896,
+        "radius": 40.64172960289043,
+        "box_size": 128,
+        "d2_known_pose": 26.677106857299805,
+        "d2_crlb": 23.456703186035156,
+        "information": 3.940037727355957,
+        "saturation": 0.9850094318389893,
+        "n_floor": 634.51171875,
+        "n_marginal": 10363.048828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009600970118515106,
+        "note": "P0A7D4 47 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.2561261057853699,
+        "information_marginal": 0.24124175310134888,
+        "n_matched": 431,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P0A7D4",
+          "canonical_mass_kda": 47.345,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 26.677106857299805
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adenylosuccinate synthetase (AMPSase) (1ADE/1CIB) | 44 | crypticpocket | 1.99 | 26.7 | 0.010 | 0.99 | 635 | 1.04e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adenylosuccinate synthetase (AMPSase) (1ADE/1CIB)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:16:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9671742c55.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hemin transport protein HemS (2J0R/2J0P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hemin transport protein HemS (2J0R/2J0P)",
+        "motion": "shear",
+        "mass_kda": 34.825477,
+        "ca_rmsd": 1.3626915101037183,
+        "radius": 35.91070578877237,
+        "box_size": 128,
+        "d2_known_pose": 12.841938018798828,
+        "d2_crlb": 11.897964477539062,
+        "information": 3.5619630813598633,
+        "saturation": 0.8904907703399658,
+        "n_floor": 701.8601684570312,
+        "n_marginal": 21358.298828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009384136839260619,
+        "note": "P31517 39 kDa, dyndom, rotation 9.9 deg, chains A/A",
+        "d2_marginal": 0.12051050364971161,
+        "information_marginal": 0.11705052107572556,
+        "n_matched": 328,
+        "identity": 0.9969512195121951,
+        "shared_fraction": 0.9909977494373593,
+        "provenance": {
+          "accession": "P31517",
+          "canonical_mass_kda": 39.201,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.9
+        },
+        "d2_floor": 12.841938018798828
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hemin transport protein HemS (2J0R/2J0P) | 35 | shear | 1.36 | 12.8 | 0.009 | 0.89 | 702 | 2.14e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hemin transport protein HemS (2J0R/2J0P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

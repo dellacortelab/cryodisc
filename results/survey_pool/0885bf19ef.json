@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:21:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0885bf19ef.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "5'-AMP-activated protein kinase cataly (4CFF/2YZA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "5'-AMP-activated protein kinase cataly (4CFF/2YZA)",
+        "motion": "dfg_flip",
+        "mass_kda": 27.169637999999992,
+        "ca_rmsd": 5.223013049292652,
+        "radius": 39.904875757022005,
+        "box_size": 128,
+        "d2_known_pose": 24.689464569091797,
+        "d2_crlb": 20.688934326171875,
+        "information": 3.9208173751831055,
+        "saturation": 0.9802043437957764,
+        "n_floor": 637.6221313476562,
+        "n_marginal": 4725.91455078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024426556600967677,
+        "note": "P54646 62 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains C/A",
+        "d2_marginal": 0.6030786037445068,
+        "information_marginal": 0.5289981365203857,
+        "n_matched": 258,
+        "identity": 1.0,
+        "shared_fraction": 0.6098137747561336,
+        "provenance": {
+          "accession": "P54646",
+          "canonical_mass_kda": 62.32,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 24.689464569091797
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 5'-AMP-activated protein kinase cataly (4CFF/2YZA) | 27 | dfg_flip | 5.22 | 24.7 | 0.024 | 0.98 | 638 | 4.73e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "5'-AMP-activated protein kinase cataly (4CFF/2YZA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

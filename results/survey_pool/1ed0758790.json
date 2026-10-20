@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:10:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1ed0758790.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Proto-oncogene tyrosine-protein kinase (8JN9/7OTE)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Proto-oncogene tyrosine-protein kinase (8JN9/7OTE)",
+        "motion": "dfg_flip",
+        "mass_kda": 27.199472999999998,
+        "ca_rmsd": 5.592396431548984,
+        "radius": 49.040099972862826,
+        "box_size": 128,
+        "d2_known_pose": 39.035240173339844,
+        "d2_crlb": 31.23578453063965,
+        "information": 3.989008665084839,
+        "saturation": 0.9972521662712097,
+        "n_floor": 626.72216796875,
+        "n_marginal": 6782.1630859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010346291831193916,
+        "note": "P00523 60 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/B",
+        "d2_marginal": 0.40386998653411865,
+        "information_marginal": 0.36861395835876465,
+        "n_matched": 258,
+        "identity": 1.0,
+        "shared_fraction": 0.5729021466406468,
+        "provenance": {
+          "accession": "P00523",
+          "canonical_mass_kda": 60.01,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 39.035240173339844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Proto-oncogene tyrosine-protein kinase (8JN9/7OTE) | 27 | dfg_flip | 5.59 | 39 | 0.010 | 1.00* | 627 | 6.78e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Proto-oncogene tyrosine-protein kinase (8JN9/7OTE)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

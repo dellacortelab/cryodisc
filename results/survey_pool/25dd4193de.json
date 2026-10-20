@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:12:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/25dd4193de.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "TGF-beta receptor type-1 (TGFR-1) (EC (1VJY/1B6C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "TGF-beta receptor type-1 (TGFR-1) (EC (1VJY/1B6C)",
+        "motion": "hinge",
+        "mass_kda": 31.466015,
+        "ca_rmsd": 1.4139961187075898,
+        "radius": 37.143712936482565,
+        "box_size": 128,
+        "d2_known_pose": 11.00336742401123,
+        "d2_crlb": 10.704832077026367,
+        "information": 3.4213638305664062,
+        "saturation": 0.8553409576416016,
+        "n_floor": 730.7028198242188,
+        "n_marginal": 18615.970703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012619349399676735,
+        "note": "P36897 56 kDa, dyndom, rotation 19.6 deg, chains A/H",
+        "d2_marginal": 0.13885533809661865,
+        "information_marginal": 0.1342933028936386,
+        "n_matched": 296,
+        "identity": 1.0,
+        "shared_fraction": 0.9146810146041506,
+        "provenance": {
+          "accession": "P36897",
+          "canonical_mass_kda": 55.96,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 19.6
+        },
+        "d2_floor": 11.00336742401123
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| TGF-beta receptor type-1 (TGFR-1) (EC (1VJY/1B6C) | 31 | hinge | 1.41 | 11 | 0.013 | 0.86 | 731 | 1.86e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "TGF-beta receptor type-1 (TGFR-1) (EC (1VJY/1B6C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

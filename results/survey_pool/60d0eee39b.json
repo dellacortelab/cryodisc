@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:51:19+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/60d0eee39b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Leucine-rich repeat serine/threonine-p (8U8B/8FO9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Leucine-rich repeat serine/threonine-p (8U8B/8FO9)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 100.01261199999998,
+        "ca_rmsd": 9.00800736511262,
+        "radius": 73.39039244927653,
+        "box_size": 128,
+        "d2_known_pose": 535.5909423828125,
+        "d2_crlb": 496.44769287109375,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2578.12744140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.002306585185510811,
+        "note": "Q5S007 286 kDa, kincore, no rotation angle (kincore reports none); states BBAminus -> BLAminus, chains B/C",
+        "d2_marginal": 1.2353861331939697,
+        "information_marginal": 0.969696044921875,
+        "n_matched": 1075,
+        "identity": 1.0,
+        "shared_fraction": 0.6191562143671607,
+        "provenance": {
+          "accession": "Q5S007",
+          "canonical_mass_kda": 286.103,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 535.5909423828125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Leucine-rich repeat serine/threonine-p (8U8B/8FO9) | 100 | dihedral_cluster | 9.01 | 536 | 0.002 | 1.00* | 625 | 2.58e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Leucine-rich repeat serine/threonine-p (8U8B/8FO9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

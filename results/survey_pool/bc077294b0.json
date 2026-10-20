@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:05:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bc077294b0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Antitermination protein Q (7UBJ/7UBL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Antitermination protein Q (7UBJ/7UBL)",
+        "motion": "domainmotion",
+        "mass_kda": 14.379220999999998,
+        "ca_rmsd": 8.166058375150122,
+        "radius": 39.62344637759736,
+        "box_size": 128,
+        "d2_known_pose": 78.65946960449219,
+        "d2_crlb": 67.50993347167969,
+        "information": 3.9999423027038574,
+        "saturation": 0.9999855756759644,
+        "n_floor": 625.009033203125,
+        "n_marginal": 2604.567626953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015506782566318275,
+        "note": "P03047 22 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 1.2197552919387817,
+        "information_marginal": 0.9598522186279297,
+        "n_matched": 141,
+        "identity": 1.0,
+        "shared_fraction": 0.966131907308378,
+        "provenance": {
+          "accession": "P03047",
+          "canonical_mass_kda": 22.473,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 78.65946960449219
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Antitermination protein Q (7UBJ/7UBL) | 14 | domainmotion | 8.17 | 78.7 | 0.016 | 1.00* | 625 | 2.6e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Antitermination protein Q (7UBJ/7UBL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

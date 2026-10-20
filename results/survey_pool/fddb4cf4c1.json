@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:59:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fddb4cf4c1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein argonaute (AaAgo) (EC 3.1.26.- (2NUB/2F8S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein argonaute (AaAgo) (EC 3.1.26.- (2NUB/2F8S)",
+        "motion": "hinge",
+        "mass_kda": 74.89353299999999,
+        "ca_rmsd": 3.7085121211805108,
+        "radius": 49.649963340437665,
+        "box_size": 128,
+        "d2_known_pose": 130.8973388671875,
+        "d2_crlb": 124.262451171875,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 3464.32373046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006594719110174194,
+        "note": "O67434 83 kDa, dyndom, rotation 26.1 deg, chains A/A",
+        "d2_marginal": 0.8632311820983887,
+        "information_marginal": 0.7216416001319885,
+        "n_matched": 688,
+        "identity": 1.0,
+        "shared_fraction": 0.9757844474761255,
+        "provenance": {
+          "accession": "O67434",
+          "canonical_mass_kda": 83.122,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 26.1
+        },
+        "d2_floor": 130.8973388671875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein argonaute (AaAgo) (EC 3.1.26.- (2NUB/2F8S) | 75 | hinge | 3.71 | 131 | 0.007 | 1.00* | 625 | 3.46e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein argonaute (AaAgo) (EC 3.1.26.- (2NUB/2F8S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

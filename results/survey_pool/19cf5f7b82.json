@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:38:17+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/19cf5f7b82.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aac(6')-Ii protein (2A4N/1B87)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aac(6')-Ii protein (2A4N/1B87)",
+        "motion": "unclassified",
+        "mass_kda": 18.935683,
+        "ca_rmsd": 1.1071584519781852,
+        "radius": 30.966018185772448,
+        "box_size": 128,
+        "d2_known_pose": 5.090297698974609,
+        "d2_crlb": 4.5168304443359375,
+        "information": 2.5104217529296875,
+        "saturation": 0.6276054382324219,
+        "n_floor": 995.8486328125,
+        "n_marginal": 29000.326171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.017302957046510355,
+        "note": "Q47764 21 kDa, dyndom, rotation 7.4 deg, chains B/A",
+        "d2_marginal": 0.08807720243930817,
+        "information_marginal": 0.08620592951774597,
+        "n_matched": 179,
+        "identity": 1.0,
+        "shared_fraction": 0.9896694214876033,
+        "provenance": {
+          "accession": "Q47764",
+          "canonical_mass_kda": 20.679,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.4
+        },
+        "d2_floor": 5.090297698974609
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aac(6')-Ii protein (2A4N/1B87) | 19 | unclassified | 1.11 | 5.09 | 0.017 | 0.63 | 996 | 2.9e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aac(6')-Ii protein (2A4N/1B87)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

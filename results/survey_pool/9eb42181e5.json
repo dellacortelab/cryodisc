@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:22:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9eb42181e5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ribulose-1,5 bisphosphate carboxylase/ (2H23/2H21)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ribulose-1,5 bisphosphate carboxylase/ (2H23/2H21)",
+        "motion": "shear",
+        "mass_kda": 44.867777999999994,
+        "ca_rmsd": 1.781314219751702,
+        "radius": 73.17137922770802,
+        "box_size": 128,
+        "d2_known_pose": 25.385412216186523,
+        "d2_crlb": 21.780899047851562,
+        "information": 3.9281773567199707,
+        "saturation": 0.9820443391799927,
+        "n_floor": 636.427490234375,
+        "n_marginal": 25990.693359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0038809742020353187,
+        "note": "Q43088 55 kDa, dyndom, rotation 6.4 deg, chains A/B",
+        "d2_marginal": 0.09852012991905212,
+        "information_marginal": 0.09618828445672989,
+        "n_matched": 424,
+        "identity": 1.0,
+        "shared_fraction": 0.963579898362507,
+        "provenance": {
+          "accession": "Q43088",
+          "canonical_mass_kda": 55.11,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.4
+        },
+        "d2_floor": 25.385412216186523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ribulose-1,5 bisphosphate carboxylase/ (2H23/2H21) | 45 | shear | 1.78 | 25.4 | 0.004 | 0.98 | 636 | 2.6e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ribulose-1,5 bisphosphate carboxylase/ (2H23/2H21)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

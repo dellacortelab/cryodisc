@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:21:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ef0dc6de50.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cannabinoid receptor 1 (CB-R) (CB1) (C (9BA0/8GHV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cannabinoid receptor 1 (CB-R) (CB1) (C (9BA0/8GHV)",
+        "motion": "activation",
+        "mass_kda": 25.630993,
+        "ca_rmsd": 3.205749273159905,
+        "radius": 35.52553222691937,
+        "box_size": 128,
+        "d2_known_pose": 52.870479583740234,
+        "d2_crlb": 46.158592224121094,
+        "information": 3.998283863067627,
+        "saturation": 0.9995709657669067,
+        "n_floor": 625.268310546875,
+        "n_marginal": 4684.52294921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0115208690529557,
+        "note": "P21554 53 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/D",
+        "d2_marginal": 0.609113872051239,
+        "information_marginal": 0.5336722731590271,
+        "n_matched": 275,
+        "identity": 0.9818181818181818,
+        "shared_fraction": 0.5207446808510638,
+        "provenance": {
+          "accession": "P21554",
+          "canonical_mass_kda": 52.858,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 52.870479583740234
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cannabinoid receptor 1 (CB-R) (CB1) (C (9BA0/8GHV) | 26 | activation | 3.21 | 52.9 | 0.012 | 1.00* | 625 | 4.68e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cannabinoid receptor 1 (CB-R) (CB1) (C (9BA0/8GHV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

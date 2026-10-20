@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:32:23+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/551bac329d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA polymerase beta (EC 2.7.7.7) (5'-d (2FMP/7ICO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA polymerase beta (EC 2.7.7.7) (5'-d (2FMP/7ICO)",
+        "motion": "hinge",
+        "mass_kda": 34.467414999999995,
+        "ca_rmsd": 5.219845693396776,
+        "radius": 38.657487471429754,
+        "box_size": 128,
+        "d2_known_pose": 131.8846435546875,
+        "d2_crlb": 118.45932006835938,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1965.0074462890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013304861972579112,
+        "note": "P06746 38 kDa, dyndom, rotation 37.1 deg, chains A/A",
+        "d2_marginal": 1.7547069787979126,
+        "information_marginal": 1.2722598314285278,
+        "n_matched": 326,
+        "identity": 1.0,
+        "shared_fraction": 0.9965688143347312,
+        "provenance": {
+          "accession": "P06746",
+          "canonical_mass_kda": 38.178,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 37.1
+        },
+        "d2_floor": 131.8846435546875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA polymerase beta (EC 2.7.7.7) (5'-d (2FMP/7ICO) | 34 | hinge | 5.22 | 132 | 0.013 | 1.00* | 625 | 1.97e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA polymerase beta (EC 2.7.7.7) (5'-d (2FMP/7ICO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

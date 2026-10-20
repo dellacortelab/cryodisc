@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:16:05+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9ced3eb54a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Listeriolysin regulatory protein (2BGC/2BGC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Listeriolysin regulatory protein (2BGC/2BGC)",
+        "motion": "hinge",
+        "mass_kda": 24.303362999999997,
+        "ca_rmsd": 1.3068267321668996,
+        "radius": 33.38472678540226,
+        "box_size": 128,
+        "d2_known_pose": 6.53083610534668,
+        "d2_crlb": 6.246960639953613,
+        "information": 2.8284566402435303,
+        "saturation": 0.7071141600608826,
+        "n_floor": 883.874267578125,
+        "n_marginal": 47940.09375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008089477236350113,
+        "note": "P22262 27 kDa, dyndom, rotation 10.5 deg, chains I/D",
+        "d2_marginal": 0.052831050008535385,
+        "information_marginal": 0.05214841663837433,
+        "n_matched": 226,
+        "identity": 1.0,
+        "shared_fraction": 0.9660751565762005,
+        "provenance": {
+          "accession": "P22262",
+          "canonical_mass_kda": 27.301,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.5
+        },
+        "d2_floor": 6.53083610534668
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Listeriolysin regulatory protein (2BGC/2BGC) | 24 | hinge | 1.31 | 6.53 | 0.008 | 0.71 | 884 | 4.79e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Listeriolysin regulatory protein (2BGC/2BGC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:54:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/60f61b6f6f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Membrane cofactor protein (TLX) (Troph (1CKL/1CKL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Membrane cofactor protein (TLX) (Troph (1CKL/1CKL)",
+        "motion": "no_contact",
+        "mass_kda": 13.500779999999997,
+        "ca_rmsd": 2.0584500228426226,
+        "radius": 39.46580457131988,
+        "box_size": 128,
+        "d2_known_pose": 10.551429748535156,
+        "d2_crlb": 9.091285705566406,
+        "information": 3.3798625469207764,
+        "saturation": 0.8449656367301941,
+        "n_floor": 739.675048828125,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P15529 44 kDa, dyndom, rotation 25.0 deg, chains D/F",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 126,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P15529",
+          "canonical_mass_kda": 43.747,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 25.0
+        },
+        "d2_floor": 10.551429748535156
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Membrane cofactor protein (TLX) (Troph (1CKL/1CKL) | 14 | no_contact | 2.06 | 10.6 | -- | 0.84 | 740 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Membrane cofactor protein (TLX) (Troph (1CKL/1CKL)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 10 (total of 0 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

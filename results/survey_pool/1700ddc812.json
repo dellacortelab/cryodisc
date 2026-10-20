@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:22:57+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1700ddc812.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Endophilin-A1 (EEN-B1) (Endophilin-1) (2D4C/2D4C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Endophilin-A1 (EEN-B1) (Endophilin-1) (2D4C/2D4C)",
+        "motion": "unclassified",
+        "mass_kda": 22.990150999999997,
+        "ca_rmsd": 1.33929055599171,
+        "radius": 57.37737558329745,
+        "box_size": 128,
+        "d2_known_pose": 10.301219940185547,
+        "d2_crlb": 9.303672790527344,
+        "information": 3.355515956878662,
+        "saturation": 0.8388789892196655,
+        "n_floor": 745.0419311523438,
+        "n_marginal": 44632.1171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005514035920055266,
+        "note": "Q99962 40 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains B/D",
+        "d2_marginal": 0.05680129677057266,
+        "information_marginal": 0.056013479828834534,
+        "n_matched": 217,
+        "identity": 1.0,
+        "shared_fraction": 0.9347708894878706,
+        "provenance": {
+          "accession": "Q99962",
+          "canonical_mass_kda": 39.962,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 10.301219940185547
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Endophilin-A1 (EEN-B1) (Endophilin-1) (2D4C/2D4C) | 23 | unclassified | 1.34 | 10.3 | 0.006 | 0.84 | 745 | 4.46e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Endophilin-A1 (EEN-B1) (Endophilin-1) (2D4C/2D4C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

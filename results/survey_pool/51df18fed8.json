@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:45:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/51df18fed8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA polymerase III subunit delta (EC 2 (1JQJ/1JQJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA polymerase III subunit delta (EC 2 (1JQJ/1JQJ)",
+        "motion": "hinge",
+        "mass_kda": 33.995366,
+        "ca_rmsd": 9.548926620345915,
+        "radius": 45.32210531680992,
+        "box_size": 128,
+        "d2_known_pose": 196.3221435546875,
+        "d2_crlb": 179.0635986328125,
+        "information": 3.999999761581421,
+        "saturation": 0.9999999403953552,
+        "n_floor": 625.0000610351562,
+        "n_marginal": 2292.714111328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007300772144239061,
+        "note": "P28630 39 kDa, dyndom, rotation 82.7 deg, chains D/C",
+        "d2_marginal": 1.4333032369613647,
+        "information_marginal": 1.0904107093811035,
+        "n_matched": 325,
+        "identity": 1.0,
+        "shared_fraction": 0.990023023791251,
+        "provenance": {
+          "accession": "P28630",
+          "canonical_mass_kda": 38.704,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 82.7
+        },
+        "d2_floor": 196.3221435546875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA polymerase III subunit delta (EC 2 (1JQJ/1JQJ) | 34 | hinge | 9.55 | 196 | 0.007 | 1.00* | 625 | 2.29e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA polymerase III subunit delta (EC 2 (1JQJ/1JQJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

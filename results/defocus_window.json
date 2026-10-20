@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/defocus_window.py",
+  "commit": "3f7bcd3-dirty",
+  "written_at": "2026-09-04T04:15:55+00:00",
+  "arguments": {
+    "pools": "results/hb_rt_pools.json",
+    "out": "results/defocus_window.json"
+  },
+  "result": {
+    "collections": {
+      "11992": {
+        "n_particles": 114520,
+        "min_a": 1023.70947265625,
+        "max_a": 25687.583984375,
+        "mean_a": 11491.56961540065,
+        "sd_a": 4660.940407779952,
+        "percentile_a": {
+          "5": 4012.927764892578,
+          "25": 8205.263305664062,
+          "50": 11326.327880859375,
+          "75": 14657.170043945312,
+          "95": 19804.128076171863
+        },
+        "median_astigmatism_a": 160.689453125,
+        "max_astigmatism_a": 16909.95751953125,
+        "files": [
+          "R_11992_hHb_O2_Supervisor_20221203_151033_38_J6.cs"
+        ]
+      },
+      "11993": {
+        "n_particles": 111027,
+        "min_a": 1003.0213012695312,
+        "max_a": 39878.416015625,
+        "mean_a": 10986.519775101337,
+        "sd_a": 5469.796321843351,
+        "percentile_a": {
+          "5": 2835.854626369476,
+          "25": 6818.673828125,
+          "50": 10717.01904296875,
+          "75": 14192.4609375,
+          "95": 21086.508984374996
+        },
+        "median_astigmatism_a": 144.955078125,
+        "max_astigmatism_a": 30637.05078125,
+        "files": [
+          "T_11993_Supervisor_20230506_154234_49_humandeoxy_2_J6.cs",
+          "T_11993_Supervisor_20230506_155543_86_humandeoxy_1_J12.cs",
+          "T_11993_hHb_deoxy-1_Supervisor_20230329_170109_0_J18.cs"
+        ]
+      }
+    },
+    "assumed_window": {
+      "low_a": 5000.0,
+      "high_a": 25000.0,
+      "mean_a": 15000.0,
+      "sd_a": 5773.502691896258,
+      "offset_a_11992": 3508.430384599351,
+      "width_ratio_11992": 1.2386991007778685,
+      "offset_a_11993": 4013.4802248986634,
+      "width_ratio_11993": 1.0555242557826279
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:38:15+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/e0dd614eb0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase ULK3 ( (6FDY/6FDZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase ULK3 ( (6FDY/6FDZ)",
+        "motion": "dfg_flip",
+        "mass_kda": 25.508384,
+        "ca_rmsd": 4.74227032323803,
+        "radius": 33.32568295176231,
+        "box_size": 128,
+        "d2_known_pose": 44.86949920654297,
+        "d2_crlb": 35.98539733886719,
+        "information": 3.994997978210449,
+        "saturation": 0.9987494945526123,
+        "n_floor": 625.7825927734375,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "Q6PHR2 53 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains U/U",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 259,
+        "identity": 1.0,
+        "shared_fraction": 0.94775390625,
+        "provenance": {
+          "accession": "Q6PHR2",
+          "canonical_mass_kda": 53.444,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 44.86949920654297
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase ULK3 ( (6FDY/6FDZ) | 26 | dfg_flip | 4.74 | 44.9 | -- | 1.00* | 626 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Serine/threonine-protein kinase ULK3 ( (6FDY/6FDZ)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 10 (total of 1 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

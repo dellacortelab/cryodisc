@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:30:05+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/80bf4789a9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mitogen-activated protein kinase kinas (8QGY/2CLQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mitogen-activated protein kinase kinas (8QGY/2CLQ)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 25.842213999999995,
+        "ca_rmsd": 1.6692596666934545,
+        "radius": 34.35941274782139,
+        "box_size": 128,
+        "d2_known_pose": 14.968587875366211,
+        "d2_crlb": 14.130770683288574,
+        "information": 3.6807188987731934,
+        "saturation": 0.9201797246932983,
+        "n_floor": 679.2151489257812,
+        "n_marginal": 11641.1162109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015132918632756917,
+        "note": "Q99683 155 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BABtrans, chains B/B",
+        "d2_marginal": 0.2265184223651886,
+        "information_marginal": 0.214756041765213,
+        "n_matched": 259,
+        "identity": 1.0,
+        "shared_fraction": 0.30212831585441086,
+        "provenance": {
+          "accession": "Q99683",
+          "canonical_mass_kda": 154.537,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.968587875366211
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mitogen-activated protein kinase kinas (8QGY/2CLQ) | 26 | dihedral_cluster | 1.67 | 15 | 0.015 | 0.92 | 679 | 1.16e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mitogen-activated protein kinase kinas (8QGY/2CLQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:12:07+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d1f615a448.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Interferon regulatory factor 3 (IRF-3) (1ZOQ/1QWT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Interferon regulatory factor 3 (IRF-3) (1ZOQ/1QWT)",
+        "motion": "hinge",
+        "mass_kda": 19.646579999999997,
+        "ca_rmsd": 3.478064220611661,
+        "radius": 37.0718973076708,
+        "box_size": 128,
+        "d2_known_pose": 20.085973739624023,
+        "d2_crlb": 19.410520553588867,
+        "information": 3.848029851913452,
+        "saturation": 0.962007462978363,
+        "n_floor": 649.68310546875,
+        "n_marginal": 5106.6982421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.027515422566206763,
+        "note": "Q14653 47 kDa, dyndom, rotation 56.2 deg, chains B/B",
+        "d2_marginal": 0.5526740550994873,
+        "information_marginal": 0.48955315351486206,
+        "n_matched": 191,
+        "identity": 1.0,
+        "shared_fraction": 0.7966827180310326,
+        "provenance": {
+          "accession": "Q14653",
+          "canonical_mass_kda": 47.219,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 56.2
+        },
+        "d2_floor": 20.085973739624023
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Interferon regulatory factor 3 (IRF-3) (1ZOQ/1QWT) | 20 | hinge | 3.48 | 20.1 | 0.028 | 0.96 | 650 | 5.11e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Interferon regulatory factor 3 (IRF-3) (1ZOQ/1QWT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

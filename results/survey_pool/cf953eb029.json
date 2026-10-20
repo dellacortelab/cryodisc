@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:58:12+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/cf953eb029.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase (EC 2.7.10.2) (8GMB/8S9F)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase (EC 2.7.10.2) (8GMB/8S9F)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 24.863971999999997,
+        "ca_rmsd": 5.207230932748075,
+        "radius": 37.08595471155795,
+        "box_size": 128,
+        "d2_known_pose": 55.20476531982422,
+        "d2_crlb": 48.186004638671875,
+        "information": 3.998741626739502,
+        "saturation": 0.9996854066848755,
+        "n_floor": 625.1967163085938,
+        "n_marginal": 2507.588623046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023169992180545645,
+        "note": "Q3ZC95 76 kDa, kincore, no rotation angle (kincore reports none); states BLBplus -> BABtrans, chains A/B",
+        "d2_marginal": 1.2790939807891846,
+        "information_marginal": 0.9969737529754639,
+        "n_matched": 255,
+        "identity": 0.9764705882352941,
+        "shared_fraction": 0.6005129849310676,
+        "provenance": {
+          "accession": "Q3ZC95",
+          "canonical_mass_kda": 76.294,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 55.20476531982422
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase (EC 2.7.10.2) (8GMB/8S9F) | 25 | dihedral_cluster | 5.21 | 55.2 | 0.023 | 1.00* | 625 | 2.51e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase (EC 2.7.10.2) (8GMB/8S9F)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

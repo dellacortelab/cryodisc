@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:54:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0d280b78ee.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "N-succinylamino acid racemase (NSAAR) (2GGG/1XS2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "N-succinylamino acid racemase (NSAAR) (2GGG/1XS2)",
+        "motion": "shear",
+        "mass_kda": 36.448687,
+        "ca_rmsd": 1.089248182440047,
+        "radius": 36.67021878900822,
+        "box_size": 128,
+        "d2_known_pose": 8.44986629486084,
+        "d2_crlb": 7.2686309814453125,
+        "information": 3.1396193504333496,
+        "saturation": 0.7849048376083374,
+        "n_floor": 796.2748413085938,
+        "n_marginal": 25260.900390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012004492222747536,
+        "note": "Q9RYA6 41 kDa, dyndom, rotation 10.8 deg, chains C/B",
+        "d2_marginal": 0.10143635421991348,
+        "information_marginal": 0.09896717965602875,
+        "n_matched": 360,
+        "identity": 0.9944444444444445,
+        "shared_fraction": 0.9691336373202385,
+        "provenance": {
+          "accession": "Q9RYA6",
+          "canonical_mass_kda": 40.901,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.8
+        },
+        "d2_floor": 8.44986629486084
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| N-succinylamino acid racemase (NSAAR) (2GGG/1XS2) | 36 | shear | 1.09 | 8.45 | 0.012 | 0.78 | 796 | 2.53e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "N-succinylamino acid racemase (NSAAR) (2GGG/1XS2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

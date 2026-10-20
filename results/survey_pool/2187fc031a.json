@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:40:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2187fc031a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Nuclear factor of activated T-cells 5 (1IMH/1IMH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Nuclear factor of activated T-cells 5 (1IMH/1IMH)",
+        "motion": "no_contact",
+        "mass_kda": 28.859989999999996,
+        "ca_rmsd": 2.249762487472736,
+        "radius": 51.67776088244845,
+        "box_size": 128,
+        "d2_known_pose": 22.006729125976562,
+        "d2_crlb": 18.4460506439209,
+        "information": 3.8843963146209717,
+        "saturation": 0.9710990786552429,
+        "n_floor": 643.6006469726562,
+        "n_marginal": 19477.65625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006021661998052673,
+        "note": "O94916 166 kDa, dyndom, rotation 18.5 deg, chains C/D",
+        "d2_marginal": 0.13251708447933197,
+        "information_marginal": 0.12835220992565155,
+        "n_matched": 281,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "O94916",
+          "canonical_mass_kda": 165.763,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 18.5
+        },
+        "d2_floor": 22.006729125976562
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Nuclear factor of activated T-cells 5 (1IMH/1IMH) | 29 | no_contact | 2.25 | 22 | 0.006 | 0.97 | 644 | 1.95e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Nuclear factor of activated T-cells 5 (1IMH/1IMH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:54:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5d9265c313.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Macrophage colony-stimulating factor 1 (3LCD/8JOT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Macrophage colony-stimulating factor 1 (3LCD/8JOT)",
+        "motion": "dfg_flip",
+        "mass_kda": 28.592305999999997,
+        "ca_rmsd": 4.6147474500783,
+        "radius": 35.606928118912094,
+        "box_size": 128,
+        "d2_known_pose": 36.28269577026367,
+        "d2_crlb": 30.953872680664062,
+        "information": 3.984023094177246,
+        "saturation": 0.9960057735443115,
+        "n_floor": 627.5064086914062,
+        "n_marginal": 3371.565185546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024568699125597147,
+        "note": "P07333 108 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/A",
+        "d2_marginal": 0.8914186358451843,
+        "information_marginal": 0.7414954304695129,
+        "n_matched": 283,
+        "identity": 0.9893992932862191,
+        "shared_fraction": 0.9156118143459916,
+        "provenance": {
+          "accession": "P07333",
+          "canonical_mass_kda": 107.984,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 36.28269577026367
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Macrophage colony-stimulating factor 1 (3LCD/8JOT) | 29 | dfg_flip | 4.61 | 36.3 | 0.025 | 1.00* | 628 | 3.37e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Macrophage colony-stimulating factor 1 (3LCD/8JOT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

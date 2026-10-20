@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:14:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6a6203717d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Follicle-stimulating hormone receptor (8I2H/8I2G)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Follicle-stimulating hormone receptor (8I2H/8I2G)",
+        "motion": "activation",
+        "mass_kda": 37.83444899999999,
+        "ca_rmsd": 9.428866052278055,
+        "radius": 69.32106052906819,
+        "box_size": 128,
+        "d2_known_pose": 248.87594604492188,
+        "d2_crlb": 230.6436767578125,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2440.94287109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005317080052591198,
+        "note": "P23945 78 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 1.3232933282852173,
+        "information_marginal": 1.0241944789886475,
+        "n_matched": 568,
+        "identity": 0.9982394366197183,
+        "shared_fraction": 0.607930449533503,
+        "provenance": {
+          "accession": "P23945",
+          "canonical_mass_kda": 78.238,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 248.87594604492188
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Follicle-stimulating hormone receptor (8I2H/8I2G) | 38 | activation | 9.43 | 249 | 0.005 | 1.00* | 625 | 2.44e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Follicle-stimulating hormone receptor (8I2H/8I2G)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

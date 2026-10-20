@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:22:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/795685fb1a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fibroblast growth factor receptor 1 (F (5A46/8JQI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fibroblast growth factor receptor 1 (F (5A46/8JQI)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.332816999999995,
+        "ca_rmsd": 2.0303383859629176,
+        "radius": 37.036153681029134,
+        "box_size": 128,
+        "d2_known_pose": 14.0198392868042,
+        "d2_crlb": 13.268721580505371,
+        "information": 3.6325924396514893,
+        "saturation": 0.9081481099128723,
+        "n_floor": 688.2138061523438,
+        "n_marginal": 11067.6103515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01704103468013145,
+        "note": "P11362 92 kDa, kincore, no rotation angle (kincore reports none); states BLAplus -> BLBplus, chains B/B",
+        "d2_marginal": 0.23891256749629974,
+        "information_marginal": 0.2258843630552292,
+        "n_matched": 292,
+        "identity": 1.0,
+        "shared_fraction": 0.8993506493506493,
+        "provenance": {
+          "accession": "P11362",
+          "canonical_mass_kda": 91.868,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.0198392868042
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fibroblast growth factor receptor 1 (F (5A46/8JQI) | 29 | dihedral_cluster | 2.03 | 14 | 0.017 | 0.91 | 688 | 1.11e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fibroblast growth factor receptor 1 (F (5A46/8JQI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

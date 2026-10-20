@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:28:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/edf32bf528.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Focal adhesion kinase 1 (FADK 1) (EC 2 (2AEH/2AL6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Focal adhesion kinase 1 (FADK 1) (EC 2 (2AEH/2AL6)",
+        "motion": "shear",
+        "mass_kda": 35.33822899999999,
+        "ca_rmsd": 1.3308357120231573,
+        "radius": 40.57677866057799,
+        "box_size": 128,
+        "d2_known_pose": 13.242696762084961,
+        "d2_crlb": 12.493856430053711,
+        "information": 3.587482452392578,
+        "saturation": 0.8968706130981445,
+        "n_floor": 696.8674926757812,
+        "n_marginal": 19843.845703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009816381308577994,
+        "note": "Q00944 119 kDa, dyndom, rotation 8.6 deg, chains B/B",
+        "d2_marginal": 0.12999536097049713,
+        "information_marginal": 0.12598365545272827,
+        "n_matched": 331,
+        "identity": 1.0,
+        "shared_fraction": 0.9443661971830986,
+        "provenance": {
+          "accession": "Q00944",
+          "canonical_mass_kda": 119.207,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.6
+        },
+        "d2_floor": 13.242696762084961
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Focal adhesion kinase 1 (FADK 1) (EC 2 (2AEH/2AL6) | 35 | shear | 1.33 | 13.2 | 0.010 | 0.90 | 697 | 1.98e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Focal adhesion kinase 1 (FADK 1) (EC 2 (2AEH/2AL6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

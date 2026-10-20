@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/memorization_ladder.py",
+  "commit": "d0451f8-dirty",
+  "written_at": "2026-09-02T01:03:36+00:00",
+  "arguments": {
+    "source_job": "P53:J1",
+    "rungs": [
+      1000,
+      1414,
+      2828,
+      5657,
+      11314,
+      22627,
+      45255,
+      90510
+    ],
+    "held_out": 8000,
+    "symmetry": "C1",
+    "ssd_cache": false,
+    "host": "m9g-1-1-opa.rc.byu.edu",
+    "port": 39000,
+    "license_file": "~/.cryosparc/license_id",
+    "pool_dir": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder",
+    "out": "results/e20r6_ladder.json",
+    "seed": 0,
+    "draw_seed": 60000007
+  },
+  "result": {
+    "rungs": [
+      {
+        "n_particles": 1000,
+        "job": "J135",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J135",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J135/J135_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J135/J135_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n1000_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n1000_d60000007_halfB.cs",
+        "n_half_a": 500,
+        "n_half_b": 500,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 1414,
+        "job": "J143",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J143",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J143/J143_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J143/J143_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n1414_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n1414_d60000007_halfB.cs",
+        "n_half_a": 707,
+        "n_half_b": 707,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 2828,
+        "job": "J151",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J151",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J151/J151_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J151/J151_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n2828_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n2828_d60000007_halfB.cs",
+        "n_half_a": 1414,
+        "n_half_b": 1414,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 5657,
+        "job": "J159",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J159",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J159/J159_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J159/J159_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n5657_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n5657_d60000007_halfB.cs",
+        "n_half_a": 2829,
+        "n_half_b": 2828,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 11314,
+        "job": "J167",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J167",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J167/J167_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J167/J167_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n11314_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n11314_d60000007_halfB.cs",
+        "n_half_a": 5657,
+        "n_half_b": 5657,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 22627,
+        "job": "J175",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J175",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J175/J175_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J175/J175_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n22627_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n22627_d60000007_halfB.cs",
+        "n_half_a": 11314,
+        "n_half_b": 11313,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 45255,
+        "job": "J183",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J183",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J183/J183_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J183/J183_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n45255_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n45255_d60000007_halfB.cs",
+        "n_half_a": 22628,
+        "n_half_b": 22627,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 90510,
+        "job": "J191",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J191",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J191/J191_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J191/J191_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n90510_d60000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_n90510_d60000007_halfB.cs",
+        "n_half_a": 45255,
+        "n_half_b": 45255,
+        "symmetry": "C1"
+      }
+    ],
+    "held_out": {
+      "pool": "/home/bryceeh/nobackup/archive/pools/e20r6_ladder/e19_heldout.cs",
+      "n_particles": 8000
+    },
+    "n_rungs": 8
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:16:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/70f261a0bd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase JAK1 (EC 2.7.1 (6W8L/5KHW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase JAK1 (EC 2.7.1 (6W8L/5KHW)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.462829999999993,
+        "ca_rmsd": 0.6956164534366677,
+        "radius": 36.659775927445914,
+        "box_size": 128,
+        "d2_known_pose": 3.914825439453125,
+        "d2_crlb": 3.6574573516845703,
+        "information": 2.1743927001953125,
+        "saturation": 0.5435981750488281,
+        "n_floor": 1149.7464599609375,
+        "n_marginal": 186189.5625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003441350390040346,
+        "note": "P52332 133 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BLAminus, chains A/B",
+        "d2_marginal": 0.01347228605300188,
+        "information_marginal": 0.013427176512777805,
+        "n_matched": 276,
+        "identity": 1.0,
+        "shared_fraction": 0.9911071587372166,
+        "provenance": {
+          "accession": "P52332",
+          "canonical_mass_kda": 133.367,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 3.914825439453125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase JAK1 (EC 2.7.1 (6W8L/5KHW) | 29 | dihedral_cluster | 0.70 | 3.91 | 0.003 | 0.54 | 1.15e+03 | 1.86e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase JAK1 (EC 2.7.1 (6W8L/5KHW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

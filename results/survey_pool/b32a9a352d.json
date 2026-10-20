@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:22:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b32a9a352d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glucose-1-phosphate adenylyltransferas (1YP4/1YP2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glucose-1-phosphate adenylyltransferas (1YP4/1YP2)",
+        "motion": "unclassified",
+        "mass_kda": 43.30119199999999,
+        "ca_rmsd": 1.385373111687171,
+        "radius": 41.6287594063117,
+        "box_size": 128,
+        "d2_known_pose": 16.744314193725586,
+        "d2_crlb": 14.962966918945312,
+        "information": 3.7538702487945557,
+        "saturation": 0.9384675621986389,
+        "n_floor": 665.9793090820312,
+        "n_marginal": 31479.177734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004837746877635242,
+        "note": "P23509 57 kDa, dyndom, rotation 20.1 deg, chains D/B",
+        "d2_marginal": 0.08100475370883942,
+        "information_marginal": 0.07941757887601852,
+        "n_matched": 421,
+        "identity": 1.0,
+        "shared_fraction": 0.9906372697070371,
+        "provenance": {
+          "accession": "P23509",
+          "canonical_mass_kda": 57.24,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.1
+        },
+        "d2_floor": 16.744314193725586
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glucose-1-phosphate adenylyltransferas (1YP4/1YP2) | 43 | unclassified | 1.39 | 16.7 | 0.005 | 0.94 | 666 | 3.15e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glucose-1-phosphate adenylyltransferas (1YP4/1YP2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

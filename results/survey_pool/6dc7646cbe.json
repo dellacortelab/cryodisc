@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:49:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6dc7646cbe.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mitogen-activated protein kinase 9 (MA (8ELC/3NPC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mitogen-activated protein kinase 9 (MA (8ELC/3NPC)",
+        "motion": "dfg_flip",
+        "mass_kda": 37.892331999999996,
+        "ca_rmsd": 3.811323658723414,
+        "radius": 37.9657079079758,
+        "box_size": 128,
+        "d2_known_pose": 40.822471618652344,
+        "d2_crlb": 35.184547424316406,
+        "information": 3.9913699626922607,
+        "saturation": 0.9978424906730652,
+        "n_floor": 626.3514404296875,
+        "n_marginal": 6487.0380859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010386387967900547,
+        "note": "P45984 48 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/B",
+        "d2_marginal": 0.42399802803993225,
+        "information_marginal": 0.3853839039802551,
+        "n_matched": 355,
+        "identity": 0.9859154929577465,
+        "shared_fraction": 0.994107452339688,
+        "provenance": {
+          "accession": "P45984",
+          "canonical_mass_kda": 48.139,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 40.822471618652344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mitogen-activated protein kinase 9 (MA (8ELC/3NPC) | 38 | dfg_flip | 3.81 | 40.8 | 0.010 | 1.00* | 626 | 6.49e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mitogen-activated protein kinase 9 (MA (8ELC/3NPC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

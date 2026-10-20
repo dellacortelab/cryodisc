@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:27:20+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bacfd1918e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA mismatch repair protein MutL (1X9Z/1X9Z)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA mismatch repair protein MutL (1X9Z/1X9Z)",
+        "motion": "no_contact",
+        "mass_kda": 18.099317,
+        "ca_rmsd": 1.2618598839956856,
+        "radius": 46.88332428046489,
+        "box_size": 128,
+        "d2_known_pose": 6.481910228729248,
+        "d2_crlb": 6.095778942108154,
+        "information": 2.8190197944641113,
+        "saturation": 0.7047549486160278,
+        "n_floor": 886.8331298828125,
+        "n_marginal": 22460.494140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01765428832760476,
+        "note": "P23367 68 kDa, dyndom, rotation 11.3 deg, chains B/A",
+        "d2_marginal": 0.11443351209163666,
+        "information_marginal": 0.11130654811859131,
+        "n_matched": 179,
+        "identity": 1.0,
+        "shared_fraction": 0.9942279942279942,
+        "provenance": {
+          "accession": "P23367",
+          "canonical_mass_kda": 67.924,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.3
+        },
+        "d2_floor": 6.481910228729248
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA mismatch repair protein MutL (1X9Z/1X9Z) | 18 | no_contact | 1.26 | 6.48 | 0.018 | 0.70 | 887 | 2.25e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA mismatch repair protein MutL (1X9Z/1X9Z)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

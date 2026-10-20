@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:16:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d009c3383d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein smoothened (8CXO/6O3C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein smoothened (8CXO/6O3C)",
+        "motion": "activation",
+        "mass_kda": 35.60534499999999,
+        "ca_rmsd": 2.1185456286876088,
+        "radius": 46.89551027255872,
+        "box_size": 128,
+        "d2_known_pose": 23.558429718017578,
+        "d2_crlb": 22.113994598388672,
+        "information": 3.90716552734375,
+        "saturation": 0.9767913818359375,
+        "n_floor": 639.8500366210938,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P56726 87 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/A",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 344,
+        "identity": 1.0,
+        "shared_fraction": 0.6193858845096242,
+        "provenance": {
+          "accession": "P56726",
+          "canonical_mass_kda": 87.45,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 23.558429718017578
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein smoothened (8CXO/6O3C) | 36 | activation | 2.12 | 23.6 | -- | 0.98 | 640 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Protein smoothened (8CXO/6O3C)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Out of memory while trying to allocate 683.33MiB. [executable_name='jit__pose_log_ratio'] [tf-allocator-allocation-error='']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

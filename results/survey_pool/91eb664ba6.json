@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:33:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/91eb664ba6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Poly(A) polymerase (PAP) (EC 2.7.7.19) (2HHP/2O1P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Poly(A) polymerase (PAP) (EC 2.7.7.19) (2HHP/2O1P)",
+        "motion": "shear",
+        "mass_kda": 52.883441999999995,
+        "ca_rmsd": 1.7456212437128258,
+        "radius": 45.25980179358889,
+        "box_size": 128,
+        "d2_known_pose": 27.876676559448242,
+        "d2_crlb": 24.338573455810547,
+        "information": 3.9492576122283936,
+        "saturation": 0.9873144030570984,
+        "n_floor": 633.0303955078125,
+        "n_marginal": 10187.46875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0093557906050786,
+        "note": "P29468 65 kDa, dyndom, rotation 9.2 deg, chains A/B",
+        "d2_marginal": 0.2608083486557007,
+        "information_marginal": 0.24539953470230103,
+        "n_matched": 507,
+        "identity": 1.0,
+        "shared_fraction": 0.9608124253285544,
+        "provenance": {
+          "accession": "P29468",
+          "canonical_mass_kda": 64.552,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.2
+        },
+        "d2_floor": 27.876676559448242
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Poly(A) polymerase (PAP) (EC 2.7.7.19) (2HHP/2O1P) | 53 | shear | 1.75 | 27.9 | 0.009 | 0.99 | 633 | 1.02e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Poly(A) polymerase (PAP) (EC 2.7.7.19) (2HHP/2O1P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

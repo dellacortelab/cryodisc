@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:50:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/dc7087538a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Recombination endonuclease VII (Endo V (1E7D/1E7L)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Recombination endonuclease VII (Endo V (1E7D/1E7L)",
+        "motion": "no_contact",
+        "mass_kda": 16.854637999999998,
+        "ca_rmsd": 2.604390063362399,
+        "radius": 43.49889977677149,
+        "box_size": 128,
+        "d2_known_pose": 24.44205093383789,
+        "d2_crlb": 16.866146087646484,
+        "information": 3.918018102645874,
+        "saturation": 0.9795045256614685,
+        "n_floor": 638.0777587890625,
+        "n_marginal": 9470.5,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011531110496841355,
+        "note": "P13340 18 kDa, dyndom, rotation 17.5 deg, chains B/B",
+        "d2_marginal": 0.28184399008750916,
+        "information_marginal": 0.26397761702537537,
+        "n_matched": 157,
+        "identity": 0.9936305732484076,
+        "shared_fraction": 0.9992138364779874,
+        "provenance": {
+          "accession": "P13340",
+          "canonical_mass_kda": 18.144,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.5
+        },
+        "d2_floor": 24.44205093383789
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Recombination endonuclease VII (Endo V (1E7D/1E7L) | 17 | no_contact | 2.60 | 24.4 | 0.012 | 0.98 | 638 | 9.47e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Recombination endonuclease VII (Endo V (1E7D/1E7L)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

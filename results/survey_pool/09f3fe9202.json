@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:24:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/09f3fe9202.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine phenol-lyase (EC 4.1.99.2) (B (2EZ2/2EZ2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine phenol-lyase (EC 4.1.99.2) (B (2EZ2/2EZ2)",
+        "motion": "hinge",
+        "mass_kda": 47.84440599999999,
+        "ca_rmsd": 2.0482583291928935,
+        "radius": 35.72240415931427,
+        "box_size": 128,
+        "d2_known_pose": 37.4398307800293,
+        "d2_crlb": 32.15654754638672,
+        "information": 3.9863507747650146,
+        "saturation": 0.9965876936912537,
+        "n_floor": 627.1400146484375,
+        "n_marginal": 4633.44921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016472534437630693,
+        "note": "P31013 52 kDa, dyndom, rotation 16.1 deg, chains A/B",
+        "d2_marginal": 0.6167289018630981,
+        "information_marginal": 0.5395548939704895,
+        "n_matched": 456,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P31013",
+          "canonical_mass_kda": 51.5,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.1
+        },
+        "d2_floor": 37.4398307800293
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine phenol-lyase (EC 4.1.99.2) (B (2EZ2/2EZ2) | 48 | hinge | 2.05 | 37.4 | 0.016 | 1.00* | 627 | 4.63e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine phenol-lyase (EC 4.1.99.2) (B (2EZ2/2EZ2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

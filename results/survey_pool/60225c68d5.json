@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:31:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/60225c68d5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA topoisomerase 1 (EC 5.6.2.1) (DNA (1CYY/1CY9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA topoisomerase 1 (EC 5.6.2.1) (DNA (1CYY/1CY9)",
+        "motion": "unclassified",
+        "mass_kda": 25.543977999999996,
+        "ca_rmsd": 2.0720379676700276,
+        "radius": 41.07438305003384,
+        "box_size": 128,
+        "d2_known_pose": 21.380645751953125,
+        "d2_crlb": 19.519390106201172,
+        "information": 3.8736484050750732,
+        "saturation": 0.9684121012687683,
+        "n_floor": 645.3864135742188,
+        "n_marginal": 9315.1962890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013416562674849879,
+        "note": "P06612 97 kDa, dyndom, rotation 9.1 deg, chains B/A",
+        "d2_marginal": 0.2868547737598419,
+        "information_marginal": 0.26837867498397827,
+        "n_matched": 245,
+        "identity": 1.0,
+        "shared_fraction": 0.9792194627470857,
+        "provenance": {
+          "accession": "P06612",
+          "canonical_mass_kda": 97.35,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.1
+        },
+        "d2_floor": 21.380645751953125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA topoisomerase 1 (EC 5.6.2.1) (DNA (1CYY/1CY9) | 26 | unclassified | 2.07 | 21.4 | 0.013 | 0.97 | 645 | 9.32e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA topoisomerase 1 (EC 5.6.2.1) (DNA (1CYY/1CY9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

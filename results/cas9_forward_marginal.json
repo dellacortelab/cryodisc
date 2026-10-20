@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/assemble_fwdmarg.py",
+  "commit": "8ca72a8b-dirty",
+  "written_at": "2026-10-10T06:22:20+00:00",
+  "arguments": {
+    "glob": "results/cas9_fwdmarg_K*.json",
+    "out": "results/cas9_forward_marginal.json"
+  },
+  "result": {
+    "system": "cas9",
+    "d2_marginal_plateau": 8.787164688110352,
+    "converged": false,
+    "status": "largest-bank lower bound (add a larger K to confirm)",
+    "d2_known_pose": 13.628000000000002,
+    "pose_efficiency_plateau": 0.6447875468234774,
+    "d2_obs": 2.906,
+    "marginal_over_obs": 3.0238006497282695,
+    "finding": "inverse-crime marginal climbs toward the known-pose ceiling with bank size and sits well above d'^2_obs; pose marginalization in the perfect forward model does NOT account for the known-pose->obs gap, which is therefore a real-data effect (model mismatch + envelope)",
+    "curve_nodes_to_d2": {
+      "8064": 2.5806875228881836,
+      "33384": 5.261999130249023,
+      "64128": 6.5265350341796875,
+      "128592": 7.652576923370361,
+      "256200": 8.33859634399414,
+      "600032": 8.787164688110352
+    },
+    "n_banks": 6,
+    "per_bank": [
+      {
+        "nodes": 8064,
+        "d2_marginal": 2.5806875228881836,
+        "pose_efficiency": 0.1893665631705447
+      },
+      {
+        "nodes": 33384,
+        "d2_marginal": 5.261999130249023,
+        "pose_efficiency": 0.3861167544943515
+      },
+      {
+        "nodes": 64128,
+        "d2_marginal": 6.5265350341796875,
+        "pose_efficiency": 0.4789062983695103
+      },
+      {
+        "nodes": 128592,
+        "d2_marginal": 7.652576923370361,
+        "pose_efficiency": 0.5615333815211594
+      },
+      {
+        "nodes": 256200,
+        "d2_marginal": 8.33859634399414,
+        "pose_efficiency": 0.6118723469323554
+      },
+      {
+        "nodes": 600032,
+        "d2_marginal": 8.787164688110352,
+        "pose_efficiency": 0.6447875468234774
+      }
+    ],
+    "convention": "inverse-crime map forward sim at REAL recorded angles; centered (no shift marginalization); noise anchored so closed-form known-pose == target_known_pose"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:39:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/560467aa27.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cyclin-dependent kinase-like 2 (EC 2.7 (8S6I/4BBM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cyclin-dependent kinase-like 2 (EC 2.7 (8S6I/4BBM)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 28.508429999999993,
+        "ca_rmsd": 1.345752905991495,
+        "radius": 35.956329583774945,
+        "box_size": 128,
+        "d2_known_pose": 7.860773086547852,
+        "d2_crlb": 7.630370616912842,
+        "information": 3.05517315864563,
+        "saturation": 0.7637932896614075,
+        "n_floor": 818.2842407226562,
+        "n_marginal": 40423.1953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007989883152112593,
+        "note": "Q92772 56 kDa, kincore, no rotation angle (kincore reports none); states BLBminus -> BLAplus, chains A/B",
+        "d2_marginal": 0.06280665844678879,
+        "information_marginal": 0.06184568256139755,
+        "n_matched": 279,
+        "identity": 1.0,
+        "shared_fraction": 0.8786644951140065,
+        "provenance": {
+          "accession": "Q92772",
+          "canonical_mass_kda": 56.019,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 7.860773086547852
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cyclin-dependent kinase-like 2 (EC 2.7 (8S6I/4BBM) | 29 | dihedral_cluster | 1.35 | 7.86 | 0.008 | 0.76 | 818 | 4.04e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cyclin-dependent kinase-like 2 (EC 2.7 (8S6I/4BBM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

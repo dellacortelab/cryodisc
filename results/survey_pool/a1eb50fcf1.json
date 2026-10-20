@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:12:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a1eb50fcf1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA polymerase III subunit tau (EC 2.7 (1XXH/1XXH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA polymerase III subunit tau (EC 2.7 (1XXH/1XXH)",
+        "motion": "hinge",
+        "mass_kda": 37.405583,
+        "ca_rmsd": 5.348781195352019,
+        "radius": 59.551199249535294,
+        "box_size": 128,
+        "d2_known_pose": 123.75425720214844,
+        "d2_crlb": 113.31602478027344,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2817.92919921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008942139421633494,
+        "note": "P06710 71 kDa, dyndom, rotation 34.9 deg, chains H/G",
+        "d2_marginal": 1.1066278219223022,
+        "information_marginal": 0.8871762752532959,
+        "n_matched": 364,
+        "identity": 1.0,
+        "shared_fraction": 0.9926315789473684,
+        "provenance": {
+          "accession": "P06710",
+          "canonical_mass_kda": 71.138,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 34.9
+        },
+        "d2_floor": 123.75425720214844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA polymerase III subunit tau (EC 2.7 (1XXH/1XXH) | 37 | hinge | 5.35 | 124 | 0.009 | 1.00* | 625 | 2.82e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA polymerase III subunit tau (EC 2.7 (1XXH/1XXH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

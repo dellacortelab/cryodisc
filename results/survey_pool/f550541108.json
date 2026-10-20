@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:57:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f550541108.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ATP-dependent molecular chaperone HSP8 (2CG9/2CGE)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ATP-dependent molecular chaperone HSP8 (2CG9/2CGE)",
+        "motion": "hinge",
+        "mass_kda": 40.94326099999999,
+        "ca_rmsd": 3.6135230193935426,
+        "radius": 51.17347423830575,
+        "box_size": 128,
+        "d2_known_pose": 64.70834350585938,
+        "d2_crlb": 61.74968719482422,
+        "information": 3.9996418952941895,
+        "saturation": 0.9999104738235474,
+        "n_floor": 625.0559692382812,
+        "n_marginal": 13148.8828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003080376845777704,
+        "note": "P02829 81 kDa, dyndom, rotation 19.7 deg, chains A/A",
+        "d2_marginal": 0.19932608306407928,
+        "information_marginal": 0.19013023376464844,
+        "n_matched": 383,
+        "identity": 1.0,
+        "shared_fraction": 0.6329473898029657,
+        "provenance": {
+          "accession": "P02829",
+          "canonical_mass_kda": 81.406,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 19.7
+        },
+        "d2_floor": 64.70834350585938
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ATP-dependent molecular chaperone HSP8 (2CG9/2CGE) | 41 | hinge | 3.61 | 64.7 | 0.003 | 1.00* | 625 | 1.31e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ATP-dependent molecular chaperone HSP8 (2CG9/2CGE)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

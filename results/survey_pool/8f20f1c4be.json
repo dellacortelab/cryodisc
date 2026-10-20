@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:16:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8f20f1c4be.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Holliday junction branch migration com (1HQC/1IXR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Holliday junction branch migration com (1HQC/1IXR)",
+        "motion": "no_contact",
+        "mass_kda": 31.651693999999996,
+        "ca_rmsd": 2.5961450169393663,
+        "radius": 47.73541014733978,
+        "box_size": 128,
+        "d2_known_pose": 36.06874084472656,
+        "d2_crlb": 32.594539642333984,
+        "information": 3.983550548553467,
+        "saturation": 0.9958876371383667,
+        "n_floor": 627.5808715820312,
+        "n_marginal": 10204.431640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007218121629104988,
+        "note": "Q5SL87 36 kDa, dyndom, rotation 31.9 deg, chains A/C",
+        "d2_marginal": 0.2603485584259033,
+        "information_marginal": 0.24499160051345825,
+        "n_matched": 308,
+        "identity": 0.9935064935064936,
+        "shared_fraction": 0.9792767167817961,
+        "provenance": {
+          "accession": "Q5SL87",
+          "canonical_mass_kda": 35.974,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 31.9
+        },
+        "d2_floor": 36.06874084472656
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Holliday junction branch migration com (1HQC/1IXR) | 32 | no_contact | 2.60 | 36.1 | 0.007 | 1.00* | 628 | 1.02e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Holliday junction branch migration com (1HQC/1IXR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

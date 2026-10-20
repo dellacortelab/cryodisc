@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:41:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/68c7d78a0d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Phosphoenolpyruvate carboxykinase [GTP (2FAH/2FAF)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Phosphoenolpyruvate carboxykinase [GTP (2FAH/2FAF)",
+        "motion": "shear",
+        "mass_kda": 61.493455,
+        "ca_rmsd": 1.5530281140569353,
+        "radius": 40.360696769950636,
+        "box_size": 128,
+        "d2_known_pose": 23.84395980834961,
+        "d2_crlb": 22.185277938842773,
+        "information": 3.910824775695801,
+        "saturation": 0.9777061939239502,
+        "n_floor": 639.2514038085938,
+        "n_marginal": 20129.658203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005372126393337164,
+        "note": "P21642 71 kDa, dyndom, rotation 9.5 deg, chains A/B",
+        "d2_marginal": 0.12809276580810547,
+        "information_marginal": 0.12419486045837402,
+        "n_matched": 596,
+        "identity": 1.0,
+        "shared_fraction": 0.9824635537713924,
+        "provenance": {
+          "accession": "P21642",
+          "canonical_mass_kda": 71.106,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.5
+        },
+        "d2_floor": 23.84395980834961
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Phosphoenolpyruvate carboxykinase [GTP (2FAH/2FAF) | 61 | shear | 1.55 | 23.8 | 0.005 | 0.98 | 639 | 2.01e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Phosphoenolpyruvate carboxykinase [GTP (2FAH/2FAF)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

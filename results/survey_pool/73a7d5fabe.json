@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:32:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/73a7d5fabe.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Gag-Pol polyprotein [Cleaved into: Mat (1C0M/1C0M)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Gag-Pol polyprotein [Cleaved into: Mat (1C0M/1C0M)",
+        "motion": "hinge",
+        "mass_kda": 22.390098,
+        "ca_rmsd": 14.040845392501273,
+        "radius": 51.32832431751087,
+        "box_size": 128,
+        "d2_known_pose": 267.131103515625,
+        "d2_crlb": 241.97128295898438,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 1789.2222900390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007462444815426136,
+        "note": "P03354 174 kDa, dyndom, rotation 164.0 deg, chains D/C",
+        "d2_marginal": 1.9934511184692383,
+        "information_marginal": 1.3972551822662354,
+        "n_matched": 216,
+        "identity": 1.0,
+        "shared_fraction": 0.9748139668002289,
+        "provenance": {
+          "accession": "P03354",
+          "canonical_mass_kda": 173.881,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 164.0
+        },
+        "d2_floor": 267.131103515625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Gag-Pol polyprotein [Cleaved into: Mat (1C0M/1C0M) | 22 | hinge | 14.04 | 267 | 0.007 | 1.00* | 625 | 1.79e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Gag-Pol polyprotein [Cleaved into: Mat (1C0M/1C0M)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

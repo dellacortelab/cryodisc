@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:06:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d24bfb2324.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase 10 (EC (7QGP/6I2Y)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase 10 (EC (7QGP/6I2Y)",
+        "motion": "dfg_flip",
+        "mass_kda": 25.600208999999996,
+        "ca_rmsd": 5.989400773008785,
+        "radius": 43.30495782072863,
+        "box_size": 128,
+        "d2_known_pose": 49.386192321777344,
+        "d2_crlb": 40.62279510498047,
+        "information": 3.99726939201355,
+        "saturation": 0.9993173480033875,
+        "n_floor": 625.4269409179688,
+        "n_marginal": 3729.300048828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016029835932198047,
+        "note": "O94804 112 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/B",
+        "d2_marginal": 0.7916525602340698,
+        "information_marginal": 0.6703671216964722,
+        "n_matched": 272,
+        "identity": 1.0,
+        "shared_fraction": 0.8879231473010064,
+        "provenance": {
+          "accession": "O94804",
+          "canonical_mass_kda": 112.135,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 49.386192321777344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase 10 (EC (7QGP/6I2Y) | 26 | dfg_flip | 5.99 | 49.4 | 0.016 | 1.00* | 625 | 3.73e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase 10 (EC (7QGP/6I2Y)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:29:15+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1da0cbea3e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fibroblast growth factor receptor 3 (F (6PNX/4K33)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fibroblast growth factor receptor 3 (F (6PNX/4K33)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.895225,
+        "ca_rmsd": 2.3701402660027515,
+        "radius": 38.37542603670951,
+        "box_size": 128,
+        "d2_known_pose": 26.103139877319336,
+        "d2_crlb": 24.716915130615234,
+        "information": 3.9350366592407227,
+        "saturation": 0.9837591648101807,
+        "n_floor": 635.318115234375,
+        "n_marginal": 6749.19482421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01555458820912227,
+        "note": "P22607 88 kDa, kincore, no rotation angle (kincore reports none); states BLAplus -> BLAminus, chains B/A",
+        "d2_marginal": 0.4060235917568207,
+        "information_marginal": 0.3704145550727844,
+        "n_matched": 287,
+        "identity": 0.9930313588850174,
+        "shared_fraction": 0.9732988802756245,
+        "provenance": {
+          "accession": "P22607",
+          "canonical_mass_kda": 87.71,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 26.103139877319336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fibroblast growth factor receptor 3 (F (6PNX/4K33) | 30 | dihedral_cluster | 2.37 | 26.1 | 0.016 | 0.98 | 635 | 6.75e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fibroblast growth factor receptor 3 (F (6PNX/4K33)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

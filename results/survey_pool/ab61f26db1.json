@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:16:30+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ab61f26db1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA helicase II (EC 5.6.2.4) (DNA 3'-5 (2IS2/2IS4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA helicase II (EC 5.6.2.4) (DNA 3'-5 (2IS2/2IS4)",
+        "motion": "hinge",
+        "mass_kda": 64.42634,
+        "ca_rmsd": 3.3085429566000357,
+        "radius": 47.821899063278444,
+        "box_size": 128,
+        "d2_known_pose": 86.48872375488281,
+        "d2_crlb": 81.53641510009766,
+        "information": 3.9999794960021973,
+        "saturation": 0.9999948740005493,
+        "n_floor": 625.003173828125,
+        "n_marginal": 4711.15185546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006997646515602602,
+        "note": "P03018 82 kDa, dyndom, rotation 20.3 deg, chains B/A",
+        "d2_marginal": 0.6052175164222717,
+        "information_marginal": 0.5306558012962341,
+        "n_matched": 629,
+        "identity": 1.0,
+        "shared_fraction": 0.9630434782608696,
+        "provenance": {
+          "accession": "P03018",
+          "canonical_mass_kda": 81.99,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.3
+        },
+        "d2_floor": 86.48872375488281
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA helicase II (EC 5.6.2.4) (DNA 3'-5 (2IS2/2IS4) | 64 | hinge | 3.31 | 86.5 | 0.007 | 1.00* | 625 | 4.71e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA helicase II (EC 5.6.2.4) (DNA 3'-5 (2IS2/2IS4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:31:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/86d97b0ad6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HTH-type transcriptional regulator Cue (1Q06/1Q06)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HTH-type transcriptional regulator Cue (1Q06/1Q06)",
+        "motion": "mixed",
+        "mass_kda": 12.759897999999998,
+        "ca_rmsd": 1.7504310255682427,
+        "radius": 44.38231605954068,
+        "box_size": 128,
+        "d2_known_pose": 9.43838882446289,
+        "d2_crlb": 6.894803524017334,
+        "information": 3.2632992267608643,
+        "saturation": 0.8158248066902161,
+        "n_floor": 766.0958862304688,
+        "n_marginal": 22813.185546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01193173167890084,
+        "note": "P0A9G4 15 kDa, dyndom, rotation 13.9 deg, chains B/A",
+        "d2_marginal": 0.11261632293462753,
+        "information_marginal": 0.10958574712276459,
+        "n_matched": 121,
+        "identity": 1.0,
+        "shared_fraction": 0.9649298597194389,
+        "provenance": {
+          "accession": "P0A9G4",
+          "canonical_mass_kda": 15.235,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 13.9
+        },
+        "d2_floor": 9.43838882446289
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HTH-type transcriptional regulator Cue (1Q06/1Q06) | 13 | mixed | 1.75 | 9.44 | 0.012 | 0.82 | 766 | 2.28e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HTH-type transcriptional regulator Cue (1Q06/1Q06)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

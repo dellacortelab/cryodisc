@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:22:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1ec3d7cfe3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "tRNA (guanine-N(1)-)-methyltransferase (1UAJ/1UAL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "tRNA (guanine-N(1)-)-methyltransferase (1UAJ/1UAL)",
+        "motion": "hinge",
+        "mass_kda": 24.51956,
+        "ca_rmsd": 0.9964591210477789,
+        "radius": 42.06364793687776,
+        "box_size": 128,
+        "d2_known_pose": 4.3501811027526855,
+        "d2_crlb": 4.009877681732178,
+        "information": 2.3084523677825928,
+        "saturation": 0.5771130919456482,
+        "n_floor": 1082.9766845703125,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P43912 28 kDa, dyndom, rotation 6.9 deg, chains A/A",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 235,
+        "identity": 1.0,
+        "shared_fraction": 0.9651948051948052,
+        "provenance": {
+          "accession": "P43912",
+          "canonical_mass_kda": 27.543,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.9
+        },
+        "d2_floor": 4.3501811027526855
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| tRNA (guanine-N(1)-)-methyltransferase (1UAJ/1UAL) | 25 | hinge | 1.00 | 4.35 | -- | 0.58 | 1.08e+03 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "tRNA (guanine-N(1)-)-methyltransferase (1UAJ/1UAL)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Out of memory while trying to allocate 457.10MiB. [tf-allocator-allocation-error=''] [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

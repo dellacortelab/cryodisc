@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:56:20+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c0de80d0a0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "N-acetyl-D-glucosamine kinase (N-acety (2CH6/2CH6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "N-acetyl-D-glucosamine kinase (N-acety (2CH6/2CH6)",
+        "motion": "hinge",
+        "mass_kda": 31.229665999999998,
+        "ca_rmsd": 3.524279786638045,
+        "radius": 41.05532215515867,
+        "box_size": 128,
+        "d2_known_pose": 50.052513122558594,
+        "d2_crlb": 43.79686737060547,
+        "information": 3.9975016117095947,
+        "saturation": 0.9993754029273987,
+        "n_floor": 625.390625,
+        "n_marginal": 4415.42236328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013015981445268587,
+        "note": "Q9UJ70 37 kDa, dyndom, rotation 22.4 deg, chains D/B",
+        "d2_marginal": 0.6514825820922852,
+        "information_marginal": 0.5661972761154175,
+        "n_matched": 310,
+        "identity": 1.0,
+        "shared_fraction": 0.9039785768936496,
+        "provenance": {
+          "accession": "Q9UJ70",
+          "canonical_mass_kda": 37.376,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.4
+        },
+        "d2_floor": 50.052513122558594
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| N-acetyl-D-glucosamine kinase (N-acety (2CH6/2CH6) | 31 | hinge | 3.52 | 50.1 | 0.013 | 1.00* | 625 | 4.42e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "N-acetyl-D-glucosamine kinase (N-acety (2CH6/2CH6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

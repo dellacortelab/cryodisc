@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:40:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/58520b33d9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "TRAF2 and NCK-interacting protein kina (2X7F/5D7A)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "TRAF2 and NCK-interacting protein kina (2X7F/5D7A)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 20.196730999999996,
+        "ca_rmsd": 1.1712644596359232,
+        "radius": 34.3615228161051,
+        "box_size": 128,
+        "d2_known_pose": 4.943058013916016,
+        "d2_crlb": 4.756774425506592,
+        "information": 2.4726123809814453,
+        "saturation": 0.6181530952453613,
+        "n_floor": 1011.076416015625,
+        "n_marginal": 55054.55078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009291177204084681,
+        "note": "Q9UKE5 155 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BLBplus, chains D/C",
+        "d2_marginal": 0.04592682793736458,
+        "information_marginal": 0.04540950804948807,
+        "n_matched": 234,
+        "identity": 1.0,
+        "shared_fraction": 0.665361183637946,
+        "provenance": {
+          "accession": "Q9UKE5",
+          "canonical_mass_kda": 154.943,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 4.943058013916016
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| TRAF2 and NCK-interacting protein kina (2X7F/5D7A) | 20 | dihedral_cluster | 1.17 | 4.94 | 0.009 | 0.62 | 1.01e+03 | 5.51e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "TRAF2 and NCK-interacting protein kina (2X7F/5D7A)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

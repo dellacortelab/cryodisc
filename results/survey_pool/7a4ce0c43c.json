@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:21:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7a4ce0c43c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adenylate kinase 4, mitochondrial (EC (2BBW/2BBW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adenylate kinase 4, mitochondrial (EC (2BBW/2BBW)",
+        "motion": "hinge",
+        "mass_kda": 22.242023999999997,
+        "ca_rmsd": 1.538765527353138,
+        "radius": 39.29944553314749,
+        "box_size": 128,
+        "d2_known_pose": 11.024654388427734,
+        "d2_crlb": 9.744475364685059,
+        "information": 3.423243284225464,
+        "saturation": 0.855810821056366,
+        "n_floor": 730.3016357421875,
+        "n_marginal": 24286.373046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009579504000064704,
+        "note": "P27144 25 kDa, dyndom, rotation 19.1 deg, chains A/B",
+        "d2_marginal": 0.10561072081327438,
+        "information_marginal": 0.10293838381767273,
+        "n_matched": 220,
+        "identity": 1.0,
+        "shared_fraction": 0.9843023255813953,
+        "provenance": {
+          "accession": "P27144",
+          "canonical_mass_kda": 25.268,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 19.1
+        },
+        "d2_floor": 11.024654388427734
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adenylate kinase 4, mitochondrial (EC (2BBW/2BBW) | 22 | hinge | 1.54 | 11 | 0.010 | 0.86 | 730 | 2.43e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adenylate kinase 4, mitochondrial (EC (2BBW/2BBW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

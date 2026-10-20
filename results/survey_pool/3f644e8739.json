@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:04:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3f644e8739.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Methanol--corrinoid protein (Methanol: (2I2X/2I2X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Methanol--corrinoid protein (Methanol: (2I2X/2I2X)",
+        "motion": "mixed",
+        "mass_kda": 25.866185999999995,
+        "ca_rmsd": 1.0452454111512057,
+        "radius": 48.20542056117892,
+        "box_size": 128,
+        "d2_known_pose": 4.999901294708252,
+        "d2_crlb": 4.141427993774414,
+        "information": 2.4873409271240234,
+        "saturation": 0.6218352317810059,
+        "n_floor": 1005.0894775390625,
+        "n_marginal": 142704.546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003519178363792544,
+        "note": "Q46EH4 28 kDa, dyndom, rotation 9.6 deg, chains J/B",
+        "d2_marginal": 0.017595544457435608,
+        "information_marginal": 0.01751871407032013,
+        "n_matched": 258,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q46EH4",
+          "canonical_mass_kda": 27.857,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.6
+        },
+        "d2_floor": 4.999901294708252
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Methanol--corrinoid protein (Methanol: (2I2X/2I2X) | 26 | mixed | 1.05 | 5 | 0.004 | 0.62 | 1.01e+03 | 1.43e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Methanol--corrinoid protein (Methanol: (2I2X/2I2X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

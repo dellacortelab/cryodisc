@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:49:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7b92fa9f4d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "2-C-methyl-D-erythritol 4-phosphate cy (1INI/1VGT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "2-C-methyl-D-erythritol 4-phosphate cy (1INI/1VGT)",
+        "motion": "hinge",
+        "mass_kda": 20.584861999999998,
+        "ca_rmsd": 1.1652253561868582,
+        "radius": 35.91925743618825,
+        "box_size": 128,
+        "d2_known_pose": 6.266139984130859,
+        "d2_crlb": 5.916015625,
+        "information": 2.7763612270355225,
+        "saturation": 0.6940903067588806,
+        "n_floor": 900.459228515625,
+        "n_marginal": 35360.43359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011483524516081214,
+        "note": "Q46893 26 kDa, dyndom, rotation 8.7 deg, chains A/A",
+        "d2_marginal": 0.07195737212896347,
+        "information_marginal": 0.0707004964351654,
+        "n_matched": 207,
+        "identity": 1.0,
+        "shared_fraction": 0.9108391608391608,
+        "provenance": {
+          "accession": "Q46893",
+          "canonical_mass_kda": 25.737,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.7
+        },
+        "d2_floor": 6.266139984130859
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 2-C-methyl-D-erythritol 4-phosphate cy (1INI/1VGT) | 21 | hinge | 1.17 | 6.27 | 0.011 | 0.69 | 900 | 3.54e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "2-C-methyl-D-erythritol 4-phosphate cy (1INI/1VGT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:18:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/be3ad5f274.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Bifunctional protein GlmU [Includes: U (1HV9/1FWY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Bifunctional protein GlmU [Includes: U (1HV9/1FWY)",
+        "motion": "unclassified",
+        "mass_kda": 32.670162999999995,
+        "ca_rmsd": 2.1744791598729005,
+        "radius": 42.38170737848362,
+        "box_size": 128,
+        "d2_known_pose": 23.820877075195312,
+        "d2_crlb": 21.449010848999023,
+        "information": 3.9105348587036133,
+        "saturation": 0.9776337146759033,
+        "n_floor": 639.2987670898438,
+        "n_marginal": 9460.7099609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011844847215549684,
+        "note": "P0ACC7 49 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains B/B",
+        "d2_marginal": 0.2821546494960785,
+        "information_marginal": 0.264250785112381,
+        "n_matched": 324,
+        "identity": 1.0,
+        "shared_fraction": 0.7293388429752066,
+        "provenance": {
+          "accession": "P0ACC7",
+          "canonical_mass_kda": 49.19,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 23.820877075195312
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Bifunctional protein GlmU [Includes: U (1HV9/1FWY) | 33 | unclassified | 2.17 | 23.8 | 0.012 | 0.98 | 639 | 9.46e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Bifunctional protein GlmU [Includes: U (1HV9/1FWY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

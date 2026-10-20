@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:08:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d5e94a43fe.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "4-hydroxy-tetrahydrodipicolinate reduc (1YL5/1YL7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "4-hydroxy-tetrahydrodipicolinate reduc (1YL5/1YL7)",
+        "motion": "no_contact",
+        "mass_kda": 23.758616999999997,
+        "ca_rmsd": 1.4329105529095176,
+        "radius": 40.763314728281756,
+        "box_size": 128,
+        "d2_known_pose": 8.067510604858398,
+        "d2_crlb": 7.2189130783081055,
+        "information": 3.085808753967285,
+        "saturation": 0.7714521884918213,
+        "n_floor": 810.160400390625,
+        "n_marginal": 25501.4609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012451949890524125,
+        "note": "P9WP23 26 kDa, dyndom, rotation 13.4 deg, chains B/D",
+        "d2_marginal": 0.10045623779296875,
+        "information_marginal": 0.0980335995554924,
+        "n_matched": 245,
+        "identity": 0.9959183673469387,
+        "shared_fraction": 0.9928532160527762,
+        "provenance": {
+          "accession": "P9WP23",
+          "canonical_mass_kda": 25.733,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 13.4
+        },
+        "d2_floor": 8.067510604858398
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 4-hydroxy-tetrahydrodipicolinate reduc (1YL5/1YL7) | 24 | no_contact | 1.43 | 8.07 | 0.012 | 0.77 | 810 | 2.55e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "4-hydroxy-tetrahydrodipicolinate reduc (1YL5/1YL7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

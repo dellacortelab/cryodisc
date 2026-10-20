@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:34:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f3f57e6645.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fimbrin-1 (AtFIM1) (Fimbrin1) (1PXY/1PXY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fimbrin-1 (AtFIM1) (Fimbrin1) (1PXY/1PXY)",
+        "motion": "hinge",
+        "mass_kda": 48.809056999999996,
+        "ca_rmsd": 4.068058369013241,
+        "radius": 50.599710498017615,
+        "box_size": 128,
+        "d2_known_pose": 56.828880310058594,
+        "d2_crlb": 51.58159637451172,
+        "information": 3.998985767364502,
+        "saturation": 0.9997464418411255,
+        "n_floor": 625.1585693359375,
+        "n_marginal": 8438.1806640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005610855286342873,
+        "note": "Q7G188 77 kDa, dyndom, rotation 47.3 deg, chains B/A",
+        "d2_marginal": 0.31885862350463867,
+        "information_marginal": 0.2962723970413208,
+        "n_matched": 463,
+        "identity": 1.0,
+        "shared_fraction": 0.9767993672554706,
+        "provenance": {
+          "accession": "Q7G188",
+          "canonical_mass_kda": 76.928,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 47.3
+        },
+        "d2_floor": 56.828880310058594
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fimbrin-1 (AtFIM1) (Fimbrin1) (1PXY/1PXY) | 49 | hinge | 4.07 | 56.8 | 0.006 | 1.00* | 625 | 8.44e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fimbrin-1 (AtFIM1) (Fimbrin1) (1PXY/1PXY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

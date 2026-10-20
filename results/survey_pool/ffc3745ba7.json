@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:28:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ffc3745ba7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Myosin heavy chain, skeletal muscle, a (2MYS/1O1B)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Myosin heavy chain, skeletal muscle, a (2MYS/1O1B)",
+        "motion": "unclassified",
+        "mass_kda": 79.500261,
+        "ca_rmsd": 8.5664857828505,
+        "radius": 116.20810721061007,
+        "box_size": 128,
+        "d2_known_pose": 364.97015380859375,
+        "d2_crlb": 327.7797546386719,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 16803.44921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00042301078638461046,
+        "note": "P13538 223 kDa, dyndom, rotation 37.0 deg, chains A/D",
+        "d2_marginal": 0.15438631176948547,
+        "information_marginal": 0.1487789750099182,
+        "n_matched": 755,
+        "identity": 1.0,
+        "shared_fraction": 0.9544589019358933,
+        "provenance": {
+          "accession": "P13538",
+          "canonical_mass_kda": 223.145,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 37.0
+        },
+        "d2_floor": 364.97015380859375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Myosin heavy chain, skeletal muscle, a (2MYS/1O1B) | 80 | unclassified | 8.57 | 365 | 0.000 | 1.00* | 625 | 1.68e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Myosin heavy chain, skeletal muscle, a (2MYS/1O1B)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

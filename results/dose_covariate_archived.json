@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/dose_covariate.py",
+  "commit": "ebb3d07e-dirty",
+  "written_at": "2026-09-26T23:32:58+00:00",
+  "arguments": {
+    "survey": "results/_archive/kc_survey_multidose_2026-09-20/*.json",
+    "pool": "results/survey_pool/*.json",
+    "panels": [
+      "data/survey_*.json"
+    ],
+    "out": "results/dose_covariate_archived.json"
+  },
+  "result": {
+    "dose_exponent": 0.20828528632107857,
+    "dose_exponent_err": 0.01776661504326889,
+    "reference_dose": 40.0,
+    "dose_min": 20.028644876558108,
+    "dose_max": 79.99989450507573,
+    "span_across_range": 1.3343527480729256,
+    "interaction": {
+      "mass_exp_at_ref": 1.017372219607173,
+      "coef": -0.2057465235356374,
+      "coef_err": 0.032689176939679744,
+      "z": -6.2940258151893715,
+      "mass_exp_low": 1.1596903739424103,
+      "mass_exp_high": 0.8747598682237885
+    },
+    "n_pairs": 1803,
+    "n_attempted": 1880,
+    "n_converged": 1874
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:49:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d1f3bbe1c3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "cAMP-dependent protein kinase catalyti (9NFS/9DC6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "cAMP-dependent protein kinase catalyti (9NFS/9DC6)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 43.587458,
+        "ca_rmsd": 2.338239140710311,
+        "radius": 47.45842573560022,
+        "box_size": 128,
+        "d2_known_pose": 37.579132080078125,
+        "d2_crlb": 35.801700592041016,
+        "information": 3.9866065979003906,
+        "saturation": 0.9966516494750977,
+        "n_floor": 627.0997314453125,
+        "n_marginal": 6543.71630859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011175855406996385,
+        "note": "P00517 41 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains B/B",
+        "d2_marginal": 0.41997894644737244,
+        "information_marginal": 0.3820459246635437,
+        "n_matched": 401,
+        "identity": 1.0,
+        "shared_fraction": 0.9961019490254872,
+        "provenance": {
+          "accession": "P00517",
+          "canonical_mass_kda": 40.62,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 37.579132080078125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| cAMP-dependent protein kinase catalyti (9NFS/9DC6) | 44 | dihedral_cluster | 2.34 | 37.6 | 0.011 | 1.00* | 627 | 6.54e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "cAMP-dependent protein kinase catalyti (9NFS/9DC6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

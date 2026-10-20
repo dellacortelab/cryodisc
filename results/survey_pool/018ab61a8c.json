@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:04:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/018ab61a8c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Recombinase cre (1Q3U/1F44)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Recombinase cre (1Q3U/1F44)",
+        "motion": "no_contact",
+        "mass_kda": 32.998825999999994,
+        "ca_rmsd": 3.3467238699510107,
+        "radius": 43.81189637365008,
+        "box_size": 128,
+        "d2_known_pose": 39.721370697021484,
+        "d2_crlb": 36.0048713684082,
+        "information": 3.9899845123291016,
+        "saturation": 0.9974961280822754,
+        "n_floor": 626.5689086914062,
+        "n_marginal": 9704.552734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006913508553817692,
+        "note": "P06956 39 kDa, dyndom, rotation 8.9 deg, chains F/A",
+        "d2_marginal": 0.27461403608322144,
+        "information_marginal": 0.25761106610298157,
+        "n_matched": 314,
+        "identity": 0.9968152866242038,
+        "shared_fraction": 0.9776470588235294,
+        "provenance": {
+          "accession": "P06956",
+          "canonical_mass_kda": 38.54,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.9
+        },
+        "d2_floor": 39.721370697021484
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Recombinase cre (1Q3U/1F44) | 33 | no_contact | 3.35 | 39.7 | 0.007 | 1.00* | 627 | 9.7e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Recombinase cre (1Q3U/1F44)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

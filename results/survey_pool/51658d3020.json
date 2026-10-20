@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:37:47+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/51658d3020.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Thyrotropin receptor (Thyroid-stimulat (7T9M/7UTZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Thyrotropin receptor (Thyroid-stimulat (7T9M/7UTZ)",
+        "motion": "activation",
+        "mass_kda": 57.93181599999999,
+        "ca_rmsd": 9.194591326463847,
+        "radius": 66.11279269075878,
+        "box_size": 128,
+        "d2_known_pose": 370.45794677734375,
+        "d2_crlb": 342.37384033203125,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2554.1240234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0033739978126380347,
+        "note": "P16473 87 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/R",
+        "d2_marginal": 1.2499243021011353,
+        "information_marginal": 0.9788092374801636,
+        "n_matched": 555,
+        "identity": 1.0,
+        "shared_fraction": 0.9311586528277908,
+        "provenance": {
+          "accession": "P16473",
+          "canonical_mass_kda": 86.844,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 370.45794677734375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Thyrotropin receptor (Thyroid-stimulat (7T9M/7UTZ) | 58 | activation | 9.19 | 370 | 0.003 | 1.00* | 625 | 2.55e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Thyrotropin receptor (Thyroid-stimulat (7T9M/7UTZ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

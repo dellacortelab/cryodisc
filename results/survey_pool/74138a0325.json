@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:20:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/74138a0325.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "G protein-coupled receptor 6 (Sphingos (8T1V/8TYW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "G protein-coupled receptor 6 (Sphingos (8T1V/8TYW)",
+        "motion": "activation",
+        "mass_kda": 24.968232999999998,
+        "ca_rmsd": 2.3346204345656365,
+        "radius": 33.90157929404421,
+        "box_size": 128,
+        "d2_known_pose": 25.183834075927734,
+        "d2_crlb": 23.985000610351562,
+        "information": 3.926121234893799,
+        "saturation": 0.9815303087234497,
+        "n_floor": 636.7607421875,
+        "n_marginal": 9870.794921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010709243521947302,
+        "note": "P46095 38 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/A",
+        "d2_marginal": 0.2696998119354248,
+        "information_marginal": 0.2532724142074585,
+        "n_matched": 256,
+        "identity": 0.98046875,
+        "shared_fraction": 0.7225806451612903,
+        "provenance": {
+          "accession": "P46095",
+          "canonical_mass_kda": 37.881,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 25.183834075927734
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| G protein-coupled receptor 6 (Sphingos (8T1V/8TYW) | 25 | activation | 2.33 | 25.2 | 0.011 | 0.98 | 637 | 9.87e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "G protein-coupled receptor 6 (Sphingos (8T1V/8TYW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

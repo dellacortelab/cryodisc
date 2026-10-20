@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:20:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/782ed81538.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Dephospho-CoA kinase (EC 2.7.1.24) (De (1VIY/1VHL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Dephospho-CoA kinase (EC 2.7.1.24) (De (1VIY/1VHL)",
+        "motion": "no_contact",
+        "mass_kda": 20.764704,
+        "ca_rmsd": 2.6096213421352457,
+        "radius": 35.100859877441415,
+        "box_size": 128,
+        "d2_known_pose": 16.938796997070312,
+        "d2_crlb": 14.488059997558594,
+        "information": 3.7607421875,
+        "saturation": 0.940185546875,
+        "n_floor": 664.762451171875,
+        "n_marginal": 8470.119140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018748002011753886,
+        "note": "P0A6I9 23 kDa, dyndom, rotation 32.0 deg, chains C/A",
+        "d2_marginal": 0.3175686001777649,
+        "information_marginal": 0.29515522718429565,
+        "n_matched": 208,
+        "identity": 1.0,
+        "shared_fraction": 0.980733374766936,
+        "provenance": {
+          "accession": "P0A6I9",
+          "canonical_mass_kda": 22.622,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 32.0
+        },
+        "d2_floor": 16.938796997070312
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Dephospho-CoA kinase (EC 2.7.1.24) (De (1VIY/1VHL) | 21 | no_contact | 2.61 | 16.9 | 0.019 | 0.94 | 665 | 8.47e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Dephospho-CoA kinase (EC 2.7.1.24) (De (1VIY/1VHL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

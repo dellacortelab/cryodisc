@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:32:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8faa54588a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cytosine deaminase (CD) (CDA) (CDase) (1RA0/1R9Z)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cytosine deaminase (CD) (CDA) (CDase) (1RA0/1R9Z)",
+        "motion": "hinge",
+        "mass_kda": 43.77732699999999,
+        "ca_rmsd": 1.112501816332212,
+        "radius": 49.31617242582258,
+        "box_size": 128,
+        "d2_known_pose": 14.278890609741211,
+        "d2_crlb": 13.50683879852295,
+        "information": 3.646446943283081,
+        "saturation": 0.9116117358207703,
+        "n_floor": 685.5989379882812,
+        "n_marginal": 6944.306640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.027565307722116184,
+        "note": "P25524 48 kDa, dyndom, rotation 20.7 deg, chains A/A",
+        "d2_marginal": 0.39360201358795166,
+        "information_marginal": 0.3600071668624878,
+        "n_matched": 423,
+        "identity": 0.9976359338061466,
+        "shared_fraction": 0.9993981342160698,
+        "provenance": {
+          "accession": "P25524",
+          "canonical_mass_kda": 47.591,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.7
+        },
+        "d2_floor": 14.278890609741211
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cytosine deaminase (CD) (CDA) (CDase) (1RA0/1R9Z) | 44 | hinge | 1.11 | 14.3 | 0.028 | 0.91 | 686 | 6.94e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cytosine deaminase (CD) (CDA) (CDase) (1RA0/1R9Z)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

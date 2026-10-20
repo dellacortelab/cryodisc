@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:17:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b93d3d71bc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase ITK/TSK (EC 2. (3QGY/9NWX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase ITK/TSK (EC 2. (3QGY/9NWX)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 25.788580999999997,
+        "ca_rmsd": 1.6948594592392139,
+        "radius": 32.358048718736676,
+        "box_size": 128,
+        "d2_known_pose": 9.791574478149414,
+        "d2_crlb": 8.973033905029297,
+        "information": 3.3026700019836426,
+        "saturation": 0.8256675004959106,
+        "n_floor": 756.96337890625,
+        "n_marginal": 15177.13671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.017525867847740524,
+        "note": "Q08881 72 kDa, kincore, no rotation angle (kincore reports none); states BLAplus -> BLBplus, chains A/A",
+        "d2_marginal": 0.17160584032535553,
+        "information_marginal": 0.16472145915031433,
+        "n_matched": 246,
+        "identity": 0.975609756097561,
+        "shared_fraction": 0.9205673758865248,
+        "provenance": {
+          "accession": "Q08881",
+          "canonical_mass_kda": 71.831,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 9.791574478149414
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase ITK/TSK (EC 2. (3QGY/9NWX) | 26 | dihedral_cluster | 1.69 | 9.79 | 0.018 | 0.83 | 757 | 1.52e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase ITK/TSK (EC 2. (3QGY/9NWX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

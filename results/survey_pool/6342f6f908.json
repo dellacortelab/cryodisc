@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:15:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6342f6f908.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcription initiation factor IIB (T (1D3U/1AIS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcription initiation factor IIB (T (1D3U/1AIS)",
+        "motion": "hinge",
+        "mass_kda": 20.178591,
+        "ca_rmsd": 1.8094882537974357,
+        "radius": 34.42127903613679,
+        "box_size": 128,
+        "d2_known_pose": 10.608736991882324,
+        "d2_crlb": 10.143156051635742,
+        "information": 3.3852972984313965,
+        "saturation": 0.8463243246078491,
+        "n_floor": 738.4876098632812,
+        "n_marginal": 62947.25390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0037809708838952515,
+        "note": "P61999 34 kDa, dyndom, rotation 18.4 deg, chains B/B",
+        "d2_marginal": 0.040111325681209564,
+        "information_marginal": 0.03971579298377037,
+        "n_matched": 193,
+        "identity": 1.0,
+        "shared_fraction": 0.9630094043887147,
+        "provenance": {
+          "accession": "P61999",
+          "canonical_mass_kda": 34.106,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 18.4
+        },
+        "d2_floor": 10.608736991882324
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcription initiation factor IIB (T (1D3U/1AIS) | 20 | hinge | 1.81 | 10.6 | 0.004 | 0.85 | 738 | 6.29e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcription initiation factor IIB (T (1D3U/1AIS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

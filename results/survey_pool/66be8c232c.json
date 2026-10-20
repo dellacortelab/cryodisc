@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:09:20+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/66be8c232c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Outer capsid protein VP4 (Hemagglutini (1SLQ/2B4H)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Outer capsid protein VP4 (Hemagglutini (1SLQ/2B4H)",
+        "motion": "hinge",
+        "mass_kda": 23.324555,
+        "ca_rmsd": 4.728144803805652,
+        "radius": 49.11174325097111,
+        "box_size": 128,
+        "d2_known_pose": 41.998634338378906,
+        "d2_crlb": 37.159812927246094,
+        "information": 3.9926371574401855,
+        "saturation": 0.9981592893600464,
+        "n_floor": 626.1526489257812,
+        "n_marginal": 5341.49560546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012513967809266202,
+        "note": "P12473 87 kDa, dyndom, rotation 29.4 deg, chains B/A",
+        "d2_marginal": 0.5255695581436157,
+        "information_marginal": 0.46803373098373413,
+        "n_matched": 223,
+        "identity": 1.0,
+        "shared_fraction": 0.827570093457944,
+        "provenance": {
+          "accession": "P12473",
+          "canonical_mass_kda": 86.554,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 29.4
+        },
+        "d2_floor": 41.998634338378906
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Outer capsid protein VP4 (Hemagglutini (1SLQ/2B4H) | 23 | hinge | 4.73 | 42 | 0.013 | 1.00* | 626 | 5.34e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Outer capsid protein VP4 (Hemagglutini (1SLQ/2B4H)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

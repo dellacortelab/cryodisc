@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:14:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b59e47a723.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Endo-1,4-beta-xylanase A (Xylanase A) (1AXK/1AXK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Endo-1,4-beta-xylanase A (Xylanase A) (1AXK/1AXK)",
+        "motion": "mixed",
+        "mass_kda": 40.821197,
+        "ca_rmsd": 1.7582117553357224,
+        "radius": 43.26443964009388,
+        "box_size": 128,
+        "d2_known_pose": 13.194854736328125,
+        "d2_crlb": 12.619138717651367,
+        "information": 3.5845203399658203,
+        "saturation": 0.8961300849914551,
+        "n_floor": 697.4434204101562,
+        "n_marginal": 63327.453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003021491013119725,
+        "note": "P18429 23 kDa, dyndom, rotation 14.6 deg, chains B/A",
+        "d2_marginal": 0.03986813500523567,
+        "information_marginal": 0.03947735205292702,
+        "n_matched": 393,
+        "identity": 1.0,
+        "shared_fraction": 0.9980694980694981,
+        "provenance": {
+          "accession": "P18429",
+          "canonical_mass_kda": 23.345,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.6
+        },
+        "d2_floor": 13.194854736328125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Endo-1,4-beta-xylanase A (Xylanase A) (1AXK/1AXK) | 41 | mixed | 1.76 | 13.2 | 0.003 | 0.90 | 697 | 6.33e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Endo-1,4-beta-xylanase A (Xylanase A) (1AXK/1AXK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

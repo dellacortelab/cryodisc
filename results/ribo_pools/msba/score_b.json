@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "driver": "experiments/realdata/score_pool.py",
+  "commit": "6f5f462d",
+  "written_at": "2026-10-04T04:49:10+00:00",
+  "arguments": {
+    "meta": "/data/bryceeh/empiar/score_msba/pool_tbt1.cs",
+    "root": "/data/bryceeh/cryoem_projects/CS-preprocess-4",
+    "structure_a": null,
+    "structure_b": null,
+    "ligands": null,
+    "map_a": "/data/bryceeh/recovery_fullmaps_pools/msba/tmpl_a.mrc",
+    "map_b": "/data/bryceeh/recovery_fullmaps_pools/msba/tmpl_b.mrc",
+    "allow_half_map": false,
+    "known_pose": false,
+    "compare_rungs": false,
+    "calibrate": "poses",
+    "amplitude_shells": null,
+    "invert_contrast": false,
+    "state": null,
+    "assembly": "1",
+    "structure_offset_from_maps": null,
+    "no_superpose": false,
+    "ignore_origin": false,
+    "out": "/data/bryceeh/recovery_fullmaps_pools/msba/score_K4000000_b.json",
+    "log_ratio": "/data/bryceeh/recovery_fullmaps_pools/msba/pool_K4000000_b.npy",
+    "box_size": null,
+    "pixel_size": 2.12,
+    "dose": 40.0,
+    "k_max": 0.1,
+    "band_limit": 0.125,
+    "nodes": 3968496,
+    "cap_bank": 1000000,
+    "fixed_bank": 4000000,
+    "limit": null,
+    "subsample": 4000,
+    "n_shuffles": 0,
+    "seed": 0,
+    "shift_window": 4,
+    "shift_step": 1.0,
+    "cs_pose_transpose": null,
+    "no_recenter": false,
+    "null_images": false,
+    "check_shift_sign": false,
+    "refit_ctf": false,
+    "micrograph": null,
+    "micrograph_pixel_size": null,
+    "n_iterations": 60
+  },
+  "result": {
+    "n_particles": 4000,
+    "box_size": 128,
+    "pixel_size": 2.12,
+    "k_max": 0.1,
+    "n_defocus_groups": 1414,
+    "amplitude": 0.9668552875518799,
+    "amplitude_spectrum": null,
+    "calibrated_at": "poses",
+    "calibration_state_weights": [
+      0.004481421783566475,
+      0.9955287575721741
+    ],
+    "snr": 5.733036518096924,
+    "coherence": {
+      "value": -0.760479421074642,
+      "mean": -1.8283158540725708,
+      "variance": 4.808324337005615,
+      "baseline": 1.0,
+      "decoherence": 0.23952057892535805
+    },
+    "oracle_closed_form": null,
+    "separation": null,
+    "shift": {
+      "applied": true
+    },
+    "shift_prior_sigma": 0.0,
+    "ctf_refit": {
+      "ran": false
+    },
+    "states": {
+      "from": "maps",
+      "state_a": "/data/bryceeh/recovery_fullmaps_pools/msba/tmpl_a.mrc",
+      "state_b": "/data/bryceeh/recovery_fullmaps_pools/msba/tmpl_b.mrc",
+      "amplitude_ratio": 1.0000000070614452
+    },
+    "source": "/data/bryceeh/empiar/score_msba/pool_tbt1.cs",
+    "log_ratio_path": "/data/bryceeh/recovery_fullmaps_pools/msba/pool_K4000000_b.npy",
+    "convergence": null
+  }
+}

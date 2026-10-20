@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:03:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/de4c6e4225.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Recombination protein RecR (1VDD/1VDD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Recombination protein RecR (1VDD/1VDD)",
+        "motion": "no_contact",
+        "mass_kda": 19.940484999999995,
+        "ca_rmsd": 1.0905806595459704,
+        "radius": 43.90896523594781,
+        "box_size": 128,
+        "d2_known_pose": 6.338767051696777,
+        "d2_crlb": 6.009769439697266,
+        "information": 2.79091215133667,
+        "saturation": 0.6977280378341675,
+        "n_floor": 895.7645263671875,
+        "n_marginal": 110619.09375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003585552073731107,
+        "note": "Q9ZNA2 24 kDa, dyndom, rotation 9.7 deg, chains A/D",
+        "d2_marginal": 0.022727979347109795,
+        "information_marginal": 0.022600077092647552,
+        "n_matched": 198,
+        "identity": 1.0,
+        "shared_fraction": 0.994729907773386,
+        "provenance": {
+          "accession": "Q9ZNA2",
+          "canonical_mass_kda": 23.723,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.7
+        },
+        "d2_floor": 6.338767051696777
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Recombination protein RecR (1VDD/1VDD) | 20 | no_contact | 1.09 | 6.34 | 0.004 | 0.70 | 896 | 1.11e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Recombination protein RecR (1VDD/1VDD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

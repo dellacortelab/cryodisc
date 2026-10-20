@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:48:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9abdba676c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cysteine synthase A (CSase A) (EC 2.5. (1D6S/1FCJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cysteine synthase A (CSase A) (EC 2.5. (1D6S/1FCJ)",
+        "motion": "hinge",
+        "mass_kda": 29.894363,
+        "ca_rmsd": 1.79281639404495,
+        "radius": 33.69163471186061,
+        "box_size": 128,
+        "d2_known_pose": 25.68684959411621,
+        "d2_crlb": 21.794368743896484,
+        "information": 3.9311444759368896,
+        "saturation": 0.9827861189842224,
+        "n_floor": 635.9471435546875,
+        "n_marginal": 3338.1513671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.035116207716954846,
+        "note": "P0A1E3 35 kDa, dyndom, rotation 17.2 deg, chains A/B",
+        "d2_marginal": 0.9020247459411621,
+        "information_marginal": 0.7489175200462341,
+        "n_matched": 304,
+        "identity": 0.9967105263157895,
+        "shared_fraction": 0.9379395945386844,
+        "provenance": {
+          "accession": "P0A1E3",
+          "canonical_mass_kda": 34.536,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.2
+        },
+        "d2_floor": 25.68684959411621
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cysteine synthase A (CSase A) (EC 2.5. (1D6S/1FCJ) | 30 | hinge | 1.79 | 25.7 | 0.035 | 0.98 | 636 | 3.34e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cysteine synthase A (CSase A) (EC 2.5. (1D6S/1FCJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:36:47+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b7bb067571.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Complement C3 (C3 and PZP-like alpha-2 (2ICE/2A74)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Complement C3 (C3 and PZP-like alpha-2 (2ICE/2A74)",
+        "motion": "shear",
+        "mass_kda": 31.994176999999997,
+        "ca_rmsd": 1.7493436959978927,
+        "radius": 43.6942048798594,
+        "box_size": 128,
+        "d2_known_pose": 17.857484817504883,
+        "d2_crlb": 16.53217315673828,
+        "information": 3.7906010150909424,
+        "saturation": 0.9476502537727356,
+        "n_floor": 659.5260009765625,
+        "n_marginal": 23006.955078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006251847052966286,
+        "note": "P01024 187 kDa, dyndom, rotation 12.6 deg, chains C/C",
+        "d2_marginal": 0.1116422638297081,
+        "information_marginal": 0.10866279900074005,
+        "n_matched": 296,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P01024",
+          "canonical_mass_kda": 187.148,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.6
+        },
+        "d2_floor": 17.857484817504883
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Complement C3 (C3 and PZP-like alpha-2 (2ICE/2A74) | 32 | shear | 1.75 | 17.9 | 0.006 | 0.95 | 660 | 2.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Complement C3 (C3 and PZP-like alpha-2 (2ICE/2A74)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

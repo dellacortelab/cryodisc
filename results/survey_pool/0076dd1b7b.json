@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:38:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0076dd1b7b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Sialic acid-binding periplasmic protei (6H76/2CEY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Sialic acid-binding periplasmic protei (6H76/2CEY)",
+        "motion": "crypticpocket",
+        "mass_kda": 31.245490999999994,
+        "ca_rmsd": 2.8591941973503614,
+        "radius": 36.68874270984721,
+        "box_size": 128,
+        "d2_known_pose": 32.85337448120117,
+        "d2_crlb": 29.014188766479492,
+        "information": 3.9744691848754883,
+        "saturation": 0.9936172962188721,
+        "n_floor": 629.0148315429688,
+        "n_marginal": 3033.833984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.030788731020637308,
+        "note": "P44542 37 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 1.0115137100219727,
+        "information_marginal": 0.8240398168563843,
+        "n_matched": 306,
+        "identity": 1.0,
+        "shared_fraction": 0.9773476112026359,
+        "provenance": {
+          "accession": "P44542",
+          "canonical_mass_kda": 36.513,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 32.85337448120117
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sialic acid-binding periplasmic protei (6H76/2CEY) | 31 | crypticpocket | 2.86 | 32.9 | 0.031 | 0.99* | 629 | 3.03e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Sialic acid-binding periplasmic protei (6H76/2CEY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

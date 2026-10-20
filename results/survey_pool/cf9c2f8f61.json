@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:51:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/cf9c2f8f61.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ketol-acid reductoisomerase (NADP(+)) (1NP3/1NP3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ketol-acid reductoisomerase (NADP(+)) (1NP3/1NP3)",
+        "motion": "mixed",
+        "mass_kda": 32.762653,
+        "ca_rmsd": 0.7568211128498947,
+        "radius": 38.86428615113372,
+        "box_size": 128,
+        "d2_known_pose": 3.9449679851531982,
+        "d2_crlb": 3.253314733505249,
+        "information": 2.1840786933898926,
+        "saturation": 0.5460196733474731,
+        "n_floor": 1144.6474609375,
+        "n_marginal": 101523.75,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006280561320910084,
+        "note": "Q9HVA2 36 kDa, dyndom, rotation 4.8 deg, chains A/B",
+        "d2_marginal": 0.02477661333978176,
+        "information_marginal": 0.02462478168308735,
+        "n_matched": 327,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9HVA2",
+          "canonical_mass_kda": 36.425,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 4.8
+        },
+        "d2_floor": 3.9449679851531982
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ketol-acid reductoisomerase (NADP(+)) (1NP3/1NP3) | 33 | mixed | 0.76 | 3.94 | 0.006 | 0.55 | 1.14e+03 | 1.02e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ketol-acid reductoisomerase (NADP(+)) (1NP3/1NP3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

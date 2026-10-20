@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:13:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c614b81747.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mediator of RNA polymerase II transcri (1YKE/1YKH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mediator of RNA polymerase II transcri (1YKE/1YKH)",
+        "motion": "no_contact",
+        "mass_kda": 10.668696999999998,
+        "ca_rmsd": 1.033846274085322,
+        "radius": 55.58721501109227,
+        "box_size": 128,
+        "d2_known_pose": 3.6222095489501953,
+        "d2_crlb": 2.9065189361572266,
+        "information": 2.0770153999328613,
+        "saturation": 0.5192538499832153,
+        "n_floor": 1203.6502685546875,
+        "n_marginal": 61908.44140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011261405023008497,
+        "note": "Q08278 26 kDa, dyndom, rotation 11.0 deg, chains C/A",
+        "d2_marginal": 0.04079116880893707,
+        "information_marginal": 0.04038221761584282,
+        "n_matched": 95,
+        "identity": 1.0,
+        "shared_fraction": 0.9735576923076923,
+        "provenance": {
+          "accession": "Q08278",
+          "canonical_mass_kda": 25.585,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 11.0
+        },
+        "d2_floor": 3.6222095489501953
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mediator of RNA polymerase II transcri (1YKE/1YKH) | 11 | no_contact | 1.03 | 3.62 | 0.011 | 0.52 | 1.2e+03 | 6.19e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mediator of RNA polymerase II transcri (1YKE/1YKH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

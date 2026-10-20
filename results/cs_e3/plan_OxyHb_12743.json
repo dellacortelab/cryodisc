@@ -1,0 +1,22 @@
+{
+  "label": "OxyHb",
+  "entry": "12743",
+  "stop_after": "class2D",
+  "class2d_k": 50,
+  "stages": [
+    "import",
+    "motion",
+    "ctf",
+    "pick",
+    "extract",
+    "class2D"
+  ],
+  "imagesets": [
+    {
+      "name": "Micrographs",
+      "movies": "/home/bryceeh/scratch/e3_hb/12743/Micrographs/*.mrc",
+      "gain": null,
+      "n_movies": 240
+    }
+  ]
+}

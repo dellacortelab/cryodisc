@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:08:47+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/cb43680116.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chaperone protein HtpG (Heat shock pro (1Y4S/2IOQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chaperone protein HtpG (Heat shock pro (1Y4S/2IOQ)",
+        "motion": "mixed",
+        "mass_kda": 48.09363499999999,
+        "ca_rmsd": 3.946534334301748,
+        "radius": 53.36297383880903,
+        "box_size": 128,
+        "d2_known_pose": 27.641706466674805,
+        "d2_crlb": 26.91054344177246,
+        "information": 3.947573184967041,
+        "saturation": 0.9868932962417603,
+        "n_floor": 633.3004760742188,
+        "n_marginal": 10249.869140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009374416712697127,
+        "note": "P0A6Z3 71 kDa, dyndom, rotation 165.3 deg, chains B/B",
+        "d2_marginal": 0.25912487506866455,
+        "information_marginal": 0.24390554428100586,
+        "n_matched": 463,
+        "identity": 1.0,
+        "shared_fraction": 0.8058680785351864,
+        "provenance": {
+          "accession": "P0A6Z3",
+          "canonical_mass_kda": 71.423,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 165.3
+        },
+        "d2_floor": 27.641706466674805
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chaperone protein HtpG (Heat shock pro (1Y4S/2IOQ) | 48 | mixed | 3.95 | 27.6 | 0.009 | 0.99 | 633 | 1.02e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chaperone protein HtpG (Heat shock pro (1Y4S/2IOQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

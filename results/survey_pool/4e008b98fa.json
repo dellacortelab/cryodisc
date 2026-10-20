@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:34:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4e008b98fa.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Immunoglobulin heavy constant gamma 1 (1D5I/1D5B)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Immunoglobulin heavy constant gamma 1 (1D5I/1D5B)",
+        "motion": "hinge",
+        "mass_kda": 21.279098999999995,
+        "ca_rmsd": 5.1628363323637165,
+        "radius": 42.75927157963519,
+        "box_size": 128,
+        "d2_known_pose": 61.92426681518555,
+        "d2_crlb": 46.91985321044922,
+        "information": 3.999483108520508,
+        "saturation": 0.999870777130127,
+        "n_floor": 625.080810546875,
+        "n_marginal": 2714.27978515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01871429550470259,
+        "note": "P01857 44 kDa, dyndom, rotation 40.8 deg, chains H/B",
+        "d2_marginal": 1.1588690280914307,
+        "information_marginal": 0.9210547208786011,
+        "n_matched": 214,
+        "identity": 0.9813084112149533,
+        "shared_fraction": 0.9950586781964176,
+        "provenance": {
+          "accession": "P01857",
+          "canonical_mass_kda": 43.912,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 40.8
+        },
+        "d2_floor": 61.92426681518555
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Immunoglobulin heavy constant gamma 1 (1D5I/1D5B) | 21 | hinge | 5.16 | 61.9 | 0.019 | 1.00* | 625 | 2.71e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Immunoglobulin heavy constant gamma 1 (1D5I/1D5B)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

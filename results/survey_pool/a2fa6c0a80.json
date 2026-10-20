@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:16:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a2fa6c0a80.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Enolase-phosphatase E1 (EC 3.1.3.77) ( (2G80/2G80)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Enolase-phosphatase E1 (EC 3.1.3.77) ( (2G80/2G80)",
+        "motion": "hinge",
+        "mass_kda": 22.399827999999992,
+        "ca_rmsd": 1.0749093996150505,
+        "radius": 34.76000552518554,
+        "box_size": 128,
+        "d2_known_pose": 6.013401031494141,
+        "d2_crlb": 5.415146827697754,
+        "information": 2.724146604537964,
+        "saturation": 0.681036651134491,
+        "n_floor": 917.7186279296875,
+        "n_marginal": 21200.712890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020193643349195656,
+        "note": "P32626 25 kDa, dyndom, rotation 8.7 deg, chains A/C",
+        "d2_marginal": 0.12143247574567795,
+        "information_marginal": 0.11792056262493134,
+        "n_matched": 224,
+        "identity": 1.0,
+        "shared_fraction": 0.9867205542725174,
+        "provenance": {
+          "accession": "P32626",
+          "canonical_mass_kda": 25.187,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.7
+        },
+        "d2_floor": 6.013401031494141
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Enolase-phosphatase E1 (EC 3.1.3.77) ( (2G80/2G80) | 22 | hinge | 1.07 | 6.01 | 0.020 | 0.68 | 918 | 2.12e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Enolase-phosphatase E1 (EC 3.1.3.77) ( (2G80/2G80)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

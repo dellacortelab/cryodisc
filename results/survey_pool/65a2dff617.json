@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Oxygen-dependent coproporphyrinogen-II (1TLB/1TKL)",
+ "returncode": -6,
+ "stderr_tail": "631  tsl::JoinFutures<>()::{lambda()#1}::operator()()\n    @     0x7fbc1586526f  tsl::AsyncValue::EnqueueWaiter<>()::Node::RunWaiterAndDeleteWaiterNode()\n    @     0x7fbc158634d2  tsl::internal::PromiseBase<>::emplace<>()\n    @     0x7fbc15863344  absl::lts_20260526::internal_any_invocable::RemoteInvoker<>()\n    @     0x7fbc206911df  std::_Function_handler<>::_M_invoke()\n    @     0x7fbc2068fb54  Eigen::ThreadPoolTempl<>::WorkerLoop()\n    @     0x7fbc2068f9e1  std::__invoke_impl<>()\n    @     0x7fbc2067e90f  tsl::(anonymous namespace)::PThread::ThreadFn()\n    @     0x7fbd1051433a  start_thread\n"
+}

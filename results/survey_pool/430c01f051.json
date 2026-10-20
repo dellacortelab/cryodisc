@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:47:57+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/430c01f051.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional activator II (1ZS4/1ZS4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional activator II (1ZS4/1ZS4)",
+        "motion": "hinge",
+        "mass_kda": 8.489393999999999,
+        "ca_rmsd": 12.319607261968116,
+        "radius": 41.66408463014553,
+        "box_size": 128,
+        "d2_known_pose": 73.67996978759766,
+        "d2_crlb": 57.14432907104492,
+        "information": 3.999890089035034,
+        "saturation": 0.9999725222587585,
+        "n_floor": 625.0172119140625,
+        "n_marginal": 1517.513916015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.034218309291100764,
+        "note": "P03042 11 kDa, dyndom, rotation 157.5 deg, chains A/B",
+        "d2_marginal": 2.5212039947509766,
+        "information_marginal": 1.6474313735961914,
+        "n_matched": 82,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P03042",
+          "canonical_mass_kda": 11.056,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 157.5
+        },
+        "d2_floor": 73.67996978759766
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional activator II (1ZS4/1ZS4) | 8 | hinge | 12.32 | 73.7 | 0.034 | 1.00* | 625 | 1.52e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional activator II (1ZS4/1ZS4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

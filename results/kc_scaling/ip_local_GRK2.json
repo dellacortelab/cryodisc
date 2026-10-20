@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_local.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "amplitudes": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "nodes": 8064,
+    "box_size": 128,
+    "rmsf": 0.5,
+    "fraction": 0.5,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "out": "results/kc_scaling/ip_local_GRK2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)",
+      "box_size": 128,
+      "rmsd": 1.6252675612411365,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 0.05,
+          "i_local": 0.08071475476026535,
+          "i_known": 0.09149191528558731,
+          "mean_d2_crlb": 0.08247099071741104,
+          "mean_d2_known": 0.09377019852399826,
+          "seconds": 15.5
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.3044049143791199,
+          "i_known": 0.34243345260620117,
+          "mean_d2_crlb": 0.32988396286964417,
+          "mean_d2_known": 0.37508079409599304,
+          "seconds": 15.0
+        },
+        {
+          "amplitude": 0.15,
+          "i_local": 0.6291273236274719,
+          "i_known": 0.7009432911872864,
+          "mean_d2_crlb": 0.7422388792037964,
+          "mean_d2_known": 0.8439318537712097,
+          "seconds": 15.0
+        },
+        {
+          "amplitude": 0.2,
+          "i_local": 1.0104615688323975,
+          "i_known": 1.1143954992294312,
+          "mean_d2_crlb": 1.3195358514785767,
+          "mean_d2_known": 1.5003231763839722,
+          "seconds": 15.0
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 1.8063262701034546,
+          "i_known": 1.9525742530822754,
+          "mean_d2_crlb": 2.9689555168151855,
+          "mean_d2_known": 3.375727415084839,
+          "seconds": 15.0
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 3.0521059036254883,
+          "i_known": 3.1861214637756348,
+          "mean_d2_crlb": 8.247097969055176,
+          "mean_d2_known": 9.377019882202148,
+          "seconds": 15.1
+        }
+      ]
+    }
+  ]
+}

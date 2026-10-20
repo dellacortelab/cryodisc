@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:30:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fdbc3f41cd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HTH-type transcriptional repressor Mdt (1S3J/1S3J)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HTH-type transcriptional repressor Mdt (1S3J/1S3J)",
+        "motion": "no_contact",
+        "mass_kda": 13.630238999999998,
+        "ca_rmsd": 2.28044688969132,
+        "radius": 38.111691150757345,
+        "box_size": 128,
+        "d2_known_pose": 14.818948745727539,
+        "d2_crlb": 11.850418090820312,
+        "information": 3.6735920906066895,
+        "saturation": 0.9183980226516724,
+        "n_floor": 680.5328369140625,
+        "n_marginal": 9030.591796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020009122007795456,
+        "note": "O32181 17 kDa, dyndom, rotation 18.3 deg, chains A/B",
+        "d2_marginal": 0.2965141534805298,
+        "information_marginal": 0.2768368124961853,
+        "n_matched": 133,
+        "identity": 1.0,
+        "shared_fraction": 0.9773798303487277,
+        "provenance": {
+          "accession": "O32181",
+          "canonical_mass_kda": 17.4,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 18.3
+        },
+        "d2_floor": 14.818948745727539
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HTH-type transcriptional repressor Mdt (1S3J/1S3J) | 14 | no_contact | 2.28 | 14.8 | 0.020 | 0.92 | 681 | 9.03e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HTH-type transcriptional repressor Mdt (1S3J/1S3J)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

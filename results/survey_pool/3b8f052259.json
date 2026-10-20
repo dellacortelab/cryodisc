@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:18:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3b8f052259.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "External scaffolding protein D (Scaffo (1CD3/1AL0)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "External scaffolding protein D (Scaffo (1CD3/1AL0)",
+        "motion": "hinge",
+        "mass_kda": 14.270920999999998,
+        "ca_rmsd": 9.967247512056653,
+        "radius": 24.88975950730031,
+        "box_size": 128,
+        "d2_known_pose": 58.51477813720703,
+        "d2_crlb": 53.29856872558594,
+        "information": 3.9991886615753174,
+        "saturation": 0.9997971653938293,
+        "n_floor": 625.1268310546875,
+        "n_marginal": 3655.134521484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013850718388481663,
+        "note": "P69486 17 kDa, dyndom, rotation 90.4 deg, chains 4/3",
+        "d2_marginal": 0.8104717135429382,
+        "information_marginal": 0.6839693784713745,
+        "n_matched": 138,
+        "identity": 1.0,
+        "shared_fraction": 0.9458515283842794,
+        "provenance": {
+          "accession": "P69486",
+          "canonical_mass_kda": 16.937,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 90.4
+        },
+        "d2_floor": 58.51477813720703
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| External scaffolding protein D (Scaffo (1CD3/1AL0) | 14 | hinge | 9.97 | 58.5 | 0.014 | 1.00* | 625 | 3.66e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "External scaffolding protein D (Scaffo (1CD3/1AL0)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

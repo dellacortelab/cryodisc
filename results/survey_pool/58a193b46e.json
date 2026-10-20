@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:07:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/58a193b46e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Siroheme synthase [Includes: Uroporphy (1PJQ/1PJQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Siroheme synthase [Includes: Uroporphy (1PJQ/1PJQ)",
+        "motion": "unclassified",
+        "mass_kda": 45.636646999999996,
+        "ca_rmsd": 12.536008493388543,
+        "radius": 51.69155844536876,
+        "box_size": 128,
+        "d2_known_pose": 334.4022216796875,
+        "d2_crlb": 316.82537841796875,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2309.971923828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004245112987753261,
+        "note": "P25924 50 kDa, dyndom, rotation 102.3 deg, chains B/A",
+        "d2_marginal": 1.4195752143859863,
+        "information_marginal": 1.0822643041610718,
+        "n_matched": 447,
+        "identity": 1.0,
+        "shared_fraction": 0.9865867579908676,
+        "provenance": {
+          "accession": "P25924",
+          "canonical_mass_kda": 50.147,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 102.3
+        },
+        "d2_floor": 334.4022216796875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Siroheme synthase [Includes: Uroporphy (1PJQ/1PJQ) | 46 | unclassified | 12.54 | 334 | 0.004 | 1.00* | 625 | 2.31e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Siroheme synthase [Includes: Uroporphy (1PJQ/1PJQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

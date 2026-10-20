@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:21:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/e2d3ebdf32.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Saccharopine dehydrogenase [NADP(+), L (1E5L/1E5Q)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Saccharopine dehydrogenase [NADP(+), L (1E5L/1E5Q)",
+        "motion": "unclassified",
+        "mass_kda": 45.432402999999994,
+        "ca_rmsd": 2.44056664682416,
+        "radius": 43.38323179892399,
+        "box_size": 128,
+        "d2_known_pose": 38.64850616455078,
+        "d2_crlb": 33.34540557861328,
+        "information": 3.9884164333343506,
+        "saturation": 0.9971041083335876,
+        "n_floor": 626.8152465820312,
+        "n_marginal": 6055.5234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011832473580596466,
+        "note": "Q9P4R4 49 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/A",
+        "d2_marginal": 0.4573074281215668,
+        "information_marginal": 0.41284626722335815,
+        "n_matched": 449,
+        "identity": 1.0,
+        "shared_fraction": 0.9997094712376525,
+        "provenance": {
+          "accession": "Q9P4R4",
+          "canonical_mass_kda": 49.097,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 38.64850616455078
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Saccharopine dehydrogenase [NADP(+), L (1E5L/1E5Q) | 45 | unclassified | 2.44 | 38.6 | 0.012 | 1.00* | 627 | 6.06e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Saccharopine dehydrogenase [NADP(+), L (1E5L/1E5Q)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

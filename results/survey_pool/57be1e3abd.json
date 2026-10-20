@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:53:19+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/57be1e3abd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "2-dehydropantoate 2-reductase (EC 1.1. (2EW2/2EW2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "2-dehydropantoate 2-reductase (EC 1.1. (2EW2/2EW2)",
+        "motion": "mixed",
+        "mass_kda": 30.977192999999996,
+        "ca_rmsd": 0.7250255643443437,
+        "radius": 34.97042265285138,
+        "box_size": 128,
+        "d2_known_pose": 4.2897443771362305,
+        "d2_crlb": 3.9231786727905273,
+        "information": 2.290567398071289,
+        "saturation": 0.5726418495178223,
+        "n_floor": 1091.4326171875,
+        "n_marginal": 62094.80078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00948016695658389,
+        "note": "Q831Q5 34 kDa, dyndom, rotation 5.8 deg, chains B/A",
+        "d2_marginal": 0.040667492896318436,
+        "information_marginal": 0.04026102274656296,
+        "n_matched": 305,
+        "identity": 1.0,
+        "shared_fraction": 0.9978822532825075,
+        "provenance": {
+          "accession": "Q831Q5",
+          "canonical_mass_kda": 34.439,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 5.8
+        },
+        "d2_floor": 4.2897443771362305
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 2-dehydropantoate 2-reductase (EC 1.1. (2EW2/2EW2) | 31 | mixed | 0.73 | 4.29 | 0.009 | 0.57 | 1.09e+03 | 6.21e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "2-dehydropantoate 2-reductase (EC 1.1. (2EW2/2EW2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

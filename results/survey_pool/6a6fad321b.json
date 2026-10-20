@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:16:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6a6fad321b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Nociceptin receptor (Kappa-type 3 opio (5DHG/8F7X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Nociceptin receptor (Kappa-type 3 opio (5DHG/8F7X)",
+        "motion": "activation",
+        "mass_kda": 28.028485999999997,
+        "ca_rmsd": 3.046776444537377,
+        "radius": 40.108833107812586,
+        "box_size": 128,
+        "d2_known_pose": 44.07905197143555,
+        "d2_crlb": 41.37359619140625,
+        "information": 3.9944372177124023,
+        "saturation": 0.9986093044281006,
+        "n_floor": 625.8704223632812,
+        "n_marginal": 5713.8798828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011062392130581073,
+        "note": "P41146 41 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.4876197576522827,
+        "information_marginal": 0.437531054019928,
+        "n_matched": 279,
+        "identity": 1.0,
+        "shared_fraction": 0.9620081411126187,
+        "provenance": {
+          "accession": "P41146",
+          "canonical_mass_kda": 40.693,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 44.07905197143555
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Nociceptin receptor (Kappa-type 3 opio (5DHG/8F7X) | 28 | activation | 3.05 | 44.1 | 0.011 | 1.00* | 626 | 5.71e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Nociceptin receptor (Kappa-type 3 opio (5DHG/8F7X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:49:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bdc5ca1c11.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Beta-1 adrenergic receptor (Beta-1 adr (4BVN/8DCS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Beta-1 adrenergic receptor (Beta-1 adr (4BVN/8DCS)",
+        "motion": "activation",
+        "mass_kda": 28.268815999999998,
+        "ca_rmsd": 2.4423535503376135,
+        "radius": 38.0895900460827,
+        "box_size": 128,
+        "d2_known_pose": 33.05009460449219,
+        "d2_crlb": 30.190969467163086,
+        "information": 3.9751486778259277,
+        "saturation": 0.9937871694564819,
+        "n_floor": 628.9072875976562,
+        "n_marginal": 8643.5712890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009402117060027582,
+        "note": "P07700 54 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.3107408583164215,
+        "information_marginal": 0.2892323136329651,
+        "n_matched": 271,
+        "identity": 0.977859778597786,
+        "shared_fraction": 0.9351610095735422,
+        "provenance": {
+          "accession": "P07700",
+          "canonical_mass_kda": 54.078,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 33.05009460449219
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Beta-1 adrenergic receptor (Beta-1 adr (4BVN/8DCS) | 28 | activation | 2.44 | 33.1 | 0.009 | 0.99* | 629 | 8.64e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Beta-1 adrenergic receptor (Beta-1 adr (4BVN/8DCS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

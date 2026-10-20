@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:49:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a22de6d101.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ubiquitin C-terminal hydrolase 7 (EC 3 (2F1Z/1NBF)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ubiquitin C-terminal hydrolase 7 (EC 3 (2F1Z/1NBF)",
+        "motion": "no_contact",
+        "mass_kda": 36.13269699999999,
+        "ca_rmsd": 2.8250871140481215,
+        "radius": 43.74307862769571,
+        "box_size": 128,
+        "d2_known_pose": 45.657127380371094,
+        "d2_crlb": 41.79469299316406,
+        "information": 3.995499849319458,
+        "saturation": 0.9988749623298645,
+        "n_floor": 625.7039794921875,
+        "n_marginal": 3990.75732421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01602620914545572,
+        "note": "Q93009 128 kDa, dyndom, rotation 31.2 deg, chains B/B",
+        "d2_marginal": 0.73171067237854,
+        "information_marginal": 0.6264475584030151,
+        "n_matched": 336,
+        "identity": 1.0,
+        "shared_fraction": 0.6943808797355708,
+        "provenance": {
+          "accession": "Q93009",
+          "canonical_mass_kda": 128.302,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 31.2
+        },
+        "d2_floor": 45.657127380371094
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ubiquitin C-terminal hydrolase 7 (EC 3 (2F1Z/1NBF) | 36 | no_contact | 2.83 | 45.7 | 0.016 | 1.00* | 626 | 3.99e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ubiquitin C-terminal hydrolase 7 (EC 3 (2F1Z/1NBF)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

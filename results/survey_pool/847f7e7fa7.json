@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:57:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/847f7e7fa7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glycerol operon regulatory protein (2IA2/2IA2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glycerol operon regulatory protein (2IA2/2IA2)",
+        "motion": "no_contact",
+        "mass_kda": 23.256162999999997,
+        "ca_rmsd": 17.40148818123681,
+        "radius": 44.68665931266839,
+        "box_size": 128,
+        "d2_known_pose": 207.12216186523438,
+        "d2_crlb": 191.58926391601562,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 1388.0325927734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013920801508299937,
+        "note": "Q0SH23 29 kDa, dyndom, rotation 179.2 deg, chains A/C",
+        "d2_marginal": 2.8833065032958984,
+        "information_marginal": 1.8011105060577393,
+        "n_matched": 244,
+        "identity": 1.0,
+        "shared_fraction": 0.9418976545842217,
+        "provenance": {
+          "accession": "Q0SH23",
+          "canonical_mass_kda": 28.85,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 179.2
+        },
+        "d2_floor": 207.12216186523438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glycerol operon regulatory protein (2IA2/2IA2) | 23 | no_contact | 17.40 | 207 | 0.014 | 1.00* | 625 | 1.39e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glycerol operon regulatory protein (2IA2/2IA2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

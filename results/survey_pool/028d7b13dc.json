@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:23:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/028d7b13dc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Geranylgeranyl diphosphate synthetase (1WMW/1WMW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Geranylgeranyl diphosphate synthetase (1WMW/1WMW)",
+        "motion": "hinge",
+        "mass_kda": 33.16279399999999,
+        "ca_rmsd": 2.4760511163045664,
+        "radius": 38.1368299862816,
+        "box_size": 128,
+        "d2_known_pose": 30.095617294311523,
+        "d2_crlb": 27.022319793701172,
+        "information": 3.96268367767334,
+        "saturation": 0.990670919418335,
+        "n_floor": 630.8856201171875,
+        "n_marginal": 4901.0068359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019232415186201765,
+        "note": "Q5SMD0 37 kDa, dyndom, rotation 20.9 deg, chains C/D",
+        "d2_marginal": 0.5788114070892334,
+        "information_marginal": 0.5100992918014526,
+        "n_matched": 324,
+        "identity": 1.0,
+        "shared_fraction": 0.9863387978142076,
+        "provenance": {
+          "accession": "Q5SMD0",
+          "canonical_mass_kda": 36.503,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 20.9
+        },
+        "d2_floor": 30.095617294311523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Geranylgeranyl diphosphate synthetase (1WMW/1WMW) | 33 | hinge | 2.48 | 30.1 | 0.019 | 0.99* | 631 | 4.9e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Geranylgeranyl diphosphate synthetase (1WMW/1WMW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

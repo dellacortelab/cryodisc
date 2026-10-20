@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:45:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4d8c5a137e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Immunoglobulin kappa constant (Ig kapp (2A6D/6FAB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Immunoglobulin kappa constant (Ig kapp (2A6D/6FAB)",
+        "motion": "no_contact",
+        "mass_kda": 21.585337999999997,
+        "ca_rmsd": 1.5268674425106905,
+        "radius": 43.545814918941154,
+        "box_size": 128,
+        "d2_known_pose": 7.513927459716797,
+        "d2_crlb": 6.910232067108154,
+        "information": 3.0011839866638184,
+        "saturation": 0.7502959966659546,
+        "n_floor": 833.004638671875,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P01837 12 kDa, dyndom, rotation 10.2 deg, chains B/H",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 219,
+        "identity": 0.9680365296803652,
+        "shared_fraction": 0.9726027397260274,
+        "provenance": {
+          "accession": "P01837",
+          "canonical_mass_kda": 11.934,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.2
+        },
+        "d2_floor": 7.513927459716797
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Immunoglobulin kappa constant (Ig kapp (2A6D/6FAB) | 22 | no_contact | 1.53 | 7.51 | -- | 0.75 | 833 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Immunoglobulin kappa constant (Ig kapp (2A6D/6FAB)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 10 (total of 1 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

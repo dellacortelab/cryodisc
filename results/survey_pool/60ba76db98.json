@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:53:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/60ba76db98.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Viral interleukin-10 homolog (cmvIL-10 (1LQS/1LQS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Viral interleukin-10 homolog (cmvIL-10 (1LQS/1LQS)",
+        "motion": "no_contact",
+        "mass_kda": 15.339678999999999,
+        "ca_rmsd": 1.4173922189130792,
+        "radius": 41.992551873216655,
+        "box_size": 128,
+        "d2_known_pose": 5.99997091293335,
+        "d2_crlb": 5.477351188659668,
+        "information": 2.721301317214966,
+        "saturation": 0.6803253293037415,
+        "n_floor": 918.6781616210938,
+        "n_marginal": 21704.412109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01975574732626175,
+        "note": "P17150 20 kDa, dyndom, rotation 13.5 deg, chains M/L",
+        "d2_marginal": 0.1185339093208313,
+        "information_marginal": 0.11518396437168121,
+        "n_matched": 142,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P17150",
+          "canonical_mass_kda": 20.007,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 13.5
+        },
+        "d2_floor": 5.99997091293335
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Viral interleukin-10 homolog (cmvIL-10 (1LQS/1LQS) | 15 | no_contact | 1.42 | 6 | 0.020 | 0.68 | 919 | 2.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Viral interleukin-10 homolog (cmvIL-10 (1LQS/1LQS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

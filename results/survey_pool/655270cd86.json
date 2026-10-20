@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:08:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/655270cd86.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Bifunctional cytochrome P450/NADPH--P4 (1JPZ/1BVY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Bifunctional cytochrome P450/NADPH--P4 (1JPZ/1BVY)",
+        "motion": "shear",
+        "mass_kda": 46.49526999999999,
+        "ca_rmsd": 1.8992515746500351,
+        "radius": 36.245047279555244,
+        "box_size": 128,
+        "d2_known_pose": 28.446701049804688,
+        "d2_crlb": 27.018535614013672,
+        "information": 3.953118324279785,
+        "saturation": 0.9882795810699463,
+        "n_floor": 632.4121704101562,
+        "n_marginal": 9907.0498046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00944402012563275,
+        "note": "P14779 118 kDa, dyndom, rotation 15.1 deg, chains B/A",
+        "d2_marginal": 0.26865121722221375,
+        "information_marginal": 0.25234556198120117,
+        "n_matched": 439,
+        "identity": 1.0,
+        "shared_fraction": 0.958673191952148,
+        "provenance": {
+          "accession": "P14779",
+          "canonical_mass_kda": 117.781,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.1
+        },
+        "d2_floor": 28.446701049804688
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Bifunctional cytochrome P450/NADPH--P4 (1JPZ/1BVY) | 46 | shear | 1.90 | 28.4 | 0.009 | 0.99 | 632 | 9.91e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Bifunctional cytochrome P450/NADPH--P4 (1JPZ/1BVY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

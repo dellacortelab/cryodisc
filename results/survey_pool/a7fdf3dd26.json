@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:43:18+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a7fdf3dd26.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Troponin I, cardiac muscle (Cardiac tr (1J1E/1J1E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Troponin I, cardiac muscle (Cardiac tr (1J1E/1J1E)",
+        "motion": "no_contact",
+        "mass_kda": 11.751198999999996,
+        "ca_rmsd": 2.9622883002834066,
+        "radius": 60.23529050316247,
+        "box_size": 128,
+        "d2_known_pose": 25.526710510253906,
+        "d2_crlb": 17.156530380249023,
+        "information": 3.929584503173828,
+        "saturation": 0.982396125793457,
+        "n_floor": 636.1995849609375,
+        "n_marginal": 30764.701171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0032485174160083114,
+        "note": "P19429 24 kDa, dyndom, rotation 17.8 deg, chains C/F",
+        "d2_marginal": 0.08292396366596222,
+        "information_marginal": 0.08126196265220642,
+        "n_matched": 112,
+        "identity": 1.0,
+        "shared_fraction": 0.7864077669902912,
+        "provenance": {
+          "accession": "P19429",
+          "canonical_mass_kda": 24.008,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 17.8
+        },
+        "d2_floor": 25.526710510253906
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Troponin I, cardiac muscle (Cardiac tr (1J1E/1J1E) | 12 | no_contact | 2.96 | 25.5 | 0.003 | 0.98 | 636 | 3.08e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Troponin I, cardiac muscle (Cardiac tr (1J1E/1J1E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

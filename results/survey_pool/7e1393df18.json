@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:40:17+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7e1393df18.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Sialidase (EC 3.2.1.18) (Neuraminidase (2BZD/2BZD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Sialidase (EC 3.2.1.18) (Neuraminidase (2BZD/2BZD)",
+        "motion": "unclassified",
+        "mass_kda": 59.72410399999999,
+        "ca_rmsd": 1.7378926911842176,
+        "radius": 47.28481773592233,
+        "box_size": 128,
+        "d2_known_pose": 29.175582885742188,
+        "d2_crlb": 25.630399703979492,
+        "information": 3.9576218128204346,
+        "saturation": 0.9894054532051086,
+        "n_floor": 631.6925048828125,
+        "n_marginal": 29039.42578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0030147133337611026,
+        "note": "Q02834 69 kDa, dyndom, rotation 12.1 deg, chains A/C",
+        "d2_marginal": 0.0879560187458992,
+        "information_marginal": 0.08608986437320709,
+        "n_matched": 600,
+        "identity": 1.0,
+        "shared_fraction": 0.9991171926726992,
+        "provenance": {
+          "accession": "Q02834",
+          "canonical_mass_kda": 68.83,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.1
+        },
+        "d2_floor": 29.175582885742188
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sialidase (EC 3.2.1.18) (Neuraminidase (2BZD/2BZD) | 60 | unclassified | 1.74 | 29.2 | 0.003 | 0.99 | 632 | 2.9e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Sialidase (EC 3.2.1.18) (Neuraminidase (2BZD/2BZD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:08:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/588ef6ca21.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "P-selectin (CD62 antigen-like family m (1G1Q/1G1S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "P-selectin (CD62 antigen-like family m (1G1Q/1G1S)",
+        "motion": "unclassified",
+        "mass_kda": 17.156919,
+        "ca_rmsd": 4.759993964377701,
+        "radius": 42.224500100865015,
+        "box_size": 128,
+        "d2_known_pose": 40.23696517944336,
+        "d2_crlb": 31.584630966186523,
+        "information": 3.99065899848938,
+        "saturation": 0.997664749622345,
+        "n_floor": 626.4629516601562,
+        "n_marginal": 2947.78857421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.026031050887102516,
+        "note": "P16109 91 kDa, dyndom, rotation 48.0 deg, chains D/A",
+        "d2_marginal": 1.047410488128662,
+        "information_marginal": 0.8480933904647827,
+        "n_matched": 158,
+        "identity": 1.0,
+        "shared_fraction": 0.979529946929492,
+        "provenance": {
+          "accession": "P16109",
+          "canonical_mass_kda": 90.82,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 48.0
+        },
+        "d2_floor": 40.23696517944336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| P-selectin (CD62 antigen-like family m (1G1Q/1G1S) | 17 | unclassified | 4.76 | 40.2 | 0.026 | 1.00* | 626 | 2.95e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "P-selectin (CD62 antigen-like family m (1G1Q/1G1S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

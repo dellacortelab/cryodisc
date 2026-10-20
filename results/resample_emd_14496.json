@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/resample_map.py",
+  "commit": "unknown",
+  "written_at": "2026-08-16T07:24:10+00:00",
+  "arguments": {
+    "map": "/home/bryceeh/nobackup/archive/maps/cas9/emd_14496.map",
+    "target_pixel_size": 1.3,
+    "source_pixel_size": null,
+    "out": "/home/bryceeh/nobackup/archive/maps/cas9/dep_14496_bin2.mrc",
+    "tolerance": 0.001,
+    "record": "results/resample_emd_14496.json"
+  },
+  "result": {
+    "source_pixel_size": 0.6499999761581421,
+    "header_pixel_size": 0.6499999761581421,
+    "header_overridden": false,
+    "factor": 2,
+    "achieved_pixel_size": 1.2999999523162842,
+    "box_in": 384,
+    "box_out": 192
+  }
+}

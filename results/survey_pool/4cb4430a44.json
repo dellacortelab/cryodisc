@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:39:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4cb4430a44.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ABC transporter periplasmic binding pr (1D9Y/1O7T)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ABC transporter periplasmic binding pr (1D9Y/1O7T)",
+        "motion": "hinge",
+        "mass_kda": 31.177152999999997,
+        "ca_rmsd": 3.0560138521901146,
+        "radius": 35.51558614597569,
+        "box_size": 128,
+        "d2_known_pose": 30.049474716186523,
+        "d2_crlb": 28.025646209716797,
+        "information": 3.9624452590942383,
+        "saturation": 0.9906113147735596,
+        "n_floor": 630.923583984375,
+        "n_marginal": 3790.432861328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.025850058021226717,
+        "note": "Q50964 36 kDa, dyndom, rotation 27.8 deg, chains A/D",
+        "d2_marginal": 0.7767806649208069,
+        "information_marginal": 0.6595553159713745,
+        "n_matched": 309,
+        "identity": 0.9935275080906149,
+        "shared_fraction": 0.9991589571068125,
+        "provenance": {
+          "accession": "Q50964",
+          "canonical_mass_kda": 35.84,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 27.8
+        },
+        "d2_floor": 30.049474716186523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ABC transporter periplasmic binding pr (1D9Y/1O7T) | 31 | hinge | 3.06 | 30 | 0.026 | 0.99* | 631 | 3.79e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ABC transporter periplasmic binding pr (1D9Y/1O7T)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

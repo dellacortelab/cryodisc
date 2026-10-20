@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:36:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1c1f4b502a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "C-X-C chemokine receptor type 2 (CXC-R (6LFL/6LFO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "C-X-C chemokine receptor type 2 (CXC-R (6LFL/6LFO)",
+        "motion": "activation",
+        "mass_kda": 28.064678999999998,
+        "ca_rmsd": 2.6255150848548188,
+        "radius": 38.04049156049788,
+        "box_size": 128,
+        "d2_known_pose": 37.07414245605469,
+        "d2_crlb": 34.868751525878906,
+        "information": 3.985654830932617,
+        "saturation": 0.9964137077331543,
+        "n_floor": 627.24951171875,
+        "n_marginal": 9720.017578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007394624396168072,
+        "note": "P25025 41 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.2741493582725525,
+        "information_marginal": 0.2572011947631836,
+        "n_matched": 271,
+        "identity": 0.988929889298893,
+        "shared_fraction": 0.5787911494873179,
+        "provenance": {
+          "accession": "P25025",
+          "canonical_mass_kda": 40.759,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 37.07414245605469
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| C-X-C chemokine receptor type 2 (CXC-R (6LFL/6LFO) | 28 | activation | 2.63 | 37.1 | 0.007 | 1.00* | 627 | 9.72e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "C-X-C chemokine receptor type 2 (CXC-R (6LFL/6LFO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

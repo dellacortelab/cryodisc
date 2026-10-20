@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/memorization_ladder.py",
+  "commit": "d0451f8-dirty",
+  "written_at": "2026-09-01T07:37:35+00:00",
+  "arguments": {
+    "source_job": "P53:J1",
+    "rungs": [
+      2000,
+      4000,
+      8000,
+      16000,
+      32000,
+      64000,
+      128000
+    ],
+    "held_out": 8000,
+    "symmetry": "C1",
+    "ssd_cache": false,
+    "host": "m9g-1-1-opa.rc.byu.edu",
+    "port": 39000,
+    "license_file": "~/.cryosparc/license_id",
+    "pool_dir": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder",
+    "out": "results/e20r4_ladder.json",
+    "seed": 0,
+    "draw_seed": 40000007
+  },
+  "result": {
+    "rungs": [
+      {
+        "n_particles": 2000,
+        "job": "J51",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J51",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J51/J51_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J51/J51_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n2000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n2000_d40000007_halfB.cs",
+        "n_half_a": 1000,
+        "n_half_b": 1000,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 4000,
+        "job": "J59",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J59",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J59/J59_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J59/J59_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n4000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n4000_d40000007_halfB.cs",
+        "n_half_a": 2000,
+        "n_half_b": 2000,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 8000,
+        "job": "J67",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J67",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J67/J67_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J67/J67_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n8000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n8000_d40000007_halfB.cs",
+        "n_half_a": 4000,
+        "n_half_b": 4000,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 16000,
+        "job": "J75",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J75",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J75/J75_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J75/J75_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n16000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n16000_d40000007_halfB.cs",
+        "n_half_a": 8000,
+        "n_half_b": 8000,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 32000,
+        "job": "J83",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J83",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J83/J83_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J83/J83_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n32000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n32000_d40000007_halfB.cs",
+        "n_half_a": 16000,
+        "n_half_b": 16000,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 64000,
+        "job": "J91",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J91",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J91/J91_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J91/J91_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n64000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n64000_d40000007_halfB.cs",
+        "n_half_a": 32000,
+        "n_half_b": 32000,
+        "symmetry": "C1"
+      },
+      {
+        "n_particles": 128000,
+        "job": "J99",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J99",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J99/J99_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J99/J99_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n128000_d40000007_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_n128000_d40000007_halfB.cs",
+        "n_half_a": 64000,
+        "n_half_b": 64000,
+        "symmetry": "C1"
+      }
+    ],
+    "held_out": {
+      "pool": "/home/bryceeh/nobackup/archive/pools/e20r4_ladder/e19_heldout.cs",
+      "n_particles": 8000
+    },
+    "n_rungs": 7
+  }
+}

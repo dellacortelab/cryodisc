@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/ladder_real_systems.py",
+  "commit": "17598f07-dirty",
+  "written_at": "2026-10-10T05:35:37+00:00",
+  "arguments": {
+    "pools_root": "results/ribo_pools",
+    "check": "results/calculator_check.json",
+    "cas9_a": "results/rerun_cas9_hoRepro_6nt.npy",
+    "cas9_b": "results/rerun_cas9_hoRepro_12nt.npy",
+    "cas9_a_d2": "results/rerun_cas9_hoRepro_6nt_d2.npy",
+    "cas9_b_d2": "results/rerun_cas9_hoRepro_12nt_d2.npy",
+    "out": "results/ladder_real_systems.json"
+  },
+  "result": {
+    "d2_obs_convention": "deflection(pool_a, pool_b): variance-normalized, de-confounded, pose-marginal",
+    "step1_pred_convention": "mean closed-form known-pose d'^2 over both pools (pool_*_d2.npy); UPPER bound on the honest forward prediction (perfect pose, no high-k envelope)",
+    "systems": [
+      {
+        "system": "msba",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 15.445697689771652,
+        "step1_pred_a": 15.171757540464402,
+        "step1_pred_b": 15.719637839078903,
+        "step4_d2_obs": 2.480336904525757,
+        "ratio_obs_over_pred": 0.16058432285440036,
+        "log_ratio": -1.8289360983338614,
+        "metadata": {
+          "pixel_size": 2.12,
+          "box_size": 128,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 16.96,
+          "dose": 40.0,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 540
+        }
+      },
+      {
+        "system": "fanac",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 10.469987069129942,
+        "step1_pred_a": 9.956321776390075,
+        "step1_pred_b": 10.983652361869812,
+        "step4_d2_obs": 0.8119181990623474,
+        "ratio_obs_over_pred": 0.07754720170154115,
+        "log_ratio": -2.5568684738076444,
+        "metadata": {
+          "pixel_size": 4.088,
+          "box_size": 128,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 32.704,
+          "dose": 40.0,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 301
+        }
+      },
+      {
+        "system": "nkcc1",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 16.360885390639304,
+        "step1_pred_a": 16.184961207389833,
+        "step1_pred_b": 16.536809573888778,
+        "step4_d2_obs": 2.209947347640991,
+        "ratio_obs_over_pred": 0.13507504605498843,
+        "log_ratio": -2.0019247582934248,
+        "metadata": {
+          "pixel_size": 4.004444,
+          "box_size": 144,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 32.035552,
+          "dose": 1.175,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 169
+        }
+      },
+      {
+        "system": "slc19a3",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 10.136450720191002,
+        "step1_pred_a": 9.526536948680878,
+        "step1_pred_b": 10.746364491701126,
+        "step4_d2_obs": 1.1406253576278687,
+        "ratio_obs_over_pred": 0.11252709544138895,
+        "log_ratio": -2.1845612379690724,
+        "metadata": {
+          "pixel_size": 3.997551,
+          "box_size": 98,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 31.980408,
+          "dose": 45.0,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 351
+        }
+      },
+      {
+        "system": "slco2a1",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 5.911292892247438,
+        "step1_pred_a": 5.966694737136364,
+        "step1_pred_b": 5.855891047358513,
+        "step4_d2_obs": 1.1095433235168457,
+        "ratio_obs_over_pred": 0.1876989253860172,
+        "log_ratio": -1.672916060573792,
+        "metadata": {
+          "pixel_size": 4.007184,
+          "box_size": 98,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 32.057472,
+          "dose": 40.2,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 307
+        }
+      },
+      {
+        "system": "ste2",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 13.744810150027275,
+        "step1_pred_a": 13.43298404788971,
+        "step1_pred_b": 14.056636252164841,
+        "step4_d2_obs": 2.177110433578491,
+        "ratio_obs_over_pred": 0.15839508947849462,
+        "log_ratio": -1.8426628008494248,
+        "metadata": {
+          "pixel_size": 4.002308,
+          "box_size": 104,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 32.018464,
+          "dose": 57.0,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 169
+        }
+      },
+      {
+        "system": "hk-atpase",
+        "n_a": 4000,
+        "n_b": 4000,
+        "step1_pred_known_pose": 28.495249665021895,
+        "step1_pred_a": 29.776365686416625,
+        "step1_pred_b": 27.214133643627168,
+        "step4_d2_obs": 3.424072742462158,
+        "ratio_obs_over_pred": 0.1201629318119374,
+        "log_ratio": -2.118906692030136,
+        "metadata": {
+          "pixel_size": 4.010666,
+          "box_size": 156,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 32.085328,
+          "dose": 48.0,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "n_defocus_groups": 168
+        }
+      },
+      {
+        "system": "cas9",
+        "n_a": 20000,
+        "n_b": 20000,
+        "step1_pred_known_pose": 13.62790919063681,
+        "step1_pred_a": 13.985978984832764,
+        "step1_pred_b": 13.269839396440858,
+        "step4_d2_obs": 2.906,
+        "ratio_obs_over_pred": 0.21323887320856205,
+        "log_ratio": -1.5453422711882174,
+        "metadata": {
+          "pixel_size": 1.3,
+          "box_size": 192,
+          "band_limit_cyc_px": 0.125,
+          "band_limit_resolution_a": 10.4,
+          "dose": 40.0,
+          "shift_window": 4,
+          "k_max": 0.1,
+          "marginal_fixed_bank": 4000000,
+          "driver": "experiments/reproduce.py (registry); deploy/orc/_cas9_marginal.sh ran a measured-equivalent 256000 plateau bank"
+        },
+        "step0_eq1_atomic_shortcut": 99.0,
+        "step1b_fsc_half_map_route": {
+          "predicted": 3.494,
+          "predicted_ci": [
+            3.41,
+            3.78
+          ],
+          "measured": 3.563,
+          "measured_err": 0.084,
+          "source": "results/fsc_bridge_cas9.json / appendix note:fsc (6nt pool)"
+        },
+        "deflection_check": 2.9064178466796875
+      }
+    ],
+    "step1_spread": {
+      "n_systems": 8,
+      "geo_mean_ratio": 0.13959431693311525,
+      "geo_mean_overstatement_factor": 7.163615410497955,
+      "geo_sd_factor": 1.3776017776042335,
+      "min_ratio": 0.07754720170154115,
+      "max_ratio": 0.21323887320856205,
+      "range_factor": 2.749794557761898,
+      "per_system_ratio": {
+        "msba": 0.1606,
+        "fanac": 0.0775,
+        "nkcc1": 0.1351,
+        "slc19a3": 0.1125,
+        "slco2a1": 0.1877,
+        "ste2": 0.1584,
+        "hk-atpase": 0.1202,
+        "cas9": 0.2132
+      }
+    },
+    "verdict": "The forward model (known-pose, the quantity that must hold) overstates real d'^2 by a CONSISTENT factor: geo-mean 7.2x, geo-SD 1.38x, full range 2.7x across 8 systems spanning 1.3-4.1 A/px and unrelated complexes. A consistent offset with small spread is ONE empirical correction factor, so the prospective claim survives WITH it applied; it is not a system-dependent blow-up. The much larger Eq. 1 gap (~34x for SpCas9) is the atomic-shortcut extrapolation arm above the survey mass range, not the forward model.",
+    "notes": {
+      "step1_is_upper_bound": "known-pose >= bank-marginalized, so the TRUE forward->obs gap is smaller than reported here; the marginalized prediction needs a GPU re-score.",
+      "envelope_accounts_for_most": "the diagnosed missing high-frequency envelope (implied amplitude ~0.5 -> power ~0.25, i.e. ~4x) explains most of the ~7x; the residual ~1.8x is pose marginalization + decoherence. See ribo_pools/provenance.json amplitude_scale_limitation.",
+      "fsc_route_is_near_exact": "the half-map (FSC) route carries the real envelope and predicts SpCas9 3.49 vs 3.56 measured (note:fsc), i.e. ~1x -- the forward difference model itself is sound; the known-pose closed form overstates only through the two idealizations above.",
+      "steps_not_computed": "Step 0 Eq.1 recorded for SpCas9 only (atomic pair not local for the 7 breadth membrane systems); Steps 2-3 explicit marginalized+Guinier-B predictions need GPU."
+    },
+    "atomic_arm": {
+      "record": "results/ladder_real_atomic.json (experiments/benchmark/ladder_real_atomic.py)",
+      "finding": "The deposited-ATOMIC-model route is SCATTERED on the MATCHED pose-marginalized comparison -- obs/pred geo-SD 9.9x (marginalized+band), 6.0x (marginalized only), 12.7x (known-pose bound); range 180-1450x. Marginalization does NOT collapse it to a single offset (the K^-2/3 extrapolation was refused for every system: K* unreachable). Root cause: a deposited atomic pair is an unreliable proxy for the real scored difference (slco2a1 models differ 0.42 A Ca yet the data separates them; big rigid motions overshoot). The reconstructed-MAP route below (geo-SD 1.38x) is the only consistent one, so the map/FSC route -- not the atomic shortcut (Eq.1) -- carries the prospective claim. [Ran on ribo GPU 0-5, score_survey --marginalize --extrapolate.]"
+    },
+    "d2_obs_is_marginalized": "CORRECTION to an earlier note: d'^2_obs is pose-MARGINALIZED, not known-pose. score_a.json has known_pose=false and recovery.json/the cas9 source have poses=haar; the provenance PROSE saying '--known-pose' is wrong. The map-route known-pose columns here are thus an UPPER bound on the matched prediction, and the atomic arm's marginalized columns are the matched comparison.",
+    "sources": {
+      "pools": "results/ribo_pools/<system>/pool_{a,b}{,_d2}.npy (score_pool.py, commit 6f5f462d / campaign 5ce4383d)",
+      "atomic_ladder": "results/ladder_real_atomic.json",
+      "cas9": "results/rerun_cas9_hoRepro_{6,12}nt{,_d2}.npy",
+      "d2_obs": "results/calculator_check.json result.systems[].d2_obs; SpCas9 = 2.906",
+      "fsc": "results/fsc_bridge_cas9.json",
+      "ribo_pools_provenance": "results/ribo_pools/provenance.json"
+    }
+  }
+}

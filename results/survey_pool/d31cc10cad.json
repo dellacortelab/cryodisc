@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:40:52+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d31cc10cad.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fluorinase (EC 2.5.1.63) (5'-fluoro-5' (2C4U/2CBX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fluorinase (EC 2.5.1.63) (5'-fluoro-5' (2C4U/2CBX)",
+        "motion": "shear",
+        "mass_kda": 29.270211999999997,
+        "ca_rmsd": 0.9141526539227639,
+        "radius": 36.64184454298567,
+        "box_size": 128,
+        "d2_known_pose": 6.265122413635254,
+        "d2_crlb": 5.841139793395996,
+        "information": 2.776155948638916,
+        "saturation": 0.694038987159729,
+        "n_floor": 900.5258178710938,
+        "n_marginal": 31619.962890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012870774555644402,
+        "note": "Q70GK9 32 kDa, dyndom, rotation 6.5 deg, chains E/B",
+        "d2_marginal": 0.08063697814941406,
+        "information_marginal": 0.07906397432088852,
+        "n_matched": 291,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q70GK9",
+          "canonical_mass_kda": 32.37,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.5
+        },
+        "d2_floor": 6.265122413635254
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fluorinase (EC 2.5.1.63) (5'-fluoro-5' (2C4U/2CBX) | 29 | shear | 0.91 | 6.27 | 0.013 | 0.69 | 901 | 3.16e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fluorinase (EC 2.5.1.63) (5'-fluoro-5' (2C4U/2CBX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

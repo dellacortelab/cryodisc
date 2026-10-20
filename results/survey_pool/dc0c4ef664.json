@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:30:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/dc0c4ef664.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Troponin C, slow skeletal and cardiac (1J1D/1J1D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Troponin C, slow skeletal and cardiac (1J1D/1J1D)",
+        "motion": "no_contact",
+        "mass_kda": 16.838257,
+        "ca_rmsd": 2.380534653108196,
+        "radius": 34.525706314633034,
+        "box_size": 128,
+        "d2_known_pose": 15.623779296875,
+        "d2_crlb": 13.475366592407227,
+        "information": 3.710054874420166,
+        "saturation": 0.9275137186050415,
+        "n_floor": 673.8445434570312,
+        "n_marginal": 8627.3818359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019928963261289945,
+        "note": "P63316 18 kDa, dyndom, rotation 22.9 deg, chains A/D",
+        "d2_marginal": 0.3113657236099243,
+        "information_marginal": 0.2897750735282898,
+        "n_matched": 158,
+        "identity": 1.0,
+        "shared_fraction": 0.9897959183673469,
+        "provenance": {
+          "accession": "P63316",
+          "canonical_mass_kda": 18.403,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.9
+        },
+        "d2_floor": 15.623779296875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Troponin C, slow skeletal and cardiac (1J1D/1J1D) | 17 | no_contact | 2.38 | 15.6 | 0.020 | 0.93 | 674 | 8.63e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Troponin C, slow skeletal and cardiac (1J1D/1J1D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

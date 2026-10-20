@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:27:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/015a80d18c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Leucine-rich repeat and immunoglobulin (2ID5/2ID5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Leucine-rich repeat and immunoglobulin (2ID5/2ID5)",
+        "motion": "unclassified",
+        "mass_kda": 49.42336499999999,
+        "ca_rmsd": 1.5568893172895502,
+        "radius": 65.45932784642625,
+        "box_size": 128,
+        "d2_known_pose": 24.658634185791016,
+        "d2_crlb": 21.602293014526367,
+        "information": 3.920474052429199,
+        "saturation": 0.9801185131072998,
+        "n_floor": 637.677978515625,
+        "n_marginal": 27616.751953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0037548313739062113,
+        "note": "Q96FE5 70 kDa, dyndom, rotation 9.1 deg, chains C/D",
+        "d2_marginal": 0.09258901327848434,
+        "information_marginal": 0.09052476286888123,
+        "n_matched": 467,
+        "identity": 1.0,
+        "shared_fraction": 0.9912813738441215,
+        "provenance": {
+          "accession": "Q96FE5",
+          "canonical_mass_kda": 69.876,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.1
+        },
+        "d2_floor": 24.658634185791016
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Leucine-rich repeat and immunoglobulin (2ID5/2ID5) | 49 | unclassified | 1.56 | 24.7 | 0.004 | 0.98 | 638 | 2.76e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Leucine-rich repeat and immunoglobulin (2ID5/2ID5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

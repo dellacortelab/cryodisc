@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:51:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/cdcb5450f8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA-directed RNA polymerase subunit al (1YNJ/1YNN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA-directed RNA polymerase subunit al (1YNJ/1YNN)",
+        "motion": "mixed",
+        "mass_kda": 22.479927999999997,
+        "ca_rmsd": 2.0435642244075507,
+        "radius": 45.519863691396026,
+        "box_size": 128,
+        "d2_known_pose": 15.942828178405762,
+        "d2_crlb": 14.678889274597168,
+        "information": 3.723304033279419,
+        "saturation": 0.9308260083198547,
+        "n_floor": 671.4466552734375,
+        "n_marginal": 35436.0078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004503666310258728,
+        "note": "Q9KWU8 35 kDa, dyndom, rotation 20.5 deg, chains A/B",
+        "d2_marginal": 0.07180117815732956,
+        "information_marginal": 0.07054971158504486,
+        "n_matched": 223,
+        "identity": 1.0,
+        "shared_fraction": 0.970504821327283,
+        "provenance": {
+          "accession": "Q9KWU8",
+          "canonical_mass_kda": 34.787,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.5
+        },
+        "d2_floor": 15.942828178405762
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA-directed RNA polymerase subunit al (1YNJ/1YNN) | 22 | mixed | 2.04 | 15.9 | 0.005 | 0.93 | 671 | 3.54e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA-directed RNA polymerase subunit al (1YNJ/1YNN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

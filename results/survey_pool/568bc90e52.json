@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:37:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/568bc90e52.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Phosphoglucomutase-1 (PGM 1) (EC 5.4.2 (1KFI/1KFQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Phosphoglucomutase-1 (PGM 1) (EC 5.4.2 (1KFI/1KFQ)",
+        "motion": "hinge",
+        "mass_kda": 59.11475099999999,
+        "ca_rmsd": 2.270905567748487,
+        "radius": 44.496724878779105,
+        "box_size": 128,
+        "d2_known_pose": 38.481170654296875,
+        "d2_crlb": 31.44286346435547,
+        "information": 3.9881505966186523,
+        "saturation": 0.9970376491546631,
+        "n_floor": 626.8569946289062,
+        "n_marginal": 11791.783203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005807316619931107,
+        "note": "P47244 64 kDa, dyndom, rotation 16.8 deg, chains A/B",
+        "d2_marginal": 0.22347234189510345,
+        "information_marginal": 0.21201203763484955,
+        "n_matched": 570,
+        "identity": 1.0,
+        "shared_fraction": 0.9979995554567682,
+        "provenance": {
+          "accession": "P47244",
+          "canonical_mass_kda": 63.806,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 16.8
+        },
+        "d2_floor": 38.481170654296875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Phosphoglucomutase-1 (PGM 1) (EC 5.4.2 (1KFI/1KFQ) | 59 | hinge | 2.27 | 38.5 | 0.006 | 1.00* | 627 | 1.18e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Phosphoglucomutase-1 (PGM 1) (EC 5.4.2 (1KFI/1KFQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

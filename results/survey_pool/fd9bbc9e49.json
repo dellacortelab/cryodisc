@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:17:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fd9bbc9e49.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Shikimate kinase (SK) (EC 2.7.1.71) (2IYT/2IYQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Shikimate kinase (SK) (EC 2.7.1.71) (2IYT/2IYQ)",
+        "motion": "crypticpocket",
+        "mass_kda": 16.30202,
+        "ca_rmsd": 3.930600197087717,
+        "radius": 32.84792220787685,
+        "box_size": 128,
+        "d2_known_pose": 31.763662338256836,
+        "d2_crlb": 25.74440574645996,
+        "information": 3.9703471660614014,
+        "saturation": 0.9925867915153503,
+        "n_floor": 629.6678466796875,
+        "n_marginal": 2075.756103515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.05135732950818717,
+        "note": "P9WPY3 19 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 1.6312968730926514,
+        "information_marginal": 1.2043805122375488,
+        "n_matched": 166,
+        "identity": 1.0,
+        "shared_fraction": 0.9574632637277649,
+        "provenance": {
+          "accession": "P9WPY3",
+          "canonical_mass_kda": 18.583,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 31.763662338256836
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Shikimate kinase (SK) (EC 2.7.1.71) (2IYT/2IYQ) | 16 | crypticpocket | 3.93 | 31.8 | 0.051 | 0.99* | 630 | 2.08e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Shikimate kinase (SK) (EC 2.7.1.71) (2IYT/2IYQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:18:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5d0bd9803e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Lysine-sensitive aspartokinase 3 (EC 2 (2J0W/2J0X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Lysine-sensitive aspartokinase 3 (EC 2 (2J0W/2J0X)",
+        "motion": "hinge",
+        "mass_kda": 44.791760999999994,
+        "ca_rmsd": 5.652163955949248,
+        "radius": 43.23572935883603,
+        "box_size": 128,
+        "d2_known_pose": 161.25177001953125,
+        "d2_crlb": 137.67123413085938,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 3639.845703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005050873575010343,
+        "note": "P08660 49 kDa, dyndom, rotation 36.3 deg, chains A/A",
+        "d2_marginal": 0.8144623041152954,
+        "information_marginal": 0.6868423223495483,
+        "n_matched": 447,
+        "identity": 1.0,
+        "shared_fraction": 0.9997055359246172,
+        "provenance": {
+          "accession": "P08660",
+          "canonical_mass_kda": 48.532,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 36.3
+        },
+        "d2_floor": 161.25177001953125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Lysine-sensitive aspartokinase 3 (EC 2 (2J0W/2J0X) | 45 | hinge | 5.65 | 161 | 0.005 | 1.00* | 625 | 3.64e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Lysine-sensitive aspartokinase 3 (EC 2 (2J0W/2J0X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

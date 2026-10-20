@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:19:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b9e95390a4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transport protein (2GHI/2GHI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transport protein (2GHI/2GHI)",
+        "motion": "no_contact",
+        "mass_kda": 25.203637999999994,
+        "ca_rmsd": 1.436207478629405,
+        "radius": 32.94407103694674,
+        "box_size": 128,
+        "d2_known_pose": 9.720399856567383,
+        "d2_crlb": 8.112785339355469,
+        "information": 3.2949235439300537,
+        "saturation": 0.8237308859825134,
+        "n_floor": 758.742919921875,
+        "n_marginal": 14839.7265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01807233992960368,
+        "note": "Q7RBT4 102 kDa, dyndom, rotation 12.8 deg, chains A/B",
+        "d2_marginal": 0.17567037045955658,
+        "information_marginal": 0.1684667319059372,
+        "n_matched": 248,
+        "identity": 1.0,
+        "shared_fraction": 0.9560659011482776,
+        "provenance": {
+          "accession": "Q7RBT4",
+          "canonical_mass_kda": 102.237,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.8
+        },
+        "d2_floor": 9.720399856567383
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transport protein (2GHI/2GHI) | 25 | no_contact | 1.44 | 9.72 | 0.018 | 0.82 | 759 | 1.48e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transport protein (2GHI/2GHI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

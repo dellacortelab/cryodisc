@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:10:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/38737fccfb.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Retinoblastoma-associated protein (p10 (1GH6/1N4M)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Retinoblastoma-associated protein (p10 (1GH6/1N4M)",
+        "motion": "hinge",
+        "mass_kda": 35.08267299999999,
+        "ca_rmsd": 1.2272291074413029,
+        "radius": 39.11424391722857,
+        "box_size": 128,
+        "d2_known_pose": 10.460426330566406,
+        "d2_crlb": 9.73691463470459,
+        "information": 3.371123790740967,
+        "saturation": 0.8427809476852417,
+        "n_floor": 741.5924682617188,
+        "n_marginal": 35161.0078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0069187117862047785,
+        "note": "P06400 106 kDa, dyndom, rotation 8.3 deg, chains B/A",
+        "d2_marginal": 0.0723726749420166,
+        "information_marginal": 0.07110148668289185,
+        "n_matched": 323,
+        "identity": 0.9876160990712074,
+        "shared_fraction": 0.9384941675503712,
+        "provenance": {
+          "accession": "P06400",
+          "canonical_mass_kda": 106.159,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.3
+        },
+        "d2_floor": 10.460426330566406
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Retinoblastoma-associated protein (p10 (1GH6/1N4M) | 35 | hinge | 1.23 | 10.5 | 0.007 | 0.84 | 742 | 3.52e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Retinoblastoma-associated protein (p10 (1GH6/1N4M)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

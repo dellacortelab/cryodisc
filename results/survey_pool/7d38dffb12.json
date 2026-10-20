@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:54:00+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7d38dffb12.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Forkhead box protein P2 (CAG repeat pr (2A07/2A07)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Forkhead box protein P2 (CAG repeat pr (2A07/2A07)",
+        "motion": "hinge",
+        "mass_kda": 9.171835,
+        "ca_rmsd": 13.533201772713989,
+        "radius": 30.64235261027282,
+        "box_size": 128,
+        "d2_known_pose": 149.73867797851562,
+        "d2_crlb": 132.42494201660156,
+        "information": 3.999999761581421,
+        "saturation": 0.9999999403953552,
+        "n_floor": 625.0000610351562,
+        "n_marginal": 1150.6822509765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.026102890075218526,
+        "note": "O15409 80 kDa, dyndom, rotation 174.0 deg, chains J/F",
+        "d2_marginal": 3.9086122512817383,
+        "information_marginal": 2.172624349594116,
+        "n_matched": 82,
+        "identity": 1.0,
+        "shared_fraction": 0.9886845827439887,
+        "provenance": {
+          "accession": "O15409",
+          "canonical_mass_kda": 79.919,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 174.0
+        },
+        "d2_floor": 149.73867797851562
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Forkhead box protein P2 (CAG repeat pr (2A07/2A07) | 9 | hinge | 13.53 | 150 | 0.026 | 1.00* | 625 | 1.15e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Forkhead box protein P2 (CAG repeat pr (2A07/2A07)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

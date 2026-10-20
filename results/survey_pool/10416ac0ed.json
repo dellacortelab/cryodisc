@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:23:47+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/10416ac0ed.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase PLK4 ( (9Y9B/9O63)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase PLK4 ( (9Y9B/9O63)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 24.081547999999994,
+        "ca_rmsd": 0.7029785644856037,
+        "radius": 32.95714805871973,
+        "box_size": 128,
+        "d2_known_pose": 4.143908500671387,
+        "d2_crlb": 3.928750514984131,
+        "information": 2.2464685440063477,
+        "saturation": 0.5616171360015869,
+        "n_floor": 1112.8577880859375,
+        "n_marginal": 57734.3203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010562997214974766,
+        "note": "O00444 109 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains A/A",
+        "d2_marginal": 0.04377209395170212,
+        "information_marginal": 0.04330180212855339,
+        "n_matched": 231,
+        "identity": 1.0,
+        "shared_fraction": 0.9696162046908315,
+        "provenance": {
+          "accession": "O00444",
+          "canonical_mass_kda": 108.972,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 4.143908500671387
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase PLK4 ( (9Y9B/9O63) | 24 | dihedral_cluster | 0.70 | 4.14 | 0.011 | 0.56 | 1.11e+03 | 5.77e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase PLK4 ( (9Y9B/9O63)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

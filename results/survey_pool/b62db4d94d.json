@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:47:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b62db4d94d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ig gamma-1 chain C region, membrane-bo (1KEN/1KEN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ig gamma-1 chain C region, membrane-bo (1KEN/1KEN)",
+        "motion": "no_contact",
+        "mass_kda": 22.407906,
+        "ca_rmsd": 1.3198832901661022,
+        "radius": 43.71077023304643,
+        "box_size": 128,
+        "d2_known_pose": 5.129878044128418,
+        "d2_crlb": 4.28302001953125,
+        "information": 2.5203981399536133,
+        "saturation": 0.6300995349884033,
+        "n_floor": 991.9067993164062,
+        "n_marginal": 48398.91796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010199809192049476,
+        "note": "P01869 43 kDa, dyndom, rotation 8.4 deg, chains H/T",
+        "d2_marginal": 0.052323777228593826,
+        "information_marginal": 0.05165404826402664,
+        "n_matched": 219,
+        "identity": 1.0,
+        "shared_fraction": 0.9883720930232558,
+        "provenance": {
+          "accession": "P01869",
+          "canonical_mass_kda": 43.387,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.4
+        },
+        "d2_floor": 5.129878044128418
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ig gamma-1 chain C region, membrane-bo (1KEN/1KEN) | 22 | no_contact | 1.32 | 5.13 | 0.010 | 0.63 | 992 | 4.84e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ig gamma-1 chain C region, membrane-bo (1KEN/1KEN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

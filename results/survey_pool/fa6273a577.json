@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:48:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fa6273a577.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "V-type ATP synthase subunit C (V-ATPas (1V9M/1R5Z)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "V-type ATP synthase subunit C (V-ATPas (1V9M/1R5Z)",
+        "motion": "shear",
+        "mass_kda": 32.13813,
+        "ca_rmsd": 1.5631045643204744,
+        "radius": 32.44816501119255,
+        "box_size": 128,
+        "d2_known_pose": 13.889984130859375,
+        "d2_crlb": 13.040426254272461,
+        "information": 3.6254332065582275,
+        "saturation": 0.9063583016395569,
+        "n_floor": 689.5728149414062,
+        "n_marginal": 8896.61328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02169113555277196,
+        "note": "P74902 36 kDa, dyndom, rotation 10.2 deg, chains A/B",
+        "d2_marginal": 0.30128952860832214,
+        "information_marginal": 0.2810058295726776,
+        "n_matched": 311,
+        "identity": 1.0,
+        "shared_fraction": 0.9745425616547335,
+        "provenance": {
+          "accession": "P74902",
+          "canonical_mass_kda": 35.919,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.2
+        },
+        "d2_floor": 13.889984130859375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| V-type ATP synthase subunit C (V-ATPas (1V9M/1R5Z) | 32 | shear | 1.56 | 13.9 | 0.022 | 0.91 | 690 | 8.9e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "V-type ATP synthase subunit C (V-ATPas (1V9M/1R5Z)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

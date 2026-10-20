@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:41:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bd81d0e2fc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ATP phosphoribosyltransferase (ATP-PRT (1NH8/1NH7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ATP phosphoribosyltransferase (ATP-PRT (1NH8/1NH7)",
+        "motion": "no_contact",
+        "mass_kda": 27.353030999999994,
+        "ca_rmsd": 4.075752528313376,
+        "radius": 47.84210061493528,
+        "box_size": 128,
+        "d2_known_pose": 65.92369079589844,
+        "d2_crlb": 53.80286407470703,
+        "information": 3.999695301055908,
+        "saturation": 0.999923825263977,
+        "n_floor": 625.047607421875,
+        "n_marginal": 5823.69970703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007242446311807424,
+        "note": "P9WMN1 30 kDa, dyndom, rotation 38.5 deg, chains A/A",
+        "d2_marginal": 0.47744879126548767,
+        "information_marginal": 0.4292804002761841,
+        "n_matched": 274,
+        "identity": 1.0,
+        "shared_fraction": 0.9932918064206996,
+        "provenance": {
+          "accession": "P9WMN1",
+          "canonical_mass_kda": 30.481,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 38.5
+        },
+        "d2_floor": 65.92369079589844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ATP phosphoribosyltransferase (ATP-PRT (1NH8/1NH7) | 27 | no_contact | 4.08 | 65.9 | 0.007 | 1.00* | 625 | 5.82e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ATP phosphoribosyltransferase (ATP-PRT (1NH8/1NH7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

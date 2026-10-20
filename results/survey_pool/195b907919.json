@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:52:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/195b907919.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hepatocyte growth factor receptor (HGF (1R1W/3F82)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hepatocyte growth factor receptor (HGF (1R1W/3F82)",
+        "motion": "crypticpocket",
+        "mass_kda": 27.968174999999995,
+        "ca_rmsd": 1.8147255605602879,
+        "radius": 38.36839662942645,
+        "box_size": 128,
+        "d2_known_pose": 15.30470085144043,
+        "d2_crlb": 14.744086265563965,
+        "information": 3.6961381435394287,
+        "saturation": 0.9240345358848572,
+        "n_floor": 676.3816528320312,
+        "n_marginal": 7179.4921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024802875155267197,
+        "note": "P08581 156 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.3796005845069885,
+        "information_marginal": 0.3482140600681305,
+        "n_matched": 272,
+        "identity": 1.0,
+        "shared_fraction": 0.9286964129483815,
+        "provenance": {
+          "accession": "P08581",
+          "canonical_mass_kda": 155.541,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 15.30470085144043
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hepatocyte growth factor receptor (HGF (1R1W/3F82) | 28 | crypticpocket | 1.81 | 15.3 | 0.025 | 0.92 | 676 | 7.18e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hepatocyte growth factor receptor (HGF (1R1W/3F82)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

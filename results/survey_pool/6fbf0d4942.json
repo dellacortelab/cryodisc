@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:26:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6fbf0d4942.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Rab5 GDP/GTP exchange factor (Rabex-5) (2FIF/2FIF)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Rab5 GDP/GTP exchange factor (Rabex-5) (2FIF/2FIF)",
+        "motion": "no_contact",
+        "mass_kda": 6.255984999999999,
+        "ca_rmsd": 2.122311660604286,
+        "radius": 40.41212741426257,
+        "box_size": 128,
+        "d2_known_pose": 5.867560863494873,
+        "d2_crlb": 4.872042655944824,
+        "information": 2.692859649658203,
+        "saturation": 0.6732149124145508,
+        "n_floor": 928.3811645507812,
+        "n_marginal": 17992.71875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024512896188243524,
+        "note": "O18973 57 kDa, dyndom, rotation 26.8 deg, chains B/F",
+        "d2_marginal": 0.14383091032505035,
+        "information_marginal": 0.1389451026916504,
+        "n_matched": 56,
+        "identity": 1.0,
+        "shared_fraction": 0.9515151515151515,
+        "provenance": {
+          "accession": "O18973",
+          "canonical_mass_kda": 57.009,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 26.8
+        },
+        "d2_floor": 5.867560863494873
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Rab5 GDP/GTP exchange factor (Rabex-5) (2FIF/2FIF) | 6 | no_contact | 2.12 | 5.87 | 0.025 | 0.67 | 928 | 1.8e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Rab5 GDP/GTP exchange factor (Rabex-5) (2FIF/2FIF)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

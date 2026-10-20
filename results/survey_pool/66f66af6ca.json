@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:07:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/66f66af6ca.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Thiol-activated cytolysin (1S3R/1S3R)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Thiol-activated cytolysin (1S3R/1S3R)",
+        "motion": "no_contact",
+        "mass_kda": 48.35350899999999,
+        "ca_rmsd": 2.108879458770327,
+        "radius": 68.27278157131174,
+        "box_size": 128,
+        "d2_known_pose": 45.11295700073242,
+        "d2_crlb": 35.34788513183594,
+        "information": 3.9951584339141846,
+        "saturation": 0.9987896084785461,
+        "n_floor": 625.7574462890625,
+        "n_marginal": 29810.92578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0018981768125029648,
+        "note": "Q9LCB8 58 kDa, dyndom, rotation 15.0 deg, chains A/B",
+        "d2_marginal": 0.08563236892223358,
+        "information_marginal": 0.08386187255382538,
+        "n_matched": 473,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9LCB8",
+          "canonical_mass_kda": 58.423,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 15.0
+        },
+        "d2_floor": 45.11295700073242
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Thiol-activated cytolysin (1S3R/1S3R) | 48 | no_contact | 2.11 | 45.1 | 0.002 | 1.00* | 626 | 2.98e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Thiol-activated cytolysin (1S3R/1S3R)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

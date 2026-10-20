@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:36:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4343176bb0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase JAK3 (EC 2.7.1 (7Q6H/3LXK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase JAK3 (EC 2.7.1 (7Q6H/3LXK)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.156591999999996,
+        "ca_rmsd": 0.509442804598676,
+        "radius": 36.04398429693924,
+        "box_size": 128,
+        "d2_known_pose": 2.7375431060791016,
+        "d2_crlb": 2.5721652507781982,
+        "information": 1.7406814098358154,
+        "saturation": 0.43517035245895386,
+        "n_floor": 1436.21923828125,
+        "n_marginal": 41116.71875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022549882423388498,
+        "note": "P52333 125 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains AAA/A",
+        "d2_marginal": 0.06173127517104149,
+        "information_marginal": 0.06080251932144165,
+        "n_matched": 279,
+        "identity": 1.0,
+        "shared_fraction": 0.9778663125276671,
+        "provenance": {
+          "accession": "P52333",
+          "canonical_mass_kda": 125.099,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 2.7375431060791016
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase JAK3 (EC 2.7.1 (7Q6H/3LXK) | 29 | dihedral_cluster | 0.51 | 2.74 | 0.023 | 0.44 | 1.44e+03 | 4.11e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase JAK3 (EC 2.7.1 (7Q6H/3LXK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

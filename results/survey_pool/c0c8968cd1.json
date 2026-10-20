@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:13:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c0c8968cd1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Biotin carboxylase (EC 6.3.4.14) (Acet (1DV1/1DV2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Biotin carboxylase (EC 6.3.4.14) (Acet (1DV1/1DV2)",
+        "motion": "domainmotion",
+        "mass_kda": 44.30609499999999,
+        "ca_rmsd": 3.8076717460927245,
+        "radius": 45.736748583215,
+        "box_size": 128,
+        "d2_known_pose": 69.3891830444336,
+        "d2_crlb": 62.44173812866211,
+        "information": 3.9998068809509277,
+        "saturation": 0.9999517202377319,
+        "n_floor": 625.0302124023438,
+        "n_marginal": 2308.72802734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02047229507071979,
+        "note": "P24182 49 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 1.420555830001831,
+        "information_marginal": 1.0828473567962646,
+        "n_matched": 434,
+        "identity": 0.9953917050691244,
+        "shared_fraction": 0.9718595880475775,
+        "provenance": {
+          "accession": "P24182",
+          "canonical_mass_kda": 49.321,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 69.3891830444336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Biotin carboxylase (EC 6.3.4.14) (Acet (1DV1/1DV2) | 44 | domainmotion | 3.81 | 69.4 | 0.020 | 1.00* | 625 | 2.31e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Biotin carboxylase (EC 6.3.4.14) (Acet (1DV1/1DV2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

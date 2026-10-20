@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:46:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/700849aa06.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Nicotinate-nucleotide adenylyltransfer (1KAM/1KAQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Nicotinate-nucleotide adenylyltransfer (1KAM/1KAQ)",
+        "motion": "hinge",
+        "mass_kda": 18.770047999999996,
+        "ca_rmsd": 4.363327426546242,
+        "radius": 30.02674651045267,
+        "box_size": 128,
+        "d2_known_pose": 52.59197235107422,
+        "d2_crlb": 47.5964469909668,
+        "information": 3.9982194900512695,
+        "saturation": 0.9995548725128174,
+        "n_floor": 625.2783813476562,
+        "n_marginal": 1193.412109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.06985330304562305,
+        "note": "P54455 22 kDa, dyndom, rotation 36.3 deg, chains B/A",
+        "d2_marginal": 3.673722982406616,
+        "information_marginal": 2.0948338508605957,
+        "n_matched": 173,
+        "identity": 1.0,
+        "shared_fraction": 0.9273670557717251,
+        "provenance": {
+          "accession": "P54455",
+          "canonical_mass_kda": 22.157,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 36.3
+        },
+        "d2_floor": 52.59197235107422
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Nicotinate-nucleotide adenylyltransfer (1KAM/1KAQ) | 19 | hinge | 4.36 | 52.6 | 0.070 | 1.00* | 625 | 1.19e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Nicotinate-nucleotide adenylyltransfer (1KAM/1KAQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

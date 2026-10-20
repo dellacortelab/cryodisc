@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:02:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/700a1e0a1b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "EcoT38I restriction endonuclease (7E8R/7EDB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "EcoT38I restriction endonuclease (7E8R/7EDB)",
+        "motion": "domainmotion",
+        "mass_kda": 35.39201999999999,
+        "ca_rmsd": 8.253130530501764,
+        "radius": 39.80420854695609,
+        "box_size": 128,
+        "d2_known_pose": 99.53251647949219,
+        "d2_crlb": 93.61582946777344,
+        "information": 3.9999961853027344,
+        "saturation": 0.9999990463256836,
+        "n_floor": 625.0006103515625,
+        "n_marginal": 4041.8271484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007244264655878011,
+        "note": "Q83VS8 39 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.721039891242981,
+        "information_marginal": 0.6185321807861328,
+        "n_matched": 345,
+        "identity": 1.0,
+        "shared_fraction": 0.9864220183486239,
+        "provenance": {
+          "accession": "Q83VS8",
+          "canonical_mass_kda": 38.901,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 99.53251647949219
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| EcoT38I restriction endonuclease (7E8R/7EDB) | 35 | domainmotion | 8.25 | 99.5 | 0.007 | 1.00* | 625 | 4.04e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "EcoT38I restriction endonuclease (7E8R/7EDB)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:33:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5ffee6677d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Voltage-gated potassium channel (KvAP) (1ORQ/2A0L)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Voltage-gated potassium channel (KvAP) (1ORQ/2A0L)",
+        "motion": "no_contact",
+        "mass_kda": 21.475882999999996,
+        "ca_rmsd": 7.430213543085549,
+        "radius": 51.63358168369373,
+        "box_size": 128,
+        "d2_known_pose": 182.99960327148438,
+        "d2_crlb": 159.5001220703125,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 1918.3057861328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009904101221189385,
+        "note": "Q9YDF8 33 kDa, dyndom, rotation 57.6 deg, chains C/A",
+        "d2_marginal": 1.8124465942382812,
+        "information_marginal": 1.3032333850860596,
+        "n_matched": 214,
+        "identity": 0.9953271028037384,
+        "shared_fraction": 0.9597432905484248,
+        "provenance": {
+          "accession": "Q9YDF8",
+          "canonical_mass_kda": 32.535,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 57.6
+        },
+        "d2_floor": 182.99960327148438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Voltage-gated potassium channel (KvAP) (1ORQ/2A0L) | 21 | no_contact | 7.43 | 183 | 0.010 | 1.00* | 625 | 1.92e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Voltage-gated potassium channel (KvAP) (1ORQ/2A0L)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

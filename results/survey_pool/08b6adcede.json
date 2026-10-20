@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:31:41+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/08b6adcede.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Vitamin D-binding protein (DBP) (VDB) (1KW2/1KXP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Vitamin D-binding protein (DBP) (VDB) (1KW2/1KXP)",
+        "motion": "hinge",
+        "mass_kda": 45.06839899999999,
+        "ca_rmsd": 2.1219513551631772,
+        "radius": 48.391551176547104,
+        "box_size": 128,
+        "d2_known_pose": 33.05992889404297,
+        "d2_crlb": 30.644245147705078,
+        "information": 3.975182294845581,
+        "saturation": 0.9937955737113953,
+        "n_floor": 628.9019775390625,
+        "n_marginal": 18280.107421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0042798976459482545,
+        "note": "P02774 53 kDa, dyndom, rotation 12.5 deg, chains B/D",
+        "d2_marginal": 0.14149311184883118,
+        "information_marginal": 0.1367606818675995,
+        "n_matched": 433,
+        "identity": 1.0,
+        "shared_fraction": 0.9591836734693877,
+        "provenance": {
+          "accession": "P02774",
+          "canonical_mass_kda": 52.918,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.5
+        },
+        "d2_floor": 33.05992889404297
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Vitamin D-binding protein (DBP) (VDB) (1KW2/1KXP) | 45 | hinge | 2.12 | 33.1 | 0.004 | 0.99* | 629 | 1.83e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Vitamin D-binding protein (DBP) (VDB) (1KW2/1KXP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

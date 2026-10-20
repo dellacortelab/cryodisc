@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:07:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/abadcb0988.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aurora kinase A (EC 2.7.11.1) (Aurora (7ZTL/7O2V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aurora kinase A (EC 2.7.11.1) (Aurora (7ZTL/7O2V)",
+        "motion": "dfg_flip",
+        "mass_kda": 26.788898999999997,
+        "ca_rmsd": 1.1823716223132983,
+        "radius": 34.6824321017449,
+        "box_size": 128,
+        "d2_known_pose": 10.138051986694336,
+        "d2_crlb": 8.98685359954834,
+        "information": 3.3390841484069824,
+        "saturation": 0.8347710371017456,
+        "n_floor": 748.7083740234375,
+        "n_marginal": 21782.666015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011648777516062718,
+        "note": "O14965 46 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/A",
+        "d2_marginal": 0.11809591203927994,
+        "information_marginal": 0.11477015912532806,
+        "n_matched": 254,
+        "identity": 0.9921259842519685,
+        "shared_fraction": 0.9392824287028518,
+        "provenance": {
+          "accession": "O14965",
+          "canonical_mass_kda": 45.823,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 10.138051986694336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aurora kinase A (EC 2.7.11.1) (Aurora (7ZTL/7O2V) | 27 | dfg_flip | 1.18 | 10.1 | 0.012 | 0.83 | 749 | 2.18e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aurora kinase A (EC 2.7.11.1) (Aurora (7ZTL/7O2V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

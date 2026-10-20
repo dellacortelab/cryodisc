@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:37:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b85b2b91cf.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Prefoldin subunit beta (GimC subunit b (1FXK/1FXK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Prefoldin subunit beta (GimC subunit b (1FXK/1FXK)",
+        "motion": "no_contact",
+        "mass_kda": 10.996482999999998,
+        "ca_rmsd": 1.0720266359886574,
+        "radius": 42.06049890319101,
+        "box_size": 128,
+        "d2_known_pose": 3.4682834148406982,
+        "d2_crlb": 2.9659199714660645,
+        "information": 2.0232343673706055,
+        "saturation": 0.5058085918426514,
+        "n_floor": 1235.6453857421875,
+        "n_marginal": 138872.203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005213899151098488,
+        "note": "O26774 14 kDa, dyndom, rotation 11.4 deg, chains B/A",
+        "d2_marginal": 0.018083279952406883,
+        "information_marginal": 0.018002163618803024,
+        "n_matched": 102,
+        "identity": 1.0,
+        "shared_fraction": 0.9834710743801653,
+        "provenance": {
+          "accession": "O26774",
+          "canonical_mass_kda": 13.863,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.4
+        },
+        "d2_floor": 3.4682834148406982
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Prefoldin subunit beta (GimC subunit b (1FXK/1FXK) | 11 | no_contact | 1.07 | 3.47 | 0.005 | 0.51 | 1.24e+03 | 1.39e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Prefoldin subunit beta (GimC subunit b (1FXK/1FXK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

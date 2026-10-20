@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:19:07+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f632d71a6b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fatty acid oxidation complex subunit a (1WDL/1WDL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fatty acid oxidation complex subunit a (1WDL/1WDL)",
+        "motion": "hinge",
+        "mass_kda": 68.901318,
+        "ca_rmsd": 4.347346748686291,
+        "radius": 48.63932128998122,
+        "box_size": 128,
+        "d2_known_pose": 133.2263641357422,
+        "d2_crlb": 121.30912780761719,
+        "information": 3.999999761581421,
+        "saturation": 0.9999999403953552,
+        "n_floor": 625.0000610351562,
+        "n_marginal": 4364.2958984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0049554979926408095,
+        "note": "P28793 77 kDa, dyndom, rotation 17.7 deg, chains B/A",
+        "d2_marginal": 0.6602029800415039,
+        "information_marginal": 0.572830080986023,
+        "n_matched": 706,
+        "identity": 1.0,
+        "shared_fraction": 0.9731393396754336,
+        "provenance": {
+          "accession": "P28793",
+          "canonical_mass_kda": 77.137,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 17.7
+        },
+        "d2_floor": 133.2263641357422
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fatty acid oxidation complex subunit a (1WDL/1WDL) | 69 | hinge | 4.35 | 133 | 0.005 | 1.00* | 625 | 4.36e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fatty acid oxidation complex subunit a (1WDL/1WDL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

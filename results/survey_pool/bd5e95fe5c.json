@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:55:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bd5e95fe5c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "cAMP and cAMP-inhibited cGMP 3',5'-cyc (2OUR/2OUS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "cAMP and cAMP-inhibited cGMP 3',5'-cyc (2OUR/2OUS)",
+        "motion": "hinge",
+        "mass_kda": 33.28960599999999,
+        "ca_rmsd": 1.6889598982573855,
+        "radius": 34.985219350417694,
+        "box_size": 128,
+        "d2_known_pose": 12.944182395935059,
+        "d2_crlb": 12.453829765319824,
+        "information": 3.5686287879943848,
+        "saturation": 0.8921571969985962,
+        "n_floor": 700.5491943359375,
+        "n_marginal": 16240.3916015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012356365144844245,
+        "note": "Q9Y233 115 kDa, dyndom, rotation 49.0 deg, chains B/A",
+        "d2_marginal": 0.15994304418563843,
+        "information_marginal": 0.1539371758699417,
+        "n_matched": 310,
+        "identity": 1.0,
+        "shared_fraction": 0.9499810534293293,
+        "provenance": {
+          "accession": "Q9Y233",
+          "canonical_mass_kda": 114.946,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 49.0
+        },
+        "d2_floor": 12.944182395935059
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| cAMP and cAMP-inhibited cGMP 3',5'-cyc (2OUR/2OUS) | 33 | hinge | 1.69 | 12.9 | 0.012 | 0.89 | 701 | 1.62e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "cAMP and cAMP-inhibited cGMP 3',5'-cyc (2OUR/2OUS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

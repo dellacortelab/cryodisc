@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:20:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9c4dfd42e6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "1-aminocyclopropane-1-carboxylate synt (1B8G/1YNU)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "1-aminocyclopropane-1-carboxylate synt (1B8G/1YNU)",
+        "motion": "shear",
+        "mass_kda": 43.27341499999999,
+        "ca_rmsd": 0.9147040136224711,
+        "radius": 40.94158002085218,
+        "box_size": 128,
+        "d2_known_pose": 12.583178520202637,
+        "d2_crlb": 11.418208122253418,
+        "information": 3.544600486755371,
+        "saturation": 0.8861501216888428,
+        "n_floor": 705.2981567382812,
+        "n_marginal": 12438.5908203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016790270141868315,
+        "note": "P37821 53 kDa, dyndom, rotation 6.6 deg, chains B/A",
+        "d2_marginal": 0.21127496659755707,
+        "information_marginal": 0.20098739862442017,
+        "n_matched": 415,
+        "identity": 1.0,
+        "shared_fraction": 0.975,
+        "provenance": {
+          "accession": "P37821",
+          "canonical_mass_kda": 53.251,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.6
+        },
+        "d2_floor": 12.583178520202637
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 1-aminocyclopropane-1-carboxylate synt (1B8G/1YNU) | 43 | shear | 0.91 | 12.6 | 0.017 | 0.89 | 705 | 1.24e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "1-aminocyclopropane-1-carboxylate synt (1B8G/1YNU)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

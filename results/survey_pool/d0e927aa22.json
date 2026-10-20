@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:16:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d0e927aa22.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Polyphosphate kinase (EC 2.7.4.1) (ATP (2O8R/2O8R)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Polyphosphate kinase (EC 2.7.4.1) (ATP (2O8R/2O8R)",
+        "motion": "hinge",
+        "mass_kda": 62.961162999999985,
+        "ca_rmsd": 3.6975734739787804,
+        "radius": 56.45622548500202,
+        "box_size": 128,
+        "d2_known_pose": 113.65550994873047,
+        "d2_crlb": 105.804931640625,
+        "information": 3.9999990463256836,
+        "saturation": 0.9999997615814209,
+        "n_floor": 625.0001831054688,
+        "n_marginal": 3045.852294921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00885740398857358,
+        "note": "Q7MTR1 81 kDa, dyndom, rotation 22.5 deg, chains A/B",
+        "d2_marginal": 1.0066927671432495,
+        "information_marginal": 0.8207883834838867,
+        "n_matched": 584,
+        "identity": 1.0,
+        "shared_fraction": 0.9289998065389824,
+        "provenance": {
+          "accession": "Q7MTR1",
+          "canonical_mass_kda": 80.688,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.5
+        },
+        "d2_floor": 113.65550994873047
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Polyphosphate kinase (EC 2.7.4.1) (ATP (2O8R/2O8R) | 63 | hinge | 3.70 | 114 | 0.009 | 1.00* | 625 | 3.05e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Polyphosphate kinase (EC 2.7.4.1) (ATP (2O8R/2O8R)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

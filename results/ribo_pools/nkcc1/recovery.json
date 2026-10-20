@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/known_fraction.py",
+  "commit": "22e2e1e0",
+  "written_at": "2026-10-04T06:29:50+00:00",
+  "arguments": {
+    "pair": null,
+    "log_ratio_a": "results/ribo_pools/nkcc1/pool_a.npy",
+    "log_ratio_b": "results/ribo_pools/nkcc1/pool_b.npy",
+    "assembly": "1",
+    "chains": null,
+    "chains_a": null,
+    "chains_b": null,
+    "chain_id_kind": "auth_asym_id",
+    "min_shared_fraction": 0.75,
+    "labels_a": null,
+    "labels_b": null,
+    "out": "results/ribo_pools/nkcc1/recovery.json",
+    "fractions": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875,
+      1.0
+    ],
+    "pixel_size": 2.0,
+    "box_size": 64,
+    "dose": 40.0,
+    "rmsf": 0.5,
+    "defocus_error": 0.0,
+    "stream": false,
+    "pose_chunk": null,
+    "n_particles": 2000,
+    "cap_bank": 1000000,
+    "poses": "haar",
+    "seed": 0,
+    "estimator": "two_pool",
+    "holdout": true,
+    "n_shuffles": 200
+  },
+  "result": {
+    "estimator": "two_pool",
+    "holdout": true,
+    "shuffle_null": {
+      "n_shuffles": 200,
+      "mean": -0.000979208831078504,
+      "sd": 0.1502950409609078,
+      "upper_95": 0.24517399431565853
+    },
+    "snr": null,
+    "n_particles": 4000,
+    "coherence": {
+      "marginalized": true,
+      "baseline_is_a_ceiling": true,
+      "a": {
+        "value": 0.7816232816272072,
+        "mean": 1.5665535926818848,
+        "variance": 4.008461952209473,
+        "points_at_its_own_bank": true
+      },
+      "b": {
+        "value": 0.8705231662973139,
+        "mean": 1.139257788658142,
+        "variance": 2.6174094676971436,
+        "points_at_its_own_bank": true
+      }
+    },
+    "sweep": {
+      "p_true": [
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1.0
+      ],
+      "p_hat": [
+        0.0012894824134282513,
+        0.1046723759563294,
+        0.2544407362888337,
+        0.3550612862080102,
+        0.4957517336338168,
+        0.6451620561555089,
+        0.752429822707996,
+        0.8845397145430165,
+        1.0
+      ]
+    },
+    "purity": {
+      "f_a": 1.0072956694713597,
+      "f_b": -0.008774067714262626,
+      "f_a_err": 0.007727952275557538,
+      "f_b_err": 0.007727952275557538,
+      "separation": 1.0160697371856224,
+      "separation_err": 0.01298555719413859,
+      "midpoint_err": 0.004191070562843557,
+      "midpoint": 0.49926080087854857,
+      "residual_rms": 0.011088530436407552
+    },
+    "recovery_error": {
+      "rms_pp": 1.2263831094870785,
+      "slope": 1.0160697371856224,
+      "intercept": -0.008774067714262626
+    },
+    "derived": {
+      "f_a": 0.9630026692908457,
+      "f_b": 0.024813299494317653,
+      "f_a_error": -0.044293000180514075,
+      "f_b_error": 0.03358736720858028,
+      "mean_a": 1.5665535926818848,
+      "variance_a": 4.008461952209473,
+      "mean_b": 1.139257788658142,
+      "variance_b": 2.6174094676971436
+    },
+    "nodes_realized": null
+  }
+}

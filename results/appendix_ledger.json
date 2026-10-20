@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "driver": "reproduction/experiments/panel/appendix_ledger.py",
+  "commit": "11c18045-dirty",
+  "written_at": "2026-10-17T02:22:53+00:00",
+  "arguments": {
+    "out": "results/appendix_ledger.json"
+  },
+  "result": {
+    "campaigns": {
+      "survey": {
+        "n_records": 1827,
+        "dose_e_per_a2": 40.0,
+        "pixel_size_a": 2.0,
+        "defocus_range_a": [
+          5000.0,
+          25000.0
+        ],
+        "voltage_kv": 300.0,
+        "spherical_aberration_mm": 2.7,
+        "amplitude_contrast": 0.07,
+        "defocus_quadrature_nodes": 99,
+        "rmsf_a": 0.5,
+        "b_conf_a2": 19.739208802178716,
+        "box": {
+          "px": 128
+        }
+      }
+    },
+    "bank_quadrature_radii": 48
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:01:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fcd0ec76e5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "L-allo-threonine aldolase (2FM1/1LW5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "L-allo-threonine aldolase (2FM1/1LW5)",
+        "motion": "mixed",
+        "mass_kda": 32.305681,
+        "ca_rmsd": 0.8159009135290289,
+        "radius": 38.97794018420883,
+        "box_size": 128,
+        "d2_known_pose": 5.337183952331543,
+        "d2_crlb": 4.539815425872803,
+        "information": 2.571394920349121,
+        "saturation": 0.6428487300872803,
+        "n_floor": 972.2349853515625,
+        "n_marginal": 73911.7265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006391166116585124,
+        "note": "Q9X266 38 kDa, dyndom, rotation 7.0 deg, chains D/A",
+        "d2_marginal": 0.03411082923412323,
+        "information_marginal": 0.0338241308927536,
+        "n_matched": 329,
+        "identity": 1.0,
+        "shared_fraction": 0.9434832756632064,
+        "provenance": {
+          "accession": "Q9X266",
+          "canonical_mass_kda": 37.574,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.0
+        },
+        "d2_floor": 5.337183952331543
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| L-allo-threonine aldolase (2FM1/1LW5) | 32 | mixed | 0.82 | 5.34 | 0.006 | 0.64 | 972 | 7.39e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "L-allo-threonine aldolase (2FM1/1LW5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

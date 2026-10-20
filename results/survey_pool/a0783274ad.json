@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:18:01+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a0783274ad.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "UDP-N-acetylglucosamine 2-epimerase (E (1VGV/1VGV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "UDP-N-acetylglucosamine 2-epimerase (E (1VGV/1VGV)",
+        "motion": "hinge",
+        "mass_kda": 37.138909999999996,
+        "ca_rmsd": 2.360532503122545,
+        "radius": 36.953048818348435,
+        "box_size": 128,
+        "d2_known_pose": 32.27617263793945,
+        "d2_crlb": 29.891357421875,
+        "information": 3.9723641872406006,
+        "saturation": 0.9930910468101501,
+        "n_floor": 629.34814453125,
+        "n_marginal": 5477.48681640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01583359667379939,
+        "note": "P27828 42 kDa, dyndom, rotation 17.9 deg, chains D/B",
+        "d2_marginal": 0.511047899723053,
+        "information_marginal": 0.4564136862754822,
+        "n_matched": 361,
+        "identity": 1.0,
+        "shared_fraction": 0.9870764931889626,
+        "provenance": {
+          "accession": "P27828",
+          "canonical_mass_kda": 42.245,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 17.9
+        },
+        "d2_floor": 32.27617263793945
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| UDP-N-acetylglucosamine 2-epimerase (E (1VGV/1VGV) | 37 | hinge | 2.36 | 32.3 | 0.016 | 0.99* | 629 | 5.48e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "UDP-N-acetylglucosamine 2-epimerase (E (1VGV/1VGV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

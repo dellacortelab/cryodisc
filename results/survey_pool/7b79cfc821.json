@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:22:20+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7b79cfc821.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Penicillin-binding protein 2 (Penicill (1MWR/1VQQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Penicillin-binding protein 2 (Penicill (1MWR/1VQQ)",
+        "motion": "unclassified",
+        "mass_kda": 64.446873,
+        "ca_rmsd": 1.7345834983827852,
+        "radius": 75.10099162547361,
+        "box_size": 128,
+        "d2_known_pose": 40.0108642578125,
+        "d2_crlb": 36.18883514404297,
+        "information": 3.9903688430786133,
+        "saturation": 0.9975922107696533,
+        "n_floor": 626.5084838867188,
+        "n_marginal": 57111.89453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0011060585588132858,
+        "note": "Q93IC2 76 kDa, dyndom, rotation 9.6 deg, chains B/B",
+        "d2_marginal": 0.0442543588578701,
+        "information_marginal": 0.04377371817827225,
+        "n_matched": 610,
+        "identity": 1.0,
+        "shared_fraction": 0.9761098944853673,
+        "provenance": {
+          "accession": "Q93IC2",
+          "canonical_mass_kda": 76.189,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.6
+        },
+        "d2_floor": 40.0108642578125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Penicillin-binding protein 2 (Penicill (1MWR/1VQQ) | 64 | unclassified | 1.73 | 40 | 0.001 | 1.00* | 627 | 5.71e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Penicillin-binding protein 2 (Penicill (1MWR/1VQQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

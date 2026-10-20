@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:17:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1cbf3cafcb.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Taste receptor type 2 member 14 (T2R14 (9IJA/8VY7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Taste receptor type 2 member 14 (T2R14 (9IJA/8VY7)",
+        "motion": "activation",
+        "mass_kda": 27.676448999999998,
+        "ca_rmsd": 1.642006480078421,
+        "radius": 40.75539665817384,
+        "box_size": 128,
+        "d2_known_pose": 4.955747604370117,
+        "d2_crlb": 3.9362988471984863,
+        "information": 2.47591495513916,
+        "saturation": 0.61897873878479,
+        "n_floor": 1009.7277221679688,
+        "n_marginal": 58833.45703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008665837888181187,
+        "note": "Q9NYV8 36 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/R",
+        "d2_marginal": 0.042945705354213715,
+        "information_marginal": 0.0424928292632103,
+        "n_matched": 274,
+        "identity": 0.9963503649635036,
+        "shared_fraction": 0.9579375848032564,
+        "provenance": {
+          "accession": "Q9NYV8",
+          "canonical_mass_kda": 36.16,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 4.955747604370117
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Taste receptor type 2 member 14 (T2R14 (9IJA/8VY7) | 28 | activation | 1.64 | 4.96 | 0.009 | 0.62 | 1.01e+03 | 5.88e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Taste receptor type 2 member 14 (T2R14 (9IJA/8VY7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:20:15+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1884be059e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chloroplastic group IIB intron splicin (1RYM/1RYB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chloroplastic group IIB intron splicin (1RYM/1RYB)",
+        "motion": "hinge",
+        "mass_kda": 18.057311,
+        "ca_rmsd": 3.651932605783896,
+        "radius": 29.67893511665717,
+        "box_size": 128,
+        "d2_known_pose": 28.88936424255371,
+        "d2_crlb": 27.64898681640625,
+        "information": 3.9559082984924316,
+        "saturation": 0.9889770746231079,
+        "n_floor": 631.9661254882812,
+        "n_marginal": 3057.76953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03468257065548545,
+        "note": "Q9M5P4 28 kDa, dyndom, rotation 42.5 deg, chains A/A",
+        "d2_marginal": 1.0019574165344238,
+        "information_marginal": 0.8175894021987915,
+        "n_matched": 180,
+        "identity": 0.9944444444444445,
+        "shared_fraction": 0.9528105482303956,
+        "provenance": {
+          "accession": "Q9M5P4",
+          "canonical_mass_kda": 28.214,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 42.5
+        },
+        "d2_floor": 28.88936424255371
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chloroplastic group IIB intron splicin (1RYM/1RYB) | 18 | hinge | 3.65 | 28.9 | 0.035 | 0.99 | 632 | 3.06e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chloroplastic group IIB intron splicin (1RYM/1RYB)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

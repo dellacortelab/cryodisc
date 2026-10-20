@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:05:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a87e2cd0b4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chaperonin GroEL (EC 5.6.1.7) (60 kDa (1XCK/1PCQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chaperonin GroEL (EC 5.6.1.7) (60 kDa (1XCK/1PCQ)",
+        "motion": "shear",
+        "mass_kda": 51.113448999999996,
+        "ca_rmsd": 1.9023438455473038,
+        "radius": 42.95135226729384,
+        "box_size": 128,
+        "d2_known_pose": 35.39958953857422,
+        "d2_crlb": 31.29779815673828,
+        "information": 3.98197865486145,
+        "saturation": 0.9954946637153625,
+        "n_floor": 627.82861328125,
+        "n_marginal": 8003.94482421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009533867583479799,
+        "note": "P0A6F5 57 kDa, dyndom, rotation 10.1 deg, chains N/J",
+        "d2_marginal": 0.33749499917030334,
+        "information_marginal": 0.3123459815979004,
+        "n_matched": 524,
+        "identity": 1.0,
+        "shared_fraction": 0.9997406639004149,
+        "provenance": {
+          "accession": "P0A6F5",
+          "canonical_mass_kda": 57.329,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.1
+        },
+        "d2_floor": 35.39958953857422
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chaperonin GroEL (EC 5.6.1.7) (60 kDa (1XCK/1PCQ) | 51 | shear | 1.90 | 35.4 | 0.010 | 1.00* | 628 | 8e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chaperonin GroEL (EC 5.6.1.7) (60 kDa (1XCK/1PCQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

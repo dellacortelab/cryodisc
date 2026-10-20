@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:53:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4a9b7267b3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "LysR-type regulatory protein (1IZ1/1IXC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "LysR-type regulatory protein (1IZ1/1IXC)",
+        "motion": "hinge",
+        "mass_kda": 28.533789,
+        "ca_rmsd": 17.279132495397175,
+        "radius": 59.011165976208424,
+        "box_size": 128,
+        "d2_known_pose": 326.9222412109375,
+        "d2_crlb": 300.81488037109375,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1108.4771728515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01276173880671972,
+        "note": "Q9WXC7 32 kDa, dyndom, rotation 132.6 deg, chains B/A",
+        "d2_marginal": 4.172096252441406,
+        "information_marginal": 2.2553465366363525,
+        "n_matched": 284,
+        "identity": 1.0,
+        "shared_fraction": 0.963700752545374,
+        "provenance": {
+          "accession": "Q9WXC7",
+          "canonical_mass_kda": 32.037,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 132.6
+        },
+        "d2_floor": 326.9222412109375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| LysR-type regulatory protein (1IZ1/1IXC) | 29 | hinge | 17.28 | 327 | 0.013 | 1.00* | 625 | 1.11e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "LysR-type regulatory protein (1IZ1/1IXC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

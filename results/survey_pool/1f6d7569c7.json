@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:47:49+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1f6d7569c7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase TNNI3K (4YFI/7MGJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase TNNI3K (4YFI/7MGJ)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 25.526547999999995,
+        "ca_rmsd": 1.0726975449769394,
+        "radius": 40.94593069839356,
+        "box_size": 128,
+        "d2_known_pose": 4.70308256149292,
+        "d2_crlb": 4.335278511047363,
+        "information": 2.4085445404052734,
+        "saturation": 0.6021361351013184,
+        "n_floor": 1037.9713134765625,
+        "n_marginal": 33645.6875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016094218334355835,
+        "note": "Q59H18 93 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BBAminus, chains D/D",
+        "d2_marginal": 0.07569243758916855,
+        "information_marginal": 0.07430373132228851,
+        "n_matched": 253,
+        "identity": 0.9920948616600791,
+        "shared_fraction": 0.9475747182753552,
+        "provenance": {
+          "accession": "Q59H18",
+          "canonical_mass_kda": 92.851,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null,
+          "motions": [
+            "dfg_flip",
+            "dihedral_cluster"
+          ]
+        },
+        "d2_floor": 4.70308256149292
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase TNNI3K (4YFI/7MGJ) | 26 | dihedral_cluster | 1.07 | 4.7 | 0.016 | 0.60 | 1.04e+03 | 3.36e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase TNNI3K (4YFI/7MGJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

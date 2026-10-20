@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:56:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7c08345584.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Probable translation initiation factor (1G7T/1G7S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Probable translation initiation factor (1G7T/1G7S)",
+        "motion": "unclassified",
+        "mass_kda": 57.23571199999999,
+        "ca_rmsd": 1.6845504550910353,
+        "radius": 72.38241232828777,
+        "box_size": 128,
+        "d2_known_pose": 29.825254440307617,
+        "d2_crlb": 27.731008529663086,
+        "information": 3.961263656616211,
+        "saturation": 0.9903159141540527,
+        "n_floor": 631.1117553710938,
+        "n_marginal": 60607.8828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0013973209256726807,
+        "note": "O26359 66 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/A",
+        "d2_marginal": 0.04167545214295387,
+        "information_marginal": 0.041248761117458344,
+        "n_matched": 569,
+        "identity": 1.0,
+        "shared_fraction": 0.9856850715746421,
+        "provenance": {
+          "accession": "O26359",
+          "canonical_mass_kda": 66.249,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 29.825254440307617
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Probable translation initiation factor (1G7T/1G7S) | 57 | unclassified | 1.68 | 29.8 | 0.001 | 0.99* | 631 | 6.06e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Probable translation initiation factor (1G7T/1G7S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

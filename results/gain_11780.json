@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/convert_gain.py",
+  "commit": "unknown",
+  "written_at": "2026-08-14T08:28:25+00:00",
+  "arguments": {
+    "dm4": "/nobackup/autodelete/usr/bryceeh/spcas9/11780/20211005_2/20211004_gain_ref/K3-18290183 Gain Ref. x1.m1.dm4",
+    "out": "banks/gain_11780.mrc",
+    "expect_shape": [
+      8184,
+      11520
+    ],
+    "flip_y": false,
+    "out_record": "results/gain_11780.json"
+  },
+  "result": {
+    "source": "/nobackup/autodelete/usr/bryceeh/spcas9/11780/20211005_2/20211004_gain_ref/K3-18290183 Gain Ref. x1.m1.dm4",
+    "out": "banks/gain_11780.mrc",
+    "shape": [
+      8184,
+      11520
+    ],
+    "flip_y": false,
+    "min": 0.5016114711761475,
+    "max": 1.9998888969421387,
+    "mean": 1.0084680318832397,
+    "fraction_zero": 0.0
+  }
+}

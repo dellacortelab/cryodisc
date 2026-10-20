@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:17:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/62fdef042e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Minichromosome maintenance protein MCM (1LTL/1LTL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Minichromosome maintenance protein MCM (1LTL/1LTL)",
+        "motion": "hinge",
+        "mass_kda": 25.425737,
+        "ca_rmsd": 0.8757412163150987,
+        "radius": 35.789893537983986,
+        "box_size": 128,
+        "d2_known_pose": 6.175038814544678,
+        "d2_crlb": 5.514708995819092,
+        "information": 2.757826328277588,
+        "saturation": 0.689456582069397,
+        "n_floor": 906.5110473632812,
+        "n_marginal": 35482.73828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011612072533618739,
+        "note": "O27798 76 kDa, dyndom, rotation 4.6 deg, chains C/F",
+        "d2_marginal": 0.07170499861240387,
+        "information_marginal": 0.07045680284500122,
+        "n_matched": 239,
+        "identity": 1.0,
+        "shared_fraction": 0.9932955131511089,
+        "provenance": {
+          "accession": "O27798",
+          "canonical_mass_kda": 75.553,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 4.6
+        },
+        "d2_floor": 6.175038814544678
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Minichromosome maintenance protein MCM (1LTL/1LTL) | 25 | hinge | 0.88 | 6.18 | 0.012 | 0.69 | 907 | 3.55e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Minichromosome maintenance protein MCM (1LTL/1LTL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

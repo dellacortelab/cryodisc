@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:37:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/185fb752cb.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Formate-dependent phosphoribosylglycin (2CZG/2DWC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Formate-dependent phosphoribosylglycin (2CZG/2DWC)",
+        "motion": "hinge",
+        "mass_kda": 42.090630999999995,
+        "ca_rmsd": 1.6403091269523267,
+        "radius": 40.73521802279667,
+        "box_size": 128,
+        "d2_known_pose": 25.084890365600586,
+        "d2_crlb": 21.541397094726562,
+        "information": 3.9250895977020264,
+        "saturation": 0.9812723994255066,
+        "n_floor": 636.9281616210938,
+        "n_marginal": 6372.53955078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.017235704650354514,
+        "note": "O58056 48 kDa, dyndom, rotation 23.6 deg, chains B/B",
+        "d2_marginal": 0.43235576152801514,
+        "information_marginal": 0.3923082947731018,
+        "n_matched": 403,
+        "identity": 1.0,
+        "shared_fraction": 0.9861239592969473,
+        "provenance": {
+          "accession": "O58056",
+          "canonical_mass_kda": 48.374,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 23.6
+        },
+        "d2_floor": 25.084890365600586
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Formate-dependent phosphoribosylglycin (2CZG/2DWC) | 42 | hinge | 1.64 | 25.1 | 0.017 | 0.98 | 637 | 6.37e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Formate-dependent phosphoribosylglycin (2CZG/2DWC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

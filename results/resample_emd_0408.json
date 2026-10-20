@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/resample_map.py",
+  "commit": "5ed50d2",
+  "written_at": "2026-08-14T21:08:53+00:00",
+  "arguments": {
+    "map": "data/maps/emd_0408.map",
+    "target_pixel_size": 1.117,
+    "source_pixel_size": 0.5585,
+    "out": "data/maps/emd_0408_bin2.mrc",
+    "tolerance": 0.001,
+    "record": "results/resample_emd_0408.json"
+  },
+  "result": {
+    "source_pixel_size": 0.5585,
+    "header_pixel_size": 0.5584999918937683,
+    "header_overridden": true,
+    "factor": 2,
+    "achieved_pixel_size": 1.117,
+    "box_in": 256,
+    "box_out": 128
+  }
+}

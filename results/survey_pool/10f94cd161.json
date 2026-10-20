@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:58:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/10f94cd161.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fusion glycoprotein F0 [Cleaved into: (2B9B/2B9B)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fusion glycoprotein F0 [Cleaved into: (2B9B/2B9B)",
+        "motion": "no_contact",
+        "mass_kda": 46.677192,
+        "ca_rmsd": 1.2257168859610992,
+        "radius": 101.07040928475685,
+        "box_size": 128,
+        "d2_known_pose": 18.280973434448242,
+        "d2_crlb": 15.911582946777344,
+        "information": 3.8030340671539307,
+        "saturation": 0.9507585167884827,
+        "n_floor": 657.369873046875,
+        "n_marginal": 1486414.25,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 9.204175776499896e-05,
+        "note": "P04849 57 kDa, dyndom, rotation 7.8 deg, chains B/C",
+        "d2_marginal": 0.0016826129285618663,
+        "information_marginal": 0.0016818998847156763,
+        "n_matched": 481,
+        "identity": 1.0,
+        "shared_fraction": 0.9937975754158443,
+        "provenance": {
+          "accession": "P04849",
+          "canonical_mass_kda": 56.597,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.8
+        },
+        "d2_floor": 18.280973434448242
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fusion glycoprotein F0 [Cleaved into: (2B9B/2B9B) | 47 | no_contact | 1.23 | 18.3 | 0.000 | 0.95 | 657 | 1.49e+06^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fusion glycoprotein F0 [Cleaved into: (2B9B/2B9B)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

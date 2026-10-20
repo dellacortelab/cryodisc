@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:18:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ee01103e82.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Wee1-like protein kinase (WEE1hu) (EC (9D0R/9D0S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Wee1-like protein kinase (WEE1hu) (EC (9D0R/9D0S)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 27.735545999999996,
+        "ca_rmsd": 0.5090243434346378,
+        "radius": 39.783283698472864,
+        "box_size": 128,
+        "d2_known_pose": 2.255066156387329,
+        "d2_crlb": 2.0898473262786865,
+        "information": 1.5253331661224365,
+        "saturation": 0.38133329153060913,
+        "n_floor": 1638.986328125,
+        "n_marginal": 98705.1640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01130281206464115,
+        "note": "P30291 72 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains A/A",
+        "d2_marginal": 0.025488588958978653,
+        "information_marginal": 0.025327956303954124,
+        "n_matched": 264,
+        "identity": 1.0,
+        "shared_fraction": 0.9966793168880456,
+        "provenance": {
+          "accession": "P30291",
+          "canonical_mass_kda": 71.597,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 2.255066156387329
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Wee1-like protein kinase (WEE1hu) (EC (9D0R/9D0S) | 28 | dihedral_cluster | 0.51 | 2.26 | 0.011 | 0.38 | 1.64e+03 | 9.87e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Wee1-like protein kinase (WEE1hu) (EC (9D0R/9D0S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

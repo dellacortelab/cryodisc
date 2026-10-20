@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:03:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9d0440a9be.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Neopullulanase 2 (EC 3.2.1.135) (Alpha (2D2O/1WZM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Neopullulanase 2 (EC 3.2.1.135) (Alpha (2D2O/1WZM)",
+        "motion": "hinge",
+        "mass_kda": 62.73942799999999,
+        "ca_rmsd": 1.14524478489331,
+        "radius": 51.07422827281053,
+        "box_size": 128,
+        "d2_known_pose": 18.34860610961914,
+        "d2_crlb": 17.535409927368164,
+        "information": 3.8049473762512207,
+        "saturation": 0.9512368440628052,
+        "n_floor": 657.0393676757812,
+        "n_marginal": 30306.845703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004589034904688733,
+        "note": "Q08751 67 kDa, dyndom, rotation 6.7 deg, chains A/B",
+        "d2_marginal": 0.08420239388942719,
+        "information_marginal": 0.08248961716890335,
+        "n_matched": 585,
+        "identity": 0.9965811965811966,
+        "shared_fraction": 0.9989530988274706,
+        "provenance": {
+          "accession": "Q08751",
+          "canonical_mass_kda": 67.467,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.7
+        },
+        "d2_floor": 18.34860610961914
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Neopullulanase 2 (EC 3.2.1.135) (Alpha (2D2O/1WZM) | 63 | hinge | 1.15 | 18.3 | 0.005 | 0.95 | 657 | 3.03e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Neopullulanase 2 (EC 3.2.1.135) (Alpha (2D2O/1WZM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

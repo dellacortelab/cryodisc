@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:11:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fcdca79bf0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Repressor protein CI (2FJR/2FJR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Repressor protein CI (2FJR/2FJR)",
+        "motion": "hinge",
+        "mass_kda": 19.291856999999997,
+        "ca_rmsd": 4.6257129115598525,
+        "radius": 36.59351236999414,
+        "box_size": 128,
+        "d2_known_pose": 60.00457763671875,
+        "d2_crlb": 47.32689666748047,
+        "information": 3.9993338584899902,
+        "saturation": 0.9998334646224976,
+        "n_floor": 625.1041259765625,
+        "n_marginal": 6754.4033203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006760848330307238,
+        "note": "P08707 21 kDa, dyndom, rotation 24.8 deg, chains B/A",
+        "d2_marginal": 0.405681848526001,
+        "information_marginal": 0.37012892961502075,
+        "n_matched": 189,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P08707",
+          "canonical_mass_kda": 21.157,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 24.8
+        },
+        "d2_floor": 60.00457763671875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Repressor protein CI (2FJR/2FJR) | 19 | hinge | 4.63 | 60 | 0.007 | 1.00* | 625 | 6.75e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Repressor protein CI (2FJR/2FJR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:21:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2a4b6f0ea6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Multidrug efflux pump subunit AcrA (Ac (2F1M/2F1M)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Multidrug efflux pump subunit AcrA (Ac (2F1M/2F1M)",
+        "motion": "no_contact",
+        "mass_kda": 21.795064,
+        "ca_rmsd": 2.9251868549677615,
+        "radius": 66.24972979584837,
+        "box_size": 128,
+        "d2_known_pose": 41.876197814941406,
+        "d2_crlb": 31.314327239990234,
+        "information": 3.9925146102905273,
+        "saturation": 0.9981286525726318,
+        "n_floor": 626.1718139648438,
+        "n_marginal": 13020.6064453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004809009648995035,
+        "note": "P0AE06 42 kDa, dyndom, rotation 22.0 deg, chains B/C",
+        "d2_marginal": 0.20138303935527802,
+        "information_marginal": 0.19200335443019867,
+        "n_matched": 220,
+        "identity": 1.0,
+        "shared_fraction": 0.9049180327868852,
+        "provenance": {
+          "accession": "P0AE06",
+          "canonical_mass_kda": 42.197,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.0
+        },
+        "d2_floor": 41.876197814941406
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Multidrug efflux pump subunit AcrA (Ac (2F1M/2F1M) | 22 | no_contact | 2.93 | 41.9 | 0.005 | 1.00* | 626 | 1.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Multidrug efflux pump subunit AcrA (Ac (2F1M/2F1M)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

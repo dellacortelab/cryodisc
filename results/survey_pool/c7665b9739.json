@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:10:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c7665b9739.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Igh protein (1GIG/2VIR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Igh protein (1GIG/2VIR)",
+        "motion": "no_contact",
+        "mass_kda": 22.109817,
+        "ca_rmsd": 4.999043874930363,
+        "radius": 44.55996333755858,
+        "box_size": 128,
+        "d2_known_pose": 59.505462646484375,
+        "d2_crlb": 51.48362350463867,
+        "information": 3.9992880821228027,
+        "saturation": 0.9998220205307007,
+        "n_floor": 625.1112670898438,
+        "n_marginal": 3410.64892578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014777168207897942,
+        "note": "Q99LC4 51 kDa, dyndom, rotation 48.2 deg, chains H/B",
+        "d2_marginal": 0.8793222308158875,
+        "information_marginal": 0.7329983115196228,
+        "n_matched": 221,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q99LC4",
+          "canonical_mass_kda": 51.008,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 48.2
+        },
+        "d2_floor": 59.505462646484375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Igh protein (1GIG/2VIR) | 22 | no_contact | 5.00 | 59.5 | 0.015 | 1.00* | 625 | 3.41e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Igh protein (1GIG/2VIR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

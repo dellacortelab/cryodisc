@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:29:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/12022ebdda.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aspartate aminotransferase, mitochondr (1AKB/7AAT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aspartate aminotransferase, mitochondr (1AKB/7AAT)",
+        "motion": "hinge",
+        "mass_kda": 41.72042,
+        "ca_rmsd": 1.5037790740622339,
+        "radius": 44.33662937524786,
+        "box_size": 128,
+        "d2_known_pose": 14.004323959350586,
+        "d2_crlb": 12.504596710205078,
+        "information": 3.631744861602783,
+        "saturation": 0.9079362154006958,
+        "n_floor": 688.3743896484375,
+        "n_marginal": 28011.6796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006516179507433571,
+        "note": "P00508 47 kDa, dyndom, rotation 13.3 deg, chains A/B",
+        "d2_marginal": 0.09125468879938126,
+        "information_marginal": 0.08924848586320877,
+        "n_matched": 401,
+        "identity": 0.9975062344139651,
+        "shared_fraction": 0.9987349778621126,
+        "provenance": {
+          "accession": "P00508",
+          "canonical_mass_kda": 47.241,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 13.3
+        },
+        "d2_floor": 14.004323959350586
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aspartate aminotransferase, mitochondr (1AKB/7AAT) | 42 | hinge | 1.50 | 14 | 0.007 | 0.91 | 688 | 2.8e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aspartate aminotransferase, mitochondr (1AKB/7AAT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

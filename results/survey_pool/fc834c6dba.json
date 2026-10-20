@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:22:23+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fc834c6dba.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Long-chain-fatty-acid--CoA ligase (EC (1ULT/1ULT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Long-chain-fatty-acid--CoA ligase (EC (1ULT/1ULT)",
+        "motion": "hinge",
+        "mass_kda": 52.33478199999999,
+        "ca_rmsd": 4.595600127803816,
+        "radius": 49.95546645436487,
+        "box_size": 128,
+        "d2_known_pose": 87.9507064819336,
+        "d2_crlb": 76.244873046875,
+        "information": 3.999983072280884,
+        "saturation": 0.999995768070221,
+        "n_floor": 625.002685546875,
+        "n_marginal": 3124.871826171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011098219126465199,
+        "note": "Q5SKN9 60 kDa, dyndom, rotation 50.6 deg, chains A/B",
+        "d2_marginal": 0.9760962128639221,
+        "information_marginal": 0.8000327944755554,
+        "n_matched": 513,
+        "identity": 1.0,
+        "shared_fraction": 0.9611298889425398,
+        "provenance": {
+          "accession": "Q5SKN9",
+          "canonical_mass_kda": 59.571,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 50.6
+        },
+        "d2_floor": 87.9507064819336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Long-chain-fatty-acid--CoA ligase (EC (1ULT/1ULT) | 52 | hinge | 4.60 | 88 | 0.011 | 1.00* | 625 | 3.12e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Long-chain-fatty-acid--CoA ligase (EC (1ULT/1ULT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

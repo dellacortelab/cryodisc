@@ -1,0 +1,84 @@
+{
+ "schema": 1,
+ "title": "Whitening partition across the seven breadth recovery systems (known-pose d'^2, raw vs whitened state maps)",
+ "status": "All seven breadth systems' recovery d'^2 survive amplitude whitening (ratio 1.12-1.51, every one above 1), none collapsing like the pure-batch apoferritin reference (0.16) or anywhere near it. The recovery maps are amplitude-spectrum-matched between the two states at build time (build_full_maps, amplitude_match=spectrum), so the between-state amplitude/envelope channel that carries batch is removed before scoring; the whitening partition confirms the residual is phase/structural (whitening upweights the high-frequency shells and d'^2 rises). Each system's two state maps come from two independent collections (distinct cryoSPARC projects, listed per row).",
+ "written_at": "2026-10-16T22:00:13+00:00",
+ "provenance": {
+  "code_commit": "6f5f462d",
+  "code_commit_note": "ribo compute snapshot SOURCE_COMMIT=6f5f462d, the same snapshot that produced recovery_fullmaps_pools/*/score_a.json; this whitening analysis run 2026-10-16.",
+  "machine": "ribo (ESCP-GPU01), 8x Quadro RTX 5000 16 GB",
+  "method": "Per system: experiments/realdata/score_pool.py --known-pose --calibrate poses --band-limit 0.125 --subsample 4000 --seed 0 (pool A, the arguments of recovery_fullmaps_pools/<sys>/score_a.json) against tmpl_a.mrc/tmpl_b.mrc raw, then against the maps whitened by experiments/crosssession/whiten_map.py (radial amplitude flattening, phases kept). d'^2 is result.oracle_closed_form.d2_pool; the raw value reproduces score_a.json exactly for every system.",
+  "reference": "results/crosssession_null.json carries the matching SpCas9 flagship (ratio 1.16) and apoferritin pure-batch (0.16) partitions on non-amplitude-matched maps."
+ },
+ "result": {
+  "reference_apoferritin_pure_batch_ratio": 0.16,
+  "flagship_spcas9_ratio": 1.16,
+  "ratio_min": 1.124,
+  "ratio_max": 1.51,
+  "systems": [
+   {
+    "system": "msba",
+    "raw_d2": 17.412,
+    "whitened_d2": 19.577,
+    "ratio": 1.124,
+    "source_state_a": "CS-preprocess-3/J14/J14_004_volume_map.mrc",
+    "source_state_b": "CS-preprocess-4/J11/J11_004_volume_map.mrc",
+    "pixel_size": 2.12
+   },
+   {
+    "system": "fanac",
+    "raw_d2": 12.092,
+    "whitened_d2": 16.455,
+    "ratio": 1.361,
+    "source_state_a": "CS-preprocess-12/J9/J9_001_volume_map.mrc",
+    "source_state_b": "CS-preprocess-13/J9/J9_001_volume_map.mrc",
+    "pixel_size": 4.088
+   },
+   {
+    "system": "nkcc1",
+    "raw_d2": 22.276,
+    "whitened_d2": 33.645,
+    "ratio": 1.51,
+    "source_state_a": "CS-camp-nkcc1-11048/J9/J9_002_volume_map.mrc",
+    "source_state_b": "CS-camp-nkcc1-11049/J9/J9_001_volume_map.mrc",
+    "pixel_size": 4.004444
+   },
+   {
+    "system": "slc19a3",
+    "raw_d2": 10.76,
+    "whitened_d2": 13.141,
+    "ratio": 1.221,
+    "source_state_a": "CS-camp-slc19a3-12467/J15/J15_002_volume_map.mrc",
+    "source_state_b": "CS-camp-slc19a3-12474/J9/J9_002_volume_map.mrc",
+    "pixel_size": 3.997551
+   },
+   {
+    "system": "slco2a1",
+    "raw_d2": 7.447,
+    "whitened_d2": 10.827,
+    "ratio": 1.454,
+    "source_state_a": "CS-camp-slco2a1-13568/J9/J9_002_volume_map.mrc",
+    "source_state_b": "CS-camp-slco2a1-13590/J9/J9_002_volume_map.mrc",
+    "pixel_size": 4.007184
+   },
+   {
+    "system": "ste2",
+    "raw_d2": 15.291,
+    "whitened_d2": 17.944,
+    "ratio": 1.174,
+    "source_state_a": "CS-camp-ste2-10877/J9/J9_003_volume_map.mrc",
+    "source_state_b": "CS-camp-ste2-10879/J9/J9_003_volume_map.mrc",
+    "pixel_size": 4.002308
+   },
+   {
+    "system": "hk-atpase",
+    "raw_d2": 42.615,
+    "whitened_d2": 63.01,
+    "ratio": 1.479,
+    "source_state_a": "CS-camp-hk-atpase-11057/J9/J9_003_volume_map.mrc",
+    "source_state_b": "CS-camp-hk-atpase-11722/J9/J9_002_volume_map.mrc",
+    "pixel_size": 4.010666
+   }
+  ]
+ }
+}

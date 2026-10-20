@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:20:03+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/00b66e0c56.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Myosin heavy chain, striated muscle (1KQM/1DFK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Myosin heavy chain, striated muscle (1KQM/1DFK)",
+        "motion": "no_contact",
+        "mass_kda": 46.651371999999995,
+        "ca_rmsd": 12.20639779081926,
+        "radius": 116.08509970904383,
+        "box_size": 128,
+        "d2_known_pose": 308.29150390625,
+        "d2_crlb": 294.4530944824219,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 14274.3740234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0005933667190050213,
+        "note": "P24733 223 kDa, dyndom, rotation 51.1 deg, chains A/A",
+        "d2_marginal": 0.18292991816997528,
+        "information_marginal": 0.17513903975486755,
+        "n_matched": 714,
+        "identity": 1.0,
+        "shared_fraction": 0.5915492957746479,
+        "provenance": {
+          "accession": "P24733",
+          "canonical_mass_kda": 222.822,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 51.1
+        },
+        "d2_floor": 308.29150390625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Myosin heavy chain, striated muscle (1KQM/1DFK) | 47 | no_contact | 12.21 | 308 | 0.001 | 1.00* | 625 | 1.43e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Myosin heavy chain, striated muscle (1KQM/1DFK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:35:07+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/910c4b048e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Exoglucanase-6A (EC 3.2.1.91) (1,4-bet (1OCJ/2BVW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Exoglucanase-6A (EC 3.2.1.91) (1,4-bet (1OCJ/2BVW)",
+        "motion": "shear",
+        "mass_kda": 36.95306199999999,
+        "ca_rmsd": 1.3349324497328794,
+        "radius": 33.54376340683487,
+        "box_size": 128,
+        "d2_known_pose": 11.359441757202148,
+        "d2_crlb": 10.395106315612793,
+        "information": 3.451960563659668,
+        "saturation": 0.862990140914917,
+        "n_floor": 724.2261352539062,
+        "n_marginal": 29315.44140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007668542592927788,
+        "note": "Q9C1S9 51 kDa, dyndom, rotation 9.5 deg, chains A/B",
+        "d2_marginal": 0.08711036294698715,
+        "information_marginal": 0.08527929335832596,
+        "n_matched": 360,
+        "identity": 0.9972222222222222,
+        "shared_fraction": 0.9989312433202707,
+        "provenance": {
+          "accession": "Q9C1S9",
+          "canonical_mass_kda": 51.276,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.5
+        },
+        "d2_floor": 11.359441757202148
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Exoglucanase-6A (EC 3.2.1.91) (1,4-bet (1OCJ/2BVW) | 37 | shear | 1.33 | 11.4 | 0.008 | 0.86 | 724 | 2.93e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Exoglucanase-6A (EC 3.2.1.91) (1,4-bet (1OCJ/2BVW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

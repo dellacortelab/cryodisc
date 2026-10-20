@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:30:41+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d8a3d67c21.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine acetyltransferase (SAT) (EC 2.3 (1SST/1SSQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine acetyltransferase (SAT) (EC 2.3 (1SST/1SSQ)",
+        "motion": "shear",
+        "mass_kda": 23.526778,
+        "ca_rmsd": 0.9540149646891011,
+        "radius": 31.307415768016536,
+        "box_size": 128,
+        "d2_known_pose": 4.798933029174805,
+        "d2_crlb": 4.517139434814453,
+        "information": 2.434506893157959,
+        "saturation": 0.6086267232894897,
+        "n_floor": 1026.9019775390625,
+        "n_marginal": 36743.53125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014420473178305604,
+        "note": "P43886 29 kDa, dyndom, rotation 7.6 deg, chains C/D",
+        "d2_marginal": 0.06920288503170013,
+        "information_marginal": 0.0680391862988472,
+        "n_matched": 236,
+        "identity": 0.9957627118644068,
+        "shared_fraction": 0.9122448979591836,
+        "provenance": {
+          "accession": "P43886",
+          "canonical_mass_kda": 29.166,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.6
+        },
+        "d2_floor": 4.798933029174805
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine acetyltransferase (SAT) (EC 2.3 (1SST/1SSQ) | 24 | shear | 0.95 | 4.8 | 0.014 | 0.61 | 1.03e+03 | 3.67e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine acetyltransferase (SAT) (EC 2.3 (1SST/1SSQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

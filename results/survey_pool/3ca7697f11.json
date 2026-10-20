@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:24:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3ca7697f11.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "fructose-bisphosphatase (EC 3.1.3.11) (1VDW/1VDW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "fructose-bisphosphatase (EC 3.1.3.11) (1VDW/1VDW)",
+        "motion": "shear",
+        "mass_kda": 25.321589999999997,
+        "ca_rmsd": 1.8061259033226025,
+        "radius": 30.958442891695068,
+        "box_size": 128,
+        "d2_known_pose": 14.47449016571045,
+        "d2_crlb": 13.312788963317871,
+        "information": 3.656543016433716,
+        "saturation": 0.914135754108429,
+        "n_floor": 683.7059326171875,
+        "n_marginal": 10189.349609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018014957631979172,
+        "note": "O59523 28 kDa, dyndom, rotation 14.5 deg, chains A/B",
+        "d2_marginal": 0.26075732707977295,
+        "information_marginal": 0.24535422027111053,
+        "n_matched": 247,
+        "identity": 1.0,
+        "shared_fraction": 0.9958741619391439,
+        "provenance": {
+          "accession": "O59523",
+          "canonical_mass_kda": 28.02,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.5
+        },
+        "d2_floor": 14.47449016571045
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| fructose-bisphosphatase (EC 3.1.3.11) (1VDW/1VDW) | 25 | shear | 1.81 | 14.5 | 0.018 | 0.91 | 684 | 1.02e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "fructose-bisphosphatase (EC 3.1.3.11) (1VDW/1VDW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

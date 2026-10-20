@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "driver": "experiments/realdata/score_pool.py",
+  "commit": "9aa3897f",
+  "written_at": "2026-09-18T03:52:21+00:00",
+  "arguments": {
+    "meta": "/home/bryceeh/nobackup/archive/pools/e20_ladder/e19_heldout.cs",
+    "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+    "structure_a": null,
+    "structure_b": null,
+    "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J33/J33_volume_map_half_A.mrc",
+    "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J33/J33_volume_map_half_B.mrc",
+    "known_pose": true,
+    "compare_rungs": false,
+    "calibrate": "poses",
+    "amplitude_shells": null,
+    "invert_contrast": false,
+    "state": null,
+    "assembly": "1",
+    "structure_offset_from_maps": null,
+    "no_superpose": false,
+    "ignore_origin": false,
+    "out": "results/e20_null_n512000.json",
+    "log_ratio": "results/e20_null_n512000.npy",
+    "box_size": null,
+    "pixel_size": null,
+    "k_max": 0.1,
+    "band_limit": 0.125,
+    "nodes": 54,
+    "limit": null,
+    "subsample": 0,
+    "n_shuffles": 200,
+    "seed": 0,
+    "shift_window": 4,
+    "shift_step": 1.0,
+    "cs_pose_transpose": null,
+    "no_recenter": false,
+    "null_images": false,
+    "check_shift_sign": false,
+    "refit_ctf": false,
+    "micrograph": null,
+    "micrograph_pixel_size": null,
+    "n_iterations": 60
+  },
+  "result": {
+    "n_particles": 8000,
+    "box_size": 256,
+    "pixel_size": 1.0770000219345093,
+    "k_max": 0.1,
+    "n_defocus_groups": 423,
+    "amplitude": 1.2212873697280884,
+    "amplitude_spectrum": null,
+    "calibrated_at": "poses",
+    "calibration_state_weights": [
+      0.4962782561779022,
+      0.5037251114845276
+    ],
+    "snr": 5.534361362457275,
+    "coherence": {
+      "value": -0.0235712717232719,
+      "mean": -0.009829985909163952,
+      "variance": 0.8340649604797363,
+      "baseline": 0.9979052910122828,
+      "decoherence": 0.9743340192890109
+    },
+    "oracle_closed_form": {
+      "d2_mean": 1.1320502758026123,
+      "d2_spread": 0.009505174122750759,
+      "predicted_coherence": 0.9979052910122828,
+      "fractional_error_mean": -0.9833027720451355,
+      "fractional_error_sd": 0.0,
+      "d2_pool": 0.019659971818327904,
+      "implied_amplitude_scale": 0.017366694959187374,
+      "predicted_coherence_at_implied_amplitude": 0.99999936690558
+    },
+    "separation": null,
+    "shift": {
+      "applied": true
+    },
+    "ctf_refit": {
+      "ran": false
+    },
+    "states": {
+      "from": "maps",
+      "state_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J33/J33_volume_map_half_A.mrc",
+      "state_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J33/J33_volume_map_half_B.mrc",
+      "amplitude_ratio": 0.9995535494041763
+    },
+    "source": "/home/bryceeh/nobackup/archive/pools/e20_ladder/e19_heldout.cs",
+    "log_ratio_path": "results/e20_null_n512000.npy"
+  }
+}

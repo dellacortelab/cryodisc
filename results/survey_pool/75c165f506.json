@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:58:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/75c165f506.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glycylpeptide N-tetradecanoyltransfera (2NMT/1IIC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glycylpeptide N-tetradecanoyltransfera (2NMT/1IIC)",
+        "motion": "shear",
+        "mass_kda": 44.46394599999999,
+        "ca_rmsd": 1.2681823435425654,
+        "radius": 37.89124212954473,
+        "box_size": 128,
+        "d2_known_pose": 12.944223403930664,
+        "d2_crlb": 12.315783500671387,
+        "information": 3.568631649017334,
+        "saturation": 0.8921579122543335,
+        "n_floor": 700.5486450195312,
+        "n_marginal": 21365.408203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009306794519370144,
+        "note": "P14743 53 kDa, dyndom, rotation 9.6 deg, chains A/A",
+        "d2_marginal": 0.12046922743320465,
+        "information_marginal": 0.11701157689094543,
+        "n_matched": 422,
+        "identity": 1.0,
+        "shared_fraction": 0.9837209302325581,
+        "provenance": {
+          "accession": "P14743",
+          "canonical_mass_kda": 52.838,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.6
+        },
+        "d2_floor": 12.944223403930664
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glycylpeptide N-tetradecanoyltransfera (2NMT/1IIC) | 44 | shear | 1.27 | 12.9 | 0.009 | 0.89 | 701 | 2.14e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glycylpeptide N-tetradecanoyltransfera (2NMT/1IIC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

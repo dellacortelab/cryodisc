@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:35:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f5333bb1ed.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Orotate phosphoribosyltransferase (OPR (2AEE/2AEE)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Orotate phosphoribosyltransferase (OPR (2AEE/2AEE)",
+        "motion": "hinge",
+        "mass_kda": 20.374695,
+        "ca_rmsd": 0.863322467383151,
+        "radius": 31.44404981087948,
+        "box_size": 128,
+        "d2_known_pose": 3.763887405395508,
+        "d2_crlb": 3.3123538494110107,
+        "information": 2.1249353885650635,
+        "saturation": 0.5312338471412659,
+        "n_floor": 1176.5064697265625,
+        "n_marginal": 49765.8203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013514914244023268,
+        "note": "Q9A076 23 kDa, dyndom, rotation 9.6 deg, chains A/B",
+        "d2_marginal": 0.05086861550807953,
+        "information_marginal": 0.05023528262972832,
+        "n_matched": 202,
+        "identity": 1.0,
+        "shared_fraction": 0.9835234474017744,
+        "provenance": {
+          "accession": "Q9A076",
+          "canonical_mass_kda": 22.743,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.6
+        },
+        "d2_floor": 3.763887405395508
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Orotate phosphoribosyltransferase (OPR (2AEE/2AEE) | 20 | hinge | 0.86 | 3.76 | 0.014 | 0.53 | 1.18e+03 | 4.98e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Orotate phosphoribosyltransferase (OPR (2AEE/2AEE)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

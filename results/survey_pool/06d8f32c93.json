@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:46:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/06d8f32c93.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Somatostatin receptor type 2 (SS-2-R) (7UL5/7T10)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Somatostatin receptor type 2 (SS-2-R) (7UL5/7T10)",
+        "motion": "activation",
+        "mass_kda": 26.833809,
+        "ca_rmsd": 3.146178101312653,
+        "radius": 39.474559521609415,
+        "box_size": 128,
+        "d2_known_pose": 40.53142547607422,
+        "d2_crlb": 38.31383514404297,
+        "information": 3.991023540496826,
+        "saturation": 0.9977558851242065,
+        "n_floor": 626.40576171875,
+        "n_marginal": 7217.30078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009312322471757834,
+        "note": "P30874 41 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.3774417042732239,
+        "information_marginal": 0.34638988971710205,
+        "n_matched": 284,
+        "identity": 0.9964788732394366,
+        "shared_fraction": 0.9414476717381282,
+        "provenance": {
+          "accession": "P30874",
+          "canonical_mass_kda": 41.333,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 40.53142547607422
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Somatostatin receptor type 2 (SS-2-R) (7UL5/7T10) | 27 | activation | 3.15 | 40.5 | 0.009 | 1.00* | 626 | 7.22e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Somatostatin receptor type 2 (SS-2-R) (7UL5/7T10)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

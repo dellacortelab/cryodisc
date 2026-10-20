@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:41:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8966d77ac8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tryptophan synthase beta chain 1 (EC 4 (1WDW/1V8Z)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tryptophan synthase beta chain 1 (EC 4 (1WDW/1V8Z)",
+        "motion": "unclassified",
+        "mass_kda": 39.216674999999995,
+        "ca_rmsd": 0.9208143833765756,
+        "radius": 33.83725181061848,
+        "box_size": 128,
+        "d2_known_pose": 12.587752342224121,
+        "d2_crlb": 11.248916625976562,
+        "information": 3.5449135303497314,
+        "saturation": 0.8862283825874329,
+        "n_floor": 705.23583984375,
+        "n_marginal": 14535.3388671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014260350899655775,
+        "note": "Q8U093 43 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains L/B",
+        "d2_marginal": 0.17950576543807983,
+        "information_marginal": 0.1719946265220642,
+        "n_matched": 385,
+        "identity": 1.0,
+        "shared_fraction": 0.9959852793576447,
+        "provenance": {
+          "accession": "Q8U093",
+          "canonical_mass_kda": 42.529,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 12.587752342224121
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tryptophan synthase beta chain 1 (EC 4 (1WDW/1V8Z) | 39 | unclassified | 0.92 | 12.6 | 0.014 | 0.89 | 705 | 1.45e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tryptophan synthase beta chain 1 (EC 4 (1WDW/1V8Z)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

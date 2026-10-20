@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:56:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bddc2a6500.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Eosinophil cationic protein (ECP) (EC (1H1H/1DYT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Eosinophil cationic protein (ECP) (EC (1H1H/1DYT)",
+        "motion": "hinge",
+        "mass_kda": 14.485372,
+        "ca_rmsd": 1.2781396018841418,
+        "radius": 27.523794122502167,
+        "box_size": 128,
+        "d2_known_pose": 5.08211088180542,
+        "d2_crlb": 4.540271759033203,
+        "information": 2.5083487033843994,
+        "saturation": 0.6270871758460999,
+        "n_floor": 996.6716918945312,
+        "n_marginal": 25501.5234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01976657919447804,
+        "note": "P12724 18 kDa, dyndom, rotation 14.1 deg, chains A/A",
+        "d2_marginal": 0.10045594722032547,
+        "information_marginal": 0.0980333611369133,
+        "n_matched": 133,
+        "identity": 1.0,
+        "shared_fraction": 0.9927338782924614,
+        "provenance": {
+          "accession": "P12724",
+          "canonical_mass_kda": 18.385,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 14.1
+        },
+        "d2_floor": 5.08211088180542
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Eosinophil cationic protein (ECP) (EC (1H1H/1DYT) | 14 | hinge | 1.28 | 5.08 | 0.020 | 0.63 | 997 | 2.55e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Eosinophil cationic protein (ECP) (EC (1H1H/1DYT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

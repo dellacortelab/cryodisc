@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:26:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3bb075e229.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Proline utilization trans-activator (1ZME/1ZME)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Proline utilization trans-activator (1ZME/1ZME)",
+        "motion": "no_contact",
+        "mass_kda": 7.368709999999999,
+        "ca_rmsd": 8.598526839204327,
+        "radius": 43.64514779191462,
+        "box_size": 128,
+        "d2_known_pose": 37.200653076171875,
+        "d2_crlb": 22.097198486328125,
+        "information": 3.9858994483947754,
+        "saturation": 0.9964748620986938,
+        "n_floor": 627.2109985351562,
+        "n_marginal": 3870.401123046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02037985623201894,
+        "note": "P25502 111 kDa, dyndom, rotation 134.1 deg, chains D/C",
+        "d2_marginal": 0.758143961429596,
+        "information_marginal": 0.645927906036377,
+        "n_matched": 70,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P25502",
+          "canonical_mass_kda": 111.414,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 134.1
+        },
+        "d2_floor": 37.200653076171875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Proline utilization trans-activator (1ZME/1ZME) | 7 | no_contact | 8.60 | 37.2 | 0.020 | 1.00* | 627 | 3.87e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Proline utilization trans-activator (1ZME/1ZME)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:08:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2ee77885ce.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA polymerase kappa (EC 2.7.7.7) (DIN (1T94/2OH2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA polymerase kappa (EC 2.7.7.7) (DIN (1T94/2OH2)",
+        "motion": "hinge",
+        "mass_kda": 37.429725,
+        "ca_rmsd": 16.116002276992642,
+        "radius": 45.62541361172659,
+        "box_size": 128,
+        "d2_known_pose": 406.619384765625,
+        "d2_crlb": 376.79119873046875,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2143.48876953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003846170913256156,
+        "note": "Q9UBT6 99 kDa, dyndom, rotation 144.0 deg, chains B/B",
+        "d2_marginal": 1.5639276504516602,
+        "information_marginal": 1.166322946548462,
+        "n_matched": 381,
+        "identity": 1.0,
+        "shared_fraction": 0.8657902782023846,
+        "provenance": {
+          "accession": "Q9UBT6",
+          "canonical_mass_kda": 98.809,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 144.0
+        },
+        "d2_floor": 406.619384765625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA polymerase kappa (EC 2.7.7.7) (DIN (1T94/2OH2) | 37 | hinge | 16.12 | 407 | 0.004 | 1.00* | 625 | 2.14e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA polymerase kappa (EC 2.7.7.7) (DIN (1T94/2OH2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

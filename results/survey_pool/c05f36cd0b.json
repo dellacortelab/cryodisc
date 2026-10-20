@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:24:03+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c05f36cd0b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "NAD-dependent protein deacetylase (EC (2H2I/2H59)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "NAD-dependent protein deacetylase (EC (2H2I/2H59)",
+        "motion": "hinge",
+        "mass_kda": 25.189924999999995,
+        "ca_rmsd": 2.3109163781532085,
+        "radius": 33.49596025934777,
+        "box_size": 128,
+        "d2_known_pose": 19.161544799804688,
+        "d2_crlb": 17.79340934753418,
+        "information": 3.8264946937561035,
+        "saturation": 0.9566236734390259,
+        "n_floor": 653.3394775390625,
+        "n_marginal": 6913.6630859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02064042447578022,
+        "note": "Q9WYW0 28 kDa, dyndom, rotation 19.8 deg, chains A/B",
+        "d2_marginal": 0.3955024182796478,
+        "information_marginal": 0.3616028130054474,
+        "n_matched": 244,
+        "identity": 0.9959016393442623,
+        "shared_fraction": 0.9927197087883516,
+        "provenance": {
+          "accession": "Q9WYW0",
+          "canonical_mass_kda": 27.538,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 19.8
+        },
+        "d2_floor": 19.161544799804688
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| NAD-dependent protein deacetylase (EC (2H2I/2H59) | 25 | hinge | 2.31 | 19.2 | 0.021 | 0.96 | 653 | 6.91e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "NAD-dependent protein deacetylase (EC (2H2I/2H59)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

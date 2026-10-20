@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:24:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/415f8f7d88.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Prephenate dehydrogenase (2F1K/2F1K)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Prephenate dehydrogenase (2F1K/2F1K)",
+        "motion": "hinge",
+        "mass_kda": 27.681217999999998,
+        "ca_rmsd": 1.7346881421475304,
+        "radius": 44.92060358862412,
+        "box_size": 128,
+        "d2_known_pose": 17.63778305053711,
+        "d2_crlb": 13.224223136901855,
+        "information": 3.783832550048828,
+        "saturation": 0.945958137512207,
+        "n_floor": 660.705810546875,
+        "n_marginal": 24131.50390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00602717015415239,
+        "note": "P73906 30 kDa, dyndom, rotation 12.5 deg, chains C/D",
+        "d2_marginal": 0.10630591958761215,
+        "information_marginal": 0.10359901189804077,
+        "n_matched": 276,
+        "identity": 1.0,
+        "shared_fraction": 0.9952561669829222,
+        "provenance": {
+          "accession": "P73906",
+          "canonical_mass_kda": 30.216,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.5
+        },
+        "d2_floor": 17.63778305053711
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Prephenate dehydrogenase (2F1K/2F1K) | 28 | hinge | 1.73 | 17.6 | 0.006 | 0.95 | 661 | 2.41e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Prephenate dehydrogenase (2F1K/2F1K)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

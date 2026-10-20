@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:14:15+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/160984584e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Endothelin-1 receptor (Endothelin rece (8XVK/8HCQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Endothelin-1 receptor (Endothelin rece (8XVK/8HCQ)",
+        "motion": "activation",
+        "mass_kda": 29.073556999999997,
+        "ca_rmsd": 3.0773567900652274,
+        "radius": 39.916269332600514,
+        "box_size": 128,
+        "d2_known_pose": 55.864219665527344,
+        "d2_crlb": 52.25548553466797,
+        "information": 3.998847246170044,
+        "saturation": 0.999711811542511,
+        "n_floor": 625.18017578125,
+        "n_marginal": 2579.80712890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022096107353151054,
+        "note": "P25101 49 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/R",
+        "d2_marginal": 1.2343817949295044,
+        "information_marginal": 0.9690647125244141,
+        "n_matched": 282,
+        "identity": 1.0,
+        "shared_fraction": 0.7037982764123843,
+        "provenance": {
+          "accession": "P25101",
+          "canonical_mass_kda": 48.722,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 55.864219665527344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Endothelin-1 receptor (Endothelin rece (8XVK/8HCQ) | 29 | activation | 3.08 | 55.9 | 0.022 | 1.00* | 625 | 2.58e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Endothelin-1 receptor (Endothelin rece (8XVK/8HCQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

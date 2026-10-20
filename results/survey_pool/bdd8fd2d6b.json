@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:28:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bdd8fd2d6b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Shikimate dehydrogenase-like protein H (1NPY/1NPY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Shikimate dehydrogenase-like protein H (1NPY/1NPY)",
+        "motion": "hinge",
+        "mass_kda": 27.597490999999994,
+        "ca_rmsd": 0.844844004720202,
+        "radius": 36.79208459653257,
+        "box_size": 128,
+        "d2_known_pose": 4.259853363037109,
+        "d2_crlb": 3.998326063156128,
+        "information": 2.2816379070281982,
+        "saturation": 0.5704094767570496,
+        "n_floor": 1095.7041015625,
+        "n_marginal": 180705.0625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0032589322943485017,
+        "note": "P44774 30 kDa, dyndom, rotation 8.0 deg, chains C/B",
+        "d2_marginal": 0.013882573693990707,
+        "information_marginal": 0.013834698125720024,
+        "n_matched": 270,
+        "identity": 1.0,
+        "shared_fraction": 0.9980916030534351,
+        "provenance": {
+          "accession": "P44774",
+          "canonical_mass_kda": 29.932,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.0
+        },
+        "d2_floor": 4.259853363037109
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Shikimate dehydrogenase-like protein H (1NPY/1NPY) | 28 | hinge | 0.84 | 4.26 | 0.003 | 0.57 | 1.1e+03 | 1.81e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Shikimate dehydrogenase-like protein H (1NPY/1NPY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

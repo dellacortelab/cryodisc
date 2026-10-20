@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:39:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4b68400234.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "THUMP domain-containing protein (1VBK/1VBK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "THUMP domain-containing protein (1VBK/1VBK)",
+        "motion": "hinge",
+        "mass_kda": 31.488117999999996,
+        "ca_rmsd": 0.8821971865128535,
+        "radius": 42.35516931125728,
+        "box_size": 128,
+        "d2_known_pose": 6.4327545166015625,
+        "d2_crlb": 6.012567043304443,
+        "information": 2.8094518184661865,
+        "saturation": 0.7023629546165466,
+        "n_floor": 889.8533325195312,
+        "n_marginal": 75965.1328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005158173094528105,
+        "note": "O59053 35 kDa, dyndom, rotation 8.4 deg, chains A/B",
+        "d2_marginal": 0.03318126127123833,
+        "information_marginal": 0.03290983662009239,
+        "n_matched": 296,
+        "identity": 1.0,
+        "shared_fraction": 0.9680808080808081,
+        "provenance": {
+          "accession": "O59053",
+          "canonical_mass_kda": 35.15,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.4
+        },
+        "d2_floor": 6.4327545166015625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| THUMP domain-containing protein (1VBK/1VBK) | 31 | hinge | 0.88 | 6.43 | 0.005 | 0.70 | 890 | 7.6e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "THUMP domain-containing protein (1VBK/1VBK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

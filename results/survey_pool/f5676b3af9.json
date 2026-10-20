@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:18:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f5676b3af9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Threonine synthase (EC 4.2.3.1) (1V8C/1V8C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Threonine synthase (EC 4.2.3.1) (1V8C/1V8C)",
+        "motion": "unclassified",
+        "mass_kda": 16.610271,
+        "ca_rmsd": 1.0894889566276988,
+        "radius": 31.781763977130655,
+        "box_size": 128,
+        "d2_known_pose": 4.511859893798828,
+        "d2_crlb": 4.079187393188477,
+        "information": 2.355210542678833,
+        "saturation": 0.5888026356697083,
+        "n_floor": 1061.4761962890625,
+        "n_marginal": 103884.9765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005365879667828007,
+        "note": "P83826 19 kDa, dyndom, rotation 8.0 deg, chains D/B",
+        "d2_marginal": 0.024210097268223763,
+        "information_marginal": 0.024065077304840088,
+        "n_matched": 160,
+        "identity": 1.0,
+        "shared_fraction": 0.9761538461538461,
+        "provenance": {
+          "accession": "P83826",
+          "canonical_mass_kda": 18.512,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.0
+        },
+        "d2_floor": 4.511859893798828
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Threonine synthase (EC 4.2.3.1) (1V8C/1V8C) | 17 | unclassified | 1.09 | 4.51 | 0.005 | 0.59 | 1.06e+03 | 1.04e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Threonine synthase (EC 4.2.3.1) (1V8C/1V8C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

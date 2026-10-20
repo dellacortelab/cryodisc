@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:16:49+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b55b04052f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Proline racemase A (EC 5.1.1.4) (TcPA4 (1W62/1W61)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Proline racemase A (EC 5.1.1.4) (TcPA4 (1W62/1W61)",
+        "motion": "hinge",
+        "mass_kda": 35.08994499999999,
+        "ca_rmsd": 2.2089346037968207,
+        "radius": 37.59597212177777,
+        "box_size": 128,
+        "d2_known_pose": 34.83409881591797,
+        "d2_crlb": 30.014677047729492,
+        "information": 3.980532646179199,
+        "saturation": 0.9951331615447998,
+        "n_floor": 628.056640625,
+        "n_marginal": 4931.1220703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016501993774331848,
+        "note": "Q4DA80 47 kDa, dyndom, rotation 16.2 deg, chains B/B",
+        "d2_marginal": 0.5748320817947388,
+        "information_marginal": 0.5069839954376221,
+        "n_matched": 351,
+        "identity": 1.0,
+        "shared_fraction": 0.9822485207100592,
+        "provenance": {
+          "accession": "Q4DA80",
+          "canonical_mass_kda": 46.95,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 16.2
+        },
+        "d2_floor": 34.83409881591797
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Proline racemase A (EC 5.1.1.4) (TcPA4 (1W62/1W61) | 35 | hinge | 2.21 | 34.8 | 0.017 | 1.00* | 628 | 4.93e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Proline racemase A (EC 5.1.1.4) (TcPA4 (1W62/1W61)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

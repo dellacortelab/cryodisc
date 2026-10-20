@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:01:05+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d94daaab2f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Probable transcriptional regulator (2ESN/2ESN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Probable transcriptional regulator (2ESN/2ESN)",
+        "motion": "hinge",
+        "mass_kda": 30.106882,
+        "ca_rmsd": 10.415602898662838,
+        "radius": 53.34233033352781,
+        "box_size": 128,
+        "d2_known_pose": 233.06686401367188,
+        "d2_crlb": 208.2911376953125,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1863.9559326171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008085863105078016,
+        "note": "Q9I641 34 kDa, dyndom, rotation 78.5 deg, chains A/C",
+        "d2_marginal": 1.8845467567443848,
+        "information_marginal": 1.341233491897583,
+        "n_matched": 294,
+        "identity": 1.0,
+        "shared_fraction": 0.9824636441402909,
+        "provenance": {
+          "accession": "Q9I641",
+          "canonical_mass_kda": 34.054,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 78.5
+        },
+        "d2_floor": 233.06686401367188
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Probable transcriptional regulator (2ESN/2ESN) | 30 | hinge | 10.42 | 233 | 0.008 | 1.00* | 625 | 1.86e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Probable transcriptional regulator (2ESN/2ESN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

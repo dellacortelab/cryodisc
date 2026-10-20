@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:23:57+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/02cb05981d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein Rep68 (EC 3.6.4.12) (1S9H/1U0J)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein Rep68 (EC 3.6.4.12) (1S9H/1U0J)",
+        "motion": "hinge",
+        "mass_kda": 26.424616999999994,
+        "ca_rmsd": 1.5544076609215123,
+        "radius": 39.36754918623283,
+        "box_size": 128,
+        "d2_known_pose": 11.776728630065918,
+        "d2_crlb": 10.985076904296875,
+        "information": 3.485628128051758,
+        "saturation": 0.8714070320129395,
+        "n_floor": 717.2308349609375,
+        "n_marginal": 23016.357421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009475922676058676,
+        "note": "P03132 61 kDa, dyndom, rotation 17.3 deg, chains B/A",
+        "d2_marginal": 0.11159536987543106,
+        "information_marginal": 0.10861840844154358,
+        "n_matched": 261,
+        "identity": 1.0,
+        "shared_fraction": 0.9709302325581395,
+        "provenance": {
+          "accession": "P03132",
+          "canonical_mass_kda": 60.754,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.3
+        },
+        "d2_floor": 11.776728630065918
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein Rep68 (EC 3.6.4.12) (1S9H/1U0J) | 26 | hinge | 1.55 | 11.8 | 0.009 | 0.87 | 717 | 2.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein Rep68 (EC 3.6.4.12) (1S9H/1U0J)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:07:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1760ff6fcf.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Autoinducer 2 sensor kinase/phosphatas (2HJ9/2HJ9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Autoinducer 2 sensor kinase/phosphatas (2HJ9/2HJ9)",
+        "motion": "shear",
+        "mass_kda": 21.189113999999996,
+        "ca_rmsd": 1.063663370358925,
+        "radius": 34.64363529273668,
+        "box_size": 128,
+        "d2_known_pose": 4.2185797691345215,
+        "d2_crlb": 3.8566157817840576,
+        "information": 2.269216537475586,
+        "saturation": 0.5673041343688965,
+        "n_floor": 1101.701904296875,
+        "n_marginal": 70673.515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008459615328207756,
+        "note": "P54302 97 kDa, dyndom, rotation 7.5 deg, chains C/D",
+        "d2_marginal": 0.035687562078237534,
+        "information_marginal": 0.035373933613300323,
+        "n_matched": 203,
+        "identity": 1.0,
+        "shared_fraction": 0.9658068386322736,
+        "provenance": {
+          "accession": "P54302",
+          "canonical_mass_kda": 96.915,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.5
+        },
+        "d2_floor": 4.2185797691345215
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Autoinducer 2 sensor kinase/phosphatas (2HJ9/2HJ9) | 21 | shear | 1.06 | 4.22 | 0.008 | 0.57 | 1.1e+03 | 7.07e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Autoinducer 2 sensor kinase/phosphatas (2HJ9/2HJ9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

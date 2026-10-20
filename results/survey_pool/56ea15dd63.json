@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:22:52+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/56ea15dd63.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tryptophanase (EC 4.1.99.1) (L-tryptop (2OQX/2C44)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tryptophanase (EC 4.1.99.1) (L-tryptop (2OQX/2C44)",
+        "motion": "hinge",
+        "mass_kda": 46.855655999999996,
+        "ca_rmsd": 3.511465038349875,
+        "radius": 37.04091545337854,
+        "box_size": 128,
+        "d2_known_pose": 78.18247985839844,
+        "d2_crlb": 70.23216247558594,
+        "information": 3.999939203262329,
+        "saturation": 0.9999848008155823,
+        "n_floor": 625.009521484375,
+        "n_marginal": 2112.03271484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020394830478239936,
+        "note": "P0A853 53 kDa, dyndom, rotation 21.2 deg, chains A/C",
+        "d2_marginal": 1.5945184230804443,
+        "information_marginal": 1.1836938858032227,
+        "n_matched": 463,
+        "identity": 0.9978401727861771,
+        "shared_fraction": 0.972054794520548,
+        "provenance": {
+          "accession": "P0A853",
+          "canonical_mass_kda": 52.773,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 21.2
+        },
+        "d2_floor": 78.18247985839844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tryptophanase (EC 4.1.99.1) (L-tryptop (2OQX/2C44) | 47 | hinge | 3.51 | 78.2 | 0.020 | 1.00* | 625 | 2.11e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tryptophanase (EC 4.1.99.1) (L-tryptop (2OQX/2C44)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:41:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a130541833.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "RRF2 family protein (1YLF/1YLF)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "RRF2 family protein (1YLF/1YLF)",
+        "motion": "hinge",
+        "mass_kda": 11.218898999999999,
+        "ca_rmsd": 2.2404844473118013,
+        "radius": 41.061887856221205,
+        "box_size": 128,
+        "d2_known_pose": 8.928482055664062,
+        "d2_crlb": 7.92824125289917,
+        "information": 3.202125072479248,
+        "saturation": 0.800531268119812,
+        "n_floor": 780.7315063476562,
+        "n_marginal": 27684.91015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010343969292928409,
+        "note": "Q81EX1 16 kDa, dyndom, rotation 22.9 deg, chains C/A",
+        "d2_marginal": 0.09235594421625137,
+        "information_marginal": 0.09030190110206604,
+        "n_matched": 111,
+        "identity": 1.0,
+        "shared_fraction": 0.9649717514124294,
+        "provenance": {
+          "accession": "Q81EX1",
+          "canonical_mass_kda": 16.251,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.9
+        },
+        "d2_floor": 8.928482055664062
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| RRF2 family protein (1YLF/1YLF) | 11 | hinge | 2.24 | 8.93 | 0.010 | 0.80 | 781 | 2.77e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "RRF2 family protein (1YLF/1YLF)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

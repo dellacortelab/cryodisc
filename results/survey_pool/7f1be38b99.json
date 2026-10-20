@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:19:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7f1be38b99.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cytidylate kinase (CK) (EC 2.7.4.25) ( (1KDT/2CMK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cytidylate kinase (CK) (EC 2.7.4.25) ( (1KDT/2CMK)",
+        "motion": "shear",
+        "mass_kda": 22.281728999999995,
+        "ca_rmsd": 1.3244110655734436,
+        "radius": 28.407385354621507,
+        "box_size": 128,
+        "d2_known_pose": 9.987255096435547,
+        "d2_crlb": 9.286270141601562,
+        "information": 3.3234949111938477,
+        "saturation": 0.8308737277984619,
+        "n_floor": 752.2202758789062,
+        "n_marginal": 4543.791015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.06313687669946783,
+        "note": "P0A6I0 25 kDa, dyndom, rotation 7.8 deg, chains B/A",
+        "d2_marginal": 0.6305640935897827,
+        "information_marginal": 0.550201416015625,
+        "n_matched": 221,
+        "identity": 1.0,
+        "shared_fraction": 0.9923708920187794,
+        "provenance": {
+          "accession": "P0A6I0",
+          "canonical_mass_kda": 24.746,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.8
+        },
+        "d2_floor": 9.987255096435547
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cytidylate kinase (CK) (EC 2.7.4.25) ( (1KDT/2CMK) | 22 | shear | 1.32 | 9.99 | 0.063 | 0.83 | 752 | 4.54e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cytidylate kinase (CK) (EC 2.7.4.25) ( (1KDT/2CMK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

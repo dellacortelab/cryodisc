@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:48:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a92d0c4612.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA helicase/primase (EC 2.7.7.-) (EC (1NUI/1NUI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA helicase/primase (EC 2.7.7.-) (EC (1NUI/1NUI)",
+        "motion": "no_contact",
+        "mass_kda": 24.859742999999995,
+        "ca_rmsd": 2.916512751301578,
+        "radius": 51.35012412094581,
+        "box_size": 128,
+        "d2_known_pose": 29.255529403686523,
+        "d2_crlb": 24.848369598388672,
+        "information": 3.9580883979797363,
+        "saturation": 0.9895220994949341,
+        "n_floor": 631.6180419921875,
+        "n_marginal": 11923.587890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007549823589743155,
+        "note": "P03692 63 kDa, dyndom, rotation 39.7 deg, chains A/B",
+        "d2_marginal": 0.22087408602237701,
+        "information_marginal": 0.20966844260692596,
+        "n_matched": 239,
+        "identity": 1.0,
+        "shared_fraction": 0.9899524061343205,
+        "provenance": {
+          "accession": "P03692",
+          "canonical_mass_kda": 62.655,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 39.7
+        },
+        "d2_floor": 29.255529403686523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA helicase/primase (EC 2.7.7.-) (EC (1NUI/1NUI) | 25 | no_contact | 2.92 | 29.3 | 0.008 | 0.99 | 632 | 1.19e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA helicase/primase (EC 2.7.7.-) (EC (1NUI/1NUI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

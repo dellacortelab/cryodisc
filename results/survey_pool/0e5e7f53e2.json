@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:00:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0e5e7f53e2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase TBK1 ( (6NT9/6O8B)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase TBK1 ( (6NT9/6O8B)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 63.86824899999999,
+        "ca_rmsd": 1.54887458206913,
+        "radius": 83.40260297029727,
+        "box_size": 128,
+        "d2_known_pose": 30.13589096069336,
+        "d2_crlb": 27.890056610107422,
+        "information": 3.962890386581421,
+        "saturation": 0.9907225966453552,
+        "n_floor": 630.8527221679688,
+        "n_marginal": 31651.072265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0026730958296154795,
+        "note": "Q9UHD2 84 kDa, kincore, no rotation angle (kincore reports none); states BLBplus -> BLAminus, chains B/B",
+        "d2_marginal": 0.08055612444877625,
+        "information_marginal": 0.0789862722158432,
+        "n_matched": 601,
+        "identity": 0.9950083194675541,
+        "shared_fraction": 0.9101503759398496,
+        "provenance": {
+          "accession": "Q9UHD2",
+          "canonical_mass_kda": 83.642,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 30.13589096069336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase TBK1 ( (6NT9/6O8B) | 64 | dihedral_cluster | 1.55 | 30.1 | 0.003 | 0.99* | 631 | 3.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase TBK1 ( (6NT9/6O8B)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

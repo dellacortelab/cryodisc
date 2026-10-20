@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:28:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7248afa80c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chromosome partition protein MukF (Pro (1T98/1T98)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chromosome partition protein MukF (Pro (1T98/1T98)",
+        "motion": "unclassified",
+        "mass_kda": 26.752218999999997,
+        "ca_rmsd": 1.6343430303427426,
+        "radius": 43.921087758517054,
+        "box_size": 128,
+        "d2_known_pose": 15.106345176696777,
+        "d2_crlb": 12.69732666015625,
+        "information": 3.687135696411133,
+        "saturation": 0.9217839241027832,
+        "n_floor": 678.0331420898438,
+        "n_marginal": 36652.33984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004592642357860098,
+        "note": "P60293 51 kDa, dyndom, rotation 16.3 deg, chains A/B",
+        "d2_marginal": 0.06937804073095322,
+        "information_marginal": 0.0682084709405899,
+        "n_matched": 253,
+        "identity": 1.0,
+        "shared_fraction": 0.9685714285714285,
+        "provenance": {
+          "accession": "P60293",
+          "canonical_mass_kda": 50.579,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.3
+        },
+        "d2_floor": 15.106345176696777
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chromosome partition protein MukF (Pro (1T98/1T98) | 27 | unclassified | 1.63 | 15.1 | 0.005 | 0.92 | 678 | 3.67e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chromosome partition protein MukF (Pro (1T98/1T98)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

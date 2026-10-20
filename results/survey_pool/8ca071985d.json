@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:12:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8ca071985d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Uncharacterized protein YhfZ C-termina (2OZZ/2OZZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Uncharacterized protein YhfZ C-termina (2OZZ/2OZZ)",
+        "motion": "hinge",
+        "mass_kda": 21.283096999999994,
+        "ca_rmsd": 3.1634841875335447,
+        "radius": 32.49569073560942,
+        "box_size": 128,
+        "d2_known_pose": 23.073352813720703,
+        "d2_crlb": 20.87923812866211,
+        "information": 3.900590419769287,
+        "saturation": 0.9751476049423218,
+        "n_floor": 640.9286499023438,
+        "n_marginal": 21650.607421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005150396238117589,
+        "note": "A0A0H2V277 25 kDa, dyndom, rotation 29.2 deg, chains A/B",
+        "d2_marginal": 0.118836909532547,
+        "information_marginal": 0.11547020822763443,
+        "n_matched": 206,
+        "identity": 1.0,
+        "shared_fraction": 0.9286946520989074,
+        "provenance": {
+          "accession": "A0A0H2V277",
+          "canonical_mass_kda": 25.412,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 29.2
+        },
+        "d2_floor": 23.073352813720703
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Uncharacterized protein YhfZ C-termina (2OZZ/2OZZ) | 21 | hinge | 3.16 | 23.1 | 0.005 | 0.98 | 641 | 2.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Uncharacterized protein YhfZ C-termina (2OZZ/2OZZ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

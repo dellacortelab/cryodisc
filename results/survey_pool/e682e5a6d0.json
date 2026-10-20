@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:47:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/e682e5a6d0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "CCA-adding enzyme (EC 2.7.7.72) (CCA t (1TFY/2DRA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "CCA-adding enzyme (EC 2.7.7.72) (CCA t (1TFY/2DRA)",
+        "motion": "hinge",
+        "mass_kda": 47.72221499999999,
+        "ca_rmsd": 1.8098921234472214,
+        "radius": 58.4087941443486,
+        "box_size": 128,
+        "d2_known_pose": 29.244983673095703,
+        "d2_crlb": 25.563688278198242,
+        "information": 3.958026647567749,
+        "saturation": 0.9895066618919373,
+        "n_floor": 631.6279296875,
+        "n_marginal": 53815.33984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0016069962322261683,
+        "note": "O28126 51 kDa, dyndom, rotation 10.3 deg, chains D/A",
+        "d2_marginal": 0.0469965785741806,
+        "information_marginal": 0.04645515978336334,
+        "n_matched": 437,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "O28126",
+          "canonical_mass_kda": 51.385,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.3
+        },
+        "d2_floor": 29.244983673095703
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| CCA-adding enzyme (EC 2.7.7.72) (CCA t (1TFY/2DRA) | 48 | hinge | 1.81 | 29.2 | 0.002 | 0.99 | 632 | 5.38e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "CCA-adding enzyme (EC 2.7.7.72) (CCA t (1TFY/2DRA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:49:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/549e7420fa.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ras-related protein Rab-27B (EC 3.6.5. (2F7S/2F7S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ras-related protein Rab-27B (EC 3.6.5. (2F7S/2F7S)",
+        "motion": "shear",
+        "mass_kda": 18.899937999999995,
+        "ca_rmsd": 0.9743667249695422,
+        "radius": 55.633931883064754,
+        "box_size": 128,
+        "d2_known_pose": 6.0204596519470215,
+        "d2_crlb": 5.026097297668457,
+        "information": 2.7256388664245605,
+        "saturation": 0.6814097166061401,
+        "n_floor": 917.2161254882812,
+        "n_marginal": 68464.96875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006120672251043675,
+        "note": "O00194 25 kDa, dyndom, rotation 6.2 deg, chains A/B",
+        "d2_marginal": 0.036849260330200195,
+        "information_marginal": 0.03651502728462219,
+        "n_matched": 176,
+        "identity": 1.0,
+        "shared_fraction": 0.9855570839064649,
+        "provenance": {
+          "accession": "O00194",
+          "canonical_mass_kda": 24.608,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.2
+        },
+        "d2_floor": 6.0204596519470215
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ras-related protein Rab-27B (EC 3.6.5. (2F7S/2F7S) | 19 | shear | 0.97 | 6.02 | 0.006 | 0.68 | 917 | 6.85e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ras-related protein Rab-27B (EC 3.6.5. (2F7S/2F7S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

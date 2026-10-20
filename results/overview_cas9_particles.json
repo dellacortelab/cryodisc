@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "driver": "experiments/figures/overview_particles.py",
+  "commit": "c8be59f3",
+  "written_at": "2026-09-29T22:04:37+00:00",
+  "arguments": {
+    "per_state": 4,
+    "candidates": 400,
+    "resolution": 20.0,
+    "seed": 0,
+    "out": "results/overview_cas9_particles.npy"
+  },
+  "result": {
+    "n": 8,
+    "states": [
+      "6nt",
+      "6nt",
+      "6nt",
+      "6nt",
+      "12nt",
+      "12nt",
+      "12nt",
+      "12nt"
+    ],
+    "pools": [
+      "/data/bryceeh/cas9/pools/cas9_6nt_splitB.cs",
+      "/data/bryceeh/cas9/pools/cas9_12nt_splitB.cs"
+    ],
+    "by_state": {
+      "6nt": {
+        "pixel_size": 1.2999999523162842,
+        "matched_median": 0.15227431179578377,
+        "null_median": 0.03326944718342294,
+        "matched_above_null_p95": 0.53,
+        "kept_correlation": [
+          0.40393370881470475,
+          0.33440727153182637,
+          0.31629361494226654,
+          0.3146374324569529
+        ],
+        "kept_defocus": [
+          24318.9716796875,
+          19162.1064453125,
+          22707.9873046875,
+          19240.0439453125
+        ]
+      },
+      "12nt": {
+        "pixel_size": 1.2999999523162842,
+        "matched_median": 0.13337967375658785,
+        "null_median": 0.035868143526364596,
+        "matched_above_null_p95": 0.6575,
+        "kept_correlation": [
+          0.3284735836327909,
+          0.3051630535932184,
+          0.29070417243673513,
+          0.2906067907101282
+        ],
+        "kept_defocus": [
+          22539.90234375,
+          17664.923828125,
+          18516.431640625,
+          20804.73046875
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:56:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/55c3618e3d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "5'-methylthioadenosine/S-adenosylhomoc (1NC1/1JYS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "5'-methylthioadenosine/S-adenosylhomoc (1NC1/1JYS)",
+        "motion": "shear",
+        "mass_kda": 21.913719999999998,
+        "ca_rmsd": 1.4946810413324076,
+        "radius": 32.08855793684386,
+        "box_size": 128,
+        "d2_known_pose": 11.524402618408203,
+        "d2_crlb": 10.51375961303711,
+        "information": 3.465543270111084,
+        "saturation": 0.866385817527771,
+        "n_floor": 721.3876342773438,
+        "n_marginal": 7745.14794921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03034193241148037,
+        "note": "P0AF12 24 kDa, dyndom, rotation 8.6 deg, chains A/B",
+        "d2_marginal": 0.3496726453304291,
+        "information_marginal": 0.3227827250957489,
+        "n_matched": 226,
+        "identity": 1.0,
+        "shared_fraction": 0.9628123184195235,
+        "provenance": {
+          "accession": "P0AF12",
+          "canonical_mass_kda": 24.354,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.6
+        },
+        "d2_floor": 11.524402618408203
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 5'-methylthioadenosine/S-adenosylhomoc (1NC1/1JYS) | 22 | shear | 1.49 | 11.5 | 0.030 | 0.87 | 721 | 7.75e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "5'-methylthioadenosine/S-adenosylhomoc (1NC1/1JYS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

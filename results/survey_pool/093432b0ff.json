@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:22:17+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/093432b0ff.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ephrin type-A receptor 3 (EC 2.7.10.1) (2QOQ/3DZQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ephrin type-A receptor 3 (EC 2.7.10.1) (2QOQ/3DZQ)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 27.845786999999998,
+        "ca_rmsd": 1.2424226030666923,
+        "radius": 35.00857964049125,
+        "box_size": 128,
+        "d2_known_pose": 8.239875793457031,
+        "d2_crlb": 7.197195053100586,
+        "information": 3.1105127334594727,
+        "saturation": 0.7776281833648682,
+        "n_floor": 803.72607421875,
+        "n_marginal": 14044.62890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022579742596065617,
+        "note": "P29320 110 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BBAminus, chains A/A",
+        "d2_marginal": 0.1860542744398117,
+        "information_marginal": 0.17800399661064148,
+        "n_matched": 266,
+        "identity": 1.0,
+        "shared_fraction": 0.9339539007092199,
+        "provenance": {
+          "accession": "P29320",
+          "canonical_mass_kda": 110.131,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 8.239875793457031
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ephrin type-A receptor 3 (EC 2.7.10.1) (2QOQ/3DZQ) | 28 | dihedral_cluster | 1.24 | 8.24 | 0.023 | 0.78 | 804 | 1.4e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ephrin type-A receptor 3 (EC 2.7.10.1) (2QOQ/3DZQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

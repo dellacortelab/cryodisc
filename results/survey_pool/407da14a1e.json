@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:41:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/407da14a1e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Angiopoietin-1 receptor (EC 2.7.10.1) (1FVR/2OO8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Angiopoietin-1 receptor (EC 2.7.10.1) (1FVR/2OO8)",
+        "motion": "crypticpocket",
+        "mass_kda": 25.746375,
+        "ca_rmsd": 1.6577635914928135,
+        "radius": 35.81496548422177,
+        "box_size": 128,
+        "d2_known_pose": 10.854377746582031,
+        "d2_crlb": 10.27258586883545,
+        "information": 3.408021926879883,
+        "saturation": 0.8520054817199707,
+        "n_floor": 733.5633544921875,
+        "n_marginal": 11726.359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02070915170177584,
+        "note": "Q02763 126 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.2247849553823471,
+        "information_marginal": 0.21319492161273956,
+        "n_matched": 252,
+        "identity": 1.0,
+        "shared_fraction": 0.8182199832073888,
+        "provenance": {
+          "accession": "Q02763",
+          "canonical_mass_kda": 125.83,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 10.854377746582031
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Angiopoietin-1 receptor (EC 2.7.10.1) (1FVR/2OO8) | 26 | crypticpocket | 1.66 | 10.9 | 0.021 | 0.85 | 734 | 1.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Angiopoietin-1 receptor (EC 2.7.10.1) (1FVR/2OO8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

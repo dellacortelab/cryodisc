@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:07:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/124949d4f9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chaperone SurA (Peptidyl-prolyl cis-tr (1M5Y/1M5Y)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chaperone SurA (Peptidyl-prolyl cis-tr (1M5Y/1M5Y)",
+        "motion": "no_contact",
+        "mass_kda": 38.756021999999994,
+        "ca_rmsd": 0.8404624051677503,
+        "radius": 61.74795250231735,
+        "box_size": 128,
+        "d2_known_pose": 6.311662197113037,
+        "d2_crlb": 5.632989406585693,
+        "information": 2.7855050563812256,
+        "saturation": 0.6963762640953064,
+        "n_floor": 897.5033569335938,
+        "n_marginal": 1307147.875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00030316559585595224,
+        "note": "P0ABZ6 47 kDa, dyndom, rotation 8.1 deg, chains B/C",
+        "d2_marginal": 0.0019134788308292627,
+        "information_marginal": 0.0019125610124319792,
+        "n_matched": 376,
+        "identity": 1.0,
+        "shared_fraction": 0.9962572303504593,
+        "provenance": {
+          "accession": "P0ABZ6",
+          "canonical_mass_kda": 47.284,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.1
+        },
+        "d2_floor": 6.311662197113037
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chaperone SurA (Peptidyl-prolyl cis-tr (1M5Y/1M5Y) | 39 | no_contact | 0.84 | 6.31 | 0.000 | 0.70 | 898 | 1.31e+06^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chaperone SurA (Peptidyl-prolyl cis-tr (1M5Y/1M5Y)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

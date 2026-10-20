@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:44:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/715069eb95.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pyridoxamine 5'-phosphate oxidase-rela (2I02/2I02)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pyridoxamine 5'-phosphate oxidase-rela (2I02/2I02)",
+        "motion": "hinge",
+        "mass_kda": 14.064618999999997,
+        "ca_rmsd": 1.2089224464601913,
+        "radius": 27.371287674780415,
+        "box_size": 128,
+        "d2_known_pose": 4.858777046203613,
+        "d2_crlb": 4.3083415031433105,
+        "information": 2.450463056564331,
+        "saturation": 0.6126157641410828,
+        "n_floor": 1020.21533203125,
+        "n_marginal": 15060.8740234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.035602571603932404,
+        "note": "B2J0D8 17 kDa, dyndom, rotation 11.3 deg, chains A/B",
+        "d2_marginal": 0.17298495769500732,
+        "information_marginal": 0.16599303483963013,
+        "n_matched": 134,
+        "identity": 1.0,
+        "shared_fraction": 0.9675383228133454,
+        "provenance": {
+          "accession": "B2J0D8",
+          "canonical_mass_kda": 16.966,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.3
+        },
+        "d2_floor": 4.858777046203613
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pyridoxamine 5'-phosphate oxidase-rela (2I02/2I02) | 14 | hinge | 1.21 | 4.86 | 0.036 | 0.61 | 1.02e+03 | 1.51e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pyridoxamine 5'-phosphate oxidase-rela (2I02/2I02)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

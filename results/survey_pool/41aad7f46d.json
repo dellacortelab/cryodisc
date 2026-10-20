@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:00:00+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/41aad7f46d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cytochrome b (Complex III subunit 3) ( (1BCC/3BCC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cytochrome b (Complex III subunit 3) ( (1BCC/3BCC)",
+        "motion": "shear",
+        "mass_kda": 39.25167,
+        "ca_rmsd": 0.7606428219096144,
+        "radius": 44.01085001314317,
+        "box_size": 128,
+        "d2_known_pose": 6.617588043212891,
+        "d2_crlb": 5.850511074066162,
+        "information": 2.844980001449585,
+        "saturation": 0.7112450003623962,
+        "n_floor": 878.7407836914062,
+        "n_marginal": 93752.1328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004056482330274891,
+        "note": "P18946 43 kDa, dyndom, rotation 4.1 deg, chains C/C",
+        "d2_marginal": 0.026844128966331482,
+        "information_marginal": 0.026666060090065002,
+        "n_matched": 379,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P18946",
+          "canonical_mass_kda": 42.592,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 4.1
+        },
+        "d2_floor": 6.617588043212891
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cytochrome b (Complex III subunit 3) ( (1BCC/3BCC) | 39 | shear | 0.76 | 6.62 | 0.004 | 0.71 | 879 | 9.38e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cytochrome b (Complex III subunit 3) ( (1BCC/3BCC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

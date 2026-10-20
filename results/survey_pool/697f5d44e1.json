@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:44:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/697f5d44e1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Endo-1,4-beta-xylanase (EC 3.2.1.8) (2DCK/2DCJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Endo-1,4-beta-xylanase (EC 3.2.1.8) (2DCK/2DCJ)",
+        "motion": "hinge",
+        "mass_kda": 32.902044000000004,
+        "ca_rmsd": 13.609376923308758,
+        "radius": 44.877269728665446,
+        "box_size": 128,
+        "d2_known_pose": 171.47042846679688,
+        "d2_crlb": 156.61154174804688,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1525.280517578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014593330194137728,
+        "note": "Q9RC94 39 kDa, dyndom, rotation 167.7 deg, chains A/A",
+        "d2_marginal": 2.5023245811462402,
+        "information_marginal": 1.639042854309082,
+        "n_matched": 320,
+        "identity": 1.0,
+        "shared_fraction": 0.9822555205047319,
+        "provenance": {
+          "accession": "Q9RC94",
+          "canonical_mass_kda": 39.0,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 167.7
+        },
+        "d2_floor": 171.47042846679688
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Endo-1,4-beta-xylanase (EC 3.2.1.8) (2DCK/2DCJ) | 33 | hinge | 13.61 | 171 | 0.015 | 1.00* | 625 | 1.53e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Endo-1,4-beta-xylanase (EC 3.2.1.8) (2DCK/2DCJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

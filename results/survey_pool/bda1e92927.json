@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:36:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bda1e92927.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glutamate dehydrogenase (GDH) (EC 1.4. (1EUZ/1EUZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glutamate dehydrogenase (GDH) (EC 1.4. (1EUZ/1EUZ)",
+        "motion": "unclassified",
+        "mass_kda": 42.43667899999999,
+        "ca_rmsd": 1.697944473989494,
+        "radius": 38.31721528155723,
+        "box_size": 128,
+        "d2_known_pose": 24.7181396484375,
+        "d2_crlb": 21.02118492126465,
+        "information": 3.921135663986206,
+        "saturation": 0.9802839159965515,
+        "n_floor": 637.5704345703125,
+        "n_marginal": 7255.69580078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015182142981431892,
+        "note": "O74024 47 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/E",
+        "d2_marginal": 0.37527433037757874,
+        "information_marginal": 0.34455692768096924,
+        "n_matched": 416,
+        "identity": 1.0,
+        "shared_fraction": 0.9880294659300184,
+        "provenance": {
+          "accession": "O74024",
+          "canonical_mass_kda": 46.7,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 24.7181396484375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glutamate dehydrogenase (GDH) (EC 1.4. (1EUZ/1EUZ) | 42 | unclassified | 1.70 | 24.7 | 0.015 | 0.98 | 638 | 7.26e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glutamate dehydrogenase (GDH) (EC 1.4. (1EUZ/1EUZ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

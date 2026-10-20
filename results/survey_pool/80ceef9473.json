@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:32:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/80ceef9473.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Lysine/arginine/ornithine-binding peri (6ML0/6MLP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Lysine/arginine/ornithine-binding peri (6ML0/6MLP)",
+        "motion": "domainmotion",
+        "mass_kda": 23.468441,
+        "ca_rmsd": 5.068665885131512,
+        "radius": 31.838576462842113,
+        "box_size": 128,
+        "d2_known_pose": 56.11437225341797,
+        "d2_crlb": 49.73474884033203,
+        "information": 3.998884916305542,
+        "saturation": 0.9997212290763855,
+        "n_floor": 625.1742553710938,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P02911 28 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 238,
+        "identity": 0.9915966386554622,
+        "shared_fraction": 0.9732094040459267,
+        "provenance": {
+          "accession": "P02911",
+          "canonical_mass_kda": 28.2,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 56.11437225341797
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Lysine/arginine/ornithine-binding peri (6ML0/6MLP) | 23 | domainmotion | 5.07 | 56.1 | -- | 1.00* | 625 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Lysine/arginine/ornithine-binding peri (6ML0/6MLP)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 10 (total of 0 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

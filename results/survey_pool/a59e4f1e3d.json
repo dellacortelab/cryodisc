@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:43:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a59e4f1e3d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase Chk2 ( (3I6W/3I6U)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase Chk2 ( (3I6W/3I6U)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 40.40962999999999,
+        "ca_rmsd": 1.6087601388685928,
+        "radius": 57.19353824014662,
+        "box_size": 128,
+        "d2_known_pose": 13.354547500610352,
+        "d2_crlb": 12.92420482635498,
+        "information": 3.594320297241211,
+        "saturation": 0.8985800743103027,
+        "n_floor": 695.5418090820312,
+        "n_marginal": 23956.0625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008020085062526163,
+        "note": "O96017 61 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BLAplus, chains H/A",
+        "d2_marginal": 0.10710460692644119,
+        "information_marginal": 0.10435771942138672,
+        "n_matched": 376,
+        "identity": 1.0,
+        "shared_fraction": 0.9696874013261761,
+        "provenance": {
+          "accession": "O96017",
+          "canonical_mass_kda": 60.915,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 13.354547500610352
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase Chk2 ( (3I6W/3I6U) | 40 | dihedral_cluster | 1.61 | 13.4 | 0.008 | 0.90 | 696 | 2.4e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase Chk2 ( (3I6W/3I6U)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_1.json",
+    "rows": [
+      "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.05,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/kc_scaling/ip_converge_ROCK2_a0.05.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)",
+      "box_size": 128,
+      "rmsd": 0.7945040925329527,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.0015591238625347614,
+          "d2": 0.0015597380697727203,
+          "d2_err": 0.00287194293923676,
+          "n_for_error": 1603464.625,
+          "seconds": 15.2
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.0028249192982912064,
+          "d2": 0.002826911164447665,
+          "d2_err": 0.0036502464208751917,
+          "n_for_error": 884981.0625,
+          "seconds": 26.4
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.002980039920657873,
+          "d2": 0.0029822587966918945,
+          "d2_err": 0.0037345183081924915,
+          "n_for_error": 838914.9375,
+          "seconds": 105.1
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.0029705301858484745,
+          "d2": 0.002972731599584222,
+          "d2_err": 0.0037294109351933002,
+          "n_for_error": 841600.625,
+          "seconds": 409.5
+        }
+      ]
+    }
+  ]
+}

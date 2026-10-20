@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:57:12+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/50460dab9f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Shikimate kinase (SK) (EC 2.7.1.71) (2DFT/2DFT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Shikimate kinase (SK) (EC 2.7.1.71) (2DFT/2DFT)",
+        "motion": "mixed",
+        "mass_kda": 15.241361,
+        "ca_rmsd": 1.7077417075138699,
+        "radius": 25.785083296033033,
+        "box_size": 128,
+        "d2_known_pose": 10.041154861450195,
+        "d2_crlb": 8.689428329467773,
+        "information": 3.3291120529174805,
+        "saturation": 0.8322780132293701,
+        "n_floor": 750.9509887695312,
+        "n_marginal": 5695.54833984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.048735424541410444,
+        "note": "P9WPY3 19 kDa, dyndom, rotation 16.3 deg, chains B/C",
+        "d2_marginal": 0.48935994505882263,
+        "information_marginal": 0.43893933296203613,
+        "n_matched": 155,
+        "identity": 1.0,
+        "shared_fraction": 0.9414157851912124,
+        "provenance": {
+          "accession": "P9WPY3",
+          "canonical_mass_kda": 18.583,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.3
+        },
+        "d2_floor": 10.041154861450195
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Shikimate kinase (SK) (EC 2.7.1.71) (2DFT/2DFT) | 15 | mixed | 1.71 | 10 | 0.049 | 0.83 | 751 | 5.7e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Shikimate kinase (SK) (EC 2.7.1.71) (2DFT/2DFT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

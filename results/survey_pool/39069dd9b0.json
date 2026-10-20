@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:38:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/39069dd9b0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glucagon receptor (GL-R) (5EE7/8WG8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glucagon receptor (GL-R) (5EE7/8WG8)",
+        "motion": "activation",
+        "mass_kda": 24.726401,
+        "ca_rmsd": 3.7051527337949173,
+        "radius": 37.6293124595559,
+        "box_size": 128,
+        "d2_known_pose": 51.555320739746094,
+        "d2_crlb": 45.84747314453125,
+        "information": 3.997955322265625,
+        "saturation": 0.9994888305664062,
+        "n_floor": 625.3196411132812,
+        "n_marginal": 4383.65625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012741142787547805,
+        "note": "P47871 54 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.6568737030029297,
+        "information_marginal": 0.5703002214431763,
+        "n_matched": 244,
+        "identity": 0.9549180327868853,
+        "shared_fraction": 0.5679975983188231,
+        "provenance": {
+          "accession": "P47871",
+          "canonical_mass_kda": 54.009,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 51.555320739746094
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glucagon receptor (GL-R) (5EE7/8WG8) | 25 | activation | 3.71 | 51.6 | 0.013 | 1.00* | 625 | 4.38e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glucagon receptor (GL-R) (5EE7/8WG8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

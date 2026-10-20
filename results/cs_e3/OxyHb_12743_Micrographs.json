@@ -1,0 +1,71 @@
+{
+  "label": "OxyHb",
+  "entry": "12743",
+  "imageset": "Micrographs",
+  "project": "P50",
+  "project_dir": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e3-hb-12743",
+  "workspace": "W1",
+  "picker": "blob",
+  "template_volume": null,
+  "movies": "/home/bryceeh/scratch/e3_hb/12743/Micrographs/*.mrc",
+  "stages": {
+    "import": {
+      "job": "J1",
+      "type": "import_micrographs",
+      "status": "completed",
+      "num_items": 240,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e3-hb-12743/J1",
+      "outputs": [
+        "imported_micrographs",
+        "failed_micrographs"
+      ]
+    },
+    "ctf": {
+      "job": "J2",
+      "type": "patch_ctf_estimation_multi",
+      "status": "completed",
+      "num_items": 240,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e3-hb-12743/J2",
+      "outputs": [
+        "exposures",
+        "exposures_incomplete"
+      ]
+    },
+    "pick": {
+      "job": "J3",
+      "type": "blob_picker_gpu",
+      "status": "completed",
+      "num_items": 380825,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e3-hb-12743/J3",
+      "outputs": [
+        "particles",
+        "micrographs",
+        "templates"
+      ]
+    },
+    "extract": {
+      "job": "J4",
+      "type": "extract_micrographs_multi",
+      "status": "completed",
+      "num_items": 333258,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e3-hb-12743/J4",
+      "outputs": [
+        "micrographs",
+        "micrographs_incomplete",
+        "particles"
+      ]
+    },
+    "class2D": {
+      "job": "J5",
+      "type": "class_2D",
+      "status": "completed",
+      "num_items": 333068,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e3-hb-12743/J5",
+      "outputs": [
+        "particles",
+        "particles_rejected",
+        "class_averages"
+      ]
+    }
+  }
+}

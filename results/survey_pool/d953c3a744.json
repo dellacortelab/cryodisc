@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:48:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d953c3a744.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hepatocyte nuclear factor 6 (HNF-6) (O (2D5V/2D5V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hepatocyte nuclear factor 6 (HNF-6) (O (2D5V/2D5V)",
+        "motion": "no_contact",
+        "mass_kda": 14.913468999999997,
+        "ca_rmsd": 1.4744896721600638,
+        "radius": 33.7451608997091,
+        "box_size": 128,
+        "d2_known_pose": 5.328490257263184,
+        "d2_crlb": 5.07614803314209,
+        "information": 2.5692975521087646,
+        "saturation": 0.6423243880271912,
+        "n_floor": 973.0286254882812,
+        "n_marginal": 26809.099609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.017911831151550643,
+        "note": "P70512 51 kDa, dyndom, rotation 6.6 deg, chains B/A",
+        "d2_marginal": 0.09544301778078079,
+        "information_marginal": 0.09325192123651505,
+        "n_matched": 135,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P70512",
+          "canonical_mass_kda": 51.067,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.6
+        },
+        "d2_floor": 5.328490257263184
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hepatocyte nuclear factor 6 (HNF-6) (O (2D5V/2D5V) | 15 | no_contact | 1.47 | 5.33 | 0.018 | 0.64 | 973 | 2.68e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hepatocyte nuclear factor 6 (HNF-6) (O (2D5V/2D5V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

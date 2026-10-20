@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/emdb_occupancies.py",
+  "commit": "bd7026a",
+  "written_at": "2026-08-13T01:01:49+00:00",
+  "arguments": {
+    "doi": "['10.1021/jacs.3c01003']",
+    "emdb": "['EMD-0407', 'EMD-0408']",
+    "query": "()",
+    "rows": "100",
+    "target": "0.05",
+    "out": "results/emdb_occupancies.json"
+  },
+  "result": {
+    "n_entries": 15,
+    "n_groups": 2,
+    "target": 0.05,
+    "groups": [
+      {
+        "doi": "10.1021/jacs.3c01003",
+        "n_total": 3426460,
+        "n_states": 13,
+        "n_collapsed": 0,
+        "states": [
+          {
+            "n_images": 631191,
+            "fraction": 0.18421081816218488,
+            "counting_floor": 0.00020942267542436912
+          },
+          {
+            "n_images": 356418,
+            "fraction": 0.10401930855752001,
+            "counting_floor": 0.00016492385341695105
+          },
+          {
+            "n_images": 335559,
+            "fraction": 0.09793168459576355,
+            "counting_floor": 0.00016056781362461898
+          },
+          {
+            "n_images": 327913,
+            "fraction": 0.09570022705649563,
+            "counting_floor": 0.00015892413702388203
+          },
+          {
+            "n_images": 326008,
+            "fraction": 0.09514425967324877,
+            "counting_floor": 0.0001585105363077022
+          },
+          {
+            "n_images": 272276,
+            "fraction": 0.07946276915533816,
+            "counting_floor": 0.00014610991686453905
+          },
+          {
+            "n_images": 255187,
+            "fraction": 0.0744754061042592,
+            "counting_floor": 0.00014183309787766011
+          },
+          {
+            "n_images": 212212,
+            "fraction": 0.06193330726172201,
+            "counting_floor": 0.00013021354452659735
+          },
+          {
+            "n_images": 175313,
+            "fraction": 0.05116446711766663,
+            "counting_floor": 0.00011903011812382945
+          },
+          {
+            "n_images": 162235,
+            "fraction": 0.04734769995855781,
+            "counting_floor": 0.00011473444533030687
+          },
+          {
+            "n_images": 147516,
+            "fraction": 0.04305201286458911,
+            "counting_floor": 0.00010965238043405238
+          },
+          {
+            "n_images": 139871,
+            "fraction": 0.04082084717171658,
+            "counting_floor": 0.0001068976207664938
+          },
+          {
+            "n_images": 84761,
+            "fraction": 0.024737192320937643,
+            "counting_floor": 8.390989947951396e-05
+          }
+        ],
+        "required_discriminability": 8565.999722807368,
+        "entries": [
+          {
+            "emdb_id": "EMD-26482",
+            "title": "TBOA-bound GltPh RSMR mutant in IFS state",
+            "n_images": 631191,
+            "resolution": 2.55,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-26504",
+            "title": "Asp-bound GltPh RSMR mutant in iOFS state",
+            "n_images": 356418,
+            "resolution": 2.99,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-26497",
+            "title": "Asp-bound GltPh RSMR mutant in IFS-A2 state",
+            "n_images": 335559,
+            "resolution": 2.94,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-29522",
+            "title": "Asp-bound GltPh RSMR mutant in IFS-A4 state",
+            "n_images": 327913,
+            "resolution": 2.85,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-26498",
+            "title": "Asp-bound GltPh RSMR mutant in IFS-B1 state",
+            "n_images": 326008,
+            "resolution": 2.96,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-26487",
+            "title": "Asp-bound GltPh RSMR mutant in IFS-A1 state",
+            "n_images": 272276,
+            "resolution": 2.95,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-29542",
+            "title": "4 degree_iOFS",
+            "n_images": 255187,
+            "resolution": 3.19,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-29514",
+            "title": "Asp-bound GltPh RSMR mutant in IFS-A3 state",
+            "n_images": 212212,
+            "resolution": 3.29,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-29545",
+            "title": "4 degree_IFS-A2",
+            "n_images": 175313,
+            "resolution": 3.39,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-26489",
+            "title": "TBOA-bound GltPh RSMR mutant in OFS state",
+            "n_images": 162235,
+            "resolution": 2.81,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-26505",
+            "title": "Asp-bound GltPh RSMR mutant in IFS-B2 state",
+            "n_images": 147516,
+            "resolution": 3.44,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-29544",
+            "title": "4 degree_IFS-A1",
+            "n_images": 139871,
+            "resolution": 3.18,
+            "doi": "10.1021/jacs.3c01003"
+          },
+          {
+            "emdb_id": "EMD-29543",
+            "title": "4 degree_IFS-B1;",
+            "n_images": 84761,
+            "resolution": 3.18,
+            "doi": "10.1021/jacs.3c01003"
+          }
+        ]
+      },
+      {
+        "doi": "10.1038/s41467-019-08991-8",
+        "n_total": 35809,
+        "n_states": 2,
+        "n_collapsed": 0,
+        "states": [
+          {
+            "n_images": 24308,
+            "fraction": 0.6788237593900974,
+            "counting_floor": 0.0024674827538824734
+          },
+          {
+            "n_images": 11501,
+            "fraction": 0.3211762406099025,
+            "counting_floor": 0.002467482753882473
+          }
+        ],
+        "required_discriminability": 89.30447793692242,
+        "entries": [
+          {
+            "emdb_id": "EMD-0407",
+            "title": "Single-particle cryo-EM reconstruction of human methemoglobin using 200 keV, state 1",
+            "n_images": 24308,
+            "resolution": 2.8,
+            "doi": "10.1038/s41467-019-08991-8"
+          },
+          {
+            "emdb_id": "EMD-0408",
+            "title": "Single-particle cryo-EM reconstruction of human methemoglobin using 200 keV, state 2",
+            "n_images": 11501,
+            "resolution": 3.2,
+            "doi": "10.1038/s41467-019-08991-8"
+          }
+        ]
+      }
+    ]
+  }
+}

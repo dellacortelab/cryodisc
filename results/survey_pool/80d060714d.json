@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:51:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/80d060714d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ribosomal protein S6 kinase beta-1 (S6 (4L46/4L44)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ribosomal protein S6 kinase beta-1 (S6 (4L46/4L44)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 32.895195,
+        "ca_rmsd": 1.1870010140718763,
+        "radius": 41.77179197898113,
+        "box_size": 128,
+        "d2_known_pose": 8.11001205444336,
+        "d2_crlb": 7.635311126708984,
+        "information": 3.0919699668884277,
+        "saturation": 0.7729924917221069,
+        "n_floor": 808.5460205078125,
+        "n_marginal": 22983.177734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013780602787123746,
+        "note": "P23443 59 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BLAminus, chains A/A",
+        "d2_marginal": 0.11176085472106934,
+        "information_marginal": 0.10877521336078644,
+        "n_matched": 312,
+        "identity": 1.0,
+        "shared_fraction": 0.9757623143080532,
+        "provenance": {
+          "accession": "P23443",
+          "canonical_mass_kda": 59.14,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 8.11001205444336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ribosomal protein S6 kinase beta-1 (S6 (4L46/4L44) | 33 | dihedral_cluster | 1.19 | 8.11 | 0.014 | 0.77 | 809 | 2.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ribosomal protein S6 kinase beta-1 (S6 (4L46/4L44)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

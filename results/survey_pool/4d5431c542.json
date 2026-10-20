@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:02:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4d5431c542.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Anti-sigma F factor antagonist (Stage (1H4X/1H4Y)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Anti-sigma F factor antagonist (Stage (1H4X/1H4Y)",
+        "motion": "mixed",
+        "mass_kda": 11.483315,
+        "ca_rmsd": 1.7080410819898086,
+        "radius": 21.1642220182516,
+        "box_size": 128,
+        "d2_known_pose": 6.9863691329956055,
+        "d2_crlb": 6.4344072341918945,
+        "information": 2.9123456478118896,
+        "saturation": 0.7280864119529724,
+        "n_floor": 858.4146118164062,
+        "n_marginal": 6478.0126953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.06078194380798988,
+        "note": "O32723 13 kDa, dyndom, rotation 17.6 deg, chains B/B",
+        "d2_marginal": 0.4246450960636139,
+        "information_marginal": 0.38592082262039185,
+        "n_matched": 110,
+        "identity": 0.990909090909091,
+        "shared_fraction": 0.9602649006622517,
+        "provenance": {
+          "accession": "O32723",
+          "canonical_mass_kda": 13.043,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.6
+        },
+        "d2_floor": 6.9863691329956055
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Anti-sigma F factor antagonist (Stage (1H4X/1H4Y) | 11 | mixed | 1.71 | 6.99 | 0.061 | 0.73 | 858 | 6.48e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Anti-sigma F factor antagonist (Stage (1H4X/1H4Y)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

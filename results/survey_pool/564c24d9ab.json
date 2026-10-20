@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:11:19+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/564c24d9ab.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "AP-2 complex subunit alpha-2 (100 kDa (1W80/1KYU)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "AP-2 complex subunit alpha-2 (100 kDa (1W80/1KYU)",
+        "motion": "shear",
+        "mass_kda": 25.638054999999998,
+        "ca_rmsd": 2.9169468530890597,
+        "radius": 36.7686364121541,
+        "box_size": 128,
+        "d2_known_pose": 14.133177757263184,
+        "d2_crlb": 11.466154098510742,
+        "information": 3.6387228965759277,
+        "saturation": 0.9096807241439819,
+        "n_floor": 687.0542602539062,
+        "n_marginal": 21770.10546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008360891787970764,
+        "note": "P17427 104 kDa, dyndom, rotation 8.2 deg, chains A/A",
+        "d2_marginal": 0.11816596984863281,
+        "information_marginal": 0.11483637988567352,
+        "n_matched": 247,
+        "identity": 0.9635627530364372,
+        "shared_fraction": 0.9893020886398369,
+        "provenance": {
+          "accession": "P17427",
+          "canonical_mass_kda": 104.017,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.2
+        },
+        "d2_floor": 14.133177757263184
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| AP-2 complex subunit alpha-2 (100 kDa (1W80/1KYU) | 26 | shear | 2.92 | 14.1 | 0.008 | 0.91 | 687 | 2.18e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "AP-2 complex subunit alpha-2 (100 kDa (1W80/1KYU)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

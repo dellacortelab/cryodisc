@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:10:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f50175554d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein MTSS 1 (Metastasis suppressor (2D1L/2D1L)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein MTSS 1 (Metastasis suppressor (2D1L/2D1L)",
+        "motion": "no_contact",
+        "mass_kda": 23.152226999999996,
+        "ca_rmsd": 2.673660157442304,
+        "radius": 69.2484214710303,
+        "box_size": 128,
+        "d2_known_pose": 27.16695213317871,
+        "d2_crlb": 25.310550689697266,
+        "information": 3.94399356842041,
+        "saturation": 0.9859983921051025,
+        "n_floor": 633.8753051757812,
+        "n_marginal": 30606.40625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0030684916606796443,
+        "note": "Q8R1S4 82 kDa, dyndom, rotation 16.7 deg, chains A/B",
+        "d2_marginal": 0.08336156606674194,
+        "information_marginal": 0.0816822499036789,
+        "n_matched": 222,
+        "identity": 1.0,
+        "shared_fraction": 0.9291380222104707,
+        "provenance": {
+          "accession": "Q8R1S4",
+          "canonical_mass_kda": 82.408,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.7
+        },
+        "d2_floor": 27.16695213317871
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein MTSS 1 (Metastasis suppressor (2D1L/2D1L) | 23 | no_contact | 2.67 | 27.2 | 0.003 | 0.99 | 634 | 3.06e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein MTSS 1 (Metastasis suppressor (2D1L/2D1L)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/memorization_replicates.py",
+  "commit": "776a3511-dirty",
+  "written_at": "2026-09-16T05:41:54+00:00",
+  "arguments": {
+    "laws": [
+      "results/e20r1_memorization_law.json",
+      "results/e20r2_memorization_law.json",
+      "results/e20r3_memorization_law.json",
+      "results/e20r4_memorization_law.json",
+      "results/e20r5_memorization_law.json",
+      "results/e20r6_memorization_law.json",
+      "results/e20r7_memorization_law.json",
+      "results/e20r8_memorization_law.json"
+    ],
+    "pool": 1539017.0,
+    "fit_min": 100000.0,
+    "drop_singletons": false
+  },
+  "result": {
+    "rungs": [
+      {
+        "n_particles": 1000,
+        "n_draws": 4,
+        "mean": 172.53039352884144,
+        "draws": [
+          171.7649829620421,
+          172.92267947518826,
+          172.8945482015386,
+          172.53936347659678
+        ],
+        "sem_empirical": 0.26963411707337,
+        "sem_per_particle": 0.7449940755250545,
+        "inflation": 0.3619278675247694,
+        "null_mean": -0.006352124117314815,
+        "null_sem": 0.018285351901373106,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.0006497654022015352
+      },
+      {
+        "n_particles": 1414,
+        "n_draws": 4,
+        "mean": 121.46222671818683,
+        "draws": [
+          120.90141836151716,
+          122.4665143117044,
+          121.34503412894107,
+          121.13594007058471
+        ],
+        "sem_empirical": 0.34680646173110824,
+        "sem_per_particle": 0.462934146489412,
+        "inflation": 0.7491485870313527,
+        "null_mean": -0.005944704135879875,
+        "null_sem": 0.014813254462228247,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.0009187682787129707
+      },
+      {
+        "n_particles": 2000,
+        "n_draws": 4,
+        "mean": 84.28780777253024,
+        "draws": [
+          84.76045145393908,
+          84.90292723825574,
+          84.58139464633912,
+          82.90645775158704
+        ],
+        "sem_empirical": 0.4651240998847135,
+        "sem_per_particle": 0.293252688067859,
+        "inflation": 1.5860863985570126,
+        "null_mean": 0.032023985968902706,
+        "null_sem": 0.02102240095675073,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.0012995308044030703
+      },
+      {
+        "n_particles": 2828,
+        "n_draws": 4,
+        "mean": 58.928222258346985,
+        "draws": [
+          58.93280357652275,
+          58.60386273981054,
+          59.30458546345982,
+          58.871637253594834
+        ],
+        "sem_empirical": 0.14436100889408948,
+        "sem_per_particle": 0.19078706747728935,
+        "inflation": 0.756660348119632,
+        "null_mean": -0.014856406981125472,
+        "null_sem": 0.04385884299302022,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.0018375365574259414
+      },
+      {
+        "n_particles": 4000,
+        "n_draws": 4,
+        "mean": 41.15274414377194,
+        "draws": [
+          41.149608836889264,
+          40.882023209683595,
+          41.272402187231926,
+          41.30694234128296
+        ],
+        "sem_empirical": 0.09634780129961214,
+        "sem_per_particle": 0.12809969634463658,
+        "inflation": 0.7521313793000738,
+        "null_mean": 0.026901057762093842,
+        "null_sem": 0.01831684299349995,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.0025990616088061406
+      },
+      {
+        "n_particles": 5657,
+        "n_draws": 4,
+        "mean": 28.38484108617199,
+        "draws": [
+          28.01374842340198,
+          28.284363756097978,
+          28.577240117165765,
+          28.664012048022222
+        ],
+        "sem_empirical": 0.14797501796144075,
+        "sem_per_particle": 0.08596422784997208,
+        "inflation": 1.721355750669827,
+        "null_mean": -0.007161557659506799,
+        "null_sem": 0.02570220149873143,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.0036757228802540842
+      },
+      {
+        "n_particles": 8000,
+        "n_draws": 4,
+        "mean": 19.974516802988944,
+        "draws": [
+          20.150408540949226,
+          19.801478686958554,
+          20.002298883870242,
+          19.943881100177766
+        ],
+        "sem_empirical": 0.0722210053625127,
+        "sem_per_particle": 0.061598137182475934,
+        "inflation": 1.1724543738809503,
+        "null_mean": 0.01859401089698076,
+        "null_sem": 0.02187919809433458,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.005198123217612281
+      },
+      {
+        "n_particles": 11314,
+        "n_draws": 4,
+        "mean": 13.830567005379002,
+        "draws": [
+          13.707929199106658,
+          13.837253471862434,
+          13.82793955695256,
+          13.949145793594361
+        ],
+        "sem_empirical": 0.0492887519801963,
+        "sem_per_particle": 0.04460670231609517,
+        "inflation": 1.1049629185973637,
+        "null_mean": 0.018405188895761967,
+        "null_sem": 0.012332677915581451,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.0073514457605081684
+      },
+      {
+        "n_particles": 16000,
+        "n_draws": 4,
+        "mean": 9.679879108993337,
+        "draws": [
+          9.781416358403861,
+          9.742578558415175,
+          9.616897393226623,
+          9.578624125927686
+        ],
+        "sem_empirical": 0.04870001890160588,
+        "sem_per_particle": 0.03362312492397705,
+        "inflation": 1.4484084692222439,
+        "null_mean": -0.02715607253834605,
+        "null_sem": 0.024496602796162604,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.010396246435224563
+      },
+      {
+        "n_particles": 22627,
+        "n_draws": 4,
+        "mean": 6.762537105825129,
+        "draws": [
+          6.727147349039891,
+          6.780815517330443,
+          6.750146381209791,
+          6.792039175720391
+        ],
+        "sem_empirical": 0.014749116914451708,
+        "sem_per_particle": 0.026481796370040125,
+        "inflation": 0.5569530370355824,
+        "null_mean": -0.031854695845395326,
+        "null_sem": 0.016866096783505532,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.014702241755614135
+      },
+      {
+        "n_particles": 32000,
+        "n_draws": 4,
+        "mean": 4.700358855187893,
+        "draws": [
+          4.714150542870164,
+          4.6812098012492065,
+          4.745298445522785,
+          4.6607766311094165
+        ],
+        "sem_empirical": 0.018581388893053406,
+        "sem_per_particle": 0.021255446811040253,
+        "inflation": 0.874194226931145,
+        "null_mean": 0.02414208571240306,
+        "null_sem": 0.020775580674032252,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.020792492870449125
+      },
+      {
+        "n_particles": 45255,
+        "n_draws": 4,
+        "mean": 3.24291137575265,
+        "draws": [
+          3.202104707352817,
+          3.2285942767076192,
+          3.310917927503586,
+          3.2300285914465783
+        ],
+        "sem_empirical": 0.02356024321374291,
+        "sem_per_particle": 0.018599817639058047,
+        "inflation": 1.2666921617698224,
+        "null_mean": 0.04069765078276395,
+        "null_sem": 0.014209210717042786,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.029405133276630472
+      },
+      {
+        "n_particles": 64000,
+        "n_draws": 4,
+        "mean": 2.3122905882941565,
+        "draws": [
+          2.3299952426664534,
+          2.3312418315783145,
+          2.3057157601341607,
+          2.2822095187976954
+        ],
+        "sem_empirical": 0.011621472639910408,
+        "sem_per_particle": 0.01621325444401785,
+        "inflation": 0.7167883955709055,
+        "null_mean": 0.0029755764342844493,
+        "null_sem": 0.015193430290954857,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.04158498574089825
+      },
+      {
+        "n_particles": 90510,
+        "n_draws": 4,
+        "mean": 1.5971797870621085,
+        "draws": [
+          1.6238891599997878,
+          1.613482882142067,
+          1.5818827613294126,
+          1.5694643447771668
+        ],
+        "sem_empirical": 0.012849533873604447,
+        "sem_per_particle": 0.01401409176452902,
+        "inflation": 0.9169009372500202,
+        "null_mean": 0.020136384572833777,
+        "null_sem": 0.005514304532875989,
+        "sources": [
+          "results/e20r5_memorization_law.json",
+          "results/e20r6_memorization_law.json",
+          "results/e20r7_memorization_law.json",
+          "results/e20r8_memorization_law.json"
+        ],
+        "mean_overlap": 0.058810266553260944
+      },
+      {
+        "n_particles": 128000,
+        "n_draws": 4,
+        "mean": 1.138483542535454,
+        "draws": [
+          1.1224409951493144,
+          1.1279167457595467,
+          1.1901591934710742,
+          1.1134172357618808
+        ],
+        "sem_empirical": 0.01748264176172757,
+        "sem_per_particle": 0.012060449308959961,
+        "inflation": 1.4495846144587126,
+        "null_mean": -0.006687814716249704,
+        "null_sem": 0.015142141934789211,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json",
+          "results/e20r4_memorization_law.json"
+        ],
+        "mean_overlap": 0.0831699714817965
+      },
+      {
+        "n_particles": 181000,
+        "n_draws": 3,
+        "mean": 0.7928797071116666,
+        "draws": [
+          0.8205604840368032,
+          0.7887204594239593,
+          0.7693581778742373
+        ],
+        "sem_empirical": 0.014926414450977563,
+        "sem_per_particle": 0.01183691563868479,
+        "inflation": 1.2610053925024043,
+        "null_mean": 0.00920664456486702,
+        "null_sem": 0.010795880236124582,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json"
+        ],
+        "mean_overlap": 0.11760753779847787
+      },
+      {
+        "n_particles": 256000,
+        "n_draws": 3,
+        "mean": 0.5775651720116536,
+        "draws": [
+          0.562439787633717,
+          0.6144625115767122,
+          0.5557932168245315
+        ],
+        "sem_empirical": 0.01854817579633109,
+        "sem_per_particle": 0.010054108228324048,
+        "inflation": 1.8448355015791338,
+        "null_mean": -0.00045900285243988086,
+        "null_sem": 0.013445486279840308,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json"
+        ],
+        "mean_overlap": 0.166339942963593
+      },
+      {
+        "n_particles": 362000,
+        "n_draws": 3,
+        "mean": 0.4099628760442138,
+        "draws": [
+          0.42252358577400445,
+          0.39632117800414557,
+          0.41104386435449125
+        ],
+        "sem_empirical": 0.00758326985386708,
+        "sem_per_particle": 0.008513641667274125,
+        "inflation": 0.8907198764327452,
+        "null_mean": -0.003731110379099846,
+        "null_sem": 0.006416723554752216,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json"
+        ],
+        "mean_overlap": 0.23521507559695573
+      },
+      {
+        "n_particles": 512000,
+        "n_draws": 3,
+        "mean": 0.28245579418043293,
+        "draws": [
+          0.2877058096751571,
+          0.28660182518512006,
+          0.2730597476810217
+        ],
+        "sem_empirical": 0.004708820192039768,
+        "sem_per_particle": 0.0072167505384728966,
+        "inflation": 0.6524848222114352,
+        "null_mean": -0.003990287721157074,
+        "null_sem": 0.004327321748743565,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json",
+          "results/e20r3_memorization_law.json"
+        ],
+        "mean_overlap": 0.332679885927186
+      },
+      {
+        "n_particles": 724000,
+        "n_draws": 2,
+        "mean": 0.201072340849787,
+        "draws": [
+          0.19089429435133934,
+          0.21125038734823468
+        ],
+        "sem_empirical": 0.010178046498447668,
+        "sem_per_particle": 0.007410709249794772,
+        "inflation": 1.3734240752637183,
+        "null_mean": -0.0020998488739132877,
+        "null_sem": 0.002673722274601459,
+        "sources": [
+          "results/e20r1_memorization_law.json",
+          "results/e20r2_memorization_law.json"
+        ],
+        "mean_overlap": 0.47043015119391146
+      },
+      {
+        "n_particles": 1024000,
+        "n_draws": 1,
+        "mean": 0.1399543274641037,
+        "draws": [
+          0.1399543274641037
+        ],
+        "sem_empirical": null,
+        "sem_per_particle": 0.008954553767442088,
+        "inflation": null,
+        "null_mean": 0.006706273555755616,
+        "null_sem": 0.007316155642359214,
+        "sources": [
+          "results/e20r1_memorization_law.json"
+        ],
+        "mean_overlap": null
+      }
+    ],
+    "n_replicates": 8,
+    "median_inflation": 1.010931927923692,
+    "fit_span_decades": 0.9030899869919435,
+    "fit_free_slope_all_rungs": {
+      "slope": -1.0384185619522042,
+      "slope_sem": 0.0005894637457902575,
+      "log_amplitude": 12.325789506465945,
+      "amplitude": 225435.531673213,
+      "amplitude_sem": 1133.9746683625467,
+      "chi_square": 66.55272324667102,
+      "dof": 19,
+      "chi_square_per_dof": 3.5027749077195276
+    },
+    "span_decades_all_rungs": 3.010299956639812,
+    "n_rungs_all": 21,
+    "fit_free_slope": {
+      "slope": -0.9983844606658537,
+      "slope_sem": 0.013696927472634986,
+      "log_amplitude": 11.86882074991682,
+      "amplitude": 142745.806408994,
+      "amplitude_sem": 24417.203660586183,
+      "chi_square": 2.096133924310081,
+      "dof": 5,
+      "chi_square_per_dof": 0.4192267848620162
+    },
+    "fit_slope_fixed_at_minus_one": {
+      "slope": -1.0,
+      "slope_sem": 0.0,
+      "log_amplitude": 11.888973650659535,
+      "amplitude": 145651.73153710263,
+      "amplitude_sem": 1182.089181952308,
+      "chi_square": 2.1100458984145396,
+      "dof": 6,
+      "chi_square_per_dof": 0.35167431640242325
+    },
+    "dropped_singletons": false,
+    "fit_min_particles": 100000.0,
+    "log_quadratic": {
+      "curvature": -0.014889734782917217,
+      "curvature_sem": 0.028295986664760936,
+      "sigma": 0.5262136627121221
+    }
+  }
+}

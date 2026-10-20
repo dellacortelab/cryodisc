@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:16:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c4a0aeed4b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA primase (EC 2.7.7.101) (1EQN/1EQN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA primase (EC 2.7.7.101) (1EQN/1EQN)",
+        "motion": "shear",
+        "mass_kda": 30.724937999999995,
+        "ca_rmsd": 1.5382361568857381,
+        "radius": 44.779003464817464,
+        "box_size": 128,
+        "d2_known_pose": 13.718218803405762,
+        "d2_crlb": 11.783269882202148,
+        "information": 3.615736484527588,
+        "saturation": 0.903934121131897,
+        "n_floor": 691.4220581054688,
+        "n_marginal": 15998.060546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0118426137910035,
+        "note": "P0ABS5 66 kDa, dyndom, rotation 9.5 deg, chains A/B",
+        "d2_marginal": 0.1624595671892166,
+        "information_marginal": 0.15626893937587738,
+        "n_matched": 304,
+        "identity": 1.0,
+        "shared_fraction": 0.9790794979079498,
+        "provenance": {
+          "accession": "P0ABS5",
+          "canonical_mass_kda": 65.565,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.5
+        },
+        "d2_floor": 13.718218803405762
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA primase (EC 2.7.7.101) (1EQN/1EQN) | 31 | shear | 1.54 | 13.7 | 0.012 | 0.90 | 691 | 1.6e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA primase (EC 2.7.7.101) (1EQN/1EQN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

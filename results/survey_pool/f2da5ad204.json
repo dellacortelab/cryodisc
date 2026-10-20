@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Dimethyladenosine transferase (EC 2.1. (1ZQ9/1ZQ9)",
+ "returncode": -6,
+ "stderr_tail": "631  tsl::JoinFutures<>()::{lambda()#1}::operator()()\n    @     0x7f3f4ea8626f  tsl::AsyncValue::EnqueueWaiter<>()::Node::RunWaiterAndDeleteWaiterNode()\n    @     0x7f3f4ea844d2  tsl::internal::PromiseBase<>::emplace<>()\n    @     0x7f3f4ea84344  absl::lts_20260526::internal_any_invocable::RemoteInvoker<>()\n    @     0x7f3f598b21df  std::_Function_handler<>::_M_invoke()\n    @     0x7f3f598b0b54  Eigen::ThreadPoolTempl<>::WorkerLoop()\n    @     0x7f3f598b09e1  std::__invoke_impl<>()\n    @     0x7f3f5989f90f  tsl::(anonymous namespace)::PThread::ThreadFn()\n    @     0x7f4048ece33a  start_thread\n"
+}

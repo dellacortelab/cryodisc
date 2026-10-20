@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:22:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2d321a3bdd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Diamine acetyltransferase 1 (EC 2.3.1. (2B58/2B3U)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Diamine acetyltransferase 1 (EC 2.3.1. (2B58/2B3U)",
+        "motion": "hinge",
+        "mass_kda": 16.672553999999998,
+        "ca_rmsd": 1.7506739993770322,
+        "radius": 36.94808385618752,
+        "box_size": 128,
+        "d2_known_pose": 11.682882308959961,
+        "d2_crlb": 10.694412231445312,
+        "information": 3.4782536029815674,
+        "saturation": 0.8695634007453918,
+        "n_floor": 718.7515258789062,
+        "n_marginal": 10822.51953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020939375450495862,
+        "note": "P21673 20 kDa, dyndom, rotation 8.3 deg, chains A/A",
+        "d2_marginal": 0.24463225901126862,
+        "information_marginal": 0.23099981248378754,
+        "n_matched": 155,
+        "identity": 1.0,
+        "shared_fraction": 0.9534534534534534,
+        "provenance": {
+          "accession": "P21673",
+          "canonical_mass_kda": 20.024,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.3
+        },
+        "d2_floor": 11.682882308959961
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Diamine acetyltransferase 1 (EC 2.3.1. (2B58/2B3U) | 17 | hinge | 1.75 | 11.7 | 0.021 | 0.87 | 719 | 1.08e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Diamine acetyltransferase 1 (EC 2.3.1. (2B58/2B3U)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

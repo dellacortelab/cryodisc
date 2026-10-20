@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      2016,
+      8064,
+      33384,
+      64128,
+      128000
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.15,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/kc_scaling/ip_converge_ephrinA7_a0.15.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)",
+      "box_size": 128,
+      "rmsd": 0.7893837871304241,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.008384628221392632,
+          "d2": 0.00840220507234335,
+          "d2_err": 0.005964804440736771,
+          "n_for_error": 298164.6875,
+          "seconds": 28.1
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.009279044345021248,
+          "d2": 0.009300552308559418,
+          "d2_err": 0.006259002722799778,
+          "n_for_error": 269424.3125,
+          "seconds": 105.8
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.009337003342807293,
+          "d2": 0.009358790703117847,
+          "d2_err": 0.006277525797486305,
+          "n_for_error": 267751.84375,
+          "seconds": 414.0
+        },
+        {
+          "k_requested": 64128,
+          "k": 64128,
+          "information": 0.00921252928674221,
+          "d2": 0.009233730845153332,
+          "d2_err": 0.006237644236534834,
+          "n_for_error": 271369.5625,
+          "seconds": 785.3
+        },
+        {
+          "k_requested": 128000,
+          "k": 128592,
+          "information": 0.00920036993920803,
+          "d2": 0.00922151654958725,
+          "d2_err": 0.006233781110495329,
+          "n_for_error": 271728.21875,
+          "seconds": 1570.3
+        }
+      ]
+    }
+  ]
+}

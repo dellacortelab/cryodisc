@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:53:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/66bab4a5af.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ribonuclease HI (RNase HI) (EC 3.1.26. (1WSJ/1WSG)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ribonuclease HI (RNase HI) (EC 3.1.26. (1WSJ/1WSG)",
+        "motion": "mixed",
+        "mass_kda": 15.461774,
+        "ca_rmsd": 1.2234226723897732,
+        "radius": 28.99949981260215,
+        "box_size": 128,
+        "d2_known_pose": 4.890664100646973,
+        "d2_crlb": 4.467403411865234,
+        "information": 2.4588875770568848,
+        "saturation": 0.6147218942642212,
+        "n_floor": 1016.719970703125,
+        "n_marginal": 199618.625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0025687911167452805,
+        "note": "P0A7Y4 18 kDa, dyndom, rotation 9.3 deg, chains E/C",
+        "d2_marginal": 0.01256309449672699,
+        "information_marginal": 0.01252388209104538,
+        "n_matched": 149,
+        "identity": 0.9798657718120806,
+        "shared_fraction": 0.9645214521452146,
+        "provenance": {
+          "accession": "P0A7Y4",
+          "canonical_mass_kda": 17.597,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.3
+        },
+        "d2_floor": 4.890664100646973
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ribonuclease HI (RNase HI) (EC 3.1.26. (1WSJ/1WSG) | 15 | mixed | 1.22 | 4.89 | 0.003 | 0.61 | 1.02e+03 | 2e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ribonuclease HI (RNase HI) (EC 3.1.26. (1WSJ/1WSG)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

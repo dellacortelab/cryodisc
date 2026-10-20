@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/mix_pools.py",
+  "commit": "53d7121",
+  "written_at": "2026-08-16T00:21:52+00:00",
+  "arguments": {
+    "pool_a": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_6nt_splitB.cs",
+    "pool_b": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_12nt_splitB.cs",
+    "star": null,
+    "state_a": null,
+    "state_b": null,
+    "out_star": null,
+    "fraction": 0.5,
+    "n_particles": 20000,
+    "out_cs": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_gs_mix_050.cs",
+    "out": "results/cas9_gs_mix_050.json",
+    "seed": 0
+  },
+  "result": {
+    "pool_a": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_6nt_splitB.cs",
+    "pool_b": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_12nt_splitB.cs",
+    "n_a": 10000,
+    "n_b": 10000,
+    "n_total": 20000,
+    "true_fraction": 0.5,
+    "box_size": 192,
+    "pixel_size": 1.3,
+    "mixed_cs": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_gs_mix_050.cs"
+  }
+}

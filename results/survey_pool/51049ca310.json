@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:56:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/51049ca310.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Enolase (EC 4.2.1.11) (2-phospho-D-gly (1E9I/2FYM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Enolase (EC 4.2.1.11) (2-phospho-D-gly (1E9I/2FYM)",
+        "motion": "shear",
+        "mass_kda": 41.33542799999999,
+        "ca_rmsd": 1.4540723839884728,
+        "radius": 34.32877006115349,
+        "box_size": 128,
+        "d2_known_pose": 13.0692777633667,
+        "d2_crlb": 11.403341293334961,
+        "information": 3.5766382217407227,
+        "saturation": 0.8941595554351807,
+        "n_floor": 698.9804077148438,
+        "n_marginal": 7523.81005859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.027607106663676814,
+        "note": "P0A6P9 46 kDa, dyndom, rotation 13.4 deg, chains D/A",
+        "d2_marginal": 0.360804945230484,
+        "information_marginal": 0.3322784900665283,
+        "n_matched": 431,
+        "identity": 1.0,
+        "shared_fraction": 0.9901774397972116,
+        "provenance": {
+          "accession": "P0A6P9",
+          "canonical_mass_kda": 45.655,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 13.4
+        },
+        "d2_floor": 13.0692777633667
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Enolase (EC 4.2.1.11) (2-phospho-D-gly (1E9I/2FYM) | 41 | shear | 1.45 | 13.1 | 0.028 | 0.89 | 699 | 7.52e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Enolase (EC 4.2.1.11) (2-phospho-D-gly (1E9I/2FYM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

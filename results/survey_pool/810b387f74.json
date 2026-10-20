@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:09:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/810b387f74.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fatty acid-binding protein, liver (Fat (1TVQ/1TW4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fatty acid-binding protein, liver (Fat (1TVQ/1TW4)",
+        "motion": "hinge",
+        "mass_kda": 13.058107,
+        "ca_rmsd": 1.2523193248612803,
+        "radius": 25.7640018206535,
+        "box_size": 128,
+        "d2_known_pose": 7.698419094085693,
+        "d2_crlb": 7.2959818840026855,
+        "information": 3.0303163528442383,
+        "saturation": 0.7575790882110596,
+        "n_floor": 824.9964599609375,
+        "n_marginal": 3179.074462890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.12420116471262649,
+        "note": "P80226 14 kDa, dyndom, rotation 9.9 deg, chains A/B",
+        "d2_marginal": 0.956152617931366,
+        "information_marginal": 0.7863924503326416,
+        "n_matched": 125,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P80226",
+          "canonical_mass_kda": 14.21,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.9
+        },
+        "d2_floor": 7.698419094085693
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fatty acid-binding protein, liver (Fat (1TVQ/1TW4) | 13 | hinge | 1.25 | 7.7 | 0.124 | 0.76 | 825 | 3.18e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fatty acid-binding protein, liver (Fat (1TVQ/1TW4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

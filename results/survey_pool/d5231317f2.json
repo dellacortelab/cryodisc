@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:34:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d5231317f2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adenylate cyclase type 5 (EC 4.6.1.1) (1CJK/2GVD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adenylate cyclase type 5 (EC 4.6.1.1) (1CJK/2GVD)",
+        "motion": "mixed",
+        "mass_kda": 19.666781,
+        "ca_rmsd": 1.1936265575533087,
+        "radius": 40.5879079930242,
+        "box_size": 128,
+        "d2_known_pose": 6.329251766204834,
+        "d2_crlb": 5.9630584716796875,
+        "information": 2.7890172004699707,
+        "saturation": 0.6972543001174927,
+        "n_floor": 896.3731079101562,
+        "n_marginal": 31775.408203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012676815762694766,
+        "note": "P30803 140 kDa, dyndom, rotation 15.0 deg, chains A/A",
+        "d2_marginal": 0.08023475855588913,
+        "information_marginal": 0.07867719233036041,
+        "n_matched": 189,
+        "identity": 1.0,
+        "shared_fraction": 0.9946091644204852,
+        "provenance": {
+          "accession": "P30803",
+          "canonical_mass_kda": 140.319,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.0
+        },
+        "d2_floor": 6.329251766204834
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adenylate cyclase type 5 (EC 4.6.1.1) (1CJK/2GVD) | 20 | mixed | 1.19 | 6.33 | 0.013 | 0.70 | 896 | 3.18e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adenylate cyclase type 5 (EC 4.6.1.1) (1CJK/2GVD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

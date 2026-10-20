@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:53:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a1646606e0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "SRSF protein kinase 1 (EC 2.7.11.1) (S (6FAD/5MY8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "SRSF protein kinase 1 (EC 2.7.11.1) (S (6FAD/5MY8)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 36.945558999999996,
+        "ca_rmsd": 1.9224832237890106,
+        "radius": 40.580123166116735,
+        "box_size": 128,
+        "d2_known_pose": 15.679481506347656,
+        "d2_crlb": 14.08466911315918,
+        "information": 3.7124149799346924,
+        "saturation": 0.9281037449836731,
+        "n_floor": 673.4161376953125,
+        "n_marginal": 11908.4599609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014105649981862558,
+        "note": "Q96SB4 74 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains D/A",
+        "d2_marginal": 0.22116927802562714,
+        "information_marginal": 0.209934800863266,
+        "n_matched": 347,
+        "identity": 1.0,
+        "shared_fraction": 0.9723374827109267,
+        "provenance": {
+          "accession": "Q96SB4",
+          "canonical_mass_kda": 74.325,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 15.679481506347656
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| SRSF protein kinase 1 (EC 2.7.11.1) (S (6FAD/5MY8) | 37 | dihedral_cluster | 1.92 | 15.7 | 0.014 | 0.93 | 673 | 1.19e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "SRSF protein kinase 1 (EC 2.7.11.1) (S (6FAD/5MY8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:37:41+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/aede6e2a93.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ig gamma-1 chain C region secreted for (1CT8/1CT8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ig gamma-1 chain C region secreted for (1CT8/1CT8)",
+        "motion": "mixed",
+        "mass_kda": 21.637451999999996,
+        "ca_rmsd": 1.0942171883271272,
+        "radius": 39.8211622209332,
+        "box_size": 128,
+        "d2_known_pose": 5.706570625305176,
+        "d2_crlb": 4.3378753662109375,
+        "information": 2.6572961807250977,
+        "saturation": 0.6643240451812744,
+        "n_floor": 940.8059692382812,
+        "n_marginal": 62810.73828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007044399886785478,
+        "note": "P01868 36 kDa, dyndom, rotation 8.6 deg, chains D/B",
+        "d2_marginal": 0.040199365466833115,
+        "information_marginal": 0.03980211168527603,
+        "n_matched": 215,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P01868",
+          "canonical_mass_kda": 35.705,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.6
+        },
+        "d2_floor": 5.706570625305176
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ig gamma-1 chain C region secreted for (1CT8/1CT8) | 22 | mixed | 1.09 | 5.71 | 0.007 | 0.66 | 941 | 6.28e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ig gamma-1 chain C region secreted for (1CT8/1CT8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

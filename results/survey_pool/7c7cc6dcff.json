@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:18:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7c7cc6dcff.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Oxidoreductase (1YNP/1YNP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Oxidoreductase (1YNP/1YNP)",
+        "motion": "hinge",
+        "mass_kda": 29.840459999999997,
+        "ca_rmsd": 1.7948503272297012,
+        "radius": 32.48850082900204,
+        "box_size": 128,
+        "d2_known_pose": 14.617857933044434,
+        "d2_crlb": 13.623686790466309,
+        "information": 3.6637496948242188,
+        "saturation": 0.9159374237060547,
+        "n_floor": 682.3610229492188,
+        "n_marginal": 4630.5048828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.04222053557768871,
+        "note": "Q9KE47 34 kDa, dyndom, rotation 14.5 deg, chains A/B",
+        "d2_marginal": 0.6171737909317017,
+        "information_marginal": 0.5398979783058167,
+        "n_matched": 283,
+        "identity": 1.0,
+        "shared_fraction": 0.9437030859049208,
+        "provenance": {
+          "accession": "Q9KE47",
+          "canonical_mass_kda": 33.887,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.5
+        },
+        "d2_floor": 14.617857933044434
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Oxidoreductase (1YNP/1YNP) | 30 | hinge | 1.79 | 14.6 | 0.042 | 0.92 | 682 | 4.63e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Oxidoreductase (1YNP/1YNP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

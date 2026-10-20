@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:01:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/729d9c9edc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Outer surface protein A (2FKG/2HKD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Outer surface protein A (2FKG/2HKD)",
+        "motion": "unclassified",
+        "mass_kda": 31.204261,
+        "ca_rmsd": 1.2326325312202342,
+        "radius": 56.83505809706519,
+        "box_size": 128,
+        "d2_known_pose": 11.421862602233887,
+        "d2_crlb": 10.533297538757324,
+        "information": 3.4571433067321777,
+        "saturation": 0.8642858266830444,
+        "n_floor": 723.1404418945312,
+        "n_marginal": 24076.4375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009329073421657117,
+        "note": "P0CL66 29 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/A",
+        "d2_marginal": 0.10655539482831955,
+        "information_marginal": 0.10383597016334534,
+        "n_matched": 315,
+        "identity": 0.9619047619047619,
+        "shared_fraction": 0.9800664451827242,
+        "provenance": {
+          "accession": "P0CL66",
+          "canonical_mass_kda": 29.367,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 11.421862602233887
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Outer surface protein A (2FKG/2HKD) | 31 | unclassified | 1.23 | 11.4 | 0.009 | 0.86 | 723 | 2.41e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Outer surface protein A (2FKG/2HKD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

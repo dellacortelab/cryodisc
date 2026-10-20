@@ -1,0 +1,96 @@
+{
+  "regenerated": "2026-09-23",
+  "campaign_added": "2026-09-24",
+  "commit": "36f4f1da",
+  "campaign_scored_commit": "5ce4383d",
+  "driver": "experiments/realdata/score_pool.py",
+  "recovery_driver": "experiments/benchmark/known_fraction.py",
+  "recovery_estimator": "two_pool (recovery.json regenerated 2026-09-26 with --estimator two_pool --holdout --n-shuffles 200). Each pure pool is split into a reference half and a DISJOINT draw half (--holdout), so no particle mixed into the sweep is also an estimator reference -- this removes a train-on-test leak (mixtures were previously drawn from the same full pools used as references); measured immaterial (held-out slopes match the leaky ones to ~0.02 for the clean pairs, hb noisier at small n). The purity sweep reads each mixed pool's fraction with the 2-pool reference-mixture MLE on both pure pools' KDE densities -- the estimator the data selected: 0-pool is compressed toward 0.5 by overdispersion (slopes 0.60-0.94), and the two 1-pool variants (one pure pool's within-variance, ref-A or ref-B) diverge robustly on hk-atpase (gap 0.37 +/- 0.03 over held-out splits, the tell its two states' within-scales differ); hb also shows a gap on average but it is too unstable to trust (0.22 +/- 0.14, small n=2539) -- an earlier leaky reading (0.31) overstated it. CAVEAT: on a purity sweep 2-pool is partly self-referential -- it recovers A/B mixtures from the A/B densities the sweep was built from -- so slope~=1 attests ESTIMATOR CONSISTENCY, not per-pair discriminability magnitude; read d2/coherence for magnitude and the 0->1A->1B->2 ladder for when 2 pools are required. SHUFFLE NULL: recovery.json carries a 200-permutation label-shuffle null (shuffle_null block); observed slopes sit 5-9 sigma above it (null centered ~0, sd 0.12-0.21) for every pair, so the recovered separation is real, not chance. A label shuffle CANNOT separate structural from batch/session difference (the two pools are separate accessions); the batch control is twin_floor (a same-state re-score through the pipeline), which has NOT been run.",
+  "supersedes": "earlier decoy-based ribo_pools results (never committed to git; the decoy arm is retired in current code)",
+  "operating_point": "Pose-MARGINALIZED (known_pose=False) map route, each pool vs the two co-refined half-maps: --calibrate poses --k-max 0.1 --band-limit 0.125 --shift-window 4 --subsample 4000 --seed 0, bank --nodes 3968496 capped at --cap-bank 1000000 (per each system's score_a.json). SpCas9 is marginal at --fixed-bank 4000000 (the canonical registry bank, experiments/reproduce.py, most recently set 2026-10-03; the deploy driver deploy/orc/_cas9_marginal.sh ran a measured-equivalent 256000 plateau bank, flat through 1M), box 192 @ 1.3. --band-limit is in cycles/pixel, so 0.125 stops the score at 8x the pixel -- ~17 A at msba's 2.12 A/px and ~32 A for the 4 A/px campaign systems, NOT an absolute 8 A. CORRECTION (2026-10-07): this field previously read '--known-pose ... --nodes 54', describing the superseded known-pose scoring; the committed pools were re-scored pose-marginal (commits ad8641a8 -> 3ca962a2 -> 3d769f3c). Verify against each system's score_a.json rather than this prose.",
+  "amplitude_scale_limitation": "KNOWN LIMITATION (diagnosed 2026-09-26, not acted on). Across all systems 2*mean(Lambda) reads ~0.47-0.55x the closed-form known_pose_d2 (implied_amplitude_scale ~0.5, fractional_error_mean ~-0.5), uniform across 2.12 and 4.0 A/px. Diagnosis: NOT a formula bug (known_pose_d2 and known_pose_log_ratio share one code path, so E[Lambda]=d2/2 by construction) and NOT power asymmetry (amplitude_ratio ~1, so use_power_asymmetry's lever ~0). It is a MISSING HIGH-FREQUENCY ENVELOPE in the forward model: templates are half-maps (near full-resolution density) but particle images are attenuated at high k by radiation damage, motion and detector MTF. Evidence: --amplitude-shells 12 on ste2 and msba both fit an a(k) that ROLLS OFF within the band (ste2 0.52->0.23, msba 0.90->0.55; driver: 'templates carry MORE high-frequency power than the data'). Fitting a(k) recovers the implied scale partway (ste2 0.53->0.69, msba 0.47->0.57) but not to 1, and leaves a separate large decoherence (ste2 0.52, msba 0.39) untouched. IMPLICATION: absolute d2/coherence MAGNITUDES are understated by this envelope and must not be quoted as absolute discriminability without the a(k) caveat; composition recovery (purity slope/f_a) is scale-tolerant under two_pool and is unaffected. The operating point still fits a SCALAR contrast (no envelope); fitting a(k) or an explicit B-factor as default would correct it but needs a re-score and has not been done. Diagnostics are scratch on ribo (campaign/score/ste2/score_a_ashells.json, campaign/score/msba_ashells.json); committed pools/scores were NOT changed.",
+  "subsample_note": "4000 particles/pool is the ribo RTX 5000 16 GB memory ceiling for this pose-marginal scoring (cas9 runs 20000 on an H200); N is sample size only, the per-particle distribution and d^2 are unaffected. (Earlier text said 'known-pose memory ceiling'; the committed pools are pose-marginalized.)",
+  "files_per_system": "pool_<state>.npy (per-particle log-ratio Lambda), pool_<state>_d2.npy (per-particle closed-form known_pose_d2, aligned 1:1 with the Lambda -- verified 2*mean(Lambda)/mean(d2) reproduces each score's implied_amplitude_scale; absent for hb, which was not re-scored under score_pool), score_<state>.json (self-documenting: commit, full arguments, result), recovery.json (purity recovery under the two_pool estimator -- see recovery_estimator; the estimator is recorded inside recovery.json's result and arguments); msba/fanac use state-name files, hb uses pool_r/pool_t, the campaign systems use pool_a/pool_b + score_a/score_b (a=state_a, b=state_b, mapping documented per system)",
+  "campaign_note": "The five Tier-1 campaign systems (nkcc1, slc19a3, slco2a1, ste2, hk-atpase) were fetched, co-refined and scored at commit 5ce4383d via deploy/orc/_process_campaign.sh (registry docs/planning/process_registry.json) and scored with campaign/score_campaign.py. State labels are the deposited PDB IDs (the grid is the state label). d2_pool_split.mean is mean(Lambda_a)-mean(Lambda_b); .median the same for medians. For discriminability MAGNITUDE read d2/coherence, not the raw d2_pool_split gap; the two_pool recovery (purity_fa/slope) is an estimator-consistency check, not a magnitude (see recovery_estimator).",
+  "systems": {
+    "msba": {
+      "pair": "separate-accession, non-circular",
+      "state_a": {"label": "apo", "empiar": "EMPIAR-10801", "imageset": "AB-MsbA_Apo", "refine": "CS-preprocess-3/J14", "pool_root": "CS-preprocess-3"},
+      "state_b": {"label": "tbt1", "empiar": "EMPIAR-10778", "imageset": "TBT1-MsbA_EMPIAR", "refine": "CS-preprocess-4/J11", "pool_root": "CS-preprocess-4"},
+      "geom": "box 128 @ 2.12 A/px",
+      "d2_pool_split": {"mean": 12.774, "median": 12.654},
+      "recovery": {"slope": 0.996, "rms_pp": 0.87, "purity_fa": 0.993, "purity_fb": -0.003, "null_z": 8}
+    },
+    "fanac": {
+      "pair": "separate-accession, non-circular",
+      "state_a": {"label": "apo", "empiar": "EMPIAR-11631", "imageset": "2N2 apo", "refine": "CS-preprocess-12/J9", "pool_root": "CS-preprocess-12"},
+      "state_b": {"label": "fmrfa", "empiar": "EMPIAR-11632", "imageset": "2N2 FMRFa", "refine": "CS-preprocess-13/J9", "pool_root": "CS-preprocess-13"},
+      "geom": "box 128 @ 4.088 A/px",
+      "d2_pool_split": {"mean": 15.927, "median": 13.659},
+      "recovery": {"slope": 1.003, "rms_pp": 0.98, "purity_fa": 1.001, "purity_fb": -0.002, "null_z": 8}
+    },
+    "nkcc1": {
+      "pair": "separate-accession, non-circular",
+      "scored_commit": "5ce4383d",
+      "state_a": {"label": "7s1y", "empiar": "EMPIAR-11048", "imageset": "data", "refine": "CS-camp-nkcc1-11048/J9", "pool_root": "CS-camp-nkcc1-11048", "files": "pool_a.npy, score_a.json"},
+      "state_b": {"label": "7s1x", "empiar": "EMPIAR-11049", "imageset": "data", "refine": "CS-camp-nkcc1-11049/J9", "pool_root": "CS-camp-nkcc1-11049", "files": "pool_b.npy, score_b.json"},
+      "geom": "box 144 @ 4.004 A/px",
+      "d2_pool_split": {"mean": 23.987, "median": 17.693},
+      "recovery": {"slope": 0.997, "rms_pp": 1.35, "purity_fa": 0.990, "purity_fb": -0.007, "null_z": 8},
+      "note": "Dose 1.175 e/A^2 is a suspect per-frame value taken from the registry and recorded as-is; the per-pose contrast calibration absorbs absolute dose, so recovery is unaffected. Strongest pool separation of the five and clean recovery."
+    },
+    "slc19a3": {
+      "pair": "separate-accession, non-circular",
+      "scored_commit": "5ce4383d",
+      "state_a": {"label": "8s4u", "empiar": "EMPIAR-12467", "imageset": "data", "refine": "CS-camp-slc19a3-12467/J15", "pool_root": "CS-camp-slc19a3-12467", "files": "pool_a.npy, score_a.json"},
+      "state_b": {"label": "8s5w", "empiar": "EMPIAR-12474", "imageset": "data/Images-Disc1", "refine": "CS-camp-slc19a3-12474/J9", "pool_root": "CS-camp-slc19a3-12474", "files": "pool_b.npy, score_b.json"},
+      "geom": "box 98 @ 3.998 A/px",
+      "d2_pool_split": {"mean": 11.776, "median": 9.988},
+      "recovery": {"slope": 1.003, "rms_pp": 0.36, "purity_fa": 1.003, "purity_fb": 0.000, "null_z": 7},
+      "note": "state_a imageset dir name is dotted (A3-wt-Nb3.4-apo); the cryoSPARC connect-string dotted-grid fix in 5ce4383d was required for its refine to complete."
+    },
+    "slco2a1": {
+      "pair": "separate-accession, non-circular",
+      "scored_commit": "5ce4383d",
+      "state_a": {"label": "9r0a", "empiar": "EMPIAR-13568", "imageset": "data", "refine": "CS-camp-slco2a1-13568/J9", "pool_root": "CS-camp-slco2a1-13568", "files": "pool_a.npy, score_a.json"},
+      "state_b": {"label": "9r07", "empiar": "EMPIAR-13590", "imageset": "data", "refine": "CS-camp-slco2a1-13590/J9", "pool_root": "CS-camp-slco2a1-13590", "files": "pool_b.npy, score_b.json"},
+      "geom": "box 98 @ 4.007 A/px",
+      "d2_pool_split": {"mean": 10.022, "median": 8.573},
+      "recovery": {"slope": 0.997, "rms_pp": 1.82, "purity_fa": 0.988, "purity_fb": -0.009, "null_z": 6}
+    },
+    "ste2": {
+      "pair": "separate-accession, non-circular",
+      "scored_commit": "5ce4383d",
+      "state_a": {"label": "7qa8", "empiar": "EMPIAR-10877", "imageset": "data/All_movies", "refine": "CS-camp-ste2-10877/J9", "pool_root": "CS-camp-ste2-10877", "files": "pool_a.npy, score_a.json"},
+      "state_b": {"label": "7qbi", "empiar": "EMPIAR-10879", "imageset": "data/All_movies", "refine": "CS-camp-ste2-10879/J9", "pool_root": "CS-camp-ste2-10879", "files": "pool_b.npy, score_b.json"},
+      "geom": "box 104 @ 4.002 A/px",
+      "d2_pool_split": {"mean": 15.354, "median": 13.398},
+      "recovery": {"slope": 1.001, "rms_pp": 1.01, "purity_fa": 0.993, "purity_fb": -0.008, "null_z": 6},
+      "note": "map_b resampled 4.0192 -> 4.0023 A/px (sub-0.5%, results/ribo_pools not tracked; resample lives in campaign/score/ste2/map_b_at_4.0023.mrc on ribo) so both half-maps share the one pixel the map route requires. Cleanest recovery of the five."
+    },
+    "hk-atpase": {
+      "pair": "separate-accession, non-circular",
+      "scored_commit": "5ce4383d",
+      "state_a": {"label": "7w4a", "empiar": "EMPIAR-11057", "imageset": "data/Movie5", "refine": "CS-camp-hk-atpase-11057/J9", "pool_root": "CS-camp-hk-atpase-11057", "files": "pool_a.npy, score_a.json"},
+      "state_b": {"label": "8ijl", "empiar": "EMPIAR-11722", "imageset": "data/8IJL", "refine": "CS-camp-hk-atpase-11722/J9", "pool_root": "CS-camp-hk-atpase-11722", "files": "pool_b.npy, score_b.json"},
+      "geom": "box 156 @ 4.011 A/px",
+      "d2_pool_split": {"mean": 48.032, "median": 27.088},
+      "recovery": {"slope": 1.008, "rms_pp": 0.70, "purity_fa": 1.002, "purity_fb": -0.006, "null_z": 9},
+      "weak_pair": true,
+      "note": "WEAK / low-contrast pair. map_b resampled 4.001 -> 4.011 A/px. Template baseline coherence ~0.49 at both poles (clean systems 0.83-0.93); the 7w4a/8ijl states share 69% of atoms and were admitted via min_shared_fraction 0.5. Under held-out two_pool composition recovers (purity_fa 1.002, slope 1.008, and 9 sigma above the label-shuffle null), but that is EXPECTED given both references (see recovery_estimator caveat) and does NOT lift the weak-pair status: the two 1-pool estimates DISAGREE sharply and stably (ref-A slope 1.18 vs ref-B 0.81, gap 0.37 +/- 0.03 over held-out splits, against ~0.95-1.01 agreement on the clean pairs), the tell that the two states' within-scales differ and one pool cannot de-bias both. The old pool-free readout was purity_fa 0.635, slope 0.62. d2_pool_split (mean 48, median 27) is inflated by large pool variance and OVERSTATES discriminability -- read baseline coherence and the 1-pool spread, not the raw gap or the 2-pool slope. Do not present alongside the clean pairs without this caveat."
+    },
+    "hb": {
+      "pair": "separate-accession, non-circular",
+      "system": "hemoglobin R/T (oxy vs deoxy quaternary states)",
+      "scored_commit": "re-scored 2026-09-26 under current score_pool.py",
+      "state_a": {"label": "R (oxy)", "empiar": "EMPIAR-11992", "pdb": "8WJ1", "emdb": "EMD-37575", "refine": "CS-hb-rt-1/J10", "files": "pool_r.npy, pool_r_d2.npy, score_r.json"},
+      "state_b": {"label": "T (deoxy)", "empiar": "EMPIAR-11993", "pdb": "8WJ2", "emdb": "EMD-37576", "refine": "CS-hb-rt-2/J23", "files": "pool_t.npy, pool_t_d2.npy, score_t.json"},
+      "geom": "box 128 @ 2.04 A/px",
+      "d2_pool_split": {"mean": 45.041, "median": 40.949},
+      "recovery": {"slope": 1.023, "rms_pp": 1.32, "purity_fa": 1.016, "purity_fb": -0.007, "null_z": 8.5},
+      "provenance_ref": "results/ribo_pools/hb/provenance.json (fuller record: re-score inputs, map power-match, dose, history)",
+      "note": "RE-SCORED first-class 2026-09-26 (box 128 @ 2.04 A/px, n=2613/4000) from refinements recovered off orc (CS-hb-rt-1 R, CS-hb-rt-2 T), superseding the old box-32 dump pools. map_b (T) was power-matched to map_a (R) first -- the two independent refinements differed 1.587x in amplitude (see provenance map_power_match). Now at the campaign operating point and clean: slope 1.023, purity_fa 1.016, 8.5 sigma above the shuffle null. Held-out 1-pool(A/B) disagree by a STABLE 0.204 +/- 0.008 (the dump's 0.22 +/- 0.14 was small-n noise), so hb has moderate real heterogeneity -- intermediate between the clean cluster (<=0.09) and hk-atpase (0.37), and needs two pools."
+    }
+  },
+  "scored_vs_registry": "The pools scored here are FaNaC1 11631/11632 (apo 8ON8 / FMRFa 8ON7) and MsbA 10801/10778 (apo / TBT1 7MET), which differ from the registry/table pairs FaNaC1 11633/11634 and MsbA 12504/12506 (8DMM/8DMO). Documented in real_pairs.md 'Corrections to earlier notes'. Open item: reconcile the registry (re-score from the registry accessions, or enter the scored accessions as the pair). Do not quote FaNaC1 as 11633/11634 or MsbA as 8DMM/8DMO for these results."
+}

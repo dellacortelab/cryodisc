@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:19:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6f929a6deb.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "3-hydroxyisobutyrate dehydrogenase, mi (2GF2/2I9P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "3-hydroxyisobutyrate dehydrogenase, mi (2GF2/2I9P)",
+        "motion": "shear",
+        "mass_kda": 27.631719999999994,
+        "ca_rmsd": 0.7972190805314378,
+        "radius": 38.04709964466189,
+        "box_size": 128,
+        "d2_known_pose": 3.6101913452148438,
+        "d2_crlb": 2.985921859741211,
+        "information": 2.0728816986083984,
+        "saturation": 0.5182204246520996,
+        "n_floor": 1206.050537109375,
+        "n_marginal": 27115.162109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02613187101115819,
+        "note": "P31937 35 kDa, dyndom, rotation 4.8 deg, chains A/D",
+        "d2_marginal": 0.09434105455875397,
+        "information_marginal": 0.09219934046268463,
+        "n_matched": 293,
+        "identity": 1.0,
+        "shared_fraction": 0.9673507462686567,
+        "provenance": {
+          "accession": "P31937",
+          "canonical_mass_kda": 35.329,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 4.8
+        },
+        "d2_floor": 3.6101913452148438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 3-hydroxyisobutyrate dehydrogenase, mi (2GF2/2I9P) | 28 | shear | 0.80 | 3.61 | 0.026 | 0.52 | 1.21e+03 | 2.71e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "3-hydroxyisobutyrate dehydrogenase, mi (2GF2/2I9P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

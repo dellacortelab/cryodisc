@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:48:15+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c8888ae5af.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Multidrug transporter EmrE (Efflux-mul (7MGX/7JK8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Multidrug transporter EmrE (Efflux-mul (7MGX/7JK8)",
+        "motion": "oodval",
+        "mass_kda": 9.934676999999997,
+        "ca_rmsd": 5.011562450010232,
+        "radius": 29.169299467142945,
+        "box_size": 128,
+        "d2_known_pose": 35.10285949707031,
+        "d2_crlb": 28.72018051147461,
+        "information": 3.981234073638916,
+        "saturation": 0.995308518409729,
+        "n_floor": 627.9459838867188,
+        "n_marginal": 3584.282958984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023624804648530905,
+        "note": "P23895 12 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.829298198223114,
+        "information_marginal": 0.6974896192550659,
+        "n_matched": 101,
+        "identity": 0.9603960396039604,
+        "shared_fraction": 0.9705128205128205,
+        "provenance": {
+          "accession": "P23895",
+          "canonical_mass_kda": 11.958,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 35.10285949707031
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Multidrug transporter EmrE (Efflux-mul (7MGX/7JK8) | 10 | oodval | 5.01 | 35.1 | 0.024 | 1.00* | 628 | 3.58e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Multidrug transporter EmrE (Efflux-mul (7MGX/7JK8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

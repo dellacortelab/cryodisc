@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:26:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f50ed26818.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Kinesin-like protein KIF11 (Kinesin-li (1II6/2IEH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Kinesin-like protein KIF11 (Kinesin-li (1II6/2IEH)",
+        "motion": "shear",
+        "mass_kda": 34.401194999999994,
+        "ca_rmsd": 4.2280394264715655,
+        "radius": 42.64644238385486,
+        "box_size": 128,
+        "d2_known_pose": 40.0950927734375,
+        "d2_crlb": 35.105648040771484,
+        "information": 3.990478038787842,
+        "saturation": 0.9976195096969604,
+        "n_floor": 626.4913940429688,
+        "n_marginal": 8041.96630859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008374514232560228,
+        "note": "P52732 119 kDa, dyndom, rotation 15.5 deg, chains A/A",
+        "d2_marginal": 0.3357769250869751,
+        "information_marginal": 0.3108692765235901,
+        "n_matched": 332,
+        "identity": 1.0,
+        "shared_fraction": 0.9774690199023658,
+        "provenance": {
+          "accession": "P52732",
+          "canonical_mass_kda": 119.159,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.5
+        },
+        "d2_floor": 40.0950927734375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Kinesin-like protein KIF11 (Kinesin-li (1II6/2IEH) | 34 | shear | 4.23 | 40.1 | 0.008 | 1.00* | 626 | 8.04e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Kinesin-like protein KIF11 (Kinesin-li (1II6/2IEH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

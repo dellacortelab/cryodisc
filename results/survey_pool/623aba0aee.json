@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Cobalt/magnesium transport protein Cor (2IUB/2IUB)",
+ "returncode": -6,
+ "stderr_tail": "f303  xla::PjRtStreamExecutorLoadedExecutable::Execute()\n    @     0x7feced221c05  pjrt::PJRT_LoadedExecutable_Execute()\n    @     0x7feddba8a52d  xla::PjRtCApiLoadedExecutable::Execute()\n    @     0x7feddbc3d38d  xla::ifrt::PjRtLoadedExecutable::Execute()\n    @     0x7feddb9e507f  jax::PyLoadedExecutable::ExecuteSharded()\n    @     0x7feddb9ec8bb  xla::ValueOrThrowWrapper<>::operator()()\n    @     0x7feddb9ec72f  nanobind::detail::func_create<>()::{lambda()#1}::__invoke()\n    @     0x7feddbbb2bee  nanobind::detail::nb_func_vectorcall_medium_pos()\n    @     0x55d48d375dde  PyObject_Vectorcall\n"
+}

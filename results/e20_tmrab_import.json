@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "driver": "deploy/orc/cryosparc_import.py",
+  "commit": "unknown",
+  "written_at": "2026-08-28T21:20:30+00:00",
+  "arguments": {
+    "host": "m9g-1-8-opa.rc.byu.edu",
+    "port": 39000,
+    "license_file": "~/.cryosparc/license_id",
+    "project_title": "e20_tmrab_10317",
+    "project_uid": null,
+    "project_root": "~/nobackup/archive/cryoem_projects",
+    "workspace_title": "import",
+    "meta": "/home/bryceeh/nobackup/archive/e20_tmrab/1p5mln-TmrAB-stack.star",
+    "blob_dir": "/home/bryceeh/nobackup/archive/e20_tmrab",
+    "psize": 1.077,
+    "voltage": 300.0,
+    "cs": 2.7,
+    "amp_contrast": 0.1,
+    "sign": "light-on-dark",
+    "no_poses": false,
+    "lane": "default",
+    "out": "results/e20_tmrab_import.json"
+  },
+  "result": {
+    "project": "P53",
+    "job": "J1",
+    "source_job": "P53:J1",
+    "output": "imported_particles",
+    "n_particles": 1547017,
+    "meta": "/home/bryceeh/nobackup/archive/e20_tmrab/1p5mln-TmrAB-stack.star",
+    "blob_dir": "/home/bryceeh/nobackup/archive/e20_tmrab",
+    "optics": {
+      "psize_A": 1.077,
+      "accel_kv": 300.0,
+      "cs_mm": 2.7,
+      "amp_contrast": 0.1,
+      "sign": "light-on-dark"
+    },
+    "has_alignments3D": true
+  }
+}

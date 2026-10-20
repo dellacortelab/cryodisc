@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Tumor necrosis factor receptor superfa (1ZA3/1ZA3)",
+ "returncode": 1,
+ "stderr_tail": "/numpy/array_creation.py\", line 573, in linspace\n    return _linspace(start, stop, num, endpoint, retstep, dtype, axis, device=device)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Unable to initialize backend 'cuda': INTERNAL: no supported devices found for platform CUDA (you may need to uninstall the failing plugin package, or set JAX_PLATFORMS=cpu to skip this backend.)\n--------------------\nFor simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.\n"
+}

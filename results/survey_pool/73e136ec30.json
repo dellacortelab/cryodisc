@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:13:19+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/73e136ec30.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA polymerase (EC 2.7.7.7) (EC 3.1.11 (1XI1/1XHX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA polymerase (EC 2.7.7.7) (EC 3.1.11 (1XI1/1XHX)",
+        "motion": "shear",
+        "mass_kda": 61.39113699999999,
+        "ca_rmsd": 1.2373381328992978,
+        "radius": 44.345084769882064,
+        "box_size": 128,
+        "d2_known_pose": 20.793216705322266,
+        "d2_crlb": 19.496023178100586,
+        "information": 3.8626272678375244,
+        "saturation": 0.9656568169593811,
+        "n_floor": 647.2279052734375,
+        "n_marginal": 32816.07421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0037340152116187354,
+        "note": "P03680 67 kDa, dyndom, rotation 5.8 deg, chains A/B",
+        "d2_marginal": 0.07764218747615814,
+        "information_marginal": 0.07618217915296555,
+        "n_matched": 571,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P03680",
+          "canonical_mass_kda": 66.714,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 5.8
+        },
+        "d2_floor": 20.793216705322266
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA polymerase (EC 2.7.7.7) (EC 3.1.11 (1XI1/1XHX) | 61 | shear | 1.24 | 20.8 | 0.004 | 0.97 | 647 | 3.28e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA polymerase (EC 2.7.7.7) (EC 3.1.11 (1XI1/1XHX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

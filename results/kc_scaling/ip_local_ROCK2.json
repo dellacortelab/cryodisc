@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_local.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_1.json",
+    "rows": [
+      "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "amplitudes": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "nodes": 8064,
+    "box_size": 128,
+    "rmsf": 0.5,
+    "fraction": 0.5,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "out": "results/kc_scaling/ip_local_ROCK2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)",
+      "box_size": 128,
+      "rmsd": 0.7945040925329527,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 0.05,
+          "i_local": 0.01642129197716713,
+          "i_known": 0.017186732962727547,
+          "mean_d2_crlb": 0.016489490866661072,
+          "mean_d2_known": 0.017261460423469543,
+          "seconds": 10.8
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.06488867104053497,
+          "i_known": 0.06787528842687607,
+          "mean_d2_crlb": 0.06595796346664429,
+          "mean_d2_known": 0.06904584169387817,
+          "seconds": 10.2
+        },
+        {
+          "amplitude": 0.15,
+          "i_local": 0.1431628167629242,
+          "i_known": 0.14962200820446014,
+          "mean_d2_crlb": 0.14840544760227203,
+          "mean_d2_known": 0.1553531438112259,
+          "seconds": 10.3
+        },
+        {
+          "amplitude": 0.2,
+          "i_local": 0.24793937802314758,
+          "i_known": 0.25883904099464417,
+          "mean_d2_crlb": 0.26383185386657715,
+          "mean_d2_known": 0.2761833667755127,
+          "seconds": 10.2
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.5211121439933777,
+          "i_known": 0.5425713062286377,
+          "mean_d2_crlb": 0.5936217904090881,
+          "mean_d2_known": 0.6214125752449036,
+          "seconds": 10.2
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 1.2119601964950562,
+          "i_known": 1.2542967796325684,
+          "mean_d2_crlb": 1.6489492654800415,
+          "mean_d2_known": 1.7261459827423096,
+          "seconds": 10.2
+        }
+      ]
+    }
+  ]
+}

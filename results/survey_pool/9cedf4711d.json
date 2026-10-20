@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:16:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9cedf4711d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adenylate kinase isoenzyme 5 (AK 5) (E (2BWJ/2BWJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adenylate kinase isoenzyme 5 (AK 5) (E (2BWJ/2BWJ)",
+        "motion": "hinge",
+        "mass_kda": 19.312051,
+        "ca_rmsd": 0.9540625350094509,
+        "radius": 32.78496751468678,
+        "box_size": 128,
+        "d2_known_pose": 4.390162944793701,
+        "d2_crlb": 3.9652628898620605,
+        "information": 2.3201611042022705,
+        "saturation": 0.5800402760505676,
+        "n_floor": 1077.511474609375,
+        "n_marginal": 63094.03125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009115172088379085,
+        "note": "Q9Y6K8 63 kDa, dyndom, rotation 7.0 deg, chains B/F",
+        "d2_marginal": 0.04001709073781967,
+        "information_marginal": 0.03962340205907822,
+        "n_matched": 194,
+        "identity": 1.0,
+        "shared_fraction": 0.9824442943956786,
+        "provenance": {
+          "accession": "Q9Y6K8",
+          "canonical_mass_kda": 63.333,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.0
+        },
+        "d2_floor": 4.390162944793701
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adenylate kinase isoenzyme 5 (AK 5) (E (2BWJ/2BWJ) | 19 | hinge | 0.95 | 4.39 | 0.009 | 0.58 | 1.08e+03 | 6.31e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adenylate kinase isoenzyme 5 (AK 5) (E (2BWJ/2BWJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

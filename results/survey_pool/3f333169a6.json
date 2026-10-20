@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:53:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3f333169a6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Maltose/maltodextrin import ATP-bindin (1Q12/2AWN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Maltose/maltodextrin import ATP-bindin (1Q12/2AWN)",
+        "motion": "unclassified",
+        "mass_kda": 37.55963399999999,
+        "ca_rmsd": 1.4374819770450413,
+        "radius": 43.16294458846098,
+        "box_size": 128,
+        "d2_known_pose": 14.903167724609375,
+        "d2_crlb": 13.936785697937012,
+        "information": 3.6776232719421387,
+        "saturation": 0.9194058179855347,
+        "n_floor": 679.786865234375,
+        "n_marginal": 36399.36328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004688162210829338,
+        "note": "P68187 41 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains C/B",
+        "d2_marginal": 0.06986846774816513,
+        "information_marginal": 0.06868252158164978,
+        "n_matched": 367,
+        "identity": 1.0,
+        "shared_fraction": 0.9861447869760998,
+        "provenance": {
+          "accession": "P68187",
+          "canonical_mass_kda": 40.99,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.903167724609375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Maltose/maltodextrin import ATP-bindin (1Q12/2AWN) | 38 | unclassified | 1.44 | 14.9 | 0.005 | 0.92 | 680 | 3.64e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Maltose/maltodextrin import ATP-bindin (1Q12/2AWN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

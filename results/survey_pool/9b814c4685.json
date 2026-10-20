@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:28:51+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9b814c4685.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Genome polyprotein [Cleaved into: Caps (1OK8/1OKE)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Genome polyprotein [Cleaved into: Caps (1OK8/1OKE)",
+        "motion": "crypticpocket",
+        "mass_kda": 39.32516,
+        "ca_rmsd": 11.895316780769567,
+        "radius": 74.4995566587342,
+        "box_size": 128,
+        "d2_known_pose": 307.37457275390625,
+        "d2_crlb": 265.1586608886719,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 3122.28369140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003178756240971302,
+        "note": "P12823 379 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/B",
+        "d2_marginal": 0.9770688414573669,
+        "information_marginal": 0.8006960153579712,
+        "n_matched": 380,
+        "identity": 1.0,
+        "shared_fraction": 0.9673416067929458,
+        "provenance": {
+          "accession": "P12823",
+          "canonical_mass_kda": 379.219,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 307.37457275390625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Genome polyprotein [Cleaved into: Caps (1OK8/1OKE) | 39 | crypticpocket | 11.90 | 307 | 0.003 | 1.00* | 625 | 3.12e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Genome polyprotein [Cleaved into: Caps (1OK8/1OKE)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

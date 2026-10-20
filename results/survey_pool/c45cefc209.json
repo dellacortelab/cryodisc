@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:16:12+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c45cefc209.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Extracellular matrix-binding protein E (2DGJ/2DGJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Extracellular matrix-binding protein E (2DGJ/2DGJ)",
+        "motion": "unclassified",
+        "mass_kda": 23.597733,
+        "ca_rmsd": 1.3939495399853472,
+        "radius": 65.44299973530269,
+        "box_size": 128,
+        "d2_known_pose": 13.126521110534668,
+        "d2_crlb": 12.027056694030762,
+        "information": 3.5802509784698486,
+        "saturation": 0.8950627446174622,
+        "n_floor": 698.2750854492188,
+        "n_marginal": 91988.53125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0020845029625865155,
+        "note": "Q931R6 722 kDa, dyndom, rotation 11.0 deg, chains A/B",
+        "d2_marginal": 0.027362272143363953,
+        "information_marginal": 0.027177300304174423,
+        "n_matched": 240,
+        "identity": 1.0,
+        "shared_fraction": 0.9823691460055096,
+        "provenance": {
+          "accession": "Q931R6",
+          "canonical_mass_kda": 722.318,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.0
+        },
+        "d2_floor": 13.126521110534668
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Extracellular matrix-binding protein E (2DGJ/2DGJ) | 24 | unclassified | 1.39 | 13.1 | 0.002 | 0.90 | 698 | 9.2e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Extracellular matrix-binding protein E (2DGJ/2DGJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

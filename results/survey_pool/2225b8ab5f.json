@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:15:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2225b8ab5f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Camphor 5-monooxygenase (EC 1.14.15.1) (1K2O/2FRZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Camphor 5-monooxygenase (EC 1.14.15.1) (1K2O/2FRZ)",
+        "motion": "hinge",
+        "mass_kda": 42.278664,
+        "ca_rmsd": 2.0715945556607624,
+        "radius": 36.87953237904185,
+        "box_size": 128,
+        "d2_known_pose": 29.318883895874023,
+        "d2_crlb": 27.411479949951172,
+        "information": 3.958454132080078,
+        "saturation": 0.9896135330200195,
+        "n_floor": 631.5597534179688,
+        "n_marginal": 10685.29296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008457201528422106,
+        "note": "P00183 47 kDa, dyndom, rotation 16.3 deg, chains A/B",
+        "d2_marginal": 0.24795570969581604,
+        "information_marginal": 0.23396645486354828,
+        "n_matched": 405,
+        "identity": 0.9925925925925926,
+        "shared_fraction": 0.9965753424657534,
+        "provenance": {
+          "accession": "P00183",
+          "canonical_mass_kda": 46.669,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 16.3
+        },
+        "d2_floor": 29.318883895874023
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Camphor 5-monooxygenase (EC 1.14.15.1) (1K2O/2FRZ) | 42 | hinge | 2.07 | 29.3 | 0.008 | 0.99 | 632 | 1.07e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Camphor 5-monooxygenase (EC 1.14.15.1) (1K2O/2FRZ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

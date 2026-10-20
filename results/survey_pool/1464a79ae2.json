@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "3-isopropylmalate dehydrogenase (EC 1. (1OSJ/1DR0)",
+ "returncode": -6,
+ "stderr_tail": "631  tsl::JoinFutures<>()::{lambda()#1}::operator()()\n    @     0x7f5d62a8626f  tsl::AsyncValue::EnqueueWaiter<>()::Node::RunWaiterAndDeleteWaiterNode()\n    @     0x7f5d62a844d2  tsl::internal::PromiseBase<>::emplace<>()\n    @     0x7f5d62a84344  absl::lts_20260526::internal_any_invocable::RemoteInvoker<>()\n    @     0x7f5d6d8b21df  std::_Function_handler<>::_M_invoke()\n    @     0x7f5d6d8b0b54  Eigen::ThreadPoolTempl<>::WorkerLoop()\n    @     0x7f5d6d8b09e1  std::__invoke_impl<>()\n    @     0x7f5d6d89f90f  tsl::(anonymous namespace)::PThread::ThreadFn()\n    @     0x7f5e5d4a833a  start_thread\n"
+}

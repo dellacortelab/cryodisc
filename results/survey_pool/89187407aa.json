@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:35:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/89187407aa.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HTH-type transcriptional regulator Lrp (2CFX/2CFX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HTH-type transcriptional regulator Lrp (2CFX/2CFX)",
+        "motion": "no_contact",
+        "mass_kda": 14.158827999999998,
+        "ca_rmsd": 0.8598946461835206,
+        "radius": 34.14297302709936,
+        "box_size": 128,
+        "d2_known_pose": 2.268817901611328,
+        "d2_crlb": 1.8808677196502686,
+        "information": 1.5318360328674316,
+        "saturation": 0.3829590082168579,
+        "n_floor": 1632.0284423828125,
+        "n_marginal": 40862.39453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02738047554242741,
+        "note": "P96582 16 kDa, dyndom, rotation 8.1 deg, chains D/G",
+        "d2_marginal": 0.06212131306529045,
+        "information_marginal": 0.061180949211120605,
+        "n_matched": 140,
+        "identity": 1.0,
+        "shared_fraction": 0.9780621572212066,
+        "provenance": {
+          "accession": "P96582",
+          "canonical_mass_kda": 16.45,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.1
+        },
+        "d2_floor": 2.268817901611328
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HTH-type transcriptional regulator Lrp (2CFX/2CFX) | 14 | no_contact | 0.86 | 2.27 | 0.027 | 0.38 | 1.63e+03 | 4.09e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HTH-type transcriptional regulator Lrp (2CFX/2CFX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

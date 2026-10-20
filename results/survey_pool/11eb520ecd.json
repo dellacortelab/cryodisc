@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:38:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/11eb520ecd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Elongation factor Tu, mitochondrial (E (1XB2/1D2E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Elongation factor Tu, mitochondrial (E (1XB2/1D2E)",
+        "motion": "unclassified",
+        "mass_kda": 36.31640399999999,
+        "ca_rmsd": 4.557419079223692,
+        "radius": 43.88600096243302,
+        "box_size": 128,
+        "d2_known_pose": 58.264320373535156,
+        "d2_crlb": 54.095184326171875,
+        "information": 3.999161720275879,
+        "saturation": 0.9997904300689697,
+        "n_floor": 625.1310424804688,
+        "n_marginal": 7075.75341796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006619007028579038,
+        "note": "P49410 49 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/C",
+        "d2_marginal": 0.38565194606781006,
+        "information_marginal": 0.3533192574977875,
+        "n_matched": 357,
+        "identity": 1.0,
+        "shared_fraction": 0.8993485342019544,
+        "provenance": {
+          "accession": "P49410",
+          "canonical_mass_kda": 49.398,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 58.264320373535156
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Elongation factor Tu, mitochondrial (E (1XB2/1D2E) | 36 | unclassified | 4.56 | 58.3 | 0.007 | 1.00* | 625 | 7.08e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Elongation factor Tu, mitochondrial (E (1XB2/1D2E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

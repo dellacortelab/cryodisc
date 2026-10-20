@@ -1,0 +1,82 @@
+{
+  "label": "cas9_12nt",
+  "entry": "11780",
+  "imageset": "20211005_2",
+  "project": "P43",
+  "project_dir": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2",
+  "workspace": "W1",
+  "picker": "blob",
+  "template_volume": null,
+  "movies": "/nobackup/autodelete/usr/bryceeh/spcas9/11780/_flat/20211005_2/*.tiff",
+  "stages": {
+    "import": {
+      "job": "J1",
+      "type": "import_movies",
+      "status": "completed",
+      "num_items": 200,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J1",
+      "outputs": [
+        "imported_movies",
+        "failed_movies"
+      ]
+    },
+    "motion": {
+      "job": "J2",
+      "type": "patch_motion_correction_multi",
+      "status": "completed",
+      "num_items": 200,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J2",
+      "outputs": [
+        "micrographs",
+        "micrographs_incomplete"
+      ]
+    },
+    "ctf": {
+      "job": "J3",
+      "type": "patch_ctf_estimation_multi",
+      "status": "completed",
+      "num_items": 200,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J3",
+      "outputs": [
+        "exposures",
+        "exposures_incomplete"
+      ]
+    },
+    "pick": {
+      "job": "J4",
+      "type": "blob_picker_gpu",
+      "status": "completed",
+      "num_items": 104252,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J4",
+      "outputs": [
+        "particles",
+        "micrographs",
+        "templates"
+      ]
+    },
+    "extract": {
+      "job": "J5",
+      "type": "extract_micrographs_multi",
+      "status": "completed",
+      "num_items": 86589,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J5",
+      "outputs": [
+        "micrographs",
+        "micrographs_incomplete",
+        "particles"
+      ]
+    },
+    "class2D": {
+      "job": "J6",
+      "type": "class_2D",
+      "status": "completed",
+      "num_items": 86439,
+      "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J6",
+      "outputs": [
+        "particles",
+        "particles_rejected",
+        "class_averages"
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:02:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/20b9b5b2e2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Carbonic anhydrase (1G5C/1G5C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Carbonic anhydrase (1G5C/1G5C)",
+        "motion": "no_contact",
+        "mass_kda": 17.346718999999997,
+        "ca_rmsd": 1.7805722006719193,
+        "radius": 48.983624760059456,
+        "box_size": 128,
+        "d2_known_pose": 10.262331008911133,
+        "d2_crlb": 9.14738655090332,
+        "information": 3.351640224456787,
+        "saturation": 0.8379100561141968,
+        "n_floor": 745.9034423828125,
+        "n_marginal": 16079.7158203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015747189355862196,
+        "note": "Q50565 20 kDa, dyndom, rotation 30.4 deg, chains A/E",
+        "d2_marginal": 0.16160286962985992,
+        "information_marginal": 0.15547539293766022,
+        "n_matched": 169,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q50565",
+          "canonical_mass_kda": 19.567,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 30.4
+        },
+        "d2_floor": 10.262331008911133
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Carbonic anhydrase (1G5C/1G5C) | 17 | no_contact | 1.78 | 10.3 | 0.016 | 0.84 | 746 | 1.61e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Carbonic anhydrase (1G5C/1G5C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

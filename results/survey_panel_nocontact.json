@@ -1,0 +1,449 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/survey_panel.py",
+  "commit": "cb20f6a-dirty",
+  "written_at": "2026-08-12T09:00:24+00:00",
+  "arguments": {
+    "survey": "results/survey_targets.json",
+    "out_dir": "data",
+    "stem": "survey_nocontact",
+    "out": "results/survey_panel_nocontact.json",
+    "n": 40,
+    "chunks": 1,
+    "motion": [
+      "no_contact"
+    ],
+    "exclude_scored": [
+      "data/survey_panel_1.json",
+      "data/survey_panel_2.json",
+      "data/survey_panel_3.json",
+      "data/survey_panel_4.json"
+    ],
+    "min_kda": 40.0,
+    "max_kda": 200.0
+  },
+  "result": {
+    "panels": [
+      "data/survey_nocontact_1.json"
+    ],
+    "pdb_ids": "data/survey_nocontact_pdb_ids.txt",
+    "n_survey_rows": 938,
+    "n_inside_mass_window": 912,
+    "n_scoreable": 37,
+    "n_selected": 37,
+    "n_entries": 74,
+    "rotation_deg": {
+      "min": 5.6,
+      "max": 169.0
+    },
+    "selected": [
+      {
+        "accession": "P01902",
+        "mass_kda": 41.49,
+        "pdb_a": "2FWO",
+        "pdb_b": "1VGK",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 5.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P06875",
+        "mass_kda": 94.643,
+        "pdb_a": "1E3A",
+        "pdb_b": "1KEC",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 5.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q96W94",
+        "mass_kda": 49.702,
+        "pdb_a": "1R43",
+        "pdb_b": "1R3N",
+        "chain_a": "A",
+        "chain_b": "D",
+        "motion": "no_contact",
+        "rotation_deg": 8.2,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P02678",
+        "mass_kda": 54.27,
+        "pdb_a": "1N73",
+        "pdb_b": "1LWU",
+        "chain_a": "E",
+        "chain_b": "B",
+        "motion": "no_contact",
+        "rotation_deg": 8.8,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P01889",
+        "mass_kda": 40.46,
+        "pdb_a": "1A9E",
+        "pdb_b": "2BVP",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 9.8,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q91Z05",
+        "mass_kda": 51.946,
+        "pdb_a": "1I9J",
+        "pdb_b": "1L7T",
+        "chain_a": "H",
+        "chain_b": "H",
+        "motion": "no_contact",
+        "rotation_deg": 9.8,
+        "source": "dyndom"
+      },
+      {
+        "accession": "O96017",
+        "mass_kda": 60.915,
+        "pdb_a": "2CN5",
+        "pdb_b": "2CN8",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 11.1,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q16625",
+        "mass_kda": 59.144,
+        "pdb_a": "1WPA",
+        "pdb_b": "1XAW",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 11.1,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P28793",
+        "mass_kda": 77.137,
+        "pdb_a": "1WDL",
+        "pdb_b": "2D3T",
+        "chain_a": "B",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 11.4,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P12643",
+        "mass_kda": 44.702,
+        "pdb_a": "1ES7",
+        "pdb_b": "1REU",
+        "chain_a": "C",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 11.9,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P02675",
+        "mass_kda": 55.928,
+        "pdb_a": "1FZC",
+        "pdb_b": "1RE3",
+        "chain_a": "B",
+        "chain_b": "E",
+        "motion": "no_contact",
+        "rotation_deg": 12.2,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P40189",
+        "mass_kda": 103.537,
+        "pdb_a": "1P9M",
+        "pdb_b": "1BQU",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 12.4,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P03956",
+        "mass_kda": 54.007,
+        "pdb_a": "2CLT",
+        "pdb_b": "1SU3",
+        "chain_a": "B",
+        "chain_b": "B",
+        "motion": "no_contact",
+        "rotation_deg": 12.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P00778",
+        "mass_kda": 41.077,
+        "pdb_a": "3PRO",
+        "pdb_b": "2PRO",
+        "chain_a": "D",
+        "chain_b": "C",
+        "motion": "no_contact",
+        "rotation_deg": 13.1,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P77933",
+        "mass_kda": 193.405,
+        "pdb_a": "1WN7",
+        "pdb_b": "1WNS",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 15.3,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P10321",
+        "mass_kda": 40.649,
+        "pdb_a": "1EFX",
+        "pdb_b": "1QQD",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 16.2,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P0ABQ0",
+        "mass_kda": 43.438,
+        "pdb_a": "1U7U",
+        "pdb_b": "1U7Z",
+        "chain_a": "A",
+        "chain_b": "C",
+        "motion": "no_contact",
+        "rotation_deg": 17.8,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P01899",
+        "mass_kda": 40.836,
+        "pdb_a": "2CII",
+        "pdb_b": "1FFO",
+        "chain_a": "A",
+        "chain_b": "D",
+        "motion": "no_contact",
+        "rotation_deg": 17.9,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q64096",
+        "mass_kda": 129.113,
+        "pdb_a": "1RJ2",
+        "pdb_b": "1KZ7",
+        "chain_a": "J",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 18.4,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P12281",
+        "mass_kda": 44.067,
+        "pdb_a": "2NQQ",
+        "pdb_b": "2NQU",
+        "chain_a": "C",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 19.4,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P18075",
+        "mass_kda": 49.313,
+        "pdb_a": "1M4U",
+        "pdb_b": "1LXI",
+        "chain_a": "L",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 21.5,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P00736",
+        "mass_kda": 80.119,
+        "pdb_a": "1MD7",
+        "pdb_b": "1MD8",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 21.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P08174",
+        "mass_kda": 41.4,
+        "pdb_a": "1H03",
+        "pdb_b": "1H2Q",
+        "chain_a": "P",
+        "chain_b": "P",
+        "motion": "no_contact",
+        "rotation_deg": 21.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q96EP1",
+        "mass_kda": 73.386,
+        "pdb_a": "1LGP",
+        "pdb_b": "1LGQ",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 21.9,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P14598",
+        "mass_kda": 44.682,
+        "pdb_a": "1NG2",
+        "pdb_b": "1OV3",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 25.4,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q93009",
+        "mass_kda": 128.302,
+        "pdb_a": "2F1Z",
+        "pdb_b": "1NBF",
+        "chain_a": "B",
+        "chain_b": "B",
+        "motion": "no_contact",
+        "rotation_deg": 31.2,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P34945",
+        "mass_kda": 47.813,
+        "pdb_a": "1SER",
+        "pdb_b": "1SES",
+        "chain_a": "B",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 35.0,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P0A6H5",
+        "mass_kda": 49.594,
+        "pdb_a": "1DO0",
+        "pdb_b": "1G4B",
+        "chain_a": "A",
+        "chain_b": "L",
+        "motion": "no_contact",
+        "rotation_deg": 39.0,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P03870",
+        "mass_kda": 48.62,
+        "pdb_a": "1FLO",
+        "pdb_b": "1P4E",
+        "chain_a": "B",
+        "chain_b": "D",
+        "motion": "no_contact",
+        "rotation_deg": 45.0,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P00747",
+        "mass_kda": 90.569,
+        "pdb_a": "1KI0",
+        "pdb_b": "2DOH",
+        "chain_a": "A",
+        "chain_b": "X",
+        "motion": "no_contact",
+        "rotation_deg": 48.1,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P03275",
+        "mass_kda": 61.919,
+        "pdb_a": "1V1H",
+        "pdb_b": "1V1I",
+        "chain_a": "A",
+        "chain_b": "C",
+        "motion": "no_contact",
+        "rotation_deg": 49.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P19438",
+        "mass_kda": 50.495,
+        "pdb_a": "1FT4",
+        "pdb_b": "1EXT",
+        "chain_a": "A",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 62.8,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q97ZE7",
+        "mass_kda": 50.047,
+        "pdb_a": "1QZX",
+        "pdb_b": "1QZW",
+        "chain_a": "B",
+        "chain_b": "G",
+        "motion": "no_contact",
+        "rotation_deg": 83.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q9KWU7",
+        "mass_kda": 124.758,
+        "pdb_a": "1I6V",
+        "pdb_b": "2GHO",
+        "chain_a": "C",
+        "chain_b": "C",
+        "motion": "no_contact",
+        "rotation_deg": 86.4,
+        "source": "dyndom"
+      },
+      {
+        "accession": "Q29983",
+        "mass_kda": 42.915,
+        "pdb_a": "1HYR",
+        "pdb_b": "1B3J",
+        "chain_a": "C",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 107.6,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P08709",
+        "mass_kda": 51.594,
+        "pdb_a": "1QFK",
+        "pdb_b": "2C4F",
+        "chain_a": "L",
+        "chain_b": "L",
+        "motion": "no_contact",
+        "rotation_deg": 163.3,
+        "source": "dyndom"
+      },
+      {
+        "accession": "P21802",
+        "mass_kda": 92.025,
+        "pdb_a": "1E0O",
+        "pdb_b": "1DJS",
+        "chain_a": "D",
+        "chain_b": "A",
+        "motion": "no_contact",
+        "rotation_deg": 169.0,
+        "source": "dyndom"
+      }
+    ]
+  }
+}

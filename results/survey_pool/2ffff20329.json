@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:21:01+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2ffff20329.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Lipoprotein (1YJ7/1YJ7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Lipoprotein (1YJ7/1YJ7)",
+        "motion": "no_contact",
+        "mass_kda": 15.391430999999997,
+        "ca_rmsd": 1.0171049357754096,
+        "radius": 32.50959347018974,
+        "box_size": 128,
+        "d2_known_pose": 2.5735249519348145,
+        "d2_crlb": 2.118710994720459,
+        "information": 1.6703190803527832,
+        "saturation": 0.4175797700881958,
+        "n_floor": 1496.7200927734375,
+        "n_marginal": 138891.21875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00702567739031879,
+        "note": "Q8VQD3 21 kDa, dyndom, rotation 12.0 deg, chains B/A",
+        "d2_marginal": 0.018080756068229675,
+        "information_marginal": 0.017999697476625443,
+        "n_matched": 153,
+        "identity": 1.0,
+        "shared_fraction": 0.9931798806479113,
+        "provenance": {
+          "accession": "Q8VQD3",
+          "canonical_mass_kda": 20.791,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.0
+        },
+        "d2_floor": 2.5735249519348145
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Lipoprotein (1YJ7/1YJ7) | 15 | no_contact | 1.02 | 2.57 | 0.007 | 0.42 | 1.5e+03 | 1.39e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Lipoprotein (1YJ7/1YJ7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

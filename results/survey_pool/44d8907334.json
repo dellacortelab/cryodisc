@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:27:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/44d8907334.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein PCF11 (protein 1 of CF I) (1SZ9/1SZA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein PCF11 (protein 1 of CF I) (1SZ9/1SZA)",
+        "motion": "mixed",
+        "mass_kda": 14.745332999999997,
+        "ca_rmsd": 1.3675755846441635,
+        "radius": 29.143102503191237,
+        "box_size": 128,
+        "d2_known_pose": 3.8212153911590576,
+        "d2_crlb": 3.36077880859375,
+        "information": 2.1439101696014404,
+        "saturation": 0.5359775424003601,
+        "n_floor": 1166.0936279296875,
+        "n_marginal": 30735.8515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.021721735903882735,
+        "note": "P39081 72 kDa, dyndom, rotation 7.6 deg, chains C/B",
+        "d2_marginal": 0.08300343155860901,
+        "information_marginal": 0.08133824169635773,
+        "n_matched": 138,
+        "identity": 1.0,
+        "shared_fraction": 0.984182776801406,
+        "provenance": {
+          "accession": "P39081",
+          "canonical_mass_kda": 71.898,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.6
+        },
+        "d2_floor": 3.8212153911590576
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein PCF11 (protein 1 of CF I) (1SZ9/1SZA) | 15 | mixed | 1.37 | 3.82 | 0.022 | 0.54 | 1.17e+03 | 3.07e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein PCF11 (protein 1 of CF I) (1SZ9/1SZA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

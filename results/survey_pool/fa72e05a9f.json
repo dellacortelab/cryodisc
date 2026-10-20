@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:59:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fa72e05a9f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)",
+        "motion": "shear",
+        "mass_kda": 49.23038699999999,
+        "ca_rmsd": 0.7791782367517304,
+        "radius": 37.972494810624006,
+        "box_size": 128,
+        "d2_known_pose": 6.243682861328125,
+        "d2_crlb": 5.945041656494141,
+        "information": 2.7718217372894287,
+        "saturation": 0.6929554343223572,
+        "n_floor": 901.9338989257812,
+        "n_marginal": 113804.65625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0035376987048104346,
+        "note": "O08355 54 kDa, dyndom, rotation 5.2 deg, chains A/A",
+        "d2_marginal": 0.022088268771767616,
+        "information_marginal": 0.021967466920614243,
+        "n_matched": 481,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "O08355",
+          "canonical_mass_kda": 54.498,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 5.2
+        },
+        "d2_floor": 6.243682861328125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W) | 49 | shear | 0.78 | 6.24 | 0.004 | 0.69 | 902 | 1.14e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

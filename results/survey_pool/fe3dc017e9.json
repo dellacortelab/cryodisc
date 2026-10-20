@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:57:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fe3dc017e9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Spectrin alpha chain, non-erythrocytic (1U4Q/1U5P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Spectrin alpha chain, non-erythrocytic (1U4Q/1U5P)",
+        "motion": "no_contact",
+        "mass_kda": 22.217482999999994,
+        "ca_rmsd": 1.6975846677211872,
+        "radius": 56.601307918357556,
+        "box_size": 128,
+        "d2_known_pose": 14.227243423461914,
+        "d2_crlb": 13.632965087890625,
+        "information": 3.6437292098999023,
+        "saturation": 0.9109323024749756,
+        "n_floor": 686.1102905273438,
+        "n_marginal": 14932.2080078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01226782278678883,
+        "note": "P07751 285 kDa, dyndom, rotation 17.3 deg, chains B/A",
+        "d2_marginal": 0.1745373010635376,
+        "information_marginal": 0.1674233376979828,
+        "n_matched": 208,
+        "identity": 1.0,
+        "shared_fraction": 0.6616895874263261,
+        "provenance": {
+          "accession": "P07751",
+          "canonical_mass_kda": 285.363,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.3
+        },
+        "d2_floor": 14.227243423461914
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Spectrin alpha chain, non-erythrocytic (1U4Q/1U5P) | 22 | no_contact | 1.70 | 14.2 | 0.012 | 0.91 | 686 | 1.49e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Spectrin alpha chain, non-erythrocytic (1U4Q/1U5P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

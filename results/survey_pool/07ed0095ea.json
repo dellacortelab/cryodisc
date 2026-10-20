@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:27:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/07ed0095ea.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Olfactory receptor 52E4 (Olfactory rec (8W77/8HTI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Olfactory receptor 52E4 (Olfactory rec (8W77/8HTI)",
+        "motion": "activation",
+        "mass_kda": 20.973350999999997,
+        "ca_rmsd": 2.2543486150699534,
+        "radius": 35.84092674869129,
+        "box_size": 128,
+        "d2_known_pose": 21.447711944580078,
+        "d2_crlb": 19.842357635498047,
+        "information": 3.874847650527954,
+        "saturation": 0.9687119126319885,
+        "n_floor": 645.1866455078125,
+        "n_marginal": 5515.73193359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023643858286931052,
+        "note": "Q8NGH9 35 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.5071066617965698,
+        "information_marginal": 0.4532490074634552,
+        "n_matched": 260,
+        "identity": 1.0,
+        "shared_fraction": 0.6662505201831045,
+        "provenance": {
+          "accession": "Q8NGH9",
+          "canonical_mass_kda": 35.48,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 21.447711944580078
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Olfactory receptor 52E4 (Olfactory rec (8W77/8HTI) | 21 | activation | 2.25 | 21.4 | 0.024 | 0.97 | 645 | 5.52e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Olfactory receptor 52E4 (Olfactory rec (8W77/8HTI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

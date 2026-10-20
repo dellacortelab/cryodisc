@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:17:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3ea706ce20.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein diaphanous homolog 1 (Diaphano (1V9D/1V9D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein diaphanous homolog 1 (Diaphano (1V9D/1V9D)",
+        "motion": "hinge",
+        "mass_kda": 32.258359,
+        "ca_rmsd": 1.928130974577367,
+        "radius": 65.4073569572273,
+        "box_size": 128,
+        "d2_known_pose": 19.094196319580078,
+        "d2_crlb": 17.560361862182617,
+        "information": 3.8248071670532227,
+        "saturation": 0.9562017917633057,
+        "n_floor": 653.6277465820312,
+        "n_marginal": 49839.4921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0026601022859379284,
+        "note": "O08808 139 kDa, dyndom, rotation 21.3 deg, chains B/A",
+        "d2_marginal": 0.05079251527786255,
+        "information_marginal": 0.050161026418209076,
+        "n_matched": 297,
+        "identity": 1.0,
+        "shared_fraction": 0.9322098812715435,
+        "provenance": {
+          "accession": "O08808",
+          "canonical_mass_kda": 139.343,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 21.3
+        },
+        "d2_floor": 19.094196319580078
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein diaphanous homolog 1 (Diaphano (1V9D/1V9D) | 32 | hinge | 1.93 | 19.1 | 0.003 | 0.96 | 654 | 4.98e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein diaphanous homolog 1 (Diaphano (1V9D/1V9D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

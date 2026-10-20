@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:14:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3ead9479de.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "AP-1-like transcription factor (Caffei (1GD2/1GD2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "AP-1-like transcription factor (Caffei (1GD2/1GD2)",
+        "motion": "no_contact",
+        "mass_kda": 6.7440479999999985,
+        "ca_rmsd": 3.3857492387273935,
+        "radius": 49.15506026049284,
+        "box_size": 128,
+        "d2_known_pose": 21.88662338256836,
+        "d2_crlb": 19.012653350830078,
+        "information": 3.8824098110198975,
+        "saturation": 0.9706024527549744,
+        "n_floor": 643.9299926757812,
+        "n_marginal": 4193.732421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.031574145151144754,
+        "note": "Q01663 62 kDa, dyndom, rotation 29.9 deg, chains G/F",
+        "d2_marginal": 0.6910514235496521,
+        "information_marginal": 0.5961277484893799,
+        "n_matched": 63,
+        "identity": 1.0,
+        "shared_fraction": 0.9789674952198852,
+        "provenance": {
+          "accession": "Q01663",
+          "canonical_mass_kda": 61.532,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 29.9
+        },
+        "d2_floor": 21.88662338256836
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| AP-1-like transcription factor (Caffei (1GD2/1GD2) | 7 | no_contact | 3.39 | 21.9 | 0.032 | 0.97 | 644 | 4.19e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "AP-1-like transcription factor (Caffei (1GD2/1GD2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

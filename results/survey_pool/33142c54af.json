@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:08:19+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/33142c54af.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Kumopsin1 (6I9K/9EPP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Kumopsin1 (6I9K/9EPP)",
+        "motion": "activation",
+        "mass_kda": 31.341317999999994,
+        "ca_rmsd": 2.9281458041515047,
+        "radius": 53.34762606777151,
+        "box_size": 128,
+        "d2_known_pose": 41.920963287353516,
+        "d2_crlb": 37.95966720581055,
+        "information": 3.9925599098205566,
+        "saturation": 0.9981399774551392,
+        "n_floor": 626.1647338867188,
+        "n_marginal": 4602.54736328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014823810841863048,
+        "note": "B1B1U5 42 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.6214284300804138,
+        "information_marginal": 0.5431774854660034,
+        "n_matched": 306,
+        "identity": 1.0,
+        "shared_fraction": 0.9214007782101167,
+        "provenance": {
+          "accession": "B1B1U5",
+          "canonical_mass_kda": 41.775,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 41.920963287353516
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Kumopsin1 (6I9K/9EPP) | 31 | activation | 2.93 | 41.9 | 0.015 | 1.00* | 626 | 4.6e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Kumopsin1 (6I9K/9EPP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

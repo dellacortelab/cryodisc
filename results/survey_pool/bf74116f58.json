@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:30:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bf74116f58.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aminopeptidase T (AP-T) (EC 3.4.11.-) (2AYI/2AYI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aminopeptidase T (AP-T) (EC 3.4.11.-) (2AYI/2AYI)",
+        "motion": "hinge",
+        "mass_kda": 40.615272,
+        "ca_rmsd": 3.293773328513001,
+        "radius": 38.39932404341327,
+        "box_size": 128,
+        "d2_known_pose": 65.71975708007812,
+        "d2_crlb": 59.25820541381836,
+        "information": 3.9996869564056396,
+        "saturation": 0.9999217391014099,
+        "n_floor": 625.0489501953125,
+        "n_marginal": 2486.783935546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019667978409035503,
+        "note": "P42778 45 kDa, dyndom, rotation 22.6 deg, chains D/B",
+        "d2_marginal": 1.2925747632980347,
+        "information_marginal": 1.005314588546753,
+        "n_matched": 397,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P42778",
+          "canonical_mass_kda": 45.018,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.6
+        },
+        "d2_floor": 65.71975708007812
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aminopeptidase T (AP-T) (EC 3.4.11.-) (2AYI/2AYI) | 41 | hinge | 3.29 | 65.7 | 0.020 | 1.00* | 625 | 2.49e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aminopeptidase T (AP-T) (EC 3.4.11.-) (2AYI/2AYI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

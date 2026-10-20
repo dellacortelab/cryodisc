@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:46:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/dc57fabe98.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Alpha-2,3-sialyltransferase/sialidase (2C83/2EX1)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Alpha-2,3-sialyltransferase/sialidase (2C83/2EX1)",
+        "motion": "hinge",
+        "mass_kda": 39.852596,
+        "ca_rmsd": 3.734963264715972,
+        "radius": 39.320090042345925,
+        "box_size": 128,
+        "d2_known_pose": 65.77188110351562,
+        "d2_crlb": 59.16561508178711,
+        "information": 3.9996891021728516,
+        "saturation": 0.9999222755432129,
+        "n_floor": 625.048583984375,
+        "n_marginal": 3308.987548828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01385832970743495,
+        "note": "Q15KI8 48 kDa, dyndom, rotation 28.9 deg, chains A/A",
+        "d2_marginal": 0.91148841381073,
+        "information_marginal": 0.7555181384086609,
+        "n_matched": 372,
+        "identity": 0.9838709677419355,
+        "shared_fraction": 0.9663492063492064,
+        "provenance": {
+          "accession": "Q15KI8",
+          "canonical_mass_kda": 48.136,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 28.9
+        },
+        "d2_floor": 65.77188110351562
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Alpha-2,3-sialyltransferase/sialidase (2C83/2EX1) | 40 | hinge | 3.73 | 65.8 | 0.014 | 1.00* | 625 | 3.31e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Alpha-2,3-sialyltransferase/sialidase (2C83/2EX1)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:55:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/951fae57c6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Uncharacterized isomerase YddE (EC 5.1 (1QYA/1QY9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Uncharacterized isomerase YddE (EC 5.1 (1QYA/1QY9)",
+        "motion": "shear",
+        "mass_kda": 29.302033999999992,
+        "ca_rmsd": 1.1087091396360556,
+        "radius": 37.131164880884505,
+        "box_size": 128,
+        "d2_known_pose": 6.411678314208984,
+        "d2_crlb": 5.676595687866211,
+        "information": 2.8053226470947266,
+        "saturation": 0.7013306617736816,
+        "n_floor": 891.1630859375,
+        "n_marginal": 79423.1796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004948040306958126,
+        "note": "P37757 32 kDa, dyndom, rotation 9.5 deg, chains B/D",
+        "d2_marginal": 0.03172524273395538,
+        "information_marginal": 0.031476959586143494,
+        "n_matched": 291,
+        "identity": 1.0,
+        "shared_fraction": 0.9477040816326531,
+        "provenance": {
+          "accession": "P37757",
+          "canonical_mass_kda": 32.319,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.5
+        },
+        "d2_floor": 6.411678314208984
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Uncharacterized isomerase YddE (EC 5.1 (1QYA/1QY9) | 29 | shear | 1.11 | 6.41 | 0.005 | 0.70 | 891 | 7.94e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Uncharacterized isomerase YddE (EC 5.1 (1QYA/1QY9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

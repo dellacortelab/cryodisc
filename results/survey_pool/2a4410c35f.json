@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:28:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2a4410c35f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Replicase polyprotein 1ab (pp1ab) (ORF (2AHM/2AHM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Replicase polyprotein 1ab (pp1ab) (ORF (2AHM/2AHM)",
+        "motion": "no_contact",
+        "mass_kda": 14.875442999999999,
+        "ca_rmsd": 1.3059607897186323,
+        "radius": 65.51277580510586,
+        "box_size": 128,
+        "d2_known_pose": 7.045318126678467,
+        "d2_crlb": 6.265262603759766,
+        "information": 2.922698974609375,
+        "saturation": 0.7306747436523438,
+        "n_floor": 855.373779296875,
+        "n_marginal": 117741.546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0030297874657794262,
+        "note": "P0C6X7 790 kDa, dyndom, rotation 10.5 deg, chains F/E",
+        "d2_marginal": 0.021345816552639008,
+        "information_marginal": 0.02123294770717621,
+        "n_matched": 143,
+        "identity": 1.0,
+        "shared_fraction": 0.921552436003303,
+        "provenance": {
+          "accession": "P0C6X7",
+          "canonical_mass_kda": 790.248,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.5
+        },
+        "d2_floor": 7.045318126678467
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Replicase polyprotein 1ab (pp1ab) (ORF (2AHM/2AHM) | 15 | no_contact | 1.31 | 7.05 | 0.003 | 0.73 | 855 | 1.18e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Replicase polyprotein 1ab (pp1ab) (ORF (2AHM/2AHM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

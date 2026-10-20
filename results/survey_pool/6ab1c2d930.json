@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:08:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6ab1c2d930.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Erythropoietin receptor (EPO-R) (1EER/1ERN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Erythropoietin receptor (EPO-R) (1EER/1ERN)",
+        "motion": "hinge",
+        "mass_kda": 21.229396,
+        "ca_rmsd": 2.644810360303351,
+        "radius": 40.84697104230759,
+        "box_size": 128,
+        "d2_known_pose": 23.621150970458984,
+        "d2_crlb": 22.262916564941406,
+        "information": 3.9079818725585938,
+        "saturation": 0.9769954681396484,
+        "n_floor": 639.7163696289062,
+        "n_marginal": 12543.5361328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00886578917428102,
+        "note": "P19235 55 kDa, dyndom, rotation 25.9 deg, chains B/B",
+        "d2_marginal": 0.20942014455795288,
+        "information_marginal": 0.19930586218833923,
+        "n_matched": 207,
+        "identity": 0.9903381642512077,
+        "shared_fraction": 0.9681490384615384,
+        "provenance": {
+          "accession": "P19235",
+          "canonical_mass_kda": 55.065,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 25.9
+        },
+        "d2_floor": 23.621150970458984
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Erythropoietin receptor (EPO-R) (1EER/1ERN) | 21 | hinge | 2.64 | 23.6 | 0.009 | 0.98 | 640 | 1.25e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Erythropoietin receptor (EPO-R) (1EER/1ERN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

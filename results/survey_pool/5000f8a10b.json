@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Homeodomain-interacting protein kinase (7O7J/7O7I)",
+ "returncode": -6,
+ "stderr_tail": "2743303  xla::PjRtStreamExecutorLoadedExecutable::Execute()\n    @     0x7f62a26d5c05  pjrt::PJRT_LoadedExecutable_Execute()\n    @     0x7f639366052d  xla::PjRtCApiLoadedExecutable::Execute()\n    @     0x7f639381338d  xla::ifrt::PjRtLoadedExecutable::Execute()\n    @     0x7f63935bb07f  jax::PyLoadedExecutable::ExecuteSharded()\n    @     0x7f63935c28bb  xla::ValueOrThrowWrapper<>::operator()()\n    @     0x7f63935c272f  nanobind::detail::func_create<>()::{lambda()#1}::__invoke()\n    @     0x7f63937856c0  nanobind::detail::nb_func_vectorcall_complex()\n    @     0x558d02c11dde  PyObject_Vectorcall\n"
+}

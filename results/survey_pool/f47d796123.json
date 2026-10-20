@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:24:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f47d796123.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ATP-dependent zinc metalloprotease Fts (2DHR/2DHR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ATP-dependent zinc metalloprotease Fts (2DHR/2DHR)",
+        "motion": "unclassified",
+        "mass_kda": 47.20342599999999,
+        "ca_rmsd": 0.8693098335913505,
+        "radius": 45.20856738492029,
+        "box_size": 128,
+        "d2_known_pose": 7.728112697601318,
+        "d2_crlb": 6.939141750335693,
+        "information": 3.034916400909424,
+        "saturation": 0.758729100227356,
+        "n_floor": 823.7459716796875,
+        "n_marginal": 46076.29296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007116483427990834,
+        "note": "Q5SI82 68 kDa, dyndom, rotation 4.6 deg, chains A/C",
+        "d2_marginal": 0.05499698594212532,
+        "information_marginal": 0.0542578399181366,
+        "n_matched": 458,
+        "identity": 1.0,
+        "shared_fraction": 0.9988836170806586,
+        "provenance": {
+          "accession": "Q5SI82",
+          "canonical_mass_kda": 68.452,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 4.6
+        },
+        "d2_floor": 7.728112697601318
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ATP-dependent zinc metalloprotease Fts (2DHR/2DHR) | 47 | unclassified | 0.87 | 7.73 | 0.007 | 0.76 | 824 | 4.61e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ATP-dependent zinc metalloprotease Fts (2DHR/2DHR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

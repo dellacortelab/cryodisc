@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:29:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ce26260e0f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Capsid protein VP1 (CP) (Capsid protei (2GH8/2GH8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Capsid protein VP1 (CP) (Capsid protei (2GH8/2GH8)",
+        "motion": "shear",
+        "mass_kda": 56.06668699999999,
+        "ca_rmsd": 2.2871160755014452,
+        "radius": 62.38361966672666,
+        "box_size": 128,
+        "d2_known_pose": 44.053428649902344,
+        "d2_crlb": 39.05561828613281,
+        "information": 3.994418144226074,
+        "saturation": 0.9986045360565186,
+        "n_floor": 625.8734130859375,
+        "n_marginal": 8909.9873046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0068282075957310584,
+        "note": "P36285 78 kDa, dyndom, rotation 13.7 deg, chains C/A",
+        "d2_marginal": 0.3008059561252594,
+        "information_marginal": 0.2805840075016022,
+        "n_matched": 544,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P36285",
+          "canonical_mass_kda": 77.721,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 13.7
+        },
+        "d2_floor": 44.053428649902344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Capsid protein VP1 (CP) (Capsid protei (2GH8/2GH8) | 56 | shear | 2.29 | 44.1 | 0.007 | 1.00* | 626 | 8.91e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Capsid protein VP1 (CP) (Capsid protei (2GH8/2GH8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

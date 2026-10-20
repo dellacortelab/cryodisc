@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "driver": "experiments/realdata/score_pool.py",
+  "commit": "524103c7",
+  "written_at": "2026-09-18T09:37:43+00:00",
+  "arguments": {
+    "meta": "/home/bryceeh/scratch/cryobench/IgG-1D/images/snr0.001/snr0.001.star",
+    "root": "/home/bryceeh/scratch/cryobench/IgG-1D/images/snr0.001",
+    "structure_a": null,
+    "structure_b": null,
+    "map_a": "/home/bryceeh/scratch/cryobench/IgG-1D/vols/128_org/000.mrc",
+    "map_b": "/home/bryceeh/scratch/cryobench/IgG-1D/vols/128_org/050.mrc",
+    "known_pose": true,
+    "compare_rungs": false,
+    "calibrate": "poses",
+    "amplitude_shells": 4,
+    "invert_contrast": true,
+    "state": [
+      "050"
+    ],
+    "assembly": "1",
+    "structure_offset_from_maps": null,
+    "no_superpose": false,
+    "ignore_origin": false,
+    "out": "results/cb_lo_ak_050.json",
+    "log_ratio": "results/cb_lo_ak_050.npy",
+    "box_size": null,
+    "pixel_size": null,
+    "dose": 40.0,
+    "k_max": null,
+    "band_limit": null,
+    "nodes": 54,
+    "cap_bank": 1000000,
+    "limit": null,
+    "subsample": 0,
+    "n_shuffles": 200,
+    "seed": 0,
+    "shift_window": 0,
+    "shift_step": 1.0,
+    "cs_pose_transpose": null,
+    "no_recenter": false,
+    "null_images": false,
+    "check_shift_sign": false,
+    "refit_ctf": false,
+    "micrograph": null,
+    "micrograph_pixel_size": null,
+    "n_iterations": 60
+  },
+  "result": {
+    "n_particles": 1000,
+    "box_size": 128,
+    "pixel_size": 3.0,
+    "k_max": 0.16666666666666666,
+    "n_defocus_groups": 846,
+    "amplitude": 59.3819465637207,
+    "amplitude_spectrum": {
+      "n_shells": 4,
+      "k_cyc_px": [
+        0.0625,
+        0.1875,
+        0.3125,
+        0.4375,
+        null
+      ],
+      "k_inverse_angstrom": [
+        0.020833333333333332,
+        0.0625,
+        0.10416666666666667,
+        0.14583333333333334,
+        null
+      ],
+      "a": [
+        80.68775177001953,
+        63.751529693603516,
+        35.273765563964844,
+        15.874573707580566,
+        8.300390243530273
+      ],
+      "n_modes": [
+        793,
+        2412,
+        4004,
+        5640,
+        3535
+      ]
+    },
+    "calibrated_at": "poses",
+    "calibration_state_weights": [
+      9.24406933222599e-08,
+      1.0
+    ],
+    "snr": 6.931527614593506,
+    "coherence": {
+      "value": -0.5642954892365768,
+      "mean": -18.811304092407227,
+      "variance": 66.67182159423828,
+      "baseline": 0.6022885806701052,
+      "decoherence": 0.03799309143352836
+    },
+    "oracle_closed_form": {
+      "d2_mean": 37.304107666015625,
+      "d2_spread": 98.53263092041016,
+      "predicted_coherence": 0.6022885806701052,
+      "fractional_error_mean": 0.0033171174582093954,
+      "fractional_error_sd": 0.09430071711540222,
+      "d2_pool": 37.62260818481445,
+      "implied_amplitude_scale": 1.008537947661163,
+      "predicted_coherence_at_implied_amplitude": 0.5982086901720087
+    },
+    "separation": null,
+    "shift": {
+      "applied": true
+    },
+    "ctf_refit": {
+      "ran": false
+    },
+    "states": {
+      "from": "maps",
+      "state_a": "/home/bryceeh/scratch/cryobench/IgG-1D/vols/128_org/000.mrc",
+      "state_b": "/home/bryceeh/scratch/cryobench/IgG-1D/vols/128_org/050.mrc",
+      "amplitude_ratio": 0.9866763540555611
+    },
+    "source": "/home/bryceeh/scratch/cryobench/IgG-1D/images/snr0.001/snr0.001.star",
+    "log_ratio_path": "results/cb_lo_ak_050.npy",
+    "convergence": null
+  }
+}

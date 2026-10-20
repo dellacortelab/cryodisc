@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:30:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8b82918a58.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HPr kinase/phosphorylase (HPrK/P) (EC (1KO7/1KO7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HPr kinase/phosphorylase (HPrK/P) (EC (1KO7/1KO7)",
+        "motion": "hinge",
+        "mass_kda": 29.604386999999996,
+        "ca_rmsd": 1.9052742844844615,
+        "radius": 48.43398513501813,
+        "box_size": 128,
+        "d2_known_pose": 19.436908721923828,
+        "d2_crlb": 17.131046295166016,
+        "information": 3.8332204818725586,
+        "saturation": 0.9583051204681396,
+        "n_floor": 652.193115234375,
+        "n_marginal": 26956.3671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004882953370567874,
+        "note": "Q9S1H5 35 kDa, dyndom, rotation 14.0 deg, chains B/A",
+        "d2_marginal": 0.09490951895713806,
+        "information_marginal": 0.09274247288703918,
+        "n_matched": 285,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9S1H5",
+          "canonical_mass_kda": 35.325,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.0
+        },
+        "d2_floor": 19.436908721923828
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HPr kinase/phosphorylase (HPrK/P) (EC (1KO7/1KO7) | 30 | hinge | 1.91 | 19.4 | 0.005 | 0.96 | 652 | 2.7e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HPr kinase/phosphorylase (HPrK/P) (EC (1KO7/1KO7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

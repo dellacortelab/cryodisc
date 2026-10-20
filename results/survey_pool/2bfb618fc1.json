@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:23:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2bfb618fc1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Phosphomannomutase/phosphoglucomutase (1K2Y/1P5D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Phosphomannomutase/phosphoglucomutase (1K2Y/1P5D)",
+        "motion": "unclassified",
+        "mass_kda": 44.724048999999994,
+        "ca_rmsd": 1.9836089998593098,
+        "radius": 38.918454491552154,
+        "box_size": 128,
+        "d2_known_pose": 29.99391746520996,
+        "d2_crlb": 25.21791648864746,
+        "information": 3.962155818939209,
+        "saturation": 0.9905389547348022,
+        "n_floor": 630.9696655273438,
+        "n_marginal": 7012.19384765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012984493457453145,
+        "note": "P26276 50 kDa, dyndom, rotation 9.6 deg, chains X/X",
+        "d2_marginal": 0.3894558250904083,
+        "information_marginal": 0.3565218150615692,
+        "n_matched": 454,
+        "identity": 1.0,
+        "shared_fraction": 0.9803354540196646,
+        "provenance": {
+          "accession": "P26276",
+          "canonical_mass_kda": 50.296,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.6
+        },
+        "d2_floor": 29.99391746520996
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Phosphomannomutase/phosphoglucomutase (1K2Y/1P5D) | 45 | unclassified | 1.98 | 30 | 0.013 | 0.99* | 631 | 7.01e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Phosphomannomutase/phosphoglucomutase (1K2Y/1P5D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

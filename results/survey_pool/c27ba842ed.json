@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:23:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c27ba842ed.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Calcium-dependent protein kinase 1 (At (2AAO/2AAO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Calcium-dependent protein kinase 1 (At (2AAO/2AAO)",
+        "motion": "mixed",
+        "mass_kda": 13.654143,
+        "ca_rmsd": 1.195594980542206,
+        "radius": 29.370204905697584,
+        "box_size": 128,
+        "d2_known_pose": 4.836092948913574,
+        "d2_crlb": 4.415579795837402,
+        "information": 2.4444377422332764,
+        "saturation": 0.6111094355583191,
+        "n_floor": 1022.7301025390625,
+        "n_marginal": 29326.638671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018005536457621568,
+        "note": "Q06850 68 kDa, dyndom, rotation 10.3 deg, chains A/B",
+        "d2_marginal": 0.08707644790410995,
+        "information_marginal": 0.0852467268705368,
+        "n_matched": 132,
+        "identity": 1.0,
+        "shared_fraction": 0.9401631912964642,
+        "provenance": {
+          "accession": "Q06850",
+          "canonical_mass_kda": 68.254,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.3
+        },
+        "d2_floor": 4.836092948913574
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Calcium-dependent protein kinase 1 (At (2AAO/2AAO) | 14 | mixed | 1.20 | 4.84 | 0.018 | 0.61 | 1.02e+03 | 2.93e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Calcium-dependent protein kinase 1 (At (2AAO/2AAO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

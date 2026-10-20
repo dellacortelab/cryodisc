@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:21:17+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/78e339c7af.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "GTP cyclohydrolase 1 type 2 homolog (2GX8/2GX8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "GTP cyclohydrolase 1 type 2 homolog (2GX8/2GX8)",
+        "motion": "mixed",
+        "mass_kda": 36.542922,
+        "ca_rmsd": 1.3962377368741423,
+        "radius": 60.34073786222455,
+        "box_size": 128,
+        "d2_known_pose": 14.233080863952637,
+        "d2_crlb": 13.108733177185059,
+        "information": 3.6440372467041016,
+        "saturation": 0.9110093116760254,
+        "n_floor": 686.0523071289062,
+        "n_marginal": 33991.63671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005262947581310609,
+        "note": "Q818H0 41 kDa, dyndom, rotation 14.3 deg, chains A/B",
+        "d2_marginal": 0.07490795850753784,
+        "information_marginal": 0.07354750484228134,
+        "n_matched": 359,
+        "identity": 1.0,
+        "shared_fraction": 0.9946197991391679,
+        "provenance": {
+          "accession": "Q818H0",
+          "canonical_mass_kda": 40.851,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.3
+        },
+        "d2_floor": 14.233080863952637
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| GTP cyclohydrolase 1 type 2 homolog (2GX8/2GX8) | 37 | mixed | 1.40 | 14.2 | 0.005 | 0.91 | 686 | 3.4e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "GTP cyclohydrolase 1 type 2 homolog (2GX8/2GX8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

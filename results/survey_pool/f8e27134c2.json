@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:53:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f8e27134c2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Gelation factor (Actin-binding protein (1QFH/1WLH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Gelation factor (Actin-binding protein (1QFH/1WLH)",
+        "motion": "no_contact",
+        "mass_kda": 20.438264999999994,
+        "ca_rmsd": 0.9713557598773375,
+        "radius": 48.39833484482295,
+        "box_size": 128,
+        "d2_known_pose": 4.036975383758545,
+        "d2_crlb": 3.8298869132995605,
+        "information": 2.2132608890533447,
+        "saturation": 0.5533152222633362,
+        "n_floor": 1129.5550537109375,
+        "n_marginal": 88245.0078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0070674867665660585,
+        "note": "P13466 92 kDa, dyndom, rotation 8.1 deg, chains B/B",
+        "d2_marginal": 0.02853127010166645,
+        "information_marginal": 0.02833021618425846,
+        "n_matched": 212,
+        "identity": 1.0,
+        "shared_fraction": 0.6847922192749779,
+        "provenance": {
+          "accession": "P13466",
+          "canonical_mass_kda": 92.207,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.1
+        },
+        "d2_floor": 4.036975383758545
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Gelation factor (Actin-binding protein (1QFH/1WLH) | 20 | no_contact | 0.97 | 4.04 | 0.007 | 0.55 | 1.13e+03 | 8.82e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Gelation factor (Actin-binding protein (1QFH/1WLH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

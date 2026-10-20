@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:48:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c66caec99d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aurora kinase A (EC 2.7.11.1) (Aurora (2BMC/2BMC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aurora kinase A (EC 2.7.11.1) (Aurora (2BMC/2BMC)",
+        "motion": "shear",
+        "mass_kda": 27.639456999999997,
+        "ca_rmsd": 0.9267089144500245,
+        "radius": 38.716660604105236,
+        "box_size": 128,
+        "d2_known_pose": 6.5521955490112305,
+        "d2_crlb": 5.707701683044434,
+        "information": 2.8325493335723877,
+        "saturation": 0.7081373333930969,
+        "n_floor": 882.59716796875,
+        "n_marginal": 60870.09375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006332852827679309,
+        "note": "O14965 46 kDa, dyndom, rotation 9.6 deg, chains E/F",
+        "d2_marginal": 0.04149409011006355,
+        "information_marginal": 0.04107107222080231,
+        "n_matched": 256,
+        "identity": 1.0,
+        "shared_fraction": 0.9948015122873346,
+        "provenance": {
+          "accession": "O14965",
+          "canonical_mass_kda": 45.823,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.6
+        },
+        "d2_floor": 6.5521955490112305
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aurora kinase A (EC 2.7.11.1) (Aurora (2BMC/2BMC) | 28 | shear | 0.93 | 6.55 | 0.006 | 0.71 | 883 | 6.09e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aurora kinase A (EC 2.7.11.1) (Aurora (2BMC/2BMC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

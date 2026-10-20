@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:16:51+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/118a35d6c1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Penicillin-binding protein 2x (PBP-2x) (1RP5/1RP5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Penicillin-binding protein 2x (PBP-2x) (1RP5/1RP5)",
+        "motion": "unclassified",
+        "mass_kda": 66.98722499999998,
+        "ca_rmsd": 1.2409174579134505,
+        "radius": 60.13448343603681,
+        "box_size": 128,
+        "d2_known_pose": 17.527311325073242,
+        "d2_crlb": 16.492061614990234,
+        "information": 3.7803432941436768,
+        "saturation": 0.9450858235359192,
+        "n_floor": 661.315673828125,
+        "n_marginal": 84290.5546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0017047516802110464,
+        "note": "P14677 82 kDa, dyndom, rotation 8.7 deg, chains A/B",
+        "d2_marginal": 0.02987971343100071,
+        "information_marginal": 0.029659314081072807,
+        "n_matched": 680,
+        "identity": 1.0,
+        "shared_fraction": 0.9857755261106781,
+        "provenance": {
+          "accession": "P14677",
+          "canonical_mass_kda": 82.313,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.7
+        },
+        "d2_floor": 17.527311325073242
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Penicillin-binding protein 2x (PBP-2x) (1RP5/1RP5) | 67 | unclassified | 1.24 | 17.5 | 0.002 | 0.95 | 661 | 8.43e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Penicillin-binding protein 2x (PBP-2x) (1RP5/1RP5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

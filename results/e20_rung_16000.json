@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/memorization_ladder.py",
+  "commit": "d0451f8-dirty",
+  "written_at": "2026-08-31T23:07:02+00:00",
+  "arguments": {
+    "source_job": "P53:J1",
+    "rungs": [
+      16000
+    ],
+    "held_out": 8000,
+    "symmetry": "C1",
+    "ssd_cache": false,
+    "host": "m9g-2-13-opa.rc.byu.edu",
+    "port": 39000,
+    "license_file": "~/.cryosparc/license_id",
+    "pool_dir": "/home/bryceeh/nobackup/archive/pools/e20_ladder",
+    "out": "results/e20_rung_16000.json",
+    "seed": 0
+  },
+  "result": {
+    "rungs": [
+      {
+        "n_particles": 16000,
+        "job": "J37",
+        "project": "P53",
+        "directory": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J37",
+        "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317",
+        "map_a": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J37/J37_volume_map_half_A.mrc",
+        "map_b": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e20-tmrab-10317/J37/J37_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e20_ladder/e19_n16000_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e20_ladder/e19_n16000_halfB.cs",
+        "n_half_a": 8000,
+        "n_half_b": 8000,
+        "symmetry": "C1"
+      }
+    ],
+    "held_out": {
+      "pool": "/home/bryceeh/nobackup/archive/pools/e20_ladder/e19_heldout.cs",
+      "n_particles": 8000
+    },
+    "n_rungs": 1
+  }
+}

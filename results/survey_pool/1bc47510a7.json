@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:03:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1bc47510a7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Leucine-rich repeat receptor-like seri (7CTV/7CTX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Leucine-rich repeat receptor-like seri (7CTV/7CTX)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 27.881706999999995,
+        "ca_rmsd": 1.1199709060332992,
+        "radius": 35.77428166664146,
+        "box_size": 128,
+        "d2_known_pose": 5.057261943817139,
+        "d2_crlb": 4.767443656921387,
+        "information": 2.502034902572632,
+        "saturation": 0.625508725643158,
+        "n_floor": 999.186767578125,
+        "n_marginal": 37667.68359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013342604791489071,
+        "note": "Q9SKB2 71 kDa, kincore, no rotation angle (kincore reports none); states BLBminus -> BLBplus, chains B/B",
+        "d2_marginal": 0.06747704744338989,
+        "information_marginal": 0.06636989116668701,
+        "n_matched": 287,
+        "identity": 0.9965156794425087,
+        "shared_fraction": 0.9246275197195443,
+        "provenance": {
+          "accession": "Q9SKB2",
+          "canonical_mass_kda": 71.111,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 5.057261943817139
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Leucine-rich repeat receptor-like seri (7CTV/7CTX) | 28 | dihedral_cluster | 1.12 | 5.06 | 0.013 | 0.63 | 999 | 3.77e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Leucine-rich repeat receptor-like seri (7CTV/7CTX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

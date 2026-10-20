@@ -1,0 +1,225 @@
+{
+  "driver": "experiments/panel/ip_local.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "L-carnitine CoA-transferase (EC 2.8.3. (1XK7/1XK6)",
+      "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)",
+      "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)",
+      "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "amplitudes": [
+      1.0,
+      0.5,
+      0.3,
+      0.1,
+      0.03
+    ],
+    "nodes": 8064,
+    "box_size": 128,
+    "rmsf": 0.5,
+    "fraction": 0.5,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "out": "results/ip_local_p2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "L-carnitine CoA-transferase (EC 2.8.3. (1XK7/1XK6)",
+      "box_size": 128,
+      "rmsd": 0.2781415851130367,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 1.0,
+          "i_local": 1.2711780071258545,
+          "i_known": 1.2940444946289062,
+          "mean_d2_crlb": 1.755807876586914,
+          "mean_d2_known": 1.798430323600769,
+          "seconds": 11.4
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 0.3975295126438141,
+          "i_known": 0.4062945544719696,
+          "mean_d2_crlb": 0.4389519691467285,
+          "mean_d2_known": 0.44960758090019226,
+          "seconds": 10.6
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.15211786329746246,
+          "i_known": 0.15567277371883392,
+          "mean_d2_crlb": 0.1580227166414261,
+          "mean_d2_known": 0.16185873746871948,
+          "seconds": 10.6
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.01748104766011238,
+          "i_known": 0.01790350303053856,
+          "mean_d2_crlb": 0.017558079212903976,
+          "mean_d2_known": 0.017984304577112198,
+          "seconds": 10.5
+        },
+        {
+          "amplitude": 0.03,
+          "i_local": 0.0015795989893376827,
+          "i_known": 0.0016179282683879137,
+          "mean_d2_crlb": 0.001580227049998939,
+          "mean_d2_known": 0.001618587295524776,
+          "seconds": 10.5
+        }
+      ]
+    },
+    {
+      "name": "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)",
+      "box_size": 128,
+      "rmsd": 0.7791782367517301,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 1.0,
+          "i_local": 2.6855669021606445,
+          "i_known": 2.7336108684539795,
+          "mean_d2_crlb": 5.880245685577393,
+          "mean_d2_known": 6.1040215492248535,
+          "seconds": 11.1
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 1.1094099283218384,
+          "i_known": 1.1419830322265625,
+          "mean_d2_crlb": 1.4700614213943481,
+          "mean_d2_known": 1.5260053873062134,
+          "seconds": 11.1
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.4703388810157776,
+          "i_known": 0.486333429813385,
+          "mean_d2_crlb": 0.5292221903800964,
+          "mean_d2_known": 0.5493621230125427,
+          "seconds": 11.2
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.05794716253876686,
+          "i_known": 0.060120247304439545,
+          "mean_d2_crlb": 0.05880246311426163,
+          "mean_d2_known": 0.06104022264480591,
+          "seconds": 11.1
+        },
+        {
+          "amplitude": 0.03,
+          "i_local": 0.005285137332975864,
+          "i_known": 0.005485994275659323,
+          "mean_d2_crlb": 0.00529222097247839,
+          "mean_d2_known": 0.005493619479238987,
+          "seconds": 11.2
+        }
+      ]
+    },
+    {
+      "name": "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)",
+      "box_size": 128,
+      "rmsd": 0.7893837871304241,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 1.0,
+          "i_local": 1.8815534114837646,
+          "i_known": 1.9818581342697144,
+          "mean_d2_crlb": 3.141143560409546,
+          "mean_d2_known": 3.418203592300415,
+          "seconds": 8.0
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 0.6618942022323608,
+          "i_known": 0.7109984755516052,
+          "mean_d2_crlb": 0.7852858901023865,
+          "mean_d2_known": 0.8545508980751038,
+          "seconds": 7.9
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.263988196849823,
+          "i_known": 0.28564733266830444,
+          "mean_d2_crlb": 0.2827029228210449,
+          "mean_d2_known": 0.30763837695121765,
+          "seconds": 7.9
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.031155940145254135,
+          "i_known": 0.03387940675020218,
+          "mean_d2_crlb": 0.03141143545508385,
+          "mean_d2_known": 0.03418203815817833,
+          "seconds": 7.9
+        },
+        {
+          "amplitude": 0.03,
+          "i_local": 0.0028249325696378946,
+          "i_known": 0.003073897445574403,
+          "mean_d2_crlb": 0.002827028976753354,
+          "mean_d2_known": 0.0030763831455260515,
+          "seconds": 7.9
+        }
+      ]
+    },
+    {
+      "name": "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)",
+      "box_size": 128,
+      "rmsd": 1.6252675612411365,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 1.0,
+          "i_local": 3.9538533687591553,
+          "i_known": 3.9691712856292725,
+          "mean_d2_crlb": 32.9883918762207,
+          "mean_d2_known": 37.508079528808594,
+          "seconds": 15.1
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 3.0521059036254883,
+          "i_known": 3.1861214637756348,
+          "mean_d2_crlb": 8.247097969055176,
+          "mean_d2_known": 9.377019882202148,
+          "seconds": 15.1
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 1.8063262701034546,
+          "i_known": 1.9525742530822754,
+          "mean_d2_crlb": 2.9689555168151855,
+          "mean_d2_known": 3.375727415084839,
+          "seconds": 15.0
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.3044049143791199,
+          "i_known": 0.34243345260620117,
+          "mean_d2_crlb": 0.32988396286964417,
+          "mean_d2_known": 0.37508079409599304,
+          "seconds": 15.0
+        },
+        {
+          "amplitude": 0.03,
+          "i_local": 0.029456477612257004,
+          "i_known": 0.03345387801527977,
+          "mean_d2_crlb": 0.029689552262425423,
+          "mean_d2_known": 0.033757273107767105,
+          "seconds": 15.0
+        }
+      ]
+    }
+  ]
+}

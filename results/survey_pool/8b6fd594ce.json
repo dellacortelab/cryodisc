@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:41:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8b6fd594ce.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "RNA 2',3'-cyclic phosphodiesterase (RN (1VDX/1VGJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "RNA 2',3'-cyclic phosphodiesterase (RN (1VDX/1VGJ)",
+        "motion": "shear",
+        "mass_kda": 19.167835999999994,
+        "ca_rmsd": 1.0057834359736444,
+        "radius": 30.932157056199213,
+        "box_size": 128,
+        "d2_known_pose": 5.475722312927246,
+        "d2_crlb": 4.927371501922607,
+        "information": 2.6043362617492676,
+        "saturation": 0.6510840654373169,
+        "n_floor": 959.9375,
+        "n_marginal": 21125.48828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022257802105940198,
+        "note": "O57823 21 kDa, dyndom, rotation 5.2 deg, chains A/A",
+        "d2_marginal": 0.12187754362821579,
+        "information_marginal": 0.11834046244621277,
+        "n_matched": 181,
+        "identity": 1.0,
+        "shared_fraction": 0.9838709677419355,
+        "provenance": {
+          "accession": "O57823",
+          "canonical_mass_kda": 21.096,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 5.2
+        },
+        "d2_floor": 5.475722312927246
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| RNA 2',3'-cyclic phosphodiesterase (RN (1VDX/1VGJ) | 19 | shear | 1.01 | 5.48 | 0.022 | 0.65 | 960 | 2.11e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "RNA 2',3'-cyclic phosphodiesterase (RN (1VDX/1VGJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

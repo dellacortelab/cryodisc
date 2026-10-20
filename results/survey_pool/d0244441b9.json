@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:10:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d0244441b9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "prephenate dehydrogenase (EC 1.3.1.12) (2G5C/2G5C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "prephenate dehydrogenase (EC 1.3.1.12) (2G5C/2G5C)",
+        "motion": "hinge",
+        "mass_kda": 28.045301999999996,
+        "ca_rmsd": 1.430740832219082,
+        "radius": 45.1804982004625,
+        "box_size": 128,
+        "d2_known_pose": 9.764512062072754,
+        "d2_crlb": 9.38644790649414,
+        "information": 3.2997350692749023,
+        "saturation": 0.8249337673187256,
+        "n_floor": 757.6365966796875,
+        "n_marginal": 35390.61328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0073628737156861525,
+        "note": "O67636 35 kDa, dyndom, rotation 9.1 deg, chains D/B",
+        "d2_marginal": 0.07189486920833588,
+        "information_marginal": 0.0706401988863945,
+        "n_matched": 271,
+        "identity": 1.0,
+        "shared_fraction": 0.9916666666666667,
+        "provenance": {
+          "accession": "O67636",
+          "canonical_mass_kda": 34.85,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.1
+        },
+        "d2_floor": 9.764512062072754
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| prephenate dehydrogenase (EC 1.3.1.12) (2G5C/2G5C) | 28 | hinge | 1.43 | 9.76 | 0.007 | 0.82 | 758 | 3.54e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "prephenate dehydrogenase (EC 1.3.1.12) (2G5C/2G5C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

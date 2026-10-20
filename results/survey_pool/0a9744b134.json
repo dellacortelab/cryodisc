@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:11:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0a9744b134.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Sulfate adenylyltransferase (EC 2.7.7. (1G8G/1R6X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Sulfate adenylyltransferase (EC 2.7.7. (1G8G/1R6X)",
+        "motion": "unclassified",
+        "mass_kda": 40.669216999999996,
+        "ca_rmsd": 1.3827091817804422,
+        "radius": 43.25209354399722,
+        "box_size": 128,
+        "d2_known_pose": 18.51278305053711,
+        "d2_crlb": 16.483142852783203,
+        "information": 3.8095126152038574,
+        "saturation": 0.9523781538009644,
+        "n_floor": 656.251953125,
+        "n_marginal": 18155.79296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007697106206141955,
+        "note": "P08536 58 kDa, dyndom, rotation 10.8 deg, chains A/A",
+        "d2_marginal": 0.14249485731124878,
+        "information_marginal": 0.13769710063934326,
+        "n_matched": 386,
+        "identity": 0.9974093264248705,
+        "shared_fraction": 0.7593818984547461,
+        "provenance": {
+          "accession": "P08536",
+          "canonical_mass_kda": 57.725,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.8
+        },
+        "d2_floor": 18.51278305053711
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sulfate adenylyltransferase (EC 2.7.7. (1G8G/1R6X) | 41 | unclassified | 1.38 | 18.5 | 0.008 | 0.95 | 656 | 1.82e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Sulfate adenylyltransferase (EC 2.7.7. (1G8G/1R6X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:34:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/608e901a8b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Unconventional myosin-Va (Dilute myosi (1W7J/1W8J)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Unconventional myosin-Va (Dilute myosi (1W7J/1W8J)",
+        "motion": "unclassified",
+        "mass_kda": 74.285314,
+        "ca_rmsd": 3.6919814018272104,
+        "radius": 59.488061693681985,
+        "box_size": 128,
+        "d2_known_pose": 121.36070251464844,
+        "d2_crlb": 111.59344482421875,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 6942.14404296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003244339978446582,
+        "note": "Q02440 212 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/A",
+        "d2_marginal": 0.3937353789806366,
+        "information_marginal": 0.3601193130016327,
+        "n_matched": 716,
+        "identity": 1.0,
+        "shared_fraction": 0.9418157498746029,
+        "provenance": {
+          "accession": "Q02440",
+          "canonical_mass_kda": 212.383,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 121.36070251464844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Unconventional myosin-Va (Dilute myosi (1W7J/1W8J) | 74 | unclassified | 3.69 | 121 | 0.003 | 1.00* | 625 | 6.94e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Unconventional myosin-Va (Dilute myosi (1W7J/1W8J)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

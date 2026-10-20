@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:33:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/796617d6d8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Complement decay-accelerating factor ( (1H03/1H2Q)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Complement decay-accelerating factor ( (1H03/1H2Q)",
+        "motion": "no_contact",
+        "mass_kda": 11.843556000000001,
+        "ca_rmsd": 1.733414763500215,
+        "radius": 41.12245790550559,
+        "box_size": 128,
+        "d2_known_pose": 8.530746459960938,
+        "d2_crlb": 7.903426170349121,
+        "information": 3.1505489349365234,
+        "saturation": 0.7876372337341309,
+        "n_floor": 793.5125732421875,
+        "n_marginal": 21542.658203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014002234356749858,
+        "note": "P08174 41 kDa, dyndom, rotation 21.6 deg, chains P/P",
+        "d2_marginal": 0.11944951117038727,
+        "information_marginal": 0.11604882776737213,
+        "n_matched": 119,
+        "identity": 1.0,
+        "shared_fraction": 0.9348054679284963,
+        "provenance": {
+          "accession": "P08174",
+          "canonical_mass_kda": 41.4,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 21.6
+        },
+        "d2_floor": 8.530746459960938
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Complement decay-accelerating factor ( (1H03/1H2Q) | 12 | no_contact | 1.73 | 8.53 | 0.014 | 0.79 | 794 | 2.15e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Complement decay-accelerating factor ( (1H03/1H2Q)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

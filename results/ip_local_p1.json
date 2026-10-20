@@ -1,0 +1,127 @@
+{
+  "driver": "experiments/panel/ip_local.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_1.json",
+    "rows": [
+      "Envelope glycoprotein B (gB) (2GUM/2GUM)",
+      "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "amplitudes": [
+      1.0,
+      0.5,
+      0.3,
+      0.1,
+      0.03
+    ],
+    "nodes": 8064,
+    "box_size": 128,
+    "rmsf": 0.5,
+    "fraction": 0.5,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "out": "results/ip_local_p1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Envelope glycoprotein B (gB) (2GUM/2GUM)",
+      "box_size": 128,
+      "rmsd": 0.5298748903824975,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 1.0,
+          "i_local": 2.6214160919189453,
+          "i_known": 2.7620365619659424,
+          "mean_d2_crlb": 5.747483730316162,
+          "mean_d2_known": 6.372569561004639,
+          "seconds": 30.6
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 1.081241250038147,
+          "i_known": 1.1733757257461548,
+          "mean_d2_crlb": 1.4368709325790405,
+          "mean_d2_known": 1.5931423902511597,
+          "seconds": 29.9
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.45884859561920166,
+          "i_known": 0.5037367939949036,
+          "mean_d2_crlb": 0.5172736048698425,
+          "mean_d2_known": 0.5735312700271606,
+          "seconds": 30.0
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.056619979441165924,
+          "i_known": 0.06269313395023346,
+          "mean_d2_crlb": 0.05747484043240547,
+          "mean_d2_known": 0.06372570246458054,
+          "seconds": 30.1
+        },
+        {
+          "amplitude": 0.03,
+          "i_local": 0.005165645387023687,
+          "i_known": 0.005726733710616827,
+          "mean_d2_crlb": 0.005172735545784235,
+          "mean_d2_known": 0.0057353125885128975,
+          "seconds": 30.0
+        }
+      ]
+    },
+    {
+      "name": "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)",
+      "box_size": 128,
+      "rmsd": 0.7945040925329527,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 1.0,
+          "i_local": 2.833022117614746,
+          "i_known": 2.889566659927368,
+          "mean_d2_crlb": 6.595797061920166,
+          "mean_d2_known": 6.904583930969238,
+          "seconds": 10.4
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 1.2119601964950562,
+          "i_known": 1.2542967796325684,
+          "mean_d2_crlb": 1.6489492654800415,
+          "mean_d2_known": 1.7261459827423096,
+          "seconds": 10.4
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.5211121439933777,
+          "i_known": 0.5425713062286377,
+          "mean_d2_crlb": 0.5936217904090881,
+          "mean_d2_known": 0.6214125752449036,
+          "seconds": 10.2
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.06488867104053497,
+          "i_known": 0.06787528842687607,
+          "mean_d2_crlb": 0.06595796346664429,
+          "mean_d2_known": 0.06904584169387817,
+          "seconds": 10.3
+        },
+        {
+          "amplitude": 0.03,
+          "i_local": 0.005927338730543852,
+          "i_known": 0.006204395554959774,
+          "mean_d2_crlb": 0.005936217028647661,
+          "mean_d2_known": 0.006214125081896782,
+          "seconds": 10.2
+        }
+      ]
+    }
+  ]
+}

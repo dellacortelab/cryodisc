@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:09:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7ea9ab18fd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein c-Fos (Cellular oncogene fos) (1FOS/1A02)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein c-Fos (Cellular oncogene fos) (1FOS/1A02)",
+        "motion": "no_contact",
+        "mass_kda": 5.703391,
+        "ca_rmsd": 2.0015058750468375,
+        "radius": 42.04371174811282,
+        "box_size": 128,
+        "d2_known_pose": 6.406217098236084,
+        "d2_crlb": 5.589597225189209,
+        "information": 2.8042502403259277,
+        "saturation": 0.7010625600814819,
+        "n_floor": 891.50390625,
+        "n_marginal": 633976.1875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0006161616732085029,
+        "note": "P01100 41 kDa, dyndom, rotation 24.9 deg, chains E/F",
+        "d2_marginal": 0.003947265446186066,
+        "information_marginal": 0.003943365998566151,
+        "n_matched": 53,
+        "identity": 1.0,
+        "shared_fraction": 0.8811475409836066,
+        "provenance": {
+          "accession": "P01100",
+          "canonical_mass_kda": 40.695,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 24.9
+        },
+        "d2_floor": 6.406217098236084
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein c-Fos (Cellular oncogene fos) (1FOS/1A02) | 6 | no_contact | 2.00 | 6.41 | 0.001 | 0.70 | 892 | 6.34e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein c-Fos (Cellular oncogene fos) (1FOS/1A02)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

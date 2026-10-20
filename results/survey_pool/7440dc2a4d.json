@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:48:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7440dc2a4d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ditrans,polycis-undecaprenyl-diphospha (1X09/1JP3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ditrans,polycis-undecaprenyl-diphospha (1X09/1JP3)",
+        "motion": "mixed",
+        "mass_kda": 21.525327,
+        "ca_rmsd": 1.4886228264544799,
+        "radius": 36.797289085832276,
+        "box_size": 128,
+        "d2_known_pose": 12.413470268249512,
+        "d2_crlb": 11.033506393432617,
+        "information": 3.5328166484832764,
+        "saturation": 0.8832041621208191,
+        "n_floor": 707.6506958007812,
+        "n_marginal": 7372.4677734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02971229635507085,
+        "note": "P60472 28 kDa, dyndom, rotation 12.4 deg, chains A/B",
+        "d2_marginal": 0.36883270740509033,
+        "information_marginal": 0.3390994966030121,
+        "n_matched": 207,
+        "identity": 0.9951690821256038,
+        "shared_fraction": 0.8922155688622755,
+        "provenance": {
+          "accession": "P60472",
+          "canonical_mass_kda": 28.444,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.4
+        },
+        "d2_floor": 12.413470268249512
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ditrans,polycis-undecaprenyl-diphospha (1X09/1JP3) | 22 | mixed | 1.49 | 12.4 | 0.030 | 0.88 | 708 | 7.37e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ditrans,polycis-undecaprenyl-diphospha (1X09/1JP3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

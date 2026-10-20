@@ -1,0 +1,77 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.05,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/kc_scaling/ip_converge_ephrinA7_a0.05.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)",
+      "box_size": 128,
+      "rmsd": 0.7893837871304241,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.0030472136568278074,
+          "d2": 0.0030495335813611746,
+          "d2_err": 0.0037679944653064013,
+          "n_for_error": 820421.625,
+          "seconds": 14.3
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.0034011437091976404,
+          "d2": 0.003404029179364443,
+          "d2_err": 0.003952146042138338,
+          "n_for_error": 735046.875,
+          "seconds": 26.0
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.003584573045372963,
+          "d2": 0.003587782382965088,
+          "d2_err": 0.004044166766107082,
+          "n_for_error": 697433.125,
+          "seconds": 105.7
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.0035628583282232285,
+          "d2": 0.003566023660823703,
+          "d2_err": 0.004033366683870554,
+          "n_for_error": 701683.8125,
+          "seconds": 413.0
+        }
+      ]
+    }
+  ]
+}

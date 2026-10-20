@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:02:00+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2918f47be3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cyclin-dependent kinase 6 (EC 2.7.11.2 (1BI7/2F2C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cyclin-dependent kinase 6 (EC 2.7.11.2 (1BI7/2F2C)",
+        "motion": "hinge",
+        "mass_kda": 24.921662999999995,
+        "ca_rmsd": 8.05403620387243,
+        "radius": 41.57025098200102,
+        "box_size": 128,
+        "d2_known_pose": 74.19764709472656,
+        "d2_crlb": 62.715145111083984,
+        "information": 3.999896764755249,
+        "saturation": 0.9999741911888123,
+        "n_floor": 625.0161743164062,
+        "n_marginal": 4688.4013671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008201655160688165,
+        "note": "Q00534 37 kDa, dyndom, rotation 146.1 deg, chains A/B",
+        "d2_marginal": 0.6085435152053833,
+        "information_marginal": 0.5332307815551758,
+        "n_matched": 252,
+        "identity": 1.0,
+        "shared_fraction": 0.8856742883807747,
+        "provenance": {
+          "accession": "Q00534",
+          "canonical_mass_kda": 36.938,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 146.1
+        },
+        "d2_floor": 74.19764709472656
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cyclin-dependent kinase 6 (EC 2.7.11.2 (1BI7/2F2C) | 25 | hinge | 8.05 | 74.2 | 0.008 | 1.00* | 625 | 4.69e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cyclin-dependent kinase 6 (EC 2.7.11.2 (1BI7/2F2C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

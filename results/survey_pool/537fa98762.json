@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:41:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/537fa98762.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Manganese-dependent inorganic pyrophos (1K23/1WPM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Manganese-dependent inorganic pyrophos (1K23/1WPM)",
+        "motion": "domainmotion",
+        "mass_kda": 30.770639,
+        "ca_rmsd": 9.90130477641903,
+        "radius": 40.36130467643589,
+        "box_size": 128,
+        "d2_known_pose": 182.58941650390625,
+        "d2_crlb": 162.56967163085938,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1035.737060546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.025856387543894542,
+        "note": "P37487 34 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains C/B",
+        "d2_marginal": 4.721102714538574,
+        "information_marginal": 2.4137401580810547,
+        "n_matched": 303,
+        "identity": 1.0,
+        "shared_fraction": 0.9831649831649831,
+        "provenance": {
+          "accession": "P37487",
+          "canonical_mass_kda": 33.989,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 182.58941650390625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Manganese-dependent inorganic pyrophos (1K23/1WPM) | 31 | domainmotion | 9.90 | 183 | 0.026 | 1.00* | 625 | 1.04e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Manganese-dependent inorganic pyrophos (1K23/1WPM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

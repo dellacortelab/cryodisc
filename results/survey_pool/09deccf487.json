@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:48:18+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/09deccf487.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mannan-binding lectin serine protease (1Q3X/1Q3X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mannan-binding lectin serine protease (1Q3X/1Q3X)",
+        "motion": "mixed",
+        "mass_kda": 31.221659999999996,
+        "ca_rmsd": 1.0043071241937127,
+        "radius": 46.61853384464597,
+        "box_size": 128,
+        "d2_known_pose": 5.677792549133301,
+        "d2_crlb": 5.130627632141113,
+        "information": 2.6508219242095947,
+        "saturation": 0.6627054810523987,
+        "n_floor": 943.1036987304688,
+        "n_marginal": 73140.7734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006071629496630356,
+        "note": "O00187 76 kDa, dyndom, rotation 10.2 deg, chains A/B",
+        "d2_marginal": 0.03447345271706581,
+        "information_marginal": 0.0341806635260582,
+        "n_matched": 314,
+        "identity": 1.0,
+        "shared_fraction": 0.9628116060482224,
+        "provenance": {
+          "accession": "O00187",
+          "canonical_mass_kda": 75.702,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.2
+        },
+        "d2_floor": 5.677792549133301
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mannan-binding lectin serine protease (1Q3X/1Q3X) | 31 | mixed | 1.00 | 5.68 | 0.006 | 0.66 | 943 | 7.31e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mannan-binding lectin serine protease (1Q3X/1Q3X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

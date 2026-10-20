@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:44:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1183dba756.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "CCAAT/enhancer-binding protein alpha ( (1NWQ/1NWQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "CCAAT/enhancer-binding protein alpha ( (1NWQ/1NWQ)",
+        "motion": "no_contact",
+        "mass_kda": 6.741978,
+        "ca_rmsd": 2.0172909649900106,
+        "radius": 45.731416442103516,
+        "box_size": 128,
+        "d2_known_pose": 6.683759689331055,
+        "d2_crlb": 5.426442623138428,
+        "information": 2.8574063777923584,
+        "saturation": 0.7143515944480896,
+        "n_floor": 874.9193725585938,
+        "n_marginal": 27269.1953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014033425638837799,
+        "note": "P05554 37 kDa, dyndom, rotation 21.9 deg, chains A/C",
+        "d2_marginal": 0.09379604458808899,
+        "information_marginal": 0.09167854487895966,
+        "n_matched": 60,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P05554",
+          "canonical_mass_kda": 37.371,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 21.9
+        },
+        "d2_floor": 6.683759689331055
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| CCAAT/enhancer-binding protein alpha ( (1NWQ/1NWQ) | 7 | no_contact | 2.02 | 6.68 | 0.014 | 0.71 | 875 | 2.73e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "CCAAT/enhancer-binding protein alpha ( (1NWQ/1NWQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

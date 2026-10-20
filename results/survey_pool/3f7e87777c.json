@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:33:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3f7e87777c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fibroblast growth factor receptor 1 (F (8JQI/4V04)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fibroblast growth factor receptor 1 (F (8JQI/4V04)",
+        "motion": "dfg_flip",
+        "mass_kda": 29.226753,
+        "ca_rmsd": 2.013475934842011,
+        "radius": 36.72008649401753,
+        "box_size": 128,
+        "d2_known_pose": 14.352084159851074,
+        "d2_crlb": 13.662906646728516,
+        "information": 3.6502606868743896,
+        "saturation": 0.9125651717185974,
+        "n_floor": 684.8826293945312,
+        "n_marginal": 9232.5673828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020177810676425025,
+        "note": "P11362 92 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains B/B",
+        "d2_marginal": 0.2895936369895935,
+        "information_marginal": 0.2707805931568146,
+        "n_matched": 284,
+        "identity": 0.9964788732394366,
+        "shared_fraction": 0.8961038961038961,
+        "provenance": {
+          "accession": "P11362",
+          "canonical_mass_kda": 91.868,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.352084159851074
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fibroblast growth factor receptor 1 (F (8JQI/4V04) | 29 | dfg_flip | 2.01 | 14.4 | 0.020 | 0.91 | 685 | 9.23e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fibroblast growth factor receptor 1 (F (8JQI/4V04)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

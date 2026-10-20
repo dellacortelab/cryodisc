@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:54:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/eeb4143a15.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Orexin receptor type 2 (Ox-2-R) (Ox2-R (5WQC/7L1V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Orexin receptor type 2 (Ox-2-R) (Ox2-R (5WQC/7L1V)",
+        "motion": "activation",
+        "mass_kda": 29.179719999999993,
+        "ca_rmsd": 3.0152519219047824,
+        "radius": 45.7624617235872,
+        "box_size": 128,
+        "d2_known_pose": 48.352561950683594,
+        "d2_crlb": 46.193565368652344,
+        "information": 3.9968643188476562,
+        "saturation": 0.9992160797119141,
+        "n_floor": 625.4903564453125,
+        "n_marginal": 4960.04150390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011810366791912545,
+        "note": "O43614 51 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.5710614919662476,
+        "information_marginal": 0.5040280818939209,
+        "n_matched": 279,
+        "identity": 1.0,
+        "shared_fraction": 0.55259222333001,
+        "provenance": {
+          "accession": "O43614",
+          "canonical_mass_kda": 50.694,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 48.352561950683594
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Orexin receptor type 2 (Ox-2-R) (Ox2-R (5WQC/7L1V) | 29 | activation | 3.02 | 48.4 | 0.012 | 1.00* | 625 | 4.96e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Orexin receptor type 2 (Ox-2-R) (Ox2-R (5WQC/7L1V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

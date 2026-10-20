@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:28:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ec8291d776.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Myosin IE heavy chain (1LKX/1LKX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Myosin IE heavy chain (1LKX/1LKX)",
+        "motion": "hinge",
+        "mass_kda": 68.60907699999998,
+        "ca_rmsd": 1.606710782020787,
+        "radius": 56.168130578790574,
+        "box_size": 128,
+        "d2_known_pose": 36.80845260620117,
+        "d2_crlb": 32.9752082824707,
+        "information": 3.985126495361328,
+        "saturation": 0.996281623840332,
+        "n_floor": 627.3327026367188,
+        "n_marginal": 13787.4150390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005153189971955977,
+        "note": "Q03479 115 kDa, dyndom, rotation 12.5 deg, chains B/C",
+        "d2_marginal": 0.18968094885349274,
+        "information_marginal": 0.1813247799873352,
+        "n_matched": 650,
+        "identity": 1.0,
+        "shared_fraction": 0.9568424935448174,
+        "provenance": {
+          "accession": "Q03479",
+          "canonical_mass_kda": 114.795,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.5
+        },
+        "d2_floor": 36.80845260620117
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Myosin IE heavy chain (1LKX/1LKX) | 69 | hinge | 1.61 | 36.8 | 0.005 | 1.00* | 627 | 1.38e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Myosin IE heavy chain (1LKX/1LKX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

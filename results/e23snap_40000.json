@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/snap_rung.py",
+  "commit": "473d4f1",
+  "written_at": "2026-09-02T15:37:35+00:00",
+  "arguments": {
+    "source_job": "P42:J9",
+    "rung_manifest": "results/e19_ladder.json",
+    "rung": 40000,
+    "triangulation": 75,
+    "zero_shifts": false,
+    "symmetry": "C1",
+    "ssd_cache": true,
+    "host": "m9g-1-1-opa.rc.byu.edu",
+    "port": 39000,
+    "license_file": "~/.cryosparc/license_id",
+    "pool_dir": "/home/bryceeh/nobackup/archive/pools/e23_snap",
+    "out": "results/e23snap_40000.json"
+  },
+  "result": {
+    "rungs": [
+      {
+        "n_particles": 40000,
+        "job": "J37",
+        "project": "P42",
+        "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11779-2/J37",
+        "root": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11779-2",
+        "map_a": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11779-2/J37/J37_volume_map_half_A.mrc",
+        "map_b": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11779-2/J37/J37_volume_map_half_B.mrc",
+        "pool_a": "/home/bryceeh/nobackup/archive/pools/e23_snap/snap75_n40000_halfA.cs",
+        "pool_b": "/home/bryceeh/nobackup/archive/pools/e23_snap/snap75_n40000_halfB.cs",
+        "n_half_a": 20000,
+        "n_half_b": 20000
+      }
+    ],
+    "held_out": {
+      "pool": "/home/bryceeh/nobackup/archive/pools/e23_snap/snap75_n40000_heldout.cs",
+      "n_particles": 8000
+    },
+    "n_rungs": 1,
+    "grid_directions": 752,
+    "snap_median_deg": 2.9455515262380603,
+    "snap_max_deg": 4.627195126415384,
+    "shifts_zeroed": false
+  }
+}

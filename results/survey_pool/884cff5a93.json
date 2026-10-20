@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:41:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/884cff5a93.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Nuclear factor of activated T-cells, c (1OWR/1OWR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Nuclear factor of activated T-cells, c (1OWR/1OWR)",
+        "motion": "hinge",
+        "mass_kda": 29.684554999999996,
+        "ca_rmsd": 16.24967958762294,
+        "radius": 50.54736321706731,
+        "box_size": 128,
+        "d2_known_pose": 390.1851501464844,
+        "d2_crlb": 361.52435302734375,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1074.1669921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01131282142149594,
+        "note": "Q13469 100 kDa, dyndom, rotation 128.8 deg, chains Q/M",
+        "d2_marginal": 4.414094924926758,
+        "information_marginal": 2.3273849487304688,
+        "n_matched": 284,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q13469",
+          "canonical_mass_kda": 100.146,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 128.8
+        },
+        "d2_floor": 390.1851501464844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Nuclear factor of activated T-cells, c (1OWR/1OWR) | 30 | hinge | 16.25 | 390 | 0.011 | 1.00* | 625 | 1.07e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Nuclear factor of activated T-cells, c (1OWR/1OWR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

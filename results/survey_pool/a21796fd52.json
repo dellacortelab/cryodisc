@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:01:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a21796fd52.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein kinase YpkA (Protein kinase A) (2H7V/2H7V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein kinase YpkA (Protein kinase A) (2H7V/2H7V)",
+        "motion": "mixed",
+        "mass_kda": 27.456856999999996,
+        "ca_rmsd": 1.9196003956998882,
+        "radius": 56.36421608198353,
+        "box_size": 128,
+        "d2_known_pose": 21.303119659423828,
+        "d2_crlb": 18.226613998413086,
+        "information": 3.8722479343414307,
+        "saturation": 0.9680619835853577,
+        "n_floor": 645.6198120117188,
+        "n_marginal": 16894.681640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007206553625804349,
+        "note": "Q05608 82 kDa, dyndom, rotation 12.0 deg, chains C/D",
+        "d2_marginal": 0.1535220742225647,
+        "information_marginal": 0.14797556400299072,
+        "n_matched": 259,
+        "identity": 1.0,
+        "shared_fraction": 0.9660622966062297,
+        "provenance": {
+          "accession": "Q05608",
+          "canonical_mass_kda": 81.731,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.0
+        },
+        "d2_floor": 21.303119659423828
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein kinase YpkA (Protein kinase A) (2H7V/2H7V) | 27 | mixed | 1.92 | 21.3 | 0.007 | 0.97 | 646 | 1.69e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein kinase YpkA (Protein kinase A) (2H7V/2H7V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

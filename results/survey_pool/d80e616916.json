@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:48:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d80e616916.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Small-conductance mechanosensitive cha (2OAU/2OAU)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Small-conductance mechanosensitive cha (2OAU/2OAU)",
+        "motion": "unclassified",
+        "mass_kda": 25.478078999999997,
+        "ca_rmsd": 1.6258110622374078,
+        "radius": 67.9563896173466,
+        "box_size": 128,
+        "d2_known_pose": 15.309438705444336,
+        "d2_crlb": 12.792356491088867,
+        "information": 3.696349620819092,
+        "saturation": 0.924087405204773,
+        "n_floor": 676.3429565429688,
+        "n_marginal": 56419.9609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00292650020385458,
+        "note": "P0C0S1 31 kDa, dyndom, rotation 6.9 deg, chains C/D",
+        "d2_marginal": 0.04480307549238205,
+        "information_marginal": 0.0443105585873127,
+        "n_matched": 254,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P0C0S1",
+          "canonical_mass_kda": 30.896,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.9
+        },
+        "d2_floor": 15.309438705444336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Small-conductance mechanosensitive cha (2OAU/2OAU) | 25 | unclassified | 1.63 | 15.3 | 0.003 | 0.92 | 676 | 5.64e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Small-conductance mechanosensitive cha (2OAU/2OAU)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

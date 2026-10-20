@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:23:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6179146cd5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Elongation factor P (EF-P) (1YBY/1YBY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Elongation factor P (EF-P) (1YBY/1YBY)",
+        "motion": "no_contact",
+        "mass_kda": 16.558159999999997,
+        "ca_rmsd": 7.223608567049763,
+        "radius": 43.213860863127614,
+        "box_size": 128,
+        "d2_known_pose": 85.8738021850586,
+        "d2_crlb": 68.32327270507812,
+        "information": 3.9999773502349854,
+        "saturation": 0.9999943375587463,
+        "n_floor": 625.0035400390625,
+        "n_marginal": 1480.202880859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.030463000873961,
+        "note": "A3DDQ3 21 kDa, dyndom, rotation 63.2 deg, chains B/A",
+        "d2_marginal": 2.615973711013794,
+        "information_marginal": 1.688957691192627,
+        "n_matched": 167,
+        "identity": 1.0,
+        "shared_fraction": 0.9475262368815592,
+        "provenance": {
+          "accession": "A3DDQ3",
+          "canonical_mass_kda": 20.654,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 63.2
+        },
+        "d2_floor": 85.8738021850586
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Elongation factor P (EF-P) (1YBY/1YBY) | 17 | no_contact | 7.22 | 85.9 | 0.030 | 1.00* | 625 | 1.48e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Elongation factor P (EF-P) (1YBY/1YBY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

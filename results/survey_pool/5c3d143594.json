@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:11:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5c3d143594.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "UPF0342 protein GK0640 (2OEQ/2OEQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "UPF0342 protein GK0640 (2OEQ/2OEQ)",
+        "motion": "no_contact",
+        "mass_kda": 11.484978,
+        "ca_rmsd": 1.0936392368935481,
+        "radius": 39.04195784854174,
+        "box_size": 128,
+        "d2_known_pose": 4.453110694885254,
+        "d2_crlb": 3.77423357963562,
+        "information": 2.33840012550354,
+        "saturation": 0.584600031375885,
+        "n_floor": 1069.1070556640625,
+        "n_marginal": 41490.12890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013735878045744391,
+        "note": "Q5L2A5 14 kDa, dyndom, rotation 7.3 deg, chains B/D",
+        "d2_marginal": 0.061167385429143906,
+        "information_marginal": 0.060255300253629684,
+        "n_matched": 107,
+        "identity": 1.0,
+        "shared_fraction": 0.9931818181818182,
+        "provenance": {
+          "accession": "Q5L2A5",
+          "canonical_mass_kda": 13.836,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.3
+        },
+        "d2_floor": 4.453110694885254
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| UPF0342 protein GK0640 (2OEQ/2OEQ) | 11 | no_contact | 1.09 | 4.45 | 0.014 | 0.58 | 1.07e+03 | 4.15e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "UPF0342 protein GK0640 (2OEQ/2OEQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

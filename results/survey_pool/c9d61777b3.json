@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:26:03+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c9d61777b3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Urease subunit alpha (EC 3.5.1.5) (Ure (3UBP/4UBP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Urease subunit alpha (EC 3.5.1.5) (Ure (3UBP/4UBP)",
+        "motion": "hinge",
+        "mass_kda": 57.069503999999995,
+        "ca_rmsd": 0.8565353927086943,
+        "radius": 43.74748083071502,
+        "box_size": 128,
+        "d2_known_pose": 11.07690715789795,
+        "d2_crlb": 10.415457725524902,
+        "information": 3.4278297424316406,
+        "saturation": 0.8569574356079102,
+        "n_floor": 729.324462890625,
+        "n_marginal": 40509.8984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005657729907432463,
+        "note": "P41020 61 kDa, dyndom, rotation 20.0 deg, chains C/C",
+        "d2_marginal": 0.06267014890909195,
+        "information_marginal": 0.061713315546512604,
+        "n_matched": 569,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P41020",
+          "canonical_mass_kda": 61.4,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.0
+        },
+        "d2_floor": 11.07690715789795
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Urease subunit alpha (EC 3.5.1.5) (Ure (3UBP/4UBP) | 57 | hinge | 0.86 | 11.1 | 0.006 | 0.86 | 729 | 4.05e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Urease subunit alpha (EC 3.5.1.5) (Ure (3UBP/4UBP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_local.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "amplitudes": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "nodes": 8064,
+    "box_size": 128,
+    "rmsf": 0.5,
+    "fraction": 0.5,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "out": "results/kc_scaling/ip_local_mannitol.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)",
+      "box_size": 128,
+      "rmsd": 0.7791782367517301,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 0.05,
+          "i_local": 0.01464617345482111,
+          "i_known": 0.015201459638774395,
+          "mean_d2_crlb": 0.014700615778565407,
+          "mean_d2_known": 0.015260055661201477,
+          "seconds": 11.7
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.05794716253876686,
+          "i_known": 0.060120247304439545,
+          "mean_d2_crlb": 0.05880246311426163,
+          "mean_d2_known": 0.06104022264480591,
+          "seconds": 11.0
+        },
+        {
+          "amplitude": 0.15,
+          "i_local": 0.12809935212135315,
+          "i_known": 0.13282065093517303,
+          "mean_d2_crlb": 0.1323055475950241,
+          "mean_d2_known": 0.13734053075313568,
+          "seconds": 11.0
+        },
+        {
+          "amplitude": 0.2,
+          "i_local": 0.22241157293319702,
+          "i_known": 0.2304246574640274,
+          "mean_d2_crlb": 0.2352098524570465,
+          "mean_d2_known": 0.24416089057922363,
+          "seconds": 11.1
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.4703388810157776,
+          "i_known": 0.486333429813385,
+          "mean_d2_crlb": 0.5292221903800964,
+          "mean_d2_known": 0.5493621230125427,
+          "seconds": 11.1
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 1.1094099283218384,
+          "i_known": 1.1419830322265625,
+          "mean_d2_crlb": 1.4700614213943481,
+          "mean_d2_known": 1.5260053873062134,
+          "seconds": 11.1
+        }
+      ]
+    }
+  ]
+}

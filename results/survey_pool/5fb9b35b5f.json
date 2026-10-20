@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:28:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5fb9b35b5f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Syntaxin-1A (Neuron-specific antigen H (1HVV/1JTH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Syntaxin-1A (Neuron-specific antigen H (1HVV/1JTH)",
+        "motion": "no_contact",
+        "mass_kda": 6.64814,
+        "ca_rmsd": 1.7990219652647346,
+        "radius": 47.10802140402489,
+        "box_size": 128,
+        "d2_known_pose": 7.591325759887695,
+        "d2_crlb": 6.840814590454102,
+        "information": 3.0135223865509033,
+        "saturation": 0.7533805966377258,
+        "n_floor": 829.593994140625,
+        "n_marginal": 132540.40625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0024964301953798967,
+        "note": "P32851 33 kDa, dyndom, rotation 32.0 deg, chains D/B",
+        "d2_marginal": 0.018951214849948883,
+        "information_marginal": 0.018862172961235046,
+        "n_matched": 61,
+        "identity": 1.0,
+        "shared_fraction": 0.9085923217550275,
+        "provenance": {
+          "accession": "P32851",
+          "canonical_mass_kda": 33.067,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 32.0
+        },
+        "d2_floor": 7.591325759887695
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Syntaxin-1A (Neuron-specific antigen H (1HVV/1JTH) | 7 | no_contact | 1.80 | 7.59 | 0.002 | 0.75 | 830 | 1.33e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Syntaxin-1A (Neuron-specific antigen H (1HVV/1JTH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

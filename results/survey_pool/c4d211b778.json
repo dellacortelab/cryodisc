@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:51:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c4d211b778.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "T-cell surface glycoprotein CD4 (T-cel (1WIQ/1WIQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "T-cell surface glycoprotein CD4 (T-cel (1WIQ/1WIQ)",
+        "motion": "hinge",
+        "mass_kda": 37.081038,
+        "ca_rmsd": 2.3847055356211557,
+        "radius": 61.47056522356867,
+        "box_size": 128,
+        "d2_known_pose": 33.38682556152344,
+        "d2_crlb": 21.87471580505371,
+        "information": 3.9762699604034424,
+        "saturation": 0.9940674901008606,
+        "n_floor": 628.72998046875,
+        "n_marginal": 9219.5712890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008686936324603904,
+        "note": "P01730 51 kDa, dyndom, rotation 1.9 deg, chains B/A",
+        "d2_marginal": 0.29002922773361206,
+        "information_marginal": 0.2711623013019562,
+        "n_matched": 363,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P01730",
+          "canonical_mass_kda": 51.111,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 1.9
+        },
+        "d2_floor": 33.38682556152344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| T-cell surface glycoprotein CD4 (T-cel (1WIQ/1WIQ) | 37 | hinge | 2.38 | 33.4 | 0.009 | 0.99* | 629 | 9.22e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "T-cell surface glycoprotein CD4 (T-cel (1WIQ/1WIQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

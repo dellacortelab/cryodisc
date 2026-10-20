@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:41:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/533cf49db8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "T cell receptor beta constant 1 (2NW2/2NX5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "T cell receptor beta constant 1 (2NW2/2NX5)",
+        "motion": "hinge",
+        "mass_kda": 25.555662999999996,
+        "ca_rmsd": 1.0413888605012889,
+        "radius": 41.14991118683352,
+        "box_size": 128,
+        "d2_known_pose": 6.219050407409668,
+        "d2_crlb": 5.753218650817871,
+        "information": 2.7668204307556152,
+        "saturation": 0.6917051076889038,
+        "n_floor": 903.5643310546875,
+        "n_marginal": 51595.43359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007885944350549068,
+        "note": "P01850 20 kDa, dyndom, rotation 8.9 deg, chains B/E",
+        "d2_marginal": 0.04904308542609215,
+        "information_marginal": 0.04845390096306801,
+        "n_matched": 243,
+        "identity": 1.0,
+        "shared_fraction": 0.9994834710743802,
+        "provenance": {
+          "accession": "P01850",
+          "canonical_mass_kda": 19.769,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.9
+        },
+        "d2_floor": 6.219050407409668
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| T cell receptor beta constant 1 (2NW2/2NX5) | 26 | hinge | 1.04 | 6.22 | 0.008 | 0.69 | 904 | 5.16e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "T cell receptor beta constant 1 (2NW2/2NX5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

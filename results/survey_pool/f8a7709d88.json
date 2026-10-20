@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:07:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f8a7709d88.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Interferon-induced, double-stranded RN (2A1A/6D3K)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Interferon-induced, double-stranded RN (2A1A/6D3K)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 27.465263,
+        "ca_rmsd": 1.5329822278227603,
+        "radius": 34.81847315288779,
+        "box_size": 128,
+        "d2_known_pose": 11.083513259887695,
+        "d2_crlb": 10.587019920349121,
+        "information": 3.4284067153930664,
+        "saturation": 0.8571016788482666,
+        "n_floor": 729.2017211914062,
+        "n_marginal": 17674.21484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013219066648792376,
+        "note": "P19525 62 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BLAminus, chains B/C",
+        "d2_marginal": 0.1465137004852295,
+        "information_marginal": 0.1414490044116974,
+        "n_matched": 257,
+        "identity": 0.9922178988326849,
+        "shared_fraction": 0.9586776859504132,
+        "provenance": {
+          "accession": "P19525",
+          "canonical_mass_kda": 62.094,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 11.083513259887695
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Interferon-induced, double-stranded RN (2A1A/6D3K) | 27 | dihedral_cluster | 1.53 | 11.1 | 0.013 | 0.86 | 729 | 1.77e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Interferon-induced, double-stranded RN (2A1A/6D3K)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

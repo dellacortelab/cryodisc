@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Trichodiene synthase (EC 4.2.3.6) (Cor (1YYQ/1YYQ)",
+ "returncode": -6,
+ "stderr_tail": "631  tsl::JoinFutures<>()::{lambda()#1}::operator()()\n    @     0x7f1f82a8626f  tsl::AsyncValue::EnqueueWaiter<>()::Node::RunWaiterAndDeleteWaiterNode()\n    @     0x7f1f82a844d2  tsl::internal::PromiseBase<>::emplace<>()\n    @     0x7f1f82a84344  absl::lts_20260526::internal_any_invocable::RemoteInvoker<>()\n    @     0x7f1f8d8b21df  std::_Function_handler<>::_M_invoke()\n    @     0x7f1f8d8b0b54  Eigen::ThreadPoolTempl<>::WorkerLoop()\n    @     0x7f1f8d8b09e1  std::__invoke_impl<>()\n    @     0x7f1f8d89f90f  tsl::(anonymous namespace)::PThread::ThreadFn()\n    @     0x7f207d48433a  start_thread\n"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:28:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/80b5c52cb1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Farnesyl diphosphate synthase (1YHK/1YHL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Farnesyl diphosphate synthase (1YHK/1YHL)",
+        "motion": "shear",
+        "mass_kda": 38.042421999999995,
+        "ca_rmsd": 0.7084442515455963,
+        "radius": 37.85872699397674,
+        "box_size": 128,
+        "d2_known_pose": 5.877259254455566,
+        "d2_crlb": 5.50648307800293,
+        "information": 2.694967269897461,
+        "saturation": 0.6737418174743652,
+        "n_floor": 927.6550903320312,
+        "n_marginal": 17148.880859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.025720183921860897,
+        "note": "Q8WS26 49 kDa, dyndom, rotation 3.8 deg, chains A/A",
+        "d2_marginal": 0.1511641889810562,
+        "information_marginal": 0.14578211307525635,
+        "n_matched": 360,
+        "identity": 1.0,
+        "shared_fraction": 0.9937737806987201,
+        "provenance": {
+          "accession": "Q8WS26",
+          "canonical_mass_kda": 48.829,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 3.8
+        },
+        "d2_floor": 5.877259254455566
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Farnesyl diphosphate synthase (1YHK/1YHL) | 38 | shear | 0.71 | 5.88 | 0.026 | 0.67 | 928 | 1.71e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Farnesyl diphosphate synthase (1YHK/1YHL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

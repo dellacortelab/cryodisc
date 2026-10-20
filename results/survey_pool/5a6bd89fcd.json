@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:10:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5a6bd89fcd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "UvrABC system protein C (Protein UvrC) (2NRX/2NRV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "UvrABC system protein C (Protein UvrC) (2NRX/2NRV)",
+        "motion": "hinge",
+        "mass_kda": 21.597481999999996,
+        "ca_rmsd": 10.881594011098732,
+        "radius": 45.42132935876711,
+        "box_size": 128,
+        "d2_known_pose": 124.12093353271484,
+        "d2_crlb": 108.58870697021484,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1650.6357421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01798345238447212,
+        "note": "Q9WYA3 65 kDa, dyndom, rotation 166.8 deg, chains B/B",
+        "d2_marginal": 2.2321228981018066,
+        "information_marginal": 1.5145679712295532,
+        "n_matched": 204,
+        "identity": 1.0,
+        "shared_fraction": 0.9475806451612904,
+        "provenance": {
+          "accession": "Q9WYA3",
+          "canonical_mass_kda": 64.821,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 166.8
+        },
+        "d2_floor": 124.12093353271484
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| UvrABC system protein C (Protein UvrC) (2NRX/2NRV) | 22 | hinge | 10.88 | 124 | 0.018 | 1.00* | 625 | 1.65e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "UvrABC system protein C (Protein UvrC) (2NRX/2NRV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:26:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/22707a8070.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Nucleoside diphosphate kinase II, chlo (1S59/1S59)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Nucleoside diphosphate kinase II, chlo (1S59/1S59)",
+        "motion": "shear",
+        "mass_kda": 15.389758999999996,
+        "ca_rmsd": 0.7117141680772192,
+        "radius": 31.22754656571506,
+        "box_size": 128,
+        "d2_known_pose": 2.691333770751953,
+        "d2_crlb": 2.4186296463012695,
+        "information": 1.7211391925811768,
+        "saturation": 0.4302847981452942,
+        "n_floor": 1452.5263671875,
+        "n_marginal": 30088.0703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03151868594236567,
+        "note": "O64903 26 kDa, dyndom, rotation 6.3 deg, chains F/C",
+        "d2_marginal": 0.08482730388641357,
+        "information_marginal": 0.08308941125869751,
+        "n_matched": 149,
+        "identity": 1.0,
+        "shared_fraction": 0.9741235392320534,
+        "provenance": {
+          "accession": "O64903",
+          "canonical_mass_kda": 25.55,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.3
+        },
+        "d2_floor": 2.691333770751953
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Nucleoside diphosphate kinase II, chlo (1S59/1S59) | 15 | shear | 0.71 | 2.69 | 0.032 | 0.43 | 1.45e+03 | 3.01e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Nucleoside diphosphate kinase II, chlo (1S59/1S59)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

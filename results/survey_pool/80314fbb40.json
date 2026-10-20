@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:17:54+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/80314fbb40.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Casein kinase I isoform epsilon (CKI-e (4HOK/4HNI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Casein kinase I isoform epsilon (CKI-e (4HOK/4HNI)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.785085,
+        "ca_rmsd": 1.6080691834048368,
+        "radius": 37.42214641361313,
+        "box_size": 128,
+        "d2_known_pose": 15.153692245483398,
+        "d2_crlb": 14.143649101257324,
+        "information": 3.6893093585968018,
+        "saturation": 0.9223273396492004,
+        "n_floor": 677.6336059570312,
+        "n_marginal": 13616.8486328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012681058193754256,
+        "note": "P49674 47 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BBAminus, chains W/B",
+        "d2_marginal": 0.1921648532152176,
+        "information_marginal": 0.18359607458114624,
+        "n_matched": 279,
+        "identity": 1.0,
+        "shared_fraction": 0.9583864118895966,
+        "provenance": {
+          "accession": "P49674",
+          "canonical_mass_kda": 47.315,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null,
+          "motions": [
+            "dfg_flip",
+            "dihedral_cluster"
+          ]
+        },
+        "d2_floor": 15.153692245483398
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Casein kinase I isoform epsilon (CKI-e (4HOK/4HNI) | 30 | dihedral_cluster | 1.61 | 15.2 | 0.013 | 0.92 | 678 | 1.36e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Casein kinase I isoform epsilon (CKI-e (4HOK/4HNI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

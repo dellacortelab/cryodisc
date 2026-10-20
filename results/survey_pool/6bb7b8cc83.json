@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:15:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6bb7b8cc83.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional repressor TraM (1RFY/1RFY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional repressor TraM (1RFY/1RFY)",
+        "motion": "unclassified",
+        "mass_kda": 8.639432,
+        "ca_rmsd": 1.0391822808057716,
+        "radius": 29.114773831392636,
+        "box_size": 128,
+        "d2_known_pose": 2.8127975463867188,
+        "d2_crlb": 2.3779430389404297,
+        "information": 1.7720487117767334,
+        "saturation": 0.44301217794418335,
+        "n_floor": 1410.79638671875,
+        "n_marginal": 75323.2578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011897884067169543,
+        "note": "Q57471 11 kDa, dyndom, rotation 9.1 deg, chains A/B",
+        "d2_marginal": 0.033466339111328125,
+        "information_marginal": 0.0331902801990509,
+        "n_matched": 87,
+        "identity": 1.0,
+        "shared_fraction": 0.9562043795620438,
+        "provenance": {
+          "accession": "Q57471",
+          "canonical_mass_kda": 11.401,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.1
+        },
+        "d2_floor": 2.8127975463867188
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional repressor TraM (1RFY/1RFY) | 9 | unclassified | 1.04 | 2.81 | 0.012 | 0.44 | 1.41e+03 | 7.53e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional repressor TraM (1RFY/1RFY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

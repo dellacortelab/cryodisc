@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:56:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7c15296d89.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Threonine--tRNA ligase (EC 6.1.1.3) (T (1EVK/1EVL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Threonine--tRNA ligase (EC 6.1.1.3) (T (1EVK/1EVL)",
+        "motion": "hinge",
+        "mass_kda": 43.175481999999995,
+        "ca_rmsd": 1.5411452438603368,
+        "radius": 49.16448174166955,
+        "box_size": 128,
+        "d2_known_pose": 27.382564544677734,
+        "d2_crlb": 25.7965145111084,
+        "information": 3.9456493854522705,
+        "saturation": 0.9864123463630676,
+        "n_floor": 633.6092529296875,
+        "n_marginal": 7848.44873046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01258859973112943,
+        "note": "P0A8M3 74 kDa, dyndom, rotation 11.4 deg, chains A/D",
+        "d2_marginal": 0.3447081446647644,
+        "information_marginal": 0.3185342848300934,
+        "n_matched": 401,
+        "identity": 1.0,
+        "shared_fraction": 0.9963336388634281,
+        "provenance": {
+          "accession": "P0A8M3",
+          "canonical_mass_kda": 74.014,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 11.4
+        },
+        "d2_floor": 27.382564544677734
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Threonine--tRNA ligase (EC 6.1.1.3) (T (1EVK/1EVL) | 43 | hinge | 1.54 | 27.4 | 0.013 | 0.99 | 634 | 7.85e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Threonine--tRNA ligase (EC 6.1.1.3) (T (1EVK/1EVL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

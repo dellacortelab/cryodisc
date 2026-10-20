@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_1.json",
+    "rows": [
+      "Envelope glycoprotein B (gB) (2GUM/2GUM)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384,
+      64128
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.1,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/ip_converge_deflection_gB_a0.1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Envelope glycoprotein B (gB) (2GUM/2GUM)",
+      "box_size": 128,
+      "rmsd": 0.5298748903824975,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.0010196666698902845,
+          "d2": 0.0010199218522757292,
+          "d2_err": 0.002466110745444894,
+          "n_for_error": 2451781.75,
+          "seconds": 16.2
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.0005892100743949413,
+          "d2": 0.0005892954068258405,
+          "d2_err": 0.002089094603434205,
+          "n_for_error": 4242969.0,
+          "seconds": 27.7
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 1.2362923484943167e-07,
+          "d2": 1.2368425927888893e-07,
+          "d2_err": 0.0014146498870104551,
+          "n_for_error": 20221755392.0,
+          "seconds": 109.1
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.00011159198766108602,
+          "d2": 0.00011159427231177688,
+          "d2_err": 0.0015646556857973337,
+          "n_for_error": 22403042.0,
+          "seconds": 423.6
+        },
+        {
+          "k_requested": 64128,
+          "k": 64128,
+          "information": 0.00018948476645164192,
+          "d2": 0.00018949364311993122,
+          "d2_err": 0.0016601255629211664,
+          "n_for_error": 13193673.0,
+          "seconds": 806.4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:56:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/e0e963bb5d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein SET (HLA-DR-associated protein (2E50/2E50)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein SET (HLA-DR-associated protein (2E50/2E50)",
+        "motion": "hinge",
+        "mass_kda": 18.357284999999997,
+        "ca_rmsd": 1.951896662204257,
+        "radius": 56.51538442942591,
+        "box_size": 128,
+        "d2_known_pose": 16.700742721557617,
+        "d2_crlb": 13.965141296386719,
+        "information": 3.752302646636963,
+        "saturation": 0.9380756616592407,
+        "n_floor": 666.257568359375,
+        "n_marginal": 19276.5625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00802024596222544,
+        "note": "Q01105 33 kDa, dyndom, rotation 16.3 deg, chains P/B",
+        "d2_marginal": 0.1339440643787384,
+        "information_marginal": 0.12969118356704712,
+        "n_matched": 165,
+        "identity": 1.0,
+        "shared_fraction": 0.9012903225806451,
+        "provenance": {
+          "accession": "Q01105",
+          "canonical_mass_kda": 33.489,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.3
+        },
+        "d2_floor": 16.700742721557617
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein SET (HLA-DR-associated protein (2E50/2E50) | 18 | hinge | 1.95 | 16.7 | 0.008 | 0.94 | 666 | 1.93e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein SET (HLA-DR-associated protein (2E50/2E50)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

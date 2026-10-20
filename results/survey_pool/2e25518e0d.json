@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:39:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2e25518e0d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "MAP kinase-activated protein kinase 2 (2ONL/8XU4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "MAP kinase-activated protein kinase 2 (2ONL/8XU4)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 26.897292999999998,
+        "ca_rmsd": 4.217173954811792,
+        "radius": 37.41350062418644,
+        "box_size": 128,
+        "d2_known_pose": 33.162200927734375,
+        "d2_crlb": 27.835960388183594,
+        "information": 3.975527763366699,
+        "saturation": 0.9938819408416748,
+        "n_floor": 628.8473510742188,
+        "n_marginal": 7971.3701171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010221915364548584,
+        "note": "P49137 46 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains D/L",
+        "d2_marginal": 0.3389812111854553,
+        "information_marginal": 0.313622385263443,
+        "n_matched": 250,
+        "identity": 1.0,
+        "shared_fraction": 0.8097133757961783,
+        "provenance": {
+          "accession": "P49137",
+          "canonical_mass_kda": 45.568,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 33.162200927734375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| MAP kinase-activated protein kinase 2 (2ONL/8XU4) | 27 | dihedral_cluster | 4.22 | 33.2 | 0.010 | 0.99* | 629 | 7.97e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "MAP kinase-activated protein kinase 2 (2ONL/8XU4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

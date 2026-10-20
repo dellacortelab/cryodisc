@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:09:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/12af8c3c63.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HA-33 (HA33) (HA34) (1YBI/1YBI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HA-33 (HA33) (HA34) (1YBI/1YBI)",
+        "motion": "hinge",
+        "mass_kda": 30.346559999999997,
+        "ca_rmsd": 1.9226533897385765,
+        "radius": 37.05654856569281,
+        "box_size": 128,
+        "d2_known_pose": 14.322784423828125,
+        "d2_crlb": 13.713102340698242,
+        "information": 3.6487393379211426,
+        "saturation": 0.9121848344802856,
+        "n_floor": 685.1681518554688,
+        "n_marginal": 50043.94921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0035316039086853252,
+        "note": "Q45871 34 kDa, dyndom, rotation 18.7 deg, chains B/A",
+        "d2_marginal": 0.0505824014544487,
+        "information_marginal": 0.04995609074831009,
+        "n_matched": 284,
+        "identity": 1.0,
+        "shared_fraction": 0.9969749351771824,
+        "provenance": {
+          "accession": "Q45871",
+          "canonical_mass_kda": 33.873,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 18.7
+        },
+        "d2_floor": 14.322784423828125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HA-33 (HA33) (HA34) (1YBI/1YBI) | 30 | hinge | 1.92 | 14.3 | 0.004 | 0.91 | 685 | 5e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HA-33 (HA33) (HA34) (1YBI/1YBI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

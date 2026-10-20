@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:06:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b1971dec6c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Kappa light chain (1CGS/2CGR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Kappa light chain (1CGS/2CGR)",
+        "motion": "no_contact",
+        "mass_kda": 21.317164999999996,
+        "ca_rmsd": 3.9081256569845313,
+        "radius": 41.451269560444594,
+        "box_size": 128,
+        "d2_known_pose": 39.41747283935547,
+        "d2_crlb": 34.365291595458984,
+        "information": 3.989563226699829,
+        "saturation": 0.9973908066749573,
+        "n_floor": 626.635009765625,
+        "n_marginal": 5531.27001953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012824837107693427,
+        "note": "A2P1G9 24 kDa, dyndom, rotation 36.9 deg, chains H/H",
+        "d2_marginal": 0.5055226683616638,
+        "information_marginal": 0.4519757628440857,
+        "n_matched": 214,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "A2P1G9",
+          "canonical_mass_kda": 24.086,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 36.9
+        },
+        "d2_floor": 39.41747283935547
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Kappa light chain (1CGS/2CGR) | 21 | no_contact | 3.91 | 39.4 | 0.013 | 1.00* | 627 | 5.53e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Kappa light chain (1CGS/2CGR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

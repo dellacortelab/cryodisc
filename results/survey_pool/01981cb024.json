@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:10:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/01981cb024.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ADP-ribosylation factor 1 (EC 3.6.5.2) (1RRG/1S9D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ADP-ribosylation factor 1 (EC 3.6.5.2) (1RRG/1S9D)",
+        "motion": "crypticpocket",
+        "mass_kda": 16.194202999999998,
+        "ca_rmsd": 2.439660588260561,
+        "radius": 28.81780040033222,
+        "box_size": 128,
+        "d2_known_pose": 17.16118621826172,
+        "d2_crlb": 15.38672924041748,
+        "information": 3.768354892730713,
+        "saturation": 0.9420887231826782,
+        "n_floor": 663.4194946289062,
+        "n_marginal": 9013.7919921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01731259094289864,
+        "note": "P84080 21 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.2971045970916748,
+        "information_marginal": 0.2773527503013611,
+        "n_matched": 152,
+        "identity": 1.0,
+        "shared_fraction": 0.8622628250175686,
+        "provenance": {
+          "accession": "P84080",
+          "canonical_mass_kda": 20.697,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 17.16118621826172
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ADP-ribosylation factor 1 (EC 3.6.5.2) (1RRG/1S9D) | 16 | crypticpocket | 2.44 | 17.2 | 0.017 | 0.94 | 663 | 9.01e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ADP-ribosylation factor 1 (EC 3.6.5.2) (1RRG/1S9D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

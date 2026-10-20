@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:49:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/90c078208c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein smoothened (Protein Gx) (4JKV/6XBM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein smoothened (Protein Gx) (4JKV/6XBM)",
+        "motion": "activation",
+        "mass_kda": 33.632031,
+        "ca_rmsd": 2.7874138979150827,
+        "radius": 47.756529822803394,
+        "box_size": 128,
+        "d2_known_pose": 46.96209716796875,
+        "d2_crlb": 43.444976806640625,
+        "information": 3.9962222576141357,
+        "saturation": 0.9990555644035339,
+        "n_floor": 625.5908203125,
+        "n_marginal": 9665.0078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005873022787980536,
+        "note": "Q99835 86 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.27580946683883667,
+        "information_marginal": 0.2586650848388672,
+        "n_matched": 326,
+        "identity": 1.0,
+        "shared_fraction": 0.7233861834654587,
+        "provenance": {
+          "accession": "Q99835",
+          "canonical_mass_kda": 86.397,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 46.96209716796875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein smoothened (Protein Gx) (4JKV/6XBM) | 34 | activation | 2.79 | 47 | 0.006 | 1.00* | 626 | 9.67e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein smoothened (Protein Gx) (4JKV/6XBM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

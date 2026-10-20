@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:23:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/676c1294c8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase SYK (EC 2.7.10 (1A81/1A81)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase SYK (EC 2.7.10 (1A81/1A81)",
+        "motion": "no_contact",
+        "mass_kda": 26.516578999999997,
+        "ca_rmsd": 1.5939424267859004,
+        "radius": 36.678668433876865,
+        "box_size": 128,
+        "d2_known_pose": 13.334925651550293,
+        "d2_crlb": 11.826434135437012,
+        "information": 3.5931296348571777,
+        "saturation": 0.8982824087142944,
+        "n_floor": 695.7723388671875,
+        "n_marginal": 44001.0859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004321540190999109,
+        "note": "P43405 72 kDa, dyndom, rotation 15.2 deg, chains A/C",
+        "d2_marginal": 0.057627417147159576,
+        "information_marginal": 0.05681677907705307,
+        "n_matched": 254,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P43405",
+          "canonical_mass_kda": 72.066,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 15.2
+        },
+        "d2_floor": 13.334925651550293
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase SYK (EC 2.7.10 (1A81/1A81) | 27 | no_contact | 1.59 | 13.3 | 0.004 | 0.90 | 696 | 4.4e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase SYK (EC 2.7.10 (1A81/1A81)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

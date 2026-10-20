@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:19:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4c9e7739ae.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ARF guanine-nucleotide exchange factor (1KU1/1KU1)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ARF guanine-nucleotide exchange factor (1KU1/1KU1)",
+        "motion": "mixed",
+        "mass_kda": 22.610273999999997,
+        "ca_rmsd": 1.02657117412433,
+        "radius": 45.641538595047095,
+        "box_size": 128,
+        "d2_known_pose": 5.494004726409912,
+        "d2_crlb": 4.885258674621582,
+        "information": 2.6086173057556152,
+        "saturation": 0.6521543264389038,
+        "n_floor": 958.362060546875,
+        "n_marginal": 37656.921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01228551676509923,
+        "note": "P39993 166 kDa, dyndom, rotation 8.2 deg, chains A/B",
+        "d2_marginal": 0.06749668717384338,
+        "information_marginal": 0.06638886034488678,
+        "n_matched": 211,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P39993",
+          "canonical_mass_kda": 165.668,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.2
+        },
+        "d2_floor": 5.494004726409912
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ARF guanine-nucleotide exchange factor (1KU1/1KU1) | 23 | mixed | 1.03 | 5.49 | 0.012 | 0.65 | 958 | 3.77e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ARF guanine-nucleotide exchange factor (1KU1/1KU1)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

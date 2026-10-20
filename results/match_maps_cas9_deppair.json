@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/match_maps.py",
+  "commit": "unknown",
+  "written_at": "2026-08-16T07:24:45+00:00",
+  "arguments": {
+    "map": [
+      "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11779-2/J9/J9_005_volume_map_half_A.mrc",
+      "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11780-2/J9/J9_006_volume_map_half_A.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_14493_bin2.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_14496_bin2.mrc"
+    ],
+    "lowpass": 8.0,
+    "out_dir": "/home/bryceeh/nobackup/archive/maps/cas9/dep_pair",
+    "threshold": 4.0,
+    "dilate": 6,
+    "taper": 6,
+    "match_spectra": false,
+    "spectrum_bins": 40,
+    "suffix": "_t",
+    "record": "results/match_maps_cas9_deppair.json"
+  },
+  "result": {
+    "maps": [
+      "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11779-2/J9/J9_005_volume_map_half_A.mrc",
+      "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11780-2/J9/J9_006_volume_map_half_A.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_14493_bin2.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_14496_bin2.mrc"
+    ],
+    "written": [
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_pair/J9_005_volume_map_half_A_t.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_pair/J9_006_volume_map_half_A_t.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_pair/dep_14493_bin2_t.mrc",
+      "/home/bryceeh/nobackup/archive/maps/cas9/dep_pair/dep_14496_bin2_t.mrc"
+    ],
+    "pixel_size": 1.2999999523162842,
+    "lowpass_a": 8.0,
+    "match_spectra": false,
+    "mask_hard_fraction": 0.02485953436957465,
+    "mask_supported_fraction": 0.0878414577907986,
+    "solvent_variance_before": [
+      0.1435512251797957,
+      0.14409147265369604,
+      0.03693809926033172,
+      0.030516137359399037
+    ],
+    "amplitude_ratios": [
+      1.0,
+      0.9994731438938101,
+      1.0083055391090583,
+      1.0070330050915888
+    ]
+  }
+}

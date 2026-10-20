@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:27:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fa62847351.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HLA class I histocompatibility antigen (1A9E/2BVP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HLA class I histocompatibility antigen (1A9E/2BVP)",
+        "motion": "no_contact",
+        "mass_kda": 28.789793,
+        "ca_rmsd": 1.4387368950978239,
+        "radius": 45.646482510506644,
+        "box_size": 128,
+        "d2_known_pose": 15.071619987487793,
+        "d2_crlb": 12.950902938842773,
+        "information": 3.685530662536621,
+        "saturation": 0.9213826656341553,
+        "n_floor": 678.328369140625,
+        "n_marginal": 11375.052734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015400121452271516,
+        "note": "P01889 40 kDa, dyndom, rotation 9.8 deg, chains A/A",
+        "d2_marginal": 0.23210477828979492,
+        "information_marginal": 0.21977922320365906,
+        "n_matched": 274,
+        "identity": 0.927007299270073,
+        "shared_fraction": 0.9659141212926073,
+        "provenance": {
+          "accession": "P01889",
+          "canonical_mass_kda": 40.46,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.8
+        },
+        "d2_floor": 15.071619987487793
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HLA class I histocompatibility antigen (1A9E/2BVP) | 29 | no_contact | 1.44 | 15.1 | 0.015 | 0.92 | 678 | 1.14e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HLA class I histocompatibility antigen (1A9E/2BVP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

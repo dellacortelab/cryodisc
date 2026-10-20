@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:38:19+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/78f0b0c0ba.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Guanine nucleotide exchange factor DBS (1RJ2/1RJ2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Guanine nucleotide exchange factor DBS (1RJ2/1RJ2)",
+        "motion": "hinge",
+        "mass_kda": 32.584892999999994,
+        "ca_rmsd": 4.713250814744056,
+        "radius": 43.01545665221437,
+        "box_size": 128,
+        "d2_known_pose": 64.61385345458984,
+        "d2_crlb": 53.472557067871094,
+        "information": 3.999638080596924,
+        "saturation": 0.999909520149231,
+        "n_floor": 625.0565795898438,
+        "n_marginal": 6777.41552734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006255297218690087,
+        "note": "Q64096 129 kDa, dyndom, rotation 39.1 deg, chains G/J",
+        "d2_marginal": 0.4041788578033447,
+        "information_marginal": 0.36887219548225403,
+        "n_matched": 301,
+        "identity": 1.0,
+        "shared_fraction": 0.9609222352481438,
+        "provenance": {
+          "accession": "Q64096",
+          "canonical_mass_kda": 129.113,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 39.1
+        },
+        "d2_floor": 64.61385345458984
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Guanine nucleotide exchange factor DBS (1RJ2/1RJ2) | 33 | hinge | 4.71 | 64.6 | 0.006 | 1.00* | 625 | 6.78e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Guanine nucleotide exchange factor DBS (1RJ2/1RJ2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

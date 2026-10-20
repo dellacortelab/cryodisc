@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:39:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a3576a9243.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Immunoglobulin heavy constant epsilon (1F6A/1O0V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Immunoglobulin heavy constant epsilon (1F6A/1O0V)",
+        "motion": "shear",
+        "mass_kda": 22.513967999999995,
+        "ca_rmsd": 4.069109101826938,
+        "radius": 41.524344528438164,
+        "box_size": 128,
+        "d2_known_pose": 24.559484481811523,
+        "d2_crlb": 19.480947494506836,
+        "information": 3.9193592071533203,
+        "saturation": 0.9798398017883301,
+        "n_floor": 637.859375,
+        "n_marginal": 6989.59716796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015913441812957396,
+        "note": "P01854 60 kDa, dyndom, rotation 7.1 deg, chains B/B",
+        "d2_marginal": 0.39082592725753784,
+        "information_marginal": 0.35767441987991333,
+        "n_matched": 217,
+        "identity": 0.9861751152073732,
+        "shared_fraction": 0.6848655158570855,
+        "provenance": {
+          "accession": "P01854",
+          "canonical_mass_kda": 59.539,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.1
+        },
+        "d2_floor": 24.559484481811523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Immunoglobulin heavy constant epsilon (1F6A/1O0V) | 23 | shear | 4.07 | 24.6 | 0.016 | 0.98 | 638 | 6.99e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Immunoglobulin heavy constant epsilon (1F6A/1O0V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

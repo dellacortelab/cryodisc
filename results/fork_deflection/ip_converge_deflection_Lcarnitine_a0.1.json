@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "L-carnitine CoA-transferase (EC 2.8.3. (1XK7/1XK6)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384,
+      64128
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.1,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/ip_converge_deflection_Lcarnitine_a0.1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "L-carnitine CoA-transferase (EC 2.8.3. (1XK7/1XK6)",
+      "box_size": 128,
+      "rmsd": 0.2781415851130367,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.00021592371922452003,
+          "d2": 0.0002159350406145677,
+          "d2_err": 0.0016911611892282963,
+          "n_for_error": 11578164.0,
+          "seconds": 15.4
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.00039272726280614734,
+          "d2": 0.0003927638754248619,
+          "d2_err": 0.0018880927236750722,
+          "n_for_error": 6365741.5,
+          "seconds": 27.1
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.0003028583596460521,
+          "d2": 0.0003028808278031647,
+          "d2_err": 0.0017907707951962948,
+          "n_for_error": 8254684.0,
+          "seconds": 107.2
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.00035401375498622656,
+          "d2": 0.0003540426550898701,
+          "d2_err": 0.001847106497734785,
+          "n_for_error": 7061872.5,
+          "seconds": 413.9
+        },
+        {
+          "k_requested": 64128,
+          "k": 64128,
+          "information": 0.0003731588367372751,
+          "d2": 0.00037319454713724554,
+          "d2_err": 0.0018676398321986198,
+          "n_for_error": 6699560.5,
+          "seconds": 787.1
+        }
+      ]
+    }
+  ]
+}

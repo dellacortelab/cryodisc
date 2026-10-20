@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:02:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/06951814f1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cyclin-dependent kinase 6 (EC 2.7.11.2 (4TTH/1G3N)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cyclin-dependent kinase 6 (EC 2.7.11.2 (4TTH/1G3N)",
+        "motion": "dfg_flip",
+        "mass_kda": 25.582285999999996,
+        "ca_rmsd": 7.252959041527106,
+        "radius": 35.95939637493345,
+        "box_size": 128,
+        "d2_known_pose": 70.62541198730469,
+        "d2_crlb": 59.795406341552734,
+        "information": 3.999835729598999,
+        "saturation": 0.9999589323997498,
+        "n_floor": 625.0256958007812,
+        "n_marginal": 2826.970947265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01560757402441003,
+        "note": "Q00534 37 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains B/E",
+        "d2_marginal": 1.1022913455963135,
+        "information_marginal": 0.8843388557434082,
+        "n_matched": 253,
+        "identity": 1.0,
+        "shared_fraction": 0.8312686885946177,
+        "provenance": {
+          "accession": "Q00534",
+          "canonical_mass_kda": 36.938,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 70.62541198730469
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cyclin-dependent kinase 6 (EC 2.7.11.2 (4TTH/1G3N) | 26 | dfg_flip | 7.25 | 70.6 | 0.016 | 1.00* | 625 | 2.83e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cyclin-dependent kinase 6 (EC 2.7.11.2 (4TTH/1G3N)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

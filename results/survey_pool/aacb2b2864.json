@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:56:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/aacb2b2864.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional regulator, IclR family (2G7U/2G7U)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional regulator, IclR family (2G7U/2G7U)",
+        "motion": "no_contact",
+        "mass_kda": 23.364273999999998,
+        "ca_rmsd": 0.8627660517983914,
+        "radius": 41.4829141921249,
+        "box_size": 128,
+        "d2_known_pose": 3.9125595092773438,
+        "d2_crlb": 3.56433367729187,
+        "information": 2.1736621856689453,
+        "saturation": 0.5434155464172363,
+        "n_floor": 1150.1328125,
+        "n_marginal": 73674.796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008746573413463507,
+        "note": "Q0SE57 27 kDa, dyndom, rotation 6.4 deg, chains A/C",
+        "d2_marginal": 0.03422148898243904,
+        "information_marginal": 0.03393290936946869,
+        "n_matched": 243,
+        "identity": 1.0,
+        "shared_fraction": 0.9704918032786886,
+        "provenance": {
+          "accession": "Q0SE57",
+          "canonical_mass_kda": 27.001,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.4
+        },
+        "d2_floor": 3.9125595092773438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional regulator, IclR family (2G7U/2G7U) | 23 | no_contact | 0.86 | 3.91 | 0.009 | 0.54 | 1.15e+03 | 7.37e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional regulator, IclR family (2G7U/2G7U)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

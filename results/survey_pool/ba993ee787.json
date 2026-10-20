@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:41:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ba993ee787.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Multidrug resistance operon repressor (1LNW/1LNW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Multidrug resistance operon repressor (1LNW/1LNW)",
+        "motion": "mixed",
+        "mass_kda": 13.832600999999997,
+        "ca_rmsd": 2.305841370236999,
+        "radius": 34.227599900211644,
+        "box_size": 128,
+        "d2_known_pose": 11.685880661010742,
+        "d2_crlb": 9.93336009979248,
+        "information": 3.4784913063049316,
+        "saturation": 0.8696228265762329,
+        "n_floor": 718.702392578125,
+        "n_marginal": 22691.9296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009689856361030215,
+        "note": "P52003 17 kDa, dyndom, rotation 18.2 deg, chains B/A",
+        "d2_marginal": 0.1132345050573349,
+        "information_marginal": 0.11017133295536041,
+        "n_matched": 130,
+        "identity": 1.0,
+        "shared_fraction": 0.948509485094851,
+        "provenance": {
+          "accession": "P52003",
+          "canonical_mass_kda": 16.965,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 18.2
+        },
+        "d2_floor": 11.685880661010742
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Multidrug resistance operon repressor (1LNW/1LNW) | 14 | mixed | 2.31 | 11.7 | 0.010 | 0.87 | 719 | 2.27e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Multidrug resistance operon repressor (1LNW/1LNW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

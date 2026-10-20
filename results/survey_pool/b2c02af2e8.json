@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:49:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b2c02af2e8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Angiotensin-converting enzyme 2 (EC 3. (1R4L/1R42)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Angiotensin-converting enzyme 2 (EC 3. (1R4L/1R42)",
+        "motion": "unclassified",
+        "mass_kda": 64.130592,
+        "ca_rmsd": 3.641805029020347,
+        "radius": 47.24929754424531,
+        "box_size": 128,
+        "d2_known_pose": 174.79551696777344,
+        "d2_crlb": 165.37744140625,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "Q9BYF1 92 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/A",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 597,
+        "identity": 1.0,
+        "shared_fraction": 0.9963046602340382,
+        "provenance": {
+          "accession": "Q9BYF1",
+          "canonical_mass_kda": 92.463,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 174.79551696777344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Angiotensin-converting enzyme 2 (EC 3. (1R4L/1R42) | 64 | unclassified | 3.64 | 175 | -- | 1.00* | 625 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Angiotensin-converting enzyme 2 (EC 3. (1R4L/1R42)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Out of memory while trying to allocate 1.14GiB. [executable_name='jit__simulate'] [tf-allocator-allocation-error='']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

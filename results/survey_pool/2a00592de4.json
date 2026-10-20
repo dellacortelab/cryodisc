@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:46:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2a00592de4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Focal adhesion kinase 1 (FADK 1) (EC 2 (6YVY/6TY4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Focal adhesion kinase 1 (FADK 1) (EC 2 (6YVY/6TY4)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 28.138216999999997,
+        "ca_rmsd": 1.4510318597596197,
+        "radius": 33.769694924884305,
+        "box_size": 128,
+        "d2_known_pose": 15.016454696655273,
+        "d2_crlb": 14.576871871948242,
+        "information": 3.6829638481140137,
+        "saturation": 0.9207409620285034,
+        "n_floor": 678.8011474609375,
+        "n_marginal": 8675.18359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020612582000742542,
+        "note": "Q00944 119 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BLAminus, chains A/B",
+        "d2_marginal": 0.3095279037952423,
+        "information_marginal": 0.28817832469940186,
+        "n_matched": 265,
+        "identity": 0.9811320754716981,
+        "shared_fraction": 0.4227173264372389,
+        "provenance": {
+          "accession": "Q00944",
+          "canonical_mass_kda": 119.207,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 15.016454696655273
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Focal adhesion kinase 1 (FADK 1) (EC 2 (6YVY/6TY4) | 28 | dihedral_cluster | 1.45 | 15 | 0.021 | 0.92 | 679 | 8.68e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Focal adhesion kinase 1 (FADK 1) (EC 2 (6YVY/6TY4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

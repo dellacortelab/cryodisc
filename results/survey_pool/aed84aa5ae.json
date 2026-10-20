@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:15:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/aed84aa5ae.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Acetate kinase (EC 2.7.2.1) (Acetokina (1TUU/1G99)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Acetate kinase (EC 2.7.2.1) (Acetokina (1TUU/1G99)",
+        "motion": "mixed",
+        "mass_kda": 40.10515899999999,
+        "ca_rmsd": 3.4621842075100036,
+        "radius": 38.89218416504535,
+        "box_size": 128,
+        "d2_known_pose": 67.18026733398438,
+        "d2_crlb": 62.20918273925781,
+        "information": 3.999741554260254,
+        "saturation": 0.9999353885650635,
+        "n_floor": 625.0404052734375,
+        "n_marginal": 2589.17138671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018291222798670643,
+        "note": "P38502 44 kDa, dyndom, rotation 28.1 deg, chains A/B",
+        "d2_marginal": 1.2288092374801636,
+        "information_marginal": 0.9655598998069763,
+        "n_matched": 398,
+        "identity": 1.0,
+        "shared_fraction": 0.9967083607636603,
+        "provenance": {
+          "accession": "P38502",
+          "canonical_mass_kda": 44.337,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 28.1
+        },
+        "d2_floor": 67.18026733398438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Acetate kinase (EC 2.7.2.1) (Acetokina (1TUU/1G99) | 40 | mixed | 3.46 | 67.2 | 0.018 | 1.00* | 625 | 2.59e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Acetate kinase (EC 2.7.2.1) (Acetokina (1TUU/1G99)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

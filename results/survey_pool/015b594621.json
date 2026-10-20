@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:35:20+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/015b594621.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cyclic nucleotide-gated potassium chan (1U12/1VP6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cyclic nucleotide-gated potassium chan (1U12/1VP6)",
+        "motion": "unclassified",
+        "mass_kda": 12.141701,
+        "ca_rmsd": 4.511778151099364,
+        "radius": 24.939113829323343,
+        "box_size": 128,
+        "d2_known_pose": 26.16769027709961,
+        "d2_crlb": 22.454254150390625,
+        "information": 3.935619831085205,
+        "saturation": 0.9839049577713013,
+        "n_floor": 635.2239990234375,
+        "n_marginal": 4340.0693359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02539072892441553,
+        "note": "Q98GN8 38 kDa, dyndom, rotation 47.7 deg, chains B/A",
+        "d2_marginal": 0.6644167304039001,
+        "information_marginal": 0.5760276317596436,
+        "n_matched": 127,
+        "identity": 1.0,
+        "shared_fraction": 0.9227683049147443,
+        "provenance": {
+          "accession": "Q98GN8",
+          "canonical_mass_kda": 37.735,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 47.7
+        },
+        "d2_floor": 26.16769027709961
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cyclic nucleotide-gated potassium chan (1U12/1VP6) | 12 | unclassified | 4.51 | 26.2 | 0.025 | 0.98 | 635 | 4.34e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cyclic nucleotide-gated potassium chan (1U12/1VP6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

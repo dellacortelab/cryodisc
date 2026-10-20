@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:56:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1393a34cc8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Integron integrase (Site-specific reco (2A3V/2A3V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Integron integrase (Site-specific reco (2A3V/2A3V)",
+        "motion": "hinge",
+        "mass_kda": 34.429840999999996,
+        "ca_rmsd": 4.984526288898192,
+        "radius": 53.5978568417875,
+        "box_size": 128,
+        "d2_known_pose": 100.45230102539062,
+        "d2_crlb": 90.61126708984375,
+        "information": 3.9999964237213135,
+        "saturation": 0.9999991059303284,
+        "n_floor": 625.0005493164062,
+        "n_marginal": 4683.6953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00606492472667722,
+        "note": "O68847 38 kDa, dyndom, rotation 25.3 deg, chains B/C",
+        "d2_marginal": 0.6092356443405151,
+        "information_marginal": 0.5337665677070618,
+        "n_matched": 317,
+        "identity": 1.0,
+        "shared_fraction": 0.9912977676882331,
+        "provenance": {
+          "accession": "O68847",
+          "canonical_mass_kda": 37.505,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 25.3
+        },
+        "d2_floor": 100.45230102539062
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Integron integrase (Site-specific reco (2A3V/2A3V) | 34 | hinge | 4.98 | 100 | 0.006 | 1.00* | 625 | 4.68e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Integron integrase (Site-specific reco (2A3V/2A3V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

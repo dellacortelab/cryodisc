@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:45:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9ef01059b4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Complement decay-accelerating factor ( (1OK3/1OK3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Complement decay-accelerating factor ( (1OK3/1OK3)",
+        "motion": "unclassified",
+        "mass_kda": 25.984395999999997,
+        "ca_rmsd": 1.6030846175043538,
+        "radius": 76.4786124917793,
+        "box_size": 128,
+        "d2_known_pose": 15.638895988464355,
+        "d2_crlb": 13.869211196899414,
+        "information": 3.7106974124908447,
+        "saturation": 0.9276743531227112,
+        "n_floor": 673.7278442382812,
+        "n_marginal": 35099.13671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004636039913935183,
+        "note": "P08174 41 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains B/A",
+        "d2_marginal": 0.07250254601240158,
+        "information_marginal": 0.0712268278002739,
+        "n_matched": 252,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P08174",
+          "canonical_mass_kda": 41.4,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 15.638895988464355
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Complement decay-accelerating factor ( (1OK3/1OK3) | 26 | unclassified | 1.60 | 15.6 | 0.005 | 0.93 | 674 | 3.51e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Complement decay-accelerating factor ( (1OK3/1OK3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

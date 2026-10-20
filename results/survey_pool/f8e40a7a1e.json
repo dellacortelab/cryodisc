@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:32:01+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f8e40a7a1e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "D-3-phosphoglycerate dehydrogenase (PG (1SC6/1SC6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "D-3-phosphoglycerate dehydrogenase (PG (1SC6/1SC6)",
+        "motion": "no_contact",
+        "mass_kda": 36.922498999999995,
+        "ca_rmsd": 2.297645322760145,
+        "radius": 46.183917082587996,
+        "box_size": 128,
+        "d2_known_pose": 29.63287353515625,
+        "d2_crlb": 25.627294540405273,
+        "information": 3.9602198600769043,
+        "saturation": 0.9900549650192261,
+        "n_floor": 631.2781372070312,
+        "n_marginal": 13450.7958984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0065685954573073396,
+        "note": "P0A9T0 44 kDa, dyndom, rotation 16.5 deg, chains B/D",
+        "d2_marginal": 0.19464635848999023,
+        "information_marginal": 0.18586261570453644,
+        "n_matched": 372,
+        "identity": 1.0,
+        "shared_fraction": 0.9880576044959607,
+        "provenance": {
+          "accession": "P0A9T0",
+          "canonical_mass_kda": 44.176,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.5
+        },
+        "d2_floor": 29.63287353515625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| D-3-phosphoglycerate dehydrogenase (PG (1SC6/1SC6) | 37 | no_contact | 2.30 | 29.6 | 0.007 | 0.99* | 631 | 1.35e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "D-3-phosphoglycerate dehydrogenase (PG (1SC6/1SC6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:27:49+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/678b1dc5a7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HTH-type transcriptional regulator Mnt (2HYG/2EV6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HTH-type transcriptional regulator Mnt (2HYG/2EV6)",
+        "motion": "no_contact",
+        "mass_kda": 14.414939999999998,
+        "ca_rmsd": 2.254867386240754,
+        "radius": 34.25032046695146,
+        "box_size": 128,
+        "d2_known_pose": 15.165456771850586,
+        "d2_crlb": 13.719130516052246,
+        "information": 3.689847230911255,
+        "saturation": 0.9224618077278137,
+        "n_floor": 677.5348510742188,
+        "n_marginal": 6294.5263671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.028897310653400354,
+        "note": "P54512 17 kDa, dyndom, rotation 22.2 deg, chains D/B",
+        "d2_marginal": 0.4382409155368805,
+        "information_marginal": 0.3971704840660095,
+        "n_matched": 132,
+        "identity": 1.0,
+        "shared_fraction": 0.9605263157894737,
+        "provenance": {
+          "accession": "P54512",
+          "canonical_mass_kda": 16.759,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 22.2
+        },
+        "d2_floor": 15.165456771850586
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HTH-type transcriptional regulator Mnt (2HYG/2EV6) | 14 | no_contact | 2.25 | 15.2 | 0.029 | 0.92 | 678 | 6.29e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HTH-type transcriptional regulator Mnt (2HYG/2EV6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

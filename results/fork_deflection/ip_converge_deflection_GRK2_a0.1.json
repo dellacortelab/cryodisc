@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384,
+      64128
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.1,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/ip_converge_deflection_GRK2_a0.1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)",
+      "box_size": 128,
+      "rmsd": 1.6252675612411365,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.006149197928607464,
+          "d2": 0.006158638279885054,
+          "d2_err": 0.005158892832696438,
+          "n_for_error": 406557.09375,
+          "seconds": 15.2
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.008690940216183662,
+          "d2": 0.008709804154932499,
+          "d2_err": 0.006072479300200939,
+          "n_for_error": 287655.875,
+          "seconds": 26.5
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.0065842121839523315,
+          "d2": 0.006595047190785408,
+          "d2_err": 0.005327665247023106,
+          "n_for_error": 379696.15625,
+          "seconds": 105.9
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.007255245931446552,
+          "d2": 0.00726838456466794,
+          "d2_err": 0.005575783085078001,
+          "n_for_error": 344578.28125,
+          "seconds": 412.5
+        },
+        {
+          "k_requested": 64128,
+          "k": 64128,
+          "information": 0.007108254358172417,
+          "d2": 0.007120891474187374,
+          "d2_err": 0.005522544030100107,
+          "n_for_error": 351703.8125,
+          "seconds": 785.2
+        }
+      ]
+    }
+  ]
+}

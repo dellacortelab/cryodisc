@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:47:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/74f9a61946.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Bifunctional polymyxin resistance prot (1Z7E/1Z7E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Bifunctional polymyxin resistance prot (1Z7E/1Z7E)",
+        "motion": "no_contact",
+        "mass_kda": 66.05972299999999,
+        "ca_rmsd": 3.6971538822192853,
+        "radius": 54.54922722179164,
+        "box_size": 128,
+        "d2_known_pose": 107.9501953125,
+        "d2_crlb": 84.88603210449219,
+        "information": 3.9999985694885254,
+        "saturation": 0.9999996423721313,
+        "n_floor": 625.000244140625,
+        "n_marginal": 7438.78125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003383705941916489,
+        "note": "P77398 74 kDa, dyndom, rotation 18.0 deg, chains F/B",
+        "d2_marginal": 0.3652717173099518,
+        "information_marginal": 0.336076557636261,
+        "n_matched": 639,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P77398",
+          "canonical_mass_kda": 74.289,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 18.0
+        },
+        "d2_floor": 107.9501953125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Bifunctional polymyxin resistance prot (1Z7E/1Z7E) | 66 | no_contact | 3.70 | 108 | 0.003 | 1.00* | 625 | 7.44e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Bifunctional polymyxin resistance prot (1Z7E/1Z7E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

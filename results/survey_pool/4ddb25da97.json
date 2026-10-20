@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:42:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4ddb25da97.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA repair protein XRCC4 (hXRCC4) (X-r (1FU1/1IK9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA repair protein XRCC4 (hXRCC4) (X-r (1FU1/1IK9)",
+        "motion": "no_contact",
+        "mass_kda": 18.123123,
+        "ca_rmsd": 2.4125444820563278,
+        "radius": 71.78846569108843,
+        "box_size": 128,
+        "d2_known_pose": 24.142196655273438,
+        "d2_crlb": 19.5108699798584,
+        "information": 3.9144887924194336,
+        "saturation": 0.9786221981048584,
+        "n_floor": 638.6530151367188,
+        "n_marginal": 9240.0908203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01198491459268618,
+        "note": "Q13426 38 kDa, dyndom, rotation 23.5 deg, chains A/B",
+        "d2_marginal": 0.28934216499328613,
+        "information_marginal": 0.2705601155757904,
+        "n_matched": 168,
+        "identity": 0.9940476190476191,
+        "shared_fraction": 0.8648648648648649,
+        "provenance": {
+          "accession": "Q13426",
+          "canonical_mass_kda": 38.287,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 23.5
+        },
+        "d2_floor": 24.142196655273438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA repair protein XRCC4 (hXRCC4) (X-r (1FU1/1IK9) | 18 | no_contact | 2.41 | 24.1 | 0.012 | 0.98 | 639 | 9.24e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA repair protein XRCC4 (hXRCC4) (X-r (1FU1/1IK9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

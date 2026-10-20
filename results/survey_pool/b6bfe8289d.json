@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:19:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b6bfe8289d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Diaminopimelate epimerase (DAP epimera (2GKE/1GQZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Diaminopimelate epimerase (DAP epimera (2GKE/1GQZ)",
+        "motion": "hinge",
+        "mass_kda": 27.629540999999996,
+        "ca_rmsd": 2.4530516140397807,
+        "radius": 32.19827480698773,
+        "box_size": 128,
+        "d2_known_pose": 22.9849910736084,
+        "d2_crlb": 18.59729766845703,
+        "information": 3.8993420600891113,
+        "saturation": 0.9748355150222778,
+        "n_floor": 641.1338500976562,
+        "n_marginal": 5057.3505859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02430839914179651,
+        "note": "P44859 30 kDa, dyndom, rotation 18.1 deg, chains A/A",
+        "d2_marginal": 0.5587283372879028,
+        "information_marginal": 0.4943299889564514,
+        "n_matched": 274,
+        "identity": 1.0,
+        "shared_fraction": 0.9816211121583411,
+        "provenance": {
+          "accession": "P44859",
+          "canonical_mass_kda": 30.249,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 18.1
+        },
+        "d2_floor": 22.9849910736084
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Diaminopimelate epimerase (DAP epimera (2GKE/1GQZ) | 28 | hinge | 2.45 | 23 | 0.024 | 0.97 | 641 | 5.06e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Diaminopimelate epimerase (DAP epimera (2GKE/1GQZ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

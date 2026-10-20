@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/survey_band_share.py",
+  "commit": "13d2d581",
+  "written_at": "2026-10-04T06:10:56+00:00",
+  "arguments": {
+    "spectrum": "results/difference_spectrum.json",
+    "out": "results/survey_band_share.json",
+    "limit_resolution": 5.0,
+    "top_n": 10
+  },
+  "result": {
+    "limit_resolution_a": 5.0,
+    "limit_frequency_inv_a": 0.2,
+    "n_pairs": 1879,
+    "units": "every *_share_* field is a percent of d2_known_pose",
+    "median_share_above_5A_pct": 4.2779711160629335,
+    "mean_share_above_5A_pct": 4.313122946143172,
+    "p90_share_above_5A_pct": 7.322800810726305,
+    "p99_share_above_5A_pct": 9.279606649435701,
+    "max_share_above_5A_pct": 11.066562270120526,
+    "d2_weighted_share_above_5A_pct": 2.0196768365877045,
+    "high_d2_set": "the 10 highest d2_known_pose pairs",
+    "high_d2_set_size": 10,
+    "high_d2_min_d2": 562.1432296252628,
+    "high_d2_share_above_5A_pct": 0.8914175048927822,
+    "high_d2_median_share_above_5A_pct": 0.502719880343903,
+    "operating_point": {
+      "pixel_size": 2.0,
+      "box_size": 128,
+      "dose": 40.0,
+      "rmsf": 0.5,
+      "defocus_a": [
+        15000.0
+      ],
+      "poses": 96,
+      "nyquist_inv_a": 0.25
+    },
+    "source": "results/difference_spectrum.json",
+    "source_driver": "experiments/benchmark/difference_spectrum.py",
+    "source_commit": "495500c2"
+  }
+}

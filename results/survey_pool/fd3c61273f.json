@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:46:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fd3c61273f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Regulatory protein SWI6 (Cell-cycle bo (1SW6/1SW6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Regulatory protein SWI6 (Cell-cycle bo (1SW6/1SW6)",
+        "motion": "mixed",
+        "mass_kda": 25.910294999999994,
+        "ca_rmsd": 1.6290026072201942,
+        "radius": 35.30561583655371,
+        "box_size": 128,
+        "d2_known_pose": 10.814643859863281,
+        "d2_crlb": 9.95124340057373,
+        "information": 3.4044079780578613,
+        "saturation": 0.8511019945144653,
+        "n_floor": 734.3421020507812,
+        "n_marginal": 26791.962890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008831121947480312,
+        "note": "P09959 91 kDa, dyndom, rotation 17.4 deg, chains B/A",
+        "d2_marginal": 0.09550543874502182,
+        "information_marginal": 0.09331156313419342,
+        "n_matched": 253,
+        "identity": 1.0,
+        "shared_fraction": 0.9944190766108574,
+        "provenance": {
+          "accession": "P09959",
+          "canonical_mass_kda": 90.56,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 17.4
+        },
+        "d2_floor": 10.814643859863281
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Regulatory protein SWI6 (Cell-cycle bo (1SW6/1SW6) | 26 | mixed | 1.63 | 10.8 | 0.009 | 0.85 | 734 | 2.68e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Regulatory protein SWI6 (Cell-cycle bo (1SW6/1SW6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

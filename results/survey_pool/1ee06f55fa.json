@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:29:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1ee06f55fa.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cyclin-G-associated kinase (EC 2.7.11. (4C59/4Y8D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cyclin-G-associated kinase (EC 2.7.11. (4C59/4Y8D)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 26.650954,
+        "ca_rmsd": 0.6435572338344221,
+        "radius": 35.859959835965405,
+        "box_size": 128,
+        "d2_known_pose": 2.644073486328125,
+        "d2_crlb": 2.363722324371338,
+        "information": 1.7009263038635254,
+        "saturation": 0.42523157596588135,
+        "n_floor": 1469.7874755859375,
+        "n_marginal": 382723.625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0024745121918656257,
+        "note": "O14976 143 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BLAminus, chains A/B",
+        "d2_marginal": 0.0065427920781075954,
+        "information_marginal": 0.006532129365950823,
+        "n_matched": 262,
+        "identity": 1.0,
+        "shared_fraction": 0.9786614936954413,
+        "provenance": {
+          "accession": "O14976",
+          "canonical_mass_kda": 143.191,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 2.644073486328125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cyclin-G-associated kinase (EC 2.7.11. (4C59/4Y8D) | 27 | dihedral_cluster | 0.64 | 2.64 | 0.002 | 0.43 | 1.47e+03 | 3.83e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cyclin-G-associated kinase (EC 2.7.11. (4C59/4Y8D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

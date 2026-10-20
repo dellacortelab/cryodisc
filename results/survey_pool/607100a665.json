@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:11:30+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/607100a665.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Archaeal actin homolog (2FSN/2FSJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Archaeal actin homolog (2FSN/2FSJ)",
+        "motion": "shear",
+        "mass_kda": 27.140489,
+        "ca_rmsd": 1.2147092183810917,
+        "radius": 35.73864602235907,
+        "box_size": 128,
+        "d2_known_pose": 7.688190460205078,
+        "d2_crlb": 6.865276336669922,
+        "information": 3.028726100921631,
+        "saturation": 0.7571815252304077,
+        "n_floor": 825.4295654296875,
+        "n_marginal": 54033.78125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006087836529194016,
+        "note": "Q9HKL4 35 kDa, dyndom, rotation 6.0 deg, chains B/A",
+        "d2_marginal": 0.04680444672703743,
+        "information_marginal": 0.04626735299825668,
+        "n_matched": 306,
+        "identity": 1.0,
+        "shared_fraction": 0.8875053671103478,
+        "provenance": {
+          "accession": "Q9HKL4",
+          "canonical_mass_kda": 34.88,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.0
+        },
+        "d2_floor": 7.688190460205078
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Archaeal actin homolog (2FSN/2FSJ) | 27 | shear | 1.21 | 7.69 | 0.006 | 0.76 | 825 | 5.4e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Archaeal actin homolog (2FSN/2FSJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

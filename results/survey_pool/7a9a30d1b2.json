@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:11:41+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7a9a30d1b2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "3-phosphoshikimate 1-carboxyvinyltrans (1RF6/1RF5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "3-phosphoshikimate 1-carboxyvinyltrans (1RF6/1RF5)",
+        "motion": "hinge",
+        "mass_kda": 42.46440299999999,
+        "ca_rmsd": 3.601174916042853,
+        "radius": 39.72681378946946,
+        "box_size": 128,
+        "d2_known_pose": 58.20394515991211,
+        "d2_crlb": 52.99054718017578,
+        "information": 3.999155044555664,
+        "saturation": 0.999788761138916,
+        "n_floor": 625.132080078125,
+        "n_marginal": 3326.939208984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015559769083908803,
+        "note": "Q9S400 46 kDa, dyndom, rotation 27.1 deg, chains C/B",
+        "d2_marginal": 0.9056399464607239,
+        "information_marginal": 0.751441478729248,
+        "n_matched": 427,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9S400",
+          "canonical_mass_kda": 45.766,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 27.1
+        },
+        "d2_floor": 58.20394515991211
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 3-phosphoshikimate 1-carboxyvinyltrans (1RF6/1RF5) | 42 | hinge | 3.60 | 58.2 | 0.016 | 1.00* | 625 | 3.33e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "3-phosphoshikimate 1-carboxyvinyltrans (1RF6/1RF5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

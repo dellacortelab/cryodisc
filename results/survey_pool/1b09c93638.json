@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:29:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1b09c93638.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein ninB (1PC6/1PC6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein ninB (1PC6/1PC6)",
+        "motion": "hinge",
+        "mass_kda": 13.256321999999997,
+        "ca_rmsd": 6.643716425894492,
+        "radius": 36.03477209890259,
+        "box_size": 128,
+        "d2_known_pose": 60.98183822631836,
+        "d2_crlb": 50.13349914550781,
+        "information": 3.9994146823883057,
+        "saturation": 0.9998536705970764,
+        "n_floor": 625.0914916992188,
+        "n_marginal": 3607.8486328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013494852073276761,
+        "note": "P03765 17 kDa, dyndom, rotation 67.6 deg, chains A/B",
+        "d2_marginal": 0.8229408860206604,
+        "information_marginal": 0.6929337382316589,
+        "n_matched": 133,
+        "identity": 1.0,
+        "shared_fraction": 0.9254829806807727,
+        "provenance": {
+          "accession": "P03765",
+          "canonical_mass_kda": 16.648,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 67.6
+        },
+        "d2_floor": 60.98183822631836
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein ninB (1PC6/1PC6) | 13 | hinge | 6.64 | 61 | 0.013 | 1.00* | 625 | 3.61e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein ninB (1PC6/1PC6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

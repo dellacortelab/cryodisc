@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:18:07+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1c67a3f4dc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Macrophage mannose receptor 1 (MMR) (C (1EGG/1EGG)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Macrophage mannose receptor 1 (MMR) (C (1EGG/1EGG)",
+        "motion": "hinge",
+        "mass_kda": 14.241002999999997,
+        "ca_rmsd": 2.8062752528312727,
+        "radius": 39.109147993405834,
+        "box_size": 128,
+        "d2_known_pose": 18.406665802001953,
+        "d2_crlb": 15.306524276733398,
+        "information": 3.806574821472168,
+        "saturation": 0.951643705368042,
+        "n_floor": 656.7584228515625,
+        "n_marginal": 16834.353515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008371557485114079,
+        "note": "P22897 166 kDa, dyndom, rotation 40.7 deg, chains B/A",
+        "d2_marginal": 0.1540924608707428,
+        "information_marginal": 0.14850586652755737,
+        "n_matched": 132,
+        "identity": 1.0,
+        "shared_fraction": 0.9275862068965517,
+        "provenance": {
+          "accession": "P22897",
+          "canonical_mass_kda": 166.012,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 40.7
+        },
+        "d2_floor": 18.406665802001953
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Macrophage mannose receptor 1 (MMR) (C (1EGG/1EGG) | 14 | hinge | 2.81 | 18.4 | 0.008 | 0.95 | 657 | 1.68e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Macrophage mannose receptor 1 (MMR) (C (1EGG/1EGG)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

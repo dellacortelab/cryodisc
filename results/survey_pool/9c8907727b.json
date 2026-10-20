@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:58:17+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9c8907727b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Universal stress protein A-like protei (2GM3/2GM3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Universal stress protein A-like protei (2GM3/2GM3)",
+        "motion": "shear",
+        "mass_kda": 14.635233999999999,
+        "ca_rmsd": 1.3134619783536914,
+        "radius": 38.76515298641517,
+        "box_size": 128,
+        "d2_known_pose": 6.150242805480957,
+        "d2_crlb": 5.385596752166748,
+        "information": 2.752725839614868,
+        "saturation": 0.688181459903717,
+        "n_floor": 908.1907348632812,
+        "n_marginal": 18753.837890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022405756468796622,
+        "note": "Q8LGG8 20 kDa, dyndom, rotation 11.9 deg, chains B/C",
+        "d2_marginal": 0.13780084252357483,
+        "information_marginal": 0.13330604135990143,
+        "n_matched": 142,
+        "identity": 1.0,
+        "shared_fraction": 0.9437819420783645,
+        "provenance": {
+          "accession": "Q8LGG8",
+          "canonical_mass_kda": 19.568,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.9
+        },
+        "d2_floor": 6.150242805480957
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Universal stress protein A-like protei (2GM3/2GM3) | 15 | shear | 1.31 | 6.15 | 0.022 | 0.69 | 908 | 1.88e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Universal stress protein A-like protei (2GM3/2GM3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

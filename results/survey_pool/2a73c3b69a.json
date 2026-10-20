@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:50:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2a73c3b69a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Syntenin-1 (Melanoma differentiation-a (1OBZ/1W9E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Syntenin-1 (Melanoma differentiation-a (1OBZ/1W9E)",
+        "motion": "mixed",
+        "mass_kda": 16.422250999999996,
+        "ca_rmsd": 1.6168459359079677,
+        "radius": 32.936258797127685,
+        "box_size": 128,
+        "d2_known_pose": 7.897579193115234,
+        "d2_crlb": 7.512261390686035,
+        "information": 3.060709238052368,
+        "saturation": 0.765177309513092,
+        "n_floor": 816.8041381835938,
+        "n_marginal": 27037.869140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011980497427490083,
+        "note": "O00560 32 kDa, dyndom, rotation 15.9 deg, chains B/A",
+        "d2_marginal": 0.09461692720651627,
+        "information_marginal": 0.09246290475130081,
+        "n_matched": 163,
+        "identity": 1.0,
+        "shared_fraction": 0.9904153354632588,
+        "provenance": {
+          "accession": "O00560",
+          "canonical_mass_kda": 32.444,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.9
+        },
+        "d2_floor": 7.897579193115234
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Syntenin-1 (Melanoma differentiation-a (1OBZ/1W9E) | 16 | mixed | 1.62 | 7.9 | 0.012 | 0.77 | 817 | 2.7e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Syntenin-1 (Melanoma differentiation-a (1OBZ/1W9E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

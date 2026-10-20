@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:13:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/14de6dcd6e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "UPF0122 protein SPy_1201/M5005_Spy0916 (1S7O/1S7O)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "UPF0122 protein SPy_1201/M5005_Spy0916 (1S7O/1S7O)",
+        "motion": "no_contact",
+        "mass_kda": 11.691312999999997,
+        "ca_rmsd": 0.8425913932506774,
+        "radius": 34.58966153800185,
+        "box_size": 128,
+        "d2_known_pose": 2.7101707458496094,
+        "d2_crlb": 1.9398751258850098,
+        "information": 1.7291314601898193,
+        "saturation": 0.43228286504745483,
+        "n_floor": 1445.8126220703125,
+        "n_marginal": 50396.6328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01853170212003223,
+        "note": "P67253 14 kDa, dyndom, rotation 8.4 deg, chains B/C",
+        "d2_marginal": 0.050224076956510544,
+        "information_marginal": 0.04960648715496063,
+        "n_matched": 105,
+        "identity": 1.0,
+        "shared_fraction": 0.9692982456140351,
+        "provenance": {
+          "accession": "P67253",
+          "canonical_mass_kda": 13.59,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.4
+        },
+        "d2_floor": 2.7101707458496094
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| UPF0122 protein SPy_1201/M5005_Spy0916 (1S7O/1S7O) | 12 | no_contact | 0.84 | 2.71 | 0.019 | 0.43 | 1.45e+03 | 5.04e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "UPF0122 protein SPy_1201/M5005_Spy0916 (1S7O/1S7O)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

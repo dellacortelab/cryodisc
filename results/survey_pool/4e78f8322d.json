@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:45:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4e78f8322d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Antithrombin-III (ATIII) (Serpin C1) (2GD4/1T1F)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Antithrombin-III (ATIII) (Serpin C1) (2GD4/1T1F)",
+        "motion": "hinge",
+        "mass_kda": 41.102066,
+        "ca_rmsd": 4.863292090256266,
+        "radius": 48.53596947773555,
+        "box_size": 128,
+        "d2_known_pose": 50.2159423828125,
+        "d2_crlb": 44.75714111328125,
+        "information": 3.99755597114563,
+        "saturation": 0.9993889927864075,
+        "n_floor": 625.3821411132812,
+        "n_marginal": 6480.859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008452311182486101,
+        "note": "P01008 53 kDa, dyndom, rotation 89.0 deg, chains C/C",
+        "d2_marginal": 0.42444077134132385,
+        "information_marginal": 0.38575130701065063,
+        "n_matched": 416,
+        "identity": 0.9879807692307693,
+        "shared_fraction": 0.9578720787207872,
+        "provenance": {
+          "accession": "P01008",
+          "canonical_mass_kda": 52.602,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 89.0
+        },
+        "d2_floor": 50.2159423828125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Antithrombin-III (ATIII) (Serpin C1) (2GD4/1T1F) | 41 | hinge | 4.86 | 50.2 | 0.008 | 1.00* | 625 | 6.48e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Antithrombin-III (ATIII) (Serpin C1) (2GD4/1T1F)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

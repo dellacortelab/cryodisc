@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:29:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/44586c58f6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Maltose/maltodextrin-binding periplasm (3PUW/1FQC)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Maltose/maltodextrin-binding periplasm (3PUW/1FQC)",
+        "motion": "crypticpocket",
+        "mass_kda": 37.58736499999999,
+        "ca_rmsd": 3.0770724252222776,
+        "radius": 36.807206843671835,
+        "box_size": 128,
+        "d2_known_pose": 45.35908126831055,
+        "d2_crlb": 41.39440155029297,
+        "information": 3.99531626701355,
+        "saturation": 0.9988290667533875,
+        "n_floor": 625.7327270507812,
+        "n_marginal": 3736.7998046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.017412120369592447,
+        "note": "P0AEX9 43 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.7897977828979492,
+        "information_marginal": 0.6690216660499573,
+        "n_matched": 370,
+        "identity": 0.9972972972972973,
+        "shared_fraction": 0.9875733517431826,
+        "provenance": {
+          "accession": "P0AEX9",
+          "canonical_mass_kda": 43.388,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 45.35908126831055
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Maltose/maltodextrin-binding periplasm (3PUW/1FQC) | 38 | crypticpocket | 3.08 | 45.4 | 0.017 | 1.00* | 626 | 3.74e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Maltose/maltodextrin-binding periplasm (3PUW/1FQC)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

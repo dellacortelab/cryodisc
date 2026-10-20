@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:04:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a2ef79e821.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "5-aminolevulinate synthase (EC 2.3.1.3 (2BWN/2BWN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "5-aminolevulinate synthase (EC 2.3.1.3 (2BWN/2BWN)",
+        "motion": "hinge",
+        "mass_kda": 39.745045,
+        "ca_rmsd": 0.8384581442315612,
+        "radius": 39.8575226075195,
+        "box_size": 128,
+        "d2_known_pose": 8.311216354370117,
+        "d2_crlb": 8.00638198852539,
+        "information": 3.12052059173584,
+        "saturation": 0.78013014793396,
+        "n_floor": 801.1483764648438,
+        "n_marginal": 14454.2939453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02172430730175829,
+        "note": "P18079 44 kDa, dyndom, rotation 8.9 deg, chains B/E",
+        "d2_marginal": 0.18055541813373566,
+        "information_marginal": 0.17295899987220764,
+        "n_matched": 394,
+        "identity": 1.0,
+        "shared_fraction": 0.9875450671910849,
+        "provenance": {
+          "accession": "P18079",
+          "canonical_mass_kda": 44.374,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 8.9
+        },
+        "d2_floor": 8.311216354370117
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 5-aminolevulinate synthase (EC 2.3.1.3 (2BWN/2BWN) | 40 | hinge | 0.84 | 8.31 | 0.022 | 0.78 | 801 | 1.45e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "5-aminolevulinate synthase (EC 2.3.1.3 (2BWN/2BWN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

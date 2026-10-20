@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:23:27+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b7764967b6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Son of sevenless homolog 1 (SOS-1) (1NVV/1BKD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Son of sevenless homolog 1 (SOS-1) (1NVV/1BKD)",
+        "motion": "hinge",
+        "mass_kda": 48.122406,
+        "ca_rmsd": 1.779938742518188,
+        "radius": 53.99002883350685,
+        "box_size": 128,
+        "d2_known_pose": 23.09079360961914,
+        "d2_crlb": 22.137388229370117,
+        "information": 3.9008350372314453,
+        "saturation": 0.9752087593078613,
+        "n_floor": 640.888427734375,
+        "n_marginal": 18490.513671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006055619258429506,
+        "note": "Q07889 152 kDa, dyndom, rotation 14.5 deg, chains S/S",
+        "d2_marginal": 0.13982905447483063,
+        "information_marginal": 0.1352044641971588,
+        "n_matched": 439,
+        "identity": 1.0,
+        "shared_fraction": 0.9399383983572895,
+        "provenance": {
+          "accession": "Q07889",
+          "canonical_mass_kda": 152.464,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 14.5
+        },
+        "d2_floor": 23.09079360961914
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Son of sevenless homolog 1 (SOS-1) (1NVV/1BKD) | 48 | hinge | 1.78 | 23.1 | 0.006 | 0.98 | 641 | 1.85e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Son of sevenless homolog 1 (SOS-1) (1NVV/1BKD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

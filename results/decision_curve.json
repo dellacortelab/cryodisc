@@ -1,0 +1,632 @@
+{
+  "schema": 1,
+  "driver": "reproduction/experiments/benchmark/decision_curve.py",
+  "commit": "11c18045-dirty",
+  "written_at": "2026-10-17T02:19:04+00:00",
+  "arguments": {
+    "out": "results/decision_curve.json",
+    "spectrum": "results/difference_spectrum.json",
+    "survey": "results/eq1_mechanistic.json",
+    "d2": [
+      2.906
+    ],
+    "fraction": 0.5,
+    "spacings": [
+      2.0,
+      2.5,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      8.0,
+      10.0,
+      14.0,
+      20.0,
+      30.0,
+      40.0
+    ]
+  },
+  "result": {
+    "throughput": {
+      "central": 19800.0,
+      "low": 7000.0,
+      "high": 60000.0,
+      "span": 8.571428571428571,
+      "extremes_low": 1218.75,
+      "extremes_high": 210375.00000000003,
+      "extremes_span": 172.61538461538464,
+      "quadrature_span": 20.564019685057637,
+      "links": {
+        "micrographs/hour (Krios, AFIS)": {
+          "central": 400.0,
+          "low": 250.0,
+          "high": 750.0
+        },
+        "usable micrograph fraction": {
+          "central": 0.75,
+          "low": 0.65,
+          "high": 0.85
+        },
+        "particles picked per micrograph": {
+          "central": 200.0,
+          "low": 50.0,
+          "high": 600.0
+        },
+        "usable particle fraction": {
+          "central": 0.33,
+          "low": 0.15,
+          "high": 0.55
+        }
+      }
+    },
+    "published_checks": [
+      {
+        "delta_b": 54.0,
+        "spacing": 4.0,
+        "published": 5.4,
+        "derived": 5.405948925141167,
+        "ratio": 1.0011016528039196
+      },
+      {
+        "delta_b": 54.0,
+        "spacing": 3.0,
+        "published": 20.0,
+        "derived": 20.085536923187668,
+        "ratio": 1.0042768461593834
+      },
+      {
+        "delta_b": 12.8,
+        "spacing": 3.0,
+        "published": 2.0,
+        "derived": 2.0362525049494433,
+        "ratio": 1.0181262524747217
+      },
+      {
+        "delta_b": 12.8,
+        "spacing": 2.0,
+        "published": 4.9,
+        "derived": 4.953032424395115,
+        "ratio": 1.010822943754105
+      }
+    ],
+    "purchasing_power": [
+      {
+        "spacing": 2.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.0011708796207911744,
+        "gain": 2.3726385765220197,
+        "raw_gain_on_d2": 854.0587625261516,
+        "lost_to_counting": 0.9983909214267289,
+        "gain_low": 2.3631689862118175,
+        "gain_high": 2.3753656622060935,
+        "raw_low": 244.6919322642204,
+        "raw_high": 2980.9579870417283
+      },
+      {
+        "spacing": 2.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.20189651799465538,
+        "gain": 1.8596579872243113,
+        "raw_gain_on_d2": 4.953032424395116,
+        "lost_to_counting": 0.7825320172131262,
+        "gain_low": 1.8596579872243113,
+        "gain_high": 1.8596579872243113,
+        "raw_low": 4.953032424395116,
+        "raw_high": 4.953032424395116
+      },
+      {
+        "spacing": 2.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 13.804574186067095,
+        "gain": 0.11881434076328842,
+        "raw_gain_on_d2": 0.07243975703425147,
+        "lost_to_counting": 0.049996303831178146,
+        "gain_low": 0.11881434076328842,
+        "gain_high": 0.11881434076328842,
+        "raw_low": 0.07243975703425147,
+        "raw_high": 0.07243975703425147
+      },
+      {
+        "spacing": 2.5,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.013299883542443767,
+        "gain": 2.3337392157090644,
+        "raw_gain_on_d2": 75.18862829202311,
+        "lost_to_counting": 0.9820223227411731,
+        "gain_low": 2.2834298237726234,
+        "gain_high": 2.357073741712742,
+        "raw_low": 33.78442846384956,
+        "raw_high": 167.3353696211041
+      },
+      {
+        "spacing": 2.5,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.3591554413294046,
+        "gain": 1.5902835598427707,
+        "raw_gain_on_d2": 2.784309758188616,
+        "lost_to_counting": 0.669181005633231,
+        "gain_low": 1.5902835598427707,
+        "gain_high": 1.5902835598427707,
+        "raw_low": 2.784309758188616,
+        "raw_high": 2.784309758188616
+      },
+      {
+        "spacing": 2.5,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 5.3655559711219745,
+        "gain": 0.2834018610768,
+        "raw_gain_on_d2": 0.18637397603940997,
+        "lost_to_counting": 0.11925366468131782,
+        "gain_low": 0.2834018610768,
+        "gain_high": 0.2834018610768,
+        "raw_low": 0.18637397603940997,
+        "raw_high": 0.18637397603940997
+      },
+      {
+        "spacing": 3.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.049787068367863944,
+        "gain": 2.2240483840983587,
+        "raw_gain_on_d2": 20.085536923187668,
+        "lost_to_counting": 0.9358651323761701,
+        "gain_low": 2.122899908960357,
+        "gain_high": 2.286556594369735,
+        "raw_low": 11.524145517026938,
+        "raw_high": 35.00726304580836
+      },
+      {
+        "spacing": 3.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.4910982295021551,
+        "gain": 1.4179554126864344,
+        "raw_gain_on_d2": 2.0362525049494433,
+        "lost_to_counting": 0.5966664392219485,
+        "gain_low": 1.4179554126864344,
+        "gain_high": 1.4179554126864344,
+        "raw_low": 2.0362525049494433,
+        "raw_high": 2.0362525049494433
+      },
+      {
+        "spacing": 3.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 3.211270543153561,
+        "gain": 0.43844606512225404,
+        "raw_gain_on_d2": 0.3114032239145976,
+        "lost_to_counting": 0.18449525995442662,
+        "gain_low": 0.43844606512225404,
+        "gain_high": 0.43844606512225404,
+        "raw_low": 0.3114032239145976,
+        "raw_high": 0.3114032239145976
+      },
+      {
+        "spacing": 4.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.18498139990730428,
+        "gain": 1.8941692064978852,
+        "raw_gain_on_d2": 5.405948925141168,
+        "lost_to_counting": 0.7970541144052785,
+        "gain_low": 1.7629226954530457,
+        "gain_high": 2.0032830328275124,
+        "raw_low": 3.955076722920577,
+        "raw_high": 7.3890560989306495
+      },
+      {
+        "spacing": 4.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.6703200460356393,
+        "gain": 1.2360217802572608,
+        "raw_gain_on_d2": 1.4918246976412703,
+        "lost_to_counting": 0.5201099469197221,
+        "gain_low": 1.2360217802572608,
+        "gain_high": 1.2360217802572608,
+        "raw_low": 1.4918246976412703,
+        "raw_high": 1.4918246976412703
+      },
+      {
+        "spacing": 4.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.9275504501675447,
+        "gain": 0.6505151399405424,
+        "raw_gain_on_d2": 0.5187931656538893,
+        "lost_to_counting": 0.27373255092198323,
+        "gain_low": 0.6505151399405424,
+        "gain_high": 0.6505151399405424,
+        "raw_low": 0.5187931656538893,
+        "raw_high": 0.5187931656538893
+      },
+      {
+        "spacing": 5.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.3395955256449391,
+        "gain": 1.6194608817587395,
+        "raw_gain_on_d2": 2.944679551065524,
+        "lost_to_counting": 0.6814586334188962,
+        "gain_low": 1.512771270233208,
+        "gain_high": 1.7187017338441233,
+        "raw_low": 2.4108997064172097,
+        "raw_high": 3.5966397255692812
+      },
+      {
+        "spacing": 5.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.7741419687922484,
+        "gain": 1.1505076066808442,
+        "raw_gain_on_d2": 1.2917527279397039,
+        "lost_to_counting": 0.484126137418844,
+        "gain_low": 1.1505076066808442,
+        "gain_high": 1.1505076066808442,
+        "raw_low": 1.2917527279397039,
+        "raw_high": 1.2917527279397039
+      },
+      {
+        "spacing": 5.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.5219615556186337,
+        "gain": 0.767858358834593,
+        "raw_gain_on_d2": 0.6570468198150569,
+        "lost_to_counting": 0.3231098162139192,
+        "gain_low": 0.767858358834593,
+        "gain_high": 0.767858358834593,
+        "raw_low": 0.6570468198150569,
+        "raw_high": 0.6570468198150569
+      },
+      {
+        "spacing": 6.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.4723665527410147,
+        "gain": 1.440110240837595,
+        "raw_gain_on_d2": 2.117000016612675,
+        "lost_to_counting": 0.6059890471870912,
+        "gain_low": 1.360254816827654,
+        "gain_high": 1.5176523798193722,
+        "raw_low": 1.8424774590477093,
+        "raw_high": 2.4324254542872077
+      },
+      {
+        "spacing": 6.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.8371284313607636,
+        "gain": 1.104162578124456,
+        "raw_gain_on_d2": 1.1945598339964232,
+        "lost_to_counting": 0.46462445004773756,
+        "gain_low": 1.104162578124456,
+        "gain_high": 1.104162578124456,
+        "raw_low": 1.1945598339964232,
+        "raw_high": 1.1945598339964232
+      },
+      {
+        "spacing": 6.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.338656724353094,
+        "gain": 0.8360140320782784,
+        "raw_gain_on_d2": 0.7470175003104326,
+        "lost_to_counting": 0.3517892813813315,
+        "gain_low": 0.8360140320782784,
+        "gain_high": 0.8360140320782784,
+        "raw_low": 0.7470175003104326,
+        "raw_high": 0.7470175003104326
+      },
+      {
+        "spacing": 8.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.6558160112715016,
+        "gain": 1.2489908139108554,
+        "raw_gain_on_d2": 1.5248179105313266,
+        "lost_to_counting": 0.5255672321495723,
+        "gain_low": 1.202627866277865,
+        "gain_high": 1.2951690101202835,
+        "raw_low": 1.4102260349257107,
+        "raw_high": 1.6487212707001282
+      },
+      {
+        "spacing": 8.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.9048374180359595,
+        "gain": 1.0583340888965882,
+        "raw_gain_on_d2": 1.1051709180756477,
+        "lost_to_counting": 0.4453401190752234,
+        "gain_low": 1.0583340888965882,
+        "gain_high": 1.0583340888965882,
+        "raw_low": 1.1051709180756477,
+        "raw_high": 1.1051709180756477
+      },
+      {
+        "spacing": 8.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.1782879557886632,
+        "gain": 0.9064001033569931,
+        "raw_gain_on_d2": 0.848688977161504,
+        "lost_to_counting": 0.3814072835730403,
+        "gain_low": 0.9064001033569931,
+        "gain_high": 0.9064001033569931,
+        "raw_low": 0.848688977161504,
+        "raw_high": 0.848688977161504
+      },
+      {
+        "spacing": 10.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.7633794943368531,
+        "gain": 1.1588185531531643,
+        "raw_gain_on_d2": 1.3099644507332475,
+        "lost_to_counting": 0.4876233297803494,
+        "gain_low": 1.1291555095991483,
+        "gain_high": 1.1885183247551465,
+        "raw_low": 1.2460767305873808,
+        "raw_high": 1.377127764335957
+      },
+      {
+        "spacing": 10.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.9380049995307295,
+        "gain": 1.0372453074558194,
+        "raw_gain_on_d2": 1.0660923987615052,
+        "lost_to_counting": 0.4364660966502464,
+        "gain_low": 1.0372453074558194,
+        "gain_high": 1.0372453074558194,
+        "raw_low": 1.0660923987615052,
+        "raw_high": 1.0660923987615052
+      },
+      {
+        "spacing": 10.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.1107106103557052,
+        "gain": 0.9397398372665231,
+        "raw_gain_on_d2": 0.9003245225862656,
+        "lost_to_counting": 0.39543642732356166,
+        "gain_low": 0.9397398372665231,
+        "gain_high": 0.9397398372665231,
+        "raw_low": 0.9003245225862656,
+        "raw_high": 0.9003245225862656
+      },
+      {
+        "spacing": 14.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.8713120481618636,
+        "gain": 1.080540106069534,
+        "raw_gain_on_d2": 1.1476944478268365,
+        "lost_to_counting": 0.4546842670486646,
+        "gain_low": 1.0655267575173668,
+        "gain_high": 1.0955882041782696,
+        "raw_low": 1.1187868157060863,
+        "raw_high": 1.177349006156492
+      },
+      {
+        "spacing": 14.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.9678742944685111,
+        "gain": 1.0189602177254264,
+        "raw_gain_on_d2": 1.033192022678038,
+        "lost_to_counting": 0.4287718495091366,
+        "gain_low": 1.0189602177254264,
+        "gain_high": 1.0189602177254264,
+        "raw_low": 1.033192022678038,
+        "raw_high": 1.033192022678038
+      },
+      {
+        "spacing": 14.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.0550323485297126,
+        "gain": 0.9691095429307638,
+        "raw_gain_on_d2": 0.9478382358546585,
+        "lost_to_counting": 0.40779500894248377,
+        "gain_low": 0.9691095429307638,
+        "gain_high": 0.9691095429307638,
+        "raw_low": 0.9478382358546585,
+        "raw_high": 0.9478382358546585
+      },
+      {
+        "spacing": 20.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.9347277206160275,
+        "gain": 1.0392915905350817,
+        "raw_gain_on_d2": 1.0698302595979021,
+        "lost_to_counting": 0.4373271592955369,
+        "gain_low": 1.0319876432328041,
+        "gain_high": 1.0466069906386246,
+        "raw_low": 1.0565406146754943,
+        "raw_high": 1.0832870676749586
+      },
+      {
+        "spacing": 20.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.9841273200552851,
+        "gain": 1.0092788649863267,
+        "raw_gain_on_d2": 1.0161286854060947,
+        "lost_to_counting": 0.4246979990805452,
+        "gain_low": 1.0092788649863267,
+        "gain_high": 1.0092788649863267,
+        "raw_low": 1.0161286854060947,
+        "raw_high": 1.0161286854060947
+      },
+      {
+        "spacing": 20.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.026597565786388,
+        "gain": 0.9848282455549147,
+        "raw_gain_on_d2": 0.9740915362817816,
+        "lost_to_counting": 0.4144093370377341,
+        "gain_low": 0.9848282455549147,
+        "gain_high": 0.9848282455549147,
+        "raw_low": 0.9740915362817816,
+        "raw_high": 0.9740915362817816
+      },
+      {
+        "spacing": 30.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.9704455335485082,
+        "gain": 1.0174162728662777,
+        "raw_gain_on_d2": 1.030454533953517,
+        "lost_to_counting": 0.4281221675281486,
+        "gain_low": 1.0141851391436916,
+        "gain_high": 1.020649988134072,
+        "raw_low": 1.024745659211371,
+        "raw_high": 1.036195212929746
+      },
+      {
+        "spacing": 30.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.9929141130135738,
+        "gain": 1.0041211055165802,
+        "raw_gain_on_d2": 1.0071364551007538,
+        "lost_to_counting": 0.42252764735465176,
+        "gain_low": 1.0041211055165802,
+        "gain_high": 1.0041211055165802,
+        "raw_low": 1.0071364551007538,
+        "raw_high": 1.0071364551007538
+      },
+      {
+        "spacing": 30.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.0117349876564472,
+        "gain": 0.9932489060801446,
+        "raw_gain_on_d2": 0.9884011249985238,
+        "lost_to_counting": 0.41795269636096566,
+        "gain_low": 0.9932489060801446,
+        "gain_high": 0.9932489060801446,
+        "raw_low": 0.9884011249985238,
+        "raw_high": 0.9884011249985238
+      },
+      {
+        "spacing": 40.0,
+        "quality": "HexAuFoil",
+        "d2": 2.906,
+        "multiplier": 0.983266585276619,
+        "gain": 1.0097869585635129,
+        "raw_gain_on_d2": 1.0170181871060668,
+        "lost_to_counting": 0.4249118015617602,
+        "gain_low": 1.0079726465106806,
+        "gain_high": 1.0116021222743905,
+        "raw_low": 1.0138449660116937,
+        "raw_high": 1.0202013400267558
+      },
+      {
+        "spacing": 40.0,
+        "quality": "thinner ice (filtered)",
+        "d2": 2.906,
+        "multiplier": 0.9960079893439915,
+        "gain": 1.002317557120608,
+        "raw_gain_on_d2": 1.004008010677342,
+        "lost_to_counting": 0.421768725889477,
+        "gain_low": 1.002317557120608,
+        "gain_high": 1.002317557120608,
+        "raw_low": 1.004008010677342,
+        "raw_high": 1.004008010677342
+      },
+      {
+        "spacing": 40.0,
+        "quality": "+100 nm ice (unfiltered)",
+        "d2": 2.906,
+        "multiplier": 1.0065840803843882,
+        "gain": 0.996200945782776,
+        "raw_gain_on_d2": 0.9934589861764217,
+        "lost_to_counting": 0.4191948955176271,
+        "gain_low": 0.996200945782776,
+        "gain_high": 0.996200945782776,
+        "raw_low": 0.9934589861764217,
+        "raw_high": 0.9934589861764217
+      }
+    ],
+    "qualities": [
+      {
+        "name": "HexAuFoil",
+        "delta_b": -54.0,
+        "delta_b_err": 10.0,
+        "source": "Naydenova, Jia & Russo, Science 370:223 (2020); Delta-B = 54 +/- 10 A^2"
+      },
+      {
+        "name": "baseline",
+        "delta_b": 0.0,
+        "delta_b_err": 0.0,
+        "source": "whatever grid the measurement was made on"
+      },
+      {
+        "name": "thinner ice (filtered)",
+        "delta_b": -12.8,
+        "delta_b_err": 0.0,
+        "source": "Neselu et al., JSB:X 7:100085 (2023): 0.128 A^2/nm filtered, R^2 = 0.988; 100 nm thinner, e.g. 150 -> 50 nm"
+      },
+      {
+        "name": "+100 nm ice (unfiltered)",
+        "delta_b": 21.0,
+        "delta_b_err": 0.0,
+        "source": "the same source's unfiltered slope, 0.21 A^2/nm, R^2 = 0.94"
+      }
+    ],
+    "survey_integral": {
+      "n_pairs": 1699,
+      "spacing_median_a": 15.124666144794585,
+      "pixel_size_a": 2.0,
+      "d2": 2.906,
+      "fraction": 0.5,
+      "spectrum_source": "results/difference_spectrum.json",
+      "spectrum_commit": "495500c2",
+      "survey_source": "results/eq1_mechanistic.json",
+      "survey_commit": "11c18045-dirty",
+      "per_quality": [
+        {
+          "name": "HexAuFoil",
+          "delta_b": -54.0,
+          "raw_integrated_median": 1.3711536724285045,
+          "raw_integrated_mean": 1.364629405003358,
+          "gain_integrated_median": 1.185935399335695,
+          "gain_integrated_mean": 1.1800936244297568,
+          "raw_at_median_spacing": 1.1252777967246286,
+          "gain_at_median_spacing": 1.0689280933816627
+        },
+        {
+          "name": "thinner ice (filtered)",
+          "delta_b": -12.8,
+          "raw_integrated_median": 1.063927826163571,
+          "raw_integrated_mean": 1.0626930125321346,
+          "gain_integrated_median": 1.0360574512353686,
+          "gain_integrated_mean": 1.0352737552525504,
+          "raw_at_median_spacing": 1.0283725110356228,
+          "gain_at_median_spacing": 1.0162396576845307
+        },
+        {
+          "name": "+100 nm ice (unfiltered)",
+          "delta_b": 21.0,
+          "raw_integrated_median": 0.914462384892375,
+          "raw_integrated_mean": 0.9164873569936695,
+          "gain_integrated_median": 0.9486062070311505,
+          "gain_integrated_mean": 0.949672280983515,
+          "raw_at_median_spacing": 0.9551369644528903,
+          "gain_at_median_spacing": 0.9735150540004309
+        }
+      ]
+    }
+  }
+}

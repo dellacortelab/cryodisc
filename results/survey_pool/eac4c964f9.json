@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:18:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/eac4c964f9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chemotaxis protein CheA (EC 2.7.13.3) (2CH4/1B3Q)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chemotaxis protein CheA (EC 2.7.13.3) (2CH4/1B3Q)",
+        "motion": "mixed",
+        "mass_kda": 30.050693999999996,
+        "ca_rmsd": 2.602861628362908,
+        "radius": 41.73318016781889,
+        "box_size": 128,
+        "d2_known_pose": 38.004234313964844,
+        "d2_crlb": 34.92446517944336,
+        "information": 3.9873580932617188,
+        "saturation": 0.9968395233154297,
+        "n_floor": 626.9815673828125,
+        "n_marginal": 7116.88818359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010083863832940096,
+        "note": "Q56310 76 kDa, dyndom, rotation 10.2 deg, chains B/B",
+        "d2_marginal": 0.383229523897171,
+        "information_marginal": 0.35127711296081543,
+        "n_matched": 296,
+        "identity": 0.9831081081081081,
+        "shared_fraction": 0.7886740331491713,
+        "provenance": {
+          "accession": "Q56310",
+          "canonical_mass_kda": 75.556,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.2
+        },
+        "d2_floor": 38.004234313964844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chemotaxis protein CheA (EC 2.7.13.3) (2CH4/1B3Q) | 30 | mixed | 2.60 | 38 | 0.010 | 1.00* | 627 | 7.12e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chemotaxis protein CheA (EC 2.7.13.3) (2CH4/1B3Q)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

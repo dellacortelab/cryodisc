@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:04:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c91c0fd787.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Epidermal growth factor receptor kinas (1I0C/1I07)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Epidermal growth factor receptor kinas (1I0C/1I07)",
+        "motion": "hinge",
+        "mass_kda": 6.401992999999998,
+        "ca_rmsd": 13.598940637346633,
+        "radius": 30.010564382039533,
+        "box_size": 128,
+        "d2_known_pose": 66.42977905273438,
+        "d2_crlb": 57.94493865966797,
+        "information": 3.9997148513793945,
+        "saturation": 0.9999287128448486,
+        "n_floor": 625.0446166992188,
+        "n_marginal": 830.0354614257812,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.11408736983587157,
+        "note": "Q08509 92 kDa, dyndom, rotation 176.1 deg, chains A/B",
+        "d2_marginal": 7.578798770904541,
+        "information_marginal": 3.0119197368621826,
+        "n_matched": 59,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q08509",
+          "canonical_mass_kda": 91.737,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 176.1
+        },
+        "d2_floor": 66.42977905273438
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Epidermal growth factor receptor kinas (1I0C/1I07) | 6 | hinge | 13.60 | 66.4 | 0.114 | 1.00* | 625 | 830^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Epidermal growth factor receptor kinas (1I0C/1I07)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

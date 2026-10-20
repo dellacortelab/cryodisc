@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:28:41+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c6d1e72e88.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pyrophosphate--fructose 6-phosphate 1- (2F48/2F48)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pyrophosphate--fructose 6-phosphate 1- (2F48/2F48)",
+        "motion": "hinge",
+        "mass_kda": 57.324113,
+        "ca_rmsd": 3.4247875783479333,
+        "radius": 48.354172136269234,
+        "box_size": 128,
+        "d2_known_pose": 76.49270629882812,
+        "d2_crlb": 66.487060546875,
+        "information": 3.9999237060546875,
+        "saturation": 0.9999809265136719,
+        "n_floor": 625.011962890625,
+        "n_marginal": 5159.986328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007141614197941523,
+        "note": "P70826 62 kDa, dyndom, rotation 28.2 deg, chains B/A",
+        "d2_marginal": 0.5462813973426819,
+        "information_marginal": 0.48449739813804626,
+        "n_matched": 551,
+        "identity": 1.0,
+        "shared_fraction": 0.9972508591065292,
+        "provenance": {
+          "accession": "P70826",
+          "canonical_mass_kda": 62.443,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 28.2
+        },
+        "d2_floor": 76.49270629882812
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pyrophosphate--fructose 6-phosphate 1- (2F48/2F48) | 57 | hinge | 3.42 | 76.5 | 0.007 | 1.00* | 625 | 5.16e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pyrophosphate--fructose 6-phosphate 1- (2F48/2F48)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

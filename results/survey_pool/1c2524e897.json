@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:02:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1c2524e897.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein BNI1 (Pointed projection forma (1UX5/1Y64)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein BNI1 (Pointed projection forma (1UX5/1Y64)",
+        "motion": "no_contact",
+        "mass_kda": 43.931242999999995,
+        "ca_rmsd": 10.330397683285913,
+        "radius": 74.85860072725364,
+        "box_size": 128,
+        "d2_known_pose": 284.7349853515625,
+        "d2_crlb": 258.6980895996094,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 7618.7412109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0012500915960795464,
+        "note": "P41832 220 kDa, dyndom, rotation 106.7 deg, chains A/B",
+        "d2_marginal": 0.35594481229782104,
+        "information_marginal": 0.32813820242881775,
+        "n_matched": 411,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P41832",
+          "canonical_mass_kda": 219.673,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 106.7
+        },
+        "d2_floor": 284.7349853515625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein BNI1 (Pointed projection forma (1UX5/1Y64) | 44 | no_contact | 10.33 | 285 | 0.001 | 1.00* | 625 | 7.62e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein BNI1 (Pointed projection forma (1UX5/1Y64)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

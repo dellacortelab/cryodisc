@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:59:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fda037dd64.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase Nek7 ( (6S76/8WS1)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase Nek7 ( (6S76/8WS1)",
+        "motion": "dfg_flip",
+        "mass_kda": 24.127483,
+        "ca_rmsd": 2.961797181070554,
+        "radius": 41.21610056067609,
+        "box_size": 128,
+        "d2_known_pose": 22.5433406829834,
+        "d2_crlb": 20.853382110595703,
+        "information": 3.892857551574707,
+        "saturation": 0.9732143878936768,
+        "n_floor": 642.2017822265625,
+        "n_marginal": 10134.828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011632957082639159,
+        "note": "Q8TDX7 35 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains C/B",
+        "d2_marginal": 0.26224571466445923,
+        "information_marginal": 0.24667413532733917,
+        "n_matched": 264,
+        "identity": 0.9962121212121212,
+        "shared_fraction": 0.8347069597069597,
+        "provenance": {
+          "accession": "Q8TDX7",
+          "canonical_mass_kda": 34.551,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 22.5433406829834
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase Nek7 ( (6S76/8WS1) | 24 | dfg_flip | 2.96 | 22.5 | 0.012 | 0.97 | 642 | 1.01e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase Nek7 ( (6S76/8WS1)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

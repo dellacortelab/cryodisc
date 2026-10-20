@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:45:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/23ae7ec9b5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA dC->dU-editing enzyme APOBEC-3G (E (6P3X/7UU3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA dC->dU-editing enzyme APOBEC-3G (E (6P3X/7UU3)",
+        "motion": "oodval",
+        "mass_kda": 39.025347,
+        "ca_rmsd": 17.973862330319612,
+        "radius": 41.05993468571087,
+        "box_size": 128,
+        "d2_known_pose": 250.4971923828125,
+        "d2_crlb": 230.21102905273438,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 2283.708251953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0057508514522570595,
+        "note": "M1GSK9 45 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 1.4405721426010132,
+        "information_marginal": 1.0947108268737793,
+        "n_matched": 355,
+        "identity": 0.9971830985915493,
+        "shared_fraction": 0.9650897226753671,
+        "provenance": {
+          "accession": "M1GSK9",
+          "canonical_mass_kda": 45.266,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 250.4971923828125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA dC->dU-editing enzyme APOBEC-3G (E (6P3X/7UU3) | 39 | oodval | 17.97 | 250 | 0.006 | 1.00* | 625 | 2.28e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA dC->dU-editing enzyme APOBEC-3G (E (6P3X/7UU3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

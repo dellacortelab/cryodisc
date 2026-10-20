@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:53:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/02e0839870.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Protein kinase C iota type (EC 2.7.11. (9EJM/8R3X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Protein kinase C iota type (EC 2.7.11. (9EJM/8R3X)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 32.712940999999994,
+        "ca_rmsd": 0.9260675726017485,
+        "radius": 34.338008267344044,
+        "box_size": 128,
+        "d2_known_pose": 7.4046549797058105,
+        "d2_crlb": 7.027261734008789,
+        "information": 2.983470916748047,
+        "saturation": 0.7458677291870117,
+        "n_floor": 837.9501953125,
+        "n_marginal": 21110.279296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016471784607417227,
+        "note": "P41743 68 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains B/B",
+        "d2_marginal": 0.12196788191795349,
+        "information_marginal": 0.11842572689056396,
+        "n_matched": 319,
+        "identity": 1.0,
+        "shared_fraction": 0.909556938850238,
+        "provenance": {
+          "accession": "P41743",
+          "canonical_mass_kda": 68.262,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 7.4046549797058105
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Protein kinase C iota type (EC 2.7.11. (9EJM/8R3X) | 33 | dihedral_cluster | 0.93 | 7.4 | 0.016 | 0.75 | 838 | 2.11e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Protein kinase C iota type (EC 2.7.11. (9EJM/8R3X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

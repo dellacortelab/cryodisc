@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:06:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/afa5b10f6f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Elongation factor G (EF-G) (2BM1/1KTV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Elongation factor G (EF-G) (2BM1/1KTV)",
+        "motion": "hinge",
+        "mass_kda": 65.19873799999999,
+        "ca_rmsd": 2.8347248260023905,
+        "radius": 66.14391398335809,
+        "box_size": 128,
+        "d2_known_pose": 68.71345520019531,
+        "d2_crlb": 61.82463836669922,
+        "information": 3.999788761138916,
+        "saturation": 0.999947190284729,
+        "n_floor": 625.0330200195312,
+        "n_marginal": 12189.330078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003140790619889057,
+        "note": "P13551 77 kDa, dyndom, rotation 14.8 deg, chains A/B",
+        "d2_marginal": 0.21581457555294037,
+        "information_marginal": 0.20509740710258484,
+        "n_matched": 631,
+        "identity": 0.9984152139461173,
+        "shared_fraction": 0.9576156377007935,
+        "provenance": {
+          "accession": "P13551",
+          "canonical_mass_kda": 76.879,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 14.8
+        },
+        "d2_floor": 68.71345520019531
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Elongation factor G (EF-G) (2BM1/1KTV) | 65 | hinge | 2.83 | 68.7 | 0.003 | 1.00* | 625 | 1.22e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Elongation factor G (EF-G) (2BM1/1KTV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

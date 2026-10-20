@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:58:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7003b0820f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pituitary-specific positive transcript (1AU7/1AU7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pituitary-specific positive transcript (1AU7/1AU7)",
+        "motion": "hinge",
+        "mass_kda": 13.738691,
+        "ca_rmsd": 1.0467162881747516,
+        "radius": 31.277929205062186,
+        "box_size": 128,
+        "d2_known_pose": 4.34906005859375,
+        "d2_crlb": 3.583420753479004,
+        "information": 2.3081226348876953,
+        "saturation": 0.5770306587219238,
+        "n_floor": 1083.13134765625,
+        "n_marginal": 24289.1796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024280697407199493,
+        "note": "P10037 33 kDa, dyndom, rotation 7.4 deg, chains A/B",
+        "d2_marginal": 0.10559821128845215,
+        "information_marginal": 0.10292649269104004,
+        "n_matched": 128,
+        "identity": 1.0,
+        "shared_fraction": 0.9829706717123936,
+        "provenance": {
+          "accession": "P10037",
+          "canonical_mass_kda": 32.903,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.4
+        },
+        "d2_floor": 4.34906005859375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pituitary-specific positive transcript (1AU7/1AU7) | 14 | hinge | 1.05 | 4.35 | 0.024 | 0.58 | 1.08e+03 | 2.43e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pituitary-specific positive transcript (1AU7/1AU7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

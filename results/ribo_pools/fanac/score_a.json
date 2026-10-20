@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "driver": "experiments/realdata/score_pool.py",
+  "commit": "6f5f462d",
+  "written_at": "2026-10-04T04:48:21+00:00",
+  "arguments": {
+    "meta": "/data/bryceeh/empiar/score_fanac/pool_apo.cs",
+    "root": "/data/bryceeh/cryoem_projects/CS-preprocess-12",
+    "structure_a": null,
+    "structure_b": null,
+    "ligands": null,
+    "map_a": "/data/bryceeh/recovery_fullmaps_pools/fanac/tmpl_a.mrc",
+    "map_b": "/data/bryceeh/recovery_fullmaps_pools/fanac/tmpl_b.mrc",
+    "allow_half_map": false,
+    "known_pose": false,
+    "compare_rungs": false,
+    "calibrate": "poses",
+    "amplitude_shells": null,
+    "invert_contrast": false,
+    "state": null,
+    "assembly": "1",
+    "structure_offset_from_maps": null,
+    "no_superpose": false,
+    "ignore_origin": false,
+    "out": "/data/bryceeh/recovery_fullmaps_pools/fanac/score_K4000000_a.json",
+    "log_ratio": "/data/bryceeh/recovery_fullmaps_pools/fanac/pool_K4000000_a.npy",
+    "box_size": null,
+    "pixel_size": 4.088,
+    "dose": 40.0,
+    "k_max": 0.1,
+    "band_limit": 0.125,
+    "nodes": 3968496,
+    "cap_bank": 1000000,
+    "fixed_bank": 4000000,
+    "limit": null,
+    "subsample": 4000,
+    "n_shuffles": 0,
+    "seed": 0,
+    "shift_window": 4,
+    "shift_step": 1.0,
+    "cs_pose_transpose": null,
+    "no_recenter": false,
+    "null_images": false,
+    "check_shift_sign": false,
+    "refit_ctf": false,
+    "micrograph": null,
+    "micrograph_pixel_size": null,
+    "n_iterations": 60
+  },
+  "result": {
+    "n_particles": 4000,
+    "box_size": 128,
+    "pixel_size": 4.088,
+    "k_max": 0.1,
+    "n_defocus_groups": 301,
+    "amplitude": 0.47670042514801025,
+    "amplitude_spectrum": null,
+    "calibrated_at": "poses",
+    "calibration_state_weights": [
+      0.9999752640724182,
+      3.074645428569056e-05
+    ],
+    "snr": 6.4815354347229,
+    "coherence": {
+      "value": 0.375706447657971,
+      "mean": 0.7711631059646606,
+      "variance": 4.105136394500732,
+      "baseline": 1.0,
+      "decoherence": 0.624293552342029
+    },
+    "oracle_closed_form": null,
+    "separation": null,
+    "shift": {
+      "applied": true
+    },
+    "shift_prior_sigma": 0.0,
+    "ctf_refit": {
+      "ran": false
+    },
+    "states": {
+      "from": "maps",
+      "state_a": "/data/bryceeh/recovery_fullmaps_pools/fanac/tmpl_a.mrc",
+      "state_b": "/data/bryceeh/recovery_fullmaps_pools/fanac/tmpl_b.mrc",
+      "amplitude_ratio": 0.9999999977619188
+    },
+    "source": "/data/bryceeh/empiar/score_fanac/pool_apo.cs",
+    "log_ratio_path": "/data/bryceeh/recovery_fullmaps_pools/fanac/pool_K4000000_a.npy",
+    "convergence": null
+  }
+}

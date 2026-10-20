@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:32:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8ffe048823.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "3',5'-cyclic-AMP phosphodiesterase 4B (1XOT/1F0J)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "3',5'-cyclic-AMP phosphodiesterase 4B (1XOT/1F0J)",
+        "motion": "hinge",
+        "mass_kda": 34.549786999999995,
+        "ca_rmsd": 0.8968374086634537,
+        "radius": 33.7181597834604,
+        "box_size": 128,
+        "d2_known_pose": 6.9480414390563965,
+        "d2_crlb": 6.619391441345215,
+        "information": 2.9055545330047607,
+        "saturation": 0.7263886332511902,
+        "n_floor": 860.4210205078125,
+        "n_marginal": 83737.59375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004329058544245702,
+        "note": "Q07343 83 kDa, dyndom, rotation 9.4 deg, chains A/B",
+        "d2_marginal": 0.030078478157520294,
+        "information_marginal": 0.029855169355869293,
+        "n_matched": 322,
+        "identity": 1.0,
+        "shared_fraction": 0.958808385435822,
+        "provenance": {
+          "accession": "Q07343",
+          "canonical_mass_kda": 83.343,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.4
+        },
+        "d2_floor": 6.9480414390563965
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 3',5'-cyclic-AMP phosphodiesterase 4B (1XOT/1F0J) | 35 | hinge | 0.90 | 6.95 | 0.004 | 0.73 | 860 | 8.37e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "3',5'-cyclic-AMP phosphodiesterase 4B (1XOT/1F0J)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:18:23+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ccafb4620c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Rhodopsin (6OFJ/8P12)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Rhodopsin (6OFJ/8P12)",
+        "motion": "activation",
+        "mass_kda": 33.226205,
+        "ca_rmsd": 3.6081538320538304,
+        "radius": 44.72594734873006,
+        "box_size": 128,
+        "d2_known_pose": 71.554443359375,
+        "d2_crlb": 64.33415222167969,
+        "information": 3.999854564666748,
+        "saturation": 0.999963641166687,
+        "n_floor": 625.0227661132812,
+        "n_marginal": 4733.5224609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008412923486402928,
+        "note": "P02699 39 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.601982057094574,
+        "information_marginal": 0.5281479358673096,
+        "n_matched": 317,
+        "identity": 0.9905362776025236,
+        "shared_fraction": 0.9760061919504643,
+        "provenance": {
+          "accession": "P02699",
+          "canonical_mass_kda": 39.008,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 71.554443359375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Rhodopsin (6OFJ/8P12) | 33 | activation | 3.61 | 71.6 | 0.008 | 1.00* | 625 | 4.73e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Rhodopsin (6OFJ/8P12)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "driver": "experiments/realdata/score_pool.py",
+  "commit": "fe0500e7",
+  "written_at": "2026-09-18T20:27:48+00:00",
+  "arguments": {
+    "meta": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_6nt_early.cs",
+    "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11779-2",
+    "structure_a": null,
+    "structure_b": null,
+    "map_a": "data/maps/cas9/J9_005_volume_map_half_A.mrc",
+    "map_b": "data/maps/cas9/J9_006_volume_map_half_A.mrc",
+    "known_pose": true,
+    "compare_rungs": false,
+    "calibrate": "poses",
+    "amplitude_shells": null,
+    "invert_contrast": false,
+    "state": null,
+    "assembly": "1",
+    "structure_offset_from_maps": null,
+    "no_superpose": false,
+    "ignore_origin": false,
+    "out": "results/cas9_time_kp_early.json",
+    "log_ratio": "results/cas9_time_kp_early.npy",
+    "decoy": null,
+    "box_size": null,
+    "pixel_size": null,
+    "dose": 40.0,
+    "k_max": 0.1,
+    "band_limit": 0.125,
+    "nodes": 54,
+    "cap_bank": 1000000,
+    "limit": 8000,
+    "subsample": 0,
+    "n_shuffles": 200,
+    "seed": 0,
+    "shift_window": 4,
+    "shift_step": 1.0,
+    "cs_pose_transpose": null,
+    "no_recenter": false,
+    "null_images": false,
+    "check_shift_sign": false,
+    "refit_ctf": false,
+    "micrograph": null,
+    "micrograph_pixel_size": null,
+    "n_iterations": 60
+  },
+  "result": {
+    "n_particles": 8000,
+    "box_size": 192,
+    "pixel_size": 1.2999999523162842,
+    "k_max": 0.1,
+    "n_defocus_groups": 300,
+    "amplitude": 0.9734993577003479,
+    "amplitude_spectrum": null,
+    "calibrated_at": "poses",
+    "calibration_state_weights": [
+      0.8094988465309143,
+      0.19048388302326202
+    ],
+    "snr": 5.279120922088623,
+    "coherence": {
+      "value": 0.319585911003403,
+      "mean": 1.621917486190796,
+      "variance": 10.150118827819824,
+      "baseline": 0.9743061511775952,
+      "decoherence": 0.6547202401741923
+    },
+    "oracle_closed_form": {
+      "d2_mean": 14.782089233398438,
+      "d2_spread": 1.5592994689941406,
+      "predicted_coherence": 0.9743061511775952,
+      "fractional_error_mean": -0.7791187167167664,
+      "fractional_error_sd": 0.0,
+      "d2_pool": 3.243834972381592,
+      "implied_amplitude_scale": 0.21944360645939806,
+      "predicted_coherence_at_implied_amplitude": 0.9987316813238063
+    },
+    "separation": null,
+    "shift": {
+      "applied": true
+    },
+    "ctf_refit": {
+      "ran": false
+    },
+    "states": {
+      "from": "maps",
+      "state_a": "data/maps/cas9/J9_005_volume_map_half_A.mrc",
+      "state_b": "data/maps/cas9/J9_006_volume_map_half_A.mrc",
+      "amplitude_ratio": 1.0589668721200562
+    },
+    "source": "/home/bryceeh/nobackup/archive/pools/e9_spcas9_pools/cas9_6nt_early.cs",
+    "log_ratio_path": "results/cas9_time_kp_early.npy",
+    "convergence": null
+  }
+}

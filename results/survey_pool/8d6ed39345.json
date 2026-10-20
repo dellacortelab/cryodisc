@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:44:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8d6ed39345.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "H-2 class I histocompatibility antigen (2CII/1S7V)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "H-2 class I histocompatibility antigen (2CII/1S7V)",
+        "motion": "no_contact",
+        "mass_kda": 29.080164999999997,
+        "ca_rmsd": 1.489413811804651,
+        "radius": 43.10560240497641,
+        "box_size": 128,
+        "d2_known_pose": 15.71002197265625,
+        "d2_crlb": 13.833080291748047,
+        "information": 3.713700294494629,
+        "saturation": 0.9284250736236572,
+        "n_floor": 673.1830444335938,
+        "n_marginal": 19834.544921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008278675204356762,
+        "note": "P01899 41 kDa, dyndom, rotation 12.8 deg, chains A/A",
+        "d2_marginal": 0.1300581693649292,
+        "information_marginal": 0.12604272365570068,
+        "n_matched": 275,
+        "identity": 0.9963636363636363,
+        "shared_fraction": 0.9778172138420586,
+        "provenance": {
+          "accession": "P01899",
+          "canonical_mass_kda": 40.836,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.8
+        },
+        "d2_floor": 15.71002197265625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| H-2 class I histocompatibility antigen (2CII/1S7V) | 29 | no_contact | 1.49 | 15.7 | 0.008 | 0.93 | 673 | 1.98e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "H-2 class I histocompatibility antigen (2CII/1S7V)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

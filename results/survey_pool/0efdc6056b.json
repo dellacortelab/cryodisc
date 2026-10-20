@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:16:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0efdc6056b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Activated CDC42 kinase 1 (ACK-1) (EC 2 (4HZS/5ZXB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Activated CDC42 kinase 1 (ACK-1) (EC 2 (4HZS/5ZXB)",
+        "motion": "dfg_flip",
+        "mass_kda": 25.530407999999994,
+        "ca_rmsd": 1.9456307481800654,
+        "radius": 34.44812049365713,
+        "box_size": 128,
+        "d2_known_pose": 17.198354721069336,
+        "d2_crlb": 16.184181213378906,
+        "information": 3.7696022987365723,
+        "saturation": 0.9424005746841431,
+        "n_floor": 663.1998901367188,
+        "n_marginal": 10860.095703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014172154619313908,
+        "note": "Q07912 115 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains D/B",
+        "d2_marginal": 0.24373774230480194,
+        "information_marginal": 0.23020055890083313,
+        "n_matched": 241,
+        "identity": 1.0,
+        "shared_fraction": 0.7583366025892507,
+        "provenance": {
+          "accession": "Q07912",
+          "canonical_mass_kda": 114.569,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 17.198354721069336
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Activated CDC42 kinase 1 (ACK-1) (EC 2 (4HZS/5ZXB) | 26 | dfg_flip | 1.95 | 17.2 | 0.014 | 0.94 | 663 | 1.09e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Activated CDC42 kinase 1 (ACK-1) (EC 2 (4HZS/5ZXB)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

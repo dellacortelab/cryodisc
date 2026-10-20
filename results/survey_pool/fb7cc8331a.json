@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:14:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fb7cc8331a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Insulin receptor (IR) (EC 2.7.10.1) (C (4XLV/3ETA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Insulin receptor (IR) (EC 2.7.10.1) (C (4XLV/3ETA)",
+        "motion": "dfg_flip",
+        "mass_kda": 29.530873999999997,
+        "ca_rmsd": 4.593557727129182,
+        "radius": 33.17459027991357,
+        "box_size": 128,
+        "d2_known_pose": 28.98186492919922,
+        "d2_crlb": 24.407180786132812,
+        "information": 3.9564695358276367,
+        "saturation": 0.9891173839569092,
+        "n_floor": 631.8765258789062,
+        "n_marginal": 7539.03857421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012422123871426386,
+        "note": "P06213 156 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/B",
+        "d2_marginal": 0.3600163161754608,
+        "information_marginal": 0.33160728216171265,
+        "n_matched": 289,
+        "identity": 0.9965397923875432,
+        "shared_fraction": 0.9282436378806842,
+        "provenance": {
+          "accession": "P06213",
+          "canonical_mass_kda": 156.333,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 28.98186492919922
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Insulin receptor (IR) (EC 2.7.10.1) (C (4XLV/3ETA) | 30 | dfg_flip | 4.59 | 29 | 0.012 | 0.99 | 632 | 7.54e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Insulin receptor (IR) (EC 2.7.10.1) (C (4XLV/3ETA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

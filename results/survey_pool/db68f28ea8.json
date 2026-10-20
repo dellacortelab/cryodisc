@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:58:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/db68f28ea8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mast/stem cell growth factor receptor (3G0F/7KHK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mast/stem cell growth factor receptor (3G0F/7KHK)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 27.667890999999997,
+        "ca_rmsd": 4.798960516384811,
+        "radius": 37.05401538872987,
+        "box_size": 128,
+        "d2_known_pose": 43.554771423339844,
+        "d2_crlb": 37.711769104003906,
+        "information": 3.994029998779297,
+        "saturation": 0.9985074996948242,
+        "n_floor": 625.9342651367188,
+        "n_marginal": 4432.88427734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014890587002267197,
+        "note": "P10721 110 kDa, kincore, no rotation angle (kincore reports none); states BBAminus -> BLAminus, chains B/B",
+        "d2_marginal": 0.648556113243103,
+        "information_marginal": 0.5639669299125671,
+        "n_matched": 266,
+        "identity": 0.9624060150375939,
+        "shared_fraction": 0.897644539614561,
+        "provenance": {
+          "accession": "P10721",
+          "canonical_mass_kda": 109.865,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 43.554771423339844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mast/stem cell growth factor receptor (3G0F/7KHK) | 28 | dihedral_cluster | 4.80 | 43.6 | 0.015 | 1.00* | 626 | 4.43e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mast/stem cell growth factor receptor (3G0F/7KHK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

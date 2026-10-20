@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:00:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6ab25ade67.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Folylpolyglutamate synthase (FPGS) (EC (1JBW/2GC5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Folylpolyglutamate synthase (FPGS) (EC (1JBW/2GC5)",
+        "motion": "hinge",
+        "mass_kda": 39.970848999999994,
+        "ca_rmsd": 2.0217829199941746,
+        "radius": 39.113894442466496,
+        "box_size": 128,
+        "d2_known_pose": 25.740047454833984,
+        "d2_crlb": 22.914669036865234,
+        "information": 3.931654930114746,
+        "saturation": 0.9829137325286865,
+        "n_floor": 635.8645629882812,
+        "n_marginal": 10232.044921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010085586323001708,
+        "note": "P15925 47 kDa, dyndom, rotation 15.4 deg, chains A/A",
+        "d2_marginal": 0.25960347056388855,
+        "information_marginal": 0.24433043599128723,
+        "n_matched": 402,
+        "identity": 0.9950248756218906,
+        "shared_fraction": 0.9722133503672948,
+        "provenance": {
+          "accession": "P15925",
+          "canonical_mass_kda": 46.589,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.4
+        },
+        "d2_floor": 25.740047454833984
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Folylpolyglutamate synthase (FPGS) (EC (1JBW/2GC5) | 40 | hinge | 2.02 | 25.7 | 0.010 | 0.98 | 636 | 1.02e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Folylpolyglutamate synthase (FPGS) (EC (1JBW/2GC5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

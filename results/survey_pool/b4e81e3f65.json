@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:04:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b4e81e3f65.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Catenin alpha-1 (102 kDa cadherin-asso (1L7C/1L7C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Catenin alpha-1 (102 kDa cadherin-asso (1L7C/1L7C)",
+        "motion": "shear",
+        "mass_kda": 23.364123999999997,
+        "ca_rmsd": 1.601129747123828,
+        "radius": 41.24987645483479,
+        "box_size": 128,
+        "d2_known_pose": 10.409141540527344,
+        "d2_crlb": 9.940807342529297,
+        "information": 3.3661413192749023,
+        "saturation": 0.8415353298187256,
+        "n_floor": 742.690185546875,
+        "n_marginal": 36899.6015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006619688931316594,
+        "note": "P26231 100 kDa, dyndom, rotation 15.1 deg, chains C/A",
+        "d2_marginal": 0.06890527904033661,
+        "information_marginal": 0.06775140762329102,
+        "n_matched": 228,
+        "identity": 1.0,
+        "shared_fraction": 0.9741474147414741,
+        "provenance": {
+          "accession": "P26231",
+          "canonical_mass_kda": 100.106,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 15.1
+        },
+        "d2_floor": 10.409141540527344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Catenin alpha-1 (102 kDa cadherin-asso (1L7C/1L7C) | 23 | shear | 1.60 | 10.4 | 0.007 | 0.84 | 743 | 3.69e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Catenin alpha-1 (102 kDa cadherin-asso (1L7C/1L7C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:42:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/763760af44.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Trehalose/maltose import ATP-binding p (1G29/1G29)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Trehalose/maltose import ATP-binding p (1G29/1G29)",
+        "motion": "hinge",
+        "mass_kda": 38.76059199999999,
+        "ca_rmsd": 1.957803327886436,
+        "radius": 45.84005756620038,
+        "box_size": 128,
+        "d2_known_pose": 25.894622802734375,
+        "d2_crlb": 24.412307739257812,
+        "information": 3.9331164360046387,
+        "saturation": 0.9832791090011597,
+        "n_floor": 635.6282958984375,
+        "n_marginal": 12086.267578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008409048869569188,
+        "note": "Q9YGA6 42 kDa, dyndom, rotation 25.8 deg, chains 1/2",
+        "d2_marginal": 0.21774914860725403,
+        "information_marginal": 0.20684632658958435,
+        "n_matched": 372,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9YGA6",
+          "canonical_mass_kda": 41.786,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 25.8
+        },
+        "d2_floor": 25.894622802734375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Trehalose/maltose import ATP-binding p (1G29/1G29) | 39 | hinge | 1.96 | 25.9 | 0.008 | 0.98 | 636 | 1.21e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Trehalose/maltose import ATP-binding p (1G29/1G29)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

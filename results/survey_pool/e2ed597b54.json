@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:25:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/e2ed597b54.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cannabinoid receptor 2 (CB-2) (CB2) (h (5ZTY/8GUR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cannabinoid receptor 2 (CB-2) (CB2) (h (5ZTY/8GUR)",
+        "motion": "activation",
+        "mass_kda": 28.008650999999997,
+        "ca_rmsd": 2.429519632248844,
+        "radius": 38.34153785756394,
+        "box_size": 128,
+        "d2_known_pose": 29.212326049804688,
+        "d2_crlb": 27.193191528320312,
+        "information": 3.9578371047973633,
+        "saturation": 0.9894592761993408,
+        "n_floor": 631.658203125,
+        "n_marginal": 10530.0888671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008620497928527067,
+        "note": "P34972 40 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.2518247961997986,
+        "information_marginal": 0.2374148964881897,
+        "n_matched": 277,
+        "identity": 0.9819494584837545,
+        "shared_fraction": 0.6063283922462942,
+        "provenance": {
+          "accession": "P34972",
+          "canonical_mass_kda": 39.681,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 29.212326049804688
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cannabinoid receptor 2 (CB-2) (CB2) (h (5ZTY/8GUR) | 28 | activation | 2.43 | 29.2 | 0.009 | 0.99 | 632 | 1.05e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cannabinoid receptor 2 (CB-2) (CB2) (h (5ZTY/8GUR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

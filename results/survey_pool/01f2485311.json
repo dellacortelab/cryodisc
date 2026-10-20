@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:49:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/01f2485311.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Guanylate kinase (EC 2.7.4.8) (GMP kin (2ANB/2F3T)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Guanylate kinase (EC 2.7.4.8) (GMP kin (2ANB/2F3T)",
+        "motion": "hinge",
+        "mass_kda": 21.313219999999998,
+        "ca_rmsd": 3.9238919880061753,
+        "radius": 45.37265478355423,
+        "box_size": 128,
+        "d2_known_pose": 60.930213928222656,
+        "d2_crlb": 51.56481170654297,
+        "information": 3.99941086769104,
+        "saturation": 0.99985271692276,
+        "n_floor": 625.0921020507812,
+        "n_marginal": 1864.48974609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.030917508400380905,
+        "note": "P60546 24 kDa, dyndom, rotation 40.4 deg, chains A/C",
+        "d2_marginal": 1.8838104009628296,
+        "information_marginal": 1.3408493995666504,
+        "n_matched": 201,
+        "identity": 1.0,
+        "shared_fraction": 0.98,
+        "provenance": {
+          "accession": "P60546",
+          "canonical_mass_kda": 23.593,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 40.4
+        },
+        "d2_floor": 60.930213928222656
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Guanylate kinase (EC 2.7.4.8) (GMP kin (2ANB/2F3T) | 21 | hinge | 3.92 | 60.9 | 0.031 | 1.00* | 625 | 1.86e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Guanylate kinase (EC 2.7.4.8) (GMP kin (2ANB/2F3T)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

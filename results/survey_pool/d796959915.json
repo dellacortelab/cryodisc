@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:31:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d796959915.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Peroxisome proliferator-activated rece (2HFP/4PRG)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Peroxisome proliferator-activated rece (2HFP/4PRG)",
+        "motion": "hinge",
+        "mass_kda": 28.522040999999998,
+        "ca_rmsd": 3.0693163839560604,
+        "radius": 35.48434038290146,
+        "box_size": 128,
+        "d2_known_pose": 34.58244705200195,
+        "d2_crlb": 31.695953369140625,
+        "information": 3.9798519611358643,
+        "saturation": 0.9949629902839661,
+        "n_floor": 628.1640625,
+        "n_marginal": 3501.587646484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024648318527516328,
+        "note": "P37231 58 kDa, dyndom, rotation 26.5 deg, chains A/D",
+        "d2_marginal": 0.8523991703987122,
+        "information_marginal": 0.7139618396759033,
+        "n_matched": 270,
+        "identity": 1.0,
+        "shared_fraction": 0.9908466819221968,
+        "provenance": {
+          "accession": "P37231",
+          "canonical_mass_kda": 57.62,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 26.5
+        },
+        "d2_floor": 34.58244705200195
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Peroxisome proliferator-activated rece (2HFP/4PRG) | 29 | hinge | 3.07 | 34.6 | 0.025 | 0.99* | 628 | 3.5e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Peroxisome proliferator-activated rece (2HFP/4PRG)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

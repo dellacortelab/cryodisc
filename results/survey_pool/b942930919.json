@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:33:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b942930919.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Formamidopyrimidine-DNA glycosylase (F (2F5Q/2F5P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Formamidopyrimidine-DNA glycosylase (F (2F5Q/2F5P)",
+        "motion": "shear",
+        "mass_kda": 25.902617999999993,
+        "ca_rmsd": 1.0276931437343848,
+        "radius": 36.18895646957572,
+        "box_size": 128,
+        "d2_known_pose": 6.1546125411987305,
+        "d2_crlb": 5.360957145690918,
+        "information": 2.753626585006714,
+        "saturation": 0.6884066462516785,
+        "n_floor": 907.8936157226562,
+        "n_marginal": 29363.4921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014130018010161493,
+        "note": "P84131 31 kDa, dyndom, rotation 6.9 deg, chains A/A",
+        "d2_marginal": 0.08696478605270386,
+        "information_marginal": 0.08513973653316498,
+        "n_matched": 254,
+        "identity": 0.9960629921259843,
+        "shared_fraction": 0.9290780141843972,
+        "provenance": {
+          "accession": "P84131",
+          "canonical_mass_kda": 30.689,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.9
+        },
+        "d2_floor": 6.1546125411987305
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Formamidopyrimidine-DNA glycosylase (F (2F5Q/2F5P) | 26 | shear | 1.03 | 6.15 | 0.014 | 0.69 | 908 | 2.94e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Formamidopyrimidine-DNA glycosylase (F (2F5Q/2F5P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

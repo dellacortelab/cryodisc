@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:06:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9d815f42ee.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Release factor glutamine methyltransfe (1SG9/1NV8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Release factor glutamine methyltransfe (1SG9/1NV8)",
+        "motion": "no_contact",
+        "mass_kda": 27.665259999999996,
+        "ca_rmsd": 1.1346902238950733,
+        "radius": 40.67183520269838,
+        "box_size": 128,
+        "d2_known_pose": 8.079671859741211,
+        "d2_crlb": 7.243502616882324,
+        "information": 3.087576150894165,
+        "saturation": 0.7718940377235413,
+        "n_floor": 809.6965942382812,
+        "n_marginal": 22416.337890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014191812475286674,
+        "note": "Q9WYV8 32 kDa, dyndom, rotation 11.1 deg, chains C/B",
+        "d2_marginal": 0.114665187895298,
+        "information_marginal": 0.11152580380439758,
+        "n_matched": 267,
+        "identity": 1.0,
+        "shared_fraction": 0.9741219963031423,
+        "provenance": {
+          "accession": "Q9WYV8",
+          "canonical_mass_kda": 31.609,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 11.1
+        },
+        "d2_floor": 8.079671859741211
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Release factor glutamine methyltransfe (1SG9/1NV8) | 28 | no_contact | 1.13 | 8.08 | 0.014 | 0.77 | 810 | 2.24e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Release factor glutamine methyltransfe (1SG9/1NV8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

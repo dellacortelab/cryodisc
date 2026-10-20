@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:00:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d335216cc7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Bowman-Birk type trypsin inhibitor (2FJ8/1TX6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Bowman-Birk type trypsin inhibitor (2FJ8/1TX6)",
+        "motion": "hinge",
+        "mass_kda": 11.609941999999998,
+        "ca_rmsd": 1.2598923868265015,
+        "radius": 26.75494957907322,
+        "box_size": 128,
+        "d2_known_pose": 5.054072380065918,
+        "d2_crlb": 4.769927501678467,
+        "information": 2.5012221336364746,
+        "saturation": 0.6253055334091187,
+        "n_floor": 999.5113525390625,
+        "n_marginal": 30098.59765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016777954201645073,
+        "note": "P12940 14 kDa, dyndom, rotation 13.0 deg, chains A/J",
+        "d2_marginal": 0.08479699492454529,
+        "information_marginal": 0.0830603539943695,
+        "n_matched": 112,
+        "identity": 1.0,
+        "shared_fraction": 0.9281045751633987,
+        "provenance": {
+          "accession": "P12940",
+          "canonical_mass_kda": 13.823,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 13.0
+        },
+        "d2_floor": 5.054072380065918
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Bowman-Birk type trypsin inhibitor (2FJ8/1TX6) | 12 | hinge | 1.26 | 5.05 | 0.017 | 0.63 | 1e+03 | 3.01e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Bowman-Birk type trypsin inhibitor (2FJ8/1TX6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

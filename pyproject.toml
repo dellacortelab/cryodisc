@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryodisc"
+version = "1.0.0"
+description = "Conformational discriminability and resolution modeling for single-particle cryo-EM"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Bryce E. Hedelius", email = "bhedelius@gmail.com"},
+    {name = "Dennis Della Corte", email = "dennis.dellacorte@byu.edu"},
+]
+keywords = [
+    "cryo-EM",
+    "cryo-electron microscopy",
+    "discriminability",
+    "conformational heterogeneity",
+    "single-particle analysis",
+    "structural biology",
+    "population fraction",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "cryojax>=0.5.6,<0.6",  # 0.6 changed the volume constructors this code calls
+    "equinox",
+    "gemmi",
+    "jax",
+    "mmdf",
+    "numpy",
+    "pandas",
+    "scipy",
+]
+
+[project.urls]
+Homepage = "https://github.com/dellacortelab/cryodisc"
+Repository = "https://github.com/dellacortelab/cryodisc"
+Issues = "https://github.com/dellacortelab/cryodisc/issues"
+
+[project.optional-dependencies]
+# Reading particle images off disk; the prediction arm never opens one, so it is optional, and in
+# `dev` so the real-data path is always exercised rather than importorskipped to green.
+io = ["mrcfile"]
+
+dev = [
+    "biopython",
+    "cryodisc[io]",
+    "matplotlib",
+    "mypy",
+    "pytest",
+    # Pairs with the compilation cache in tests/conftest.py for the fast default run.
+    "pytest-xdist",
+    # Not a coverage-based selector (pytest-testmon, pytest-picked): jax.jit runs a function's body
+    # only at trace time, so coverage credits the first test to reach it and the selector then
+    # under-selects in the unsafe direction. The warm-cache full run is fast enough to always run all.
+    "ruff",
+]
+
+parakeet = [
+    "python-parakeet",
+    "h5py",
+    "pyyaml",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Repo root on sys.path: a few test modules import reproduction.* directly, which the src-only
+# editable install does not cover; without it, `pytest` and `python -m pytest` disagree.
+pythonpath = ["."]
+# Fastest config for this compile-bound suite with the conftest.py cache; `-n 0` to read a failure.
+addopts = "-n 6 --dist loadfile"
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = ['^build/', '^\.venv']
+explicit_package_bases = true
+mypy_path = "."
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["build", ".venv", ".venv-cryojax", "docs/_build"]
+
+[tool.ruff.lint]
+ignore = [
+    "E402",  # module import not at top of file (follows matplotlib.use / os.chdir)
+    "E731",  # lambda assignment
+    "E741",  # ambiguous single-letter name (l, I, O), meaningful in the math code
+]

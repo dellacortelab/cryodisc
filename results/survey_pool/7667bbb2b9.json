@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:38:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7667bbb2b9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "C-C chemokine receptor type 2 (C-C CKR (6GPX/7XA3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "C-C chemokine receptor type 2 (C-C CKR (6GPX/7XA3)",
+        "motion": "activation",
+        "mass_kda": 27.420285999999994,
+        "ca_rmsd": 2.2853009684282886,
+        "radius": 37.2722462453903,
+        "box_size": 128,
+        "d2_known_pose": 26.345996856689453,
+        "d2_crlb": 25.27535629272461,
+        "information": 3.9372029304504395,
+        "saturation": 0.9843007326126099,
+        "n_floor": 634.9685668945312,
+        "n_marginal": 7647.00634765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013456428877302288,
+        "note": "P41597 42 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains B/R",
+        "d2_marginal": 0.35452303290367126,
+        "information_marginal": 0.3269253373146057,
+        "n_matched": 263,
+        "identity": 0.9885931558935361,
+        "shared_fraction": 0.8801009676062264,
+        "provenance": {
+          "accession": "P41597",
+          "canonical_mass_kda": 41.915,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 26.345996856689453
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| C-C chemokine receptor type 2 (C-C CKR (6GPX/7XA3) | 27 | activation | 2.29 | 26.3 | 0.013 | 0.98 | 635 | 7.65e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "C-C chemokine receptor type 2 (C-C CKR (6GPX/7XA3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

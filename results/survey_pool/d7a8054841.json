@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:00:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d7a8054841.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Uracil-DNA glycosylase (UDG) (EC 3.2.2 (1EMH/2HXM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Uracil-DNA glycosylase (UDG) (EC 3.2.2 (1EMH/2HXM)",
+        "motion": "shear",
+        "mass_kda": 23.731117999999995,
+        "ca_rmsd": 1.0611177574617952,
+        "radius": 30.089337423732164,
+        "box_size": 128,
+        "d2_known_pose": 6.286311149597168,
+        "d2_crlb": 5.585970878601074,
+        "information": 2.7804226875305176,
+        "saturation": 0.6951056718826294,
+        "n_floor": 899.1439208984375,
+        "n_marginal": 29554.888671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013742521343209427,
+        "note": "P13051 35 kDa, dyndom, rotation 6.7 deg, chains A/A",
+        "d2_marginal": 0.08638976514339447,
+        "information_marginal": 0.08458837866783142,
+        "n_matched": 223,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P13051",
+          "canonical_mass_kda": 34.645,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.7
+        },
+        "d2_floor": 6.286311149597168
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Uracil-DNA glycosylase (UDG) (EC 3.2.2 (1EMH/2HXM) | 24 | shear | 1.06 | 6.29 | 0.014 | 0.70 | 899 | 2.96e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Uracil-DNA glycosylase (UDG) (EC 3.2.2 (1EMH/2HXM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

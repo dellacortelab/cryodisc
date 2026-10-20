@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:26:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/062792a347.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase Fyn (EC 2.7.10 (1G83/1G83)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase Fyn (EC 2.7.10 (1G83/1G83)",
+        "motion": "no_contact",
+        "mass_kda": 17.25454,
+        "ca_rmsd": 1.3073355776951119,
+        "radius": 35.63548780633096,
+        "box_size": 128,
+        "d2_known_pose": 5.2833404541015625,
+        "d2_crlb": 4.3206000328063965,
+        "information": 2.5583488941192627,
+        "saturation": 0.6395872235298157,
+        "n_floor": 977.1927490234375,
+        "n_marginal": 82961.1953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005746754455315214,
+        "note": "P06241 61 kDa, dyndom, rotation 14.5 deg, chains A/B",
+        "d2_marginal": 0.03036206029355526,
+        "information_marginal": 0.030134569853544235,
+        "n_matched": 161,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P06241",
+          "canonical_mass_kda": 60.762,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.5
+        },
+        "d2_floor": 5.2833404541015625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase Fyn (EC 2.7.10 (1G83/1G83) | 17 | no_contact | 1.31 | 5.28 | 0.006 | 0.64 | 977 | 8.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase Fyn (EC 2.7.10 (1G83/1G83)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

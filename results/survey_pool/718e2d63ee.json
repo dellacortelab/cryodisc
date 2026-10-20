@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:52:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/718e2d63ee.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cell division control protein 31 (Nucl (2DOQ/2DOQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cell division control protein 31 (Nucl (2DOQ/2DOQ)",
+        "motion": "no_contact",
+        "mass_kda": 15.343235999999997,
+        "ca_rmsd": 3.387511736010714,
+        "radius": 35.28399069083341,
+        "box_size": 128,
+        "d2_known_pose": 24.25711441040039,
+        "d2_crlb": 21.689834594726562,
+        "information": 3.9158594608306885,
+        "saturation": 0.9789648652076721,
+        "n_floor": 638.4295043945312,
+        "n_marginal": 4994.1494140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023361281260924724,
+        "note": "P06704 19 kDa, dyndom, rotation 38.7 deg, chains B/A",
+        "d2_marginal": 0.5666772723197937,
+        "information_marginal": 0.5005857348442078,
+        "n_matched": 141,
+        "identity": 1.0,
+        "shared_fraction": 0.9814658803706824,
+        "provenance": {
+          "accession": "P06704",
+          "canonical_mass_kda": 18.751,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 38.7
+        },
+        "d2_floor": 24.25711441040039
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cell division control protein 31 (Nucl (2DOQ/2DOQ) | 15 | no_contact | 3.39 | 24.3 | 0.023 | 0.98 | 638 | 4.99e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cell division control protein 31 (Nucl (2DOQ/2DOQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

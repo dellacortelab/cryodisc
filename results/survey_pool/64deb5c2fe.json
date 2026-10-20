@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:34:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/64deb5c2fe.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Gag-Pol polyprotein (Pr160Gag-Pol) [Cl (1EP4/1RTJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Gag-Pol polyprotein (Pr160Gag-Pol) [Cl (1EP4/1RTJ)",
+        "motion": "hinge",
+        "mass_kda": 56.105135,
+        "ca_rmsd": 2.9884823121152206,
+        "radius": 59.72759264001675,
+        "box_size": 128,
+        "d2_known_pose": 90.30747985839844,
+        "d2_crlb": 80.43539428710938,
+        "information": 3.9999876022338867,
+        "saturation": 0.9999969005584717,
+        "n_floor": 625.001953125,
+        "n_marginal": 12690.1298828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0022908748287752533,
+        "note": "P04585 162 kDa, dyndom, rotation 10.2 deg, chains A/A",
+        "d2_marginal": 0.20688313245773315,
+        "information_marginal": 0.19700351357460022,
+        "n_matched": 522,
+        "identity": 1.0,
+        "shared_fraction": 0.9667946690761238,
+        "provenance": {
+          "accession": "P04585",
+          "canonical_mass_kda": 162.042,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.2
+        },
+        "d2_floor": 90.30747985839844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Gag-Pol polyprotein (Pr160Gag-Pol) [Cl (1EP4/1RTJ) | 56 | hinge | 2.99 | 90.3 | 0.002 | 1.00* | 625 | 1.27e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Gag-Pol polyprotein (Pr160Gag-Pol) [Cl (1EP4/1RTJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

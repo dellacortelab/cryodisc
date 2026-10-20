@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:55:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6113b41a0f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Methylmalonyl-CoA mutase large subunit (1REQ/2REQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Methylmalonyl-CoA mutase large subunit (1REQ/2REQ)",
+        "motion": "hinge",
+        "mass_kda": 73.011585,
+        "ca_rmsd": 2.5798010397758144,
+        "radius": 67.62256909870725,
+        "box_size": 128,
+        "d2_known_pose": 78.66605377197266,
+        "d2_crlb": 71.07489776611328,
+        "information": 3.9999430179595947,
+        "saturation": 0.9999857544898987,
+        "n_floor": 625.0089111328125,
+        "n_marginal": 4622.54296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007860814992255296,
+        "note": "P11653 80 kDa, dyndom, rotation 15.1 deg, chains C/C",
+        "d2_marginal": 0.6183792948722839,
+        "information_marginal": 0.5408278703689575,
+        "n_matched": 725,
+        "identity": 1.0,
+        "shared_fraction": 0.9940690150970525,
+        "provenance": {
+          "accession": "P11653",
+          "canonical_mass_kda": 80.178,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.1
+        },
+        "d2_floor": 78.66605377197266
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Methylmalonyl-CoA mutase large subunit (1REQ/2REQ) | 73 | hinge | 2.58 | 78.7 | 0.008 | 1.00* | 625 | 4.62e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Methylmalonyl-CoA mutase large subunit (1REQ/2REQ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

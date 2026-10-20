@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:36:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2788ebed72.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Xanthine phosphoribosyltransferase (XP (1Y0B/2FXV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Xanthine phosphoribosyltransferase (XP (1Y0B/2FXV)",
+        "motion": "hinge",
+        "mass_kda": 18.635355999999998,
+        "ca_rmsd": 2.063032456098837,
+        "radius": 32.3159527103496,
+        "box_size": 128,
+        "d2_known_pose": 16.23245620727539,
+        "d2_crlb": 15.638915061950684,
+        "information": 3.734783411026001,
+        "saturation": 0.9336958527565002,
+        "n_floor": 669.3828735351562,
+        "n_marginal": 7291.5771484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022995365083317256,
+        "note": "P42085 21 kDa, dyndom, rotation 30.0 deg, chains A/A",
+        "d2_marginal": 0.37327125668525696,
+        "information_marginal": 0.3428613543510437,
+        "n_matched": 187,
+        "identity": 1.0,
+        "shared_fraction": 0.9820193637621023,
+        "provenance": {
+          "accession": "P42085",
+          "canonical_mass_kda": 21.038,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 30.0
+        },
+        "d2_floor": 16.23245620727539
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Xanthine phosphoribosyltransferase (XP (1Y0B/2FXV) | 19 | hinge | 2.06 | 16.2 | 0.023 | 0.93 | 669 | 7.29e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Xanthine phosphoribosyltransferase (XP (1Y0B/2FXV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

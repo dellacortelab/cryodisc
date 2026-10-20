@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:58:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/49b4ac8077.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA double-strand break repair Rad50 A (1II8/1F2U)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA double-strand break repair Rad50 A (1II8/1F2U)",
+        "motion": "hinge",
+        "mass_kda": 15.135373999999999,
+        "ca_rmsd": 3.408835709693773,
+        "radius": 37.7342769144518,
+        "box_size": 128,
+        "d2_known_pose": 25.034542083740234,
+        "d2_crlb": 23.18721580505371,
+        "information": 3.9245591163635254,
+        "saturation": 0.9811397790908813,
+        "n_floor": 637.0142211914062,
+        "n_marginal": 3856.604736328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03040979127350135,
+        "note": "P58301 104 kDa, dyndom, rotation 31.3 deg, chains B/B",
+        "d2_marginal": 0.7612951993942261,
+        "information_marginal": 0.6482385993003845,
+        "n_matched": 145,
+        "identity": 1.0,
+        "shared_fraction": 0.8193456614509246,
+        "provenance": {
+          "accession": "P58301",
+          "canonical_mass_kda": 103.84,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 31.3
+        },
+        "d2_floor": 25.034542083740234
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA double-strand break repair Rad50 A (1II8/1F2U) | 15 | hinge | 3.41 | 25 | 0.030 | 0.98 | 637 | 3.86e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA double-strand break repair Rad50 A (1II8/1F2U)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

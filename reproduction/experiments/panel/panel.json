@@ -1,0 +1,288 @@
+{
+  "_note": [
+    "The candidate panel: classic two-state pairs, one per system, spanning 16 to 132 kDa and four",
+    "motion types (domain or lobe closure, quaternary rotation, linker straightening, transport",
+    "cycle). PDB identifiers are VALIDATED AT RUN TIME by score_target's guards rather than trusted:",
+    "a wrong or mispaired entry fails on atom overlap, mass mismatch or C-alpha RMSD and is reported",
+    "as a dropped row. Do not add a row without running it.",
+    "",
+    "Ras (4Q21/5P21), PKA (1J3H/1ATP) and ATCase (6AT1/8ATC) were withdrawn when `align_conformers`",
+    "took ONE assembly and ONE chains argument for both entries. It now takes them per entry, and all",
+    "three are back with their settings and measured alignments recorded on the rows themselves.",
+    "",
+    "GroEL (1OEL/1AON) is NOT back, and per-entry selection is not what it needed. In 1AON only the",
+    "cis ring is GroES-bound, with its apical domains rotated, so the two rings are in different",
+    "conformations while 1OEL's are equivalent -- no single rigid superposition fits both rings at",
+    "once, and the 14-mer reads RMSD 50.973 A whichever way the rings are paired (swapping them is a",
+    "global rotation the superposition absorbs, so the numbers are identical). One ring against",
+    "1AON's A-G reads 15.320 A, which is a real GroES-driven motion rather than a mispairing, but it",
+    "sits above `targets._MAX_PLAUSIBLE_RMSD` and its 78 A radius needs a box of 156 at 2 A/px",
+    "against the panel's 128. It is out on the grid as well as on the guard.",
+    "",
+    "The upper end of the mass range is set by that box limit rather than by cost.",
+    "",
+    "The four Takahashi haemoglobin rows are the panel's only UNSATURATED ones. `I_p` caps at",
+    "1/[p(1-p)] = 4, so N bottoms out at the binomial counting floor p(1-p)/sigma^2 -- 625 at",
+    "sigma = 0.02 -- and ten of the other rows read exactly that whatever their d^2. The two R/R",
+    "pairs (CO against oxy, within one species) are the only rows measured off that floor:",
+    "N = 9,570 and 27,700 with `--poses haar`, spanning 2.9x between two pairs of the SAME protein",
+    "at the SAME collection plan, at pose efficiency 0.109 and 0.058 against 0.40-0.57 on the",
+    "large-motion rows. Their R/T siblings are here so that the Ca RMSD inversion is a property of",
+    "the panel rather than of a side table: gator CO/oxy has 27% SMALLER Ca RMSD than human CO/oxy",
+    "and 61% larger d^2, and 2.9x fewer particles.",
+    "",
+    "Read `--poses` before quoting any of the four. The default `bank` draws the pool's true poses",
+    "from the nodes of the bank being searched, and on these rows that is wrong by 9.4x and 18x in",
+    "particles -- it reports pose efficiency ABOVE 1, which is impossible. Pass `--poses haar`."
+  ],
+  "ligands": [
+    "HEM"
+  ],
+  "candidates": [
+    {
+      "name": "Haemoglobin R/T",
+      "pdb_a": "8WJ1",
+      "pdb_b": "8WJ2",
+      "motion": "quaternary rotation",
+      "note": "15 deg dimer rotation",
+      "ligands": [
+        "HEM",
+        "OXY"
+      ],
+      "ligands_why": "8WJ1 binds four O2 and 8WJ2 nothing, which is half of what makes this pair R against T, so OXY is named. It reaches the templates only because an allowlisted residue is EXEMPT from the atom correspondence: naming it without that exemption moved d^2 by 0.00%, the intersection discarding every admitted atom because the partner state has no matching residue. HEM is named on every haemoglobin row and is not symmetric either -- 8WJ1 numbers its haem 201 and 8WJ2 numbers it 200, so before the exemption the haem was dropped from BOTH states of this row and this benchmark was scored on apo-globin, with n_dropped (172, 250) reading as ordinary unresolved-atom attrition"
+    },
+    {
+      "name": "Haemoglobin CO/oxy (human)",
+      "pdb_a": "8WJ0",
+      "pdb_b": "8WJ1",
+      "motion": "ligation state, R/R",
+      "note": "near-null: 0.21 A Ca RMSD, d^2 1.59, the panel's least saturated row",
+      "ligands": [
+        "HEM",
+        "CMO",
+        "OXY"
+      ],
+      "ligands_why": "The two states differ by 4 CO against 4 O2 and by a 0.21 A backbone shift. At d^2 = 1.59 the ligand is not a rounding error the way it is on an R/T row at d^2 ~ 66, and omitting it makes the pipeline look as though it finds more separation than was predicted when the truth is an under-specified template"
+    },
+    {
+      "name": "Haemoglobin CO/oxy (alligator)",
+      "pdb_a": "8WIX",
+      "pdb_b": "8WIY",
+      "motion": "ligation state, R/R",
+      "note": "near-null: 0.15 A Ca RMSD and d^2 2.56, LARGER than the human pair's at smaller RMSD",
+      "ligands": [
+        "HEM",
+        "CMO",
+        "OXY"
+      ]
+    },
+    {
+      "name": "Haemoglobin CO/deoxy (alligator)",
+      "pdb_a": "8WIX",
+      "pdb_b": "8WIZ",
+      "motion": "quaternary rotation",
+      "note": "the R/T sibling of the alligator near-null row, at the same collection plan",
+      "ligands": [
+        "HEM",
+        "CMO",
+        "BCT"
+      ],
+      "ligands_why": "Bicarbonate is the crocodilian allosteric effector, so BCT in 8WIZ is part of what the deoxy state IS rather than a crystallization additive. It also carries the name-collision case: 8WIX deposits CMO 202 in chain B where 8WIZ deposits BCT 202, so both put a carbon under the key (0, 'B', 202, 'C'), the elements agree, and a carbon monoxide's carbon was corresponded with a bicarbonate's -- silently, the atom count rising by two as though two more atoms had matched. An allowlisted residue must now agree by NAME as well as by key"
+    },
+    {
+      "name": "Haemoglobin oxy/deoxy (alligator)",
+      "pdb_a": "8WIY",
+      "pdb_b": "8WIZ",
+      "motion": "quaternary rotation",
+      "note": "the second alligator R/T pair; 2.62 A Ca RMSD",
+      "ligands": [
+        "HEM",
+        "OXY",
+        "BCT"
+      ]
+    },
+    {
+      "name": "Haemoglobin (2DN1/2DN2)",
+      "pdb_a": "2DN1",
+      "pdb_b": "2DN2",
+      "motion": "quaternary rotation",
+      "note": "independent 1.25 A pair of the same transition, at the TETRAMER -- and now the cross-check on the primary benchmark that this row's own warning said it was not. 2.41 A Ca RMSD giving d^2 55.4, against 8WJ1/8WJ2's 3.13 A and 67.6 at the same plan (orc 13177335). Both sides are tetramers, so the comparison is like-for-like.",
+      "assembly_a": "1",
+      "assembly_b": null,
+      "ligands": [
+        "HEM",
+        "OXY"
+      ],
+      "ligands_why": "2DN1 is the oxy form and carries 4 OXY; 2DN2 carries none. MBN is deliberately NOT named -- 2DN1's 14 benzonitrile atoms are a crystallization additive and putting them in a template is putting density there that is not the molecule",
+      "labels_a": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "labels_why": "2DN1 deposits one alpha-beta dimer (A,B) and 2DN2 the whole tetramer (A,B,C,D), so 2DN1 must be EXPANDED and 2DN2 taken as deposited. The correspondence key carries `copy`, so the generated copy had to be renamed onto 2DN2's C,D for the two to match at all -- `labels_a` is that map, and without it the overlap sits at 50% and the pair is refused. Verified: 570 matched C-alpha, 4516 atoms, 40 dropped, RMSD 2.4115 A on the tetramer against 0.9279 A on the dimer alone, so a dimer keeps 38% of the motion. 2DN1's assembly 1 is an EXACT 180 degree rotation with no translation, so ('C','D','A','B') returns the same RMSD to machine precision -- the labeling is free within the operator's orbit and only a labeling outside it, such as ('A','C','B','D'), is an error, reading 28.05 A",
+      "assembly_why": "assembly_a '1' expands 2DN1's deposited alpha-beta dimer to the tetramer and assembly_b null takes 2DN2's deposited tetramer as it stands, with labels_a naming the generated copy onto C,D. 4524 atoms, Ca RMSD 2.4115 A. TWO fields are deliberately absent. The shared `assembly` must not be set beside the per-entry pair -- align_conformers refuses a row carrying both, and it did, dropping this row from two panel scorings with 'got assembly=None beside assembly_a=1 and assembly_b=None'. And `chains_a`/`chains_b` must not be set beside `labels_a`: cutting both entries to one dimer contradicts expanding one of them to the tetramer, and the row carried both for a while, which is a 50% overlap refusal. Either configuration works alone -- the dimer reads 2262 atoms and 0.9279 A -- but the dimer removes the coordinate being measured, since the R->T rotation is BETWEEN dimers. The tetramer is what makes this like-for-like with 8WJ1/8WJ2's 3.129 A."
+    },
+    {
+      "name": "Adenylate kinase",
+      "pdb_a": "4AKE",
+      "pdb_b": "1AKE",
+      "motion": "domain closure",
+      "note": "LID and NMP closure, the textbook large-amplitude hinge",
+      "chains": [
+        "A"
+      ],
+      "chains_why": "4AKE deposits two copies against 1AKE's one, so the monomer must be named"
+    },
+    {
+      "name": "Calmodulin",
+      "pdb_a": "1CFD",
+      "pdb_b": "1CLL",
+      "motion": "linker straightening",
+      "note": "small and floppy; expected to be the hard case",
+      "hydrogens_why": "1CFD models 1096 hydrogens of its 2262 atoms and 1CLL exactly one, so the correspondence guard's denominator made a pair whose HEAVY atoms already correspond at 97% read 50% and refuse. `align_conformers` now drops hydrogens by default -- whether a deposition models them is a property of the method, not the molecule, and at 1.5-2 A per pixel they are nowhere near resolved. Verified: 144 matched C-alpha, 1130 atoms, 36 dropped from 1CFD, RMSD 10.829 A, radius 36.7 A. That RMSD is the linker straightening this row is here for and sits under `targets._MAX_PLAUSIBLE_RMSD`. The only other entries with hydrogens are 2DRI (905) and 1CLL (1), and the ribose row's numbers are unchanged by the filter -- 271 C-alpha at RMSD 4.062 either way, since the intersection never contained them; only its dropped count moves"
+    },
+    {
+      "name": "Maltose-binding protein",
+      "pdb_a": "1OMP",
+      "pdb_b": "1ANF",
+      "motion": "domain closure",
+      "note": "clamshell closure on maltose"
+    },
+    {
+      "name": "Ribose-binding protein",
+      "pdb_a": "1URP",
+      "pdb_b": "2DRI",
+      "motion": "domain closure",
+      "note": "clamshell closure"
+    },
+    {
+      "name": "Glutamine-binding protein",
+      "pdb_a": "1GGG",
+      "pdb_b": "1WDN",
+      "motion": "domain closure",
+      "note": "clamshell closure",
+      "chains": [
+        "A"
+      ],
+      "chains_why": "1GGG deposits two copies against 1WDN's one"
+    },
+    {
+      "name": "DNA polymerase beta",
+      "pdb_a": "1BPD",
+      "pdb_b": "1BPX",
+      "motion": "subdomain closure",
+      "note": "thumb closure on DNA"
+    },
+    {
+      "name": "Glucokinase",
+      "pdb_a": "1V4T",
+      "pdb_b": "3IDH",
+      "motion": "domain closure",
+      "note": "large interdomain hinge; the super-open to closed transition"
+    },
+    {
+      "name": "Lactoferrin",
+      "pdb_a": "1LFH",
+      "pdb_b": "1LFG",
+      "motion": "lobe closure",
+      "note": "iron-driven lobe rotation"
+    },
+    {
+      "name": "Citrate synthase",
+      "pdb_a": "1CTS",
+      "pdb_b": "2CTS",
+      "motion": "domain closure",
+      "note": "dimeric, open to closed"
+    },
+    {
+      "name": "Alcohol dehydrogenase",
+      "pdb_a": "8ADH",
+      "pdb_b": "2OHX",
+      "motion": "domain closure",
+      "note": "apo to holo closure",
+      "chains_why": "8ADH deposits the monomer and 2OHX the dimer, so both are cut to chain A. Refused at 50% (2785 shared of 5570 and 5570) until 2026-08-14 -- EQUAL atom counts with half overlap is the copy-number signature, not a real mispairing. Ca RMSD 1.247 A over 374",
+      "assembly": null,
+      "chains_a": [
+        "A"
+      ],
+      "chains_b": [
+        "A"
+      ],
+      "assembly_why": "null, not \"none\": _assembly_of passes the string through and align_conformers then refuses with \"defines no assembly 'none'\". null is what says the deposited coordinates are the unit to compare, which is the whole point here -- assembly 1 rebuilds a copy count the partner entry does not share, and that is what produced the refusal"
+    },
+    {
+      "name": "Aspartate aminotransferase",
+      "pdb_a": "9AAT",
+      "pdb_b": "1ART",
+      "motion": "domain closure",
+      "note": "open to closed",
+      "chains_why": "9AAT deposits the dimer and 1ART the monomer. Refused at 41% (2595 of 6322 and 6138) until 2026-08-14. Ca RMSD 1.788 A over 396",
+      "assembly": null,
+      "chains_a": [
+        "A"
+      ],
+      "chains_b": [
+        "A"
+      ],
+      "assembly_why": "null, not \"none\": _assembly_of passes the string through and align_conformers then refuses with \"defines no assembly 'none'\". null is what says the deposited coordinates are the unit to compare, which is the whole point here -- assembly 1 rebuilds a copy count the partner entry does not share, and that is what produced the refusal"
+    },
+    {
+      "name": "SERCA",
+      "pdb_a": "1SU4",
+      "pdb_b": "1IWO",
+      "motion": "transport cycle",
+      "note": "E1-Ca to E2; large multi-domain change",
+      "chains": [
+        "A"
+      ],
+      "chains_why": "1IWO deposits two copies against 1SU4's one"
+    },
+    {
+      "name": "Glutamate transporter GltPh",
+      "pdb_a": "2NWL",
+      "pdb_b": "3KBC",
+      "motion": "elevator transport",
+      "note": "outward to inward facing, trimeric"
+    },
+    {
+      "name": "Ras GDP/GTP",
+      "pdb_a": "4Q21",
+      "pdb_b": "5P21",
+      "motion": "switch loop ordering",
+      "assembly": null,
+      "note": "switch I/II ordering on nucleotide exchange; 21 kDa, the panel's small end",
+      "assembly_why": "5P21 carries TWO BIOMT operators for a monomeric protein, so the default assembly '1' builds a dimer that has no counterpart in 4Q21's single operator. Deposited on both sides: verified 166 matched C-alpha, 1322 atoms, RMSD 1.642 A, radius 24.1 A"
+    },
+    {
+      "name": "Protein kinase A",
+      "pdb_a": "1J3H",
+      "pdb_b": "1ATP",
+      "motion": "domain closure",
+      "assembly": null,
+      "chains_a": [
+        "A"
+      ],
+      "chains_b": [
+        "E"
+      ],
+      "labels_a": [
+        "A"
+      ],
+      "labels_b": [
+        "A"
+      ],
+      "note": "catalytic subunit open/closed on nucleotide binding",
+      "chains_why": "1J3H deposits two copies of the catalytic subunit as A and B, 1ATP deposits one as E alongside the PKI inhibitor peptide. One `chains` for both entries cannot express that, which is why this row was withdrawn. The labels rename E onto A so the keys match: verified 323 matched C-alpha, 2451 atoms, RMSD 2.589 A, radius 38.2 A, with 305 atoms dropped from 1ATP -- the inhibitor peptide and unshared side chains"
+    },
+    {
+      "name": "Aspartate transcarbamoylase",
+      "pdb_a": "6AT1",
+      "pdb_b": "8ATC",
+      "motion": "quaternary T-to-R",
+      "assembly": null,
+      "note": "the classic allosteric T/R pair, c2r2 as deposited",
+      "assembly_why": "assembly '1' applies three operators to build the 12-subunit holoenzyme and the two entries mispair across it, reading RMSD 53.028 A. The deposited asymmetric unit is already a catalytic-plus-regulatory pair and matches chain for chain: verified 912 matched C-alpha, 7106 atoms, nothing dropped, RMSD 4.926 A, radius 59.6 A"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:19:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a3ab6ab568.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Trp operon repressor (1ZT9/1WRP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Trp operon repressor (1ZT9/1WRP)",
+        "motion": "shear",
+        "mass_kda": 10.61463,
+        "ca_rmsd": 2.4906871055973476,
+        "radius": 28.0172020626907,
+        "box_size": 128,
+        "d2_known_pose": 8.609955787658691,
+        "d2_crlb": 7.51999568939209,
+        "information": 3.161105155944824,
+        "saturation": 0.790276288986206,
+        "n_floor": 790.8626708984375,
+        "n_marginal": 15197.2578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01990361609460498,
+        "note": "P0A881 12 kDa, dyndom, rotation 12.1 deg, chains D/R",
+        "d2_marginal": 0.1713692545890808,
+        "information_marginal": 0.16450336575508118,
+        "n_matched": 101,
+        "identity": 1.0,
+        "shared_fraction": 0.9889434889434889,
+        "provenance": {
+          "accession": "P0A881",
+          "canonical_mass_kda": 12.355,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.1
+        },
+        "d2_floor": 8.609955787658691
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Trp operon repressor (1ZT9/1WRP) | 11 | shear | 2.49 | 8.61 | 0.020 | 0.79 | 791 | 1.52e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Trp operon repressor (1ZT9/1WRP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

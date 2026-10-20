@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:54:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/42294e4bb0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ig gamma-2A chain C region (1I1C/1I1C)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ig gamma-2A chain C region (1I1C/1I1C)",
+        "motion": "hinge",
+        "mass_kda": 21.449395999999997,
+        "ca_rmsd": 2.074154527560648,
+        "radius": 39.12258513180069,
+        "box_size": 128,
+        "d2_known_pose": 15.791160583496094,
+        "d2_crlb": 14.635223388671875,
+        "information": 3.7170865535736084,
+        "saturation": 0.9292716383934021,
+        "n_floor": 672.5697631835938,
+        "n_marginal": 19619.072265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008329451137959656,
+        "note": "P20760 35 kDa, dyndom, rotation 23.3 deg, chains A/B",
+        "d2_marginal": 0.1315317004919052,
+        "information_marginal": 0.12742702662944794,
+        "n_matched": 205,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P20760",
+          "canonical_mass_kda": 35.186,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 23.3
+        },
+        "d2_floor": 15.791160583496094
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ig gamma-2A chain C region (1I1C/1I1C) | 21 | hinge | 2.07 | 15.8 | 0.008 | 0.93 | 673 | 1.96e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ig gamma-2A chain C region (1I1C/1I1C)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

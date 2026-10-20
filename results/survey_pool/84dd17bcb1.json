@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:16:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/84dd17bcb1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "2-5A-dependent ribonuclease (2-5A-depe (7ELW/4O1P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "2-5A-dependent ribonuclease (2-5A-depe (7ELW/4O1P)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 69.67728699999999,
+        "ca_rmsd": 0.873608657923721,
+        "radius": 69.03114474646088,
+        "box_size": 128,
+        "d2_known_pose": 10.965144157409668,
+        "d2_crlb": 10.353521347045898,
+        "information": 3.4179720878601074,
+        "saturation": 0.8544930219650269,
+        "n_floor": 731.4279174804688,
+        "n_marginal": 1095592.0,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00020822079667510147,
+        "note": "Q05823 84 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains b/D",
+        "d2_marginal": 0.0022831710521131754,
+        "information_marginal": 0.0022818713914602995,
+        "n_matched": 664,
+        "identity": 1.0,
+        "shared_fraction": 0.9837747109287579,
+        "provenance": {
+          "accession": "Q05823",
+          "canonical_mass_kda": 83.533,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 10.965144157409668
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 2-5A-dependent ribonuclease (2-5A-depe (7ELW/4O1P) | 70 | dihedral_cluster | 0.87 | 11 | 0.000 | 0.85 | 731 | 1.1e+06^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "2-5A-dependent ribonuclease (2-5A-depe (7ELW/4O1P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

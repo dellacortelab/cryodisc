@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:08:15+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1bc5e44edc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Antigen-presenting glycoprotein CD1d ( (1ZT4/1ZT4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Antigen-presenting glycoprotein CD1d ( (1ZT4/1ZT4)",
+        "motion": "hinge",
+        "mass_kda": 28.427845999999995,
+        "ca_rmsd": 1.5539878098144495,
+        "radius": 44.29669003057775,
+        "box_size": 128,
+        "d2_known_pose": 15.062094688415527,
+        "d2_crlb": 13.664533615112305,
+        "information": 3.685089349746704,
+        "saturation": 0.921272337436676,
+        "n_floor": 678.40966796875,
+        "n_marginal": 15726.5625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010979533337267379,
+        "note": "P15813 38 kDa, dyndom, rotation 10.9 deg, chains C/A",
+        "d2_marginal": 0.1653747707605362,
+        "information_marginal": 0.15896673500537872,
+        "n_matched": 272,
+        "identity": 1.0,
+        "shared_fraction": 0.9840619307832422,
+        "provenance": {
+          "accession": "P15813",
+          "canonical_mass_kda": 37.717,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.9
+        },
+        "d2_floor": 15.062094688415527
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Antigen-presenting glycoprotein CD1d ( (1ZT4/1ZT4) | 28 | hinge | 1.55 | 15.1 | 0.011 | 0.92 | 678 | 1.57e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Antigen-presenting glycoprotein CD1d ( (1ZT4/1ZT4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

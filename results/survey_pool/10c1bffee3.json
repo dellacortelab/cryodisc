@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:22:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/10c1bffee3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Sodium-aspartate symporter Glt(Ph) (Gl (2NWW/2NWL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Sodium-aspartate symporter Glt(Ph) (Gl (2NWW/2NWL)",
+        "motion": "hinge",
+        "mass_kda": 37.60839,
+        "ca_rmsd": 1.3443280906883537,
+        "radius": 48.51730054676734,
+        "box_size": 128,
+        "d2_known_pose": 10.261573791503906,
+        "d2_crlb": 9.517985343933105,
+        "information": 3.3515639305114746,
+        "saturation": 0.8378909826278687,
+        "n_floor": 745.92041015625,
+        "n_marginal": 8015.865234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.032836532787052834,
+        "note": "O59010 45 kDa, dyndom, rotation 30.3 deg, chains C/A",
+        "d2_marginal": 0.3369545042514801,
+        "information_marginal": 0.31188148260116577,
+        "n_matched": 402,
+        "identity": 0.9975124378109452,
+        "shared_fraction": 0.983826565726084,
+        "provenance": {
+          "accession": "O59010",
+          "canonical_mass_kda": 44.807,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 30.3
+        },
+        "d2_floor": 10.261573791503906
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sodium-aspartate symporter Glt(Ph) (Gl (2NWW/2NWL) | 38 | hinge | 1.34 | 10.3 | 0.033 | 0.84 | 746 | 8.02e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Sodium-aspartate symporter Glt(Ph) (Gl (2NWW/2NWL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

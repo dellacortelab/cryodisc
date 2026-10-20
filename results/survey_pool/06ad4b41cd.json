@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:43:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/06ad4b41cd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional regulatory protein Emb (2FF4/2FF4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional regulatory protein Emb (2FF4/2FF4)",
+        "motion": "shear",
+        "mass_kda": 37.49514599999999,
+        "ca_rmsd": 1.0206751290213518,
+        "radius": 41.4613640111946,
+        "box_size": 128,
+        "d2_known_pose": 8.62805461883545,
+        "d2_crlb": 7.016345024108887,
+        "information": 3.163496732711792,
+        "saturation": 0.790874183177948,
+        "n_floor": 790.2647705078125,
+        "n_marginal": 19461.927734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015371674955077118,
+        "note": "P9WGJ9 42 kDa, dyndom, rotation 7.3 deg, chains B/A",
+        "d2_marginal": 0.13262765109539032,
+        "information_marginal": 0.12845593690872192,
+        "n_matched": 373,
+        "identity": 1.0,
+        "shared_fraction": 0.9827467218771566,
+        "provenance": {
+          "accession": "P9WGJ9",
+          "canonical_mass_kda": 41.933,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.3
+        },
+        "d2_floor": 8.62805461883545
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional regulatory protein Emb (2FF4/2FF4) | 37 | shear | 1.02 | 8.63 | 0.015 | 0.79 | 790 | 1.95e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional regulatory protein Emb (2FF4/2FF4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

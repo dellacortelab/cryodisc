@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:49:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ba707dcb9c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Growth hormone secretagogue receptor t (7F83/7NA7)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Growth hormone secretagogue receptor t (7F83/7NA7)",
+        "motion": "activation",
+        "mass_kda": 29.717843,
+        "ca_rmsd": 3.5746393985596803,
+        "radius": 40.18763087223647,
+        "box_size": 128,
+        "d2_known_pose": 65.09505462646484,
+        "d2_crlb": 59.491024017333984,
+        "information": 3.999659776687622,
+        "saturation": 0.9999149441719055,
+        "n_floor": 625.0531616210938,
+        "n_marginal": 6393.77685546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006617721113808624,
+        "note": "Q92847 41 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.43078091740608215,
+        "information_marginal": 0.3910052180290222,
+        "n_matched": 281,
+        "identity": 1.0,
+        "shared_fraction": 0.7172260924635846,
+        "provenance": {
+          "accession": "Q92847",
+          "canonical_mass_kda": 41.329,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 65.09505462646484
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Growth hormone secretagogue receptor t (7F83/7NA7) | 30 | activation | 3.57 | 65.1 | 0.007 | 1.00* | 625 | 6.39e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Growth hormone secretagogue receptor t (7F83/7NA7)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

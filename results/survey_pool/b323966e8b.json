@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:31:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b323966e8b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA damage-binding protein 1 (DDB p127 (2B5M/2B5L)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA damage-binding protein 1 (DDB p127 (2B5M/2B5L)",
+        "motion": "hinge",
+        "mass_kda": 115.828589,
+        "ca_rmsd": 9.055177544837848,
+        "radius": 65.16302823992287,
+        "box_size": 128,
+        "d2_known_pose": 450.620361328125,
+        "d2_crlb": 396.8020935058594,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 7945.35009765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0007549093103689453,
+        "note": "Q16531 127 kDa, dyndom, rotation 70.7 deg, chains A/B",
+        "d2_marginal": 0.3401775062084198,
+        "information_marginal": 0.31464946269989014,
+        "n_matched": 1118,
+        "identity": 1.0,
+        "shared_fraction": 0.9868183866606579,
+        "provenance": {
+          "accession": "Q16531",
+          "canonical_mass_kda": 126.968,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 70.7
+        },
+        "d2_floor": 450.620361328125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA damage-binding protein 1 (DDB p127 (2B5M/2B5L) | 116 | hinge | 9.06 | 451 | 0.001 | 1.00* | 625 | 7.95e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA damage-binding protein 1 (DDB p127 (2B5M/2B5L)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

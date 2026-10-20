@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:39:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f920ab3c05.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "MAP kinase-interacting serine/threonin (9HRC/6JLR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "MAP kinase-interacting serine/threonin (9HRC/6JLR)",
+        "motion": "dfg_flip",
+        "mass_kda": 27.879555999999997,
+        "ca_rmsd": 1.2788187621189853,
+        "radius": 44.557765355112814,
+        "box_size": 128,
+        "d2_known_pose": 7.142825603485107,
+        "d2_crlb": 6.67816686630249,
+        "information": 2.939582347869873,
+        "saturation": 0.7348955869674683,
+        "n_floor": 850.4609375,
+        "n_marginal": 13729.73046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.026672060839311302,
+        "note": "Q9HBH9 52 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/A",
+        "d2_marginal": 0.19051387906074524,
+        "information_marginal": 0.18208661675453186,
+        "n_matched": 268,
+        "identity": 0.996268656716418,
+        "shared_fraction": 0.9386393952867941,
+        "provenance": {
+          "accession": "Q9HBH9",
+          "canonical_mass_kda": 51.875,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 7.142825603485107
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| MAP kinase-interacting serine/threonin (9HRC/6JLR) | 28 | dfg_flip | 1.28 | 7.14 | 0.027 | 0.73 | 850 | 1.37e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "MAP kinase-interacting serine/threonin (9HRC/6JLR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

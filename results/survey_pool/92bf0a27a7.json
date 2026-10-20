@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:28:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/92bf0a27a7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional regulator (NtrC family (1NY6/1NY6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional regulator (NtrC family (1NY6/1NY6)",
+        "motion": "shear",
+        "mass_kda": 25.876203999999998,
+        "ca_rmsd": 1.3270317755447296,
+        "radius": 38.35784410678396,
+        "box_size": 128,
+        "d2_known_pose": 8.094744682312012,
+        "d2_crlb": 7.561217308044434,
+        "information": 3.089761972427368,
+        "saturation": 0.772440493106842,
+        "n_floor": 809.1238403320312,
+        "n_marginal": 25528.373046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012396653183835211,
+        "note": "O67198 50 kDa, dyndom, rotation 11.7 deg, chains N/L",
+        "d2_marginal": 0.10034774243831635,
+        "information_marginal": 0.09793025255203247,
+        "n_matched": 246,
+        "identity": 1.0,
+        "shared_fraction": 0.9964628600303184,
+        "provenance": {
+          "accession": "O67198",
+          "canonical_mass_kda": 50.367,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.7
+        },
+        "d2_floor": 8.094744682312012
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional regulator (NtrC family (1NY6/1NY6) | 26 | shear | 1.33 | 8.09 | 0.012 | 0.77 | 809 | 2.55e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional regulator (NtrC family (1NY6/1NY6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

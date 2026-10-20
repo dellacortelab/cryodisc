@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:08:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/382846297a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "UDP-N-acetylglucosamine pyrophosphoryl (2YQC/2YQS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "UDP-N-acetylglucosamine pyrophosphoryl (2YQC/2YQS)",
+        "motion": "crypticpocket",
+        "mass_kda": 47.553692,
+        "ca_rmsd": 1.414662035286904,
+        "radius": 44.685444229934646,
+        "box_size": 128,
+        "d2_known_pose": 14.575721740722656,
+        "d2_crlb": 13.879064559936523,
+        "information": 3.6616485118865967,
+        "saturation": 0.9154121279716492,
+        "n_floor": 682.7526245117188,
+        "n_marginal": 9391.6357421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019509588924892265,
+        "note": "O74933 55 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.28436633944511414,
+        "information_marginal": 0.26619431376457214,
+        "n_matched": 474,
+        "identity": 1.0,
+        "shared_fraction": 0.9709677419354839,
+        "provenance": {
+          "accession": "O74933",
+          "canonical_mass_kda": 54.644,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.575721740722656
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| UDP-N-acetylglucosamine pyrophosphoryl (2YQC/2YQS) | 48 | crypticpocket | 1.41 | 14.6 | 0.020 | 0.92 | 683 | 9.39e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "UDP-N-acetylglucosamine pyrophosphoryl (2YQC/2YQS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

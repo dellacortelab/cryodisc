@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:20:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/07f6f5239a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA-directed RNA polymerase subunit be (1I6V/1YNJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA-directed RNA polymerase subunit be (1I6V/1YNJ)",
+        "motion": "hinge",
+        "mass_kda": 110.19851999999999,
+        "ca_rmsd": 3.217132086926537,
+        "radius": 66.90098863548204,
+        "box_size": 128,
+        "d2_known_pose": 41.42548370361328,
+        "d2_crlb": 40.66725540161133,
+        "information": 3.9920451641082764,
+        "saturation": 0.9980112910270691,
+        "n_floor": 626.2454833984375,
+        "n_marginal": 128408.9765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0004722674998805187,
+        "note": "Q9KWU7 125 kDa, dyndom, rotation 59.8 deg, chains C/C",
+        "d2_marginal": 0.019563909620046616,
+        "information_marginal": 0.019469043239951134,
+        "n_matched": 1111,
+        "identity": 0.9981998199819982,
+        "shared_fraction": 0.975868500816041,
+        "provenance": {
+          "accession": "Q9KWU7",
+          "canonical_mass_kda": 124.758,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 59.8
+        },
+        "d2_floor": 41.42548370361328
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA-directed RNA polymerase subunit be (1I6V/1YNJ) | 110 | hinge | 3.22 | 41.4 | 0.000 | 1.00* | 626 | 1.28e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA-directed RNA polymerase subunit be (1I6V/1YNJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:05:05+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ee6e0be4d2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Sialic acid-binding periplasmic protei (2CEX/2CEX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Sialic acid-binding periplasmic protei (2CEX/2CEX)",
+        "motion": "unclassified",
+        "mass_kda": 31.571608,
+        "ca_rmsd": 3.10518128283961,
+        "radius": 35.614835614543516,
+        "box_size": 128,
+        "d2_known_pose": 40.09526443481445,
+        "d2_crlb": 35.62044906616211,
+        "information": 3.990478277206421,
+        "saturation": 0.9976195693016052,
+        "n_floor": 626.4913330078125,
+        "n_marginal": 3187.534423828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023771198331267666,
+        "note": "P44542 37 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains B/D",
+        "d2_marginal": 0.9531124830245972,
+        "information_marginal": 0.7843052744865417,
+        "n_matched": 304,
+        "identity": 1.0,
+        "shared_fraction": 0.9966722129783694,
+        "provenance": {
+          "accession": "P44542",
+          "canonical_mass_kda": 36.513,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 40.09526443481445
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sialic acid-binding periplasmic protei (2CEX/2CEX) | 32 | unclassified | 3.11 | 40.1 | 0.024 | 1.00* | 626 | 3.19e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Sialic acid-binding periplasmic protei (2CEX/2CEX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

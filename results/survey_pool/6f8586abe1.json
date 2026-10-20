@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:14:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6f8586abe1.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA/pantothenate metabolism flavoprote (2GK4/2GK4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA/pantothenate metabolism flavoprote (2GK4/2GK4)",
+        "motion": "shear",
+        "mass_kda": 22.099470999999998,
+        "ca_rmsd": 1.5085856268720719,
+        "radius": 40.10499458431188,
+        "box_size": 128,
+        "d2_known_pose": 12.441096305847168,
+        "d2_crlb": 10.830802917480469,
+        "information": 3.534757137298584,
+        "saturation": 0.883689284324646,
+        "n_floor": 707.26220703125,
+        "n_marginal": 23044.01953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008958847481896924,
+        "note": "A0A0H2UQ78 26 kDa, dyndom, rotation 12.6 deg, chains A/B",
+        "d2_marginal": 0.11145788431167603,
+        "information_marginal": 0.10848802328109741,
+        "n_matched": 213,
+        "identity": 1.0,
+        "shared_fraction": 0.9465391108610017,
+        "provenance": {
+          "accession": "A0A0H2UQ78",
+          "canonical_mass_kda": 25.765,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.6
+        },
+        "d2_floor": 12.441096305847168
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA/pantothenate metabolism flavoprote (2GK4/2GK4) | 22 | shear | 1.51 | 12.4 | 0.009 | 0.88 | 707 | 2.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA/pantothenate metabolism flavoprote (2GK4/2GK4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

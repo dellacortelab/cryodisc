@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/build_full_maps.py",
+  "commit": "6f5f462d",
+  "written_at": "2026-10-04T03:37:49+00:00",
+  "arguments": {
+    "state_a": "/data/bryceeh/cryoem_projects/CS-preprocess-12/J9/J9_001_volume_map.mrc",
+    "state_a_halves": null,
+    "state_b": "/data/bryceeh/cryoem_projects/CS-preprocess-13/J9/J9_001_volume_map.mrc",
+    "state_b_halves": null,
+    "target_pixel_size": 4.088,
+    "relabel_tolerance": 0.01,
+    "amplitude_match": "spectrum",
+    "out_a": "/data/bryceeh/recovery_fullmaps_pools/fanac/tmpl_a.mrc",
+    "out_b": "/data/bryceeh/recovery_fullmaps_pools/fanac/tmpl_b.mrc",
+    "record": "/data/bryceeh/recovery_fullmaps_pools/fanac/maps.json"
+  },
+  "result": {
+    "target_pixel_size": 4.088,
+    "state_a_pixel": 4.0879998207092285,
+    "state_b_pixel": 4.0879998207092285,
+    "state_a_from_halves": false,
+    "state_b_from_halves": false,
+    "amplitude_match": {
+      "method": "spectrum",
+      "shells": 112
+    },
+    "box": 128
+  }
+}

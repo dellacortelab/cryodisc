@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:19:28+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3fd493c597.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "BDNF/NT-3 growth factors receptor (EC (4AT3/4AT5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "BDNF/NT-3 growth factors receptor (EC (4AT3/4AT5)",
+        "motion": "dfg_flip",
+        "mass_kda": 30.727928999999996,
+        "ca_rmsd": 1.6677974149971042,
+        "radius": 34.11397082060675,
+        "box_size": 128,
+        "d2_known_pose": 9.861435890197754,
+        "d2_crlb": 9.365108489990234,
+        "information": 3.310183525085449,
+        "saturation": 0.8275458812713623,
+        "n_floor": 755.2451171875,
+        "n_marginal": 14055.9501953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018850982221302427,
+        "note": "Q16620 92 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/A",
+        "d2_marginal": 0.18589775264263153,
+        "information_marginal": 0.17786061763763428,
+        "n_matched": 288,
+        "identity": 1.0,
+        "shared_fraction": 0.9810126582278481,
+        "provenance": {
+          "accession": "Q16620",
+          "canonical_mass_kda": 91.999,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 9.861435890197754
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| BDNF/NT-3 growth factors receptor (EC (4AT3/4AT5) | 31 | dfg_flip | 1.67 | 9.86 | 0.019 | 0.83 | 755 | 1.41e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "BDNF/NT-3 growth factors receptor (EC (4AT3/4AT5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

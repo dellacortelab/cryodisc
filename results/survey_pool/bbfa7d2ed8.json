@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:28:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bbfa7d2ed8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cell division control protein 31 (Nucl (2DOQ/2GV5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cell division control protein 31 (Nucl (2DOQ/2GV5)",
+        "motion": "hinge",
+        "mass_kda": 15.343235999999997,
+        "ca_rmsd": 1.2087141078707129,
+        "radius": 35.33307205631349,
+        "box_size": 128,
+        "d2_known_pose": 5.024620056152344,
+        "d2_crlb": 4.484719753265381,
+        "information": 2.4936933517456055,
+        "saturation": 0.6234233379364014,
+        "n_floor": 1002.529052734375,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P06704 19 kDa, dyndom, rotation 10.2 deg, chains A/A",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 141,
+        "identity": 1.0,
+        "shared_fraction": 0.9814658803706824,
+        "provenance": {
+          "accession": "P06704",
+          "canonical_mass_kda": 18.751,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.2
+        },
+        "d2_floor": 5.024620056152344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cell division control protein 31 (Nucl (2DOQ/2GV5) | 15 | hinge | 1.21 | 5.02 | -- | 0.62 | 1e+03 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Cell division control protein 31 (Nucl (2DOQ/2GV5)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 10 (total of 0 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

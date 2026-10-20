@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:10:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4713f2f140.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional regulator, TetR family (2I10/2I10)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional regulator, TetR family (2I10/2I10)",
+        "motion": "no_contact",
+        "mass_kda": 17.020419999999998,
+        "ca_rmsd": 2.0013870897258,
+        "radius": 33.33268131482645,
+        "box_size": 128,
+        "d2_known_pose": 11.562078475952148,
+        "d2_crlb": 8.975460052490234,
+        "information": 3.468594551086426,
+        "saturation": 0.8671486377716064,
+        "n_floor": 720.7530517578125,
+        "n_marginal": 11923.9033203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019102780083634408,
+        "note": "Q0RX74 22 kDa, dyndom, rotation 11.3 deg, chains B/A",
+        "d2_marginal": 0.2208678424358368,
+        "information_marginal": 0.20966289937496185,
+        "n_matched": 170,
+        "identity": 1.0,
+        "shared_fraction": 0.9648729446935725,
+        "provenance": {
+          "accession": "Q0RX74",
+          "canonical_mass_kda": 21.524,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.3
+        },
+        "d2_floor": 11.562078475952148
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional regulator, TetR family (2I10/2I10) | 17 | no_contact | 2.00 | 11.6 | 0.019 | 0.87 | 721 | 1.19e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional regulator, TetR family (2I10/2I10)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

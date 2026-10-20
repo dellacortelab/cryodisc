@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:22:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8ad31c9709.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase 17A (E (7QUF/7QUE)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase 17A (E (7QUF/7QUE)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 22.122224,
+        "ca_rmsd": 2.264211460337167,
+        "radius": 44.60234992682693,
+        "box_size": 128,
+        "d2_known_pose": 19.08685874938965,
+        "d2_crlb": 17.37449073791504,
+        "information": 3.82462215423584,
+        "saturation": 0.95615553855896,
+        "n_floor": 653.6593627929688,
+        "n_marginal": 18614.208984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0072756279634848,
+        "note": "Q9UEE5 47 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BLAminus, chains B/A",
+        "d2_marginal": 0.13886888325214386,
+        "information_marginal": 0.13430601358413696,
+        "n_matched": 240,
+        "identity": 1.0,
+        "shared_fraction": 0.8447236180904523,
+        "provenance": {
+          "accession": "Q9UEE5",
+          "canonical_mass_kda": 46.558,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 19.08685874938965
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase 17A (E (7QUF/7QUE) | 22 | dihedral_cluster | 2.26 | 19.1 | 0.007 | 0.96 | 654 | 1.86e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase 17A (E (7QUF/7QUE)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

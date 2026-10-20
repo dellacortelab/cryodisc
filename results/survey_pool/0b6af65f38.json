@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:23:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0b6af65f38.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Type II secretion system protein E (T2 (2D27/2D28)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Type II secretion system protein E (T2 (2D27/2D28)",
+        "motion": "hinge",
+        "mass_kda": 14.420897999999998,
+        "ca_rmsd": 11.178695605827796,
+        "radius": 36.12464717062905,
+        "box_size": 128,
+        "d2_known_pose": 137.21383666992188,
+        "d2_crlb": 119.47721862792969,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1342.6221923828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022125502963820966,
+        "note": "P31742 63 kDa, dyndom, rotation 178.5 deg, chains A/C",
+        "d2_marginal": 3.0359251499176025,
+        "information_marginal": 1.862027883529663,
+        "n_matched": 140,
+        "identity": 0.9928571428571429,
+        "shared_fraction": 0.9605609114811569,
+        "provenance": {
+          "accession": "P31742",
+          "canonical_mass_kda": 63.144,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 178.5
+        },
+        "d2_floor": 137.21383666992188
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Type II secretion system protein E (T2 (2D27/2D28) | 14 | hinge | 11.18 | 137 | 0.022 | 1.00* | 625 | 1.34e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Type II secretion system protein E (T2 (2D27/2D28)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

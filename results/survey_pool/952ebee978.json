@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:50:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/952ebee978.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Elongation factor Tu 2 (EF-Tu 2) (EC 3 (1OB2/1DG1)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Elongation factor Tu 2 (EF-Tu 2) (EC 3 (1OB2/1DG1)",
+        "motion": "hinge",
+        "mass_kda": 39.128386,
+        "ca_rmsd": 12.30668466977083,
+        "radius": 43.70888623103541,
+        "box_size": 128,
+        "d2_known_pose": 261.76092529296875,
+        "d2_crlb": 245.853271484375,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1702.7000732421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00816061667330428,
+        "note": "P0CE48 43 kDa, dyndom, rotation 97.9 deg, chains A/G",
+        "d2_marginal": 2.1361305713653564,
+        "information_marginal": 1.4682562351226807,
+        "n_matched": 385,
+        "identity": 1.0,
+        "shared_fraction": 0.9762767710049424,
+        "provenance": {
+          "accession": "P0CE48",
+          "canonical_mass_kda": 43.314,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 97.9
+        },
+        "d2_floor": 261.76092529296875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Elongation factor Tu 2 (EF-Tu 2) (EC 3 (1OB2/1DG1) | 39 | hinge | 12.31 | 262 | 0.008 | 1.00* | 625 | 1.7e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Elongation factor Tu 2 (EF-Tu 2) (EC 3 (1OB2/1DG1)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

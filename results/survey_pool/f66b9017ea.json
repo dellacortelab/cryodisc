@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:14:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f66b9017ea.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Immunoglobulin heavy constant gamma 2B (1UB5/1UB5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Immunoglobulin heavy constant gamma 2B (1UB5/1UB5)",
+        "motion": "hinge",
+        "mass_kda": 20.638835999999994,
+        "ca_rmsd": 1.1209744454875419,
+        "radius": 40.7691608750465,
+        "box_size": 128,
+        "d2_known_pose": 5.02096700668335,
+        "d2_crlb": 3.64774751663208,
+        "information": 2.4927568435668945,
+        "saturation": 0.6231892108917236,
+        "n_floor": 1002.9057006835938,
+        "n_marginal": 51193.69921875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00984523236514779,
+        "note": "P01867 44 kDa, dyndom, rotation 9.8 deg, chains H/A",
+        "d2_marginal": 0.04943258687853813,
+        "information_marginal": 0.04883413761854172,
+        "n_matched": 209,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P01867",
+          "canonical_mass_kda": 44.259,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.8
+        },
+        "d2_floor": 5.02096700668335
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Immunoglobulin heavy constant gamma 2B (1UB5/1UB5) | 21 | hinge | 1.12 | 5.02 | 0.010 | 0.62 | 1e+03 | 5.12e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Immunoglobulin heavy constant gamma 2B (1UB5/1UB5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:27:57+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a2688891a0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Amino acid ABC transporter substrate-b (3ZSF/2YLN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Amino acid ABC transporter substrate-b (3ZSF/2YLN)",
+        "motion": "domainmotion",
+        "mass_kda": 23.388166,
+        "ca_rmsd": 5.754067648619071,
+        "radius": 33.56485860497861,
+        "box_size": 128,
+        "d2_known_pose": 71.35160827636719,
+        "d2_crlb": 64.2854232788086,
+        "information": 3.9998505115509033,
+        "saturation": 0.9999626278877258,
+        "n_floor": 625.0233764648438,
+        "n_marginal": 1967.8978271484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.024543979527593407,
+        "note": "Q5F9M1 29 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 1.7512524127960205,
+        "information_marginal": 1.2703912258148193,
+        "n_matched": 237,
+        "identity": 1.0,
+        "shared_fraction": 0.9833887043189369,
+        "provenance": {
+          "accession": "Q5F9M1",
+          "canonical_mass_kda": 28.712,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 71.35160827636719
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Amino acid ABC transporter substrate-b (3ZSF/2YLN) | 23 | domainmotion | 5.75 | 71.4 | 0.025 | 1.00* | 625 | 1.97e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Amino acid ABC transporter substrate-b (3ZSF/2YLN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.05,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/kc_scaling/ip_converge_GRK2_a0.05.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "G protein-coupled receptor kinase 2 (E (1YM7/1OMW)",
+      "box_size": 128,
+      "rmsd": 1.6252675612411365,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.0004640804836526513,
+          "d2": 0.0004641375271603465,
+          "d2_err": 0.0019639383535832167,
+          "n_for_error": 5386997.0,
+          "seconds": 15.6
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.0006285506533458829,
+          "d2": 0.0006286535644903779,
+          "d2_err": 0.0021261770743876696,
+          "n_for_error": 3977404.25,
+          "seconds": 26.6
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.0001671512145549059,
+          "d2": 0.00016715863603167236,
+          "d2_err": 0.0016351294470950961,
+          "n_for_error": 14956517.0,
+          "seconds": 106.0
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.00020793758449144661,
+          "d2": 0.00020794822194147855,
+          "d2_err": 0.0016844969941303134,
+          "n_for_error": 12022839.0,
+          "seconds": 413.6
+        }
+      ]
+    }
+  ]
+}

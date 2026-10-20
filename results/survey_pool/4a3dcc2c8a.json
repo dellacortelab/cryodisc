@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:02:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4a3dcc2c8a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "3-deoxy-manno-octulosonate cytidylyltr (1GQC/1H7H)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "3-deoxy-manno-octulosonate cytidylyltr (1GQC/1H7H)",
+        "motion": "shear",
+        "mass_kda": 24.719488999999996,
+        "ca_rmsd": 1.0875473633540664,
+        "radius": 35.434445855962075,
+        "box_size": 128,
+        "d2_known_pose": 7.242928981781006,
+        "d2_crlb": 6.414620876312256,
+        "information": 2.9566073417663574,
+        "saturation": 0.7391518354415894,
+        "n_floor": 845.5637817382812,
+        "n_marginal": 7342.91796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0511453067025212,
+        "note": "P42216 27 kDa, dyndom, rotation 8.1 deg, chains A/B",
+        "d2_marginal": 0.37044182419776917,
+        "information_marginal": 0.34046411514282227,
+        "n_matched": 241,
+        "identity": 1.0,
+        "shared_fraction": 0.9973319103521878,
+        "provenance": {
+          "accession": "P42216",
+          "canonical_mass_kda": 27.159,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.1
+        },
+        "d2_floor": 7.242928981781006
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 3-deoxy-manno-octulosonate cytidylyltr (1GQC/1H7H) | 25 | shear | 1.09 | 7.24 | 0.051 | 0.74 | 846 | 7.34e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "3-deoxy-manno-octulosonate cytidylyltr (1GQC/1H7H)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

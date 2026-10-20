@@ -1,0 +1,77 @@
+{
+  "driver": "experiments/panel/ip_converge.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 0.05,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "seed": 0,
+    "out": "results/kc_scaling/ip_converge_mannitol_a0.05.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)",
+      "box_size": 128,
+      "rmsd": 0.7791782367517301,
+      "fraction": 0.4905000329017639,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.00484509626403451,
+          "d2": 0.004850965924561024,
+          "d2_err": 0.00462695024907589,
+          "n_for_error": 515985.65625,
+          "seconds": 15.0
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.005303384270519018,
+          "d2": 0.005310406442731619,
+          "d2_err": 0.004821502137929201,
+          "n_for_error": 471397.125,
+          "seconds": 26.2
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 0.005693322047591209,
+          "d2": 0.005701408255845308,
+          "d2_err": 0.004981566686183214,
+          "n_for_error": 439110.9375,
+          "seconds": 105.8
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 0.005672756116837263,
+          "d2": 0.005680805072188377,
+          "d2_err": 0.004973269999027252,
+          "n_for_error": 440702.90625,
+          "seconds": 413.9
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:23:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/db08573f45.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Diphtheria toxin (DT) (NAD(+)--diphtha (1F0L/1TOX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Diphtheria toxin (DT) (NAD(+)--diphtha (1F0L/1TOX)",
+        "motion": "hinge",
+        "mass_kda": 51.92391299999999,
+        "ca_rmsd": 15.744301296797769,
+        "radius": 47.41933253836868,
+        "box_size": 128,
+        "d2_known_pose": 501.848876953125,
+        "d2_crlb": 460.6532897949219,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1157.942626953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007704727529896773,
+        "note": "P00588 62 kDa, dyndom, rotation 177.4 deg, chains B/B",
+        "d2_marginal": 3.8666088581085205,
+        "information_marginal": 2.1590018272399902,
+        "n_matched": 512,
+        "identity": 1.0,
+        "shared_fraction": 0.9817864271457086,
+        "provenance": {
+          "accession": "P00588",
+          "canonical_mass_kda": 61.602,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 177.4
+        },
+        "d2_floor": 501.848876953125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Diphtheria toxin (DT) (NAD(+)--diphtha (1F0L/1TOX) | 52 | hinge | 15.74 | 502 | 0.008 | 1.00* | 625 | 1.16e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Diphtheria toxin (DT) (NAD(+)--diphtha (1F0L/1TOX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

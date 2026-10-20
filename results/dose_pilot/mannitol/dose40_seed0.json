@@ -1,0 +1,99 @@
+{
+  "driver": "experiments/panel/dose_sweep.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "doses": [
+      20.0,
+      40.0,
+      80.0
+    ],
+    "seeds": [
+      0
+    ],
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384,
+      64128
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 1.0,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "pixel_size": 2.0,
+    "out_dir": "results/dose_pilot/mannitol",
+    "dry_run": false,
+    "snr": null,
+    "dose": 40.0,
+    "seed": 0
+  },
+  "rows": [
+    {
+      "name": "Mannitol dehydrogenase (EC 1.1.1.67) (1LJ8/1M2W)",
+      "box_size": 128,
+      "rmsd": 0.7791782367517301,
+      "fraction": 0.4905000329017639,
+      "amplitude": 1.0,
+      "snr": 19.83812713623047,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.13589592278003693,
+          "d2": 0.14056526124477386,
+          "d2_err": 0.023959731683135033,
+          "n_for_error": 18396.431640625,
+          "seconds": 6.4
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.5316474437713623,
+          "d2": 0.6064530611038208,
+          "d2_err": 0.05106877163052559,
+          "n_for_error": 4702.36474609375,
+          "seconds": 22.0
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 1.0766431093215942,
+          "d2": 1.4099388122558594,
+          "d2_err": 0.08142415434122086,
+          "n_for_error": 2322.0322265625,
+          "seconds": 96.7
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 1.6228010654449463,
+          "d2": 2.4655144214630127,
+          "d2_err": 0.11358325183391571,
+          "n_for_error": 1540.546142578125,
+          "seconds": 399.7
+        },
+        {
+          "k_requested": 64128,
+          "k": 64128,
+          "information": 1.791069507598877,
+          "d2": 2.8580212593078613,
+          "d2_err": 0.12450670450925827,
+          "n_for_error": 1395.8140869140625,
+          "seconds": 767.9
+        }
+      ]
+    }
+  ]
+}

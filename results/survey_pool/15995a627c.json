@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:37:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/15995a627c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Importin subunit beta-1 (Importin-95) (2BKU/2BKU)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Importin subunit beta-1 (Importin-95) (2BKU/2BKU)",
+        "motion": "unclassified",
+        "mass_kda": 86.91416499999998,
+        "ca_rmsd": 1.1886708628361644,
+        "radius": 64.41034818203147,
+        "box_size": 128,
+        "d2_known_pose": 25.279211044311523,
+        "d2_crlb": 21.57748031616211,
+        "information": 3.9271016120910645,
+        "saturation": 0.9817754030227661,
+        "n_floor": 636.601806640625,
+        "n_marginal": 70178.375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0014217860889282276,
+        "note": "Q06142 95 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains D/B",
+        "d2_marginal": 0.035941630601882935,
+        "information_marginal": 0.03562350943684578,
+        "n_matched": 850,
+        "identity": 1.0,
+        "shared_fraction": 0.9913949275362319,
+        "provenance": {
+          "accession": "Q06142",
+          "canonical_mass_kda": 94.776,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 25.279211044311523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Importin subunit beta-1 (Importin-95) (2BKU/2BKU) | 87 | unclassified | 1.19 | 25.3 | 0.001 | 0.98 | 637 | 7.02e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Importin subunit beta-1 (Importin-95) (2BKU/2BKU)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

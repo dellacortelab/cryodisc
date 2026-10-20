@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:26:52+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/016e14a54c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ATP synthase F(1) complex catalytic su (2JDI/1H8E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ATP synthase F(1) complex catalytic su (2JDI/1H8E)",
+        "motion": "hinge",
+        "mass_kda": 45.75228599999999,
+        "ca_rmsd": 3.8136127313066672,
+        "radius": 47.841661658840614,
+        "box_size": 128,
+        "d2_known_pose": 76.96134948730469,
+        "d2_crlb": 72.1534652709961,
+        "information": 3.9999284744262695,
+        "saturation": 0.9999821186065674,
+        "n_floor": 625.01123046875,
+        "n_marginal": 5163.43798828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007092811317655414,
+        "note": "P00829 56 kDa, dyndom, rotation 28.1 deg, chains E/D",
+        "d2_marginal": 0.5458723306655884,
+        "information_marginal": 0.4841735363006592,
+        "n_matched": 458,
+        "identity": 1.0,
+        "shared_fraction": 0.9810680983328623,
+        "provenance": {
+          "accession": "P00829",
+          "canonical_mass_kda": 56.284,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 28.1
+        },
+        "d2_floor": 76.96134948730469
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ATP synthase F(1) complex catalytic su (2JDI/1H8E) | 46 | hinge | 3.81 | 77 | 0.007 | 1.00* | 625 | 5.16e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ATP synthase F(1) complex catalytic su (2JDI/1H8E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

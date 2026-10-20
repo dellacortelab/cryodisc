@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:45:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9a112962ab.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcriptional repressor SmtB (1R22/1R1T)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcriptional repressor SmtB (1R22/1R1T)",
+        "motion": "hinge",
+        "mass_kda": 9.643955999999998,
+        "ca_rmsd": 1.1852455729246656,
+        "radius": 33.41130612552109,
+        "box_size": 128,
+        "d2_known_pose": 3.166606903076172,
+        "d2_crlb": 2.6159827709198,
+        "information": 1.9123084545135498,
+        "saturation": 0.47807711362838745,
+        "n_floor": 1307.320556640625,
+        "n_marginal": 45259.54296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01768552596984485,
+        "note": "P30340 14 kDa, dyndom, rotation 12.2 deg, chains B/B",
+        "d2_marginal": 0.056003108620643616,
+        "information_marginal": 0.055236972868442535,
+        "n_matched": 93,
+        "identity": 0.989247311827957,
+        "shared_fraction": 0.9460154241645244,
+        "provenance": {
+          "accession": "P30340",
+          "canonical_mass_kda": 13.544,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.2
+        },
+        "d2_floor": 3.166606903076172
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcriptional repressor SmtB (1R22/1R1T) | 10 | hinge | 1.19 | 3.17 | 0.018 | 0.48 | 1.31e+03 | 4.53e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcriptional repressor SmtB (1R22/1R1T)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

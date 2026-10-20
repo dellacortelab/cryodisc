@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:33:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5b5a06efce.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Neurotensin receptor type 1 (NT-R-1) ( (7UL2/6OS9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Neurotensin receptor type 1 (NT-R-1) ( (7UL2/6OS9)",
+        "motion": "activation",
+        "mass_kda": 27.496121999999996,
+        "ca_rmsd": 3.046668382861329,
+        "radius": 45.03809802375777,
+        "box_size": 128,
+        "d2_known_pose": 46.979671478271484,
+        "d2_crlb": 44.19847106933594,
+        "information": 3.9962310791015625,
+        "saturation": 0.9990577697753906,
+        "n_floor": 625.5894775390625,
+        "n_marginal": 3338.360595703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019198886759132176,
+        "note": "P30989 46 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/R",
+        "d2_marginal": 0.9019573926925659,
+        "information_marginal": 0.7488706111907959,
+        "n_matched": 282,
+        "identity": 0.9078014184397163,
+        "shared_fraction": 0.8674948240165632,
+        "provenance": {
+          "accession": "P30989",
+          "canonical_mass_kda": 46.259,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 46.979671478271484
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Neurotensin receptor type 1 (NT-R-1) ( (7UL2/6OS9) | 27 | activation | 3.05 | 47 | 0.019 | 1.00* | 626 | 3.34e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Neurotensin receptor type 1 (NT-R-1) ( (7UL2/6OS9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

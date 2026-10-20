@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:25:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f69dc93014.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Platelet-derived growth factor recepto (6JOI/6JOL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Platelet-derived growth factor recepto (6JOI/6JOL)",
+        "motion": "dfg_flip",
+        "mass_kda": 27.509790999999996,
+        "ca_rmsd": 1.1459136330652209,
+        "radius": 34.39953105373636,
+        "box_size": 128,
+        "d2_known_pose": 6.803838729858398,
+        "d2_crlb": 6.449135780334473,
+        "information": 2.879572868347168,
+        "saturation": 0.719893217086792,
+        "n_floor": 868.184326171875,
+        "n_marginal": 23215.603515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016257293770049152,
+        "note": "P16234 123 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/A",
+        "d2_marginal": 0.11061200499534607,
+        "information_marginal": 0.10768619179725647,
+        "n_matched": 264,
+        "identity": 0.9962121212121212,
+        "shared_fraction": 0.8826768318509106,
+        "provenance": {
+          "accession": "P16234",
+          "canonical_mass_kda": 122.67,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 6.803838729858398
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Platelet-derived growth factor recepto (6JOI/6JOL) | 28 | dfg_flip | 1.15 | 6.8 | 0.016 | 0.72 | 868 | 2.32e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Platelet-derived growth factor recepto (6JOI/6JOL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

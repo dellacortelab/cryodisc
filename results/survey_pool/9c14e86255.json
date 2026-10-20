@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:24:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9c14e86255.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Type II restriction enzyme PvuII (R.Pv (1NI0/1H56)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Type II restriction enzyme PvuII (R.Pv (1NI0/1H56)",
+        "motion": "hinge",
+        "mass_kda": 16.810602,
+        "ca_rmsd": 1.5700234047994426,
+        "radius": 42.730494946904216,
+        "box_size": 128,
+        "d2_known_pose": 7.814365386962891,
+        "d2_crlb": 7.0663957595825195,
+        "information": 3.0481410026550293,
+        "saturation": 0.7620352506637573,
+        "n_floor": 820.172119140625,
+        "n_marginal": 17462.224609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018984968920994938,
+        "note": "P23657 18 kDa, dyndom, rotation 15.0 deg, chains B/A",
+        "d2_marginal": 0.14835548400878906,
+        "information_marginal": 0.143166184425354,
+        "n_matched": 155,
+        "identity": 0.9935483870967742,
+        "shared_fraction": 0.9915057915057915,
+        "provenance": {
+          "accession": "P23657",
+          "canonical_mass_kda": 18.345,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.0
+        },
+        "d2_floor": 7.814365386962891
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Type II restriction enzyme PvuII (R.Pv (1NI0/1H56) | 17 | hinge | 1.57 | 7.81 | 0.019 | 0.76 | 820 | 1.75e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Type II restriction enzyme PvuII (R.Pv (1NI0/1H56)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

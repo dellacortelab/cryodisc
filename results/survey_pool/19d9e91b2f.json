@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:57:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/19d9e91b2f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adenomatous polyposis coli protein (Pr (1DEB/1DEB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adenomatous polyposis coli protein (Pr (1DEB/1DEB)",
+        "motion": "no_contact",
+        "mass_kda": 5.565323999999999,
+        "ca_rmsd": 2.222926610272038,
+        "radius": 43.2337143058275,
+        "box_size": 128,
+        "d2_known_pose": 7.223757743835449,
+        "d2_crlb": 6.189533233642578,
+        "information": 2.9533705711364746,
+        "saturation": 0.7383426427841187,
+        "n_floor": 846.4904174804688,
+        "n_marginal": 5001.86328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.07831034869028428,
+        "note": "P25054 312 kDa, dyndom, rotation 22.1 deg, chains A/B",
+        "d2_marginal": 0.5656949877738953,
+        "information_marginal": 0.4998137354850769,
+        "n_matched": 53,
+        "identity": 1.0,
+        "shared_fraction": 0.9881796690307328,
+        "provenance": {
+          "accession": "P25054",
+          "canonical_mass_kda": 311.646,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 22.1
+        },
+        "d2_floor": 7.223757743835449
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adenomatous polyposis coli protein (Pr (1DEB/1DEB) | 6 | no_contact | 2.22 | 7.22 | 0.078 | 0.74 | 846 | 5e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adenomatous polyposis coli protein (Pr (1DEB/1DEB)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

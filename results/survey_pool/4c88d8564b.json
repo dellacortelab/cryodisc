@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:56:00+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4c88d8564b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ribose import binding protein RbsB (1BA2/1URP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ribose import binding protein RbsB (1BA2/1URP)",
+        "motion": "no_contact",
+        "mass_kda": 26.368083999999996,
+        "ca_rmsd": 2.1477103636053507,
+        "radius": 34.10348747956656,
+        "box_size": 128,
+        "d2_known_pose": 16.85920524597168,
+        "d2_crlb": 15.567808151245117,
+        "information": 3.7579541206359863,
+        "saturation": 0.9394885301589966,
+        "n_floor": 665.255615234375,
+        "n_marginal": 18737.12890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008181154959696593,
+        "note": "P02925 31 kDa, dyndom, rotation 20.8 deg, chains A/C",
+        "d2_marginal": 0.13792777061462402,
+        "information_marginal": 0.13342492282390594,
+        "n_matched": 271,
+        "identity": 0.996309963099631,
+        "shared_fraction": 0.9975062344139651,
+        "provenance": {
+          "accession": "P02925",
+          "canonical_mass_kda": 30.95,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.8
+        },
+        "d2_floor": 16.85920524597168
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ribose import binding protein RbsB (1BA2/1URP) | 26 | no_contact | 2.15 | 16.9 | 0.008 | 0.94 | 665 | 1.87e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ribose import binding protein RbsB (1BA2/1URP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:30:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d551cfc2e8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cytochrome f (1E2W/1CFM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cytochrome f (1E2W/1CFM)",
+        "motion": "shear",
+        "mass_kda": 25.089531999999995,
+        "ca_rmsd": 1.27738728879197,
+        "radius": 45.04216911515555,
+        "box_size": 128,
+        "d2_known_pose": 9.130724906921387,
+        "d2_crlb": 8.58327865600586,
+        "information": 3.227027416229248,
+        "saturation": 0.806756854057312,
+        "n_floor": 774.7068481445312,
+        "n_marginal": 37589.00390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007405836674932232,
+        "note": "P23577 34 kDa, dyndom, rotation 9.0 deg, chains B/C",
+        "d2_marginal": 0.0676206573843956,
+        "information_marginal": 0.06650881469249725,
+        "n_matched": 251,
+        "identity": 0.9960159362549801,
+        "shared_fraction": 0.9958246346555324,
+        "provenance": {
+          "accession": "P23577",
+          "canonical_mass_kda": 34.292,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 9.0
+        },
+        "d2_floor": 9.130724906921387
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cytochrome f (1E2W/1CFM) | 25 | shear | 1.28 | 9.13 | 0.007 | 0.81 | 775 | 3.76e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cytochrome f (1E2W/1CFM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:42:05+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/73997a9eaa.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ig gamma-2A chain C region, A allele ( (1DQQ/1DQM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ig gamma-2A chain C region, A allele ( (1DQQ/1DQM)",
+        "motion": "no_contact",
+        "mass_kda": 20.852756999999997,
+        "ca_rmsd": 1.0045452509772694,
+        "radius": 42.0024999481271,
+        "box_size": 128,
+        "d2_known_pose": 4.377597332000732,
+        "d2_crlb": 3.823561429977417,
+        "information": 2.3164916038513184,
+        "saturation": 0.5791229009628296,
+        "n_floor": 1079.21826171875,
+        "n_marginal": 113736.25,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00504880665984822,
+        "note": "P01863 36 kDa, dyndom, rotation 7.9 deg, chains B/H",
+        "d2_marginal": 0.022101642563939095,
+        "information_marginal": 0.021980680525302887,
+        "n_matched": 209,
+        "identity": 1.0,
+        "shared_fraction": 0.9936988027725268,
+        "provenance": {
+          "accession": "P01863",
+          "canonical_mass_kda": 36.389,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 7.9
+        },
+        "d2_floor": 4.377597332000732
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ig gamma-2A chain C region, A allele ( (1DQQ/1DQM) | 21 | no_contact | 1.00 | 4.38 | 0.005 | 0.58 | 1.08e+03 | 1.14e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ig gamma-2A chain C region, A allele ( (1DQQ/1DQM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

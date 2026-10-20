@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:20:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/cb87ecf461.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Melatonin receptor type 1A (Mel-1A-R) (6ME2/7VGY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Melatonin receptor type 1A (Mel-1A-R) (6ME2/7VGY)",
+        "motion": "activation",
+        "mass_kda": 27.790490999999996,
+        "ca_rmsd": 2.6688658010889776,
+        "radius": 36.20116280221833,
+        "box_size": 128,
+        "d2_known_pose": 33.514915466308594,
+        "d2_crlb": 30.59396743774414,
+        "information": 3.976682424545288,
+        "saturation": 0.994170606136322,
+        "n_floor": 628.664794921875,
+        "n_marginal": 13955.80859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005588282112371033,
+        "note": "P48039 39 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/A",
+        "d2_marginal": 0.18729080259799957,
+        "information_marginal": 0.17913688719272614,
+        "n_matched": 275,
+        "identity": 0.9672727272727273,
+        "shared_fraction": 0.5742895805142084,
+        "provenance": {
+          "accession": "P48039",
+          "canonical_mass_kda": 39.375,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 33.514915466308594
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Melatonin receptor type 1A (Mel-1A-R) (6ME2/7VGY) | 28 | activation | 2.67 | 33.5 | 0.006 | 0.99* | 629 | 1.4e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Melatonin receptor type 1A (Mel-1A-R) (6ME2/7VGY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

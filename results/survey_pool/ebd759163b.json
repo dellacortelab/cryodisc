@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:13:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ebd759163b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase RAD53 (4PDS/5XZW)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase RAD53 (4PDS/5XZW)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 20.975375999999997,
+        "ca_rmsd": 1.4362672937804126,
+        "radius": 34.19866899967437,
+        "box_size": 128,
+        "d2_known_pose": 6.649539947509766,
+        "d2_crlb": 6.2635321617126465,
+        "information": 2.850998878479004,
+        "saturation": 0.712749719619751,
+        "n_floor": 876.8856811523438,
+        "n_marginal": 23120.486328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.016704813962915708,
+        "note": "P22216 92 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BLBminus, chains B/B",
+        "d2_marginal": 0.11107932776212692,
+        "information_marginal": 0.10812921822071075,
+        "n_matched": 221,
+        "identity": 0.9864253393665159,
+        "shared_fraction": 0.5488644184445974,
+        "provenance": {
+          "accession": "P22216",
+          "canonical_mass_kda": 91.962,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 6.649539947509766
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase RAD53 (4PDS/5XZW) | 21 | dihedral_cluster | 1.44 | 6.65 | 0.017 | 0.71 | 877 | 2.31e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase RAD53 (4PDS/5XZW)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

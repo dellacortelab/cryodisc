@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:05:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a8b084de95.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Receptor-interacting serine/threonine- (5J79/5J7B)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Receptor-interacting serine/threonine- (5J79/5J7B)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 28.782253999999995,
+        "ca_rmsd": 1.070557565114893,
+        "radius": 34.474900509627744,
+        "box_size": 128,
+        "d2_known_pose": 4.218101978302002,
+        "d2_crlb": 3.885690450668335,
+        "information": 2.2690720558166504,
+        "saturation": 0.5672680139541626,
+        "n_floor": 1101.77197265625,
+        "n_marginal": 114289.9296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005214187408666356,
+        "note": "O43353 61 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BLBplus, chains B/B",
+        "d2_marginal": 0.02199397422373295,
+        "information_marginal": 0.021874193102121353,
+        "n_matched": 272,
+        "identity": 1.0,
+        "shared_fraction": 0.9737661182747888,
+        "provenance": {
+          "accession": "O43353",
+          "canonical_mass_kda": 61.195,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 4.218101978302002
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Receptor-interacting serine/threonine- (5J79/5J7B) | 29 | dihedral_cluster | 1.07 | 4.22 | 0.005 | 0.57 | 1.1e+03 | 1.14e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Receptor-interacting serine/threonine- (5J79/5J7B)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

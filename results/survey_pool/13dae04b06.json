@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:37:10+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/13dae04b06.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pantothenate kinase 3 (hPanK3) (EC 2.7 (2I7P/2I7P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pantothenate kinase 3 (hPanK3) (EC 2.7 (2I7P/2I7P)",
+        "motion": "mixed",
+        "mass_kda": 35.55240899999999,
+        "ca_rmsd": 1.0050374002001217,
+        "radius": 43.111510041062196,
+        "box_size": 128,
+        "d2_known_pose": 7.512672424316406,
+        "d2_crlb": 7.112251281738281,
+        "information": 3.0009827613830566,
+        "saturation": 0.7502456903457642,
+        "n_floor": 833.0604858398438,
+        "n_marginal": 68848.9296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0048773470481140975,
+        "note": "Q9H999 41 kDa, dyndom, rotation 9.3 deg, chains A/D",
+        "d2_marginal": 0.036641910672187805,
+        "information_marginal": 0.03631138801574707,
+        "n_matched": 344,
+        "identity": 1.0,
+        "shared_fraction": 0.9760782892352301,
+        "provenance": {
+          "accession": "Q9H999",
+          "canonical_mass_kda": 41.094,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.3
+        },
+        "d2_floor": 7.512672424316406
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pantothenate kinase 3 (hPanK3) (EC 2.7 (2I7P/2I7P) | 36 | mixed | 1.01 | 7.51 | 0.005 | 0.75 | 833 | 6.88e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pantothenate kinase 3 (hPanK3) (EC 2.7 (2I7P/2I7P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

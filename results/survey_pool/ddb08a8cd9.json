@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:58:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ddb08a8cd9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase Nek7 ( (8WS1/9H59)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase Nek7 ( (8WS1/9H59)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 28.650568999999997,
+        "ca_rmsd": 3.546822977237519,
+        "radius": 36.9709576474287,
+        "box_size": 128,
+        "d2_known_pose": 22.127927780151367,
+        "d2_crlb": 19.72937774658203,
+        "information": 3.8863658905029297,
+        "saturation": 0.9715914726257324,
+        "n_floor": 643.2745361328125,
+        "n_marginal": 6099.517578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02050235156821927,
+        "note": "Q8TDX7 35 kDa, kincore, no rotation angle (kincore reports none); states BBAminus -> BLAminus, chains B/C",
+        "d2_marginal": 0.4536745548248291,
+        "information_marginal": 0.4098685085773468,
+        "n_matched": 267,
+        "identity": 0.9962546816479401,
+        "shared_fraction": 0.9600886917960089,
+        "provenance": {
+          "accession": "Q8TDX7",
+          "canonical_mass_kda": 34.551,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 22.127927780151367
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase Nek7 ( (8WS1/9H59) | 29 | dihedral_cluster | 3.55 | 22.1 | 0.021 | 0.97 | 643 | 6.1e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase Nek7 ( (8WS1/9H59)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

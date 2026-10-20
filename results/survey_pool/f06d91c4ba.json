@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:25:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f06d91c4ba.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Myosin-7 (Myosin heavy chain 7) (Myosi (2FXO/2FXM)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Myosin-7 (Myosin heavy chain 7) (Myosi (2FXO/2FXM)",
+        "motion": "shear",
+        "mass_kda": 12.241415999999997,
+        "ca_rmsd": 1.2357395799323523,
+        "radius": 84.91038812102516,
+        "box_size": 128,
+        "d2_known_pose": 6.123227596282959,
+        "d2_crlb": 5.448476791381836,
+        "information": 2.7471420764923096,
+        "saturation": 0.6867855191230774,
+        "n_floor": 910.0366821289062,
+        "n_marginal": 38073.08203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010900600980941318,
+        "note": "P12883 223 kDa, dyndom, rotation 3.2 deg, chains B/B",
+        "d2_marginal": 0.06674686074256897,
+        "information_marginal": 0.06566318869590759,
+        "n_matched": 112,
+        "identity": 0.9910714285714286,
+        "shared_fraction": 0.896484375,
+        "provenance": {
+          "accession": "P12883",
+          "canonical_mass_kda": 223.097,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 3.2
+        },
+        "d2_floor": 6.123227596282959
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Myosin-7 (Myosin heavy chain 7) (Myosi (2FXO/2FXM) | 12 | shear | 1.24 | 6.12 | 0.011 | 0.69 | 910 | 3.81e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Myosin-7 (Myosin heavy chain 7) (Myosi (2FXO/2FXM)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

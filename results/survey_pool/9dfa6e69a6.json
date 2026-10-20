@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:12:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9dfa6e69a6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "GPN-loop GTPase PAB0955 (EC 3.6.5.-) (1YRB/1YR6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "GPN-loop GTPase PAB0955 (EC 3.6.5.-) (1YRB/1YR6)",
+        "motion": "hinge",
+        "mass_kda": 26.612999999999996,
+        "ca_rmsd": 1.5264486206811414,
+        "radius": 35.080656792128416,
+        "box_size": 128,
+        "d2_known_pose": 11.212145805358887,
+        "d2_crlb": 10.53690242767334,
+        "information": 3.4395196437835693,
+        "saturation": 0.8598799109458923,
+        "n_floor": 726.845703125,
+        "n_marginal": 16213.1787109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014290025093590621,
+        "note": "Q9UYR9 29 kDa, dyndom, rotation 20.8 deg, chains B/A",
+        "d2_marginal": 0.16022184491157532,
+        "information_marginal": 0.15419554710388184,
+        "n_matched": 248,
+        "identity": 1.0,
+        "shared_fraction": 0.9521780303030303,
+        "provenance": {
+          "accession": "Q9UYR9",
+          "canonical_mass_kda": 28.697,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 20.8
+        },
+        "d2_floor": 11.212145805358887
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| GPN-loop GTPase PAB0955 (EC 3.6.5.-) (1YRB/1YR6) | 27 | hinge | 1.53 | 11.2 | 0.014 | 0.86 | 727 | 1.62e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "GPN-loop GTPase PAB0955 (EC 3.6.5.-) (1YRB/1YR6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

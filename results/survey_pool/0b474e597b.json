@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:48:49+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0b474e597b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "UTP--glucose-1-phosphate uridylyltrans (2OEF/2OEG)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "UTP--glucose-1-phosphate uridylyltrans (2OEF/2OEG)",
+        "motion": "hinge",
+        "mass_kda": 47.381140999999985,
+        "ca_rmsd": 3.411311984017378,
+        "radius": 45.506695009202836,
+        "box_size": 128,
+        "d2_known_pose": 74.17890930175781,
+        "d2_crlb": 62.21992111206055,
+        "information": 3.999897003173828,
+        "saturation": 0.999974250793457,
+        "n_floor": 625.01611328125,
+        "n_marginal": 4291.46728515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009073112579038624,
+        "note": "Q4QDU3 55 kDa, dyndom, rotation 29.0 deg, chains A/A",
+        "d2_marginal": 0.673033595085144,
+        "information_marginal": 0.5825513601303101,
+        "n_matched": 466,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q4QDU3",
+          "canonical_mass_kda": 54.536,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 29.0
+        },
+        "d2_floor": 74.17890930175781
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| UTP--glucose-1-phosphate uridylyltrans (2OEF/2OEG) | 47 | hinge | 3.41 | 74.2 | 0.009 | 1.00* | 625 | 4.29e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "UTP--glucose-1-phosphate uridylyltrans (2OEF/2OEG)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

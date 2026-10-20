@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:09:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a7dfd19a39.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transcription factor tau 60 kDa subuni (2J04/2J04)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transcription factor tau 60 kDa subuni (2J04/2J04)",
+        "motion": "mixed",
+        "mass_kda": 62.66547599999999,
+        "ca_rmsd": 0.7639174294752072,
+        "radius": 50.19052690370503,
+        "box_size": 128,
+        "d2_known_pose": 7.28363037109375,
+        "d2_crlb": 6.790311813354492,
+        "information": 2.9634416103363037,
+        "saturation": 0.7408604025840759,
+        "n_floor": 843.6137084960938,
+        "n_marginal": 52355.8828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006634361141462323,
+        "note": "Q12308 68 kDa, dyndom, rotation 4.6 deg, chains A/C",
+        "d2_marginal": 0.04832223430275917,
+        "information_marginal": 0.04775013029575348,
+        "n_matched": 586,
+        "identity": 1.0,
+        "shared_fraction": 0.998109243697479,
+        "provenance": {
+          "accession": "Q12308",
+          "canonical_mass_kda": 67.683,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 4.6
+        },
+        "d2_floor": 7.28363037109375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transcription factor tau 60 kDa subuni (2J04/2J04) | 63 | mixed | 0.76 | 7.28 | 0.007 | 0.74 | 844 | 5.24e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transcription factor tau 60 kDa subuni (2J04/2J04)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

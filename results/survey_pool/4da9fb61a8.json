@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:18:45+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4da9fb61a8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Helix-turn-helix domain-containing pro (2AXZ/2AXU)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Helix-turn-helix domain-containing pro (2AXZ/2AXU)",
+        "motion": "unclassified",
+        "mass_kda": 32.293968,
+        "ca_rmsd": 5.1098680851923755,
+        "radius": 45.94920691385755,
+        "box_size": 128,
+        "d2_known_pose": 67.05133056640625,
+        "d2_crlb": 61.18741989135742,
+        "information": 3.99973726272583,
+        "saturation": 0.9999343156814575,
+        "n_floor": 625.0410766601562,
+        "n_marginal": 3996.224609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010895435512300548,
+        "note": "Q04114 37 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/G",
+        "d2_marginal": 0.7305534482002258,
+        "information_marginal": 0.6255905032157898,
+        "n_matched": 298,
+        "identity": 1.0,
+        "shared_fraction": 0.9935587761674718,
+        "provenance": {
+          "accession": "Q04114",
+          "canonical_mass_kda": 37.094,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 67.05133056640625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Helix-turn-helix domain-containing pro (2AXZ/2AXU) | 32 | unclassified | 5.11 | 67.1 | 0.011 | 1.00* | 625 | 4e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Helix-turn-helix domain-containing pro (2AXZ/2AXU)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

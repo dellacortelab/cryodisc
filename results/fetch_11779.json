@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/fetch_empiar.py",
+  "commit": "0f3a53e-dirty",
+  "written_at": "2026-08-14T08:14:19+00:00",
+  "arguments": {
+    "entry": "11779",
+    "dest": "/nobackup/autodelete/usr/bryceeh/spcas9",
+    "out": "results/fetch_11779.json",
+    "n": 100,
+    "imageset": null,
+    "max_depth": 4,
+    "plan_only": false,
+    "url_list": "/nobackup/autodelete/usr/bryceeh/spcas9/11779/urls.txt",
+    "no_quarantine": false
+  },
+  "result": {
+    "manifest": {
+      "entry": "11779",
+      "from_url_list": "/nobackup/autodelete/usr/bryceeh/spcas9/11779/urls.txt",
+      "n_urls": 210
+    },
+    "url_list": "/nobackup/autodelete/usr/bryceeh/spcas9/11779/urls.txt",
+    "destination": "/nobackup/autodelete/usr/bryceeh/spcas9/11779",
+    "wget_status": 0,
+    "defective": [],
+    "quarantined": true
+  }
+}

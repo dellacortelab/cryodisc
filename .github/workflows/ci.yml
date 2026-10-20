@@ -1,0 +1,62 @@
+name: ci
+
+# Defect 23: CI here had never been green while looking configured, because mypy was checking 0 of
+# 197 files and the laptop had gitignored data the runner does not. Every step below therefore
+# prints what it actually covered, and none of them is allowed to pass by finding nothing.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint
+        run: |
+          ruff check --output-format=github src tests reproduction
+          ruff format --check src tests reproduction
+
+      - name: Types
+        run: |
+          # --no-incremental so a cached empty run cannot report success, and the file count is
+          # printed because "Success: no issues found in 0 source files" is what green looked like
+          mypy --no-incremental src tests reproduction | tee mypy.log
+          grep -qE "no issues found in [1-9][0-9]* source files" mypy.log
+
+      # The runner starts with no compiled kernels, and two thirds of a suite run is XLA compiling
+      # them. Restoring them is safe in a way most build caches are not: JAX keys each entry by the
+      # hash of the HLO it compiled, so a key that is stale or plain wrong can only produce misses,
+      # never a kernel that does not match the source. The key therefore only has to be a good guess
+      # -- source plus interpreter plus the pinned jax -- and `restore-keys` takes a partial hit,
+      # which is worth having because most pushes invalidate a minority of the shapes.
+      - name: Compiled kernels
+        uses: actions/cache@v4
+        with:
+          path: .jax_cache
+          key: jax-${{ runner.os }}-py3.12-${{ hashFiles('src/**/*.py', 'tests/**/*.py', 'pyproject.toml') }}
+          restore-keys: |
+            jax-${{ runner.os }}-py3.12-
+
+      # `-n 6 --dist loadfile` arrives from `addopts`; the runner has fewer cores than that, which
+      # costs nothing here because the backend is only about two cores wide per worker anyway.
+      - name: Tests
+        run: pytest -q --durations=10

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/fetch_empiar.py",
+  "commit": "9ca3718",
+  "written_at": "2026-08-12T09:54:39+00:00",
+  "arguments": {
+    "entry": "12743",
+    "dest": "/home/bryceeh/scratch/e3_hb",
+    "out": "results/e3_fetch_12743.json",
+    "n": 100,
+    "imageset": null,
+    "max_depth": 4,
+    "plan_only": false,
+    "url_list": "/home/bryceeh/scratch/e3_hb/12743/urls_Micrographs.txt"
+  },
+  "result": {
+    "manifest": {
+      "entry": "12743",
+      "from_url_list": "/home/bryceeh/scratch/e3_hb/12743/urls_Micrographs.txt",
+      "n_urls": 240
+    },
+    "url_list": "/home/bryceeh/scratch/e3_hb/12743/urls_Micrographs.txt",
+    "destination": "/home/bryceeh/scratch/e3_hb/12743",
+    "wget_status": 0
+  }
+}

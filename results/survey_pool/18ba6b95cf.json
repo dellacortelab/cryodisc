@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:40:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/18ba6b95cf.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Molybdopterin molybdenumtransferase (M (2NQQ/1FC5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Molybdopterin molybdenumtransferase (M (2NQQ/1FC5)",
+        "motion": "hinge",
+        "mass_kda": 39.17611,
+        "ca_rmsd": 2.5809038839682588,
+        "radius": 63.28338279109912,
+        "box_size": 128,
+        "d2_known_pose": 44.39992904663086,
+        "d2_crlb": 37.778892517089844,
+        "information": 3.9946722984313965,
+        "saturation": 0.9986680746078491,
+        "n_floor": 625.8336181640625,
+        "n_marginal": 13758.4736328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0042814910367358515,
+        "note": "P12281 44 kDa, dyndom, rotation 16.9 deg, chains A/B",
+        "d2_marginal": 0.1900978982448578,
+        "information_marginal": 0.18170620501041412,
+        "n_matched": 395,
+        "identity": 0.9974683544303797,
+        "shared_fraction": 0.9795918367346939,
+        "provenance": {
+          "accession": "P12281",
+          "canonical_mass_kda": 44.067,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 16.9
+        },
+        "d2_floor": 44.39992904663086
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Molybdopterin molybdenumtransferase (M (2NQQ/1FC5) | 39 | hinge | 2.58 | 44.4 | 0.004 | 1.00* | 626 | 1.38e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Molybdopterin molybdenumtransferase (M (2NQQ/1FC5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:44:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/315d881b60.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Trp operon repressor (1MI7/1ZT9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Trp operon repressor (1MI7/1ZT9)",
+        "motion": "hinge",
+        "mass_kda": 10.712666999999998,
+        "ca_rmsd": 20.888732288773543,
+        "radius": 54.324183007142786,
+        "box_size": 128,
+        "d2_known_pose": 166.72984313964844,
+        "d2_crlb": 154.33067321777344,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 946.7310791015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03377665874852553,
+        "note": "P0A881 12 kDa, dyndom, rotation 76.0 deg, chains R/D",
+        "d2_marginal": 5.631577014923096,
+        "information_marginal": 2.6406655311584473,
+        "n_matched": 101,
+        "identity": 1.0,
+        "shared_fraction": 0.9783132530120482,
+        "provenance": {
+          "accession": "P0A881",
+          "canonical_mass_kda": 12.355,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 76.0
+        },
+        "d2_floor": 166.72984313964844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Trp operon repressor (1MI7/1ZT9) | 11 | hinge | 20.89 | 167 | 0.034 | 1.00* | 625 | 947^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Trp operon repressor (1MI7/1ZT9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

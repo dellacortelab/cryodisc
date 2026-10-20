@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:20:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6502ec31ea.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase/endori (4U6R/4YZ9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase/endori (4U6R/4YZ9)",
+        "motion": "dfg_flip",
+        "mass_kda": 39.501315,
+        "ca_rmsd": 2.8043263564832714,
+        "radius": 49.33164781089273,
+        "box_size": 128,
+        "d2_known_pose": 34.54204177856445,
+        "d2_crlb": 33.18356704711914,
+        "information": 3.9797396659851074,
+        "saturation": 0.9949349164962769,
+        "n_floor": 628.1818237304688,
+        "n_marginal": 8383.9453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009295142607296376,
+        "note": "O75460 110 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/C",
+        "d2_marginal": 0.3210732042789459,
+        "information_marginal": 0.2981889843940735,
+        "n_matched": 377,
+        "identity": 0.9973474801061007,
+        "shared_fraction": 0.9177914110429448,
+        "provenance": {
+          "accession": "O75460",
+          "canonical_mass_kda": 109.735,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 34.54204177856445
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase/endori (4U6R/4YZ9) | 40 | dfg_flip | 2.80 | 34.5 | 0.009 | 0.99* | 628 | 8.38e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase/endori (4U6R/4YZ9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

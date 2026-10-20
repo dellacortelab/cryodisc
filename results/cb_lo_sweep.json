@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/known_fraction.py",
+  "commit": "524103c7",
+  "written_at": "2026-09-18T09:57:20+00:00",
+  "arguments": {
+    "pair": null,
+    "log_ratio_a": "results/cb_lo_000.npy",
+    "log_ratio_b": "results/cb_lo_050.npy",
+    "decoy_a": null,
+    "decoy_b": null,
+    "decoy": false,
+    "assembly": "1",
+    "chains": null,
+    "chains_a": null,
+    "chains_b": null,
+    "chain_id_kind": "auth_asym_id",
+    "min_shared_fraction": 0.75,
+    "labels_a": null,
+    "labels_b": null,
+    "out": "results/cb_lo_sweep.json",
+    "fractions": [
+      0.0,
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.6,
+      0.75,
+      0.9,
+      1.0
+    ],
+    "pixel_size": 2.0,
+    "box_size": 64,
+    "dose": 40.0,
+    "rmsf": 0.5,
+    "defocus_error": 0.0,
+    "stream": false,
+    "pose_chunk": null,
+    "n_particles": 2000,
+    "cap_bank": 1000000,
+    "poses": "haar",
+    "seed": 0
+  },
+  "result": {
+    "estimator": "mixture_fraction",
+    "snr": null,
+    "n_particles": 1000,
+    "coherence": {
+      "marginalized": true,
+      "baseline_is_a_ceiling": true,
+      "a": {
+        "value": 0.6984390456413174,
+        "mean": 16.34755516052246,
+        "variance": 46.81168746948242,
+        "points_at_its_own_bank": true
+      },
+      "b": {
+        "value": 0.661178552853393,
+        "mean": 15.438057899475098,
+        "variance": 46.698604583740234,
+        "points_at_its_own_bank": true
+      }
+    },
+    "sweep": {
+      "p_true": [
+        0.0,
+        0.1,
+        0.25,
+        0.4,
+        0.5,
+        0.6,
+        0.75,
+        0.9,
+        1.0
+      ],
+      "p_hat": [
+        9.999999974752427e-07,
+        0.10017324239015579,
+        0.25360041856765747,
+        0.40286171436309814,
+        0.500200629234314,
+        0.603941798210144,
+        0.7466840744018555,
+        0.9003553986549377,
+        0.9999989867210388
+      ]
+    },
+    "purity": {
+      "f_a": 1.000065879136187,
+      "f_b": 0.0016712903178574359,
+      "f_a_err": 0.0014288234412633879,
+      "f_b_err": 0.0014288234412633879,
+      "separation": 0.9983945888183295,
+      "separation_err": 0.0023906133076142576,
+      "midpoint_err": 0.0007828016541041256,
+      "midpoint": 0.5008685847270222,
+      "residual_rms": 0.0020710985026495205
+    },
+    "derived": {
+      "f_a": 0.999736828454572,
+      "f_b": 0.0006492844840296774,
+      "f_a_error": -0.00032905068161492856,
+      "f_b_error": -0.0010220058338277585,
+      "mean_a": 16.34755516052246,
+      "variance_a": 46.81168746948242,
+      "mean_b": 15.438057899475098,
+      "variance_b": 46.698604583740234
+    },
+    "nodes_realized": null
+  }
+}

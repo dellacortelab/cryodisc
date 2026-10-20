@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:48:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/02bf9c9df5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ribosomal small subunit pseudouridine (1KSL/1KSK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ribosomal small subunit pseudouridine (1KSL/1KSK)",
+        "motion": "no_contact",
+        "mass_kda": 23.428328999999998,
+        "ca_rmsd": 0.9931367895723661,
+        "radius": 45.460977382826094,
+        "box_size": 128,
+        "d2_known_pose": 6.257781028747559,
+        "d2_crlb": 4.81971549987793,
+        "information": 2.7746739387512207,
+        "saturation": 0.6936684846878052,
+        "n_floor": 901.0067749023438,
+        "n_marginal": 39874.30078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010176887211188342,
+        "note": "P0AA43 26 kDa, dyndom, rotation 1.2 deg, chains A/A",
+        "d2_marginal": 0.06368473172187805,
+        "information_marginal": 0.06269702315330505,
+        "n_matched": 228,
+        "identity": 1.0,
+        "shared_fraction": 0.9966424174594292,
+        "provenance": {
+          "accession": "P0AA43",
+          "canonical_mass_kda": 25.865,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 1.2
+        },
+        "d2_floor": 6.257781028747559
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ribosomal small subunit pseudouridine (1KSL/1KSK) | 23 | no_contact | 0.99 | 6.26 | 0.010 | 0.69 | 901 | 3.99e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ribosomal small subunit pseudouridine (1KSL/1KSK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:31:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4eb4bf1799.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase ULK3 ( (6FDZ/6FDY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase ULK3 ( (6FDZ/6FDY)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 25.508384,
+        "ca_rmsd": 4.74227032323803,
+        "radius": 33.325682951762154,
+        "box_size": 128,
+        "d2_known_pose": 42.842559814453125,
+        "d2_crlb": 33.018104553222656,
+        "information": 3.993429660797119,
+        "saturation": 0.9983574151992798,
+        "n_floor": 626.0283813476562,
+        "n_marginal": 4760.3671875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013961466146584608,
+        "note": "Q6PHR2 53 kDa, kincore, no rotation angle (kincore reports none); states BBAminus -> BLAminus, chains U/U",
+        "d2_marginal": 0.5981449484825134,
+        "information_marginal": 0.5251696109771729,
+        "n_matched": 259,
+        "identity": 1.0,
+        "shared_fraction": 0.94775390625,
+        "provenance": {
+          "accession": "Q6PHR2",
+          "canonical_mass_kda": 53.444,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 42.842559814453125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase ULK3 ( (6FDZ/6FDY) | 26 | dihedral_cluster | 4.74 | 42.8 | 0.014 | 1.00* | 626 | 4.76e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase ULK3 ( (6FDZ/6FDY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

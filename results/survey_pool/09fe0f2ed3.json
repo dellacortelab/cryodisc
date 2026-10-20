@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:13:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/09fe0f2ed3.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase Chk2 ( (2CN5/2CN8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase Chk2 ( (2CN5/2CN8)",
+        "motion": "no_contact",
+        "mass_kda": 28.370095999999997,
+        "ca_rmsd": 0.8917458606696971,
+        "radius": 46.90025177574874,
+        "box_size": 128,
+        "d2_known_pose": 6.514056205749512,
+        "d2_crlb": 5.913874626159668,
+        "information": 2.8252296447753906,
+        "saturation": 0.7063074111938477,
+        "n_floor": 884.8838500976562,
+        "n_marginal": 37296.078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010463614222083563,
+        "note": "O96017 61 kDa, dyndom, rotation 11.1 deg, chains A/A",
+        "d2_marginal": 0.06816057115793228,
+        "information_marginal": 0.06703117489814758,
+        "n_matched": 266,
+        "identity": 1.0,
+        "shared_fraction": 0.9467663880334359,
+        "provenance": {
+          "accession": "O96017",
+          "canonical_mass_kda": 60.915,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 11.1
+        },
+        "d2_floor": 6.514056205749512
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase Chk2 ( (2CN5/2CN8) | 28 | no_contact | 0.89 | 6.51 | 0.010 | 0.71 | 885 | 3.73e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase Chk2 ( (2CN5/2CN8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "driver": "experiments/benchmark/twin_null_ladder.py",
+  "commit": "57719aad",
+  "written_at": "2026-10-04T06:32:56+00:00",
+  "arguments": {
+    "pools_root": "results/ribo_pools",
+    "n_halvings": 60,
+    "out": "results/twin_null_ladder.json"
+  },
+  "result": {
+    "n_halvings": 60,
+    "systems": {
+      "fanac": {
+        "real_two_pool_slope": 1.0055097924774739,
+        "clearance_over_floor": 4.346204101507398,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.008712106353146709,
+          "sd_slope": 0.19405638045519885,
+          "se_slope": 0.02505257099094252,
+          "p5": -0.273748817823542,
+          "p95": 0.3296453350825667
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.0014577613187410751,
+          "sd_slope": 0.23135356025473627,
+          "se_slope": 0.029867616198412925,
+          "p5": -0.37867899308376524,
+          "p95": 0.45781784806294923
+        }
+      },
+      "hk-atpase": {
+        "real_two_pool_slope": 1.0166803130262618,
+        "clearance_over_floor": 5.216882118679659,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": -0.019271620934750107,
+          "sd_slope": 0.1948827460344405,
+          "se_slope": 0.025159254328485252,
+          "p5": -0.36128492928323547,
+          "p95": 0.27331515476051804
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.04847402437494687,
+          "sd_slope": 0.15111221854935045,
+          "se_slope": 0.019508503528336326,
+          "p5": -0.17754842277409105,
+          "p95": 0.28117962593528756
+        }
+      },
+      "msba": {
+        "real_two_pool_slope": 0.9916175047919041,
+        "clearance_over_floor": 4.3781605062071325,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": -0.0564861143781109,
+          "sd_slope": 0.19742076858224228,
+          "se_slope": 0.02548691163048309,
+          "p5": -0.4041227971274304,
+          "p95": 0.24726234888227402
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": -0.03378859700081409,
+          "sd_slope": 0.22649181166063678,
+          "se_slope": 0.02923996715379977,
+          "p5": -0.40346470637268805,
+          "p95": 0.23992954470419264
+        }
+      },
+      "nkcc1": {
+        "real_two_pool_slope": 1.0160697371856224,
+        "clearance_over_floor": 4.514445729104434,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.007684782289367158,
+          "sd_slope": 0.20739776773096102,
+          "se_slope": 0.02677493668208687,
+          "p5": -0.37343166846096976,
+          "p95": 0.2878623291571902
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.01648164006072224,
+          "sd_slope": 0.22507076131961568,
+          "se_slope": 0.02905651034363653,
+          "p5": -0.3571802939044123,
+          "p95": 0.4062988196093229
+        }
+      },
+      "slc19a3": {
+        "real_two_pool_slope": 1.0337497688592503,
+        "clearance_over_floor": 4.487736767864584,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.007556493255269023,
+          "sd_slope": 0.23034991184457174,
+          "se_slope": 0.02973804574581243,
+          "p5": -0.32835209820297456,
+          "p95": 0.37756893801527713
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.016322354900378276,
+          "sd_slope": 0.19337215113995077,
+          "se_slope": 0.024964237366177762,
+          "p5": -0.3087774800999824,
+          "p95": 0.31295465047473636
+        }
+      },
+      "slco2a1": {
+        "real_two_pool_slope": 0.9843119205383648,
+        "clearance_over_floor": 3.957610249292317,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": -0.06764479355124343,
+          "sd_slope": 0.2487137081561721,
+          "se_slope": 0.032108801655411544,
+          "p5": -0.49788428215335073,
+          "p95": 0.29902372711532726
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": -0.012434543399816615,
+          "sd_slope": 0.22986894430428845,
+          "se_slope": 0.029675953103359645,
+          "p5": -0.3908649484693647,
+          "p95": 0.29061065732887276
+        }
+      },
+      "ste2": {
+        "real_two_pool_slope": 0.9995803879439032,
+        "clearance_over_floor": 5.370172274912928,
+        "state_a": {
+          "pool": "pool_a.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.011455627435218345,
+          "sd_slope": 0.17802439593631056,
+          "se_slope": 0.022982850689332205,
+          "p5": -0.2795536831973296,
+          "p95": 0.2765699454324026
+        },
+        "state_b": {
+          "pool": "pool_b.npy",
+          "n_particles": 4000,
+          "mean_slope": 0.017791211803929785,
+          "sd_slope": 0.18613562782957654,
+          "se_slope": 0.024030006223993726,
+          "p5": -0.25187729271012527,
+          "p95": 0.2876576730645368
+        }
+      }
+    },
+    "max_abs_mean_slope": 0.06764479355124343,
+    "median_floor_sd": 0.20240926815660165,
+    "min_clearance": 3.957610249292317
+  }
+}

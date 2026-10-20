@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:57:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/03be0cb6f0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Lysine--tRNA ligase, heat inducible (E (1E22/1LYL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Lysine--tRNA ligase, heat inducible (E (1E22/1LYL)",
+        "motion": "unclassified",
+        "mass_kda": 49.313095999999994,
+        "ca_rmsd": 0.9298052697078554,
+        "radius": 55.321249078808584,
+        "box_size": 128,
+        "d2_known_pose": 9.185478210449219,
+        "d2_crlb": 7.100136756896973,
+        "information": 3.2336227893829346,
+        "saturation": 0.8084056973457336,
+        "n_floor": 773.126708984375,
+        "n_marginal": 34604.03515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008008129001382107,
+        "note": "P0A8N5 58 kDa, dyndom, rotation 4.1 deg, chains A/B",
+        "d2_marginal": 0.0735584944486618,
+        "information_marginal": 0.07224591076374054,
+        "n_matched": 482,
+        "identity": 1.0,
+        "shared_fraction": 0.9795597484276729,
+        "provenance": {
+          "accession": "P0A8N5",
+          "canonical_mass_kda": 57.827,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 4.1
+        },
+        "d2_floor": 9.185478210449219
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Lysine--tRNA ligase, heat inducible (E (1E22/1LYL) | 49 | unclassified | 0.93 | 9.19 | 0.008 | 0.81 | 773 | 3.46e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Lysine--tRNA ligase, heat inducible (E (1E22/1LYL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

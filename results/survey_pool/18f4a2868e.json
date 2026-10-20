@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:18:53+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/18f4a2868e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "R.MvaI (2OAA/2OAA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "R.MvaI (2OAA/2OAA)",
+        "motion": "shear",
+        "mass_kda": 26.406158999999995,
+        "ca_rmsd": 0.4159709234291951,
+        "radius": 33.26119181593922,
+        "box_size": 128,
+        "d2_known_pose": 1.7190492153167725,
+        "d2_crlb": 1.6716969013214111,
+        "information": 1.2527861595153809,
+        "saturation": 0.3131965398788452,
+        "n_floor": 1995.552001953125,
+        "n_marginal": 323559.25,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004503355330770303,
+        "note": "Q8RNV5 28 kDa, dyndom, rotation 3.4 deg, chains B/A",
+        "d2_marginal": 0.007741489447653294,
+        "information_marginal": 0.00772655988112092,
+        "n_matched": 247,
+        "identity": 1.0,
+        "shared_fraction": 0.9955246146195923,
+        "provenance": {
+          "accession": "Q8RNV5",
+          "canonical_mass_kda": 28.312,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 3.4
+        },
+        "d2_floor": 1.7190492153167725
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| R.MvaI (2OAA/2OAA) | 26 | shear | 0.42 | 1.72 | 0.005 | 0.31 | 2e+03 | 3.24e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "R.MvaI (2OAA/2OAA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

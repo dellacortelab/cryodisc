@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/pose_provenance.py",
+  "commit": "cb5df79-dirty",
+  "written_at": "2026-09-02T19:20:28+00:00",
+  "arguments": {
+    "star": "/home/bryceeh/nobackup/archive/e20_tmrab/1p5mln-TmrAB-stack.star",
+    "out": "results/e20_tmrab_poses.json"
+  },
+  "result": {
+    "star": "/home/bryceeh/nobackup/archive/e20_tmrab/1p5mln-TmrAB-stack.star",
+    "n_rows": 1547017,
+    "n_orientations": 768,
+    "n_psi": 36038,
+    "n_origins": 4,
+    "spacing_deg": 7.328448638027154
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:23:05+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5d5a5ec782.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Zinc finger and SCAN domain-containing (2I13/2I13)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Zinc finger and SCAN domain-containing (2I13/2I13)",
+        "motion": "no_contact",
+        "mass_kda": 13.240395999999999,
+        "ca_rmsd": 1.0147961297450807,
+        "radius": 31.738829727997462,
+        "box_size": 128,
+        "d2_known_pose": 2.924286365509033,
+        "d2_crlb": 2.4442529678344727,
+        "information": 1.8175023794174194,
+        "saturation": 0.45437559485435486,
+        "n_floor": 1375.5140380859375,
+        "n_marginal": 34278.7421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.025397359866570417,
+        "note": "Q07230 69 kDa, dyndom, rotation 9.2 deg, chains A/B",
+        "d2_marginal": 0.07426915317773819,
+        "information_marginal": 0.07293149828910828,
+        "n_matched": 130,
+        "identity": 1.0,
+        "shared_fraction": 0.8426395939086294,
+        "provenance": {
+          "accession": "Q07230",
+          "canonical_mass_kda": 68.714,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 9.2
+        },
+        "d2_floor": 2.924286365509033
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Zinc finger and SCAN domain-containing (2I13/2I13) | 13 | no_contact | 1.01 | 2.92 | 0.025 | 0.45 | 1.38e+03 | 3.43e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Zinc finger and SCAN domain-containing (2I13/2I13)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

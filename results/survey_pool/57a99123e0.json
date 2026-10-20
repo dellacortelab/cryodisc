@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:18:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/57a99123e0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Transforming protein RhoA (EC 3.6.5.2) (1XCG/1OW3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Transforming protein RhoA (EC 3.6.5.2) (1XCG/1OW3)",
+        "motion": "crypticpocket",
+        "mass_kda": 18.695788,
+        "ca_rmsd": 1.9029141100649039,
+        "radius": 29.800842324667016,
+        "box_size": 128,
+        "d2_known_pose": 10.68112850189209,
+        "d2_crlb": 9.300421714782715,
+        "information": 3.392090320587158,
+        "saturation": 0.8480225801467896,
+        "n_floor": 737.0087280273438,
+        "n_marginal": 8569.916015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02936058451023328,
+        "note": "P61586 22 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains B/B",
+        "d2_marginal": 0.3136041760444641,
+        "information_marginal": 0.29171815514564514,
+        "n_matched": 178,
+        "identity": 1.0,
+        "shared_fraction": 0.9964664310954063,
+        "provenance": {
+          "accession": "P61586",
+          "canonical_mass_kda": 21.768,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 10.68112850189209
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Transforming protein RhoA (EC 3.6.5.2) (1XCG/1OW3) | 19 | crypticpocket | 1.90 | 10.7 | 0.029 | 0.85 | 737 | 8.57e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Transforming protein RhoA (EC 3.6.5.2) (1XCG/1OW3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

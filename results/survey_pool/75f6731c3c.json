@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:58:30+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/75f6731c3c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chaperonin subunit alpha (EC 5.6.1.7) (1Q3S/1Q3Q)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chaperonin subunit alpha (EC 5.6.1.7) (1Q3S/1Q3Q)",
+        "motion": "mixed",
+        "mass_kda": 52.064234,
+        "ca_rmsd": 1.1073747202942337,
+        "radius": 64.58042608276416,
+        "box_size": 128,
+        "d2_known_pose": 14.387481689453125,
+        "d2_crlb": 13.351340293884277,
+        "information": 3.6520895957946777,
+        "saturation": 0.9130223989486694,
+        "n_floor": 684.5396728515625,
+        "n_marginal": 183905.171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.000948059947231832,
+        "note": "P61112 59 kDa, dyndom, rotation 12.4 deg, chains F/B",
+        "d2_marginal": 0.01364019513130188,
+        "information_marginal": 0.013593963347375393,
+        "n_matched": 517,
+        "identity": 0.9980657640232108,
+        "shared_fraction": 0.9979731441601216,
+        "provenance": {
+          "accession": "P61112",
+          "canonical_mass_kda": 59.17,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.4
+        },
+        "d2_floor": 14.387481689453125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chaperonin subunit alpha (EC 5.6.1.7) (1Q3S/1Q3Q) | 52 | mixed | 1.11 | 14.4 | 0.001 | 0.91 | 685 | 1.84e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chaperonin subunit alpha (EC 5.6.1.7) (1Q3S/1Q3Q)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

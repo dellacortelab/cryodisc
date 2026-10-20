@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:31:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a19e00dbb9.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adhesion G protein-coupled receptor E5 (8IKJ/8IKL)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adhesion G protein-coupled receptor E5 (8IKJ/8IKL)",
+        "motion": "activation",
+        "mass_kda": 27.086106999999995,
+        "ca_rmsd": 8.433431331161797,
+        "radius": 58.573898956544774,
+        "box_size": 128,
+        "d2_known_pose": 71.6051254272461,
+        "d2_crlb": 58.55964279174805,
+        "information": 3.9998555183410645,
+        "saturation": 0.9999638795852661,
+        "n_floor": 625.0225830078125,
+        "n_marginal": 3098.585693359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013770912141237686,
+        "note": "P48960 92 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/R",
+        "d2_marginal": 0.9860678911209106,
+        "information_marginal": 0.80681973695755,
+        "n_matched": 258,
+        "identity": 1.0,
+        "shared_fraction": 0.49770918736435976,
+        "provenance": {
+          "accession": "P48960",
+          "canonical_mass_kda": 91.869,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 71.6051254272461
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adhesion G protein-coupled receptor E5 (8IKJ/8IKL) | 27 | activation | 8.43 | 71.6 | 0.014 | 1.00* | 625 | 3.1e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adhesion G protein-coupled receptor E5 (8IKJ/8IKL)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:09:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9676f09a26.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hydrolase (1H54/1H54)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hydrolase (1H54/1H54)",
+        "motion": "hinge",
+        "mass_kda": 79.56721699999999,
+        "ca_rmsd": 1.9340652077645444,
+        "radius": 51.37777622686067,
+        "box_size": 128,
+        "d2_known_pose": 48.451141357421875,
+        "d2_crlb": 44.46633529663086,
+        "information": 3.9969050884246826,
+        "saturation": 0.9992262721061707,
+        "n_floor": 625.4840087890625,
+        "n_marginal": 17899.04296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0029846501147807103,
+        "note": "Q7SIE1 86 kDa, dyndom, rotation 12.5 deg, chains B/A",
+        "d2_marginal": 0.1446097046136856,
+        "information_marginal": 0.13967227935791016,
+        "n_matched": 752,
+        "identity": 1.0,
+        "shared_fraction": 0.9975227085053675,
+        "provenance": {
+          "accession": "Q7SIE1",
+          "canonical_mass_kda": 85.737,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.5
+        },
+        "d2_floor": 48.451141357421875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hydrolase (1H54/1H54) | 80 | hinge | 1.93 | 48.5 | 0.003 | 1.00* | 625 | 1.79e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hydrolase (1H54/1H54)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

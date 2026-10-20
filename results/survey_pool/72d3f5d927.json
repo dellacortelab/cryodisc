@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:29:40+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/72d3f5d927.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pyruvate kinase 1 (PK 1) (EC 2.7.1.40) (1A3X/1A3W)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pyruvate kinase 1 (PK 1) (EC 2.7.1.40) (1A3X/1A3W)",
+        "motion": "hinge",
+        "mass_kda": 48.490179999999995,
+        "ca_rmsd": 1.0295062303684932,
+        "radius": 43.31046576223627,
+        "box_size": 128,
+        "d2_known_pose": 9.849075317382812,
+        "d2_crlb": 9.459035873413086,
+        "information": 3.3088603019714355,
+        "saturation": 0.8272150754928589,
+        "n_floor": 755.5471801757812,
+        "n_marginal": 33494.31640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007720605669821091,
+        "note": "P00549 55 kDa, dyndom, rotation 8.5 deg, chains B/A",
+        "d2_marginal": 0.0760408267378807,
+        "information_marginal": 0.07463952898979187,
+        "n_matched": 479,
+        "identity": 1.0,
+        "shared_fraction": 0.9724357275377683,
+        "provenance": {
+          "accession": "P00549",
+          "canonical_mass_kda": 54.545,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.5
+        },
+        "d2_floor": 9.849075317382812
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pyruvate kinase 1 (PK 1) (EC 2.7.1.40) (1A3X/1A3W) | 48 | hinge | 1.03 | 9.85 | 0.008 | 0.83 | 756 | 3.35e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pyruvate kinase 1 (PK 1) (EC 2.7.1.40) (1A3X/1A3W)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

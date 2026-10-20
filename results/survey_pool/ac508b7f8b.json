@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:48:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ac508b7f8b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Frizzled-4 (Fz-4) (hFz4) (FzE4) (CD an (6BD4/8WMA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Frizzled-4 (Fz-4) (hFz4) (FzE4) (CD an (6BD4/8WMA)",
+        "motion": "activation",
+        "mass_kda": 31.772958999999997,
+        "ca_rmsd": 2.0335111402166004,
+        "radius": 41.67109083607156,
+        "box_size": 128,
+        "d2_known_pose": 26.731115341186523,
+        "d2_crlb": 25.59398651123047,
+        "information": 3.9404876232147217,
+        "saturation": 0.9851219058036804,
+        "n_floor": 634.4392700195312,
+        "n_marginal": 5457.7734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019194978605835557,
+        "note": "Q9ULV1 60 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/A",
+        "d2_marginal": 0.513103187084198,
+        "information_marginal": 0.4580622613430023,
+        "n_matched": 315,
+        "identity": 1.0,
+        "shared_fraction": 0.8068827263615101,
+        "provenance": {
+          "accession": "Q9ULV1",
+          "canonical_mass_kda": 59.881,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 26.731115341186523
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Frizzled-4 (Fz-4) (hFz4) (FzE4) (CD an (6BD4/8WMA) | 32 | activation | 2.03 | 26.7 | 0.019 | 0.99 | 634 | 5.46e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Frizzled-4 (Fz-4) (hFz4) (FzE4) (CD an (6BD4/8WMA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

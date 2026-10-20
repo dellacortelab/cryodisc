@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:09:49+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/36d9fa577b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mitogen-activated protein kinase kinas (9FPD/5GJD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mitogen-activated protein kinase kinas (9FPD/5GJD)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 29.417205999999997,
+        "ca_rmsd": 1.8207219019103251,
+        "radius": 35.377393479274716,
+        "box_size": 128,
+        "d2_known_pose": 9.689943313598633,
+        "d2_crlb": 8.811370849609375,
+        "information": 3.2915804386138916,
+        "saturation": 0.8228951096534729,
+        "n_floor": 759.5135498046875,
+        "n_marginal": 11667.4716796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023321042668858916,
+        "note": "O43318 67 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BBAminus, chains A/A",
+        "d2_marginal": 0.22597958147525787,
+        "information_marginal": 0.2142709344625473,
+        "n_matched": 291,
+        "identity": 0.9965635738831615,
+        "shared_fraction": 0.9384226064951497,
+        "provenance": {
+          "accession": "O43318",
+          "canonical_mass_kda": 67.196,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 9.689943313598633
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mitogen-activated protein kinase kinas (9FPD/5GJD) | 29 | dihedral_cluster | 1.82 | 9.69 | 0.023 | 0.82 | 760 | 1.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mitogen-activated protein kinase kinas (9FPD/5GJD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

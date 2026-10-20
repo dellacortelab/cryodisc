@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:36:20+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6851000818.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Radixin (ESP10) (2D2Q/2D10)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Radixin (ESP10) (2D2Q/2D10)",
+        "motion": "shear",
+        "mass_kda": 32.284456999999996,
+        "ca_rmsd": 1.1944515567626295,
+        "radius": 40.933582686065215,
+        "box_size": 128,
+        "d2_known_pose": 9.546063423156738,
+        "d2_crlb": 8.880558013916016,
+        "information": 3.2755520343780518,
+        "saturation": 0.8188880085945129,
+        "n_floor": 763.2301025390625,
+        "n_marginal": 48021.3203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.005524845490377254,
+        "note": "P26043 69 kDa, dyndom, rotation 8.2 deg, chains B/D",
+        "d2_marginal": 0.05274052545428276,
+        "information_marginal": 0.05206020921468735,
+        "n_matched": 297,
+        "identity": 1.0,
+        "shared_fraction": 0.9711348359035191,
+        "provenance": {
+          "accession": "P26043",
+          "canonical_mass_kda": 68.543,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.2
+        },
+        "d2_floor": 9.546063423156738
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Radixin (ESP10) (2D2Q/2D10) | 32 | shear | 1.19 | 9.55 | 0.006 | 0.82 | 763 | 4.8e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Radixin (ESP10) (2D2Q/2D10)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

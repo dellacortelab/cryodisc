@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:53:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/25dff75ccd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Putative phosphoglycolate phosphatase (2HI0/2HI0)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Putative phosphoglycolate phosphatase (2HI0/2HI0)",
+        "motion": "hinge",
+        "mass_kda": 23.502447999999998,
+        "ca_rmsd": 1.059287825992596,
+        "radius": 31.138933031546344,
+        "box_size": 128,
+        "d2_known_pose": 6.44354772567749,
+        "d2_crlb": 5.735355377197266,
+        "information": 2.81156063079834,
+        "saturation": 0.702890157699585,
+        "n_floor": 889.1858520507812,
+        "n_marginal": 30391.41796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013030602981965868,
+        "note": "Q1GA24 26 kDa, dyndom, rotation 16.1 deg, chains A/B",
+        "d2_marginal": 0.0839633122086525,
+        "information_marginal": 0.08226006478071213,
+        "n_matched": 234,
+        "identity": 1.0,
+        "shared_fraction": 0.9922265408106608,
+        "provenance": {
+          "accession": "Q1GA24",
+          "canonical_mass_kda": 26.384,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.1
+        },
+        "d2_floor": 6.44354772567749
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Putative phosphoglycolate phosphatase (2HI0/2HI0) | 24 | hinge | 1.06 | 6.44 | 0.013 | 0.70 | 889 | 3.04e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Putative phosphoglycolate phosphatase (2HI0/2HI0)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

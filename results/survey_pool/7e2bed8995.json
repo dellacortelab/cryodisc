@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:04:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7e2bed8995.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Chitin elicitor receptor kinase 1 (OsC (9V70/9V7E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Chitin elicitor receptor kinase 1 (OsC (9V70/9V7E)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 25.852352,
+        "ca_rmsd": 0.8010534522338081,
+        "radius": 35.803258907020805,
+        "box_size": 128,
+        "d2_known_pose": 4.149258613586426,
+        "d2_crlb": 3.816004514694214,
+        "information": 2.248109817504883,
+        "saturation": 0.5620274543762207,
+        "n_floor": 1112.0452880859375,
+        "n_marginal": 97017.8046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006250462108317457,
+        "note": "A0A0P0XII1 67 kDa, kincore, no rotation angle (kincore reports none); states BLBtrans -> BLAplus, chains B/A",
+        "d2_marginal": 0.02593478374183178,
+        "information_marginal": 0.025768466293811798,
+        "n_matched": 248,
+        "identity": 1.0,
+        "shared_fraction": 0.971358024691358,
+        "provenance": {
+          "accession": "A0A0P0XII1",
+          "canonical_mass_kda": 67.068,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 4.149258613586426
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Chitin elicitor receptor kinase 1 (OsC (9V70/9V7E) | 26 | dihedral_cluster | 0.80 | 4.15 | 0.006 | 0.56 | 1.11e+03 | 9.7e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Chitin elicitor receptor kinase 1 (OsC (9V70/9V7E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

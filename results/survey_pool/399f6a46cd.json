@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:10:47+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/399f6a46cd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Elongation factor 1-alpha (EF-1-alpha) (1SKQ/1SKQ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Elongation factor 1-alpha (EF-1-alpha) (1SKQ/1SKQ)",
+        "motion": "hinge",
+        "mass_kda": 42.86702499999999,
+        "ca_rmsd": 2.1446739227452887,
+        "radius": 48.00055283509058,
+        "box_size": 128,
+        "d2_known_pose": 27.252721786499023,
+        "d2_crlb": 23.96254539489746,
+        "information": 3.9446582794189453,
+        "saturation": 0.9861645698547363,
+        "n_floor": 633.7684936523438,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P35021 48 kDa, dyndom, rotation 11.3 deg, chains A/B",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 416,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P35021",
+          "canonical_mass_kda": 48.489,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.3
+        },
+        "d2_floor": 27.252721786499023
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Elongation factor 1-alpha (EF-1-alpha) (1SKQ/1SKQ) | 43 | hinge | 2.14 | 27.3 | -- | 0.99 | 634 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Elongation factor 1-alpha (EF-1-alpha) (1SKQ/1SKQ)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Out of memory while trying to allocate 683.33MiB. [executable_name='jit__pose_log_ratio'] [tf-allocator-allocation-error='']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

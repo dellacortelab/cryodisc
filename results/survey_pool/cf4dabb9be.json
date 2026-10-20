@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:17:48+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/cf4dabb9be.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glycine cleavage system transcriptiona (1U8S/1U8S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glycine cleavage system transcriptiona (1U8S/1U8S)",
+        "motion": "hinge",
+        "mass_kda": 17.545032999999997,
+        "ca_rmsd": 0.7625681700096862,
+        "radius": 30.886497504898177,
+        "box_size": 128,
+        "d2_known_pose": 3.187044143676758,
+        "d2_crlb": 2.8673534393310547,
+        "information": 1.920064926147461,
+        "saturation": 0.48001623153686523,
+        "n_floor": 1302.0394287109375,
+        "n_marginal": 59661.34765625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013286152072813985,
+        "note": "Q9KQ45 20 kDa, dyndom, rotation 6.5 deg, chains B/A",
+        "d2_marginal": 0.04234355315566063,
+        "information_marginal": 0.04190317913889885,
+        "n_matched": 171,
+        "identity": 1.0,
+        "shared_fraction": 0.9932330827067669,
+        "provenance": {
+          "accession": "Q9KQ45",
+          "canonical_mass_kda": 20.013,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.5
+        },
+        "d2_floor": 3.187044143676758
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glycine cleavage system transcriptiona (1U8S/1U8S) | 18 | hinge | 0.76 | 3.19 | 0.013 | 0.48 | 1.3e+03 | 5.97e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glycine cleavage system transcriptiona (1U8S/1U8S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

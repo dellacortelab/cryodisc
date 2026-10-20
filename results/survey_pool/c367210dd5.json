@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:33:29+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c367210dd5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Major pepsin inhibitor 3 (PI-3) (1F34/1F32)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Major pepsin inhibitor 3 (PI-3) (1F34/1F32)",
+        "motion": "hinge",
+        "mass_kda": 13.230619999999996,
+        "ca_rmsd": 1.0502280698119062,
+        "radius": 31.007480271380906,
+        "box_size": 128,
+        "d2_known_pose": 4.3078460693359375,
+        "d2_crlb": 3.7597503662109375,
+        "information": 2.295948028564453,
+        "saturation": 0.5739870071411133,
+        "n_floor": 1088.8748779296875,
+        "n_marginal": 64123.46484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009138763706514173,
+        "note": "P19400 19 kDa, dyndom, rotation 10.9 deg, chains B/A",
+        "d2_marginal": 0.039368387311697006,
+        "information_marginal": 0.038987286388874054,
+        "n_matched": 127,
+        "identity": 1.0,
+        "shared_fraction": 0.9264432029795159,
+        "provenance": {
+          "accession": "P19400",
+          "canonical_mass_kda": 18.657,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.9
+        },
+        "d2_floor": 4.3078460693359375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Major pepsin inhibitor 3 (PI-3) (1F34/1F32) | 13 | hinge | 1.05 | 4.31 | 0.009 | 0.57 | 1.09e+03 | 6.41e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Major pepsin inhibitor 3 (PI-3) (1F34/1F32)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

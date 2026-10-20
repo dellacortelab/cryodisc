@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:49:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/eb10b73c1f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "BstYI (1SDO/1VRR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "BstYI (1SDO/1VRR)",
+        "motion": "hinge",
+        "mass_kda": 20.126653999999995,
+        "ca_rmsd": 2.222914447210251,
+        "radius": 35.59639090303242,
+        "box_size": 128,
+        "d2_known_pose": 16.874019622802734,
+        "d2_crlb": 14.55283260345459,
+        "information": 3.7584755420684814,
+        "saturation": 0.9396188855171204,
+        "n_floor": 665.163330078125,
+        "n_marginal": 7100.828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.022767058028364005,
+        "note": "Q84AF2 23 kDa, dyndom, rotation 23.6 deg, chains A/A",
+        "d2_marginal": 0.3841717839241028,
+        "information_marginal": 0.3520716428756714,
+        "n_matched": 192,
+        "identity": 1.0,
+        "shared_fraction": 0.9474009900990099,
+        "provenance": {
+          "accession": "Q84AF2",
+          "canonical_mass_kda": 23.193,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 23.6
+        },
+        "d2_floor": 16.874019622802734
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| BstYI (1SDO/1VRR) | 20 | hinge | 2.22 | 16.9 | 0.023 | 0.94 | 665 | 7.1e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "BstYI (1SDO/1VRR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:49:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7b415082ed.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Shikimate dehydrogenase (NADP(+)) (SD) (1NYT/1NYT)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Shikimate dehydrogenase (NADP(+)) (SD) (1NYT/1NYT)",
+        "motion": "hinge",
+        "mass_kda": 27.056950999999994,
+        "ca_rmsd": 1.1909471739174122,
+        "radius": 31.498194987971356,
+        "box_size": 128,
+        "d2_known_pose": 8.744464874267578,
+        "d2_crlb": 7.9122419357299805,
+        "information": 3.1787023544311523,
+        "saturation": 0.7946755886077881,
+        "n_floor": 786.4844360351562,
+        "n_marginal": 16151.6865234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01839508663807977,
+        "note": "P15770 29 kDa, dyndom, rotation 10.7 deg, chains A/D",
+        "d2_marginal": 0.16085518896579742,
+        "information_marginal": 0.15478259325027466,
+        "n_matched": 270,
+        "identity": 1.0,
+        "shared_fraction": 0.9932268988872762,
+        "provenance": {
+          "accession": "P15770",
+          "canonical_mass_kda": 29.414,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.7
+        },
+        "d2_floor": 8.744464874267578
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Shikimate dehydrogenase (NADP(+)) (SD) (1NYT/1NYT) | 27 | hinge | 1.19 | 8.74 | 0.018 | 0.79 | 786 | 1.62e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Shikimate dehydrogenase (NADP(+)) (SD) (1NYT/1NYT)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

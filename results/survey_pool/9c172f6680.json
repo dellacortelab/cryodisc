@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:10:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9c172f6680.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Primary amine oxidase (EC 1.4.3.21) (2 (1OAC/1QAK)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Primary amine oxidase (EC 1.4.3.21) (2 (1OAC/1QAK)",
+        "motion": "shear",
+        "mass_kda": 74.58658899999999,
+        "ca_rmsd": 0.789180556283229,
+        "radius": 54.58449349735738,
+        "box_size": 128,
+        "d2_known_pose": 12.388370513916016,
+        "d2_crlb": 11.294729232788086,
+        "information": 3.5310466289520264,
+        "saturation": 0.8827616572380066,
+        "n_floor": 708.00537109375,
+        "n_marginal": 60874.421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0033491986340340387,
+        "note": "P46883 84 kDa, dyndom, rotation 6.3 deg, chains A/B",
+        "d2_marginal": 0.04149111360311508,
+        "information_marginal": 0.04106815159320831,
+        "n_matched": 718,
+        "identity": 0.9986072423398329,
+        "shared_fraction": 0.995249824067558,
+        "provenance": {
+          "accession": "P46883",
+          "canonical_mass_kda": 84.379,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 6.3
+        },
+        "d2_floor": 12.388370513916016
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Primary amine oxidase (EC 1.4.3.21) (2 (1OAC/1QAK) | 75 | shear | 0.79 | 12.4 | 0.003 | 0.88 | 708 | 6.09e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Primary amine oxidase (EC 1.4.3.21) (2 (1OAC/1QAK)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

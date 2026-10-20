@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:54:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/03e5da3741.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glutamate receptor 2 (GluR-2) (AMPA-se (2I3V/2CMO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glutamate receptor 2 (GluR-2) (AMPA-se (2I3V/2CMO)",
+        "motion": "hinge",
+        "mass_kda": 26.596876999999992,
+        "ca_rmsd": 2.77757172206568,
+        "radius": 32.206455583573,
+        "box_size": 128,
+        "d2_known_pose": 35.181861877441406,
+        "d2_crlb": 32.31748580932617,
+        "information": 3.981435775756836,
+        "saturation": 0.995358943939209,
+        "n_floor": 627.9141845703125,
+        "n_marginal": 4163.5927734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019805739598452256,
+        "note": "P19491 99 kDa, dyndom, rotation 26.0 deg, chains A/A",
+        "d2_marginal": 0.6968027949333191,
+        "information_marginal": 0.6004430055618286,
+        "n_matched": 257,
+        "identity": 0.9961089494163424,
+        "shared_fraction": 0.9901429275505175,
+        "provenance": {
+          "accession": "P19491",
+          "canonical_mass_kda": 98.688,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 26.0
+        },
+        "d2_floor": 35.181861877441406
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glutamate receptor 2 (GluR-2) (AMPA-se (2I3V/2CMO) | 27 | hinge | 2.78 | 35.2 | 0.020 | 1.00* | 628 | 4.16e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glutamate receptor 2 (GluR-2) (AMPA-se (2I3V/2CMO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

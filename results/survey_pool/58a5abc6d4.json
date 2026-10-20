@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:42:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/58a5abc6d4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Plasminogen [Cleaved into: Plasmin (EC (1KI0/2DOH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Plasminogen [Cleaved into: Plasmin (EC (1KI0/2DOH)",
+        "motion": "no_contact",
+        "mass_kda": 17.667240999999997,
+        "ca_rmsd": 3.9619514528851854,
+        "radius": 36.08870103950397,
+        "box_size": 128,
+        "d2_known_pose": 27.435359954833984,
+        "d2_crlb": 24.635845184326172,
+        "information": 3.946047067642212,
+        "saturation": 0.986511766910553,
+        "n_floor": 633.54541015625,
+        "n_marginal": 14176.6328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006715647709647435,
+        "note": "P00747 91 kDa, dyndom, rotation 48.1 deg, chains A/X",
+        "d2_marginal": 0.1842462122440338,
+        "information_marginal": 0.1763465404510498,
+        "n_matched": 165,
+        "identity": 1.0,
+        "shared_fraction": 0.65264720435428,
+        "provenance": {
+          "accession": "P00747",
+          "canonical_mass_kda": 90.569,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 48.1
+        },
+        "d2_floor": 27.435359954833984
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Plasminogen [Cleaved into: Plasmin (EC (1KI0/2DOH) | 18 | no_contact | 3.96 | 27.4 | 0.007 | 0.99 | 634 | 1.42e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Plasminogen [Cleaved into: Plasmin (EC (1KI0/2DOH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

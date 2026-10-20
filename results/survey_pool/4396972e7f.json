@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:07:51+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4396972e7f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Corticotropin-releasing hormone recept (8GTI/6P9X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Corticotropin-releasing hormone recept (8GTI/6P9X)",
+        "motion": "activation",
+        "mass_kda": 26.197410999999995,
+        "ca_rmsd": 4.682334679461165,
+        "radius": 38.75210462144974,
+        "box_size": 128,
+        "d2_known_pose": 59.509063720703125,
+        "d2_crlb": 54.64066696166992,
+        "information": 3.999289035797119,
+        "saturation": 0.9998222589492798,
+        "n_floor": 625.1111450195312,
+        "n_marginal": 4453.08251953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010842114240922917,
+        "note": "P34998 48 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.6452040672302246,
+        "information_marginal": 0.5614088773727417,
+        "n_matched": 254,
+        "identity": 0.9566929133858267,
+        "shared_fraction": 0.8856382978723404,
+        "provenance": {
+          "accession": "P34998",
+          "canonical_mass_kda": 47.671,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 59.509063720703125
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Corticotropin-releasing hormone recept (8GTI/6P9X) | 26 | activation | 4.68 | 59.5 | 0.011 | 1.00* | 625 | 4.45e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Corticotropin-releasing hormone recept (8GTI/6P9X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:57:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/98945257a0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine--tRNA ligase (EC 6.1.1.1) (Ty (1H3F/1H3F)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine--tRNA ligase (EC 6.1.1.1) (Ty (1H3F/1H3F)",
+        "motion": "hinge",
+        "mass_kda": 41.894316999999994,
+        "ca_rmsd": 7.190419435123585,
+        "radius": 60.39775224456054,
+        "box_size": 128,
+        "d2_known_pose": 112.26182556152344,
+        "d2_crlb": 98.59453582763672,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 3626.704345703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007285854326060041,
+        "note": "P83453 49 kDa, dyndom, rotation 96.2 deg, chains B/A",
+        "d2_marginal": 0.8179233074188232,
+        "information_marginal": 0.6893311142921448,
+        "n_matched": 398,
+        "identity": 1.0,
+        "shared_fraction": 0.9815100154083205,
+        "provenance": {
+          "accession": "P83453",
+          "canonical_mass_kda": 48.718,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 96.2
+        },
+        "d2_floor": 112.26182556152344
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine--tRNA ligase (EC 6.1.1.1) (Ty (1H3F/1H3F) | 42 | hinge | 7.19 | 112 | 0.007 | 1.00* | 625 | 3.63e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine--tRNA ligase (EC 6.1.1.1) (Ty (1H3F/1H3F)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

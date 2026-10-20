@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:24:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0343f9c17b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase PLK2 ( (4I6F/4I6H)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase PLK2 ( (4I6F/4I6H)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 30.783619999999996,
+        "ca_rmsd": 0.36277613629229244,
+        "radius": 35.37933468896919,
+        "box_size": 128,
+        "d2_known_pose": 1.6675221920013428,
+        "d2_crlb": 1.6353734731674194,
+        "information": 1.224452257156372,
+        "saturation": 0.306113064289093,
+        "n_floor": 2041.729248046875,
+        "n_marginal": 165694.734375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009082298844596763,
+        "note": "Q9NYY3 78 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BLBminus, chains A/A",
+        "d2_marginal": 0.015144934877753258,
+        "information_marginal": 0.01508798822760582,
+        "n_matched": 285,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9NYY3",
+          "canonical_mass_kda": 78.237,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 1.6675221920013428
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase PLK2 ( (4I6F/4I6H) | 31 | dihedral_cluster | 0.36 | 1.67 | 0.009 | 0.31 | 2.04e+03 | 1.66e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase PLK2 ( (4I6F/4I6H)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

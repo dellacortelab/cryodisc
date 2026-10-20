@@ -1,0 +1,142 @@
+{
+ "_note": "The pair list for the extended marginalization-floor ladder, and the chains each entry is cut to. It exists because the 2026-08-17 batch had NO tracked list: it was an ad-hoc shell loop that spelled `--chains A` for every pair, and the survey it drew from records a per-entry chain_a/chain_b that DIFFERS from A on 5 of these 14. Four of those failed loudly (1M4U/1LXI, 1H03/1H2Q, 9LBF/9M41, 5YWY/8GCP -- 20 rungs lost) and one did not: 6FAD/5MY8 scored chain A against chain A where the correspondence is D against A, and because 6FAD is a homo-oligomer whose copies differ by only 1.3% in Ca RMSD (1.898 A against 1.922 A) the overlap check passed and five result files were written that look right. That is the failure `_shared_atoms` warns about, and only a tracked list prevents it.",
+ "_recipe": "assembly=None with chains_a/chains_b, and labels_a/labels_b renaming BOTH onto 'A'. The rename is not cosmetic: the correspondence key is (copy, chain, residue_id, atom), so selecting L from one entry and A from the other leaves zero shared atoms however well the molecules match, and the refusal then blames residue numbering. Verified: this reproduces the survey's own recorded Ca RMSD on the two rows that publish one (1M4U/1LXI 1.918 against 1.92, 1H03/1H2Q 1.733 against 1.73), and is bit-identical to the old `--chains A --assembly 1` on all nine pairs where both chains are A.",
+ "_rungs": [
+  54,
+  512,
+  4096,
+  32768,
+  262144
+ ],
+ "_poses": "haar",
+ "_ca_rmsd_note": "ca_rmsd_a is measured by this recipe at build time; it is a registration, not an input.",
+ "pairs": [
+  {
+   "pdb_a": "1DPE",
+   "pdb_b": "1DPP",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 507,
+   "ca_rmsd_a": 6.5284,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "1MD7",
+   "pdb_b": "1MD8",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 299,
+   "ca_rmsd_a": 3.0939,
+   "source": "nocontact"
+  },
+  {
+   "pdb_a": "1YGR",
+   "pdb_b": "1YGU",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 558,
+   "ca_rmsd_a": 0.5278,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "3KMM",
+   "pdb_b": "2PL0",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 267,
+   "ca_rmsd_a": 5.4185,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "4MKC",
+   "pdb_b": "5IUH",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 281,
+   "ca_rmsd_a": 2.0022,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "5TOB",
+   "pdb_b": "4H1M",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 245,
+   "ca_rmsd_a": 1.4451,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "6E4W",
+   "pdb_b": "5UFU",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 361,
+   "ca_rmsd_a": 0.2837,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "8IJL",
+   "pdb_b": "7X23",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 982,
+   "ca_rmsd_a": 11.7234,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "9ZPC",
+   "pdb_b": "9ZPD",
+   "chain_a": "A",
+   "chain_b": "A",
+   "n_ca": 1045,
+   "ca_rmsd_a": 1.8305,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "6FAD",
+   "pdb_b": "5MY8",
+   "chain_a": "D",
+   "chain_b": "A",
+   "n_ca": 347,
+   "ca_rmsd_a": 1.9225,
+   "source": "panel"
+  },
+  {
+   "pdb_a": "1M4U",
+   "pdb_b": "1LXI",
+   "chain_a": "L",
+   "chain_b": "A",
+   "n_ca": 104,
+   "ca_rmsd_a": 1.9183,
+   "source": "nocontact"
+  },
+  {
+   "pdb_a": "1H03",
+   "pdb_b": "1H2Q",
+   "chain_a": "P",
+   "chain_b": "P",
+   "n_ca": 119,
+   "ca_rmsd_a": 1.7334,
+   "source": "nocontact"
+  },
+  {
+   "pdb_a": "9LBF",
+   "pdb_b": "9M41",
+   "chain_a": "B",
+   "chain_b": "B",
+   "n_ca": 323,
+   "ca_rmsd_a": 2.7922,
+   "source": "pharma"
+  },
+  {
+   "pdb_a": "5YWY",
+   "pdb_b": "8GCP",
+   "chain_a": "A",
+   "chain_b": "R",
+   "n_ca": 265,
+   "ca_rmsd_a": 2.4007,
+   "source": "pharma"
+  }
+ ],
+ "_relation_to_floor": "There is no fifteenth pair, and the five known_fraction jobs that died on `data/pdb/.pdb` on 2026-08-17 were not one. Slurm's SubmitLine records them as FIVE DIFFERENT pairs -- 1WN7/1WNS, 3KMM/2PL0, 4QQT/4R6V, 6E4W/5UFU, 8IJL/7X23, the five of docs/planning/marginalization_floor.md -- all at nodes=32768 under `floor_` naming, from an attempt at 14:22 that predates this 14-pair `ladder_` batch. One shell bug blanked both PDB ids and mangled --out into a multi-line string. That work was redone successfully the same evening (haar_n32768 at 20:22-20:29, haar_n262144 at 21:38-21:56) and all five pairs carry a complete ladder, so nothing is outstanding from it. 1WN7/1WNS and 4QQT/4R6V are floor-only and were checked against the survey recipe here: both are chains A/A and bit-identical, so the chain defect never touched them. The three pairs in BOTH families agree within error at all five rungs, 15 comparisons, which is an independent cross-check of this table."
+}

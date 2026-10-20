@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:43:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/bf38687c96.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Neuropeptide Y receptor type 2 (NPY2-R (7DDZ/7YON)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Neuropeptide Y receptor type 2 (NPY2-R (7DDZ/7YON)",
+        "motion": "activation",
+        "mass_kda": 30.133829999999996,
+        "ca_rmsd": 2.798406595981301,
+        "radius": 44.2221798841942,
+        "box_size": 128,
+        "d2_known_pose": 50.18357849121094,
+        "d2_crlb": 46.54191589355469,
+        "information": 3.997544765472412,
+        "saturation": 0.999386191368103,
+        "n_floor": 625.3839111328125,
+        "n_marginal": 4272.33935546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013480232651434507,
+        "note": "P49146 43 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.6764863133430481,
+        "information_marginal": 0.5851595401763916,
+        "n_matched": 288,
+        "identity": 1.0,
+        "shared_fraction": 0.6725248974809608,
+        "provenance": {
+          "accession": "P49146",
+          "canonical_mass_kda": 42.731,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 50.18357849121094
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Neuropeptide Y receptor type 2 (NPY2-R (7DDZ/7YON) | 30 | activation | 2.80 | 50.2 | 0.013 | 1.00* | 625 | 4.27e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Neuropeptide Y receptor type 2 (NPY2-R (7DDZ/7YON)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

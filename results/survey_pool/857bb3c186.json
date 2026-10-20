@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:12:23+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/857bb3c186.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Angiopoietin-1 receptor (EC 2.7.10.1) (3L8P/2WQB)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Angiopoietin-1 receptor (EC 2.7.10.1) (3L8P/2WQB)",
+        "motion": "dfg_flip",
+        "mass_kda": 29.678922999999994,
+        "ca_rmsd": 1.745327658627925,
+        "radius": 38.21404438330117,
+        "box_size": 128,
+        "d2_known_pose": 14.916580200195312,
+        "d2_crlb": 13.383733749389648,
+        "information": 3.678260326385498,
+        "saturation": 0.9195650815963745,
+        "n_floor": 679.6691284179688,
+        "n_marginal": 11718.18359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015080543377578963,
+        "note": "Q02763 126 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/A",
+        "d2_marginal": 0.2249501347541809,
+        "information_marginal": 0.21334365010261536,
+        "n_matched": 283,
+        "identity": 0.9964664310954063,
+        "shared_fraction": 0.956984667802385,
+        "provenance": {
+          "accession": "Q02763",
+          "canonical_mass_kda": 125.83,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.916580200195312
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Angiopoietin-1 receptor (EC 2.7.10.1) (3L8P/2WQB) | 30 | dfg_flip | 1.75 | 14.9 | 0.015 | 0.92 | 680 | 1.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Angiopoietin-1 receptor (EC 2.7.10.1) (3L8P/2WQB)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

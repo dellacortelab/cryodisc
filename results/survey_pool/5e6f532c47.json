@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:05:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5e6f532c47.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Arginine repressor (Arginine hydroxama (1F9N/1F9N)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Arginine repressor (Arginine hydroxama (1F9N/1F9N)",
+        "motion": "no_contact",
+        "mass_kda": 14.839321,
+        "ca_rmsd": 4.092332615802783,
+        "radius": 35.90284219670602,
+        "box_size": 128,
+        "d2_known_pose": 24.55926513671875,
+        "d2_crlb": 21.1098690032959,
+        "information": 3.9193568229675293,
+        "saturation": 0.9798392057418823,
+        "n_floor": 637.8598022460938,
+        "n_marginal": 7240.7783203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015314522347090678,
+        "note": "P17893 17 kDa, dyndom, rotation 41.5 deg, chains C/A",
+        "d2_marginal": 0.3761134147644043,
+        "information_marginal": 0.34526675939559937,
+        "n_matched": 147,
+        "identity": 1.0,
+        "shared_fraction": 0.9763779527559056,
+        "provenance": {
+          "accession": "P17893",
+          "canonical_mass_kda": 16.832,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 41.5
+        },
+        "d2_floor": 24.55926513671875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Arginine repressor (Arginine hydroxama (1F9N/1F9N) | 15 | no_contact | 4.09 | 24.6 | 0.015 | 0.98 | 638 | 7.24e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Arginine repressor (Arginine hydroxama (1F9N/1F9N)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

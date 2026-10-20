@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:55:36+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c9b3e27e47.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Probable manganese-dependent inorganic (1I74/1I74)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Probable manganese-dependent inorganic (1I74/1I74)",
+        "motion": "hinge",
+        "mass_kda": 30.292205,
+        "ca_rmsd": 2.154355940826303,
+        "radius": 32.20200789005478,
+        "box_size": 128,
+        "d2_known_pose": 23.40175437927246,
+        "d2_crlb": 18.850936889648438,
+        "information": 3.9050917625427246,
+        "saturation": 0.9762729406356812,
+        "n_floor": 640.1898193359375,
+        "n_marginal": 4492.04296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.027298546513689213,
+        "note": "O68579 33 kDa, dyndom, rotation 16.8 deg, chains A/B",
+        "d2_marginal": 0.6388338804244995,
+        "information_marginal": 0.5565396547317505,
+        "n_matched": 304,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "O68579",
+          "canonical_mass_kda": 33.403,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.8
+        },
+        "d2_floor": 23.40175437927246
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Probable manganese-dependent inorganic (1I74/1I74) | 30 | hinge | 2.15 | 23.4 | 0.027 | 0.98 | 640 | 4.49e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Probable manganese-dependent inorganic (1I74/1I74)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

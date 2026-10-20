@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:25:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/188d25b286.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "GlcNAc-alpha-1,4-Gal-releasing endo-be (1UPS/1UPS)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "GlcNAc-alpha-1,4-Gal-releasing endo-be (1UPS/1UPS)",
+        "motion": "hinge",
+        "mass_kda": 42.736518,
+        "ca_rmsd": 2.4634735935775516,
+        "radius": 47.23261264559382,
+        "box_size": 128,
+        "d2_known_pose": 39.74921798706055,
+        "d2_crlb": 28.61669921875,
+        "information": 3.9900217056274414,
+        "saturation": 0.9975054264068604,
+        "n_floor": 626.5630493164062,
+        "n_marginal": 7185.681640625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009540949493470214,
+        "note": "Q934G8 49 kDa, dyndom, rotation 12.4 deg, chains A/B",
+        "d2_marginal": 0.3792452812194824,
+        "information_marginal": 0.34791409969329834,
+        "n_matched": 397,
+        "identity": 1.0,
+        "shared_fraction": 0.9842376477720521,
+        "provenance": {
+          "accession": "Q934G8",
+          "canonical_mass_kda": 49.377,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 12.4
+        },
+        "d2_floor": 39.74921798706055
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| GlcNAc-alpha-1,4-Gal-releasing endo-be (1UPS/1UPS) | 43 | hinge | 2.46 | 39.7 | 0.010 | 1.00* | 627 | 7.19e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "GlcNAc-alpha-1,4-Gal-releasing endo-be (1UPS/1UPS)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

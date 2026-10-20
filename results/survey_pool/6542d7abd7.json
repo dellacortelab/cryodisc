@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:23:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6542d7abd7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Aromatic-amino-acid aminotransferase ( (2AY6/1AY5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Aromatic-amino-acid aminotransferase ( (2AY6/1AY5)",
+        "motion": "mixed",
+        "mass_kda": 39.016647,
+        "ca_rmsd": 1.2061292847279168,
+        "radius": 39.24162982144702,
+        "box_size": 128,
+        "d2_known_pose": 11.615084648132324,
+        "d2_crlb": 10.662692070007324,
+        "information": 3.4728565216064453,
+        "saturation": 0.8682141304016113,
+        "n_floor": 719.8685302734375,
+        "n_marginal": 14572.7451171875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015413190806383849,
+        "note": "P95468 43 kDa, dyndom, rotation 12.2 deg, chains A/B",
+        "d2_marginal": 0.17902551591396332,
+        "information_marginal": 0.1715531349182129,
+        "n_matched": 388,
+        "identity": 1.0,
+        "shared_fraction": 0.982977303070761,
+        "provenance": {
+          "accession": "P95468",
+          "canonical_mass_kda": 42.732,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.2
+        },
+        "d2_floor": 11.615084648132324
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Aromatic-amino-acid aminotransferase ( (2AY6/1AY5) | 39 | mixed | 1.21 | 11.6 | 0.015 | 0.87 | 720 | 1.46e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Aromatic-amino-acid aminotransferase ( (2AY6/1AY5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

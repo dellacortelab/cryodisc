@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:03:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/27121abcca.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Epidermal growth factor receptor (EC 2 (1NQL/1MOX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Epidermal growth factor receptor (EC 2 (1NQL/1MOX)",
+        "motion": "unclassified",
+        "mass_kda": 49.825762,
+        "ca_rmsd": 17.75947114850914,
+        "radius": 55.92068808954536,
+        "box_size": 128,
+        "d2_known_pose": 450.70208740234375,
+        "d2_crlb": 409.153076171875,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1637.46337890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0050094595505493205,
+        "note": "P00533 134 kDa, dyndom, rotation 143.8 deg, chains A/B",
+        "d2_marginal": 2.2577738761901855,
+        "information_marginal": 1.5267517566680908,
+        "n_matched": 499,
+        "identity": 1.0,
+        "shared_fraction": 0.8116162714814009,
+        "provenance": {
+          "accession": "P00533",
+          "canonical_mass_kda": 134.277,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 143.8
+        },
+        "d2_floor": 450.70208740234375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Epidermal growth factor receptor (EC 2 (1NQL/1MOX) | 50 | unclassified | 17.76 | 451 | 0.005 | 1.00* | 625 | 1.64e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Epidermal growth factor receptor (EC 2 (1NQL/1MOX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

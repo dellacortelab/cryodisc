@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:32:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/93716866e2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Succinate--CoA ligase [GDP-forming] su (1EUD/2FP4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Succinate--CoA ligase [GDP-forming] su (1EUD/2FP4)",
+        "motion": "shear",
+        "mass_kda": 39.008131999999996,
+        "ca_rmsd": 2.6588305258439258,
+        "radius": 47.064202653451076,
+        "box_size": 128,
+        "d2_known_pose": 34.43589401245117,
+        "d2_crlb": 31.521215438842773,
+        "information": 3.9794435501098633,
+        "saturation": 0.9948608875274658,
+        "n_floor": 628.228515625,
+        "n_marginal": 11706.203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00653946758729736,
+        "note": "P53590 47 kDa, dyndom, rotation 22.2 deg, chains B/B",
+        "d2_marginal": 0.22519241273403168,
+        "information_marginal": 0.2135619968175888,
+        "n_matched": 391,
+        "identity": 0.9974424552429667,
+        "shared_fraction": 0.9936112979152656,
+        "provenance": {
+          "accession": "P53590",
+          "canonical_mass_kda": 46.803,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 22.2
+        },
+        "d2_floor": 34.43589401245117
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Succinate--CoA ligase [GDP-forming] su (1EUD/2FP4) | 39 | shear | 2.66 | 34.4 | 0.007 | 0.99* | 628 | 1.17e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Succinate--CoA ligase [GDP-forming] su (1EUD/2FP4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

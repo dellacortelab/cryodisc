@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:26:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/491c90aaf0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Phosphoserine phosphatase ThrH (PSP) ( (1RKU/1RKU)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Phosphoserine phosphatase ThrH (PSP) ( (1RKU/1RKU)",
+        "motion": "hinge",
+        "mass_kda": 21.951793999999996,
+        "ca_rmsd": 1.1810359973465938,
+        "radius": 30.082289472022833,
+        "box_size": 128,
+        "d2_known_pose": 8.950891494750977,
+        "d2_crlb": 8.222723960876465,
+        "information": 3.2049269676208496,
+        "saturation": 0.8012317419052124,
+        "n_floor": 780.0490112304688,
+        "n_marginal": 8266.7255859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0364171980163419,
+        "note": "Q9I2Y2 24 kDa, dyndom, rotation 10.8 deg, chains B/A",
+        "d2_marginal": 0.32596638798713684,
+        "information_marginal": 0.30241721868515015,
+        "n_matched": 206,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9I2Y2",
+          "canonical_mass_kda": 23.533,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.8
+        },
+        "d2_floor": 8.950891494750977
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Phosphoserine phosphatase ThrH (PSP) ( (1RKU/1RKU) | 22 | hinge | 1.18 | 8.95 | 0.036 | 0.80 | 780 | 8.27e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Phosphoserine phosphatase ThrH (PSP) ( (1RKU/1RKU)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:44:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/12dea8eacd.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glyceraldehyde-3-phosphate dehydrogena (1GAE/1DC6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glyceraldehyde-3-phosphate dehydrogena (1GAE/1DC6)",
+        "motion": "hinge",
+        "mass_kda": 32.712241999999996,
+        "ca_rmsd": 0.6839921354888304,
+        "radius": 35.68807390318018,
+        "box_size": 128,
+        "d2_known_pose": 4.642171382904053,
+        "d2_crlb": 4.133464336395264,
+        "information": 2.3917810916900635,
+        "saturation": 0.5979452729225159,
+        "n_floor": 1045.2462158203125,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P0A9B2 36 kDa, dyndom, rotation 4.8 deg, chains O/B",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 328,
+        "identity": 0.9969512195121951,
+        "shared_fraction": 0.9971808296415626,
+        "provenance": {
+          "accession": "P0A9B2",
+          "canonical_mass_kda": 35.532,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 4.8
+        },
+        "d2_floor": 4.642171382904053
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glyceraldehyde-3-phosphate dehydrogena (1GAE/1DC6) | 33 | hinge | 0.68 | 4.64 | -- | 0.60 | 1.05e+03 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Glyceraldehyde-3-phosphate dehydrogena (1GAE/1DC6)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Out of memory while trying to allocate 504.28MiB. [tf-allocator-allocation-error=''] [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

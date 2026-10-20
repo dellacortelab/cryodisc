@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:19:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f59d1a1257.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Dual specificity mitogen-activated pro (9MMS/8YP4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Dual specificity mitogen-activated pro (9MMS/8YP4)",
+        "motion": "dfg_flip",
+        "mass_kda": 27.491620999999995,
+        "ca_rmsd": 1.6210581658516017,
+        "radius": 34.145550663510456,
+        "box_size": 128,
+        "d2_known_pose": 15.359106063842773,
+        "d2_crlb": 14.484527587890625,
+        "information": 3.6985599994659424,
+        "saturation": 0.9246399998664856,
+        "n_floor": 675.9387817382812,
+        "n_marginal": 4134.3818359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.04573627352424901,
+        "note": "Q02750 43 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains B/B",
+        "d2_marginal": 0.7024682760238647,
+        "information_marginal": 0.604685366153717,
+        "n_matched": 265,
+        "identity": 1.0,
+        "shared_fraction": 0.881406183820415,
+        "provenance": {
+          "accession": "Q02750",
+          "canonical_mass_kda": 43.439,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 15.359106063842773
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Dual specificity mitogen-activated pro (9MMS/8YP4) | 27 | dfg_flip | 1.62 | 15.4 | 0.046 | 0.92 | 676 | 4.13e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Dual specificity mitogen-activated pro (9MMS/8YP4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

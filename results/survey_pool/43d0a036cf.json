@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:58:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/43d0a036cf.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Tyrosine-protein kinase Mer (EC 2.7.10 (9BHK/7AW4)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Tyrosine-protein kinase Mer (EC 2.7.10 (9BHK/7AW4)",
+        "motion": "dfg_flip",
+        "mass_kda": 26.109036999999997,
+        "ca_rmsd": 1.5560370206904321,
+        "radius": 34.47191764528964,
+        "box_size": 128,
+        "d2_known_pose": 7.359922409057617,
+        "d2_crlb": 6.834590911865234,
+        "information": 2.976118326187134,
+        "saturation": 0.7440295815467834,
+        "n_floor": 840.0204467773438,
+        "n_marginal": 20685.62109375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01692231565384782,
+        "note": "Q12866 110 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains A/B",
+        "d2_marginal": 0.12454693019390106,
+        "information_marginal": 0.12085689604282379,
+        "n_matched": 252,
+        "identity": 0.9841269841269841,
+        "shared_fraction": 0.8938294010889292,
+        "provenance": {
+          "accession": "Q12866",
+          "canonical_mass_kda": 110.249,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 7.359922409057617
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Tyrosine-protein kinase Mer (EC 2.7.10 (9BHK/7AW4) | 26 | dfg_flip | 1.56 | 7.36 | 0.017 | 0.74 | 840 | 2.07e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Tyrosine-protein kinase Mer (EC 2.7.10 (9BHK/7AW4)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

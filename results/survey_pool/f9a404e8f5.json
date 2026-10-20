@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:30:37+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f9a404e8f5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Lutropin-choriogonadotropic hormone re (7FIJ/7FIH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Lutropin-choriogonadotropic hormone re (7FIJ/7FIH)",
+        "motion": "activation",
+        "mass_kda": 39.095530999999994,
+        "ca_rmsd": 7.8267615217644275,
+        "radius": 66.36833678857181,
+        "box_size": 128,
+        "d2_known_pose": 217.825927734375,
+        "d2_crlb": 200.3946990966797,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 3604.265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0037823834151521772,
+        "note": "P22888 79 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains R/R",
+        "d2_marginal": 0.8239011764526367,
+        "information_marginal": 0.6936225891113281,
+        "n_matched": 542,
+        "identity": 0.9981549815498155,
+        "shared_fraction": 0.6863699582753825,
+        "provenance": {
+          "accession": "P22888",
+          "canonical_mass_kda": 78.643,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 217.825927734375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Lutropin-choriogonadotropic hormone re (7FIJ/7FIH) | 39 | activation | 7.83 | 218 | 0.004 | 1.00* | 625 | 3.6e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Lutropin-choriogonadotropic hormone re (7FIJ/7FIH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

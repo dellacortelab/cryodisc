@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:52:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1dd59225d6.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Acetyl-CoA/propionyl-CoA carboxylase g (1X0U/1X0U)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Acetyl-CoA/propionyl-CoA carboxylase g (1X0U/1X0U)",
+        "motion": "no_contact",
+        "mass_kda": 52.666974999999994,
+        "ca_rmsd": 1.327285186896283,
+        "radius": 58.40778748540509,
+        "box_size": 128,
+        "d2_known_pose": 15.267741203308105,
+        "d2_crlb": 14.466226577758789,
+        "information": 3.694481611251831,
+        "saturation": 0.9236204028129578,
+        "n_floor": 676.6849365234375,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "F9VN45 57 kDa, dyndom, rotation 27.0 deg, chains C/A",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 518,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "F9VN45",
+          "canonical_mass_kda": 57.15,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 27.0
+        },
+        "d2_floor": 15.267741203308105
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Acetyl-CoA/propionyl-CoA carboxylase g (1X0U/1X0U) | 53 | no_contact | 1.33 | 15.3 | -- | 0.92 | 677 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Acetyl-CoA/propionyl-CoA carboxylase g (1X0U/1X0U)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Out of memory while trying to allocate 1.14GiB. [executable_name='jit__simulate'] [tf-allocator-allocation-error='']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

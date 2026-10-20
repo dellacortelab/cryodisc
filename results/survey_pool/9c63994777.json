@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:37:23+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9c63994777.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cytochrome b-c1 complex subunit Rieske (3BCC/1BGY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cytochrome b-c1 complex subunit Rieske (3BCC/1BGY)",
+        "motion": "no_contact",
+        "mass_kda": 19.620366999999998,
+        "ca_rmsd": 5.056888460809851,
+        "radius": 82.81188705915622,
+        "box_size": 128,
+        "d2_known_pose": 57.7353515625,
+        "d2_crlb": 47.957481384277344,
+        "information": 3.99910044670105,
+        "saturation": 0.9997751116752625,
+        "n_floor": 625.140625,
+        "n_marginal": 7189.896484375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006564503410015318,
+        "note": "P13272 30 kDa, dyndom, rotation 32.7 deg, chains E/Q",
+        "d2_marginal": 0.3790039122104645,
+        "information_marginal": 0.34771016240119934,
+        "n_matched": 196,
+        "identity": 0.9387755102040817,
+        "shared_fraction": 0.9782608695652174,
+        "provenance": {
+          "accession": "P13272",
+          "canonical_mass_kda": 29.547,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 32.7
+        },
+        "d2_floor": 57.7353515625
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cytochrome b-c1 complex subunit Rieske (3BCC/1BGY) | 20 | no_contact | 5.06 | 57.7 | 0.007 | 1.00* | 625 | 7.19e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cytochrome b-c1 complex subunit Rieske (3BCC/1BGY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

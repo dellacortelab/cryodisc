@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:30:31+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b55fa1b0ec.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mitogen-activated protein kinase 11 (M (3GC9/3GP0)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mitogen-activated protein kinase 11 (M (3GC9/3GP0)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 34.157425999999994,
+        "ca_rmsd": 1.5447719767488863,
+        "radius": 36.59073936056924,
+        "box_size": 128,
+        "d2_known_pose": 12.596888542175293,
+        "d2_crlb": 11.601804733276367,
+        "information": 3.5455379486083984,
+        "saturation": 0.8863844871520996,
+        "n_floor": 705.1116333007812,
+        "n_marginal": 17569.30078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011702845291716618,
+        "note": "Q15759 41 kDa, kincore, no rotation angle (kincore reports none); states ABAminus -> BBAminus, chains B/A",
+        "d2_marginal": 0.14741943776607513,
+        "information_marginal": 0.14229366183280945,
+        "n_matched": 328,
+        "identity": 0.9908536585365854,
+        "shared_fraction": 0.9621802002224694,
+        "provenance": {
+          "accession": "Q15759",
+          "canonical_mass_kda": 41.357,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 12.596888542175293
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mitogen-activated protein kinase 11 (M (3GC9/3GP0) | 34 | dihedral_cluster | 1.54 | 12.6 | 0.012 | 0.89 | 705 | 1.76e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mitogen-activated protein kinase 11 (M (3GC9/3GP0)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

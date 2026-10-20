@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:18:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/408dcfe8f7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Leucine dehydrogenase (EC 1.4.1.9) (1LEH/1LEH)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Leucine dehydrogenase (EC 1.4.1.9) (1LEH/1LEH)",
+        "motion": "shear",
+        "mass_kda": 36.288532999999994,
+        "ca_rmsd": 0.725442708054768,
+        "radius": 38.087404831254446,
+        "box_size": 128,
+        "d2_known_pose": 4.261862277984619,
+        "d2_crlb": 3.7805089950561523,
+        "information": 2.2822399139404297,
+        "saturation": 0.5705599784851074,
+        "n_floor": 1095.4151611328125,
+        "n_marginal": 146540.21875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.004020072135139257,
+        "note": "Q7SIB4 39 kDa, dyndom, rotation 5.5 deg, chains B/A",
+        "d2_marginal": 0.017132993787527084,
+        "information_marginal": 0.017060164362192154,
+        "n_matched": 364,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q7SIB4",
+          "canonical_mass_kda": 39.043,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 5.5
+        },
+        "d2_floor": 4.261862277984619
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Leucine dehydrogenase (EC 1.4.1.9) (1LEH/1LEH) | 36 | shear | 0.73 | 4.26 | 0.004 | 0.57 | 1.1e+03 | 1.47e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Leucine dehydrogenase (EC 1.4.1.9) (1LEH/1LEH)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

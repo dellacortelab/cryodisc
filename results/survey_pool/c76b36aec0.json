@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:50:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c76b36aec0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Metabotropic glutamate receptor 5 (mGl (8T6J/8TAO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Metabotropic glutamate receptor 5 (mGl (8T6J/8TAO)",
+        "motion": "activation",
+        "mass_kda": 74.21171399999999,
+        "ca_rmsd": 5.122246332970768,
+        "radius": 106.40410129537663,
+        "box_size": 128,
+        "d2_known_pose": 247.2140350341797,
+        "d2_crlb": 231.35263061523438,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 4722.18408203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0024416808992162972,
+        "note": "P41594 132 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/A",
+        "d2_marginal": 0.603617787361145,
+        "information_marginal": 0.529416024684906,
+        "n_matched": 766,
+        "identity": 1.0,
+        "shared_fraction": 0.9639903514817367,
+        "provenance": {
+          "accession": "P41594",
+          "canonical_mass_kda": 132.469,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 247.2140350341797
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Metabotropic glutamate receptor 5 (mGl (8T6J/8TAO) | 74 | activation | 5.12 | 247 | 0.002 | 1.00* | 625 | 4.72e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Metabotropic glutamate receptor 5 (mGl (8T6J/8TAO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:51:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ab50f0f3b8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Fibrinogen beta chain [Cleaved into: F (1FZC/1RE3)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Fibrinogen beta chain [Cleaved into: F (1FZC/1RE3)",
+        "motion": "no_contact",
+        "mass_kda": 31.970338999999996,
+        "ca_rmsd": 1.1756677441560235,
+        "radius": 56.748368527045656,
+        "box_size": 128,
+        "d2_known_pose": 9.033523559570312,
+        "d2_crlb": 7.530248165130615,
+        "information": 3.2151670455932617,
+        "saturation": 0.8037917613983154,
+        "n_floor": 777.5645751953125,
+        "n_marginal": 37113.3359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.007583070387811412,
+        "note": "P02675 56 kDa, dyndom, rotation 12.2 deg, chains B/E",
+        "d2_marginal": 0.06850184500217438,
+        "information_marginal": 0.06736123561859131,
+        "n_matched": 300,
+        "identity": 0.9966666666666667,
+        "shared_fraction": 0.9716942984229681,
+        "provenance": {
+          "accession": "P02675",
+          "canonical_mass_kda": 55.928,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.2
+        },
+        "d2_floor": 9.033523559570312
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Fibrinogen beta chain [Cleaved into: F (1FZC/1RE3) | 32 | no_contact | 1.18 | 9.03 | 0.008 | 0.80 | 778 | 3.71e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Fibrinogen beta chain [Cleaved into: F (1FZC/1RE3)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

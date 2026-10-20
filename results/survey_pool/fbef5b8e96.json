@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:34:44+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fbef5b8e96.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Prostaglandin D2 receptor 2 (Chemoattr (7M8W/8XXV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Prostaglandin D2 receptor 2 (Chemoattr (7M8W/8XXV)",
+        "motion": "activation",
+        "mass_kda": 29.329130999999993,
+        "ca_rmsd": 3.1866748456937737,
+        "radius": 39.006743339201996,
+        "box_size": 128,
+        "d2_known_pose": 46.70754623413086,
+        "d2_crlb": 41.49773406982422,
+        "information": 3.996091365814209,
+        "saturation": 0.9990228414535522,
+        "n_floor": 625.611328125,
+        "n_marginal": 6302.53125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009369573535725728,
+        "note": "Q9Y5Y4 43 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/A",
+        "d2_marginal": 0.4376297891139984,
+        "information_marginal": 0.3966660499572754,
+        "n_matched": 300,
+        "identity": 0.9933333333333333,
+        "shared_fraction": 0.6554153213971236,
+        "provenance": {
+          "accession": "Q9Y5Y4",
+          "canonical_mass_kda": 43.268,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 46.70754623413086
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Prostaglandin D2 receptor 2 (Chemoattr (7M8W/8XXV) | 29 | activation | 3.19 | 46.7 | 0.009 | 1.00* | 626 | 6.3e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Prostaglandin D2 receptor 2 (Chemoattr (7M8W/8XXV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:01:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3e6a159fbf.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Beta-secretase 1 (EC 3.4.23.46) (Aspar (2FDP/2OHR)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Beta-secretase 1 (EC 3.4.23.46) (Aspar (2FDP/2OHR)",
+        "motion": "shear",
+        "mass_kda": 38.42819699999999,
+        "ca_rmsd": 3.220605492341925,
+        "radius": 38.69631881507395,
+        "box_size": 128,
+        "d2_known_pose": 15.818374633789062,
+        "d2_crlb": 13.951520919799805,
+        "information": 3.718212604522705,
+        "saturation": 0.9295531511306763,
+        "n_floor": 672.3660888671875,
+        "n_marginal": 6835.68310546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.02531375084645785,
+        "note": "P56817 56 kDa, dyndom, rotation 5.9 deg, chains C/A",
+        "d2_marginal": 0.4004223942756653,
+        "information_marginal": 0.36572790145874023,
+        "n_matched": 371,
+        "identity": 0.9946091644204852,
+        "shared_fraction": 0.9821308159136884,
+        "provenance": {
+          "accession": "P56817",
+          "canonical_mass_kda": 55.764,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 5.9
+        },
+        "d2_floor": 15.818374633789062
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Beta-secretase 1 (EC 3.4.23.46) (Aspar (2FDP/2OHR) | 38 | shear | 3.22 | 15.8 | 0.025 | 0.93 | 672 | 6.84e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Beta-secretase 1 (EC 3.4.23.46) (Aspar (2FDP/2OHR)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

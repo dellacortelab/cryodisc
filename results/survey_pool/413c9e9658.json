@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:35:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/413c9e9658.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glutamate--tRNA ligase (EC 6.1.1.17) ( (1N78/1N78)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glutamate--tRNA ligase (EC 6.1.1.17) ( (1N78/1N78)",
+        "motion": "shear",
+        "mass_kda": 50.05939799999999,
+        "ca_rmsd": 0.7673041598792933,
+        "radius": 58.913335657865545,
+        "box_size": 128,
+        "d2_known_pose": 8.13314437866211,
+        "d2_crlb": 7.453794479370117,
+        "information": 3.095303773880005,
+        "saturation": 0.7738259434700012,
+        "n_floor": 807.6751708984375,
+        "n_marginal": 224885.0,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0013706499247864736,
+        "note": "P27000 54 kDa, dyndom, rotation 4.8 deg, chains B/A",
+        "d2_marginal": 0.011147693730890751,
+        "information_marginal": 0.011116794310510159,
+        "n_matched": 468,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P27000",
+          "canonical_mass_kda": 53.91,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 4.8
+        },
+        "d2_floor": 8.13314437866211
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glutamate--tRNA ligase (EC 6.1.1.17) ( (1N78/1N78) | 50 | shear | 0.77 | 8.13 | 0.001 | 0.77 | 808 | 2.25e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glutamate--tRNA ligase (EC 6.1.1.17) ( (1N78/1N78)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

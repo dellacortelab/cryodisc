@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:33:09+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0a7af4bf0f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hypoxanthine-guanine phosphoribosyltra (1BZY/1Z7G)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hypoxanthine-guanine phosphoribosyltra (1BZY/1Z7G)",
+        "motion": "hinge",
+        "mass_kda": 20.947217,
+        "ca_rmsd": 2.457100219536336,
+        "radius": 30.332270107766803,
+        "box_size": 128,
+        "d2_known_pose": 19.350675582885742,
+        "d2_crlb": 16.848569869995117,
+        "information": 3.8311448097229004,
+        "saturation": 0.9577862024307251,
+        "n_floor": 652.5465087890625,
+        "n_marginal": 7473.365234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.018781864423886976,
+        "note": "P00492 25 kDa, dyndom, rotation 16.6 deg, chains C/C",
+        "d2_marginal": 0.3634417653083801,
+        "information_marginal": 0.3345213234424591,
+        "n_matched": 204,
+        "identity": 1.0,
+        "shared_fraction": 0.9380530973451328,
+        "provenance": {
+          "accession": "P00492",
+          "canonical_mass_kda": 24.579,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 16.6
+        },
+        "d2_floor": 19.350675582885742
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hypoxanthine-guanine phosphoribosyltra (1BZY/1Z7G) | 21 | hinge | 2.46 | 19.4 | 0.019 | 0.96 | 653 | 7.47e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hypoxanthine-guanine phosphoribosyltra (1BZY/1Z7G)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

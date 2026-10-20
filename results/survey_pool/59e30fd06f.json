@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:44:06+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/59e30fd06f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Thermostable carboxypeptidase 1 (EC 3. (1KA2/1K9X)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Thermostable carboxypeptidase 1 (EC 3. (1KA2/1K9X)",
+        "motion": "unclassified",
+        "mass_kda": 54.588378,
+        "ca_rmsd": 0.7328330721870132,
+        "radius": 39.81565956750027,
+        "box_size": 128,
+        "d2_known_pose": 8.61080551147461,
+        "d2_crlb": 8.151351928710938,
+        "information": 3.161217212677002,
+        "saturation": 0.7903043031692505,
+        "n_floor": 790.8346557617188,
+        "n_marginal": 13039.408203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.023351925843197383,
+        "note": "Q8U3L0 59 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/B",
+        "d2_marginal": 0.2010788917541504,
+        "information_marginal": 0.19172649085521698,
+        "n_matched": 497,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q8U3L0",
+          "canonical_mass_kda": 59.043,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 8.61080551147461
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Thermostable carboxypeptidase 1 (EC 3. (1KA2/1K9X) | 55 | unclassified | 0.73 | 8.61 | 0.023 | 0.79 | 791 | 1.3e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Thermostable carboxypeptidase 1 (EC 3. (1KA2/1K9X)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

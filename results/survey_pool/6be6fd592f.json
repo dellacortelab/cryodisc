@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:59:51+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6be6fd592f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pyruvate kinase (PK) (EC 2.7.1.40) (1PKL/3HQP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pyruvate kinase (PK) (EC 2.7.1.40) (1PKL/3HQP)",
+        "motion": "crypticpocket",
+        "mass_kda": 49.452952999999994,
+        "ca_rmsd": 3.9066226721590427,
+        "radius": 43.905264314918135,
+        "box_size": 128,
+        "d2_known_pose": 78.79118347167969,
+        "d2_crlb": 73.43855285644531,
+        "information": 3.999943733215332,
+        "saturation": 0.999985933303833,
+        "n_floor": 625.0087890625,
+        "n_marginal": 2410.44482421875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01706462232014159,
+        "note": "Q27686 54 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains B/P",
+        "d2_marginal": 1.3445417881011963,
+        "information_marginal": 1.0371530055999756,
+        "n_matched": 489,
+        "identity": 1.0,
+        "shared_fraction": 0.980521189786786,
+        "provenance": {
+          "accession": "Q27686",
+          "canonical_mass_kda": 54.405,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 78.79118347167969
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pyruvate kinase (PK) (EC 2.7.1.40) (1PKL/3HQP) | 49 | crypticpocket | 3.91 | 78.8 | 0.017 | 1.00* | 625 | 2.41e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pyruvate kinase (PK) (EC 2.7.1.40) (1PKL/3HQP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:54:32+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/508ec6d238.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "G protein-coupled receptor 52 (6LI0/8HMP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "G protein-coupled receptor 52 (6LI0/8HMP)",
+        "motion": "activation",
+        "mass_kda": 28.941417999999995,
+        "ca_rmsd": 2.3240655660203435,
+        "radius": 43.37095385717959,
+        "box_size": 128,
+        "d2_known_pose": 27.287059783935547,
+        "d2_crlb": 24.944225311279297,
+        "information": 3.9449219703674316,
+        "saturation": 0.9862304925918579,
+        "n_floor": 633.7261352539062,
+        "n_marginal": 7381.55615234375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01349872412656877,
+        "note": "Q9Y2T5 41 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.36834049224853516,
+        "information_marginal": 0.3386819660663605,
+        "n_matched": 274,
+        "identity": 0.9817518248175182,
+        "shared_fraction": 0.6344767944652637,
+        "provenance": {
+          "accession": "Q9Y2T5",
+          "canonical_mass_kda": 41.354,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 27.287059783935547
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| G protein-coupled receptor 52 (6LI0/8HMP) | 29 | activation | 2.32 | 27.3 | 0.013 | 0.99 | 634 | 7.38e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "G protein-coupled receptor 52 (6LI0/8HMP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

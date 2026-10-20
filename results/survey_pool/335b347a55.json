@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:12:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/335b347a55.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Myoglobin (Nitrite reductase MB) (EC 1 (7DGJ/6LS8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Myoglobin (Nitrite reductase MB) (EC 1 (7DGJ/6LS8)",
+        "motion": "oodval",
+        "mass_kda": 15.575718999999998,
+        "ca_rmsd": 20.83883117615349,
+        "radius": 37.837800125307105,
+        "box_size": 128,
+        "d2_known_pose": 306.0013427734375,
+        "d2_crlb": 271.6513366699219,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 818.5458984375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.025659116645151536,
+        "note": "P68082 17 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 7.851724147796631,
+        "information_marginal": 3.05419659614563,
+        "n_matched": 153,
+        "identity": 0.9869281045751634,
+        "shared_fraction": 0.9924749163879598,
+        "provenance": {
+          "accession": "P68082",
+          "canonical_mass_kda": 17.083,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 306.0013427734375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Myoglobin (Nitrite reductase MB) (EC 1 (7DGJ/6LS8) | 16 | oodval | 20.84 | 306 | 0.026 | 1.00* | 625 | 819^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Myoglobin (Nitrite reductase MB) (EC 1 (7DGJ/6LS8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

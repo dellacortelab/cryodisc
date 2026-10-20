@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:15:12+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/fc827b0ed0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase VRK2 ( (2V62/5UU1)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase VRK2 ( (2V62/5UU1)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 30.511408999999997,
+        "ca_rmsd": 1.0260236958600295,
+        "radius": 34.627680502550064,
+        "box_size": 128,
+        "d2_known_pose": 5.563835144042969,
+        "d2_crlb": 5.327349662780762,
+        "information": 2.6248302459716797,
+        "saturation": 0.6562075614929199,
+        "n_floor": 952.4425659179688,
+        "n_marginal": 36496.890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012523475380709703,
+        "note": "Q86Y07 58 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains B/A",
+        "d2_marginal": 0.06967855244874954,
+        "information_marginal": 0.06849899142980576,
+        "n_matched": 308,
+        "identity": 1.0,
+        "shared_fraction": 0.9682141363446257,
+        "provenance": {
+          "accession": "Q86Y07",
+          "canonical_mass_kda": 58.141,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 5.563835144042969
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase VRK2 ( (2V62/5UU1) | 31 | dihedral_cluster | 1.03 | 5.56 | 0.013 | 0.66 | 952 | 3.65e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase VRK2 ( (2V62/5UU1)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,35 @@
+# Placeholder citation metadata. Fill the DOIs and the journal/date once the paper is
+# accepted and the Zenodo software archive is minted (see [TODO_ZENODO] in the manuscript).
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper below."
+title: cryodisc
+abstract: >-
+  Conformational discriminability and resolution modeling for single-particle cryo-EM:
+  predict how many particles it takes to tell two conformations apart, and recover the
+  population fraction of each state from real particles without classifying any.
+type: software
+authors:
+  - family-names: Hedelius
+    given-names: Bryce E.
+    affiliation: "Department of Physics and Astronomy, Brigham Young University"
+  - family-names: Della Corte
+    given-names: Dennis
+    affiliation: "Department of Physics and Astronomy, Brigham Young University"
+    email: dennis.dellacorte@byu.edu
+    orcid: "" # TODO: add ORCID
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/dellacortelab/cryodisc"
+# doi: "" # TODO: Zenodo software DOI, minted on release
+# date-released: "" # TODO: on first tagged release
+preferred-citation:
+  type: article
+  title: "Conformational discriminability predicts how few cryo-EM particles recover a population fraction"
+  authors:
+    - family-names: Hedelius
+      given-names: Bryce E.
+    - family-names: Della Corte
+      given-names: Dennis
+  year: 2026
+  # journal: "" # TODO: on acceptance
+  # doi: "" # TODO: article DOI on acceptance

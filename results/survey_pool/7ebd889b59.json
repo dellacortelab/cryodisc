@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:25:07+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7ebd889b59.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "NAD-capped RNA hydrolase NudC (DeNADdi (1VK6/2GB5)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "NAD-capped RNA hydrolase NudC (DeNADdi (1VK6/2GB5)",
+        "motion": "hinge",
+        "mass_kda": 25.858211999999995,
+        "ca_rmsd": 2.223342407994803,
+        "radius": 36.94331485509911,
+        "box_size": 128,
+        "d2_known_pose": 17.875293731689453,
+        "d2_crlb": 15.968612670898438,
+        "information": 3.791139841079712,
+        "saturation": 0.947784960269928,
+        "n_floor": 659.4323120117188,
+        "n_marginal": 11864.20703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012421456373864919,
+        "note": "P32664 30 kDa, dyndom, rotation 17.6 deg, chains A/A",
+        "d2_marginal": 0.2220371812582016,
+        "information_marginal": 0.2107178270816803,
+        "n_matched": 249,
+        "identity": 1.0,
+        "shared_fraction": 0.9520581113801453,
+        "provenance": {
+          "accession": "P32664",
+          "canonical_mass_kda": 29.689,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.6
+        },
+        "d2_floor": 17.875293731689453
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| NAD-capped RNA hydrolase NudC (DeNADdi (1VK6/2GB5) | 26 | hinge | 2.22 | 17.9 | 0.012 | 0.95 | 659 | 1.19e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "NAD-capped RNA hydrolase NudC (DeNADdi (1VK6/2GB5)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:20:21+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/90550518f8.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 38.842905,
+        "ca_rmsd": 0.7945040925329527,
+        "radius": 46.3268597726862,
+        "box_size": 128,
+        "d2_known_pose": 6.718186855316162,
+        "d2_crlb": 6.4234418869018555,
+        "information": 2.863811731338501,
+        "saturation": 0.7159529328346252,
+        "n_floor": 872.96240234375,
+        "n_marginal": 61821.8515625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006080335878890137,
+        "note": "Q28021 161 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> ABAminus, chains B/D",
+        "d2_marginal": 0.040848832577466965,
+        "information_marginal": 0.040438778698444366,
+        "n_matched": 361,
+        "identity": 1.0,
+        "shared_fraction": 0.9493874919406834,
+        "provenance": {
+          "accession": "Q28021",
+          "canonical_mass_kda": 160.8,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 6.718186855316162
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P) | 39 | dihedral_cluster | 0.79 | 6.72 | 0.006 | 0.72 | 873 | 6.18e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

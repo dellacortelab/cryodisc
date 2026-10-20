@@ -1,0 +1,99 @@
+{
+  "driver": "experiments/panel/dose_sweep.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_1.json",
+    "rows": [
+      "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "doses": [
+      20.0,
+      40.0,
+      80.0
+    ],
+    "seeds": [
+      0
+    ],
+    "banks": [
+      504,
+      2016,
+      8064,
+      33384,
+      64128
+    ],
+    "box_size": 128,
+    "rmsf": 0.5,
+    "shift_sigma": 1.0,
+    "fraction": 0.5,
+    "n_particles": 4000,
+    "amplitude": 1.0,
+    "sigma": 0.02,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "pixel_size": 2.0,
+    "out_dir": "results/dose_pilot/ROCK2",
+    "dry_run": false,
+    "snr": null,
+    "dose": 20.0,
+    "seed": 0
+  },
+  "rows": [
+    {
+      "name": "Rho-associated protein kinase 2 (EC 2. (6ED6/6P5P)",
+      "box_size": 128,
+      "rmsd": 0.7945040925329527,
+      "fraction": 0.4905000329017639,
+      "amplitude": 1.0,
+      "snr": 13.96136474609375,
+      "rungs": [
+        {
+          "k_requested": 504,
+          "k": 504,
+          "information": 0.14311790466308594,
+          "d2": 0.1483003944158554,
+          "d2_err": 0.024627428501844406,
+          "n_for_error": 17468.115234375,
+          "seconds": 13.9
+        },
+        {
+          "k_requested": 2016,
+          "k": 1840,
+          "information": 0.5160489082336426,
+          "d2": 0.5863855481147766,
+          "d2_err": 0.05018794164061546,
+          "n_for_error": 4844.501953125,
+          "seconds": 26.6
+        },
+        {
+          "k_requested": 8064,
+          "k": 8064,
+          "information": 1.0602068901062012,
+          "d2": 1.3824899196624756,
+          "d2_err": 0.08056584000587463,
+          "n_for_error": 2358.030517578125,
+          "seconds": 104.6
+        },
+        {
+          "k_requested": 33384,
+          "k": 33384,
+          "information": 1.6142137050628662,
+          "d2": 2.4464550018310547,
+          "d2_err": 0.1131063923239708,
+          "n_for_error": 1548.74169921875,
+          "seconds": 404.7
+        },
+        {
+          "k_requested": 64128,
+          "k": 64128,
+          "information": 1.7912278175354004,
+          "d2": 2.858407735824585,
+          "d2_err": 0.1245768666267395,
+          "n_for_error": 1395.690673828125,
+          "seconds": 771.5
+        }
+      ]
+    }
+  ]
+}

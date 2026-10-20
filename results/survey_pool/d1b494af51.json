@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:43:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/d1b494af51.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "ATP synthase subunit alpha, mitochondr (2HLD/2HLD)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "ATP synthase subunit alpha, mitochondr (2HLD/2HLD)",
+        "motion": "mixed",
+        "mass_kda": 47.96336499999999,
+        "ca_rmsd": 1.0643538580214806,
+        "radius": 51.34625743276383,
+        "box_size": 128,
+        "d2_known_pose": 11.709918975830078,
+        "d2_crlb": 10.998552322387695,
+        "information": 3.4803895950317383,
+        "saturation": 0.8700973987579346,
+        "n_floor": 718.3104248046875,
+        "n_marginal": 55893.203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0038625413214222306,
+        "note": "P07251 59 kDa, dyndom, rotation 11.6 deg, chains K/J",
+        "d2_marginal": 0.04523004591464996,
+        "information_marginal": 0.04472815990447998,
+        "n_matched": 480,
+        "identity": 1.0,
+        "shared_fraction": 0.990770901194354,
+        "provenance": {
+          "accession": "P07251",
+          "canonical_mass_kda": 58.608,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 11.6
+        },
+        "d2_floor": 11.709918975830078
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| ATP synthase subunit alpha, mitochondr (2HLD/2HLD) | 48 | mixed | 1.06 | 11.7 | 0.004 | 0.87 | 718 | 5.59e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "ATP synthase subunit alpha, mitochondr (2HLD/2HLD)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

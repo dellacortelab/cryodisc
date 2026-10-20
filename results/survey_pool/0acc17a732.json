@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:09:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0acc17a732.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Exocyst complex component EXO70 (Exocy (2B7M/2B1E)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Exocyst complex component EXO70 (Exocy (2B7M/2B1E)",
+        "motion": "hinge",
+        "mass_kda": 51.709793999999995,
+        "ca_rmsd": 2.87092071325741,
+        "radius": 85.13369750103656,
+        "box_size": 128,
+        "d2_known_pose": 66.88693237304688,
+        "d2_crlb": 63.53658676147461,
+        "information": 3.9997315406799316,
+        "saturation": 0.9999328851699829,
+        "n_floor": 625.0419311523438,
+        "n_marginal": 16929.453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0022903598253177482,
+        "note": "P19658 71 kDa, dyndom, rotation 16.6 deg, chains A/A",
+        "d2_marginal": 0.15319514274597168,
+        "information_marginal": 0.147671639919281,
+        "n_matched": 485,
+        "identity": 1.0,
+        "shared_fraction": 0.9129930394431555,
+        "provenance": {
+          "accession": "P19658",
+          "canonical_mass_kda": 71.294,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 16.6
+        },
+        "d2_floor": 66.88693237304688
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Exocyst complex component EXO70 (Exocy (2B7M/2B1E) | 52 | hinge | 2.87 | 66.9 | 0.002 | 1.00* | 625 | 1.69e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Exocyst complex component EXO70 (Exocy (2B7M/2B1E)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

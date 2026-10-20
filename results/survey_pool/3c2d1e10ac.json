@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:03:25+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/3c2d1e10ac.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Cystathionine gamma-lyase (CGL) (CSE) (2NMP/2NMP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Cystathionine gamma-lyase (CGL) (CSE) (2NMP/2NMP)",
+        "motion": "shear",
+        "mass_kda": 38.248338999999994,
+        "ca_rmsd": 1.0672563210040316,
+        "radius": 43.970578327961455,
+        "box_size": 128,
+        "d2_known_pose": 5.648360252380371,
+        "d2_crlb": 4.969839096069336,
+        "information": 2.6441636085510254,
+        "saturation": 0.6610409021377563,
+        "n_floor": 945.478515625,
+        "n_marginal": 40555.43359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011082631957617554,
+        "note": "P32929 45 kDa, dyndom, rotation 4.0 deg, chains B/C",
+        "d2_marginal": 0.06259869784116745,
+        "information_marginal": 0.06164402514696121,
+        "n_matched": 374,
+        "identity": 1.0,
+        "shared_fraction": 0.9601990049751243,
+        "provenance": {
+          "accession": "P32929",
+          "canonical_mass_kda": 44.508,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 4.0
+        },
+        "d2_floor": 5.648360252380371
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Cystathionine gamma-lyase (CGL) (CSE) (2NMP/2NMP) | 38 | shear | 1.07 | 5.65 | 0.011 | 0.66 | 945 | 4.06e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Cystathionine gamma-lyase (CGL) (CSE) (2NMP/2NMP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

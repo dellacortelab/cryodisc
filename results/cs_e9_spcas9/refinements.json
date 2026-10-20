@@ -1,0 +1,28 @@
+[
+  {
+    "tag": "cas9_12nt_11780_20211005_2",
+    "label": "cas9_12nt",
+    "project": "P43",
+    "workspace": "W2",
+    "particles_job": "J7",
+    "refine_job": "J9",
+    "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11780-2/J9",
+    "reference": "/home/bryceeh/cryoem_discriminability/results/cs_e9_spcas9/reference_consensus_20A.mrc",
+    "symmetry": "C1",
+    "n_particles": 57933,
+    "status": "completed"
+  },
+  {
+    "tag": "cas9_6nt_11779_20210301",
+    "label": "cas9_6nt",
+    "project": "P42",
+    "workspace": "W2",
+    "particles_job": "J7",
+    "refine_job": "J9",
+    "directory": "/nobackup/autodelete/usr/bryceeh/cryoem_projects/CS-e9-spcas9-11779-2/J9",
+    "reference": "/home/bryceeh/cryoem_discriminability/results/cs_e9_spcas9/reference_consensus_20A.mrc",
+    "symmetry": "C1",
+    "n_particles": 51571,
+    "status": "completed"
+  }
+]

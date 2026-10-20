@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:19:03+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7bc91b1c53.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hemoglobin subunit alpha (Alpha-globin (1Z8U/1YZI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hemoglobin subunit alpha (Alpha-globin (1Z8U/1YZI)",
+        "motion": "hinge",
+        "mass_kda": 13.350406999999997,
+        "ca_rmsd": 3.401628189435744,
+        "radius": 26.64451567445486,
+        "box_size": 128,
+        "d2_known_pose": 21.456146240234375,
+        "d2_crlb": 19.55728530883789,
+        "information": 3.874997615814209,
+        "saturation": 0.9687494039535522,
+        "n_floor": 645.1616821289062,
+        "n_marginal": 3771.854736328125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03641106978718486,
+        "note": "P69905 15 kDa, dyndom, rotation 23.8 deg, chains D/A",
+        "d2_marginal": 0.781241238117218,
+        "information_marginal": 0.6628038883209229,
+        "n_matched": 135,
+        "identity": 1.0,
+        "shared_fraction": 0.950420954162769,
+        "provenance": {
+          "accession": "P69905",
+          "canonical_mass_kda": 15.258,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 23.8
+        },
+        "d2_floor": 21.456146240234375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hemoglobin subunit alpha (Alpha-globin (1Z8U/1YZI) | 13 | hinge | 3.40 | 21.5 | 0.036 | 0.97 | 645 | 3.77e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hemoglobin subunit alpha (Alpha-globin (1Z8U/1YZI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

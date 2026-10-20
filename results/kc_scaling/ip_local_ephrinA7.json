@@ -1,0 +1,87 @@
+{
+  "driver": "experiments/panel/ip_local.py",
+  "commit": "unknown",
+  "args": {
+    "panel": "data/survey_topup_2.json",
+    "rows": [
+      "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)"
+    ],
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "amplitudes": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "nodes": 8064,
+    "box_size": 128,
+    "rmsf": 0.5,
+    "fraction": 0.5,
+    "form_factor": "peng",
+    "min_shared_fraction": 0.0,
+    "out": "results/kc_scaling/ip_local_ephrinA7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0
+  },
+  "rows": [
+    {
+      "name": "Ephrin type-A receptor 7 (EC 2.7.10.1) (2REI/3DKO)",
+      "box_size": 128,
+      "rmsd": 0.7893837871304241,
+      "nodes": 8064,
+      "amplitudes": [
+        {
+          "amplitude": 0.05,
+          "i_local": 0.00783671997487545,
+          "i_known": 0.008526374585926533,
+          "mean_d2_crlb": 0.007852858863770962,
+          "mean_d2_known": 0.008545509539544582,
+          "seconds": 8.5
+        },
+        {
+          "amplitude": 0.1,
+          "i_local": 0.031155940145254135,
+          "i_known": 0.03387940675020218,
+          "mean_d2_crlb": 0.03141143545508385,
+          "mean_d2_known": 0.03418203815817833,
+          "seconds": 7.9
+        },
+        {
+          "amplitude": 0.15,
+          "i_local": 0.06940431892871857,
+          "i_known": 0.07540583610534668,
+          "mean_d2_crlb": 0.07067573070526123,
+          "mean_d2_known": 0.07690959423780441,
+          "seconds": 7.8
+        },
+        {
+          "amplitude": 0.2,
+          "i_local": 0.12171891331672668,
+          "i_known": 0.13209261000156403,
+          "mean_d2_crlb": 0.1256457418203354,
+          "mean_d2_known": 0.13672815263271332,
+          "seconds": 7.8
+        },
+        {
+          "amplitude": 0.3,
+          "i_local": 0.263988196849823,
+          "i_known": 0.28564733266830444,
+          "mean_d2_crlb": 0.2827029228210449,
+          "mean_d2_known": 0.30763837695121765,
+          "seconds": 7.9
+        },
+        {
+          "amplitude": 0.5,
+          "i_local": 0.6618942022323608,
+          "i_known": 0.7109984755516052,
+          "mean_d2_crlb": 0.7852858901023865,
+          "mean_d2_known": 0.8545508980751038,
+          "seconds": 7.9
+        }
+      ]
+    }
+  ]
+}

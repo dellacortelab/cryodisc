@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:45:07+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0f877b2152.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ribose ABC transporter, periplasmic ri (2FN9/2FN9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ribose ABC transporter, periplasmic ri (2FN9/2FN9)",
+        "motion": "no_contact",
+        "mass_kda": 28.754004,
+        "ca_rmsd": 1.292971265704441,
+        "radius": 39.561715396988205,
+        "box_size": 128,
+        "d2_known_pose": 7.279179573059082,
+        "d2_crlb": 6.8098249435424805,
+        "information": 2.9626965522766113,
+        "saturation": 0.7406741380691528,
+        "n_floor": 843.8258666992188,
+        "n_marginal": 26998.6796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.013017593466686354,
+        "note": "Q9X053 36 kDa, dyndom, rotation 10.3 deg, chains A/B",
+        "d2_marginal": 0.09475740045309067,
+        "information_marginal": 0.0925971195101738,
+        "n_matched": 280,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q9X053",
+          "canonical_mass_kda": 35.865,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 10.3
+        },
+        "d2_floor": 7.279179573059082
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ribose ABC transporter, periplasmic ri (2FN9/2FN9) | 29 | no_contact | 1.29 | 7.28 | 0.013 | 0.74 | 844 | 2.7e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ribose ABC transporter, periplasmic ri (2FN9/2FN9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

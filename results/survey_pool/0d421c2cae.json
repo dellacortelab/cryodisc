@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:03:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0d421c2cae.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Complement C3 (C3 and PZP-like alpha-2 (2I07/2ICF)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Complement C3 (C3 and PZP-like alpha-2 (2I07/2ICF)",
+        "motion": "unclassified",
+        "mass_kda": 95.13155799999998,
+        "ca_rmsd": 3.3889366267064553,
+        "radius": 87.81013071668622,
+        "box_size": 128,
+        "d2_known_pose": 120.88069915771484,
+        "d2_crlb": 111.1510009765625,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 21387.666015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0009955290734667377,
+        "note": "P01024 187 kDa, dyndom, rotation 15.4 deg, chains B/B",
+        "d2_marginal": 0.1203402504324913,
+        "information_marginal": 0.11688981205224991,
+        "n_matched": 901,
+        "identity": 0.9988901220865705,
+        "shared_fraction": 0.9976431443227506,
+        "provenance": {
+          "accession": "P01024",
+          "canonical_mass_kda": 187.148,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 15.4
+        },
+        "d2_floor": 120.88069915771484
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Complement C3 (C3 and PZP-like alpha-2 (2I07/2ICF) | 95 | unclassified | 3.39 | 121 | 0.001 | 1.00* | 625 | 2.14e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Complement C3 (C3 and PZP-like alpha-2 (2I07/2ICF)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:51:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0ee236e5cf.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Replicase polyprotein 1ab (pp1ab) (ORF (1P9U/1LVO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Replicase polyprotein 1ab (pp1ab) (ORF (1P9U/1LVO)",
+        "motion": "no_contact",
+        "mass_kda": 30.455174999999997,
+        "ca_rmsd": 0.9603558697735023,
+        "radius": 40.09105187914608,
+        "box_size": 128,
+        "d2_known_pose": 5.080925464630127,
+        "d2_crlb": 4.905709266662598,
+        "information": 2.5080480575561523,
+        "saturation": 0.6270120143890381,
+        "n_floor": 996.7911376953125,
+        "n_marginal": 171836.84375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.002873818965204548,
+        "note": "P0C6Y5 749 kDa, dyndom, rotation 8.4 deg, chains B/E",
+        "d2_marginal": 0.014601659961044788,
+        "information_marginal": 0.01454868447035551,
+        "n_matched": 299,
+        "identity": 1.0,
+        "shared_fraction": 0.996529284164859,
+        "provenance": {
+          "accession": "P0C6Y5",
+          "canonical_mass_kda": 748.912,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.4
+        },
+        "d2_floor": 5.080925464630127
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Replicase polyprotein 1ab (pp1ab) (ORF (1P9U/1LVO) | 30 | no_contact | 0.96 | 5.08 | 0.003 | 0.63 | 997 | 1.72e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Replicase polyprotein 1ab (pp1ab) (ORF (1P9U/1LVO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

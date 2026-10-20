@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:24:33+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/8f0be41258.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Thromboxane A2 receptor (TXA2-R) (Pros (6IIU/8XJN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Thromboxane A2 receptor (TXA2-R) (Pros (6IIU/8XJN)",
+        "motion": "activation",
+        "mass_kda": 28.274592999999996,
+        "ca_rmsd": 2.7708781849880575,
+        "radius": 39.94087125690308,
+        "box_size": 128,
+        "d2_known_pose": 39.64862823486328,
+        "d2_crlb": 36.82970428466797,
+        "information": 3.989884853363037,
+        "saturation": 0.9974712133407593,
+        "n_floor": 626.5845336914062,
+        "n_marginal": 7309.748046875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009389098151275057,
+        "note": "P21731 37 kDa, gpcrdb, no rotation angle (gpcrdb reports none); states Inactive -> Active, chains A/R",
+        "d2_marginal": 0.3722648620605469,
+        "information_marginal": 0.3420090675354004,
+        "n_matched": 296,
+        "identity": 0.9966216216216216,
+        "shared_fraction": 0.6208791208791209,
+        "provenance": {
+          "accession": "P21731",
+          "canonical_mass_kda": 37.431,
+          "same_entry": false,
+          "source": "gpcrdb",
+          "rotation_deg": null
+        },
+        "d2_floor": 39.64862823486328
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Thromboxane A2 receptor (TXA2-R) (Pros (6IIU/8XJN) | 28 | activation | 2.77 | 39.6 | 0.009 | 1.00* | 627 | 7.31e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Thromboxane A2 receptor (TXA2-R) (Pros (6IIU/8XJN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

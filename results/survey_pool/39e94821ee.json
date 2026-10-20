@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:02:52+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/39e94821ee.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Peptide ABC transporter, periplasmic p (1ZU0/1ZTY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Peptide ABC transporter, periplasmic p (1ZU0/1ZTY)",
+        "motion": "hinge",
+        "mass_kda": 55.70276,
+        "ca_rmsd": 6.978996146823412,
+        "radius": 47.97096672692536,
+        "box_size": 128,
+        "d2_known_pose": 185.583740234375,
+        "d2_crlb": 172.57989501953125,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 1684.011962890625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011690861832057052,
+        "note": "Q9KUA3 63 kDa, dyndom, rotation 57.3 deg, chains A/A",
+        "d2_marginal": 2.1696338653564453,
+        "information_marginal": 1.4845499992370605,
+        "n_matched": 528,
+        "identity": 1.0,
+        "shared_fraction": 0.9976431769974075,
+        "provenance": {
+          "accession": "Q9KUA3",
+          "canonical_mass_kda": 62.513,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 57.3
+        },
+        "d2_floor": 185.583740234375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Peptide ABC transporter, periplasmic p (1ZU0/1ZTY) | 56 | hinge | 6.98 | 186 | 0.012 | 1.00* | 625 | 1.68e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Peptide ABC transporter, periplasmic p (1ZU0/1ZTY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T08:22:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/1d86294940.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "HPr kinase/phosphorylase (HPrK/P) (EC (1KNX/1KNX)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "HPr kinase/phosphorylase (HPrK/P) (EC (1KNX/1KNX)",
+        "motion": "no_contact",
+        "mass_kda": 31.245637999999996,
+        "ca_rmsd": 2.3098750045242094,
+        "radius": 61.159474579466945,
+        "box_size": 128,
+        "d2_known_pose": 23.253454208374023,
+        "d2_crlb": 20.19805145263672,
+        "information": 3.903085708618164,
+        "saturation": 0.975771427154541,
+        "n_floor": 640.5188598632812,
+        "n_marginal": 63477.72265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.001710404641218678,
+        "note": "P75548 35 kDa, dyndom, rotation 19.1 deg, chains E/A",
+        "d2_marginal": 0.03977281600236893,
+        "information_marginal": 0.0393838956952095,
+        "n_matched": 303,
+        "identity": 1.0,
+        "shared_fraction": 0.9730171708912511,
+        "provenance": {
+          "accession": "P75548",
+          "canonical_mass_kda": 35.234,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 19.1
+        },
+        "d2_floor": 23.253454208374023
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| HPr kinase/phosphorylase (HPrK/P) (EC (1KNX/1KNX) | 31 | no_contact | 2.31 | 23.3 | 0.002 | 0.98 | 641 | 6.35e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "HPr kinase/phosphorylase (HPrK/P) (EC (1KNX/1KNX)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

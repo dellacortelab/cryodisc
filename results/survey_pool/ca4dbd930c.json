@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:17:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ca4dbd930c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Electron transfer flavoprotein subunit (2A1T/1EFV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Electron transfer flavoprotein subunit (2A1T/1EFV)",
+        "motion": "hinge",
+        "mass_kda": 29.482331,
+        "ca_rmsd": 8.54955748445798,
+        "radius": 37.58557485543646,
+        "box_size": 128,
+        "d2_known_pose": 79.7093505859375,
+        "d2_crlb": 64.51272583007812,
+        "information": 3.999950408935547,
+        "saturation": 0.9999876022338867,
+        "n_floor": 625.0077514648438,
+        "n_marginal": 3677.775390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010094591330416063,
+        "note": "P13804 35 kDa, dyndom, rotation 88.5 deg, chains R/A",
+        "d2_marginal": 0.8046333193778992,
+        "information_marginal": 0.6797587871551514,
+        "n_matched": 309,
+        "identity": 1.0,
+        "shared_fraction": 0.9729965156794426,
+        "provenance": {
+          "accession": "P13804",
+          "canonical_mass_kda": 35.08,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 88.5
+        },
+        "d2_floor": 79.7093505859375
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Electron transfer flavoprotein subunit (2A1T/1EFV) | 29 | hinge | 8.55 | 79.7 | 0.010 | 1.00* | 625 | 3.68e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Electron transfer flavoprotein subunit (2A1T/1EFV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

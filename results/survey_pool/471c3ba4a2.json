@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:32:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/471c3ba4a2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Glucokinase (EC 2.7.1.2) (Glucose kina (1Q18/1SZ2)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Glucokinase (EC 2.7.1.2) (Glucose kina (1Q18/1SZ2)",
+        "motion": "mixed",
+        "mass_kda": 31.489736999999998,
+        "ca_rmsd": 1.6646079369521616,
+        "radius": 36.885802559824484,
+        "box_size": 128,
+        "d2_known_pose": 14.038381576538086,
+        "d2_crlb": 12.241049766540527,
+        "information": 3.6336026191711426,
+        "saturation": 0.9084006547927856,
+        "n_floor": 688.0224609375,
+        "n_marginal": 15327.4541015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01209931635271268,
+        "note": "P0A6V9 35 kDa, dyndom, rotation 12.2 deg, chains A/B",
+        "d2_marginal": 0.16985481977462769,
+        "information_marginal": 0.1631060242652893,
+        "n_matched": 315,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P0A6V9",
+          "canonical_mass_kda": 34.723,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 12.2
+        },
+        "d2_floor": 14.038381576538086
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Glucokinase (EC 2.7.1.2) (Glucose kina (1Q18/1SZ2) | 31 | mixed | 1.66 | 14 | 0.012 | 0.91 | 688 | 1.53e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Glucokinase (EC 2.7.1.2) (Glucose kina (1Q18/1SZ2)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

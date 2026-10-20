@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:40:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f296a1f6f2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Endo-1,4-beta-xylanase A (Xylanase A) (2B42/2DCY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Endo-1,4-beta-xylanase A (Xylanase A) (2B42/2DCY)",
+        "motion": "unclassified",
+        "mass_kda": 18.971560999999994,
+        "ca_rmsd": 1.1083951051145768,
+        "radius": 24.864767369178143,
+        "box_size": 128,
+        "d2_known_pose": 7.879367828369141,
+        "d2_crlb": 6.938987731933594,
+        "information": 3.0579745769500732,
+        "saturation": 0.7644936442375183,
+        "n_floor": 817.53466796875,
+        "n_marginal": 6016.57275390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0584529586609532,
+        "note": "P18429 23 kDa, dyndom, rotation 10.6 deg, chains B/D",
+        "d2_marginal": 0.46057236194610596,
+        "information_marginal": 0.41551896929740906,
+        "n_matched": 184,
+        "identity": 0.9945652173913043,
+        "shared_fraction": 0.9958534899792675,
+        "provenance": {
+          "accession": "P18429",
+          "canonical_mass_kda": 23.345,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 10.6
+        },
+        "d2_floor": 7.879367828369141
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Endo-1,4-beta-xylanase A (Xylanase A) (2B42/2DCY) | 19 | unclassified | 1.11 | 7.88 | 0.058 | 0.76 | 818 | 6.02e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Endo-1,4-beta-xylanase A (Xylanase A) (2B42/2DCY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:38:03+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/04a62b5e3b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine/threonine-protein kinase PAK 1 (9NBX/4ZJJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine/threonine-protein kinase PAK 1 (9NBX/4ZJJ)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 25.279999999999998,
+        "ca_rmsd": 5.339827884351412,
+        "radius": 37.27487897963117,
+        "box_size": 128,
+        "d2_known_pose": 64.29999542236328,
+        "d2_crlb": 55.46111297607422,
+        "information": 3.999622344970703,
+        "saturation": 0.9999055862426758,
+        "n_floor": 625.05908203125,
+        "n_marginal": 3220.696533203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014640409064314614,
+        "note": "Q13153 61 kDa, kincore, no rotation angle (kincore reports none); states BLAminus -> BBAminus, chains A/D",
+        "d2_marginal": 0.9413782358169556,
+        "information_marginal": 0.7762296199798584,
+        "n_matched": 265,
+        "identity": 0.9924528301886792,
+        "shared_fraction": 0.8970864661654135,
+        "provenance": {
+          "accession": "Q13153",
+          "canonical_mass_kda": 60.647,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 64.29999542236328
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine/threonine-protein kinase PAK 1 (9NBX/4ZJJ) | 25 | dihedral_cluster | 5.34 | 64.3 | 0.015 | 1.00* | 625 | 3.22e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine/threonine-protein kinase PAK 1 (9NBX/4ZJJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

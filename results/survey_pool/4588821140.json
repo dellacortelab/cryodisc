@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:08:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/4588821140.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "High affinity nerve growth factor rece (7VKM/4AOJ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "High affinity nerve growth factor rece (7VKM/4AOJ)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 27.543903999999994,
+        "ca_rmsd": 1.3486918174107136,
+        "radius": 34.95887712184308,
+        "box_size": 128,
+        "d2_known_pose": 7.447507858276367,
+        "d2_crlb": 7.061557292938232,
+        "information": 2.9904584884643555,
+        "saturation": 0.7476146221160889,
+        "n_floor": 835.9921875,
+        "n_marginal": 18171.30859375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.019116351889380812,
+        "note": "P04629 87 kDa, kincore, no rotation angle (kincore reports none); states BBAminus -> ABAminus, chains A/C",
+        "d2_marginal": 0.14236918091773987,
+        "information_marginal": 0.1375795304775238,
+        "n_matched": 261,
+        "identity": 0.9885057471264368,
+        "shared_fraction": 0.8692211578508955,
+        "provenance": {
+          "accession": "P04629",
+          "canonical_mass_kda": 87.497,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 7.447507858276367
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| High affinity nerve growth factor rece (7VKM/4AOJ) | 28 | dihedral_cluster | 1.35 | 7.45 | 0.019 | 0.75 | 836 | 1.82e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "High affinity nerve growth factor rece (7VKM/4AOJ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

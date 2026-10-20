@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:48:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5dc9cfdfc2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Beta-alanine synthase (EC 3.5.1.6) (1R43/1R3N)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Beta-alanine synthase (EC 3.5.1.6) (1R43/1R3N)",
+        "motion": "no_contact",
+        "mass_kda": 43.63680099999999,
+        "ca_rmsd": 1.3490801084814352,
+        "radius": 56.07450051829617,
+        "box_size": 128,
+        "d2_known_pose": 13.768207550048828,
+        "d2_crlb": 11.479255676269531,
+        "information": 3.6185855865478516,
+        "saturation": 0.9046463966369629,
+        "n_floor": 690.877685546875,
+        "n_marginal": 132494.25,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0013769297935836723,
+        "note": "Q96W94 50 kDa, dyndom, rotation 8.2 deg, chains A/D",
+        "d2_marginal": 0.01895785517990589,
+        "information_marginal": 0.018868744373321533,
+        "n_matched": 429,
+        "identity": 1.0,
+        "shared_fraction": 0.981037037037037,
+        "provenance": {
+          "accession": "Q96W94",
+          "canonical_mass_kda": 49.702,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.2
+        },
+        "d2_floor": 13.768207550048828
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Beta-alanine synthase (EC 3.5.1.6) (1R43/1R3N) | 44 | no_contact | 1.35 | 13.8 | 0.001 | 0.90 | 691 | 1.32e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Beta-alanine synthase (EC 3.5.1.6) (1R43/1R3N)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:20:18+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/58b08dc044.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "GTPase HRas (EC 3.6.5.2) (H-Ras-1) (Ha (2CE2/1NVV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "GTPase HRas (EC 3.6.5.2) (H-Ras-1) (Ha (2CE2/1NVV)",
+        "motion": "hinge",
+        "mass_kda": 17.418691,
+        "ca_rmsd": 3.858618866668125,
+        "radius": 28.913937241446156,
+        "box_size": 128,
+        "d2_known_pose": 29.35808563232422,
+        "d2_crlb": 26.21559715270996,
+        "information": 3.958678722381592,
+        "saturation": 0.989669680595398,
+        "n_floor": 631.5238647460938,
+        "n_marginal": 5965.98095703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.01583492618319849,
+        "note": "P01112 21 kDa, dyndom, rotation 38.0 deg, chains X/R",
+        "d2_marginal": 0.46488311886787415,
+        "information_marginal": 0.4190426170825958,
+        "n_matched": 166,
+        "identity": 0.9879518072289156,
+        "shared_fraction": 0.9939531368102796,
+        "provenance": {
+          "accession": "P01112",
+          "canonical_mass_kda": 21.298,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 38.0
+        },
+        "d2_floor": 29.35808563232422
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| GTPase HRas (EC 3.6.5.2) (H-Ras-1) (Ha (2CE2/1NVV) | 17 | hinge | 3.86 | 29.4 | 0.016 | 0.99 | 632 | 5.97e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "GTPase HRas (EC 3.6.5.2) (H-Ras-1) (Ha (2CE2/1NVV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

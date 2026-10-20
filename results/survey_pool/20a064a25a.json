@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:05:49+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/20a064a25a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Adenylate kinase (AK) (EC 2.7.4.3) (AT (1E4V/4AKE)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Adenylate kinase (AK) (EC 2.7.4.3) (AT (1E4V/4AKE)",
+        "motion": "unclassified",
+        "mass_kda": 21.883562999999995,
+        "ca_rmsd": 6.856919196520575,
+        "radius": 36.32402999914807,
+        "box_size": 128,
+        "d2_known_pose": 152.05245971679688,
+        "d2_crlb": 135.09678649902344,
+        "information": 3.999999523162842,
+        "saturation": 0.9999998807907104,
+        "n_floor": 625.0001220703125,
+        "n_marginal": 1302.519775390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.020944483254239126,
+        "note": "P69441 24 kDa, dyndom, rotation 51.0 deg, chains A/B",
+        "d2_marginal": 3.1846601963043213,
+        "information_marginal": 1.9193568229675293,
+        "n_matched": 214,
+        "identity": 0.9953271028037384,
+        "shared_fraction": 0.9981916817359855,
+        "provenance": {
+          "accession": "P69441",
+          "canonical_mass_kda": 23.586,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 51.0
+        },
+        "d2_floor": 152.05245971679688
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Adenylate kinase (AK) (EC 2.7.4.3) (AT (1E4V/4AKE) | 22 | unclassified | 6.86 | 152 | 0.021 | 1.00* | 625 | 1.3e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Adenylate kinase (AK) (EC 2.7.4.3) (AT (1E4V/4AKE)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:08:39+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c610a94cef.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Mitogen-activated protein kinase FUS3 (2B9H/2F49)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Mitogen-activated protein kinase FUS3 (2B9H/2F49)",
+        "motion": "unclassified",
+        "mass_kda": 35.67690299999999,
+        "ca_rmsd": 1.4407418114883013,
+        "radius": 35.75684454306825,
+        "box_size": 128,
+        "d2_known_pose": 14.358275413513184,
+        "d2_crlb": 13.54261589050293,
+        "information": 3.6505813598632812,
+        "saturation": 0.9126453399658203,
+        "n_floor": 684.8224487304688,
+        "n_marginal": 18715.619140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009617561302022756,
+        "note": "P16892 41 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/B",
+        "d2_marginal": 0.13809159398078918,
+        "information_marginal": 0.13357827067375183,
+        "n_matched": 337,
+        "identity": 1.0,
+        "shared_fraction": 0.9919502378338821,
+        "provenance": {
+          "accession": "P16892",
+          "canonical_mass_kda": 40.772,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 14.358275413513184
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Mitogen-activated protein kinase FUS3 (2B9H/2F49) | 36 | unclassified | 1.44 | 14.4 | 0.010 | 0.91 | 685 | 1.87e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Mitogen-activated protein kinase FUS3 (2B9H/2F49)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

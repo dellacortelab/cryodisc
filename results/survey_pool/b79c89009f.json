@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:37:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b79c89009f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Flagellum-specific ATP synthase (EC 7. (2DPY/2DPY)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Flagellum-specific ATP synthase (EC 7. (2DPY/2DPY)",
+        "motion": "hinge",
+        "mass_kda": 42.28438299999999,
+        "ca_rmsd": 1.3522010305729841,
+        "radius": 48.61573157485854,
+        "box_size": 128,
+        "d2_known_pose": 14.423490524291992,
+        "d2_crlb": 13.829726219177246,
+        "information": 3.653940439224243,
+        "saturation": 0.9134851098060608,
+        "n_floor": 684.1929321289062,
+        "n_marginal": 49417.96875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003551928647397542,
+        "note": "P26465 49 kDa, dyndom, rotation 17.0 deg, chains B/A",
+        "d2_marginal": 0.05123120918869972,
+        "information_marginal": 0.05058889091014862,
+        "n_matched": 422,
+        "identity": 1.0,
+        "shared_fraction": 0.9931951747602845,
+        "provenance": {
+          "accession": "P26465",
+          "canonical_mass_kda": 49.265,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 17.0
+        },
+        "d2_floor": 14.423490524291992
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Flagellum-specific ATP synthase (EC 7. (2DPY/2DPY) | 42 | hinge | 1.35 | 14.4 | 0.004 | 0.91 | 684 | 4.94e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Flagellum-specific ATP synthase (EC 7. (2DPY/2DPY)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

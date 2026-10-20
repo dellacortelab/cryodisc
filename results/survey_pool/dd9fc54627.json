@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:26:24+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/dd9fc54627.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Dermonecrotic toxin (DNT) (Mitogenic t (2EC5/2EBF)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Dermonecrotic toxin (DNT) (Mitogenic t (2EC5/2EBF)",
+        "motion": "shear",
+        "mass_kda": 74.44469199999997,
+        "ca_rmsd": 2.066362316877339,
+        "radius": 59.61525912069257,
+        "box_size": 128,
+        "d2_known_pose": 47.1753044128418,
+        "d2_crlb": 44.48016357421875,
+        "information": 3.996328592300415,
+        "saturation": 0.9990821480751038,
+        "n_floor": 625.57421875,
+        "n_marginal": 30783.048828125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0017567144328574352,
+        "note": "P17452 146 kDa, dyndom, rotation 13.2 deg, chains A/X",
+        "d2_marginal": 0.08287353813648224,
+        "information_marginal": 0.08121353387832642,
+        "n_matched": 711,
+        "identity": 0.9985935302390999,
+        "shared_fraction": 0.9998227892964735,
+        "provenance": {
+          "accession": "P17452",
+          "canonical_mass_kda": 146.383,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 13.2
+        },
+        "d2_floor": 47.1753044128418
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Dermonecrotic toxin (DNT) (Mitogenic t (2EC5/2EBF) | 74 | shear | 2.07 | 47.2 | 0.002 | 1.00* | 626 | 3.08e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Dermonecrotic toxin (DNT) (Mitogenic t (2EC5/2EBF)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:12:04+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/2a4c38f860.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Atrial natriuretic peptide receptor 1 (9BCP/9BCP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Atrial natriuretic peptide receptor 1 (9BCP/9BCP)",
+        "motion": "dihedral_cluster",
+        "mass_kda": 24.511204999999993,
+        "ca_rmsd": 1.2154140586411748,
+        "radius": 41.9624888971647,
+        "box_size": 128,
+        "d2_known_pose": 6.872565746307373,
+        "d2_crlb": 6.641277313232422,
+        "information": 2.8920412063598633,
+        "saturation": 0.7230103015899658,
+        "n_floor": 864.4413452148438,
+        "n_marginal": null,
+        "marginal_extrapolated": false,
+        "pose_efficiency": null,
+        "note": "P16066 119 kDa, kincore, no rotation angle (kincore reports none); states BLBplus -> BLBtrans, chains A/B",
+        "d2_marginal": null,
+        "information_marginal": null,
+        "n_matched": 302,
+        "identity": 1.0,
+        "shared_fraction": 0.890961262553802,
+        "provenance": {
+          "accession": "P16066",
+          "canonical_mass_kda": 118.919,
+          "same_entry": true,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 6.872565746307373
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Atrial natriuretic peptide receptor 1 (9BCP/9BCP) | 25 | dihedral_cluster | 1.22 | 6.87 | -- | 0.72 | 864 | -- | unmeasured |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 0,
+    "nulls": {
+      "Atrial natriuretic peptide receptor 1 (9BCP/9BCP)": {
+        "measured": false,
+        "error": "RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 10 (total of 1 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory [executable_name='jit_bare_contrast']"
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

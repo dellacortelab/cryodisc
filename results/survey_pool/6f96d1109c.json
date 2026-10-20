@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:58:16+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6f96d1109c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Ig gamma-2B chain C region (Immunoglob (1C5D/1C5D)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Ig gamma-2B chain C region (Immunoglob (1C5D/1C5D)",
+        "motion": "shear",
+        "mass_kda": 21.275125999999997,
+        "ca_rmsd": 1.004876985935278,
+        "radius": 40.51837159815188,
+        "box_size": 128,
+        "d2_known_pose": 5.228348731994629,
+        "d2_crlb": 4.7427167892456055,
+        "information": 2.544881820678711,
+        "saturation": 0.6362204551696777,
+        "n_floor": 982.3639526367188,
+        "n_marginal": 214552.140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0022351515643420005,
+        "note": "P20761 36 kDa, dyndom, rotation 7.1 deg, chains B/H",
+        "d2_marginal": 0.011686151847243309,
+        "information_marginal": 0.011652179062366486,
+        "n_matched": 214,
+        "identity": 1.0,
+        "shared_fraction": 0.9925971622455274,
+        "provenance": {
+          "accession": "P20761",
+          "canonical_mass_kda": 36.497,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 7.1
+        },
+        "d2_floor": 5.228348731994629
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Ig gamma-2B chain C region (Immunoglob (1C5D/1C5D) | 21 | shear | 1.00 | 5.23 | 0.002 | 0.64 | 982 | 2.15e+05^ | out of reach |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Ig gamma-2B chain C region (Immunoglob (1C5D/1C5D)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

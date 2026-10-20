@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:51:59+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7732261fdc.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Growth factor receptor-bound protein 2 (1JYR/2H46)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Growth factor receptor-bound protein 2 (1JYR/2H46)",
+        "motion": "hinge",
+        "mass_kda": 10.206401999999999,
+        "ca_rmsd": 12.601765568265332,
+        "radius": 36.38461136472352,
+        "box_size": 128,
+        "d2_known_pose": 133.48904418945312,
+        "d2_crlb": 107.29925537109375,
+        "information": 3.999999761581421,
+        "saturation": 0.9999999403953552,
+        "n_floor": 625.0000610351562,
+        "n_marginal": 933.83642578125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.04340637687409883,
+        "note": "P62993 25 kDa, dyndom, rotation 177.5 deg, chains A/E",
+        "d2_marginal": 5.794275760650635,
+        "information_marginal": 2.677128314971924,
+        "n_matched": 96,
+        "identity": 0.9583333333333334,
+        "shared_fraction": 0.9629171817058096,
+        "provenance": {
+          "accession": "P62993",
+          "canonical_mass_kda": 25.206,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 177.5
+        },
+        "d2_floor": 133.48904418945312
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Growth factor receptor-bound protein 2 (1JYR/2H46) | 10 | hinge | 12.60 | 133 | 0.043 | 1.00* | 625 | 934^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Growth factor receptor-bound protein 2 (1JYR/2H46)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:36:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/ff09983507.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "E3 ubiquitin-protein ligase SIAH1A (EC (2AN6/1K2F)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "E3 ubiquitin-protein ligase SIAH1A (EC (2AN6/1K2F)",
+        "motion": "mixed",
+        "mass_kda": 19.928913999999995,
+        "ca_rmsd": 2.471579711700796,
+        "radius": 41.78679672720543,
+        "box_size": 128,
+        "d2_known_pose": 15.086153030395508,
+        "d2_crlb": 13.756243705749512,
+        "information": 3.6862032413482666,
+        "saturation": 0.9215508103370667,
+        "n_floor": 678.20458984375,
+        "n_marginal": 24471.689453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.006946153340310607,
+        "note": "P61092 31 kDa, dyndom, rotation 42.5 deg, chains C/B",
+        "d2_marginal": 0.10479073226451874,
+        "information_marginal": 0.10215886682271957,
+        "n_matched": 190,
+        "identity": 1.0,
+        "shared_fraction": 0.9946879150066401,
+        "provenance": {
+          "accession": "P61092",
+          "canonical_mass_kda": 31.137,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 42.5
+        },
+        "d2_floor": 15.086153030395508
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| E3 ubiquitin-protein ligase SIAH1A (EC (2AN6/1K2F) | 20 | mixed | 2.47 | 15.1 | 0.007 | 0.92 | 678 | 2.45e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "E3 ubiquitin-protein ligase SIAH1A (EC (2AN6/1K2F)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

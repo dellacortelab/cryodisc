@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:57:50+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/5b071aa700.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "DNA topoisomerase 3 (EC 5.6.2.1) (DNA (1I7D/1D6M)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "DNA topoisomerase 3 (EC 5.6.2.1) (DNA (1I7D/1D6M)",
+        "motion": "hinge",
+        "mass_kda": 63.253723,
+        "ca_rmsd": 3.399745607304153,
+        "radius": 55.73743423300453,
+        "box_size": 128,
+        "d2_known_pose": 108.43589782714844,
+        "d2_crlb": 104.05696868896484,
+        "information": 3.9999990463256836,
+        "saturation": 0.9999997615814209,
+        "n_floor": 625.0001831054688,
+        "n_marginal": 7522.810546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003327834682957255,
+        "note": "P14294 73 kDa, dyndom, rotation 22.4 deg, chains A/A",
+        "d2_marginal": 0.3608567416667938,
+        "information_marginal": 0.3323225975036621,
+        "n_matched": 603,
+        "identity": 0.9983416252072969,
+        "shared_fraction": 0.9724305696330833,
+        "provenance": {
+          "accession": "P14294",
+          "canonical_mass_kda": 73.217,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 22.4
+        },
+        "d2_floor": 108.43589782714844
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| DNA topoisomerase 3 (EC 5.6.2.1) (DNA (1I7D/1D6M) | 63 | hinge | 3.40 | 108 | 0.003 | 1.00* | 625 | 7.52e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "DNA topoisomerase 3 (EC 5.6.2.1) (DNA (1I7D/1D6M)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

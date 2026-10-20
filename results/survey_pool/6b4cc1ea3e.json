@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:10:43+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6b4cc1ea3e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Sarcoplasmic/endoplasmic reticulum cal (2C9M/1VFP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Sarcoplasmic/endoplasmic reticulum cal (2C9M/1VFP)",
+        "motion": "unclassified",
+        "mass_kda": 101.61861499999999,
+        "ca_rmsd": 15.382416740781427,
+        "radius": 74.562923697359,
+        "box_size": 128,
+        "d2_known_pose": 954.770263671875,
+        "d2_crlb": 922.4095458984375,
+        "information": 4.0,
+        "saturation": 1.0,
+        "n_floor": 625.0,
+        "n_marginal": 1424.7601318359375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.002901805541500596,
+        "note": "P04191 110 kDa, dyndom, rotation 86.4 deg, chains B/B",
+        "d2_marginal": 2.7705576419830322,
+        "information_marginal": 1.7546813488006592,
+        "n_matched": 994,
+        "identity": 1.0,
+        "shared_fraction": 0.9998696388997523,
+        "provenance": {
+          "accession": "P04191",
+          "canonical_mass_kda": 110.459,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 86.4
+        },
+        "d2_floor": 954.770263671875
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sarcoplasmic/endoplasmic reticulum cal (2C9M/1VFP) | 102 | unclassified | 15.38 | 955 | 0.003 | 1.00* | 625 | 1.42e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Sarcoplasmic/endoplasmic reticulum cal (2C9M/1VFP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

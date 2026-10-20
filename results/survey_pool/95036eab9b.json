@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:00:41+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/95036eab9b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Serine--tRNA ligase (EC 6.1.1.11) (Ser (1SES/1SES)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Serine--tRNA ligase (EC 6.1.1.11) (Ser (1SES/1SES)",
+        "motion": "no_contact",
+        "mass_kda": 44.38786199999999,
+        "ca_rmsd": 1.815554637478511,
+        "radius": 68.73657272670003,
+        "box_size": 128,
+        "d2_known_pose": 37.40610885620117,
+        "d2_crlb": 31.204517364501953,
+        "information": 3.986288070678711,
+        "saturation": 0.9965720176696777,
+        "n_floor": 627.14990234375,
+        "n_marginal": 23889.814453125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.002871438155601381,
+        "note": "P34945 48 kDa, dyndom, rotation 21.5 deg, chains A/B",
+        "d2_marginal": 0.10740932822227478,
+        "information_marginal": 0.10464710742235184,
+        "n_matched": 421,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "P34945",
+          "canonical_mass_kda": 47.813,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 21.5
+        },
+        "d2_floor": 37.40610885620117
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Serine--tRNA ligase (EC 6.1.1.11) (Ser (1SES/1SES) | 44 | no_contact | 1.82 | 37.4 | 0.003 | 1.00* | 627 | 2.39e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Serine--tRNA ligase (EC 6.1.1.11) (Ser (1SES/1SES)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

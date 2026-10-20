@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:16:14+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/73454b21a2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "C-terminal processing peptidase, chlor (1FCF/1FC9)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "C-terminal processing peptidase, chlor (1FCF/1FC9)",
+        "motion": "mixed",
+        "mass_kda": 37.580863,
+        "ca_rmsd": 1.4438696142160516,
+        "radius": 42.826117723407975,
+        "box_size": 128,
+        "d2_known_pose": 13.234964370727539,
+        "d2_crlb": 12.7056303024292,
+        "information": 3.587005376815796,
+        "saturation": 0.896751344203949,
+        "n_floor": 696.9602661132812,
+        "n_marginal": 72693.140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.002620903168307721,
+        "note": "O04073 49 kDa, dyndom, rotation 11.0 deg, chains A/A",
+        "d2_marginal": 0.03468756005167961,
+        "information_marginal": 0.034391142427921295,
+        "n_matched": 386,
+        "identity": 1.0,
+        "shared_fraction": 0.9972037749038798,
+        "provenance": {
+          "accession": "O04073",
+          "canonical_mass_kda": 48.615,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 11.0
+        },
+        "d2_floor": 13.234964370727539
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| C-terminal processing peptidase, chlor (1FCF/1FC9) | 38 | mixed | 1.44 | 13.2 | 0.003 | 0.90 | 697 | 7.27e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "C-terminal processing peptidase, chlor (1FCF/1FC9)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

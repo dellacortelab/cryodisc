@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:16:13+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/e384372f1d.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hexokinase (EC 2.7.1.1) (3O80/3O8M)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hexokinase (EC 2.7.1.1) (3O80/3O8M)",
+        "motion": "domainmotion",
+        "mass_kda": 48.189952,
+        "ca_rmsd": 3.9196423342586253,
+        "radius": 44.09951427286496,
+        "box_size": 128,
+        "d2_known_pose": 81.64734649658203,
+        "d2_crlb": 73.92916870117188,
+        "information": 3.9999608993530273,
+        "saturation": 0.9999902248382568,
+        "n_floor": 625.006103515625,
+        "n_marginal": 3913.257080078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.009167684293009667,
+        "note": "P33284 54 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/A",
+        "d2_marginal": 0.7485170960426331,
+        "information_marginal": 0.6388540267944336,
+        "n_matched": 469,
+        "identity": 1.0,
+        "shared_fraction": 0.9950940310711366,
+        "provenance": {
+          "accession": "P33284",
+          "canonical_mass_kda": 53.61,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 81.64734649658203
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hexokinase (EC 2.7.1.1) (3O80/3O8M) | 48 | domainmotion | 3.92 | 81.6 | 0.009 | 1.00* | 625 | 3.91e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hexokinase (EC 2.7.1.1) (3O80/3O8M)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

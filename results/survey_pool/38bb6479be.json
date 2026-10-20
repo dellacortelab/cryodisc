@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:12:42+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/38bb6479be.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Poly(A)-specific ribonuclease PARN (EC (2A1S/2A1S)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Poly(A)-specific ribonuclease PARN (EC (2A1S/2A1S)",
+        "motion": "mixed",
+        "mass_kda": 42.070516999999995,
+        "ca_rmsd": 1.495808134766069,
+        "radius": 64.97912277406749,
+        "box_size": 128,
+        "d2_known_pose": 17.240222930908203,
+        "d2_crlb": 15.041084289550781,
+        "information": 3.770998954772949,
+        "saturation": 0.9427497386932373,
+        "n_floor": 662.954345703125,
+        "n_marginal": 28603.572265625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.0051812193040048716,
+        "note": "O95453 73 kDa, dyndom, rotation 6.2 deg, chains C/B",
+        "d2_marginal": 0.08932537585496902,
+        "information_marginal": 0.08740167319774628,
+        "n_matched": 387,
+        "identity": 1.0,
+        "shared_fraction": 0.9861025324274243,
+        "provenance": {
+          "accession": "O95453",
+          "canonical_mass_kda": 73.451,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 6.2
+        },
+        "d2_floor": 17.240222930908203
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Poly(A)-specific ribonuclease PARN (EC (2A1S/2A1S) | 42 | mixed | 1.50 | 17.2 | 0.005 | 0.94 | 663 | 2.86e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Poly(A)-specific ribonuclease PARN (EC (2A1S/2A1S)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

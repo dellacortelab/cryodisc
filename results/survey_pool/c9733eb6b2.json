@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:29:34+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/c9733eb6b2.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Phosphonoacetaldehyde hydrolase (Phosp (1RDF/1FEZ)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Phosphonoacetaldehyde hydrolase (Phosp (1RDF/1FEZ)",
+        "motion": "hinge",
+        "mass_kda": 27.063272999999995,
+        "ca_rmsd": 1.6671625575937967,
+        "radius": 40.19996251468075,
+        "box_size": 128,
+        "d2_known_pose": 12.179182052612305,
+        "d2_crlb": 10.718932151794434,
+        "information": 3.5160136222839355,
+        "saturation": 0.8790034055709839,
+        "n_floor": 711.0325317382812,
+        "n_marginal": 24619.51953125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008551122353513069,
+        "note": "O31156 30 kDa, dyndom, rotation 17.6 deg, chains A/A",
+        "d2_marginal": 0.10414567589759827,
+        "information_marginal": 0.10154545307159424,
+        "n_matched": 256,
+        "identity": 0.99609375,
+        "shared_fraction": 0.9709662065683008,
+        "provenance": {
+          "accession": "O31156",
+          "canonical_mass_kda": 30.06,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 17.6
+        },
+        "d2_floor": 12.179182052612305
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Phosphonoacetaldehyde hydrolase (Phosp (1RDF/1FEZ) | 27 | hinge | 1.67 | 12.2 | 0.009 | 0.88 | 711 | 2.46e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Phosphonoacetaldehyde hydrolase (Phosp (1RDF/1FEZ)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:19:11+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/f77a726b0e.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Probable ATP-dependent RNA helicase MJ (1HV8/1HV8)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Probable ATP-dependent RNA helicase MJ (1HV8/1HV8)",
+        "motion": "hinge",
+        "mass_kda": 37.149133,
+        "ca_rmsd": 2.067646322851482,
+        "radius": 37.93188729746135,
+        "box_size": 128,
+        "d2_known_pose": 28.059925079345703,
+        "d2_crlb": 24.75918960571289,
+        "information": 3.950532913208008,
+        "saturation": 0.987633228302002,
+        "n_floor": 632.8260498046875,
+        "n_marginal": 7483.99560546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.012932426267455584,
+        "note": "Q58083 42 kDa, dyndom, rotation 14.8 deg, chains A/B",
+        "d2_marginal": 0.36288291215896606,
+        "information_marginal": 0.3340461552143097,
+        "n_matched": 353,
+        "identity": 1.0,
+        "shared_fraction": 1.0,
+        "provenance": {
+          "accession": "Q58083",
+          "canonical_mass_kda": 41.92,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 14.8
+        },
+        "d2_floor": 28.059925079345703
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Probable ATP-dependent RNA helicase MJ (1HV8/1HV8) | 37 | hinge | 2.07 | 28.1 | 0.013 | 0.99 | 633 | 7.48e+03^ | clear |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Probable ATP-dependent RNA helicase MJ (1HV8/1HV8)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

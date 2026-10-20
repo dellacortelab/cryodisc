@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:20:55+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/9c7385e27b.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Orotidine 5'-phosphate decarboxylase ( (1EIX/1L2U)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Orotidine 5'-phosphate decarboxylase ( (1EIX/1L2U)",
+        "motion": "mixed",
+        "mass_kda": 22.394218000000002,
+        "ca_rmsd": 1.205024204327078,
+        "radius": 28.734129360855263,
+        "box_size": 128,
+        "d2_known_pose": 8.889925003051758,
+        "d2_crlb": 7.935658931732178,
+        "information": 3.1972789764404297,
+        "saturation": 0.7993197441101074,
+        "n_floor": 781.9148559570312,
+        "n_marginal": 26834.41796875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.010725721703686492,
+        "note": "P08244 26 kDa, dyndom, rotation 11.5 deg, chains C/A",
+        "d2_marginal": 0.09535086154937744,
+        "information_marginal": 0.09316393733024597,
+        "n_matched": 223,
+        "identity": 1.0,
+        "shared_fraction": 0.9619318181818182,
+        "provenance": {
+          "accession": "P08244",
+          "canonical_mass_kda": 26.35,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 11.5
+        },
+        "d2_floor": 8.889925003051758
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Orotidine 5'-phosphate decarboxylase ( (1EIX/1L2U) | 22 | mixed | 1.21 | 8.89 | 0.011 | 0.80 | 782 | 2.68e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Orotidine 5'-phosphate decarboxylase ( (1EIX/1L2U)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

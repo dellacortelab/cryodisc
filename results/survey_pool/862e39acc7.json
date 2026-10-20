@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:56:08+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/862e39acc7.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Polyphosphate kinase (EC 2.7.4.1) (ATP (1XDO/1XDP)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Polyphosphate kinase (EC 2.7.4.1) (ATP (1XDO/1XDP)",
+        "motion": "unclassified",
+        "mass_kda": 73.88623899999999,
+        "ca_rmsd": 1.3538036338195207,
+        "radius": 53.16188114939343,
+        "box_size": 128,
+        "d2_known_pose": 21.940326690673828,
+        "d2_crlb": 20.694751739501953,
+        "information": 3.8833022117614746,
+        "saturation": 0.9708255529403687,
+        "n_floor": 643.7820434570312,
+        "n_marginal": 29117.50390625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.00399789824763867,
+        "note": "P0A7B1 80 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains B/B",
+        "d2_marginal": 0.08771519362926483,
+        "information_marginal": 0.085859015583992,
+        "n_matched": 687,
+        "identity": 1.0,
+        "shared_fraction": 0.9904778698642215,
+        "provenance": {
+          "accession": "P0A7B1",
+          "canonical_mass_kda": 80.432,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 21.940326690673828
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Polyphosphate kinase (EC 2.7.4.1) (ATP (1XDO/1XDP) | 74 | unclassified | 1.35 | 21.9 | 0.004 | 0.97 | 644 | 2.91e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Polyphosphate kinase (EC 2.7.4.1) (ATP (1XDO/1XDP)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

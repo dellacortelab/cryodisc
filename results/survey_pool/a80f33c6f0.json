@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:16:35+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/a80f33c6f0.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "NPC intracellular cholesterol transpor (1NEP/2HKA)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "NPC intracellular cholesterol transpor (1NEP/2HKA)",
+        "motion": "crypticpocket",
+        "mass_kda": 13.570641,
+        "ca_rmsd": 1.1188041559024597,
+        "radius": 24.720820839762705,
+        "box_size": 128,
+        "d2_known_pose": 4.817427158355713,
+        "d2_crlb": 4.509175777435303,
+        "information": 2.4394586086273193,
+        "saturation": 0.6098646521568298,
+        "n_floor": 1024.817626953125,
+        "n_marginal": 15273.1435546875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.035388867448351596,
+        "note": "P79345 17 kDa, bioemu, no rotation angle (bioemu reports none); states reference_i -> reference_j, chains A/C",
+        "d2_marginal": 0.1704832911491394,
+        "information_marginal": 0.16368602216243744,
+        "n_matched": 130,
+        "identity": 1.0,
+        "shared_fraction": 0.9990262901655307,
+        "provenance": {
+          "accession": "P79345",
+          "canonical_mass_kda": 16.64,
+          "same_entry": false,
+          "source": "bioemu",
+          "rotation_deg": null
+        },
+        "d2_floor": 4.817427158355713
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| NPC intracellular cholesterol transpor (1NEP/2HKA) | 14 | crypticpocket | 1.12 | 4.82 | 0.035 | 0.61 | 1.02e+03 | 1.53e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "NPC intracellular cholesterol transpor (1NEP/2HKA)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

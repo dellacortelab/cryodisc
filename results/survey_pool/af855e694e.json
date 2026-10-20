@@ -1,0 +1,8 @@
+{
+ "result": {
+  "rows": []
+ },
+ "dropped": "Glucodextranase (1ULV/1UG9)",
+ "returncode": 1,
+ "stderr_tail": "9, in __call__\n    return _call(self, False, args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/bryceeh/.venvs/cd-gpu/lib/python3.12/site-packages/equinox/_jit.py\", line 263, in _call\n    marker, _, _ = out = jit_wrapper._cached(\n                         ^^^^^^^^^^^^^^^^^^^^\njax.errors.JaxRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 683.54MiB. [tf-allocator-allocation-error='']\n--------------------\nFor simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.\n"
+}

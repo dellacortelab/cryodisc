@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:23:58+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/acebbf2df4.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Hepatocyte growth factor (Hepatopoieti (1GMO/1GMO)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Hepatocyte growth factor (Hepatopoieti (1GMO/1GMO)",
+        "motion": "hinge",
+        "mass_kda": 17.096886999999995,
+        "ca_rmsd": 1.4789241171361038,
+        "radius": 31.47608632688315,
+        "box_size": 128,
+        "d2_known_pose": 6.478076934814453,
+        "d2_crlb": 6.123057842254639,
+        "information": 2.818276882171631,
+        "saturation": 0.7045692205429077,
+        "n_floor": 887.06689453125,
+        "n_marginal": 47181.55078125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.008288204375366936,
+        "note": "P14210 83 kDa, dyndom, rotation 15.0 deg, chains C/H",
+        "d2_marginal": 0.05369162559509277,
+        "information_marginal": 0.052986811846494675,
+        "n_matched": 171,
+        "identity": 1.0,
+        "shared_fraction": 0.9582401193139448,
+        "provenance": {
+          "accession": "P14210",
+          "canonical_mass_kda": 83.134,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 15.0
+        },
+        "d2_floor": 6.478076934814453
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Hepatocyte growth factor (Hepatopoieti (1GMO/1GMO) | 17 | hinge | 1.48 | 6.48 | 0.008 | 0.70 | 887 | 4.72e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Hepatocyte growth factor (Hepatopoieti (1GMO/1GMO)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

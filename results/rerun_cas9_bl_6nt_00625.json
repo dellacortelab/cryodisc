@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "driver": "experiments/realdata/score_pool.py",
+  "commit": "36096421",
+  "written_at": "2026-09-17T21:59:32+00:00",
+  "arguments": {
+    "meta": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11779-2/J9/J9_005_particles.cs",
+    "root": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11779-2",
+    "structure_a": "data/pdb/7Z4C.pdb",
+    "structure_b": "data/pdb/7Z4G.pdb",
+    "map_a": null,
+    "map_b": null,
+    "known_pose": true,
+    "compare_rungs": false,
+    "calibrate": "poses",
+    "amplitude_shells": null,
+    "invert_contrast": false,
+    "state": null,
+    "assembly": "1",
+    "structure_offset_from_maps": null,
+    "no_superpose": false,
+    "ignore_origin": false,
+    "out": "results/rerun_cas9_bl_6nt_00625.json",
+    "log_ratio": "results/rerun_cas9_bl_6nt_00625.npy",
+    "box_size": null,
+    "pixel_size": null,
+    "k_max": 0.1,
+    "band_limit": 0.0625,
+    "nodes": 54,
+    "limit": 20000,
+    "subsample": 0,
+    "n_shuffles": 200,
+    "seed": 0,
+    "shift_window": 4,
+    "shift_step": 1.0,
+    "cs_pose_transpose": null,
+    "no_recenter": false,
+    "null_images": false,
+    "check_shift_sign": false,
+    "refit_ctf": false,
+    "micrograph": null,
+    "micrograph_pixel_size": null,
+    "n_iterations": 60
+  },
+  "result": {
+    "n_particles": 20000,
+    "box_size": 192,
+    "pixel_size": 1.2999999523162842,
+    "k_max": 0.1,
+    "n_defocus_groups": 351,
+    "amplitude": 0.6602548956871033,
+    "amplitude_spectrum": null,
+    "calibrated_at": "poses",
+    "calibration_state_weights": [
+      0.38519906997680664,
+      0.6147955060005188
+    ],
+    "snr": 3.669919967651367,
+    "coherence": {
+      "value": -0.12282161948237705,
+      "mean": -0.35760167241096497,
+      "variance": 5.823106288909912,
+      "baseline": 0.8937542073249006,
+      "decoherence": 0.7709325878425236
+    },
+    "oracle_closed_form": {
+      "d2_mean": 7.193826198577881,
+      "d2_spread": 3.4206888675689697,
+      "predicted_coherence": 0.8937542073249006,
+      "fractional_error_mean": -0.9100831747055054,
+      "fractional_error_sd": 0.0,
+      "d2_pool": 0.7152033448219299,
+      "implied_amplitude_scale": 0.09941904698271911,
+      "predicted_coherence_at_implied_amplitude": 0.9988263926124762
+    },
+    "separation": null,
+    "shift": {
+      "applied": true
+    },
+    "ctf_refit": {
+      "ran": false
+    },
+    "states": {
+      "from": "structures",
+      "state_a": "data/pdb/7Z4C.pdb",
+      "state_b": "data/pdb/7Z4G.pdb",
+      "ca_rmsd": 6.54688846615578,
+      "n_matched": 1187,
+      "superposed": true,
+      "offset_in_angstroms": null
+    },
+    "source": "/home/bryceeh/nobackup/archive/cryoem_projects/CS-e9-spcas9-11779-2/J9/J9_005_particles.cs",
+    "log_ratio_path": "results/rerun_cas9_bl_6nt_00625.npy"
+  }
+}

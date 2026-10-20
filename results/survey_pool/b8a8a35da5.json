@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:39:38+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/b8a8a35da5.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Translation initiation factor 5A (Hypu (1IZ6/1IZ6)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Translation initiation factor 5A (Hypu (1IZ6/1IZ6)",
+        "motion": "hinge",
+        "mass_kda": 13.848574999999997,
+        "ca_rmsd": 1.9783637551564475,
+        "radius": 39.362692465710964,
+        "box_size": 128,
+        "d2_known_pose": 6.098607063293457,
+        "d2_crlb": 5.686450004577637,
+        "information": 2.7420284748077393,
+        "saturation": 0.6855071187019348,
+        "n_floor": 911.7337646484375,
+        "n_marginal": 11999.19140625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.03597716837666167,
+        "note": "O50089 15 kDa, dyndom, rotation 16.7 deg, chains C/B",
+        "d2_marginal": 0.21941061317920685,
+        "information_marginal": 0.2083473801612854,
+        "n_matched": 135,
+        "identity": 1.0,
+        "shared_fraction": 0.9962013295346629,
+        "provenance": {
+          "accession": "O50089",
+          "canonical_mass_kda": 15.285,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.7
+        },
+        "d2_floor": 6.098607063293457
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Translation initiation factor 5A (Hypu (1IZ6/1IZ6) | 14 | hinge | 1.98 | 6.1 | 0.036 | 0.69 | 912 | 1.2e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Translation initiation factor 5A (Hypu (1IZ6/1IZ6)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

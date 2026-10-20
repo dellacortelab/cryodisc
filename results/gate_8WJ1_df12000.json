@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "driver": "experiments/forward/gate.py",
+  "commit": "66abd847",
+  "written_at": "2026-09-18T08:41:43+00:00",
+  "arguments": {
+    "mode": "compare",
+    "structure": "data/pdb/8WJ1.pdb",
+    "out": "results/gate_8WJ1_df12000.json",
+    "reference": "banks/8WJ1_df12000_sl1.5.npz",
+    "box_size": 64,
+    "pixel_size": 1.5,
+    "voltage": 300.0,
+    "defocus": 12000.0,
+    "nodes": 16,
+    "laptop": false,
+    "work_dir": null,
+    "solvent": null
+  },
+  "result": {
+    "passes": false,
+    "passes_correlation": false,
+    "passes_band": false,
+    "level_worst": 0.14143478870391846,
+    "shape_worst": 0.22253280878067017,
+    "certified_from_k": 0.0,
+    "certified_k": 0.0,
+    "certified_low_resolution": null,
+    "certified_resolution": null,
+    "failing_level": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "failing_shape": [
+      3,
+      4
+    ],
+    "median_ncc": 0.8963125348091125,
+    "amp_ratio": [
+      1.0537114143371582,
+      0.9270455837249756,
+      0.9511041641235352,
+      0.9265879392623901,
+      0.9966748952865601,
+      1.3248413801193237,
+      1.8910419940948486,
+      2.758918285369873
+    ],
+    "frc": [
+      0.9869425892829895,
+      0.9906058311462402,
+      0.9815219044685364,
+      0.9085550308227539,
+      0.8817409873008728,
+      0.762540340423584,
+      0.5306452512741089,
+      0.39495569467544556
+    ],
+    "n_templates": 16,
+    "engines": [
+      "cryojax",
+      "parakeet"
+    ],
+    "provenance": [
+      64,
+      1.5,
+      300.0,
+      12000.0
+    ],
+    "sampled_resolution": 4.921727813780307
+  }
+}

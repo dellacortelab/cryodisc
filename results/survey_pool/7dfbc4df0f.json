@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T10:50:46+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/7dfbc4df0f.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Rho-associated protein kinase 1 (EC 2. (6E9W/7S25)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Rho-associated protein kinase 1 (EC 2. (6E9W/7S25)",
+        "motion": "dfg_flip",
+        "mass_kda": 37.89007199999999,
+        "ca_rmsd": 1.0240923415730812,
+        "radius": 50.62613906106033,
+        "box_size": 128,
+        "d2_known_pose": 11.129034042358398,
+        "d2_crlb": 10.611964225769043,
+        "information": 3.432366371154785,
+        "saturation": 0.8580915927886963,
+        "n_floor": 728.3604736328125,
+        "n_marginal": 65218.3203125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.003477495804711337,
+        "note": "Q13464 158 kDa, kincore, no rotation angle (kincore reports none); states DFGin -> DFGout, chains B/C",
+        "d2_marginal": 0.038701169192790985,
+        "information_marginal": 0.03833278641104698,
+        "n_matched": 351,
+        "identity": 1.0,
+        "shared_fraction": 0.9258542875564152,
+        "provenance": {
+          "accession": "Q13464",
+          "canonical_mass_kda": 158.175,
+          "same_entry": false,
+          "source": "kincore",
+          "rotation_deg": null
+        },
+        "d2_floor": 11.129034042358398
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Rho-associated protein kinase 1 (EC 2. (6E9W/7S25) | 38 | dfg_flip | 1.02 | 11.1 | 0.003 | 0.86 | 728 | 6.52e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Rho-associated protein kinase 1 (EC 2. (6E9W/7S25)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

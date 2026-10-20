@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T11:36:02+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/6f9fb5323c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Pyrimidine pathway regulatory protein (1PYI/1PYI)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Pyrimidine pathway regulatory protein (1PYI/1PYI)",
+        "motion": "no_contact",
+        "mass_kda": 7.428931999999999,
+        "ca_rmsd": 4.641704863526405,
+        "radius": 29.798506222747537,
+        "box_size": 128,
+        "d2_known_pose": 23.174846649169922,
+        "d2_crlb": 20.489622116088867,
+        "information": 3.9020042419433594,
+        "saturation": 0.9755010604858398,
+        "n_floor": 640.6964111328125,
+        "n_marginal": 10371.9541015625,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011041854727959668,
+        "note": "P07272 103 kDa, dyndom, rotation 71.3 deg, chains A/B",
+        "d2_marginal": 0.2558932900428772,
+        "information_marginal": 0.2410346269607544,
+        "n_matched": 70,
+        "identity": 1.0,
+        "shared_fraction": 0.7977044476327116,
+        "provenance": {
+          "accession": "P07272",
+          "canonical_mass_kda": 102.724,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 71.3
+        },
+        "d2_floor": 23.174846649169922
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Pyrimidine pathway regulatory protein (1PYI/1PYI) | 7 | no_contact | 4.64 | 23.2 | 0.011 | 0.98 | 641 | 1.04e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Pyrimidine pathway regulatory protein (1PYI/1PYI)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

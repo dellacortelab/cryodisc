@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:41:56+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/141fe6e48c.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Phosphoribosylaminoimidazole-succinoca (1OBG/2CNV)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Phosphoribosylaminoimidazole-succinoca (1OBG/2CNV)",
+        "motion": "unclassified",
+        "mass_kda": 31.267277999999997,
+        "ca_rmsd": 0.9370588481848311,
+        "radius": 35.61399265124343,
+        "box_size": 128,
+        "d2_known_pose": 7.328426361083984,
+        "d2_crlb": 6.90728759765625,
+        "information": 2.9709062576293945,
+        "saturation": 0.7427265644073486,
+        "n_floor": 841.4940795898438,
+        "n_marginal": 29113.70703125,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.011970764849997631,
+        "note": "P27616 35 kDa, dyndom, no rotation angle (dyndom reports none); states conformer_1 -> conformer_2, chains A/A",
+        "d2_marginal": 0.08772686868906021,
+        "information_marginal": 0.08587020635604858,
+        "n_matched": 299,
+        "identity": 1.0,
+        "shared_fraction": 0.9794323323735088,
+        "provenance": {
+          "accession": "P27616",
+          "canonical_mass_kda": 34.603,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": null
+        },
+        "d2_floor": 7.328426361083984
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Phosphoribosylaminoimidazole-succinoca (1OBG/2CNV) | 31 | unclassified | 0.94 | 7.33 | 0.012 | 0.74 | 841 | 2.91e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Phosphoribosylaminoimidazole-succinoca (1OBG/2CNV)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

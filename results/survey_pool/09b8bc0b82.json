@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T12:05:22+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/09b8bc0b82.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "336aa long hypothetical dTDP-glucose 4 (2HUN/2HUN)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "336aa long hypothetical dTDP-glucose 4 (2HUN/2HUN)",
+        "motion": "hinge",
+        "mass_kda": 34.30340699999999,
+        "ca_rmsd": 1.295111338848544,
+        "radius": 36.30915647673599,
+        "box_size": 128,
+        "d2_known_pose": 9.84681510925293,
+        "d2_crlb": 8.949721336364746,
+        "information": 3.3086180686950684,
+        "saturation": 0.8271545171737671,
+        "n_floor": 755.6024780273438,
+        "n_marginal": 17902.609375,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.014682908715760976,
+        "note": "O58151 39 kDa, dyndom, rotation 16.4 deg, chains A/B",
+        "d2_marginal": 0.14457988739013672,
+        "information_marginal": 0.13964445888996124,
+        "n_matched": 320,
+        "identity": 1.0,
+        "shared_fraction": 0.9709929341762737,
+        "provenance": {
+          "accession": "O58151",
+          "canonical_mass_kda": 38.928,
+          "same_entry": true,
+          "source": "dyndom",
+          "rotation_deg": 16.4
+        },
+        "d2_floor": 9.84681510925293
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 336aa long hypothetical dTDP-glucose 4 (2HUN/2HUN) | 34 | hinge | 1.30 | 9.85 | 0.015 | 0.83 | 756 | 1.79e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "336aa long hypothetical dTDP-glucose 4 (2HUN/2HUN)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

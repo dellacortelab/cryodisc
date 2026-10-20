@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "driver": "experiments/panel/score_survey.py",
+  "commit": "c2c26b65",
+  "written_at": "2026-09-16T09:10:26+00:00",
+  "arguments": {
+    "panel": "data/survey_canonical.json",
+    "data_dir": "data/pdb",
+    "fetch": false,
+    "out": "results/survey_pool/0eee711b2a.json",
+    "pixel_size": 2.0,
+    "dose": 40.0,
+    "box_size": 128,
+    "min_shared_fraction": 0.0,
+    "no_rmsd_guard": true,
+    "rmsf": 0.5,
+    "sigma": 0.02,
+    "fraction": 0.5,
+    "budget": 100000,
+    "marginalize": true,
+    "poses": "haar",
+    "extrapolate": true,
+    "extrapolate_nodes": [
+      1024,
+      3456,
+      8192
+    ],
+    "twin_null": false,
+    "only": [
+      "Low affinity immunoglobulin gamma Fc r (1FNL/1T83)"
+    ],
+    "ablate": null,
+    "n_particles": 2000,
+    "shift_sigma": 1.0,
+    "seed": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "name": "Low affinity immunoglobulin gamma Fc r (1FNL/1T83)",
+        "motion": "shear",
+        "mass_kda": 17.741017,
+        "ca_rmsd": 1.4132144460255578,
+        "radius": 39.88573702910464,
+        "box_size": 128,
+        "d2_known_pose": 7.594886779785156,
+        "d2_crlb": 6.434557914733887,
+        "information": 3.0140862464904785,
+        "saturation": 0.7535215616226196,
+        "n_floor": 829.4388427734375,
+        "n_marginal": 22518.529296875,
+        "marginal_extrapolated": false,
+        "pose_efficiency": 0.015027287758469055,
+        "note": "O75015 26 kDa, dyndom, rotation 8.9 deg, chains A/C",
+        "d2_marginal": 0.11413054913282394,
+        "information_marginal": 0.11101969331502914,
+        "n_matched": 167,
+        "identity": 1.0,
+        "shared_fraction": 0.9697624190064795,
+        "provenance": {
+          "accession": "O75015",
+          "canonical_mass_kda": 26.243,
+          "same_entry": false,
+          "source": "dyndom",
+          "rotation_deg": 8.9
+        },
+        "d2_floor": 7.594886779785156
+      }
+    ],
+    "rejections": [],
+    "table": "| system | kDa | motion | Ca RMSD (A) | d2 (known pose) | pose eff | I_p/cap | N (floor) | N (quotable) | verdict |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Low affinity immunoglobulin gamma Fc r (1FNL/1T83) | 18 | shear | 1.41 | 7.59 | 0.015 | 0.75 | 829 | 2.25e+04^ | marginal |",
+    "n_scored": 1,
+    "n_rejected": 0,
+    "n_marginal_measured": 1,
+    "nulls": {
+      "Low affinity immunoglobulin gamma Fc r (1FNL/1T83)": {
+        "measured": false
+      }
+    },
+    "n_nulls_measured": 0
+  }
+}

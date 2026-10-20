@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "driver": "experiments/preprocess/model_b_factors.py",
+  "commit": "12dbcf1-dirty",
+  "written_at": "2026-08-25T19:49:52+00:00",
+  "arguments": {
+    "models": [
+      "2DN1",
+      "2DN2",
+      "2HHB",
+      "1V4T",
+      "8WJ2",
+      "8WJ1"
+    ],
+    "pdb_dir": "data/pdb",
+    "out": "results/model_b_factors.json"
+  },
+  "result": {
+    "models": [
+      {
+        "model": "2DN1",
+        "mean_b": 20.10754988028731,
+        "u": 0.5046435318640844,
+        "atoms": 2506
+      },
+      {
+        "model": "2DN2",
+        "mean_b": 23.35852627171865,
+        "u": 0.5439110140904458,
+        "atoms": 4777
+      },
+      {
+        "model": "2HHB",
+        "mean_b": 24.774913161749318,
+        "u": 0.5601588531595941,
+        "atoms": 4779
+      },
+      {
+        "model": "1V4T",
+        "mean_b": 39.631702064014355,
+        "u": 0.7084782074000597,
+        "atoms": 3343
+      },
+      {
+        "model": "8WJ2",
+        "mean_b": 54.377303961196446,
+        "u": 0.8298774608810935,
+        "atoms": 2474
+      },
+      {
+        "model": "8WJ1",
+        "mean_b": 59.305380388841925,
+        "u": 0.8666668432388358,
+        "atoms": 2366
+      }
+    ]
+  }
+}
